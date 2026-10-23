@@ -1,0 +1,35 @@
+name: Sync from bearly.ai
+
+# Copies the Bearly Manual's Markdown from bearly.ai every day. bearly.ai is the source of truth; edit the Manual there.
+on:
+  schedule:
+    - cron: '23 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Download the Manual
+        run: node scripts/sync.mjs
+      - name: Commit any changes
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "The mirror already matches bearly.ai."
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Sync the Bearly Manual from bearly.ai"
+          git push
