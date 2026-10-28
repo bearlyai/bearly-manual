@@ -48,7 +48,7 @@ These tools run in Bearly chats in the web app, phone browsers, the desktop app,
 
 
 > **Note — Zero Data Retention only and research tools**
-> Web and image search run on a provider that keeps nothing after it answers. **Zero Data Retention only** (**Settings** → **Privacy & Security**) is about AI models. It doesn't cover the services that Deep Research, People Search, Scholar's journal-site search, and Read Site use; those still reach their usual services. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
+> Web search sends the search provider your query, never your name, account, or IP address. Image search runs on a provider that keeps nothing after it answers. **Zero Data Retention only** (**Settings** → **Privacy & Security**) is about AI models. It doesn't cover the services that Web Search, Deep Research, People Search, Scholar's journal-site search, and Read Site use; those still reach their usual services. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
 
 
 ## Web Search

@@ -19,7 +19,7 @@ This page lists every control that changes what Bearly stores, what reaches an A
 - No ads. We don't sell your data.
 - Chats and files are encrypted at rest, each with its own key.
 - AI labs never learn who is asking: no name, account, or IP address reaches them. Anything you type about yourself is still part of your message.
-- Web and image search run on a provider that keeps nothing after it answers.
+- Web search sends the search provider your query, never your name, account, or IP address. Image search runs on a provider that keeps nothing after it answers.
 - Computer use runs on your device. It's in the desktop app only, and the screenshots you approve go to the model you picked.
 
 What you type, attach, or let a tool read still goes to the model handling your request. The controls below decide how much context goes with it and where your chats are kept.

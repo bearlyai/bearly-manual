@@ -63,7 +63,7 @@ Compared with ChatGPT, Claude, Gemini, Microsoft Copilot, Microsoft 365 Copilot,
 - Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. It covers chat models.
 - Turn on end-to-end encryption and your new chats are encrypted on your devices. Bearly stores and syncs only the locked copies, and can't read those chats: not the messages, the titles, or the files. It's opt-in and in beta. Each message still goes to the model you chose to get an answer.
 - Chats and files are encrypted at rest, each with its own key.
-- Web and image search run on a provider that keeps nothing after it answers.
+- Web search sends the search provider your query, never your name, account, or IP address. Image search runs on a provider that keeps nothing after it answers.
 - Computer use runs on your device.
 
 [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md) lists every control and what it does.

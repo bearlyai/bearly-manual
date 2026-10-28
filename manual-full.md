@@ -198,7 +198,7 @@ Compared with ChatGPT, Claude, Gemini, Microsoft Copilot, Microsoft 365 Copilot,
 - Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. It covers chat models.
 - Turn on end-to-end encryption and your new chats are encrypted on your devices. Bearly stores and syncs only the locked copies, and can't read those chats: not the messages, the titles, or the files. It's opt-in and in beta. Each message still goes to the model you chose to get an answer.
 - Chats and files are encrypted at rest, each with its own key.
-- Web and image search run on a provider that keeps nothing after it answers.
+- Web search sends the search provider your query, never your name, account, or IP address. Image search runs on a provider that keeps nothing after it answers.
 - Computer use runs on your device.
 
 [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md) lists every control and what it does.
@@ -2242,7 +2242,7 @@ These tools run in Bearly chats in the web app, phone browsers, the desktop app,
 
 
 > **Note — Zero Data Retention only and research tools**
-> Web and image search run on a provider that keeps nothing after it answers. **Zero Data Retention only** (**Settings** → **Privacy & Security**) is about AI models. It doesn't cover the services that Deep Research, People Search, Scholar's journal-site search, and Read Site use; those still reach their usual services. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
+> Web search sends the search provider your query, never your name, account, or IP address. Image search runs on a provider that keeps nothing after it answers. **Zero Data Retention only** (**Settings** → **Privacy & Security**) is about AI models. It doesn't cover the services that Web Search, Deep Research, People Search, Scholar's journal-site search, and Read Site use; those still reach their usual services. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
 
 
 ## Web Search
@@ -6179,7 +6179,7 @@ See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md
 
 ### Zero Data Retention only
 
-Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. It governs chat models. Council of Experts uses only models you're allowed, so its lineup can get shorter. It doesn't govern image, video, transcription, or voice-call models, or research services such as Deep Research, People Search, and Read Site. Web and image search run on a provider that keeps nothing after it answers. See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
+Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. It governs chat models. Council of Experts uses only models you're allowed, so its lineup can get shorter. It doesn't govern image, video, transcription, or voice-call models, or research services such as Web Search, Deep Research, People Search, and Read Site. Web search sends the search provider your query, never your name, account, or IP address. Image search runs on a provider that keeps nothing after it answers. See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
 
 ### Approvals and Full access
 
@@ -8855,7 +8855,7 @@ This page lists every control that changes what Bearly stores, what reaches an A
 - No ads. We don't sell your data.
 - Chats and files are encrypted at rest, each with its own key.
 - AI labs never learn who is asking: no name, account, or IP address reaches them. Anything you type about yourself is still part of your message.
-- Web and image search run on a provider that keeps nothing after it answers.
+- Web search sends the search provider your query, never your name, account, or IP address. Image search runs on a provider that keeps nothing after it answers.
 - Computer use runs on your device. It's in the desktop app only, and the screenshots you approve go to the model you picked.
 
 What you type, attach, or let a tool read still goes to the model handling your request. The controls below decide how much context goes with it and where your chats are kept.

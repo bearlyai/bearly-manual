@@ -274,7 +274,7 @@ See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md
 
 ### Zero Data Retention only
 
-Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. It governs chat models. Council of Experts uses only models you're allowed, so its lineup can get shorter. It doesn't govern image, video, transcription, or voice-call models, or research services such as Deep Research, People Search, and Read Site. Web and image search run on a provider that keeps nothing after it answers. See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
+Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. It governs chat models. Council of Experts uses only models you're allowed, so its lineup can get shorter. It doesn't govern image, video, transcription, or voice-call models, or research services such as Web Search, Deep Research, People Search, and Read Site. Web search sends the search provider your query, never your name, account, or IP address. Image search runs on a provider that keeps nothing after it answers. See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
 
 ### Approvals and Full access
 
