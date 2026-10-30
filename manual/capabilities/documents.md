@@ -354,6 +354,11 @@ You get a corrected report as both an editable Word file and a PDF.
 
 ## Related
 
+- [Convert Markdown to PDF](/tools/markdown-to-pdf)
+- [Convert PDF to Excel](/tools/pdf-to-excel)
+- [Summarize a PDF](/tools/pdf-summarizer)
+- [Compare PDFs](/tools/compare-pdfs)
+
 - [Analyze data and run code](https://bearly.ai/docs/manual/capabilities/data-and-code.md)
 - [Make Pages and edit in Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md)
 - [Projects](https://bearly.ai/docs/manual/projects.md)

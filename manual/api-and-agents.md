@@ -57,7 +57,7 @@ The Bearly API accepts requests in the Chat Completions, Responses, and Messages
 | Create a message | `POST /v1/messages` |
 | List models | `GET /v1/models` |
 
-Send the key as `Authorization: Bearer YOUR_KEY` or `X-Api-Key: YOUR_KEY`. Listing models needs no key.
+Send the key as `Authorization: Bearer YOUR_KEY` or `X-Api-Key: YOUR_KEY`. Listing models needs no key. Every API request goes to a zero-retention route. For a first call with each SDK, follow [Call Bearly's zero-retention API](https://bearly.ai/docs/api-quickstart.md).
 
 ```bash
 curl https://api.bearly.ai/v1/chat/completions \
@@ -187,6 +187,7 @@ An outside agent that answers "how do I…" questions about Bearly from the manu
 
 ## Related
 
+- [Call Bearly's zero-retention API](https://bearly.ai/docs/api-quickstart.md) — a first call with the OpenAI or Anthropic SDK, model discovery, and errors.
 - [Use the Bearly API](https://bearly.ai/docs/api-access.md) — full SDK examples and the current model table.
 - [Connect apps and add skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md) — connectors and skills inside Bearly.
 - [Guide for AI assistants](https://bearly.ai/docs/manual/for-ai-assistants.md) — how an assistant should use this manual to help people.
@@ -197,7 +198,7 @@ An outside agent that answers "how do I…" questions about Bearly from the manu
 - [Documentation index](https://bearly.ai/docs.md): Browse every Bearly guide.
 - [Previous: Guide for AI assistants](https://bearly.ai/docs/manual/for-ai-assistants.md)
 - [Next: Fix common problems](https://bearly.ai/docs/manual/troubleshooting.md)
+- [Related: Call Bearly's zero-retention API](https://bearly.ai/docs/api-quickstart.md)
 - [Related: Use the Bearly API](https://bearly.ai/docs/api-access.md)
 - [Related: Let Bearly use a browser, your files, and your computer](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md)
 - [Related: Connect apps and add skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md)
-- [Related: Settings reference](https://bearly.ai/docs/manual/settings-reference.md)

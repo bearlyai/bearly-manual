@@ -3558,6 +3558,11 @@ You get a corrected report as both an editable Word file and a PDF.
 
 ## Related
 
+- [Convert Markdown to PDF](/tools/markdown-to-pdf)
+- [Convert PDF to Excel](/tools/pdf-to-excel)
+- [Summarize a PDF](/tools/pdf-summarizer)
+- [Compare PDFs](/tools/compare-pdfs)
+
 - [Analyze data and run code](https://bearly.ai/docs/manual/capabilities/data-and-code.md)
 - [Make Pages and edit in Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md)
 - [Projects](https://bearly.ai/docs/manual/projects.md)
@@ -9468,7 +9473,7 @@ The Bearly API accepts requests in the Chat Completions, Responses, and Messages
 | Create a message | `POST /v1/messages` |
 | List models | `GET /v1/models` |
 
-Send the key as `Authorization: Bearer YOUR_KEY` or `X-Api-Key: YOUR_KEY`. Listing models needs no key.
+Send the key as `Authorization: Bearer YOUR_KEY` or `X-Api-Key: YOUR_KEY`. Listing models needs no key. Every API request goes to a zero-retention route. For a first call with each SDK, follow [Call Bearly's zero-retention API](https://bearly.ai/docs/api-quickstart.md).
 
 ```bash
 curl https://api.bearly.ai/v1/chat/completions \
@@ -9598,6 +9603,7 @@ An outside agent that answers "how do I…" questions about Bearly from the manu
 
 ## Related
 
+- [Call Bearly's zero-retention API](https://bearly.ai/docs/api-quickstart.md) — a first call with the OpenAI or Anthropic SDK, model discovery, and errors.
 - [Use the Bearly API](https://bearly.ai/docs/api-access.md) — full SDK examples and the current model table.
 - [Connect apps and add skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md) — connectors and skills inside Bearly.
 - [Guide for AI assistants](https://bearly.ai/docs/manual/for-ai-assistants.md) — how an assistant should use this manual to help people.
