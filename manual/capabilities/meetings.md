@@ -1,6 +1,6 @@
 ---
 title: "Record and use meetings"
-description: "How to record online meetings, in-person conversations, and voice notes in Bearly's Meetings and Recordings page, follow the live transcript, get the final transcript and speaker names, summarize, export, and hand a transcript to a chat or project to draft follow-ups."
+description: "How to record online meetings, in-person conversations, and voice notes in Bearly's Meetings page, follow the live transcript, get the final transcript and speaker names, summarize, export, and hand a transcript to a chat or project to draft follow-ups."
 canonical: "https://bearly.ai/docs/manual/capabilities/meetings/"
 markdown: "https://bearly.ai/docs/manual/capabilities/meetings.md"
 ---
@@ -9,20 +9,20 @@ markdown: "https://bearly.ai/docs/manual/capabilities/meetings.md"
 
 HTML: [https://bearly.ai/docs/manual/capabilities/meetings/](https://bearly.ai/docs/manual/capabilities/meetings/)
 
-> How to record online meetings, in-person conversations, and voice notes in Bearly's Meetings and Recordings page, follow the live transcript, get the final transcript and speaker names, summarize, export, and hand a transcript to a chat or project to draft follow-ups.
+> How to record online meetings, in-person conversations, and voice notes in Bearly's Meetings page, follow the live transcript, get the final transcript and speaker names, summarize, export, and hand a transcript to a chat or project to draft follow-ups.
 
-**Meetings and Recordings** records a call, a meeting in the room, or a voice note and transcribes it while people speak. When you stop, the audio and transcript are saved to your account, and you can name speakers, summarize, export, or hand the transcript to a chat to draft follow-ups.
+**Meetings** records a call, a meeting in the room, or a voice note and transcribes it while people speak. When you stop, the audio and transcript are saved to your account, and you can name speakers, summarize, export, or hand the transcript to a chat to draft follow-ups.
 
 **You need:** any plan; live transcription uses your plan allowance. Admin control: **Meetings** (under **Collaboration**).
 
 ## Choose what to record
 
-Select **Meetings and Recordings** in the sidebar, then pick a source card:
+Select **Meetings** in the sidebar — the page is titled **Meetings and recordings** — then pick a source under **New recording**:
 
 | Card | What it records | Where it works |
 | --- | --- | --- |
-| **Online meeting** | The call's audio from your computer and your microphone together, for video calls in any app | The desktop app on Windows, or on a Mac with macOS 13 or later; on Linux and older macOS versions the desktop app records your microphone only. On the web app, phone browsers, and the iOS app the card shows **Get desktop app** |
-| **In person or voice note** | The room, through this device's microphone ("Use this device's microphone to record the room.") | Every platform |
+| **Online meeting** | The call's audio from your computer and your microphone together, for video calls in any app | The desktop app on Windows, or on a Mac with macOS 13 or later; on Linux and older macOS versions the desktop app records your microphone only. On the web app, phone browsers, and the iOS app, choosing it opens **Settings** → **Get desktop app** ("Get Bearly Desktop to record the call and your voice together.") |
+| **In person or voice note** | What this device's microphone hears ("Record what your microphone hears.") | Every platform |
 
 On a Mac, recording computer audio uses the system's Screen Recording permission. If that access is off, Bearly records your microphone only and shows **Open Screen Recording settings**; if the microphone is blocked in the desktop app, you'll see **Open microphone settings**.
 
@@ -34,14 +34,14 @@ On a Mac, recording computer audio uses the system's Screen Recording permission
 
 1. Choose **Online meeting** or **In person or voice note** — allow microphone access if your device asks.
 2. Select **Start recording** — the live, speaker-labelled transcript appears as people talk.
-3. Pause if you need to — **Pause recording** stops both the audio and the live transcript, and **Resume recording** picks up again. Pausing appears where your device supports it.
-4. Select **Stop recording** (it shows the elapsed time) — the recording uploads, and Bearly starts the final transcript.
+3. Pause if you need to — **Pause** stops both the audio and the live transcript ("Nothing is recorded while paused."), and **Resume** picks up again. Pausing appears where your device supports it.
+4. Select **Stop recording** — the recording uploads, and Bearly starts the final transcript. The recorder shows the elapsed time while you record.
 
 
 
 While you record, you can keep working anywhere in Bearly. With the sidebar open, a compact recording card shows **Pause**, **Resume**, and **Stop**; with it closed, a floating bar shows the same controls on every page. Bearly suggests a title at 30 seconds and again at 3 minutes, unless you've typed your own.
 
-The footer of the recorder sums up how it works: "Saved continuously on this device", "Recording uploads after you stop", "Up to 1 hr 15 min", and "Only record people with their permission."
+The line beside **Start recording** sums up how it works: "Up to 1 hr 15 min. Saved on this device and uploaded when you stop. Only record people with their permission."
 
 **Limits:**
 
@@ -56,7 +56,7 @@ The footer of the recorder sums up how it works: "Saved continuously on this dev
 
 ## The final transcript and speakers
 
-After the upload is checked, Bearly transcribes the whole recording again with speaker separation and replaces the live transcript. You'll see "Improving speaker labels…" and then "Speaker labels improved". Older recordings that never had this pass show **Improve speaker labels**.
+After the upload is checked, Bearly transcribes the whole recording again with speaker separation and replaces the live transcript. You'll see "Improving speaker labels…" and then "Speaker labels improved". Older recordings that never had this pass offer **Improve speaker labels** under **More actions**.
 
 - The transcript header shows how many speakers were identified, or "Voice memo" for a single voice.
 - To name speakers, type each name once ("Name each speaker once. Every matching turn updates."). Names carry through to exports and to what you add to a chat.
@@ -64,12 +64,12 @@ After the upload is checked, Bearly transcribes the whole recording again with s
 
 ## Summarize, copy, and download
 
-Select a recording in the list to open it.
+Select a recording under **Recordings** to open it. Its header has **Add to chat**, **Add to project**, **Copy**, and **More actions**, which holds **Download audio**, **Improve speaker labels** where it applies, and **Delete recording**.
 
-- **Create summary** writes a **Quick summary** with Overview, Key points, Decisions, Action items, and Open questions. Owners and due dates appear only if someone said them. **Copy** copies it and **Refresh** rewrites it. Decisions, Action items, or Open questions with nothing to report say "None captured."
-- **Copy** next to the transcript opens an export dialog: **Text only**, **Speaker names**, or **Names and timestamps** (a voice memo offers **Text only** or **Timestamps**). Then **Copy**, or **Download .txt**.
-- The audio player plays the original at 0.75× to 2× speed, with a download button for the original audio file (`.m4a` or `.webm`).
-- **Delete recording** asks "Delete this recording?" and then permanently deletes the audio, transcript, speaker names, and summary.
+- Under **Summary**, **Create summary** writes a summary with Overview, Key points, Decisions, Action items, and Open questions. Owners and due dates appear only if someone said them. **Copy** copies it and **Refresh** rewrites it. Decisions, Action items, or Open questions with nothing to report say "None captured."
+- **Copy** in the header opens **Copy transcript**: **Text only**, **Speaker names**, or **Names and timestamps** (a voice memo offers **Text only** or **Timestamps**). Then **Copy**, or **Download .txt**.
+- The audio player plays the original at 0.75× to 2× speed. **More actions** → **Download audio** saves the original audio file (`.m4a` or `.webm`).
+- **More actions** → **Delete recording** asks "Delete this recording?" and then permanently deletes the audio, transcript, speaker names, and summary.
 
 Completed recordings and transcripts are saved to your account, so they're on your other devices when you sign in.
 
@@ -178,14 +178,14 @@ You get a one-page summary of decisions at a link only named colleagues can open
 
 You get a project where you can ask questions across every meeting you've added, with citations.
 
-**Why it works:** **Add to project** saves each transcript to the project's files, and with **Always Search Documents** on, every chat in the project searches those files before answering.
+**Why it works:** **Add to project** saves each transcript to the project's files, and with **Always search documents** on, every chat in the project searches those files before answering.
 
 **You need:** any plan. Admin controls **Meetings**, **File uploads**, and **Project documents and data**. Write access to the project.
 
 
 
 1. After each meeting, open the recording and select **Add to project**, then pick the project.
-2. In the project's settings, turn on **Always Search Documents** — see [Work with files and documents](https://bearly.ai/docs/manual/capabilities/documents.md#always-search-documents-projects).
+2. On the project's **Settings** tab, turn on **Always search documents** — see [Work with files and documents](https://bearly.ai/docs/manual/capabilities/documents.md#always-search-documents-projects).
 3. Ask across meetings in any chat in the project.
 
    ```text

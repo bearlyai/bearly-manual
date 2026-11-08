@@ -11,6 +11,8 @@ HTML: [https://bearly.ai/docs/manual/capabilities/images-video-audio/](https://b
 
 > How to generate and edit images, make and edit short videos, turn text into speech with Read aloud and Voice Studio, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls.
 
+These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
+
 Bearly can make an image, animate it into a video, record a voiceover, transcribe a recording, and watch a clip to check it, all in one chat. Every result is a file in the chat, so the next step can use it. Bearly makes images and speech only when you ask for them.
 
 To point a tool at a file that's already in the chat, type `@` and pick the file under **Assets**; typing the file name yourself doesn't select it. See [Compose messages](https://bearly.ai/docs/manual/chat/compose.md).
@@ -209,9 +211,9 @@ Transcribe turns speech in audio and video files into text with speaker labels a
 
 **What you get:** a transcript viewer, with previous and next buttons when you sent several files, and **Download subtitles**, which saves `AudioSubtitles.srt`. Bearly also saves each transcript in the chat as a subtitle file named after the original, such as `interview transcript.srt` for `interview.mp3`, so later messages and tools can read it. Bearly suggests speaker names from what's said in the recording, and you can change them.
 
-**Limits:** each file can be up to 300 MB, the limit for any chat file. There's no language picker. If some files fail you'll see "Some assets could not be transcribed". Asking about the same file again reuses its transcript.
+**Limits:** each attachment can be up to 1000 MB. Transcription has separate processing limits; compress or split a recording if it is too large to process. There's no language picker. If some files fail you'll see "Some assets could not be transcribed". Asking about the same file again reuses its transcript.
 
-For live recording with a running transcript, use [Meetings and Recordings](https://bearly.ai/docs/manual/capabilities/meetings.md).
+For live recording with a running transcript, use [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
 
 ## View Media
 
@@ -333,9 +335,9 @@ You get a short summary of the episode's main points, recorded in a voice you ch
 
 
 
-**Swap in:** a meeting from [Meetings and Recordings](https://bearly.ai/docs/manual/capabilities/meetings.md), where **Add to chat** brings its transcript into the chat so you can skip transcribing; [email](https://bearly.ai/docs/manual/capabilities/email-and-text.md) the audio to yourself.
+**Swap in:** a meeting from [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md), where **Add to chat** brings its transcript into the chat so you can skip transcribing; [email](https://bearly.ai/docs/manual/capabilities/email-and-text.md) the audio to yourself.
 
-**If it stalls:** attached files can be up to 300 MB; for a longer episode, export a smaller audio-only copy first.
+**If it stalls:** attached files can be up to 1000 MB; transcription has separate processing limits; for a longer episode, export a smaller audio-only copy first.
 
 ### Watch a generated clip and fix what's wrong
 

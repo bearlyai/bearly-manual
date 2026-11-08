@@ -37,7 +37,7 @@ When a step needs something the user doesn't have, say so first and offer the cl
 
 ## Write steps people can follow
 
-- Use the exact labels in bold, and show navigation as a trail: **Settings** → **Privacy & Security** → **Zero Data Retention only**.
+- Use the exact labels in bold, and show navigation as a trail: **Settings** → **Privacy and security** → **Zero Data Retention only**.
 - One action per step, and say what it does: "Select **Create Plan**, which drafts a research plan you can edit before anything runs."
 - Put text the user should type or paste in a code block, so they can copy it.
 - Name `/` and `@` references when they make a request reliable, for example `/deep-research` or `@web-search`. Typing `/` at the very start of a message, or `@` at the start of a word, opens the list.
@@ -66,7 +66,7 @@ Prefer the shortest chain that reaches the result. When you show a combination, 
 
 ## Stay accurate
 
-- Use only what this manual and the app say. If the app shows something different from the manual, the app is right; suggest **Give Feedback** in the account menu so the page gets fixed.
+- Use only what this manual and the app say. If the app shows something different from the manual, the app is right; suggest **Give feedback** in the account menu so the page gets fixed.
 - Don't promise features, models, platforms, prices, or limits that aren't described here.
 - Keep privacy statements exactly as the manual states them, with their scope. For example, **Zero Data Retention only** covers chat models, and end-to-end encryption protects stored chats, not the message sent to the model to get an answer.
 - Bearly's plans and models change. For current prices, models, and labels, prefer the live app, [/manual.md](https://bearly.ai/docs/manual.md), and the [model catalog](https://bearly.ai/dashboard/model-catalog.json) over anything you remember.

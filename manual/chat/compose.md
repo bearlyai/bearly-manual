@@ -1,6 +1,6 @@
 ---
 title: "Write, attach, and send"
-description: "How to write and send messages in Bearly, attach files and photos, unlock password-protected PDFs, share your screen, call tools and files with / and @, queue follow-ups while Bearly works, stop or interrupt an answer, and what the PII Blocker redacts."
+description: "How to write and send messages in Bearly, attach files and photos, unlock password-protected PDFs, share your screen, call tools and files with / and @, make prompt templates, add to a running answer or queue follow-ups while Bearly works, stop an answer, and what the PII Blocker redacts."
 canonical: "https://bearly.ai/docs/manual/chat/compose/"
 markdown: "https://bearly.ai/docs/manual/chat/compose.md"
 ---
@@ -9,7 +9,9 @@ markdown: "https://bearly.ai/docs/manual/chat/compose.md"
 
 HTML: [https://bearly.ai/docs/manual/chat/compose/](https://bearly.ai/docs/manual/chat/compose/)
 
-> How to write and send messages in Bearly, attach files and photos, unlock password-protected PDFs, share your screen, call tools and files with / and @, queue follow-ups while Bearly works, stop or interrupt an answer, and what the PII Blocker redacts.
+> How to write and send messages in Bearly, attach files and photos, unlock password-protected PDFs, share your screen, call tools and files with / and @, make prompt templates, add to a running answer or queue follow-ups while Bearly works, stop an answer, and what the PII Blocker redacts.
+
+These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
 
 The composer at the bottom of every chat is where you type, attach files, name the exact tool or file you want, and line up your next messages while Bearly is still answering. It works the same in the web app, a phone browser, the desktop app, and the iOS app. The browser extension's sidebar is a separate chat without these tools and isn't covered here.
 
@@ -20,8 +22,8 @@ The composer at the bottom of every chat is where you type, attach files, name t
 - The sliders button opens this chat's controls: **Web**, **Style**, **Scholar**, **Reasoning**, **Memories**, and **History**. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md).
 - The model button on the right shows the current model's short name and chooses who answers. See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
 - Voice and dictation controls sit next to it. See [Voice](https://bearly.ai/docs/manual/chat/voice.md).
-- The send button. While Bearly is working it becomes **Queue message** when you have a draft, or **Stop** when the composer is empty.
-- Under the editor (except in the iOS app), a strip shows the chat's project, its encryption lock, **Work locally** in the desktop app, connectors, and **Permissions**. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
+- The send buttons. With nothing running there's one, **Send**. While Bearly works, an empty composer shows **Stop**; once you type, you get **Stop**, **Queue**, and **Send**. See [Send while Bearly is working](#send-while-bearly-is-working).
+- At the foot of the composer (except in the iOS app), a band shows the chat's project, its encryption lock, **Work locally** in the desktop app, connectors, and **Permissions**. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
 
 ## Write and send a message
 
@@ -34,7 +36,7 @@ Type in the composer and send. In an existing chat the empty composer reads "How
 
 1. Press <kbd>⌘</kbd> <kbd>L</kbd> (<kbd>Ctrl</kbd> <kbd>L</kbd> on Windows and Linux) or click anywhere on the composer — this puts the cursor in the composer from anywhere in the chat.
 2. Type your message. Press <kbd>Shift</kbd> <kbd>Enter</kbd> for a new line — plain <kbd>Enter</kbd> sends.
-3. Press <kbd>Enter</kbd> or select the round arrow send button — the message goes out and Bearly starts answering. On phones and tablets, <kbd>Enter</kbd> doesn't send; tap the send button.
+3. Press <kbd>Enter</kbd> or select **Send**, the arrow button — the message goes out and Bearly starts answering. On phones and tablets, <kbd>Enter</kbd> doesn't send; tap the send button.
 
 
 
@@ -80,7 +82,7 @@ Bearly detects a password-protected PDF when you attach it and asks for the pass
 If unlocking fails for another reason, the file shows "Unable to unlock this PDF."
 
 **What you get:** Files attached to your message and saved in the chat, so you can point at them again later with `@`.
-**Limits:** 300 MB per file; larger files can't be attached. If a file shows "Unable to upload and process.", remove it and attach it again.
+**Limits:** 1000 MB per file; larger files can't be attached. If a file shows "Unable to upload and process.", remove it and attach it again.
 **Combines with:** [/ and @ references](#reference-tools-files-and-skills) to name a file and a tool in the same message; [Search chats and files](https://bearly.ai/docs/manual/chat/organize.md#search-chats-and-files) to find a file later.
 
 ## Share your screen
@@ -143,19 +145,46 @@ Until you type a filter, the picker shows up to eight items per heading.
 **Limits:** Only one `/` command per message, and it must come first. Installed skills and local files appear in the desktop app only.
 **Combines with:** [Research](https://bearly.ai/docs/manual/capabilities/research.md), [Data and code](https://bearly.ai/docs/manual/capabilities/data-and-code.md), and [Connectors and skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md), where each tool you can reference is explained; [Building blocks](https://bearly.ai/docs/manual/combine/building-blocks.md) for chains of tools.
 
+## Make a prompt template
+
+A prompt template is a prompt you reuse, with fill-in fields. Each `{{ name }}` in its text becomes a field in a form you fill in from any chat.
+
+**Use it when:** you send the same kind of request often, such as a code review, a postmortem, or a campaign email, and only the details change.
+**You need:** Nothing extra. Every plan.
+
+
+
+1. Select **Prompt templates** in the sidebar, then **New template** — with no templates yet, the page opens on **New template** directly.
+2. Describe the template under **Describe the template**, such as "Review a contract and list the clauses that need a second look", and select **Draft template** — Bearly writes the title, description, and prompt with its fields, and opens the new template. Selecting one of the **Examples** fills in the description for you. To write it yourself, select **start from scratch**.
+3. On the template's page, edit **Basic information** (title and description) and **Template design** (the prompt, with `{{ field }}` for each blank) — a preview shows the form as it will appear in chat. Changes save automatically.
+4. Under **Field configuration**, choose **Short text** or **Long text** for each field, add help text, and turn on **Allow file uploads** for fields that should take files.
+5. In any chat, type `/` and pick the template under **Skills**.
+
+
+
+**What you get:** A template in your list on **Prompt templates**, ready in every chat. To delete one, use **…** → **Delete…** on its row or its page.
+**Limits:** Templates are saved to your account and sync across your devices, but aren't shared with teammates.
+**Combines with:** [Reference tools, files, and skills](#reference-tools-files-and-skills) to run it; `/share` to turn its result into a Page.
+
 ## Send while Bearly is working
 
-You don't have to wait for an answer to finish. Anything you send while Bearly is working waits in a short queue above the composer, labeled **Up next**, and goes out automatically, in order, as each answer finishes.
+You don't have to wait for an answer to finish. While Bearly works, type your next message and choose what happens to it:
 
-**Use it when:** you think of the next step while a long answer streams, or you want to stack a chain such as "now make a table", then "now email it to me".
+- **Send** adds it to the answer that's running. Bearly reads it as soon as any tool it's running finishes, then carries on with your message in mind. Use it to correct course or add a detail mid-answer.
+- **Queue** holds it under **Up next** above the composer. Queued messages go out automatically, in order, as each answer finishes. Use it for the next step, such as "now make a table".
+
+Some answers can't take a new message while they run. Then you see only **Stop** and **Send**, and **Send** waits for the answer to finish (its tooltip reads "Send after this reply").
+
+**Use it when:** an answer needs a correction or a missing detail now, or you want to stack a chain such as "now make a table", then "now email it to me".
 **You need:** Nothing extra. Every plan, on every app platform.
 
 
 
-1. While Bearly is answering, type your next message — the send button changes to **Queue message**.
-2. Press <kbd>Enter</kbd> or select **Queue message** — the message waits under **Up next**. Hover the header to see "Queued messages send automatically, in order, when the current response finishes."
-3. Manage a waiting message with its buttons: **Edit queued message** brings it back into the composer (clear the composer first), **Send now** stops the current answer and sends this one right away, and **Remove from queue** deletes it.
-4. To pull back the newest waiting message, press <kbd>↑</kbd> in an empty composer.
+1. While Bearly is answering, type your next message — **Stop**, **Queue**, and **Send** appear at the right of the composer.
+2. Press <kbd>Enter</kbd> or select **Send** to add the message to the running answer — it shows as **Sending…** above the composer until Bearly reads it. Select the **×** beside it (**Cancel sending**) to move it back into the queue before it's read.
+3. Or select **Queue** — the message waits under **Up next**. Hover the header to see "Queued messages send automatically, in order, when the current response finishes."
+4. Manage a waiting message with its buttons: **Edit queued message** brings it back into the composer (clear the composer first), **Send now** adds it to the running answer right away, and **Remove from queue** deletes it.
+5. To pull back the newest waiting message, press <kbd>↑</kbd> in an empty composer.
 
 
 
@@ -167,27 +196,28 @@ The queue stops on its own instead of sending the next message when:
 
 After an error or a usage limit, the queue starts again once a later answer finishes cleanly. A single **Stop** ends only the current answer, and the queue carries on. A queue you paused with a double Stop stays paused until you use **Send now** or clear the waiting messages. **Send now** also restarts a queue paused for any reason.
 
-**What you get:** A chain of follow-ups that runs without you watching, and stops instead of piling up failures.
-**Limits:** Up to 4 waiting messages. When the queue is full, the send button is disabled ("Queue full — send, edit, or remove a waiting message first"); press <kbd>Enter</kbd> anyway and the header briefly reads **Queue is full**. Waiting messages aren't saved with the chat. Editing an earlier message never queues; it stops the current answer and reruns.
+Messages that never went out, for example because the page closed before they were sent, appear under **Not sent yet** with buttons to send or remove each one.
+
+**What you get:** Corrections that land while the answer is still being written, and a chain of follow-ups that runs without you watching and stops instead of piling up failures.
+**Limits:** Up to 4 waiting messages. When the queue is full, **Queue** is disabled ("Queue full — send, edit, or remove a waiting message first"); press <kbd>Enter</kbd> on a message that would queue and the header briefly reads **Queue is full**. Waiting messages aren't saved with the chat. Editing an earlier message never queues; it stops the current answer and reruns. There are no keyboard shortcuts for queueing or for stopping and sending at once.
 **Combines with:** [Email and text](https://bearly.ai/docs/manual/capabilities/email-and-text.md) as the last step of a chain; [History modes](https://bearly.ai/docs/manual/chat/settings.md#history-modes) for long chains of tool work.
 
-## Stop or interrupt an answer
+## Stop an answer
 
-Stop an answer that's going the wrong way, or replace it with new directions in one step.
+Stop an answer that's going the wrong way. Whatever it already wrote stays in the chat.
 
-**Use it when:** an answer misread the question, is running long, or needs a correction now rather than after it finishes.
+**Use it when:** an answer misread the question or is running long. To steer it without stopping, use **Send** instead (see above).
 **You need:** Nothing extra.
 
 
 
-1. To stop, leave the composer empty and select the square **Stop** button — Bearly stops; whatever it already wrote stays in the chat.
-2. To stop and redirect at once, type your new message and press <kbd>⌘</kbd> <kbd>Enter</kbd> (<kbd>Ctrl</kbd> <kbd>Enter</kbd> on Windows and Linux) — the current answer stops and your message goes out right away, ahead of anything waiting in **Up next**.
-3. On a phone or tablet, queue the message, then select **Send now** on it — same result.
+1. Select **Stop**, the square button — Bearly stops the answer.
+2. To start over with new directions, type your message and select **Send** once the answer has stopped.
 
 
 
 **What you get:** Partial work kept, and the conversation moving in the direction you want.
-**Limits:** The send button never shows an "Interrupt" label; interrupting is <kbd>⌘</kbd> <kbd>Enter</kbd> or **Send now**.
+**Limits:** Pressing **Stop** twice within 2 seconds also pauses anything waiting under **Up next**.
 
 ## PII Blocker
 
@@ -202,7 +232,7 @@ Stop an answer that's going the wrong way, or replace it with new directions in 
 
 ## Combinations to try
 
-**Research, then chart, then email, without waiting.** Send the first request, then queue the other two while it runs. Each queued message builds on the answer before it, and the queue pauses if a step fails. The email step needs email sending, which is on unless your organization turned it off.
+**Research, then chart, then email, without waiting.** Send the first request, then select **Queue** for each of the other two while it runs. Each queued message builds on the answer before it, and the queue pauses if a step fails. The email step needs email sending, which is on unless your organization turned it off.
 
 ```text
 Find the last five years of US new-home sales by year and summarize the trend.

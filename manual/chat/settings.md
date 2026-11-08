@@ -18,20 +18,20 @@ Each chat has its own model, reply language, style, reasoning level, instruction
 You can reach chat settings three ways:
 
 - Press <kbd>⌘</kbd> <kbd>,</kbd> (<kbd>Ctrl</kbd> <kbd>,</kbd> on Windows and Linux).
-- Open the account menu at the bottom of the sidebar and choose **App Settings**.
+- Open the account menu at the bottom of the sidebar and choose **Settings**.
 - Open the sliders button in the composer and choose **Chat Settings**.
 
-The **Settings** window lists chat settings under **Chats**: **This Chat**, **New Chats**, **Personalization**, **Voice**, and **Dictation**. Voice and dictation are on [Voice](https://bearly.ai/docs/manual/chat/voice.md). The window's header shows **Saving...**, **Saved**, or **Not saved** as changes save. On a narrow screen, the list of panes becomes a menu at the top.
+The **Settings** window opens over the page you're on and lists chat settings under **Chats**: **This chat**, **New chats**, **Permissions**, **Personalization**, **Voice**, **Dictation**, and **Skills**. Voice and dictation are on [Voice](https://bearly.ai/docs/manual/chat/voice.md), and **Permissions** on [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md). The window's header shows **Saving...**, **Saved**, or **Not saved** as changes save. On a phone, the window fills the screen and shows the list of panes or one pane at a time.
 
 The sliders button in the composer holds quick per-chat switches: **Web**, **Style**, **Scholar**, **Reasoning**, **Memories**, and **History**. **History** and **Scholar** live only there, not in the **Settings** window.
 
-## This Chat and New Chats
+## This chat and New chats
 
-**This Chat** changes only the open chat: "Settings for this conversation only. Changes here don't affect other chats." **New Chats** sets the starting point for chats you start later: "These settings apply to all new chats by default." Both have the same controls:
+**This chat** changes only the open chat: "Settings for this conversation only. Changes here don't affect other chats." **New chats** sets the starting point for chats you start later: "These settings apply to all new chats by default." Both have the same controls:
 
 | Control | Options | New Chats starts at |
 |---|---|---|
-| **Model** | The models in the model picker. **New Chats** adds **Recommended**, which follows Bearly's default for your plan. | Recommended |
+| **Model** | The models in the model picker. **New chats** adds **Recommended**, which follows Bearly's default for your plan. | Recommended |
 | **Language** | **Default**, Arabic, Bengali, English, English (UK & AU), French, German, Hindi, Indonesian, Italian, Japanese, Korean, Mandarin Chinese, Persian, Portuguese, Russian, Spanish, Swahili, Thai, Turkish, Urdu, Vietnamese | Default |
 | **Response Style** | **Normal**, **Classic**, **No Style**, **Learning**, **Concise**, **Explanatory**, **Formal** | Normal |
 | **Memories** | **Off**, **Auto** | Auto |
@@ -40,12 +40,12 @@ The sliders button in the composer holds quick per-chat switches: **Web**, **Sty
 | **Instructions** | Free text | Empty |
 | **Temperature** | Presets **Factual**, **Default**, **Creative**, and a slider from **Focused** to **Creative** | 1.00 (Default) |
 
-**This Chat** also has **Reset all to defaults**. It appears once this chat has its own value for any control, and puts the chat's model, language, instructions, temperature, and reasoning back to those defaults. Organization and project settings still apply afterward.
+**This chat** also has **Reset all to defaults**. It appears once this chat has its own value for any control, and puts the chat's model, language, instructions, temperature, and reasoning back to those defaults. Organization and project settings still apply afterward.
 
-**New Chats** defaults are saved to your account, so they apply on every device.
+**New chats** defaults are saved to your account, so they apply on every device.
 
-**Use it when:** one chat needs something different (This Chat), or you keep making the same change in every new chat (New Chats).
-**Limits:** **New Chats** doesn't apply inside projects. In a project chat the pane says "Default settings are not available in project chats. Use Project Settings to configure." A control your organization or project locks is hidden or can't be changed.
+**Use it when:** one chat needs something different (This chat), or you keep making the same change in every new chat (New chats).
+**Limits:** **New chats** doesn't apply inside projects. In a project chat the pane says "Default settings are not available in project chats. Use Project Settings to configure." A control your organization or project locks is hidden or can't be changed.
 **Combines with:** [Projects](https://bearly.ai/docs/manual/projects.md) for settings shared by every chat in a project; [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md) for picking models.
 
 ## Which setting wins
@@ -53,22 +53,22 @@ The sliders button in the composer holds quick per-chat switches: **Web**, **Sty
 A chat's settings are built up in layers. Each later layer overrides the ones before it:
 
 1. Bearly's own defaults.
-2. Your **New Chats** defaults. Skipped in project chats.
+2. Your **New chats** defaults. Skipped in project chats.
 3. Your organization's chat defaults. Skipped in project chats.
 4. Chat settings your organization applies to every chat, including project chats.
 5. The project's shared settings.
 6. Your personal settings for that project.
-7. **This Chat**.
+7. **This chat**.
 
-An organization or project can also lock a setting. A locked setting can't be changed in **This Chat**, and its control disappears from the chat or stays fixed. Settings that can be locked: model, instructions, language, temperature, reasoning effort, response style, memories, web search, always searching project documents, and personalization.
+An organization or project can also lock a setting. A locked setting can't be changed in **This chat**, and its control disappears from the chat or stays fixed. Settings that can be locked: model, instructions, language, temperature, reasoning effort, response style, memories, web search, always searching project documents, and personalization.
 
 One exception: if your organization or project sets a reasoning level, it applies even when it isn't locked.
 
-Projects add two settings of their own: **Always Search Documents**, which makes every message in the project search the project's files first, and **Disable Personalization**. See [Projects](https://bearly.ai/docs/manual/projects.md) and [Organizations](https://bearly.ai/docs/manual/organizations.md).
+Projects add two settings of their own: **Always search documents**, which makes every message in the project search the project's files first, and **Disable personalization**. See [Projects](https://bearly.ai/docs/manual/projects.md) and [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
 ## Response Style
 
-**Response Style** shapes how answers read: length, structure, and tone. Change it per chat from the sliders button (**Style**) or in **This Chat**, and set your usual style in **New Chats**.
+**Response Style** shapes how answers read: length, structure, and tone. Change it per chat from the sliders button (**Style**) or in **This chat**, and set your usual style in **New chats**.
 
 | Style | What answers are like |
 |---|---|
@@ -95,7 +95,7 @@ On a phone-sized screen, 480 pixels wide or less, Bearly also asks the AI to kee
 | **Default** | Medium when the chat is on Bearly Pro as your plan's default model; otherwise the model's own default |
 | **None**, **Low**, **Medium**, **High**, **Extra High** | Asks the model for that level of reasoning |
 
-The model's reasoning shows above the answer as a collapsible **Thinking** step; see [Work with answers](https://bearly.ai/docs/manual/chat/answers.md#thinking-steps).
+While the model reasons, the line under the answer reads "Thinking", and the reasoning itself is in the answer's **Steps**; see [Work with answers](https://bearly.ai/docs/manual/chat/answers.md#thinking-steps).
 
 **Use it when:** a multi-step problem, math, or code needs more care (raise it), or you want faster replies to simple questions (lower it).
 **Limits:** Your reasoning choice is your own, even in a shared chat. A reasoning level set by your organization or project overrides yours.
@@ -108,7 +108,7 @@ The model's reasoning shows above the answer as a collapsible **Thinking** step;
 
 ## Instructions
 
-**Instructions** is free text Bearly includes with every message in the chat: who the answers are for, what format you want, terms to use or avoid. In **This Chat** the box reads "Custom instructions for this chat..."; in **New Chats**, "Default instructions for new chats...". It saves when you click away.
+**Instructions** is free text Bearly includes with every message in the chat: who the answers are for, what format you want, terms to use or avoid. In **This chat** the box reads "Custom instructions for this chat..."; in **New chats**, "Default instructions for new chats...". It saves when you click away.
 
 ```text
 I'm preparing a board update. Use plain language, round numbers to one decimal place, and end every answer with the one decision I need to make.
@@ -150,7 +150,7 @@ In both modes, a single very long message or tool result is shortened when the A
 |---|---|
 | Sliders button → **Memories**, outside a project | **Off**, **All Chats** (default) |
 | Sliders button → **Memories**, in a project chat | **Off**, **Project Only** (default), **All Chats** |
-| **This Chat** and **New Chats** → **Memories** | **Off**, **Auto** |
+| **This chat** and **New chats** → **Memories** | **Off**, **Auto** |
 
 **All Chats** searches every chat you have. **Project Only** searches only that project's chats. To make the AI search past chats for one message, type `/recall`:
 
@@ -177,7 +177,7 @@ In both modes, a single very long message or tool result is shortened when the A
 
 With the switch off, nothing from your profile is added to your chats.
 
-**Limits:** A project with **Disable Personalization** on, or an organization setting, sends nothing from your profile, including your name.
+**Limits:** A project with **Disable personalization** on, or an organization setting, sends nothing from your profile, including your name.
 
 ## Date awareness
 
@@ -185,11 +185,11 @@ Bearly tells the AI today's date, so "tomorrow", "next Friday", and "last week" 
 
 ## Combinations to try
 
-**Your profile everywhere, with one-off exceptions.** Turn on **Personalization**, then set **New Chats** → **Response Style** to **Concise** and **Language** to the language you work in. Every new chat starts that way. For a single chat that needs a different voice, add **Instructions** in **This Chat**; they apply to that chat only.
+**Your profile everywhere, with one-off exceptions.** Turn on **Personalization**, then set **New chats** → **Response Style** to **Concise** and **Language** to the language you work in. Every new chat starts that way. For a single chat that needs a different voice, add **Instructions** in **This chat**; they apply to that chat only.
 
 **Long agentic session.** Before starting a long chain of tool work, switch **History** to **Agentic (Compaction)** and raise **Reasoning** to **High**. Then queue the follow-up steps in **Up next** so they run in order. See [Send while Bearly is working](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-is-working).
 
-**Project memory only.** In a project, leave **Memories** on **Project Only** so recall stays inside the project's chats, and turn on **Always Search Documents** in the project's settings so every answer checks the project's files first. See [Projects](https://bearly.ai/docs/manual/projects.md).
+**Project memory only.** In a project, leave **Memories** on **Project Only** so recall stays inside the project's chats, and turn on **Always search documents** in the project's settings so every answer checks the project's files first. See [Projects](https://bearly.ai/docs/manual/projects.md).
 
 ## Related
 
@@ -203,7 +203,7 @@ Bearly tells the AI today's date, so "tomorrow", "next Friday", and "last week" 
 - [Documentation index](https://bearly.ai/docs.md): Browse every Bearly guide.
 - [Previous: Organize, find, share, and export chats](https://bearly.ai/docs/manual/chat/organize.md)
 - [Next: Talk to Bearly: dictation and voice calls](https://bearly.ai/docs/manual/chat/voice.md)
+- [Related: Approvals, permissions, and Full access](https://bearly.ai/docs/manual/capabilities/permissions.md)
 - [Related: Projects: shared context, files, and settings](https://bearly.ai/docs/manual/projects.md)
 - [Related: Choose and compare models](https://bearly.ai/docs/manual/chat/models.md)
 - [Related: Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md)
-- [Related: Work with answers](https://bearly.ai/docs/manual/chat/answers.md)

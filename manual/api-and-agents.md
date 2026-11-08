@@ -25,12 +25,12 @@ Bearly has a few doors for code and agents. Your own programs can call Bearly's 
 
 An API key lets your code call the Bearly API as your account.
 
-**You need:** a Bearly account. On a managed organization, the policy must allow **Developer API access**; if it doesn't, **Developers** or **API Keys** is missing from the menu.
+**You need:** a Bearly account. On a managed organization, the policy must allow **Developer API access**; if it doesn't, **Developers** or **API keys** is missing from the menu.
 
 
 
-1. Open the account menu at the bottom of the sidebar and select **Developers** — Settings opens at **API Keys**.
-2. Select **Create API Key**, or **New Key** if you already have one.
+1. Open the account menu at the bottom of the sidebar and select **Developers** — Settings opens at **API keys**.
+2. Select **Create API key**.
 3. Enter a **Note** that says where the key is used, such as "Production app" (required, up to 50 characters), and select **Create**.
 4. Use the copy icon on the key's row, and store it in a secret manager or a server environment variable.
 
@@ -39,7 +39,7 @@ An API key lets your code call the Bearly API as your account.
 **What you get:** a key that works until you delete it. You can reveal and copy it again later from the same row.
 **Limits:** keys have no scopes or expiry. A key can call models only: it can't read or create chats, projects, files, or settings. Keep keys out of browser code, public repositories, and email.
 
-To revoke a key, select **Delete** on its row, or open **App Settings** → **Devices** → **Browser extension and API keys** and select **Remove**. Deleting takes effect on the next request. The browser extension's own key is listed there too, as **Browser extension**.
+To revoke a key, select **Delete** on its row, or open **Settings** → **Devices** → **Browser extension and API keys** and select **Remove**. Deleting takes effect on the next request. The browser extension's own key is listed there too, as **Browser extension**.
 
 ## The Bearly API
 
@@ -129,11 +129,11 @@ Remote modules let a developer add custom tools to Bearly chats from their own s
 
 If you're an AI agent using Bearly's interface for a person, these labels are stable places to start:
 
-- **Sidebar:** **New Chat**, **Chat**, **Prompt Templates**, **Routines**, **Meetings and Recordings**, the **Projects** list, and the account menu at the bottom with **App Settings**, **Billing & Pro**, **Developers**, and **Organizations**.
-- **Composer:** the message box, the model picker, and the chips beside the box: **Permissions** (or **Full access**), **Connectors**, and **Work locally** in the desktop app. Typing `/` opens commands such as `/email`, `/sms`, `/skill`, and `/visualize`.
+- **Sidebar:** **Hide sidebar**, **Search chats**, and **New chat** in the top row; **Chat**, **Prompt templates**, **Routines**, **Meetings**, the **Projects** list, and the account menu at the bottom with **Settings**, **Billing**, **Developers**, and **Organizations**.
+- **Composer:** the message box, the model picker, the **Send**, **Queue**, and **Stop** buttons, and the chips at the foot of the box: **Permissions** (or **Full access**), **Connectors**, and **Work locally** in the desktop app. Typing `/` opens commands such as `/email`, `/sms`, `/skill`, and `/visualize`.
 - **Command menu:** <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux), with **New**, **New Routine**, and **Switch Chats**.
-- **Settings:** the window titled **Settings**, with sections **Chats**, **Settings**, **Desktop** (desktop app only), and **Developer**. See [Settings reference](https://bearly.ai/docs/manual/settings-reference.md).
-- **Routines:** **Create a routine**, **Draft routine**, **Start from scratch**, **Create routine**, **Save**, and **Run now**.
+- **Settings:** a window titled **Settings** over the current page, with groups **Account**, **Organizations**, **Chats**, **Preferences**, **Privacy**, **Connections**, **Desktop app**, and **Developer**. See [Settings reference](https://bearly.ai/docs/manual/settings-reference.md).
+- **Routines:** **New routine**, **Draft routine**, **start from scratch**, **Create routine**, **Save**, and, on a routine's page, **Run now** and **Pause**.
 
 Leave these to the person, and say so instead of acting:
 
@@ -157,10 +157,10 @@ Your editor's AI assistant, or any tool that accepts a custom base URL, running 
 
 
 
-1. Create a key under **Developers** → **API Keys**.
+1. Create a key under **Developers** → **API keys**.
 2. In the tool's model settings, set the base URL to `https://api.bearly.ai/v1` for Chat Completions or Responses, or `https://api.bearly.ai` for Messages, and paste the key.
 3. Set the model to `bearly-pro`, or pick one from `GET https://api.bearly.ai/v1/models` that supports the tool's format.
-4. Send a test prompt and check **App Settings** → **Usage** for the request (paid plans).
+4. Send a test prompt and check **Settings** → **Usage** for the request (paid plans).
 
 
 

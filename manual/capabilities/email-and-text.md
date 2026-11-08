@@ -57,7 +57,7 @@ Email Maya Chen and Sam Ortiz their action items from this meeting, one list eac
 **Send SMS** texts a short, plain-text message to the verified phone on your account. Bearly can't text any other number, and it won't take a number you type in the chat.
 
 **Use it when:** you want a result on your phone when you're away from your desk, or a routine should ping you only when something matters.
-**You need:** a verified US or Canadian mobile number in **Phone & SMS**.
+**You need:** a verified US or Canadian mobile number in **Phone and SMS**.
 
 
 
@@ -80,7 +80,7 @@ Email Maya Chen and Sam Ortiz their action items from this meeting, one list eac
 
 
 
-1. Open **App Settings** → **Phone & SMS**. **Set up text messages** reads "Add a US or Canadian mobile number for verification codes and notifications."
+1. Open **Settings** → **Phone and SMS**. **Set up text messages** reads "Add a US or Canadian mobile number for verification codes and notifications."
 2. Choose **US +1** or **Canada +1**, enter your **Phone number**, read the texting terms, and select **Agree & send code**.
 3. Under **Check your phone**, enter the code Bearly texted and select **Verify code** — the pane shows **Phone verified** and a confirmation text arrives.
 
@@ -97,7 +97,7 @@ Once verified, the pane reads **Texts are on** with your masked number. **Send t
 | The step's error mentions "total attachment size" | Keep attachments under 20 MB in total. Ask for a smaller export, or split it across emails. |
 | The step's error mentions "max 20 emails per hour" | Wait, then try again. |
 | **Set up text messages** appears | Select **Open Phone & SMS**, verify your number, then ask again. |
-| A text doesn't arrive | Use **Send test text** in **Phone & SMS**. If texts are off, select **Turn texts back on**. |
+| A text doesn't arrive | Use **Send test text** in **Phone and SMS**. If texts are off, select **Turn texts back on**. |
 | You don't see the email | Check spam for "User message via Bearly". Confirm the step shows the address you expected before asking again; a retry sends a second copy. |
 
 

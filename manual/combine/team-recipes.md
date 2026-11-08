@@ -17,14 +17,14 @@ These recipes use projects, meetings, sharing, and organization policies to make
 
 Every call you record goes into one project, and any chat in that project answers from the transcripts first, with quotes.
 
-**Why it works:** **Add to project** uploads a meeting's transcript to a project's files as a document. **Always Search Documents** in the project's chat settings makes every chat in the project search the project's files before it answers, so a question gets quotes from the calls without anyone naming a file.
+**Why it works:** **Add to project** uploads a meeting's transcript to a project's files as a document. **Always search documents** in the project's chat settings makes every chat in the project search the project's files before it answers, so a question gets quotes from the calls without anyone naming a file.
 **You need:** Any plan. Recording works on every platform with a microphone; recording an online meeting's audio needs the desktop app on Windows or macOS 13 or later. Organization controls: **Meetings**, **File uploads**, **Project documents and data**, and **Create projects**. Writer access to the project. Chats that aren't end-to-end encrypted.
 
 
 
-1. In the sidebar, select **New project** in the **Projects** header, enter "Customer calls" as the **Project Name**, and select **Create Project**. — The project's settings page opens.
+1. In the sidebar, select **New project** in the **Projects** header, enter "Customer calls" as the **Project Name**, and select **Create Project**. — The project's **Settings** tab opens.
 
-2. Turn on **Project Chat Settings**, then turn on **Always Search Documents**. In **Instructions**, enter:
+2. Under **Project chat settings**, turn on **Use project defaults**, then turn on **Always search documents**. In **Instructions**, enter:
 
    ```text
    Answer from the call transcripts first. Quote customers with the call title and timestamp. Say when the transcripts don't cover a question.
@@ -32,7 +32,7 @@ Every call you record goes into one project, and any chat in that project answer
 
    — Every chat in the project now follows these instructions and searches its files first.
 
-3. Open **Meetings and Recordings** in the sidebar. Choose **Online meeting** (desktop app) or **In person or voice note**, then **Start recording**, and **Stop recording** when the call ends. — After the upload, Bearly transcribes the whole recording again with better speaker labels. Name each speaker once and every matching turn updates.
+3. Open **Meetings** in the sidebar. Choose **Online meeting** (desktop app) or **In person or voice note**, then **Start recording**, and **Stop recording** when the call ends. — After the upload, Bearly transcribes the whole recording again with better speaker labels. Name each speaker once and every matching turn updates.
 
 4. Select **Add to project** and choose Customer calls. — "Transcript added" confirms it. Repeat steps 3 and 4 after each call.
 
@@ -47,12 +47,12 @@ Every call you record goes into one project, and any chat in that project answer
 
 
 **Swap in:**
-- **A synced folder for recordings** (desktop app): in the project's settings, use **Local Directory Sync** → **Add Directory** to keep a folder of notes or exported transcripts synced into the project.
-- **Uploads for recordings:** open **Docs & Data** and select **Upload** for call notes, PDFs, or contracts.
+- **A synced folder for recordings** (desktop app): on the project's **Files** tab, use **Sync a folder** to keep a folder of notes or exported transcripts synced into the project.
+- **Uploads for recordings:** open the project's **Files** tab and select **Upload** for call notes, PDFs, or contracts.
 - **Your team for just you:** share the project (see the next recipe) as **Writer**, so teammates can start their own chats in it.
 - **Past chats as well as files:** set **Memories** to **Project Only** in the sliders menu, and ask with `/recall` to search earlier chats in the project.
 
-**If it stalls:** **Always Search Documents** does nothing in end-to-end encrypted chats, which can't search documents. **Add to project** needs write access. A recording stops at 1 hour 15 minutes and keeps everything up to then. If the live transcript pauses at your account limit, the audio keeps recording.
+**If it stalls:** **Always search documents** does nothing in end-to-end encrypted chats, which can't search documents. **Add to project** needs write access. A recording stops at 1 hour 15 minutes and keeps everything up to then. If the live transcript pauses at your account limit, the audio keeps recording.
 
 ## Set up a shared research desk with locked settings
 
@@ -63,9 +63,9 @@ Your team works in one project where every chat uses the same model, style, inst
 
 
 
-1. Create a project named "Market desk". Open **Docs & Data** and select **Upload** for your style guide and source list.
+1. Create a project named "Market desk". Open its **Files** tab and select **Upload** for your style guide and source list.
 
-2. Open the project's **Settings** and turn on **Project Chat Settings**. Choose the **Model**, set **Response Style** to **Formal**, turn on **Always Search Documents**, and enter **Instructions**:
+2. Open the project's **Settings** tab and turn on **Use project defaults**. Choose the **Model**, set **Response style** to **Formal**, turn on **Always search documents**, and enter **Instructions**:
 
    ```text
    Write for the strategy team. Lead with the answer, cite every number, prefer primary sources, and follow the style guide in this project.
@@ -73,7 +73,7 @@ Your team works in one project where every chat uses the same model, style, inst
 
    Use the lock next to each field so members can't change it. — Locked fields apply to every chat in the project.
 
-3. In the **Collaboration** row, select **Share**. Under **Groups**, set your strategy group's role to **Writer**, then select **Done**. — The **Collaboration** row shows **Shared**, and the settings card becomes **Shared Project Settings**.
+3. Open the project's **Sharing** tab. Under **Groups**, set your strategy group's role to **Writer**. — The project's header reads **Shared**, and on the **Settings** tab the section becomes **Shared project settings**.
 
 4. A teammate starts a chat in the project and asks:
 
@@ -87,11 +87,11 @@ Your team works in one project where every chat uses the same model, style, inst
 
 **Swap in:**
 - **Reader for Writer:** readers can view chats and files and take part in existing chats, but can't start new chats or change files.
-- **The whole organization for a group:** under **Organizations** in the share panel, share with everyone in your organization.
-- **Skills for instructions:** add a skill under the project's **Skills** section so every chat in the project can use it.
-- **Personal settings for locks:** leave a field unlocked, and each member can set their own value under **Personal Chat Settings**.
+- **The whole organization for a group:** under **Organization access** on the **Sharing** tab, share with everyone in your organization.
+- **Skills for instructions:** add a skill under **Skills** on the project's **Settings** tab so every chat in the project can use it.
+- **Personal settings for locks:** leave a field unlocked, and each member can set their own value under **Your chat settings**.
 
-**If it stalls:** The **Collaboration** row appears only for the project's owner, in an organization that allows **Project collaboration**. Only writers and owners can change shared project settings. In **Personal Chat Settings**, a field the project has locked shows "Disabled by policy." and can't be changed.
+**If it stalls:** Only the project's owner can change access on the **Sharing** tab, in an organization that allows **Project collaboration**. Only writers and owners can change shared project settings. In **Your chat settings**, a field the project has locked shows "Locked by the project owner." and can't be changed.
 
 ## Send a meeting recap and a decisions Page only your team can open
 
@@ -102,7 +102,7 @@ You turn a recorded meeting into decisions and action items, email the follow-up
 
 
 
-1. After you stop a recording in **Meetings and Recordings**, select **Add to chat** → **New chat**. — The transcript is attached to a new draft. Nothing is sent until you send it.
+1. After you stop a recording in **Meetings**, select **Add to chat** → **New chat**. — The transcript is attached to a new draft. Nothing is sent until you send it.
 
 2. Type in that draft and send:
 
@@ -133,7 +133,7 @@ You turn a recorded meeting into decisions and action items, email the follow-up
 
 
 **Swap in:**
-- **Add to project for Add to chat:** keep every recap in one project with **Always Search Documents** on. See [Build a searchable library of customer calls](#build-a-searchable-library-of-customer-calls).
+- **Add to project for Add to chat:** keep every recap in one project with **Always search documents** on. See [Build a searchable library of customer calls](#build-a-searchable-library-of-customer-calls).
 - **The meeting's summary for your own list:** select **Create summary** on the recording for a quick summary with decisions and action items before step 1.
 - **Anyone with the link for People and teams:** for a recap you can share outside the organization.
 - **A Prompt Template for the format:** save your recap format as a Prompt Template and run it in step 2. See [Turn a team form into a published Page](#turn-a-team-form-into-a-published-page).
@@ -221,7 +221,7 @@ A saved Prompt Template turns a few filled-in fields into a full write-up, such 
 
 
 
-1. Select **Prompt Templates** in the sidebar, then **Create Prompt Template** (or **New Prompt** if you already have one). Describe the form in the **AI Prompt Builder** and select **Create Prompt**. Under **Template Design**, make the text:
+1. Select **Prompt templates** in the sidebar, then **New template** (with no templates yet, the page opens there). Describe the form, such as "An incident postmortem from the service, impact, timeline, and root cause", and select **Draft template**; or select **start from scratch**. On the template's page, under **Template design**, make the text:
 
    ```text
    Write an incident postmortem for {{service}}. Impact: {{impact}}. Timeline: {{timeline}}. Root cause: {{root cause}}. Use these sections: Summary, Impact, Timeline, Root cause, What went well, Follow-ups with owners.
@@ -236,7 +236,7 @@ A saved Prompt Template turns a few filled-in fields into a full write-up, such 
 
 
 **Swap in:**
-- **Files in a field:** turn on **Allow File Uploads** for a field under **Field Configuration**, so the form can take a log file or screenshots, which Bearly reads with the form.
+- **Files in a field:** turn on **Allow file uploads** for a field under **Field configuration**, so the form can take a log file or screenshots, which Bearly reads with the form.
 - **Canvas before publishing:** select **Edit in Canvas** under the answer to edit the write-up before you share it.
 - **Email for a Page:** ask Bearly to email the postmortem to the people involved (needs a managed organization).
 
@@ -244,7 +244,7 @@ A saved Prompt Template turns a few filled-in fields into a full write-up, such 
 
 ## Related
 
-- [Projects](https://bearly.ai/docs/manual/projects.md) for project settings, roles, sharing, and Docs & Data
+- [Projects](https://bearly.ai/docs/manual/projects.md) for project settings, roles, sharing, and project files
 - [Organizations](https://bearly.ai/docs/manual/organizations.md) for members, groups, and policies
 - [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md) for recording and transcripts
 - [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) for publishing audiences

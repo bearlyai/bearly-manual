@@ -11,6 +11,8 @@ HTML: [https://bearly.ai/docs/manual/combine/creative-recipes/](https://bearly.a
 
 > Step-by-step recipes that chain Bearly's image, video, text-to-speech, transcription, YouTube, grammar, and Run Python tools to make narrated clips, product visuals, show notes, trailers, quote cuts, and proofread drafts in one chat.
 
+These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
+
 These recipes chain Bearly's image, video, audio, transcription, and writing tools. Each tool saves what it makes as a file in the chat (an image, a video, an audio take, a transcript), and the next tool picks that file up, so you can go from one picture to a narrated clip, or from an episode to show notes and a trailer, without leaving the chat. Each image, video, and audio run uses your plan allowance. For what each block takes in and gives back, see [Building blocks](https://bearly.ai/docs/manual/combine/building-blocks.md).
 
 ## Make a narrated product clip from one image
@@ -148,11 +150,11 @@ From one audio or video file you get a speaker-labeled transcript, show notes wi
 
 
 **Swap in:**
-- **A meeting recording for the episode:** record in **Meetings and Recordings**, select **Add to chat**, and start at step 2 with the transcript file attached (needs **Meetings**).
+- **A meeting recording for the episode:** record in **Meetings**, select **Add to chat**, and start at step 2 with the transcript file attached (needs **Meetings**).
 - **An article:** ask for a 600-word article from the transcript, then send it through `/grammar` to proofread it.
 - **A video from a link:** send `/download-video` with a public video's link to save it in the chat, then transcribe it. YouTube downloads need the desktop app.
 
-**If it stalls:** Files over 400 MB can't be transcribed, so split long recordings. If one of several files fails, Bearly says "Some assets could not be transcribed" and keeps the others.
+**If it stalls:** Split or compress a recording if it is too large to attach or transcribe. If one of several files fails, Bearly says "Some assets could not be transcribed" and keeps the others.
 
 ## Turn one product photo into a banner and a short video
 

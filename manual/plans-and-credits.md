@@ -100,7 +100,7 @@ A Credit Boost buys one-time credits on top of your plan. Use it when one month 
 
 
 
-1. Open the account menu and select **Billing & Pro**, or select **Buy Boost** in **Usage** — this opens **Settings** → **Billing**.
+1. Open the account menu and select **Billing**, or select **Billing** in **Usage** — this opens **Settings** → **Billing**.
 2. Under **Credit Boost**, pick an amount — each option shows the credits you get and the price you pay before you check out.
 3. Complete checkout, then open **Usage** — **Boost remaining** shows the new balance. In **Billing**, the **Credit Boost** card shows it as "_amount_ remaining".
 
@@ -112,14 +112,13 @@ A Credit Boost buys one-time credits on top of your plan. Use it when one month 
 
 ## The Billing pane
 
-Open it from the account menu with **Billing & Pro**, or from **Settings** → **Billing**. It shows, in order: seat cards if an organization gives you a seat, the **Current Plan** card, **Credit Boost** on eligible plans, and the plan picker.
+Open it from the account menu with **Billing**, or from **Settings** → **Billing**. It shows, in order: seat cards if an organization gives you a seat, the **Current Plan** card, **Credit Boost** on eligible plans, and the plan picker.
 
 ### Current Plan
 
 The card shows your plan badge and, when a cancellation is scheduled, **Cancels on** with the date. It offers these buttons, and what each one does depends on where you bought the plan (see the table below):
 
-- **Manage Account** — payment method and account details.
-- **Invoices** — past invoices.
+- **Manage billing** — payment method, account details, and past invoices.
 - **Restore** — re-checks your subscription, for example after buying on another device.
 - **Cancel** — stops renewal. Shown on a paid plan with no cancellation scheduled.
 - **Reactivate** — undoes a scheduled cancellation. An organization seat shows **Reinstate** instead.
@@ -130,7 +129,7 @@ Choose **Monthly** or **Yearly**, then compare the cards for **Pro**, **Analyst*
 
 ### Actions by where you bought the plan
 
-| Bought through | Change plan | Cancel | Manage Account and Invoices | Restore |
+| Bought through | Change plan | Cancel | Manage billing | Restore |
 | --- | --- | --- | --- | --- |
 | The web | Opens a secure billing page | **Cancel** opens the billing page's cancel flow. The plan stays until the end of the period. | Open the billing page | Refreshes your plan. If none is found: "No subscription found for this account". Sign in with the account that has the subscription. |
 | The iOS App Store | Purchase in the iOS app. Bearly shows "Setting up your pro account..." while it confirms. | In the iOS app, opens Apple's subscription management | In the iOS app, open Apple's subscription management | Checks Apple for your purchase |
@@ -168,7 +167,7 @@ If you subscribed in the iOS app, cancel from the iOS app. On other devices, Bea
 
 Paid plans get **Settings** → **Usage**. Free accounts don't have this pane.
 
-**Current Period** shows your plan badge, the percentage used, and when credits reset ("Credits reset in _N_ days"). It also shows **Used this month**, **Monthly limit**, **Today**, and **Boost remaining** when you have a boost. **Manage** and **Buy Boost** both open **Billing**.
+**Current Period** shows your plan badge, the percentage used, and when credits reset ("Credits reset in _N_ days"). It also shows **Used this month**, **Monthly limit**, **Today**, and **Boost remaining** when you have a boost. A **Billing** button opens **Settings** → **Billing**.
 
 **Usage by service** lists the models and paid data tools you used in a month, with **Service**, **Calls**, and **Cost** columns and a **Total** row. Paid data tools are named by what they did, such as "Maps · place search" or "Weather · daily forecast". Use the month arrows to go back as far as the month you joined. An empty month reads "No usage this month."
 

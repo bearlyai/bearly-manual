@@ -11,14 +11,16 @@ HTML: [https://bearly.ai/docs/manual/troubleshooting/](https://bearly.ai/docs/ma
 
 > What a Bearly message or symptom means and what to do about it — upload and PDF password errors, failed answers, a paused queue, usage limits and out-of-credits notices, hidden models, missing features, desktop-only tools, locked encrypted chats, routines that didn't run, connectors, email and text, Deep Research, Full access, Chrome control, voice, dictation, meetings, sharing, and sign-in.
 
-Find the message or symptom you see, then follow the fix. Text in quotes is exactly what Bearly shows; words in italics stand for a name or number that changes. If nothing here matches, select **Get help** under a failed answer, use **Give Feedback** in the account menu, or email support@bearly.ai.
+These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
+
+Find the message or symptom you see, then follow the fix. Text in quotes is exactly what Bearly shows; words in italics stand for a name or number that changes. If nothing here matches, select **Get help** under a failed answer, use **Give feedback** in the account menu, or email support@bearly.ai.
 
 ## Files and attachments
 
 | You see | Why | What to do |
 |---|---|---|
 | "Unable to upload and process." on a file | The upload or the file's analysis didn't finish | Remove the file with the **×** on it, then attach it again |
-| A file is rejected as too large | Files can be up to 300 MB each | Make it smaller, for example by splitting a long PDF or exporting a shorter video, then attach it again |
+| A file is rejected as too large | Chat attachments can be up to 1000 MB each | Make it smaller, for example by splitting a long PDF or exporting a shorter video, then attach it again |
 | "Password required." and "Enter the PDF password. Bearly uses it once to unlock this file." | The PDF is password-protected | Type the password in **PDF password** and select **Unlock and add** |
 | "That password didn't work." | The password was wrong | Type it again. Remove the file to cancel |
 | "Unable to unlock this PDF." | Bearly couldn't unlock the file | Remove it, save an unlocked copy from an app that opens the PDF, and attach that copy |
@@ -26,7 +28,7 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 | No **Attach files** in the **+** menu, no **Take photo**, and dragging files does nothing | Your organization turned off **File uploads** | Ask your organization's admin |
 | "File uploads are disabled by your organization." or "Project files are disabled by your organization." | An organization setting blocks uploads or project files | Ask your organization's admin |
 | "You need writer access to add files to this Project." | Your role in the project can't add files | Ask the project's owner for writer access |
-| "_File_ is too large to transcribe. Max size: 400 MB" | Transcribe takes files up to 400 MB | Split or compress the recording, then transcribe each part |
+| A recording is too large to transcribe | The recording exceeds an attachment or transcription processing limit | Split or compress the recording, then transcribe each part |
 | "Some assets could not be transcribed" | One or more files in the request failed | Ask Bearly to transcribe the files that failed again |
 | Edit Video turns down your clip | Edit Video takes a 3 to 10-second clip under 50 MB | Trim or compress the clip, then ask again |
 
@@ -41,6 +43,8 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 | "Queue paused." | You pressed **Stop** twice within 2 seconds | Select **Send now** on a waiting message to restart it |
 | "Queue full — send, edit, or remove a waiting message first" and **Queue is full** | The queue holds up to 4 waiting messages | Use **Send now**, **Edit queued message**, or **Remove from queue** on one |
 | "Clear the composer to edit this message" | You can only pull a queued message back into an empty composer | Clear the composer, then select **Edit queued message** |
+| Only **Stop** and **Send** while Bearly works, and **Send** reads "Send after this reply" | This answer can't take a new message while it runs, so **Send** waits for it to finish | Let it finish, or select **Stop** and then send |
+| A message you sent shows **Sending…** above the composer | Bearly reads a message added to a running answer once its current tool finishes | Wait, or select **Cancel sending** to move it back into the queue |
 | Bearly stops searching the web partway through an answer | Web Search runs at most twice per answer | Ask a follow-up, and the next answer can search again |
 | An answer has no web sources | The chat's **Web** setting is **Off**, which also removes `/web-search` | Open the sliders button and set **Web** to **Auto** |
 | Bearly seems to forget the start of a long chat | The default **History** mode, **Chat (Dynamic)**, shortens older messages | Open the sliders button → **History** → **Agentic (Compaction)**, or restate the key facts. "Conversation compacted so you can keep going" is normal in that mode |
@@ -72,13 +76,13 @@ See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits
 
 | You see | Why | What to do |
 |---|---|---|
-| "ZDR on · Some models hidden" at the top of the model picker | **Zero Data Retention only** is on, so only zero-retention models show | Pick a listed model, or select **Change** to open **Privacy & Security** and turn the setting off |
+| "ZDR on · Some models hidden" at the top of the model picker | **Zero Data Retention only** is on, so only zero-retention models show | Pick a listed model, or select **Change** to open **Privacy and security** and turn the setting off |
 | "ZDR on until settings sync · Some models hidden", or "Settings sync is unavailable. Zero Data Retention routes remain required until Bearly reconnects." | Bearly can't load your settings, so it keeps zero-retention models only to be safe | Check your connection and wait for Bearly to reconnect |
 | "Managed account · Some models hidden" | Your organization's policy limits which models you can use | Pick a listed model, or ask your admin |
 | "_Model_ needs the _Plan_ plan or higher. Upgrade to use this model and unlock the rest of its tier." | The model is above your plan | Upgrade from the **Billing** pane that opens, or choose another model |
 | A model marked **Unavailable** | The model is suspended | Select **Read the announcement** for details, and choose another model |
 | The chat answers with a different model than the one you picked | Your choice isn't allowed right now (organization policy, **Zero Data Retention only**, or plan), so Bearly uses the first available model in the list without changing your saved choice | Pick a model that's allowed |
-| No model button in the composer, and no **Model** in **This Chat** | Your organization or project fixed the model | Ask the project owner or your admin |
+| No model button in the composer, and no **Model** in **This chat** | Your organization or project fixed the model | Ask the project owner or your admin |
 
 See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
 
@@ -100,7 +104,7 @@ Messages that mean an admin turned something off:
 | "Routines are turned off by your team's policy." | Ask your admin to allow **Routines** |
 | "Disabled by policy." on a project setting | Ask your admin |
 | "Dictation is disabled by your team" or "Your team has disabled audio transcription." | Ask your admin to allow **Cloud dictation** |
-| "Disabled by your workspace" in **Chrome Extension** settings | Ask your admin to allow **Chrome extension browser** |
+| "Disabled by your workspace" in **Chrome extension** settings | Ask your admin to allow **Chrome extension browser** |
 | "Your team policy does not allow a publishing audience." | Ask your admin to allow **Public links** or **Share with people and teams** |
 | "Member lookup is disabled by an organization admin." | Ask an admin to change **Member directory** |
 | "Your organization doesn't allow new end-to-end encrypted chats. Your existing ones stay available." | Ask your admin to allow **End-to-end encryption** |
@@ -110,13 +114,13 @@ Other chats that look broken:
 | You see | Why | What to do |
 |---|---|---|
 | A chat with no message box or message controls | You can only read this chat, or its project is locked with a password | Ask the project owner for more access, or unlock the project with its password |
-| "Default settings are not available in project chats. Use Project Settings to configure." | Project chats use the project's settings, not **New Chats** | Change the defaults in the project's **Settings** |
+| "Default settings are not available in project chats. Use Project Settings to configure." | Project chats use the project's settings, not **New chats** | Change the defaults in the project's **Settings** |
 
 ## Desktop-only features on the web or a phone
 
 | You see | Why | What to do |
 |---|---|---|
-| "Use the desktop app" or "_Feature_ needs the Bearly desktop app." with **Get Bearly** | The feature runs only in the desktop app | Install the desktop app from **Settings** → **Get Desktop App**, then use the feature there |
+| "Use the desktop app" or "_Feature_ needs the Bearly desktop app." with **Get Bearly** | The feature runs only in the desktop app | Install the desktop app from **Settings** → **Get desktop app**, then use the feature there |
 | "Use Bearly on desktop" or "_Feature_ needs Bearly on a Mac, Windows, or Linux desktop." | Same, on a phone, a tablet, or the iOS app | Open Bearly on a computer with the desktop app |
 | **Work locally** opens the download pane: "Work locally lets Bearly read, edit, and run files in a folder you choose — available on the Bearly desktop app." | Local files need the desktop app | Install the desktop app |
 | "npm MCP servers require the Bearly desktop app." or **Desktop required** | npm connector servers run on your computer | Add the server in the desktop app |
@@ -134,12 +138,12 @@ Signing in isn't enough to open your encrypted chats. A new device needs approva
 
 ### "Approve this device to open this chat"
 
-You see a lock on encrypted chats in the sidebar, or the banner "Encrypted chats are locked on this device". This browser or app hasn't been approved yet. Browsers and apps need separate approval, even on the same computer, and clearing a browser's site data removes its approval.
+You see a lock on encrypted chats in the sidebar, **Encrypted chats locked** at the top of the sidebar, or "Encrypted chats are locked on this device" under the new-chat composer. This browser or app hasn't been approved yet. Browsers and apps need separate approval, even on the same computer, and clearing a browser's site data removes its approval.
 
 
 
-1. On the locked device, select **Approve** on the banner, or **Approve this device** in **Settings** → **Privacy & Security** — this starts an approval request, which lasts ten minutes.
-2. On a device that's already approved, open **Settings** → **Privacy & Security** and select **Approve a device** — you can now pick the new device.
+1. On the locked device, select **Approve** next to either message, or **Approve this device** in **Settings** → **Privacy and security** — this starts an approval request, which lasts ten minutes.
+2. On a device that's already approved, open **Settings** → **Privacy and security** and select **Approve a device** — you can now pick the new device.
 3. Choose the new device and enter the **Verification code** the new device shows — the new device can then open your encrypted chats. If the approved device is a phone, select "Using an approved phone? Scan instead" on the new device, then use **Scan QR code** under **Approve a device** in Bearly on the phone.
 4. With no approved device at hand, use your recovery phrase or a saved passkey on the new device instead.
 
@@ -154,7 +158,7 @@ You see a lock on encrypted chats in the sidebar, or the banner "Encrypted chats
 | "Files over 25 MB can't be shared from an encrypted chat yet." | Publishing from an encrypted chat has smaller limits | Share a smaller file, or publish from a standard chat |
 | The desktop app stays locked on encrypted chats | Desktop versions 5.2.8 and earlier can't hold the device key | Update the desktop app |
 
-**Lost access?** Lose every approved device, your recovery phrase, and any saved passkey, and nobody can recover your encrypted chats, including Bearly. Keep your recovery phrase somewhere safe. If you've lost it but still have an approved device, select **Replace recovery phrase** in **Settings** → **Privacy & Security** and save the new one; the old phrase stops working. Where it's offered, **Store a passkey in my keychain** adds a passkey as a second way back in. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
+**Lost access?** Lose every approved device, your recovery phrase, and any saved passkey, and nobody can recover your encrypted chats, including Bearly. Keep your recovery phrase somewhere safe. If you've lost it but still have an approved device, select **Replace recovery phrase** in **Settings** → **Privacy and security** and save the new one; the old phrase stops working. Where it's offered, **Store a passkey in my keychain** adds a passkey as a second way back in. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
 
 ## Routines
 
@@ -183,12 +187,12 @@ After the computer wakes or the app reopens, Bearly runs at most one catch-up fo
 | **Full access needs review** and "Paused for permission review. Review Full access or choose Standard below, then resume the schedule." | The routine changed after you turned on Full access, or that approval no longer holds on this device | Select **Review full access** or **Use Standard**, then **Resume** |
 | "Runs go without a browser because the instructions or these settings changed after you approved them. Save to approve them again." | Browser access is tied to the exact instructions you approved | Select **Save** and approve again |
 | "It stopped at _site_ because that site isn't approved for this routine. To allow more, edit the routine's browser access." | Runs use only the exact sites you listed; a subdomain is a separate site | Add the site under **Browser access** → **Sites** (up to 20) |
-| "Bearly Browser is off in this device's settings, so this run didn't use it. Turn on Enable Browser and Allow chats to use Browser in Settings." | The device's browser settings are off | **Settings** → **Desktop** → **Browser**: turn on **Enable Browser** and **Allow chats to use Browser** |
+| "Bearly Browser is off in this device's settings, so this run didn't use it. Turn on Enable Browser and Allow chats to use Browser in Settings." | The device's browser settings are off | **Settings** → **Browser**: turn on **Enable Browser** and **Allow chats to use Browser** |
 | "Routines can't use Chrome yet, so this run didn't use it. Use Bearly Browser instead." | Routines can't control Chrome | Turn on **Bearly Browser** under the routine's **Browser access** |
 | "Your organization doesn't allow Routines to use Bearly Browser, so this run didn't use it." | **Browser in Routines** is off for you | Ask your admin |
 | "Routines are a Pro feature." | Routines need Pro or higher | Select **Go Pro** |
 | A routine can't run Python, make a chart, or generate images | Scheduled runs have a smaller toolset | Have it write a CSV or an HTML Page, or continue in the routine's chat afterwards. See [Building blocks](https://bearly.ai/docs/manual/combine/building-blocks.md#routines-run-a-smaller-toolset) |
-| No email or text after a run | **Email each result** or **Text each result** is off, texts need a verified phone, or the notification filter held it back ("Stayed quiet — nothing met your bar") | Turn on the delivery you want, verify your phone in **Settings** → **Phone & SMS**, or loosen the **Notification filter**. Every run is still in the routine's chat |
+| No email or text after a run | **Email each result** or **Text each result** is off, texts need a verified phone, or the notification filter held it back ("Stayed quiet — nothing met your bar") | Turn on the delivery you want, verify your phone in **Settings** → **Phone and SMS**, or loosen the **Notification filter**. Every run is still in the routine's chat |
 | You can't turn on another routine | Up to 10 routines can be active | Pause or delete one |
 
 See [Routines](https://bearly.ai/docs/manual/capabilities/routines.md).
@@ -210,9 +214,9 @@ See [Connectors and skills](https://bearly.ai/docs/manual/capabilities/connector
 
 | You see | Why | What to do |
 |---|---|---|
-| A **Set up text messages** card instead of a text | No verified phone number | **Settings** → **Phone & SMS** → **Set up text messages**, and add a US or Canadian mobile number |
-| **Action needed** and **Verify your phone again** | Bearly needs you to accept the current texting terms | Follow the steps in **Settings** → **Phone & SMS** |
-| Texts stopped arriving | Texts were turned off, for example by replying STOP | Verify your number again in **Settings** → **Phone & SMS** |
+| A **Set up text messages** card instead of a text | No verified phone number | **Settings** → **Phone and SMS** → **Set up text messages**, and add a US or Canadian mobile number |
+| **Action needed** and **Verify your phone again** | Bearly needs you to accept the current texting terms | Follow the steps in **Settings** → **Phone and SMS** |
+| Texts stopped arriving | Texts were turned off, for example by replying STOP | Verify your number again in **Settings** → **Phone and SMS** |
 | A routine sent no more texts today | Routines can send up to 3 texts in 24 hours | Use **Email each result** for more updates |
 | An email to a teammate wasn't sent | Bearly emails teammates only in a managed organization, found by their exact name or address | Use their exact name or email, or have the email sent to you and forward it |
 | An email with attachments wasn't sent | Attachments are limited to 10 files, 20 MB each and 20 MB in total, and an email whose attachments all fail isn't sent | Attach fewer or smaller files, or share a large file with **Share file** instead |
@@ -258,15 +262,15 @@ See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
 
 | You see | Why | What to do |
 |---|---|---|
-| "Chrome extension not connected" in **Settings** → **Desktop** → **Chrome Extension** | Chrome control needs the Bearly extension in Chrome | Select **Install Chrome extension**, then keep Chrome and the desktop app open until it says "Connected to Chrome". The extension doesn't need its own sign-in for this |
+| "Chrome extension not connected" in **Settings** → **Chrome extension** | Chrome control needs the Bearly extension in Chrome | Select **Install Chrome extension**, then keep Chrome and the desktop app open until it says "Connected to Chrome". The extension doesn't need its own sign-in for this |
 | "Finishing secure connection…" | Pairing is in progress | Wait; the status updates on its own |
 | **Update Bearly** in the Chrome pane | This desktop version can't manage the connection | Update the desktop app |
 | Chrome steps fail in a chat with Full access, and Bearly says the extension needs an update | The extension is too old for Full access | Update the extension in Chrome, or switch the chat to **Standard** |
 | Chrome's debugger banner stays on after the chat ends | Finishing or closing a chat doesn't detach Bearly from Chrome tabs | Ask Bearly to detach from the tab, or quit Chrome or the desktop app |
 | A Chrome step fails | The action didn't complete, often because Bearly isn't attached to that tab | Ask Bearly to attach to the tab again, then retry |
 | "Browser can keep up to eight tabs open." | Bearly Browser holds up to 8 tabs across chats | Close tabs you don't need |
-| No **Browser** pane under **Settings** → **Desktop** | Your organization turned off **Browser** | Ask your admin |
-| Bearly Browser isn't signed in to a site you use | Bearly Browser keeps its own sign-ins | Sign in inside Bearly Browser, or use **Import browser cookies** in **Settings** → **Desktop** → **Browser** |
+| No **Browser** pane under **Settings** → **Desktop app** | Your organization turned off **Browser** | Ask your admin |
+| Bearly Browser isn't signed in to a site you use | Bearly Browser keeps its own sign-ins | Sign in inside Bearly Browser, or use **Import browser cookies** in **Settings** → **Browser** |
 | "Computer Use needs Accessibility and Screen Recording access. Open System Settings → Privacy & Security and enable Bearly in Accessibility and Screen Recording, then try again." The message can name only one of them | macOS hasn't granted Bearly those permissions | Turn on Bearly in each place the message names, then ask again |
 | "Computer Use is already working on another task." | One Computer Use task runs per chat | Wait, or select **Stop** on the **Computer** chip |
 | **Finish setting up Computer Use** on Windows | The optional Windows helper isn't installed | Select **Finish setup** and approve as an administrator, or skip it |
@@ -326,9 +330,9 @@ See [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canv
 |---|---|---|
 | "Unarchive this chat before deleting it." or "Delete · unarchive first" | Archived chats can't be deleted | Select **Unarchive**, then **Delete** |
 | A chat won't move into a project | Chats can't move into an archived project | Unarchive the project first |
-| A project's chats are read-only and its **Settings** asks for a password | The project is locked with a password | Enter the project's password. **Lock all data** in **Settings** → **Account** locks every password-protected project again |
+| A project's chats are read-only and its **Settings** asks for a password | The project is locked with a password | Enter the project's password. **Lock all data** in **Settings** → **Profile** locks every password-protected project again |
 | "Only owners can manage encryption." | Only a project's owners can change its password | Ask the owner |
-| "Only project writers and owners can modify shared project settings." | Your role can't change shared settings | Use **Personal Chat Settings**, or ask the owner |
+| "Only project writers and owners can change shared project settings." | Your role can't change shared settings | Use **Your chat settings**, or ask the owner |
 
 See [Projects](https://bearly.ai/docs/manual/projects.md).
 

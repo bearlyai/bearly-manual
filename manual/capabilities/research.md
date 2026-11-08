@@ -11,6 +11,8 @@ HTML: [https://bearly.ai/docs/manual/capabilities/research/](https://bearly.ai/d
 
 > Which Bearly research tool fits a job, and how to start, steer, and limit Web Search, Read Site, Image Search, Deep Research, Scholar, Council of Experts, Best Pick, People Search, SEO data, Domain research, Maps, Weather, and X, with plans, admin controls, Routines support, and tested combinations.
 
+These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
+
 Bearly can search the web, read a page or file at a link, run a long investigation that ends in a cited report, read academic papers, put one question to several AI models, pick a product to buy, research a person, pull search-engine data, check domain names, plan routes, and read the weather. Most of these start from an ordinary request. This page says which tool fits which job, how to start each one on purpose, and what each one needs.
 
 ## Which research tool for which job
@@ -48,7 +50,7 @@ These tools run in Bearly chats in the web app, phone browsers, the desktop app,
 
 
 > **Note — Zero Data Retention only and research tools**
-> Web search sends the search provider your query, never your name, account, or IP address. Image search runs on a provider that keeps nothing after it answers. **Zero Data Retention only** (**Settings** → **Privacy & Security**) is about AI models. It doesn't cover the services that Web Search, Deep Research, People Search, Scholar's journal-site search, and Read Site use; those still reach their usual services. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
+> Web search sends the search provider your query, never your name, account, or IP address. Image search runs on a provider that keeps nothing after it answers. **Zero Data Retention only** (**Settings** → **Privacy and security**) is about AI models. It doesn't cover the services that Web Search, Deep Research, People Search, Scholar's journal-site search, and Read Site use; those still reach their usual services. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
 
 
 ## Web Search
@@ -71,11 +73,11 @@ Web Search looks things up on the public web and answers with numbered links to 
 
 3. To keep the web out of a chat, open the sliders button in the composer, then **Search** → **Web** → **Off** — this removes Web Search, Read Site, and Image Search from that chat until you set it back to **Auto**. Scholar has its own switch, and `/deep-research` works either way.
 
-4. To change the starting setting for chats you create later, open the sliders button → **Chat Settings** → **New Chats** → **Web Search** — chats in a project follow the project's settings instead. An organization can preset or lock this setting.
+4. To change the starting setting for chats you create later, open the sliders button → **Chat Settings** → **New chats** → **Web Search** — chats in a project follow the project's settings instead. An organization can preset or lock this setting.
 
 
 
-**What you get:** an answer with numbered citations in the order they're first used; select a number to open its source. A collapsible step shows the search. When pictures would help and Image Search is allowed, a gallery can appear with the results.
+**What you get:** an answer with numbered citations in the order they're first used; select a number to open its source. The search itself is one of the answer's **Steps**. When pictures would help and Image Search is allowed, a gallery can appear with the results.
 
 **Limits:** one search runs up to eight queries at once and returns at least two results per query. An answer can search at most twice. A query that fails isn't retried. For prices and stock, Bearly matches the exact model or variant, keeps price, shipping, and stock separate, states the currency, and calls a price it saw only in a search snippet unverified.
 
@@ -173,7 +175,7 @@ Deep Research is a long research run that ends in a cited report. You review and
 
 5. Select **Run Research** — this is your confirmation. There is no cancel button once a run starts. If your plan doesn't include the tier, the button opens the upgrade instead.
 
-6. Read the report — numbered citations and figures, a **Sources** list, and **Show research steps** to see what it did. **View PDF** opens the PDF, and **Sent to your inbox** shows when the email went out.
+6. Read the report — numbered citations and figures, a **Sources** list that starts folded to one line with its count (open it for the first four and **Show all** for the rest), and **Show research steps** to see what it did. **View PDF** opens the PDF, and **Sent to your inbox** shows when the email went out.
 
 
 
@@ -201,7 +203,7 @@ Scholar searches an index of academic papers from preprint servers and the biome
    What does the research say about whether sleep deprivation impairs working memory in adults?
    ```
 
-2. Watch the steps: **Searching papers**, **Found** with a count, then **Reading paper** as Bearly pulls the passages behind its main claims.
+2. Watch the line under the answer — it says what Bearly is doing as it searches papers and reads the passages behind its main claims. Select it to see each search and read in the answer's **Steps**.
 
 3. Follow up on one paper — Bearly can read it for a specific claim, or find papers that are similar, that cite it, or that it cites.
 
@@ -213,7 +215,7 @@ Scholar searches an index of academic papers from preprint servers and the biome
 
 
 
-**What you get:** superscript citations; hover one to see the paper, and select it to open the paper. A card under each search, headed with the number of papers found, lists what came back, with each paper's source and link. Papers Bearly read are marked **Read**, with the passage it relied on.
+**What you get:** superscript citations; hover one to see the paper, and select it to open the paper. A card for each search starts folded to one line with the query and the number of papers found; open it to see the first four papers, with each paper's source and link, and **Show all** for the rest. When Bearly reads a paper, the results card quotes a passage it read, when available.
 
 **Limits:** a search returns 8 papers by default and up to 10, and can be narrowed by date range, up to five subject categories, and up to five author surnames. A read returns up to five passages per paper; a related-papers lookup returns up to 10. When the index returns fewer than three papers, or you ask for journal articles only or the newest work, Scholar also searches 20 journal and repository sites. Many biomedical papers are indexed by abstract only, shown as "abstract only". Scholar doesn't report citation counts. Bearly prefers peer-reviewed work over preprints, flags retractions and contradictions, and says when the literature is thin.
 
@@ -514,7 +516,7 @@ You get a cited report, a chart of its key numbers, and a Page you can send to p
 
 You get the strongest study on a question, read in full, with its exact methods and numbers cited to pages.
 
-**Why it works:** Scholar finds and ranks papers and, for open-access papers, returns a link to the PDF. Read Site saves that PDF into the chat as a document, and the document tools read it page by page, so citations open the document at the right page.
+**Why it works:** Scholar finds and ranks papers and, for open-access papers, returns a link to the PDF. Read Site saves that PDF into the chat as a document, and the document tools can search it or read it page by page. Citations open the source document; some open at a matching page, while Read Doc citations open the whole file. With a mouse or trackpad, hover a Read Doc citation to see its page or page range.
 
 **You need:** any plan. Admin controls **Scholar** and **Web**. The chat's **Web** setting on **Auto**. A paper with an open-access PDF.
 

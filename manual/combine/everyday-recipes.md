@@ -11,6 +11,8 @@ HTML: [https://bearly.ai/docs/manual/combine/everyday-recipes/](https://bearly.a
 
 > Step-by-step recipes that chain Bearly's Maps, Weather, Best Pick, YouTube, Scholar, voice calls, text to speech, Run Python, Pages, and email for rides, trips, shopping, learning, reading health research, language practice, and splitting bills.
 
+These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
+
 These recipes use Bearly for plans and decisions outside work: a ride, a day in a new city, a purchase, a lecture, a language, a question about your health. Maps, Weather, YouTube, Scholar, and the **Learning** style work on every plan; Best Pick needs Pro. A plan Bearly makes is a starting point, so check opening hours, prices, and conditions before you go. For what each block takes in and gives back, see [Building blocks](https://bearly.ai/docs/manual/combine/building-blocks.md).
 
 ## Plan a bike ride around the weather
@@ -52,7 +54,7 @@ You get a cycling route with a coffee stop along the way, the afternoon's rain, 
 - **Walking or transit for cycling:** say "walking" or "by transit"; transit routes take an arrival or departure time.
 - **Pollen for air quality:** ask for the pollen forecast with `/pollen` if allergies matter more.
 - **Several starting points:** "My friends start from Mission, Sunset, and Oakland. Who has the shortest ride to the café?" Bearly compares routes from each origin.
-- **A text for the plan:** ask "Text me the plan." Needs a verified phone in **Settings** → **Phone & SMS**.
+- **A text for the plan:** ask "Text me the plan." Needs a verified phone in **Settings** → **Phone and SMS**.
 
 **If it stalls:** If Bearly uses your location, it says when it's estimated from your network rather than your device; name the start point to be exact. Maps and Weather don't run in Routines.
 
@@ -208,7 +210,7 @@ You get a step-by-step explanation of a YouTube lecture, a quiz Page with instan
 
 You get what systematic reviews and trials say about a health question, in plain language with citations, and a list of questions to take to your doctor.
 
-**Why it works:** Scholar searches biomedical and preprint literature, prefers systematic reviews for medical questions, flags retractions and conflicting results, and says when the evidence is thin. The **Papers** card under each search stays in the chat, so you can open the papers behind the plain-language summary.
+**Why it works:** Scholar searches biomedical and preprint literature, prefers systematic reviews for medical questions, flags retractions and conflicting results, and says when the evidence is thin. The paper-results card under each search stays in the chat, so you can open the papers behind the plain-language summary.
 **You need:** Any plan. Any platform. Organization controls: **Scholar** and **Web**.
 
 > **Caution — Information, not medical advice**
@@ -223,7 +225,7 @@ You get what systematic reviews and trials say about a health question, in plain
    /scholar What do systematic reviews and randomized trials say about cognitive behavioral therapy for insomnia compared with sleep medication, over six months or longer?
    ```
 
-   — Bearly answers with superscript citations and a **Papers** card listing the sources.
+   — Bearly answers with superscript citations and a paper-results card listing the sources.
 
 2. Go deeper on the strongest evidence:
 
@@ -239,7 +241,7 @@ You get what systematic reviews and trials say about a health question, in plain
    Explain this in plain language, say where the evidence is weak, and list five questions I could bring to my doctor.
    ```
 
-   — Bearly rewrites the findings from the papers it already read. Open each paper from the **Papers** cards above.
+   — Bearly rewrites the findings from the papers it already read. Open each paper from the paper-results cards above.
 
 
 
@@ -291,7 +293,7 @@ You hold a spoken conversation in another language, then get a list of your mist
 **Swap in:**
 - **Another language or setting:** a job interview in French, a pharmacy visit in Japanese.
 - **A flashcard Page for the list:** ask for a Page that quizzes you on the corrected sentences.
-- **Typed practice for a call:** set **Settings** → **Chats** → **This Chat** → **Language** so Bearly writes its replies in that language.
+- **Typed practice for a call:** set **Settings** → **This chat** → **Language** so Bearly writes its replies in that language.
 
 **If it stalls:** A call ends after 30 seconds of silence. In Firefox the call button says voice is unavailable; use Chrome or the desktop app. If the button is missing, check that your organization allows **Voice**.
 

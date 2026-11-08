@@ -21,13 +21,13 @@ Every term below is written the way the app shows it. Each definition links to t
 
 ## A
 
-**Account menu**: The row at the bottom of the sidebar showing your email, plan, and usage meter. It opens **App Settings**, **Billing & Pro**, **Organizations**, **Give Feedback**, and **Logout**. See [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md#the-account-menu).
+**Account menu**: The row at the bottom of the sidebar showing your email, plan, and usage meter. It opens **Settings**, **Billing**, **Organizations**, **Give feedback**, and **Log out**. See [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md#the-account-menu).
 
 **Agent access**: A managed organization's admin setting that decides which members may turn on **Full access**. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
 **Agentic (Compaction)**: A **History** setting for long chats. When a conversation gets long, Bearly writes a summary of the older part and keeps recent messages word for word, so long tool-heavy work can keep going. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#history-modes).
 
-**Always Search Documents**: A project chat setting that makes every answer in the project search the project's files first. It has no effect in end-to-end encrypted chats. See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md#always-search-documents-projects).
+**Always search documents**: A project chat setting that makes every answer in the project search the project's files first. It has no effect in end-to-end encrypted chats. See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md#always-search-documents-projects).
 
 **Analyst**: A paid plan above Pro that adds Deep Research (Standard) and People Search. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
 
@@ -49,8 +49,6 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Best Pick**: Researches expert reviews, store listings, and owner reviews, then recommends exactly one product to buy, with a plain store link. Pro and higher. See [Research](https://bearly.ai/docs/manual/capabilities/research.md#best-pick).
 
-**Browse files**: The button in the chat header that lists the chat's files under **Uploaded** and **Generated**, plus **Project** in a project chat. See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md#find-files-again-with-browse-files).
-
 **Browser extension**: Bearly's extension for Chrome, where it's listed as Bearly Companion, and Firefox. Its side panel summarizes, explains, and answers questions about the page you're on. In Chrome, it also lets the desktop app control your tabs. See [Get Bearly](https://bearly.ai/docs/manual/get-bearly.md).
 
 **Build on previous runs**: A routine setting that lets each run see earlier runs in the routine's chat. It's on by default. See [Routines](https://bearly.ai/docs/manual/capabilities/routines.md).
@@ -71,13 +69,13 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Command menu**: Opens with <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux) or **…** in the chat header. It holds chat actions such as **New**, **Rename**, **Download as Markdown**, and **New Routine**, and a list for switching chats. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#the-command-menu).
 
-**Composer**: The message box at the bottom of a chat, with its toolbar and the context strip under it. See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md).
+**Composer**: The message box at the bottom of a chat, with its toolbar, the **Send**, **Queue**, and **Stop** buttons, and the context strip at its foot. See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md).
 
 **Computer Use**: In the desktop app, Bearly can look at and control the apps open on your screen to finish a task you approve. Computer use runs on your device; the screenshots you approve go to the model you picked. See [Browser and computer use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#computer-use).
 
 **Connectors**: Services and MCP servers you connect so chats and routines can use their tools. A connector works in a chat only after you turn it on there. See [Connectors and skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md#connectors).
 
-**Context strip**: The row of chips under the message box: project, encryption lock, **Work locally**, **Connectors**, and **Permissions**. See [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md#context-strip).
+**Context strip**: The band at the foot of the message box with the chat's project, encryption lock, **Work locally**, **Connectors**, and **Permissions**. See [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md#context-strip).
 
 **Council of Experts**: `/council` sends one question to 2 to 5 models at once, shows each answer, then combines them into one reply. Pro and higher. See [Research](https://bearly.ai/docs/manual/capabilities/research.md#council-of-experts).
 
@@ -99,8 +97,6 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Dictation**: Speech to text in the message box. Click the microphone, or hold the push-to-talk key (Right Shift by default) while Bearly is focused. It's off until you turn on **Enable dictation**. See [Voice](https://bearly.ai/docs/manual/chat/voice.md#dictation).
 
-**Docs & Data**: A project's files page. Files here are available to every chat in the project. See [Projects](https://bearly.ai/docs/manual/projects.md).
-
 **Document editor**: `/document` creates and edits PDF, Word, PowerPoint, and Excel files, including filling PDF forms and adding tracked changes to .docx files. See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md#document-editor).
 
 ## E
@@ -111,13 +107,15 @@ Every term below is written the way the app shows it. Each definition links to t
 
 ## F
 
+**Files**: The chat header button, with a count, that opens the side panel's **Files** tab: every file in the chat, grouped by day, with **All**, **Uploaded**, **Generated**, and **Project** filters. A project's page also has a **Files** tab for the project's files. See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md#find-files-again-with-files).
+
 **Free**: The plan with no charge. It includes a small daily and monthly allowance, and new chats use Bearly Fast. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
 
 **Full access**: A permission mode for one chat on one device that lets Bearly use your enabled tools without asking each time. It still asks before connecting a new service and before listing, reading, or deleting your chats. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md#full-access).
 
 ## G
 
-**Generated**: The **Browse files** tab for files Bearly made in the chat, such as Pages, CSV files, images, and audio. See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md).
+**Generated**: The filter on the side panel's **Files** tab for files Bearly made in the chat, such as Pages, CSV files, images, and audio. See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md#find-files-again-with-files).
 
 **Get Video**: `/download-video` saves videos from sites such as X as MP4 files in the chat. YouTube links work in the desktop app only. See [Videos and posts](https://bearly.ai/docs/manual/capabilities/videos-and-posts.md).
 
@@ -133,8 +131,6 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Launcher**: The screen a new chat opens on, with a headline, the message box, a project chip, and daily tips. See [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md#the-new-chat-launcher).
 
-**Local Directory Sync**: A project setting in the desktop app that keeps a folder on your computer synced into the project's files. See [Projects](https://bearly.ai/docs/manual/projects.md).
-
 **Local key encryption**: The lock label on new chats when your organization's policy requires local key encryption. You can't switch it off for those chats. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
 
 ## M
@@ -145,7 +141,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **MCP server**: A server that offers tools to AI apps. Add your own as a custom connector, over HTTPS or, in the desktop app, as an npm package. See [Connectors and skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md).
 
-**Meetings and Recordings**: The sidebar page for recording a meeting or voice note, with live and final transcripts, speaker names, and summaries on request. See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
+**Meetings**: The sidebar page, titled **Meetings and recordings**, for recording a meeting or voice note, with live and final transcripts, speaker names, and summaries on request. See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
 
 **Memories**: A chat setting that lets the AI search your past chats with **Recall** when you refer to earlier work. In a project chat you can limit it to **Project Only**. It isn't available in end-to-end encrypted chats. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#memories).
 
@@ -155,7 +151,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Needs attention**: A sidebar chip with a count of other chats that are waiting for your approval or have replies you haven't read. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#needs-attention).
 
-**New Chats**: The settings pane for the defaults new chats start with. Project chats use project settings instead. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#this-chat-and-new-chats).
+**New chats**: The settings pane for the defaults new chats start with. Project chats use project settings instead. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#this-chat-and-new-chats).
 
 **Notification filter**: A routine condition, such as "A competitor ships something new". Every run still lands in the routine's chat; Bearly compares each result with the last one and sends your email or text only when the run meets the condition, fails, or it can't tell, plus a check-in every seventh quiet run. See [Routines](https://bearly.ai/docs/manual/capabilities/routines.md).
 
@@ -169,7 +165,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **People Search**: Identifies one named person after you confirm the right candidate, then builds a cited brief. It also finds people from a description and looks up work emails. Analyst and higher. See [Research](https://bearly.ai/docs/manual/capabilities/research.md#people-search).
 
-**Permissions**: The composer control for this chat's permission mode, **Standard** or **Full access**, and its saved approvals. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md#the-permissions-control).
+**Permissions**: The control at the foot of the composer for this chat's permission mode, **Standard** or **Full access**, and its saved approvals. Also the **Settings** pane with **Start new chats in Full access**. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md#the-permissions-control).
 
 **Personalization**: Context you write about yourself (how to address you, your work, anything else useful), added to your chats only while you have the switch on. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#personalization).
 
@@ -181,13 +177,13 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Pro**: The first paid plan. It adds Routines, Council of Experts, Best Pick, and the choice of voice-call model. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
 
-**Project**: A folder for chats that shares files (**Docs & Data**), instructions, and default settings. You can share a project with people, groups, or a whole organization, and protect it with a password. See [Projects](https://bearly.ai/docs/manual/projects.md).
+**Project**: A folder for chats that shares files, instructions, and default settings. Its page has **Chats**, **Files**, **Sharing**, and **Settings** tabs. You can share a project with people, groups, or a whole organization, and protect it with a password. See [Projects](https://bearly.ai/docs/manual/projects.md).
 
-**Prompt Template**: A saved prompt with fill-in fields. Pick it from the `/` menu under **Skills**, fill in the form, and select **Submit**; the filled form stays in the chat so you can run it again. See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md).
+**Prompt template**: A saved prompt with fill-in fields, made on the **Prompt templates** page. Pick it from the `/` menu under **Skills**, fill in the form, and select **Submit**; the filled form stays in the chat so you can run it again. See [Make a prompt template](https://bearly.ai/docs/manual/chat/compose.md#make-a-prompt-template).
 
 ## Q
 
-**Queue**: Messages you send while Bearly is still answering wait under **Up next** and go out in order. It holds up to 4 and pauses after an error or at a usage limit. See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-is-working).
+**Queue**: The button that holds a message you write while Bearly is answering under **Up next**, to go out after the answer finishes. Queued messages go out in order. It holds up to 4 and pauses after an error or at a usage limit. See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-is-working).
 
 ## R
 
@@ -201,7 +197,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Recall**: The tool **Memories** uses to search your past chats. While **Memories** is on, type `/recall` to make it search now. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#memories).
 
-**Recommended**: The **New Chats** model choice that follows Bearly's default: Bearly Fast on Free, Bearly Pro on paid plans until you've used 95% of your allowance, then Bearly Fast. See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
+**Recommended**: The **New chats** model choice that follows Bearly's default: Bearly Fast on Free, Bearly Pro on paid plans until you've used 95% of your allowance, then Bearly Fast. See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
 
 **Recovery phrase**: The 24 words you save when you set up end-to-end encryption. It opens your encrypted chats on a new device. Lose every approved device, your recovery phrase, and any saved passkey, and nobody can recover your encrypted chats, including Bearly, so save it. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
 
@@ -219,9 +215,13 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Scholar**: Searches academic papers, reads passages, and cites them with superscript markers. It runs when **Scholar** is **Auto**, or when you type `/scholar`. See [Research](https://bearly.ai/docs/manual/capabilities/research.md#scholar).
 
+**Send (while Bearly works)**: Adds your message to the answer that's running; Bearly reads it once any running tool finishes. When an answer can't take a message, **Send** waits for it to finish instead. See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-is-working).
+
 **Search chats and files**: Finds messages and files across your chats by meaning and exact words. Open it with <kbd>⌘</kbd> <kbd>F</kbd> (<kbd>Ctrl</kbd> <kbd>F</kbd> on Windows and Linux) or the sidebar magnifier. It leaves out end-to-end encrypted chats. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#search-chats-and-files).
 
 **Share**: Turns the substance of a conversation, or one file, into a Page with artwork and a link preview. You review it, then publish it to a link. See [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md#share-and-publish-a-page).
+
+**Side panel**: The panel to the right of a chat where files, previews, Canvas, and an answer's **Steps** open as tabs. See [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md#the-side-panel).
 
 **Skill**: A packaged set of instructions, with optional files and scripts, that Bearly loads when a task calls for it. Install skills in the desktop app from **Settings** → **Skills**; **Visualize** and **Bearly AI Models** are built in. See [Connectors and skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md#skills).
 
@@ -233,13 +233,17 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Standard retention**: What the model picker's **Standard** badge means: the model's main route has no verified zero-data-retention guarantee. See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
 
+**Steps**: A side panel tab listing everything one answer did: thinking, each tool call with its input and result, and how long each took. Open it from the line under an answer, such as "Worked 28s · 4 steps". See [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md#the-side-panel).
+
+**Sync a folder**: A project's **Files** tab option in the desktop app that keeps a folder on your computer copied into the project's files. See [Projects](https://bearly.ai/docs/manual/projects.md#sync-a-folder).
+
 ## T
 
 **Temperature**: How varied answers are, from 0 to 2: **Factual** (0.5), **Default** (1), or **Creative** (1.5). Above 1.5, output can become incoherent. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#temperature).
 
-**Thinking**: Collapsible steps in an answer that show a model's reasoning. See [Work with answers](https://bearly.ai/docs/manual/chat/answers.md#thinking-steps).
+**Thinking**: A model's reasoning before it answers. While an answer runs, the line under it reads "Thinking"; the reasoning itself is in the answer's **Steps**. See [Work with answers](https://bearly.ai/docs/manual/chat/answers.md#thinking-steps).
 
-**This Chat**: The settings pane for the open conversation only. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#this-chat-and-new-chats).
+**This chat**: The settings pane for the open conversation only. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#this-chat-and-new-chats).
 
 **Timeline rail**: A row of ticks on the right edge of wide windows, one per prompt, for jumping around a long chat. See [Work with answers](https://bearly.ai/docs/manual/chat/answers.md#move-around-a-long-chat).
 
@@ -253,7 +257,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Up next**: The queue of messages waiting to send. See **Queue**.
 
-**Usage meter**: The bar in the account menu showing how much of your allowance you've used. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
+**Usage meter**: The percentage on the account row at the bottom of the sidebar showing how much of your allowance you've used. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
 
 ## V
 
@@ -277,7 +281,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **ZDR**: Short for zero data retention. In the model picker, the **ZDR** badge marks zero-retention models. See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
 
-**Zero Data Retention only**: An account setting in **Settings** → **Privacy & Security**. Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. It applies to chat models. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md#zero-data-retention-only).
+**Zero Data Retention only**: An account setting in **Settings** → **Privacy and security**. Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. It applies to chat models. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md#zero-data-retention-only).
 
 ## Continue through the documentation
 

@@ -19,7 +19,7 @@ There is no Android app. On Android, use the web app in your phone's browser.
 |---|---|---|
 | Web app | Bearly in a desktop browser | Go to `https://bearly.ai/dashboard` and sign in |
 | Phone browser | The same web app on a phone or tablet, including Android | Open `https://bearly.ai/dashboard` in your phone's browser |
-| Desktop app | Bearly for Mac, Windows, and Linux, plus local and browser tools | **App Settings** → **Get Desktop App**, or `bearly.ai/download/mac`, `/windows`, or `/linux` |
+| Desktop app | Bearly for Mac, Windows, and Linux, plus local and browser tools | **Settings** → **Get desktop app**, or `bearly.ai/download/mac`, `/windows`, or `/linux` |
 | iOS app | Bearly for iPhone and iPad (iOS 17 or later) | Search for Bearly in the App Store |
 | Browser extension | **Bearly Companion** for Chrome: page summaries in a side panel, and the link that lets the desktop app control Chrome | Chrome Web Store, or **Install Chrome extension** in the desktop app |
 
@@ -34,7 +34,7 @@ Features that need your computer show a prompt instead of failing. For example, 
 
 ## Phone browsers
 
-On a phone or a narrow window, the sidebar becomes a drawer: select **Open sidebar** to show it, and it closes when you pick a chat. Everything in the web app works except the desktop-only features, which show **Use Bearly on desktop**.
+On a phone or a narrow window, the sidebar becomes a drawer: select **Show sidebar** to open it, and it closes when you pick a chat or press <kbd>Esc</kbd>. Everything in the web app works except the desktop-only features, which show **Use Bearly on desktop**.
 
 **Use it when:** you're on Android, or on an iPhone without the app.
 **You need:** a current mobile browser.
@@ -55,7 +55,7 @@ The desktop app is Bearly in its own window, plus the tools that work on your co
 
 
 
-1. In the web app, open the account menu at the bottom of the sidebar, select **App Settings**, then **Get Desktop App** and **Download for macOS**. You can also go to `bearly.ai/download/mac`.
+1. In the web app, open the account menu at the bottom of the sidebar, select **Settings**, then **Get desktop app** and **Download for macOS**. You can also go to `bearly.ai/download/mac`.
 2. Open the downloaded `.dmg` and drag **Bearly** into **Applications** — Bearly needs to run from Applications. If you open it from somewhere else, it offers **Move to Applications**.
 3. Open Bearly and sign in.
 
@@ -66,7 +66,7 @@ The desktop app is Bearly in its own window, plus the tools that work on your co
 
 
 
-1. In the web app, open **App Settings** → **Get Desktop App** → **Download for Windows**, or go to `bearly.ai/download/windows`.
+1. In the web app, open **Settings** → **Get desktop app** → **Download for Windows**, or go to `bearly.ai/download/windows`.
 2. Open the installer and follow the steps — it installs for your user account by default; you can choose to install it for everyone on the PC.
 3. Open Bearly and sign in.
 
@@ -77,7 +77,7 @@ The desktop app is Bearly in its own window, plus the tools that work on your co
 
 
 
-1. In the web app, open **App Settings** → **Get Desktop App** → **Download for Linux**, or go to `bearly.ai/download/linux`. This is an AppImage for x64 computers.
+1. In the web app, open **Settings** → **Get desktop app** → **Download for Linux**, or go to `bearly.ai/download/linux`. This is an AppImage for x64 computers.
 2. Mark the AppImage as executable if your system asks, then open it.
 3. Sign in.
 
@@ -88,20 +88,20 @@ The desktop app is Bearly in its own window, plus the tools that work on your co
 
 ### What the desktop app adds
 
-- **Work locally** — Bearly reads, edits, and runs files in a folder you pick, with your approval. The **Get Desktop App** pane calls this Cowork. See [Let Bearly use a browser, your files, and your computer](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md).
+- **Work locally** — Bearly reads, edits, and runs files in a folder you pick, with your approval. The **Get desktop app** pane calls this Cowork. See [Let Bearly use a browser, your files, and your computer](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md).
 - **Bearly Browser** — a separate browser inside the app that chats can work in. Same page.
 - **Control Chrome** — Bearly works in your everyday Chrome tabs through the Bearly Companion extension. Same page.
 - **Computer Use** — Bearly clicks and types in the apps on your screen after you approve the task. Same page.
 - **Installed skills and skill scripts**, and **npm MCP servers**. See [Connect apps and add skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md).
 - **Running routines.** You can create routines anywhere, but they run only in the desktop app, on the device they're installed on, while it's open. See [Automate with Routines](https://bearly.ai/docs/manual/capabilities/routines.md).
 - **Online meeting** recording with computer audio and your microphone, on Windows and on macOS 13 or later. Linux records your microphone only. See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
-- **Local Directory Sync** for projects, and saving videos and transcripts over your own connection. See [Projects](https://bearly.ai/docs/manual/projects.md) and [Videos and posts](https://bearly.ai/docs/manual/capabilities/videos-and-posts.md).
+- **Sync a folder** for projects, and saving videos and transcripts over your own connection. See [Projects](https://bearly.ai/docs/manual/projects.md) and [Videos and posts](https://bearly.ai/docs/manual/capabilities/videos-and-posts.md).
 - **Runtime** settings, where Bearly installs and checks the tools local work uses and keeps environment variables for local commands and skills.
 - Full access for all of these tools. On other platforms it covers connectors only. See [Approvals, permissions, and Full access](https://bearly.ai/docs/manual/capabilities/permissions.md).
 
 ### Desktop settings
 
-Open **App Settings** and look under the **Desktop** section. **Desktop**, **Runtime**, and **Chrome Extension** appear only in the desktop app; **Browser** appears there when Bearly Browser is available to your account.
+Open **Settings** and look under the **Desktop app** group: **Desktop**, **Runtime**, and, when Bearly Browser is available to your account, **Browser**. **Chrome extension**, under **Connections**, is desktop-only too.
 
 | Setting | What it does |
 |---|---|
@@ -122,7 +122,7 @@ The desktop app downloads updates in the background. When one is ready, **Update
 The iOS app is the same Bearly workspace for iPhone and iPad, with a few differences:
 
 - **Sign-in is by email only.** Enter your email, select **Continue**, and type the code Bearly emails you. The account buttons shown on other platforms are hidden in the app.
-- **Plans are bought through the App Store.** Plan cards read **Purchase** followed by the plan name. **Restore** checks the App Store for a subscription you already have. **Manage Account**, **Invoices**, and **Cancel** open the App Store's subscription settings. One-time Credit Boosts aren't sold in the app; buy them from the web or desktop app. If you subscribed through the App Store, other platforms show **Manage in iOS App**. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
+- **Plans are bought through the App Store.** Plan cards read **Purchase** followed by the plan name. **Restore** checks the App Store for a subscription you already have. **Manage billing** and **Cancel** open the App Store's subscription settings. One-time Credit Boosts aren't sold in the app; buy them from the web or desktop app. If you subscribed through the App Store, other platforms show **Manage in iOS App**. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
 - **Connectors that need a service sign-in** show **Web browser required**. Connect and use those in a regular browser. Custom servers that use a token, custom headers, or no sign-in work in the app.
 - **Desktop-only features** show a prompt to use Bearly on a computer. You can still create and edit routines in the app; they run in the desktop app.
 - **Downloads** open the iOS share sheet. Links Bearly opens go to Safari or the app that owns the link.
@@ -142,7 +142,7 @@ The app loads the current Bearly from the web, so most improvements arrive witho
 
 
 
-1. Install **Bearly Companion** from the Chrome Web Store — in the desktop app, **App Settings** → **Desktop** → **Chrome Extension** → **Install Chrome extension** opens it.
+1. Install **Bearly Companion** from the Chrome Web Store — in the desktop app, **Settings** → **Chrome extension** → **Install Chrome extension** opens it.
 2. Select the Bearly icon in the Chrome toolbar — the side panel opens.
 3. Select **Sign in with Bearly**. In the window that opens, check the account shown under **Connect the Bearly extension**, then select **Continue** — the extension gets its own key, not your dashboard login.
 4. Select **Allow website access** and approve Chrome's request — this one grant covers every site, and Bearly still reads a page only when you choose an action. The panel then shows **Ready for this page**.
@@ -154,14 +154,14 @@ The app loads the current Bearly from the web, so most improvements arrive witho
 
 When you run an action, the extension sends the page's readable text (or only your selection, for **Explain selection**) and a picture of the visible part of the tab. Scroll away from anything you don't want in that picture.
 
-Settings live behind the gear in the panel: **Response language**, **Quick actions** (which presets show, and their order), **Website access**, **Page button**, and **Disconnect Bearly**. Disconnecting removes Bearly from this browser; your account and work stay in Bearly. You can also remove the extension's key from any device under **App Settings** → **Devices** → **Browser extension and API keys**.
+Settings live behind the gear in the panel: **Response language**, **Quick actions** (which presets show, and their order), **Website access**, **Page button**, and **Disconnect Bearly**. Disconnecting removes Bearly from this browser; your account and work stay in Bearly. You can also remove the extension's key from any device under **Settings** → **Devices** → **Browser extension and API keys**.
 
 ## Sign in
 
 Bearly has no passwords. On the sign-in screen, enter your **Email** and select **Continue**; Bearly emails you a code made of three words. Type or paste it and select **Sign in**. Above the email field, the web and desktop apps also offer **Continue with** buttons for signing in with an existing account, including your organization's single sign-on where an administrator has set it up. The iOS app offers email sign-in only.
 
 - **Desktop app:** account-button sign-in opens your default browser. Finish there, and the browser hands you back to the app. If it doesn't, the browser page offers **Retry desktop sign-in**.
-- **Staying signed in:** you stay signed in until you sign out. **App Settings** → **Devices** lists every device signed in to your account, with **Sign out** on each and **Sign out all other devices**.
+- **Staying signed in:** you stay signed in until you sign out. **Settings** → **Devices** lists every device signed in to your account, with **Sign out** on each and **Sign out all other devices**.
 - **End-to-end encrypted chats** need more than sign-in: a new device needs approval from one you already use, your recovery phrase, or a passkey. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
 
 ## What works where
@@ -179,7 +179,7 @@ Bearly has no passwords. On the sign-in screen, enter your **Email** and select 
 | Meeting recording with the microphone | Yes | Yes | Yes | Yes | No |
 | Online meeting with computer audio | No | No | Windows and macOS 13 or later | No | No |
 | Projects | Yes | Yes | Yes | Yes | No |
-| Project Local Directory Sync | No | No | Yes | No | No |
+| Project **Sync a folder** | No | No | Yes | No | No |
 | End-to-end encrypted chats | Yes | Yes | Yes | Yes | No |
 | Create and manage routines | Yes | Yes | Yes | Yes | No |
 | Run routines | No | No | Yes, on the installed device | No | No |

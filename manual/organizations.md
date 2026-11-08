@@ -31,13 +31,13 @@ Consumer email domains can't be managed. On a managed organization, most policy,
 
 
 
-1. Open the account menu at the bottom of the sidebar and select **Organizations** — the console opens your first organization's **Overview**, or **No organizations yet**.
-2. With no organizations, enter a name in **Organization name (min 4 chars)** and select **Create**. Otherwise select **New organization**, enter an **Organization name** (4 to 18 characters), and select **Create organization**.
-3. Bearly opens the new organization's **Overview** — the header pill shows **Admin** ("You can manage this organization").
+1. Open the account menu at the bottom of the sidebar and select **Organizations** — Bearly opens your first organization's **Overview**, or **No organizations yet**. You can also open **Settings**, where each organization has a row under **Organizations**.
+2. With no organizations, enter a name in **Organization name (min 4 chars)** and select **Create**. Otherwise select **New organization** in the settings list, enter an **Organization name** (4 to 18 characters), and select **Create organization**.
+3. Bearly opens the new organization's **Overview**, where you're its admin.
 
 
 
-To switch organizations, open **Organizations** again and pick another one. Members of a managed organization who aren't its admins can't create organizations.
+While you're on an organization's pages, the settings list stays on the left: pick another organization there to switch, select a settings pane to open it over the page, or use the back arrow (**Back to chats**) to return to your chats. Members of a managed organization who aren't its admins can't create organizations.
 
 ### Tabs and who sees them
 
@@ -51,7 +51,7 @@ To switch organizations, open **Organizations** again and pick another one. Memb
 
 ## Overview
 
-The header shows the organization's name (admins can select the pencil to rename it, 4 to 18 characters), its plan badge or **Free plan**, its managed domain if it has one, and the member count. Admins also see tiles for **Members**, **Plan**, and, when they apply, **Billing · Seats** and **Policies**.
+The header shows the organization's name, then its member count, its plan or **Free plan**, and its managed domain if it has one. Admins rename it from **Organization actions** (**…**) → **Rename organization** (4 to 18 characters). When the organization can buy seats, a **Billing** link ("Buy and assign seats") opens the **Billing** tab.
 
 ### Upgrade to Managed
 
@@ -70,7 +70,7 @@ Sending the request doesn't change your plan. Bearly's team follows up to set up
 
 ### Your membership
 
-Members see **Your membership** with their **Role** and **Policy**. **Leave organization** removes your access to its shared chats and projects. On a managed domain you can't leave yourself: "Your membership is managed by _domain_." The last admin can't leave.
+Members see **Your membership** with their **Role** and **Policy**. **Leave organization**: "You lose access to its shared chats and projects." On a managed domain you can't leave yourself: "Your membership is managed by _domain_." The last admin can't leave.
 
 ### Settings
 
@@ -78,7 +78,7 @@ Admins see a **Settings** section:
 
 - **Managed-domain access** (managed): how people with your domain join. **Automatically add anyone with @_domain_** (the default) or **Require an organization administrator to add each person**. Turning off automatic access doesn't remove current members, and the new rule reaches all of Bearly within ten minutes. With the second option, someone on your domain who isn't a member is told to contact an administrator.
 - **Member directory** (managed): whether ordinary members can find managed-domain teammates by name or email. **All managed members** or **Disabled for members**. It never shows roles, policies, spending limits, or invite status. It affects teammate search in project sharing and the **Members** tab.
-- **Delete organization**: only for a free, unmanaged organization. Type the name in **Confirm name** and **Confirm name again**, then select **Delete organization**. Managed organizations and organizations with a paid plan show a note to contact support instead.
+- **Delete organization**: only for a free, unmanaged organization. Select **Delete organization**, type the name in **Organization name** and **Organization name again**, then confirm. Managed organizations and organizations with a paid plan show a note to contact support instead.
 
 ## Access banner
 
@@ -105,7 +105,7 @@ Agent access decides who on your managed domain may use Full access, which lets 
 
 - **Allow full access by default** is on unless an admin turns it off. "Applies to members on your managed domain. Each member must still enable it for each chat or routine on its device. Change individual exceptions in Members."
 - **Turn off full access for everyone** opens a dialog with the number of eligible members: "Active full access stops within 60 seconds. The organization default will be off, and all individual exceptions will be removed. Saved tool approvals remain." Confirm with **Turn off for everyone**.
-- Per member: **Members** → **Member settings** → **Full access**: **Use organization default**, **Allow full access**, or **Do not allow full access**. Changes save immediately, and the member still chooses when to turn Full access on.
+- Per member: **Members** → select the member → **Full access**: **Use organization default**, **Allow full access**, or **Do not allow full access**. Changes save immediately, and the member still chooses when to turn Full access on.
 
 Only organization admins can change these. Group admins and policies can't grant Full access, and allowing it doesn't turn on tools a policy has turned off. Changes appear in **Activity**.
 
@@ -142,9 +142,9 @@ The provisioning card ("Sync assigned Microsoft Entra users and groups. Bearly a
 
 ## Members
 
-Ordinary members see a **Member directory** search ("Find a teammate by name or email.") when the directory is on, or "Member lookup is disabled by an organization admin."
+Ordinary members see a **Member directory** search ("Find a teammate by name or email.") when the directory is on, or "Member lookup is turned off by an organization admin."
 
-Admins see **Members (_N_)** with **Search members…**, **Load more**, **Add member**, and **Bulk add members**.
+Admins see **Members** as a list with each person's role, policy, and badges such as **Admin**, **Invited**, or **Suspended**, plus **Search members**, **Load more**, **Add member**, and **Bulk add members**.
 
 ### Add a member
 
@@ -167,7 +167,7 @@ Select **Bulk add members**, then **Select CSV File** under **Upload CSV File**.
 
 ### Edit or remove a member
 
-Select a member's row or the **Member settings** gear:
+Select a member's row to open their settings in a drawer at the side of the page:
 
 | Setting | What it does |
 | --- | --- |
@@ -202,7 +202,7 @@ The **Projects** tab lists every project shared with the whole organization or o
 - **Remove access** takes away the organization's and its groups' access. People the owner shared with directly keep access, and chats people started in the project stay in their chat lists.
 - **Delete project** is available once none of the project's owners is still an active member. Its chats move back to the people who started them.
 
-Both actions appear in **Activity**. Admins see project titles, owners, and sharing here, not project content. To share a project, its owner uses **Settings** → **Collaboration** in the project. See [Projects](https://bearly.ai/docs/manual/projects.md).
+Both actions appear in **Activity**. Admins see project titles, owners, and sharing here, not project content. To share a project, its owner uses the project's **Sharing** tab. See [Projects](https://bearly.ai/docs/manual/projects.md).
 
 ## Policies
 
@@ -279,11 +279,11 @@ Model access, spending limits, and **Developer API access** are enforced by Bear
 | **Work locally** | Allow members to use local shell, file-reading, writing, and editing tools. | Local files and commands in the desktop app | — | Follows default |
 | **Computer Use** | Allow members to let Bearly inspect and control local desktop apps. | Computer Use in the desktop app | — | Follows default |
 | **Browser** | Allow members to use the isolated Bearly Browser. | Bearly Browser in the desktop app | — | Follows default |
-| **Chrome extension browser** | Allow members to let Bearly inspect and control their regular Chrome profile. | Chrome control. The desktop **Chrome Extension** pane shows **Disabled by your workspace** when off. | — | Follows default |
+| **Chrome extension browser** | Allow members to let Bearly inspect and control their regular Chrome profile. | Chrome control. The desktop **Chrome extension** pane shows **Disabled by your workspace** when off. | — | Follows default |
 | **MCP Connectors** | Allow members to connect external MCP services. | Connectors and the **Connectors** pane | — | Follows default |
 | **Personal MCP servers** | Allow members to add and use their own custom HTTPS and npm MCP servers. | Members' own custom servers | MCP Connectors | On |
 | **Email notifications** | Allow Bearly to send requested email notifications to the member. | Emails Bearly sends to the member when asked | — | Follows default |
-| **Text messages** | Allow members to add a phone number and receive Bearly text messages. | Text messages and the **Phone & SMS** pane | — | Follows default |
+| **Text messages** | Allow members to add a phone number and receive Bearly text messages. | Text messages and the **Phone and SMS** pane | — | Follows default |
 | **Routines** | Allow members to run scheduled prompts. | Routines (also needs Pro) | — | Follows default |
 | **Browser in Routines** | Allow members to let Routines use Bearly Browser on the sites they approve, without asking first. | Browser use in scheduled runs | Routines | Follows default |
 | **Chat management** | Allow chats to list, read, create, rename, move, and delete chats. | The AI organizing chats for the member | — | Follows default |
@@ -308,7 +308,7 @@ Model access, spending limits, and **Developer API access** are enforced by Bear
 | **End-to-end encryption** | Members can create chats that only their approved devices can read. Team admins and Bearly can't read or recover these chats, even after a member leaves. | Lets members set up [end-to-end encryption](https://bearly.ai/docs/manual/privacy-and-security.md). Hidden while **Require local encryption** is on. Enforced by Bearly's servers. | — | Off, in either mode |
 | **Require local encryption** | Require new chats to use device-only encryption. | New chats can be opened only on the device that created them. Blocks end-to-end encryption. | — | Off |
 | **Lock existing chats** | Lock existing chats to local access. The keys are unrecoverable. | Converts members' existing chats to device-only. Asks you to confirm **Lock All Existing Users Chats** and can't be undone. | Require local encryption | Off |
-| **File uploads** | Allow members to upload and attach files. | Attachments, Docs & Data uploads, and desktop folder sync | — | Follows default |
+| **File uploads** | Allow members to upload and attach files. | Attachments, project file uploads, and desktop folder sync | — | Follows default |
 
 
 Turning on **Lock existing chats** asks "This will lock all existing chats to local access only. Keys are unrecoverable. This action cannot be undone." Members' chats then open only on the device that holds the key. Turning off **Require local encryption** also turns this switch off, but chats already locked stay locked.
@@ -328,14 +328,14 @@ Turning on **Lock existing chats** asks "This will lock all existing chats to lo
 | --- | --- | --- | --- | --- |
 | **Create projects** | Allow members to create projects. | The **New project** button | — | Follows default |
 | **Require project passwords** | Require a password when members create projects. | New projects must have a password, and **Remove** is hidden | — | Off |
-| **Project collaboration** | Allow members to invite other people to projects. | The **Collaboration** row in Project Settings | — | Follows default |
-| **Project documents and data** | Allow members to add, remove, and sync project files. | Docs & Data changes and folder sync | — | Follows default |
+| **Project collaboration** | Allow members to invite other people to projects. | A project's **Sharing** tab | — | Follows default |
+| **Project documents and data** | Allow members to add, remove, and sync project files. | Project file changes and folder sync | — | Follows default |
 
 ### Developer
 
 | Control | Description in the editor | What it changes | Needs | Starts |
 | --- | --- | --- | --- | --- |
-| **Developer API access** | Allow members to create API keys and call Bearly models from their own code. | The **API Keys** pane, and Bearly API requests from managed-domain members (enforced by Bearly's servers) | — | Follows default |
+| **Developer API access** | Allow members to create API keys and call Bearly models from their own code. | The **API keys** pane, and Bearly API requests from managed-domain members (enforced by Bearly's servers) | — | Follows default |
 | **Personal remote modules** | Allow members to configure their own remote modules. | The **Modules** pane | — | Off |
 | **Unified settings resolution** | Use the current chat settings resolver. Turn this off only when Bearly support asks. | Leave it on | — | On |
 

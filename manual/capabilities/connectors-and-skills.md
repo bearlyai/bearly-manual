@@ -11,7 +11,7 @@ HTML: [https://bearly.ai/docs/manual/capabilities/connectors-and-skills/](https:
 
 > How to connect services and your own MCP servers to Bearly, turn a connector on for a chat or a routine, sign in on each device, and install and run skills, including the built-in Visualize and Bearly AI Models skills, with platform limits and approvals.
 
-Connectors give a chat another app's own tools: find a page in your workspace, read an issue, check a deployment. Skills give Bearly a reusable method for a kind of work, with instructions and, sometimes, scripts it can run on your computer. Both are set up once in **App Settings** and then used by name in chats and routines.
+Connectors give a chat another app's own tools: find a page in your workspace, read an issue, check a deployment. Skills give Bearly a reusable method for a kind of work, with instructions and, sometimes, scripts it can run on your computer. Both are set up once in **Settings** and then used by name in chats and routines.
 
 ## Connectors
 
@@ -32,7 +32,7 @@ The **Built-in connectors** list offers Notion, Linear, Calendly, Vercel, Cloudf
 
 
 
-1. Open the account menu at the bottom of the sidebar, select **App Settings**, then **Connectors**.
+1. Open the account menu at the bottom of the sidebar, select **Settings**, then **Connectors**.
 2. Under **Built-in connectors**, select **Add** beside the service — it moves to **Your connectors**, not yet signed in.
 3. Select **Connect** and finish the service's own sign-in in the window that opens — read the permissions it asks for before approving.
 4. Back in Bearly, the green dot shows it's connected.
@@ -43,7 +43,7 @@ The **Built-in connectors** list offers Notion, Linear, Calendly, Vercel, Cloudf
 
 
 
-1. Open **App Settings** → **Connectors** and select **Add custom MCP server**.
+1. Open **Settings** → **Connectors** and select **Add custom MCP server**.
 2. Choose a **Transport**: **HTTPS** for a server on the web, or **npm package** to run a package on your computer (desktop app only). Give it a **Name**.
 3. For HTTPS, enter the **Server URL** (a Streamable HTTP server over HTTPS) and pick **Authentication**: **OAuth (automatic)** for servers with MCP sign-in (optionally with **OAuth scopes**), **Bearer token**, **Custom headers**, or **No authentication**. For npm, enter the **npm package**, any **Arguments**, and **Environment variables**.
 4. Select **Add and check** — Bearly saves the server, contacts it, and lists the tools it found. If it can't connect, the reason appears under the row.
@@ -115,7 +115,7 @@ A skill is a folder with an instruction file and, often, supporting files and sc
 
 
 
-1. In the desktop app, open **App Settings** → **Skills** — the **Skill Store** opens.
+1. In the desktop app, open **Settings** → **Skills** — the **Skill Store** opens.
 2. Under **Skill repositories**, expand a repository to see its skills, and select **Install** beside one.
 3. Read **Install third-party skill?** — it shows the source and warns that a skill "can include instructions and scripts. It may be wrong or malicious, and local execution can modify or delete data". Select **I understand the risks** only for a source you trust.
 4. The skill appears under **Installed** as **Enabled**.
@@ -153,15 +153,15 @@ Every Friday afternoon, an email listing what closed and what's still open in yo
 
 
 
-1. Connect Linear in **App Settings** → **Connectors** in the desktop app — routines use that device's connections.
-2. Open **Routines** and type into **Create a routine**, then select **Draft routine**:
+1. Connect Linear in **Settings** → **Connectors** in the desktop app — routines use that device's connections.
+2. Open **Routines**, select **New routine**, type into **Describe the routine**, then select **Draft routine**:
 
    ```text
    Every Friday at 4 PM, list the Linear issues closed this week and the ones still open in the current cycle, grouped by project, with owners.
    ```
 
 3. In the editor, open **Tools and skills** → **Plugin** → **Connectors**, pick Linear, and set its **Tools** to **Read-only**.
-4. Turn on **Email each result** and select **Create routine**. To see the first digest now, open the routine again from **Your routines** and select **Run now**.
+4. Turn on **Email each result** and select **Create routine**. To see the first digest now, select **Run now** on the routine's page.
 
 
 

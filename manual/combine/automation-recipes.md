@@ -22,25 +22,25 @@ These recipes use Bearly's agent tools: Routines that run on a schedule, Bearly 
 Every weekday morning a Routine reads the sites you choose in Bearly Browser, writes a summary into its own chat, and emails you only when your condition is met.
 
 **Why it works:** A Routine is a saved prompt that runs in the desktop app on a schedule, and every run lands in the routine's chat. **Browser access** lets runs use Bearly Browser on the exact sites you list, with the sign-ins Bearly Browser already has. **Build on previous runs** lets each run see earlier runs, and the **Notification filter** checks each result against your condition and stays quiet when nothing meets it.
-**You need:** **Pro** plan or higher. The desktop app, open on the device the routine is installed on when it's due to run; you can create and edit routines anywhere, but browser access can only be turned on from the desktop app. Organization controls: **Routines**, **Browser in Routines**, **Browser**, and **Email notifications**. On the device: **Settings** → **Desktop** → **Browser** → **Enable Browser** and **Allow chats to use Browser**.
+**You need:** **Pro** plan or higher. The desktop app, open on the device the routine is installed on when it's due to run; you can create and edit routines anywhere, but browser access can only be turned on from the desktop app. Organization controls: **Routines**, **Browser in Routines**, **Browser**, and **Email notifications**. On the device: **Settings** → **Browser** → **Enable Browser** and **Allow chats to use Browser**.
 
 
 
-1. In the desktop app, select the globe (**Open Browser**) in the title bar and sign in to each site. Or use **Settings** → **Desktop** → **Browser** → **Import browser cookies** to bring your current sign-ins over from Chrome or Edge. — Routine runs use these sign-ins. Import copies cookies only, never passwords, history, bookmarks, or autofill.
+1. In the desktop app, select the globe (**Open Browser**) in the title bar and sign in to each site. Or use **Settings** → **Browser** → **Import browser cookies** to bring your current sign-ins over from Chrome or Edge. — Routine runs use these sign-ins. Import copies cookies only, never passwords, history, bookmarks, or autofill.
 
-2. Open **Routines** in the sidebar and type in the **Create a routine** box:
+2. Open **Routines** in the sidebar, select **New routine**, and type in **Describe the routine**:
 
    ```text
    Every weekday at 7:30 AM, open status.example.com and community.example.com and summarize what changed since the last run in five bullets with links. Only tell me if there's a new incident or a staff post.
    ```
 
-   Select **Draft routine**. — The editor opens with a drafted name, instructions, and schedule (here **Weekdays** at 7:30 AM), and your "only tell me if" condition in **Notification filter**. Check each one before you save.
+   Select **Draft routine**. — The editor opens with a drafted name, instructions, and schedule (here **Weekly**, Monday to Friday, at 7:30 AM), and your "only tell me if" condition in **Notification filter**. Check each one before you save.
 
 3. Under **Tools** → **Browser access**, turn on **Bearly Browser** and add each site under **Sites**, or select the suggestions under **From the instructions:**. Leave **Click, type, and submit** off. — Runs can read pages and follow links on exactly those sites. A subdomain counts as a separate site.
 
 4. Under **Results and delivery**, turn on **Email each result** and keep **Build on previous runs** on. Select **Create routine**, then **Allow browser access and save** in the confirmation. — The confirmation lists what the routine can do on those sites while you're away. A routine you create in the desktop app is installed on that device.
 
-5. Open the routine from the list and select **Run now**. — The run uses at most three background tabs and writes its summary into the routine's chat. When the result meets your condition, it emails you and shows a **Routine ran** notice with **Open**. When it doesn't, **Recent runs** marks the run **quiet** with the reason, and no notice appears.
+5. On the routine's page, which opens when you create it, select **Run now**. — The run uses at most three background tabs and writes its summary into the routine's chat. When the result meets your condition, it emails you and shows a **Routine ran** notice with **Open**. When it doesn't, **Runs** on the routine's page marks the run **Stayed quiet** with the reason, and no notice appears.
 
 
 
@@ -65,7 +65,7 @@ Every Monday a Routine runs a Deep Research report on your topic and emails you 
 
 
 
-1. Open **Routines** and type in **Create a routine**:
+1. Open **Routines**, select **New routine**, and type in **Describe the routine**:
 
    ```text
    Every Monday at 8 AM, research new US regulations and enforcement actions affecting telehealth from the past week. Lead with what's new since last week's report.
@@ -75,7 +75,7 @@ Every Monday a Routine runs a Deep Research report on your topic and emails you 
 
 2. Under **Tools** → **Tools and skills**, open **Plugin** and choose **Deep Research** (marked "Uses plan allowance"). To change the tier, select the **Deep Research** chip and pick **Standard** or **Ultra** under **Tier**. — Each run can start one Deep Research run.
 
-3. Keep **Build on previous runs** on and select **Create routine**. Open the routine from the list and select **Run now**. — When the report finishes it appears in the routine's chat, and the PDF arrives in your email.
+3. Keep **Build on previous runs** on and select **Create routine**. On the routine's page, select **Run now**. — When the report finishes it appears in the routine's chat, and the PDF arrives in your email.
 
 
 
@@ -111,14 +111,14 @@ One message turns a chat that already produced the result you want into a schedu
 
    — Bearly shows a card for the saved routine with its schedule and **Open in Routines**. Asked in the desktop app, the card says the routine is installed on that device; asked anywhere else, it says to open the desktop app to choose the device that runs it.
 
-3. In the desktop app, select **Open in Routines** on the card (or open **Routines** and the routine). Check its instructions and that **Email each result** is on. If **Run location** doesn't say "Runs on this device.", select **Install on this device**. Then select **Run now** to test it.
+3. In the desktop app, select **Open in Routines** on the card (or open **Routines** and the routine). Select **Edit** and check its instructions and that **Email each result** is on. If **Run location** doesn't say "Runs on this device.", select **Install on this device**. Then, on the routine's page, select **Run now** to test it.
 
 
 
 **Swap in:**
 - **A condition for the email:** add "Only tell me if a post gets over 500 likes" in step 2; it becomes the **Notification filter**.
-- **A text for the email:** say "text me" instead of "email me". Texts need a verified phone in **Settings** → **Phone & SMS**.
-- **The Routines page for the chat:** select **New Routine** in the command menu (<kbd>⌘</kbd> <kbd>K</kbd>, or <kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux). It opens **Routines**, where you can build the routine in the editor and paste the prompt from step 1 into **Instructions**.
+- **A text for the email:** say "text me" instead of "email me". Texts need a verified phone in **Settings** → **Phone and SMS**.
+- **The Routines page for the chat:** select **New Routine** in the command menu (<kbd>⌘</kbd> <kbd>K</kbd>, or <kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux). It opens **New routine**, where you can build the routine in the editor and paste the prompt from step 1 into **Instructions**.
 
 **If it stalls:** If the chat used a tool routines can't run (Python, charts, images, YouTube, Maps, Weather, Best Pick, People Search, and others in the note at the top), rewrite the routine's instructions to do without it.
 
@@ -208,7 +208,7 @@ Bearly reads values from an app window on your screen, charts them, and points o
 Bearly opens your app in Bearly Browser, reproduces the problem, fixes the code in your project folder, and reloads to confirm.
 
 **Why it works:** Bearly Browser can open `localhost` addresses and read and click pages. Work locally gives the same chat access to your project folder, so what Bearly sees on the page leads straight to the file it changes.
-**You need:** Any plan. Desktop app. Organization controls: **Browser** and **Work locally**. **Settings** → **Desktop** → **Browser** → **Enable Browser** and **Allow chats to use Browser**.
+**You need:** Any plan. Desktop app. Organization controls: **Browser** and **Work locally**. **Settings** → **Browser** → **Enable Browser** and **Allow chats to use Browser**.
 
 
 
@@ -235,7 +235,7 @@ Bearly opens your app in Bearly Browser, reproduces the problem, fixes the code 
 
 
 **Swap in:**
-- **Chrome for Bearly Browser:** with Chrome control connected (**Settings** → **Desktop** → **Chrome Extension**), ask for console errors and failed network requests. Reading the console asks **Read your Chrome tabs**; inspecting network requests asks **Use Chrome DevTools**.
+- **Chrome for Bearly Browser:** with Chrome control connected (**Settings** → **Chrome extension**), ask for console errors and failed network requests. Reading the console asks **Read your Chrome tabs**; inspecting network requests asks **Use Chrome DevTools**.
 - **Point at the problem:** in Bearly Browser, use **Capture and annotate page**, click the element, type what's wrong, and select **Attach**.
 - **Full access for approvals:** in **Permissions**, choose **Full access** so this chat uses its enabled tools without asking. Read the dialog first; it applies to this chat on this device.
 
@@ -250,7 +250,7 @@ Bearly reads a document open in your signed-in Chrome, runs Deep Research on com
 
 
 
-1. In the desktop app, open **Settings** → **Desktop** → **Chrome Extension**. Select **Install Chrome extension** if it's not installed, and keep Chrome and Bearly open until it shows **Connected to Chrome**.
+1. In the desktop app, open **Settings** → **Chrome extension**. Select **Install Chrome extension** if it's not installed, and keep Chrome and Bearly open until it shows **Connected to Chrome**.
 
 2. Open the brief in Chrome, then ask:
 
@@ -304,7 +304,7 @@ Every Friday a Routine pulls the week's closed issues from a connected app, writ
 
    — Bearly asks **Allow Linear?**; approve it.
 
-3. Open **Routines** and type in **Create a routine**:
+3. Open **Routines**, select **New routine**, and type in **Describe the routine**:
 
    ```text
    Every Friday at 4 PM, list issues closed this week by the Platform team in Linear, grouped by project. Write them to a CSV and email me a short summary with the CSV attached.
@@ -312,7 +312,7 @@ Every Friday a Routine pulls the week's closed issues from a connected app, writ
 
    Select **Draft routine**.
 
-4. Under **Tools** → **Tools and skills**, open **Plugin** and choose Linear under **Connectors**. Select the Linear chip and set **Tools** to **Read-only**. Turn on **Email each result** and select **Create routine**. Open the routine from the list and select **Run now**. — The run uses Linear without asking, writes the CSV into the routine's chat, and emails it to you.
+4. Under **Tools** → **Tools and skills**, open **Plugin** and choose Linear under **Connectors**. Select the Linear chip and set **Tools** to **Read-only**. Turn on **Email each result** and select **Create routine**. On the routine's page, select **Run now**. — The run uses Linear without asking, writes the CSV into the routine's chat, and emails it to you.
 
 
 

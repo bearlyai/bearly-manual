@@ -11,19 +11,21 @@ HTML: [https://bearly.ai/docs/manual/capabilities/routines/](https://bearly.ai/d
 
 > How to create, schedule, equip, and deliver Bearly routines, including the Pro requirement, where routines run, exactly which tools a scheduled run can use, connectors, skills, Deep Research, permission mode, unattended local access, browser access, the notification filter, email and text delivery, and run history.
 
+These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
+
 A routine is a prompt Bearly runs for you on a schedule: a weekday news brief, a Friday roundup, a month-end recap. Each routine has its own chat, and every run is added to it. You can also have each result emailed or texted to you, or only the results that clear a bar you set.
 
 **You need:** Pro or higher to create, edit, or run routines; the desktop app, open, on the device that runs them; your organization allows **Routines**. Below Pro, the Routines page shows "Routines are a Pro feature." with **Go Pro**, and existing routines are read-only.
 
 > **Note — Routines run in the desktop app**
-> Routines run in the desktop app, on the one device they're installed on, while the app is open. You can create and edit them on the web, a phone, or the iOS app; install them from the desktop app to run them. See [Run location](#run-location-run-now-and-recent-runs).
+> Routines run in the desktop app, on the one device they're installed on, while the app is open. You can create and edit them on the web, including a phone browser; install them from the desktop app to run them. See [Run location](#run-location).
 
 
 ## How routines work
 
 - **One chat per routine.** Every run is added to the routine's chat and marks it unread. While the app is open, a **Routine ran** notice with **Open** appears.
 - **Synced everywhere, run in one place.** Your routines appear on every device you sign in on, but only the installed device runs them.
-- **Schedules.** Each routine runs at one time on its scheduled days: **Daily**, **Weekdays**, **Weekends**, **Weekly** on the days you pick, or **Monthly** on a day from the 1st to the 28th. Times use your current timezone. For several checks a day, make several routines.
+- **Schedules.** Each routine runs at one time on its scheduled days: **Weekly** on the days you pick (every day, weekdays, or any other set), or **Monthly** on a day from the 1st to the 28th. Times use your current timezone. For several checks a day, make several routines.
 - **Up to 10 active routines.** Paused routines don't count.
 - **One run at a time per device.** Routines due at the same time run one after another.
 - **Up to 25 minutes per run.** A run that takes longer is stopped.
@@ -33,21 +35,23 @@ A routine is a prompt Bearly runs for you on a schedule: a weekday news brief, a
 
 ## Create a routine
 
-There's no slash command for routines. Start one in any of three ways.
+There's no slash command for routines. Start one from the Routines page, the command menu, or any chat.
 
 
 
-1. Open **Routines** in the sidebar, or press <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux) and choose **New Routine**.
-2. In **Create a routine**, describe the result and when you want it, then select **Draft routine** or press <kbd>Enter</kbd> — Bearly drafts the name, instructions, schedule, and, if you wrote "only tell me if…", a notification filter. The **Try** chips show examples. **Start from scratch** opens an empty editor instead.
+1. Open **Routines** in the sidebar and select **New routine**, or press <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux) and choose **New Routine**. If you have no routines yet, **Routines** opens on **New routine** directly.
+2. In **Describe the routine**, describe the result and when you want it, then select **Draft routine** or press <kbd>Enter</kbd> — Bearly drafts the name, instructions, schedule, and, if you wrote "only tell me if…", a notification filter. Selecting one of the **Examples**, such as "AI news brief", fills in the description. **start from scratch** opens an empty editor instead.
 
    ```text
    Send me a concise AI news brief every weekday at 8 AM. Only tell me if there's a major model release.
    ```
 
-3. Review the draft under **New routine** and change anything that's off — if drafting fails, the editor still opens with your text as the instructions and a weekday 8 AM schedule.
-4. Select **Create routine** — the routine gets its own chat, and if you're in the desktop app, it's installed on this device. To see a first result without waiting for the schedule, open the routine again from **Your routines** and select **Run now**.
+3. Review the draft ("Review the details, then create it.") and change anything that's off — if drafting fails, the editor still opens with your text as the instructions and a weekday 8 AM schedule.
+4. Select **Create routine** — the routine gets its own chat and its own page, and if you're in the desktop app, it's installed on this device. To see a first result without waiting for the schedule, select **Run now** on the routine's page.
 
 
+
+A dismissible tip on the Routines page reminds you that you can ask Bearly in any chat to set up or change a routine; **Try it** opens a new chat with an example drafted.
 
 You can also ask in any chat, including the chat that just did the job well:
 
@@ -59,7 +63,7 @@ Bearly sets up the routine and shows a card with its name, schedule, and instruc
 
 ## The editor
 
-Open a routine from **Your routines** to edit it. Changes take effect when you select **Save**.
+Open a routine from the Routines page and select **Edit**. Changes take effect when you select **Save**.
 
 ### Routine
 
@@ -69,7 +73,7 @@ Open a routine from **Your routines** to edit it. Changes take effect when you s
 
 ### Schedule
 
-Pick the cadence, the days, and the time. The preview line shows the next run times and your timezone, such as "Next: Mon Oct 27 · 8:00 AM, then Tue, Wed".
+Under **Repeats**, choose **Weekly** and select the days, or **Monthly** and a day of the month; then set the **Time**. A schedule set in chat that the editor can't show, such as every three hours, appears as its own choice until you pick **Weekly** or **Monthly**. The preview line shows the next run times and your timezone, such as "Next: Mon Oct 27 · 8:00 AM, then Tue, Wed".
 
 ### Tools and skills
 
@@ -147,7 +151,7 @@ If you ask a chat to turn this on, or to rewrite the instructions of a routine t
 
 
 
-1. Sign in to the sites in Bearly Browser on the device that runs the routine, or import your sign-ins under **App Settings** → **Desktop** → **Browser** → **Import browser cookies** — a run never types into password or payment fields.
+1. Sign in to the sites in Bearly Browser on the device that runs the routine, or import your sign-ins under **Settings** → **Browser** → **Import browser cookies** — a run never types into password or payment fields.
 2. In the routine's **Tools** section, turn on **Bearly Browser** under **Browser access** and add the sites.
 3. Leave **Click, type, and submit** off unless the routine has to change something.
 4. Select **Save** (or **Create routine** for a new one), read **Make sure you know what this allows** (it lists what's new since you last approved), and select **Allow browser access and save**.
@@ -157,7 +161,7 @@ If you ask a chat to turn this on, or to rewrite the instructions of a routine t
 
 **What a run can do there:** open up to 3 tabs of its own, in the background, closed when the run ends; read pages and follow links on the listed sites; with **Click, type, and submit**, take the actions its instructions ask for, including submitting forms, without asking again.
 **Limits:** the desktop app stops any request to another site before it's sent, including link clicks, redirects, pop-ups, and form posts. A run never touches password or payment fields, never uploads files, closes a tab with an invalid certificate, and stops at a CAPTCHA. The approval is tied to the instructions: if the instructions or these settings change without a new approval, runs go without a browser until you save and approve again. Narrowing access saves without asking.
-**You also need:** the desktop app; **Enable Browser** and **Allow chats to use Browser** on in **App Settings** → **Desktop** → **Browser**; your organization allows **Routines**, **Browser in Routines**, and **Browser**.
+**You also need:** the desktop app; **Enable Browser** and **Allow chats to use Browser** on in **Settings** → **Browser**; your organization allows **Routines**, **Browser in Routines**, and **Browser**.
 
 The approval warns that on these sites the routine "acts as you", can be tricked by "instructions hidden in a web page, email, or document", and "can read private pages on these sites and copy what it finds into this routine's chat, email, or texts."
 
@@ -165,22 +169,28 @@ When a run couldn't use the browser, its note says why, for example: "It stopped
 
 ### Results and delivery
 
-- **Notification filter** — "Every run stays in its chat. Add a condition when you only want alerts for meaningful changes," such as "a competitor ships something new". Each run still happens and lands in the chat. When the result doesn't meet your bar, the run stays quiet: no unread mark, no notice, no email, no text. **Recent runs** marks it **quiet** and says why it stayed quiet. Bearly compares each result with the previous one, and delivers whenever it's unsure, when a tool failed, or when the result is empty. Every seventh quiet run in a row checks in anyway, so silence never means a broken routine.
+- **Notification filter** — "Every run stays in its chat. Add a condition when you only want alerts for meaningful changes," such as "a competitor ships something new". Each run still happens and lands in the chat. When the result doesn't meet your bar, the run stays quiet: no unread mark, no notice, no email, no text. **Runs** marks it **Stayed quiet** and says why. Bearly compares each result with the previous one, and delivers whenever it's unsure, when a tool failed, or when the result is empty. Every seventh quiet run in a row checks in anyway, so silence never means a broken routine.
 - **Build on previous runs** — on by default for new routines. Each run sees the earlier runs in the chat, so instructions like "tell me what changed since yesterday" work. Turn it off when every run should start fresh.
 - **Email each result** — "Send the completed result to your Bearly account email." Only to your own address. Files the run created, such as a Page or a CSV, can be attached; attachments are limited to 20 MB in total.
-- **Text each result** — "Send a short AI summary to your verified phone number." Needs a verified US or Canadian mobile number in **App Settings** → **Phone & SMS**; turning it on without one opens that pane. Routine texts are capped at 3 per 24 hours across all your routines, arrive at the scheduled time, and leave end-to-end encryption, as the switch notes. See [Send email and texts](https://bearly.ai/docs/manual/capabilities/email-and-text.md).
+- **Text each result** — "Send a short AI summary to your verified phone number." Needs a verified US or Canadian mobile number in **Settings** → **Phone and SMS**; turning it on without one opens that pane. Routine texts are capped at 3 per 24 hours across all your routines, arrive at the scheduled time, and leave end-to-end encryption, as the switch notes. See [Send email and texts](https://bearly.ai/docs/manual/capabilities/email-and-text.md).
 
-### Run location, Run now, and recent runs
+### Run location
 
-**Run location** appears once the routine is saved and shows "Runs on this device.", another device's name, or "Not installed anywhere — it won't run." A routine you create in the desktop app is installed on that device. In the desktop app, **Install on this device** claims a routine created elsewhere, and **Move to this device** takes one over from another computer. On the web and phones it reads "Runs in the desktop app." with **Get it**.
-
-**Run now**, in the desktop app once the routine is saved, runs the last saved version right away on the device you're using, even if another device owns the schedule. While a run is going, the button becomes **Stop run**, which stops that run and keeps the schedule.
-
-**Recent runs** lists each run as "Ran on schedule", "Catch-up run", or "Manual run", with skips and failures and why, and **Open run** to jump to that result in the chat. Bearly keeps the last 30 runs of each routine.
+**Run location** appears once the routine is saved: "The desktop device that runs this routine." It shows "Runs on this device.", another device's name, or "Not installed anywhere — it won't run." A routine you create in the desktop app is installed on that device. In the desktop app, **Install on this device** claims a routine created elsewhere, and **Move to this device** takes one over from another computer. On the web and phones it reads "Runs in the desktop app." with **Get it**.
 
 ## Manage your routines
 
-The Routines page lists **Your routines** and a **Next seven days** strip of what your active routines will do next. Each routine's menu has **Run now** (or **Stop run**), **Open chat**, **Pause** or **Resume**, **Install on this device** or **Move to this device**, and **Delete**. Badges show **Paused**, **Failing**, **Not installed**, and **Overdue**.
+The Routines page lists your routines, with how many there are and how many are paused. Each row shows the routine's schedule, the device that runs it, and its last run. Its **…** menu has **Run now** (or **Stop run**), **Edit**, **Open chat**, **Pause** or **Resume**, **Install on this device** or **Move to this device**, and **Delete**.
+
+Select a routine to open its page:
+
+- The header shows the name, the schedule and timezone, the permission mode, and badges for **Paused**, **Failing**, **Not installed**, and **Overdue**, with **Edit** and a **…** menu.
+- **Next run** (or **Current run** while one is going) says when it runs next, with **Run now** and **Pause**, and a timeline of recent and upcoming runs. Select a past run on the timeline to open its result.
+- **Runs in** names the routine's chat and its project, if it has one, and the device that runs it. Select the chat or project to open it.
+- **Instructions** shows what the routine does.
+- **Runs** lists each run, newest first: **Done**, **Stayed quiet**, **Failed**, **Skipped**, or **Didn't finish**, labeled **Catch-up run** or **Manual run** where it applies, with why a run was skipped or failed. Select a run that reached the chat to jump to its result. Bearly keeps the last 30 runs of each routine.
+
+**Run now**, in the desktop app, runs the last saved version right away on the device you're using, even if another device owns the schedule. While a run is going, the routine's menu offers **Stop run**, which stops that run and keeps the schedule.
 
 - **Pause** stops the schedule and keeps the settings and history. **Resume** starts it again.
 - **Delete** asks to confirm: "The schedule stops everywhere. Its chat and past runs stay in your history." Select **Delete routine**.
@@ -208,7 +218,7 @@ Every weekday morning, an email with a one-page summary of yesterday's numbers f
 
 3. In **Browser access**, turn on **Bearly Browser** and add both sites from **From the instructions:** — leave **Click, type, and submit** off, since it only reads.
 4. Turn on **Email each result**, select **Create routine**, and approve **Allow browser access and save**.
-5. Open the routine again from **Your routines**, select **Run now**, and open the email.
+5. On the routine's page, select **Run now**, and open the email.
 
 
 
@@ -224,7 +234,7 @@ A text when an order ships or a status page changes, and silence the rest of the
 
 
 
-1. Verify your phone in **App Settings** → **Phone & SMS** if you haven't.
+1. Verify your phone in **Settings** → **Phone and SMS** if you haven't.
 2. Draft the routine:
 
    ```text
@@ -233,7 +243,7 @@ A text when an order ships or a status page changes, and silence the rest of the
 
    "Only tell me if…" becomes the **Notification filter**.
 3. Add `store.example.com` under **Browser access** if the page needs your sign-in, turn on **Text each result**, keep **Build on previous runs** on, and select **Create routine**.
-4. Open the routine again and select **Run now**; **Recent runs** shows whether it ran and delivered, or stayed **quiet** and why.
+4. On the routine's page, select **Run now**; **Runs** shows whether it ran and delivered, or **Stayed quiet** and why.
 
 
 

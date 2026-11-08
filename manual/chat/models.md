@@ -22,8 +22,8 @@ The model button sits at the right of the composer and shows the current model's
 
 You can also choose a model in three other places:
 
-- **Settings** → **This Chat** → **Model**, for the open chat.
-- **Settings** → **New Chats** → **Model**, the default for chats you start later. It adds a **Recommended** option.
+- **Settings** → **This chat** → **Model**, for the open chat.
+- **Settings** → **New chats** → **Model**, the default for chats you start later. It adds a **Recommended** option.
 - The **Rerun** menu under any message, to answer that one message with another model. See [Compare models on the same prompt](#compare-models-on-the-same-prompt).
 
 ## How the picker is laid out
@@ -67,13 +67,13 @@ A model you pick in the composer applies to the open chat only, and it's saved w
 
 
 
-1. For one chat, pick a model in the composer, or open **Settings** → **This Chat** → **Model** — only this chat changes.
-2. For new chats, open **Settings** → **New Chats** → **Model** and choose a model, or **Recommended** to follow Bearly's default for your plan — chats you start from now on use it.
+1. For one chat, pick a model in the composer, or open **Settings** → **This chat** → **Model** — only this chat changes.
+2. For new chats, open **Settings** → **New chats** → **Model** and choose a model, or **Recommended** to follow Bearly's default for your plan — chats you start from now on use it.
 
 
 
-**What you get:** New Chats defaults are saved to your account and apply on every device.
-**Limits:** New Chats defaults don't apply inside projects; a project's own settings do. An organization or project can set or lock the model; see [When models are hidden or locked](#when-models-are-hidden-or-locked) and [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#which-setting-wins).
+**What you get:** New chats defaults are saved to your account and apply on every device.
+**Limits:** New chats defaults don't apply inside projects; a project's own settings do. An organization or project can set or lock the model; see [When models are hidden or locked](#when-models-are-hidden-or-locked) and [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#which-setting-wins).
 **Combines with:** [Projects](https://bearly.ai/docs/manual/projects.md) to give every chat in a project the same model.
 
 ## Models that need a higher plan
@@ -91,14 +91,14 @@ Your settings or your organization can narrow the picker. A line at the top of t
 
 | Banner | Why models are hidden |
 |---|---|
-| "ZDR on · Some models hidden" | You turned on **Zero Data Retention only**. **Change** opens **Settings** → **Privacy & Security**. |
+| "ZDR on · Some models hidden" | You turned on **Zero Data Retention only**. **Change** opens **Settings** → **Privacy and security**. |
 | "ZDR on until settings sync · Some models hidden" | Bearly keeps Zero Data Retention only in force while your settings load or reconnect. |
 | "Managed account · Some models hidden" | Your organization allows only some models. |
 | "ZDR on, managed account · Some models hidden" | Both at once. |
 
 If a chat's saved model isn't allowed anymore, Bearly answers with the first available model in the picker instead. Your saved choice stays as it was, so the chat goes back to it if it becomes allowed again.
 
-When an organization's allow-list names fewer than five models, every allowed model shows as featured. When an organization or project locks the model, the model button and the **Rerun** menu disappear, and **This Chat** no longer shows **Model**.
+When an organization's allow-list names fewer than five models, every allowed model shows as featured. When an organization or project locks the model, the model button and the **Rerun** menu disappear, and **This chat** no longer shows **Model**.
 
 **Limits:** Only an organization admin can change which models members may use; see [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
@@ -111,7 +111,7 @@ Turn on **Zero Data Retention only** and Bearly shows only zero-retention models
 
 
 
-1. Open **Settings** → **Privacy & Security** — or select **Change** on the picker's "ZDR on" banner.
+1. Open **Settings** → **Privacy and security** — or select **Change** on the picker's "ZDR on" banner.
 2. Turn on **Zero Data Retention only** — the picker narrows to zero-retention models and shows the "ZDR on · Some models hidden" banner.
 
 
@@ -169,7 +169,7 @@ Details, model choice, and limits are on [Research](https://bearly.ai/docs/manua
 
 **A zero-retention comparison.** Turn on **Zero Data Retention only** first. The **Rerun** menu then offers only zero-retention models, so every version you compare stays on them.
 
-**One model per project.** Set a model in a project's settings so every chat in that project starts on it, while your **New Chats** default stays your choice everywhere else. See [Projects](https://bearly.ai/docs/manual/projects.md).
+**One model per project.** Set a model in a project's settings so every chat in that project starts on it, while your **New chats** default stays your choice everywhere else. See [Projects](https://bearly.ai/docs/manual/projects.md).
 
 ## Related
 

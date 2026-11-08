@@ -46,7 +46,7 @@ After you decide, the card shows **Allowed**, **Denied**, **Stopped**, or **Allo
 
 ## The Permissions control
 
-Next to the message box, the **Permissions** control shows this chat's mode and saved approvals. It reads **Full access** while Full access is on, with a **Paused** badge when it's paused. In the iOS app on a phone, it shows only a shield icon.
+At the foot of the message box, the **Permissions** control shows this chat's mode and saved approvals. It reads **Full access** while Full access is on, with a **Paused** badge when it's paused. In the iOS app on a phone, it shows only a shield icon.
 
 Open it to see:
 
@@ -69,7 +69,7 @@ Full access lets a chat use its enabled tools without asking each time. It cover
 
 
 
-1. In the chat, select **Permissions** next to the message box, then **Full access**.
+1. In the chat, select **Permissions** at the foot of the message box, then **Full access**.
 2. Read **Enable full access?** — "Bearly can use enabled tools to read, change, or delete files, run programs, and act in signed-in apps and websites without asking each time. Mistakes or instructions in untrusted content can cause unintended changes." It lists the enabled tools and says it "Applies to this chat on this device."
 3. Select **Enable full access**, or **Cancel** to stay in Standard.
 
@@ -101,7 +101,7 @@ To turn it off, open the control and select **Standard**. Bearly stops current w
 
 ### Start new chats in Full access
 
-**App Settings** → **Privacy & Security** → **Start new chats in Full access**: "New chats on this device use your enabled tools without asking. Not recommended unless you know what you're doing."
+**Settings** → **Permissions** → **Start new chats in Full access**: "New chats on this device use your enabled tools without asking. Not recommended unless you know what you're doing."
 
 Turning it on asks **Start every new chat in Full access?**, which warns that agents make mistakes and that "instructions hidden in web pages, files, or emails can steer them", and notes it "Applies on this device only. You can switch any chat back to Standard from Permissions." Select **Turn on**. It doesn't change existing chats, chats where you chose Standard, or routines. If Full access isn't available, the setting says why, for example "Your team administrator turned off Full Access."
 

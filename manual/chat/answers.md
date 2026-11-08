@@ -1,6 +1,6 @@
 ---
 title: "Work with answers"
-description: "How to copy, edit, delete, rerun, and compare versions of messages in Bearly, read answers aloud or open them in Canvas, read Thinking steps and citations, what answers can display, what to do when an answer fails, and how to move around long chats with the timeline and chapters."
+description: "How to copy, edit, delete, rerun, and compare versions of messages in Bearly, read answers aloud or open them in Canvas, follow what Bearly is doing and read an answer's steps and citations, what answers can display, what to do when an answer fails, and how to move around long chats with the timeline and chapters."
 canonical: "https://bearly.ai/docs/manual/chat/answers/"
 markdown: "https://bearly.ai/docs/manual/chat/answers.md"
 ---
@@ -9,13 +9,15 @@ markdown: "https://bearly.ai/docs/manual/chat/answers.md"
 
 HTML: [https://bearly.ai/docs/manual/chat/answers/](https://bearly.ai/docs/manual/chat/answers/)
 
-> How to copy, edit, delete, rerun, and compare versions of messages in Bearly, read answers aloud or open them in Canvas, read Thinking steps and citations, what answers can display, what to do when an answer fails, and how to move around long chats with the timeline and chapters.
+> How to copy, edit, delete, rerun, and compare versions of messages in Bearly, read answers aloud or open them in Canvas, follow what Bearly is doing and read an answer's steps and citations, what answers can display, what to do when an answer fails, and how to move around long chats with the timeline and chapters.
+
+These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
 
 Every message in a chat has its own controls: copy it, edit what you asked, rerun it on another model, step through versions, or hear it read aloud. This page covers those controls, how answers are displayed, and how to find your way around a long conversation.
 
 ## Message controls
 
-Controls sit under each message. On a computer they appear when you hover over the message. On phones, tablets, and windows 768 pixels wide or narrower, they're always visible. Chats you can only read, such as project chats shared with you as a reader, show no message controls.
+Controls sit under each message. On a computer they appear when you hover over the message. On phones, tablets, and windows 768 pixels wide or narrower, they're always visible. Chats you can only read, such as project chats shared with you as a reader, show no message controls. While an answer is still running, its message controls stay hidden.
 
 | Control | Under your message | Under Bearly's answer | What it does |
 |---|---|---|---|
@@ -29,7 +31,7 @@ Controls sit under each message. On a computer they appear when you hover over t
 | **Read aloud** | No | On answers made only of text | Plays the answer as speech. |
 | **Edit in Canvas** | No | When Canvas is available | Opens the answer in the Canvas editor. |
 
-There's no thumbs-up or thumbs-down on messages. To send feedback about Bearly, use **Give Feedback** in the account menu at the bottom of the sidebar.
+There's no thumbs-up or thumbs-down on messages. To send feedback about Bearly, use **Give feedback** in the account menu at the bottom of the sidebar.
 
 ## Edit a message
 
@@ -40,7 +42,7 @@ Change what you asked and get a new answer, without losing the old one.
 
 
 
-1. Select **Edit Query** (the pencil) under your message — the message and its attachments load into the composer, and the strip under it shows **Editing message**.
+1. Select **Edit Query** (the pencil) under your message — the message and its attachments load into the composer, and the strip at its foot shows **Editing message**.
 2. Change the text or attachments.
 3. Send — Bearly answers the edited message as a new version of that turn. If an answer is still running, it stops first. Edits never wait in the queue.
 4. To back out, select **Cancel** in the **Editing message** strip, or press <kbd>Esc</kbd>.
@@ -76,13 +78,23 @@ Each rerun and each edit adds a version to the same turn instead of a new messag
 
 ## Read aloud and Edit in Canvas
 
-**Read aloud** plays an answer as speech. It appears only on answers made entirely of text; an answer that includes tool steps, a **Thinking** step, images, or files doesn't get it. Your organization must allow text-to-speech. Voice options and spoken conversations are on [Voice](https://bearly.ai/docs/manual/chat/voice.md).
+**Read aloud** plays an answer as speech. It appears only on answers made entirely of text; an answer that used tools or reasoning, or that includes images or files, doesn't get it. Your organization must allow text-to-speech. Voice options and spoken conversations are on [Voice](https://bearly.ai/docs/manual/chat/voice.md).
 
 **Edit in Canvas** opens an answer in the Canvas editor, where you can reshape it into a document. See [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md).
 
 ## Thinking steps
 
-When a model reasons before answering, Bearly shows that reasoning as a collapsible **Thinking** step above the answer. Open it to see how the model worked through the problem; leave it closed to read only the answer. If a model writes its reasoning into the answer between thinking tags, Bearly folds that into the same **Thinking** step. How much a model thinks depends on the model and on **Reasoning Effort**; see [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#reasoning-effort).
+While an answer runs, one line under it says what Bearly is doing right now: "Thinking" while the model reasons, what a tool is doing (each tool describes itself, such as "Checking current prices…"), or "Waiting for your approval" when a tool needs your OK. Once a step has run for 10 seconds, a timer shows how long it's taken. The line hides while the answer's text streams in, and comes back if Bearly starts another step.
+
+When the answer ends, the line becomes a summary of the work, such as "Worked 28s · 4 steps · 3 sources", with the sites it used and "1 step failed" if one did. An answer with no steps shows no line.
+
+Select the line, while it runs or after, to open the answer's **Steps** in the side panel. It lists every step in order, live while the answer runs:
+
+- **Thinking**: the model's reasoning. If a model writes its reasoning into the answer between thinking tags, Bearly moves that here too.
+- Each tool call, with its **Input**, its **Result** (or "Runs once you approve it." while it waits), an **Error** if it failed, and how long it took. A running call has a stop button, so you can stop one tool without stopping the answer.
+- Your messages, where Bearly read them: the one that started the answer and any you sent into it while it ran. Select one to jump to it in the chat.
+
+How much a model thinks depends on the model and on **Reasoning Effort**; see [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#reasoning-effort).
 
 ## How answers are displayed
 
@@ -101,7 +113,7 @@ When an answer draws on sources, it cites them so you can check the claim:
 
 - Web search answers carry numbered links to the pages they used.
 - Scholar answers mark claims with small superscript citations. Hover one for the paper; select it to open the paper.
-- Answers from your documents cite passages you can select to open the document near that page.
+- Answers from your documents have citations that open the source file. **Search Docs** citations can open at a matching page. **Read Doc** citations open the whole file; with a mouse or trackpad, hover one to see its page or page range.
 - Deep Research reports include numbered citations and a **Sources** list.
 
 Details for each are on [Research](https://bearly.ai/docs/manual/capabilities/research.md) and [Documents](https://bearly.ai/docs/manual/capabilities/documents.md).

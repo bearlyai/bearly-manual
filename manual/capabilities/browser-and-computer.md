@@ -44,7 +44,7 @@ Bearly Browser is a browser built into the desktop app. Chats work in their own 
 
 
 
-1. Open **App Settings** → **Desktop** → **Browser** and turn on **Enable Browser** and **Allow chats to use Browser** — the first makes the browser available, the second lets chats drive it. Both are on by default.
+1. Open **Settings** → **Browser** and turn on **Enable Browser** and **Allow chats to use Browser** — the first makes the browser available, the second lets chats drive it. Both are on by default.
 2. Optional: under **Import browser cookies**, choose a **Browser profile** and select **Import** — this copies current site sign-ins from Chrome or Edge into Bearly Browser. Only cookies are copied, never passwords, history, bookmarks, or autofill.
 3. Ask in a chat, naming the site and the boundary:
 
@@ -74,7 +74,7 @@ With the Bearly Companion extension installed, a desktop chat can work in your e
 
 
 
-1. In the desktop app, open **App Settings** → **Desktop** → **Chrome Extension** — the pane is titled **Control Chrome from chat** and shows the connection status.
+1. In the desktop app, open **Settings** → **Chrome extension** — the pane is titled **Control Chrome from chat** and shows the connection status.
 2. If it says **Chrome extension not connected**, select **Install Chrome extension** and add it to Chrome — or turn the extension back on if it's off.
 3. Keep Chrome and the desktop app open until the status reads **Connected to Chrome** — pairing happens on its own, and it survives restarting either app.
 4. Ask in a chat and name Chrome:
@@ -124,7 +124,7 @@ With the Bearly Companion extension installed, a desktop chat can work in your e
 
 
 **What you get:** files changed or created on your computer, and chat files when you ask for them. The tools appear in the chat as **Shell**, **Read File**, **Write File**, **Edit File**, **Attach File** (a local file into the chat), and **Save Locally** (a chat file onto your computer).
-**Limits:** a command times out after 2 minutes unless Bearly sets a longer limit, up to 10 minutes. Bearly won't start servers, watchers, or anything meant to keep running; start those yourself. **Attach File** and **Save Locally** handle files up to 50 MB. If you deny a request, Bearly doesn't retry the same one. Bearly installs the runtimes it needs for scripts the first time a task uses them; you can see them under **App Settings** → **Desktop** → **Runtime**.
+**Limits:** a command times out after 2 minutes unless Bearly sets a longer limit, up to 10 minutes. Bearly won't start servers, watchers, or anything meant to keep running; start those yourself. **Attach File** and **Save Locally** handle files up to 50 MB. If you deny a request, Bearly doesn't retry the same one. Bearly installs the runtimes it needs for scripts the first time a task uses them; you can see them under **Settings** → **Runtime**.
 **Combines with:** [Routines](https://bearly.ai/docs/manual/capabilities/routines.md#unattended-local-access) with unattended local access; [skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md#skills) whose scripts run on your computer; [Pages](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) built from what it computes.
 
 The chip's menu also has **Clear folder** (go back to a private folder for this chat), **Off for this chat**, and **Turn on for this chat**. Without a chosen folder, Bearly works in a private folder of its own for that chat. The folder and any chat-length approvals belong to this chat on this device.
@@ -159,7 +159,7 @@ Computer Use lets Bearly complete a task in the apps on your screen. It takes sc
 **Limits:** one Computer Use task at a time per chat. Bearly's own windows are never a target. Routines never see or control your screen. Before a consequential action your request didn't already authorize, such as sending, publishing, buying, deleting, or changing account or security settings, Bearly asks **Confirm this computer action**; Full access covers this one. A safety check raised during the task also shows **Confirm this computer action**, and that one always asks, even with Full access.
 **Combines with:** [Run Python and charts](https://bearly.ai/docs/manual/capabilities/data-and-code.md) after it reports what it read; [email](https://bearly.ai/docs/manual/capabilities/email-and-text.md) to send the result.
 
-On a Mac, if a permission is missing, Bearly says "Computer Use needs Accessibility and Screen Recording access." Turn on **Bearly** under both in **System Settings** → **Privacy & Security**, then send the request again. On Windows, Bearly may offer **Finish setting up Computer Use** for a small helper that controls protected and background windows more reliably; select **Finish setup** and approve the administrator prompt. Its status lives at **App Settings** → **Desktop** → **Runtime** → **Windows Computer Use helper**.
+On a Mac, if a permission is missing, Bearly says "Computer Use needs Accessibility and Screen Recording access." Turn on **Bearly** under both in **System Settings** → **Privacy & Security**, then send the request again. On Windows, Bearly may offer **Finish setting up Computer Use** for a small helper that controls protected and background windows more reliably; select **Finish setup** and approve the administrator prompt. Its status lives at **Settings** → **Runtime** → **Windows Computer Use helper**.
 
 If your organization's model policy blocks every model Computer Use supports, Bearly says so instead of starting.
 

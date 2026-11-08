@@ -11,6 +11,8 @@ HTML: [https://bearly.ai/docs/manual/combine/building-blocks/](https://bearly.ai
 
 > The composition model behind Bearly — what each capability takes in and produces, which outputs feed which tools, where each block runs, which plans and Routines support it, and what breaks a chain — so a person or an AI can design new multi-step workflows.
 
+These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
+
 Every Bearly capability is a building block: it takes something in, does one job, and leaves its result in the chat. Later steps can use anything earlier steps left there, so blocks chain into workflows nobody wrote down. This page lists the blocks, the hand-offs between them that are known to work, and the limits that break a chain.
 
 ## How blocks connect
@@ -18,7 +20,7 @@ Every Bearly capability is a building block: it takes something in, does one job
 **Every result lands in the chat.** A block leaves its output in one of five places:
 
 - **Text in the conversation**: the answer, plus what tools return to the AI, such as search results, page text, or data.
-- **Files in the chat**: uploads and everything Bearly saves or makes, such as Pages, CSV and Markdown files, images, audio, video, PDFs, and transcripts. They're listed in **Browse files** in the chat header, under **Uploaded** and **Generated**, and each has an ID the AI can hand to the next tool.
+- **Files in the chat**: uploads and everything Bearly saves or makes, such as Pages, CSV and Markdown files, images, audio, video, PDFs, and transcripts. They're listed under **Files** in the chat header, under **Uploaded** and **Generated**, and each has an ID the AI can hand to the next tool.
 - **Cards**: interactive results such as a Deep Research report, a **Chart**, a YouTube video card, a Best Pick card, or the image editor. Some cards also save files.
 - **Links**: a Page you publish gets a stable bearly.sh link.
 - **Messages outside Bearly**: an email to you or a teammate, or a text to your phone.
@@ -27,7 +29,7 @@ Every Bearly capability is a building block: it takes something in, does one job
 
 **References point at exact files and tools.** Type `/` at the start of a message or `@` anywhere in it to pick a tool, skill, prompt template, or file by name. A message can start with one `/` command and hold any number of `@` references, so one message can name a file and a tool together. A reference only selects a tool you already have; it never turns on one your plan or organization has turned off. See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md#reference-tools-files-and-skills).
 
-**Projects share files across chats.** Files in a project's **Docs & Data** are available to every chat in that project: they appear in the `@` menu, and the document tools search them. Turn on **Always Search Documents** in the project's chat settings and every answer searches them first. See [Projects](https://bearly.ai/docs/manual/projects.md).
+**Projects share files across chats.** Files on a project's **Files** tab are available to every chat in that project: they appear in the `@` menu, and the document tools search them. Turn on **Always search documents** in the project's chat settings and every answer searches them first. See [Projects](https://bearly.ai/docs/manual/projects.md).
 
 **Routines replay a chain on a schedule.** A routine runs a saved prompt in its own chat at the times you set, with a smaller set of tools, and each run can build on the ones before it. See [Routines](https://bearly.ai/docs/manual/capabilities/routines.md) and [Routines run a smaller toolset](#routines-run-a-smaller-toolset).
 
@@ -52,7 +54,7 @@ Details: [Research](https://bearly.ai/docs/manual/capabilities/research.md).
 | **Image Search** `/image-search` | A description of the images you want | A gallery of up to 20 images with their source pages | Any | All | Yes | No |
 | **Read Site** `/read-site` | One web address | The page's text for the AI; long pages, documents, images, and media are saved as chat files | Any | All | Yes | Yes |
 | **Deep Research** `/deep-research` | A text question, then a plan you review and can edit | A cited report with sources and figures, a PDF in the chat, and the PDF by email | Analyst (Standard), Research (Ultra) | All | Only through a routine's Deep Research plugin | No |
-| **Scholar** `/scholar` | A question about research literature | An answer with superscript citations, a **Papers** card, and open-access PDF links when they exist | Any | All | Yes | Yes |
+| **Scholar** `/scholar` | A question about research literature | An answer with superscript citations, a paper-results card, and open-access PDF links when they exist | Any | All | Yes | Yes |
 | **Council of Experts** `/council` (listed as Ask Experts) | One self-contained question that names any files it should use | Answers from 2 to 5 models side by side, then one combined reply | Pro | All | No | — |
 | **Best Pick** `/bestpick` | A shopping question, such as the best stick vacuum for pet hair under a price | A card with one product to buy, a store link, the evidence, and follow-up chips | Pro | All | No | No |
 | **People Search** `/people-search`, `/find-people`, `/work-emails`, `/lead-enrichment` | A named person plus one detail, a description of the people you want, names with a company domain, or known profiles | A candidate card, then a cited brief; lists and email lookups as tables in the reply | Analyst | All | No | No |
@@ -78,9 +80,9 @@ Details: [Documents](https://bearly.ai/docs/manual/capabilities/documents.md).
 
 | Block | Takes | Produces | Plan | Where | In Routines | Council experts |
 |---|---|---|---|---|---|---|
-| **Attach files** (**+** → **Attach files**, drag and drop, paste, or **Take photo**) | Files from your device, up to 300 MB each | Files in the chat, under **Uploaded** | Any | All | — | — |
+| **Attach files** (**+** → **Attach files**, drag and drop, paste, or **Take photo**) | Files from your device, up to 1000 MB each | Files in the chat, under **Uploaded** | Any | All | — | — |
 | **Share your screen** (**+** → **Share your screen**) | A window or screen you pick | A fresh still capture attached to each message you send | Any | Desktop app, and web browsers that support screen sharing | — | — |
-| **Search Docs** `/search-docs` | A question about the chat's and project's files | Cited passages; each citation opens the document near that page | Any | All | Yes | Yes |
+| **Search Docs** `/search-docs` | A question about the chat's and project's files | Cited passages; search citations open at a matching page when available | Any | All | Yes | Yes |
 | **Read Doc** `/read-document` and **Scan Doc** `/find-in-document` | A document and the pages to read, or exact text to find | Page text, or each match with its page, line, and surrounding text | Any | All | Yes | Yes |
 | **Summarize Doc** `/summarize` | A long document | A **Deep Summary** in the reply | Any | All | Yes | No |
 | **Document editor** `/document` | A document task, plus any PDF, Word, PowerPoint, or Excel files in the chat to work on | New or edited files: filled PDF forms, .docx files with tracked changes, decks, spreadsheets with formulas | Any | All | No | No |
@@ -118,7 +120,7 @@ Details: [Images, video, and audio](https://bearly.ai/docs/manual/capabilities/i
 | **Make Video** `/video` | A description, and optionally an image as the start frame plus an end frame | A 4 to 15-second MP4 with generated sound, saved in the chat | Any | All | No | No |
 | **Edit Video** `/edit-video` | A 3 to 10-second clip under 50 MB | A separate edited clip; the original stays as it was | Any | All | No | No |
 | **Read Aloud** `/say`, and Voice Studio | Text: a reply, your message, or a script | Spoken audio saved as a chat file; Voice Studio for voices, delivery, and takes | Any | All | No | No |
-| **Transcribe** `/transcribe` | Audio or video files in the chat, up to 400 MB each | A transcript with speaker names and timestamps, plus a `.srt` transcript file in the chat | Any | All | No | No |
+| **Transcribe** `/transcribe` | Audio or video files in the chat; attachment limit 1000 MB, with separate transcription processing limits | A transcript with speaker names and timestamps, plus a `.srt` transcript file in the chat | Any | All | No | No |
 | **View Media** `/analyze-media` | Image or video files in the chat | What the AI sees, in the conversation; up to 10 minutes of video per look | Any | All | Yes | No |
 
 ### Voice and meetings
@@ -129,7 +131,7 @@ Details: [Voice](https://bearly.ai/docs/manual/chat/voice.md) and [Meetings](htt
 |---|---|---|---|---|---|---|
 | **Voice call** (**Start voice call**) | Your voice; the call can use the chat's tools | Spoken answers, and a call card in the chat with the transcript (audio isn't saved) | Any; choosing the voice model needs Pro | All, except Firefox | No | — |
 | **Dictation** (microphone in the composer) | Your voice | Text in the composer, or a message sent right away | Any | All | — | — |
-| **Meetings** (sidebar **Meetings and Recordings**) | Your microphone; in the desktop app, also the call's computer audio | Live and final transcripts with speaker names, a summary when you ask, and the audio file | Any | All; computer audio needs the desktop app on Windows or macOS 13 or later | — | — |
+| **Meetings** (sidebar **Meetings**) | Your microphone; in the desktop app, also the call's computer audio | Live and final transcripts with speaker names, a summary when you ask, and the audio file | Any | All; computer audio needs the desktop app on Windows or macOS 13 or later | — | — |
 
 ### Agents and automation
 
@@ -144,7 +146,7 @@ Details: [Routines](https://bearly.ai/docs/manual/capabilities/routines.md), [Co
 | **Chrome control** | Your open Chrome tabs | Page text, screenshots, clicks and typing, console and network detail | Any | Desktop app, with Chrome and the Bearly extension | No | No |
 | **Computer Use** `/computer` | A task in an app that's open on screen | The task done by clicking and typing, and a **Computer Use** step listing the actions | Any | Desktop | No | No |
 | **Chat management** (ask in any chat) | A request to list, read, create, rename, move, or delete chats | Your chat list, an earlier chat's contents, or the change; listing, reading, and deleting ask you first | Any | All | No | No |
-| **Prompt Templates** (`/` → **Skills**) | Values for the template's fields, and optional files | A filled form in the chat that runs as a prompt and can run again with new values | Any | All | No | No |
+| **Prompt templates** (sidebar **Prompt templates**; run from `/` → **Skills**) | Values for the template's fields, and optional files | A filled form in the chat that runs as a prompt and can run again with new values | Any | All | No | No |
 | **Remote modules** (tools labeled `fn-…`) | Tools from a server you or your admin add | That server's results | Any | Web app and desktop app; servers on a private network need the desktop app | No | No |
 
 ### Organize and share
@@ -154,7 +156,7 @@ Details: [Organize chats](https://bearly.ai/docs/manual/chat/organize.md) and [P
 | Block | Takes | Produces | Plan | Where | In Routines | Council experts |
 |---|---|---|---|---|---|---|
 | **File reference** (`@` → **Assets**) | Any file in the chat or its project | An exact pointer the AI uses for that turn | Any | All | — | — |
-| **Projects** (sidebar **Projects**) | Files in **Docs & Data**, project instructions, and default chat settings | Shared files and defaults for every chat in the project | Any | All; **Local Directory Sync** needs the desktop app | — | — |
+| **Projects** (sidebar **Projects**) | Files on the project's **Files** tab, project instructions, and default chat settings | Shared files and defaults for every chat in the project | Any | All; **Local Directory Sync** needs the desktop app | — | — |
 | **Share** (`/share`, the header **Share** button, or **Share file** on a file) | The conversation, or one file | A Page with artwork and a link preview that you review, then publish to a stable bearly.sh link | Any | All | No | — |
 | **Download as Markdown** (command menu) | The chat | A `.md` file of the conversation, with tool activity if you include it | Any | All | — | — |
 | **Search chats and files** (<kbd>⌘</kbd> <kbd>F</kbd>) | Words or a topic | Matching chats and files, including files Bearly made | Any | All | — | — |
@@ -214,7 +216,7 @@ Each rule names an output type and the blocks that can take it next. These conne
 ### Across chats and over time
 
 - **A meeting transcript** → **Add to chat** attaches it as a Markdown file to a new or existing chat's draft, without sending → summaries, action items, a follow-up email, or a Page. **Add to project** puts the same file in a project's files → every chat in that project. The meeting's **Quick summary** isn't included in the file.
-- **Project files** → every chat in the project, through `@` and the document tools; **Always Search Documents** makes every answer search them first.
+- **Project files** → every chat in the project, through `@` and the document tools; **Always search documents** makes every answer search them first.
 - **A routine run** → lands in the routine's chat → with **Build on previous runs** on, the next run sees earlier ones. Files a run writes, such as a Page or a CSV, can go out with **Email each result**.
 - **A chat that did the job once** → ask it to repeat on a schedule, for example "Do this every weekday at 8 and email me the result." Bearly sets up a routine from that chat.
 
@@ -238,7 +240,7 @@ In an organization, an admin's policy can turn off any block. The `/` label then
 
 - **Web** off removes Web Search, Image Search, Read Site, Deep Research, Scholar, YouTube, and Best Pick.
 - **Chat web search** off removes Image Search, Deep Research, Best Pick, Scholar's search of journal sites, and YouTube's **Find** and **Check claims**.
-- **File uploads** off removes attaching files, screen sharing, Get Video, viewing X videos, and the files YouTube saves; it also blocks uploads to a project's **Docs & Data** and **Local Directory Sync**.
+- **File uploads** off removes attaching files, screen sharing, Get Video, viewing X videos, and the files YouTube saves; it also blocks uploads to a project's **Files** tab and **Local Directory Sync**.
 - **Run Python** off removes both `/python` and `/document`. Charts then work only on a CSV that's already prepared, or one made with **Work locally** in the desktop app.
 - **Sharing** off removes Share. **Public links** and **Share with people and teams** decide who can open a published Page.
 - **Memory Recall** off turns off Recall and **Memories**.
@@ -263,7 +265,7 @@ A routine runs only in the desktop app, on the device it's installed on, while t
 
 Turn on end-to-end encryption and your new chats are encrypted on your devices. Bearly stores and syncs only the locked copies. Each message, and any file a tool works on, still goes to the model and the services doing the work. Some blocks behave differently in these chats:
 
-- **Search Docs** isn't available, and **Always Search Documents** has no effect. **Read Doc**, **Scan Doc**, and **Summarize Doc** still work.
+- **Search Docs** isn't available, and **Always search documents** has no effect. **Read Doc**, **Scan Doc**, and **Summarize Doc** still work.
 - **Memories** and Recall aren't available. Encrypted chats don't appear in **Search chats and files**, and the chat-management tools in a regular chat can't see them.
 - **Get Video** works only through Bearly's servers: no YouTube links, and up to 100 MiB per saved file.
 - **Run Python** works, with up to 50 MiB of input files per run.
@@ -312,7 +314,7 @@ Use this procedure to build a chain nobody has written down, whether you're a pe
 3. Read that block's **Takes** column and find the block that produces it. Repeat until you reach something you already have: a question, a link, or a file — this gives you the chain in order.
 4. Check every block against the gates above: plan, platform, organization controls, an encrypted chat, and the routine toolset if it will run on a schedule — swap any block that fails for another with the same output.
 5. Write one prompt per step, naming the tool with `/` or `@` and the file with `@` — this removes the AI's guesswork about which tool or file you mean.
-6. Run a step, check its output, then run the next — confirm the file appears in **Browse files**, the chart has the right rows, or the report finished. Queue later steps only once the chain is proven.
+6. Run a step, check its output, then run the next — confirm the file appears in the chat's **Files**, the chart has the right rows, or the report finished. Queue later steps only once the chain is proven.
 7. To repeat the chain, ask the chat to set it up as a routine — keep only blocks routines can run.
 
 

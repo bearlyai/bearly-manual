@@ -11,6 +11,8 @@ HTML: [https://bearly.ai/docs/manual/capabilities/documents/](https://bearly.ai/
 
 > How Bearly opens, previews, searches, cites, summarizes, edits, converts, and proofreads files in a chat or project, including supported file types, size limits, password-protected PDFs, Always Search Documents, the Document editor, and what changes in end-to-end encrypted chats.
 
+These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
+
 Attach a file and Bearly can show it, read it, search it, quote it with page citations, summarize it, or hand back a new edited copy. This page covers every file and document tool in a chat: adding files, what each file type looks like, finding files again, the document research tools, the Document editor, and Fix Grammar.
 
 ## Add files to a chat
@@ -24,7 +26,7 @@ You can attach files in four ways. All of them need uploads to be allowed.
 
 **You need:** any plan. Admin control: **File uploads** (under **Privacy & Security**). When it's off, attaching, dropping, pasting files, and the camera are all hidden.
 
-**Limits:** 300 MB per file; a larger file isn't attached. While a file is being prepared, its chip shows a spinner (hover it for "Checking PDF.", "Uploading" with progress, or "Analyzing."), and you can't send until it finishes. If a chip shows a warning icon with "Unable to upload and process.", remove it with its **×** and attach the file again; you can't send while it's there.
+**Limits:** 1000 MB per file; a larger file isn't attached. While a file is being prepared, its chip shows a spinner (hover it for "Checking PDF.", "Uploading" with progress, or "Analyzing."), and you can't send until it finishes. If a chip shows a warning icon with "Unable to upload and process.", remove it with its **×** and attach the file again; you can't send while it's there.
 
 For everything else about the message box, see [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md).
 
@@ -50,7 +52,7 @@ Bearly detects a locked PDF when you attach it and asks for the password before 
 
 ## What Bearly can open and read
 
-Every file appears as a card in the chat. Select **Open** on a card to see it full size in the side panel.
+Every file appears as a card in the chat. Select the card, or **Open** on it, to see it full size in the side panel. Images open in the image viewer instead, which fills the window; several photos sent together show as one stack.
 
 | File type | In the chat | In the side panel | What Bearly does with it |
 | --- | --- | --- | --- |
@@ -58,7 +60,7 @@ Every file appears as a card in the chat. Select **Open** on a card to see it fu
 | Word, Excel, PowerPoint, OpenDocument, `.pages`, `.numbers`, `.key`, `.epub` | Converted to PDF for the preview | PDF view; **Download** offers **PDF** or **Original** | Reads and searches the text; the Document editor edits Word, Excel, and PowerPoint files |
 | CSV, TSV, and pipe-separated (`.csv`, `.tsv`, `.tab`, `.psv`) | Spreadsheet grid showing rows × columns, with **Copy table** and **Open** | Editable grid | Searches it as text; Run Python can analyze it; Charts can draw from it |
 | Markdown | Rendered, with **Copy** and **Open** | Rendered | Reads and searches it |
-| Images | Image | Full-size image | Looks at it with View Media; Touch Up can edit it |
+| Images | Image, or a stack of images with a count | Image viewer with arrows, thumbnails, zoom, copy, and download | Looks at it with View Media; Touch Up can edit it |
 | Audio | Compact player | Full player | Transcribe turns speech into text |
 | Video | Video player | Video player | View Media watches it; Transcribe turns speech into text |
 | HTML | Live [Page](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) preview | The live Page | Reads it |
@@ -70,16 +72,18 @@ Word covers `.doc`, `.docx`, `.docm`, `.dot`, `.dotx`, and `.dotm`. Excel covers
 
 Bearly pulls the text out of documents up to 200 MB so the document tools can search and read them. Images, audio, and video skip this step: use [Transcribe](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#transcribe) for what was said and [View Media](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#view-media) for what's on screen.
 
-## Find files again with Browse files
+## Find files again with Files
 
-When a chat has files, its header shows **Browse files** (a Files icon with a count). It opens a list of the chat's files, newest first, with filters:
+When a chat has files, its header shows **Files**, a files icon with a count. It opens the side panel on **Files**: every file in the chat, newest first and grouped by day. Search with **Search files**, or narrow the list with an available filter, each showing its count:
 
 - **All** — every file.
-- **Project** — files in the chat's project (shown only in a project chat).
 - **Uploaded** — files you attached.
-- **Generated** — files Bearly made, such as Pages, Python outputs, and images.
+- **Generated** — files Bearly made, such as Pages, Python outputs, and images. Canvas documents are listed too.
+- **Project** — files in the chat's project (shown only in a project chat).
 
-On iOS, a PDF's main action in the list is **Open PDF**. You can also ask in chat with `/files` (**Browse Files**) and Bearly lists them.
+Filters with no files are hidden.
+
+Photos and PDFs show thumbnails. Select a file to open it in its own tab in the panel; a photo opens the image viewer on every image in the chat. **Jump to message** scrolls the chat to the message the file came with. In the iOS app, PDFs open outside the app. You can also ask in chat with `/files` (**Browse Files**) and Bearly lists them.
 
 To find a file in any chat, press <kbd>⌘</kbd> <kbd>F</kbd> (<kbd>Ctrl</kbd> <kbd>F</kbd> on Windows and Linux), type in **Search chats and files...**, and switch to the **Files** tab. Results are labelled **Uploaded**, **Generated**, or **Saved by Bearly**. End-to-end encrypted chats aren't searched. See [Organize, find, and share](https://bearly.ai/docs/manual/chat/organize.md).
 
@@ -106,7 +110,7 @@ These file tools are in the `/` menu under **Tools**:
 
 ## Preview, edit a table, and download
 
-Open any file in the side panel to get its controls: a version dropdown for files Bearly has edited, **Copy** where the content can be copied, **Share file** (when sharing is allowed and you can edit the chat), **Download**, and **Close**. For documents previewed as PDF, **Download** offers **PDF** or **Original**; choose **Original** for the editable file.
+Open any file in the side panel to get its controls: a version dropdown for files Bearly has edited, **Copy** where the content can be copied, **Share file** (when sharing is allowed and you can edit the chat), and **Download**. PDFs add page arrows and **Zoom in** and **Zoom out**. On a phone, **Copy**, **Share file**, and the versions are under **More**. Each file opens in its own tab; close it with the tab's close button, or close the panel with <kbd>Esc</kbd>. For documents previewed as PDF, **Download** offers **PDF** or **Original**; choose **Original** for the editable file.
 
 CSV files are editable in the side panel:
 
@@ -144,9 +148,11 @@ Bearly has four document tools. They appear once the chat or its project has at 
    Compare the renewal, termination, and price-increase terms in these three agreements. Make a table with one row per agreement and cite the page for every cell.
    ```
 
-3. Select a citation in the answer — the document opens near the cited page so you can check the surrounding text.
+3. Select a citation in the answer to open its source document and check the surrounding text.
 
 
+
+**Search Docs** citations open at the matching page when one is available. **Read Doc** citations open the whole file. With a mouse or trackpad, hover a Read Doc citation to see its page or page range.
 
 **What you get:** an answer with clickable citations, and sometimes a strip of matching document sources above it.
 
@@ -173,7 +179,7 @@ Summarize Doc condenses one long document into a structured overview. When Bearl
 
 **Limits:** for a very long document, Deep Summary reads up to 30 evenly spaced sections rather than every word. When completeness matters, ask Bearly to read the specific section with Read Doc or find every mention with Scan Doc.
 
-## Always Search Documents (projects)
+## Always search documents (projects)
 
 In a project, you can make Bearly search the project's documents before every answer, so replies stay grounded in your material without asking each time.
 
@@ -183,9 +189,9 @@ In a project, you can make Bearly search the project's documents before every an
 
 
 
-1. In the sidebar, expand the project and select **Settings**.
-2. In **Project Chat Settings** (**Shared Project Settings** in a shared project), turn the card on with its switch if it shows **Disabled**.
-3. Turn on **Always Search Documents** ("Always search project documents before responding") — the lock toggle beside it decides whether people can change it in their own chats.
+1. In the sidebar, select the project, then its **Settings** tab.
+2. In **Project chat settings** (**Shared project settings** in a shared project), turn on **Use project defaults** if it's off.
+3. Turn on **Always search documents** ("Search the project's files before every answer.") — the lock button beside it decides whether people can change it in their own chats.
 
 
 
@@ -195,7 +201,7 @@ In a project, you can make Bearly search the project's documents before every an
 
 ## Document editor
 
-The Document editor creates new office documents and edits or converts the ones you attach. It works by running Python in Bearly's cloud sandbox with helpers for each format, so a Run Python step appears while it works.
+The Document editor creates new office documents and edits or converts the ones you attach. It works by running Python in Bearly's cloud sandbox with helpers for each format, so a **Run Python** step appears while it works.
 
 **Use it when:** you need a real file back, such as a Word draft with tracked changes, a filled PDF form, a slide deck from your notes, or a spreadsheet with working formulas.
 
@@ -255,7 +261,7 @@ Fix Grammar marks problems in a passage and lets you accept each fix one at a ti
 
 Files work in end-to-end encrypted chats, with these differences:
 
-- **Search Docs** isn't available, and **Always Search Documents** has no effect. Read Doc, Scan Doc, and Summarize Doc still work.
+- **Search Docs** isn't available, and **Always search documents** has no effect. Read Doc, Scan Doc, and Summarize Doc still work.
 - Files from encrypted chats don't appear in **Search chats and files...**.
 - Run Python and the Document editor still work. The files you give a run are sent to the cloud sandbox to process, up to 50 MB in total per run.
 
@@ -277,7 +283,7 @@ You get a cited comparison table and a Word file with your proposed changes as t
 
 
 
-1. Attach the agreements and ask for the comparison — check a few citations against the pages they open.
+1. Attach the agreements and ask for the comparison — check a few cited passages against the source files.
 
    ```text
    Compare the limitation-of-liability, indemnity, and termination clauses across these agreements. One row per agreement, cite the page for every cell, and flag anything unusual.
@@ -293,7 +299,7 @@ You get a cited comparison table and a Word file with your proposed changes as t
 
 
 
-**Swap in:** Scan Doc for the first step when you need every exact mention of a term; a project with **Always Search Documents** instead of attaching the files each time; a filled PDF instead of a DOCX for a form.
+**Swap in:** Scan Doc for the first step when you need every exact mention of a term; a project with **Always search documents** instead of attaching the files each time; a filled PDF instead of a DOCX for a form.
 
 **If it stalls:** if citations point to the wrong file, name the files with `@`. If the run fails, select the **Run Python** step, read **Error**, and ask Bearly to retry with one file.
 

@@ -20,9 +20,9 @@ Chats live in the left sidebar, grouped by project, pins, and date. This page co
 
 
 
-1. Select **New Chat** in the sidebar — opens the new-chat screen, outside any project.
-2. Or press <kbd>⌘</kbd> <kbd>N</kbd> or <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>N</kbd> (<kbd>Ctrl</kbd> <kbd>N</kbd> or <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>N</kbd> on Windows and Linux; a web browser may keep these keys for its own windows), use the pen icon in the chat header (shown when the sidebar is closed), or choose **New** in the command menu — from a project chat, these start the new chat in the same project.
-3. To pick a project on the new-chat screen, use the project chip under the composer ("Start this chat in a project") — search for a project, choose from **Recent** or **All projects**, create one with **New project**, or choose **No project**. The project is fixed once the chat starts.
+1. Select **New chat** (the pen icon at the top of the sidebar) or **Chat** — opens the new-chat screen, outside any project.
+2. Or press <kbd>⌘</kbd> <kbd>N</kbd> or <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>N</kbd> (<kbd>Ctrl</kbd> <kbd>N</kbd> or <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>N</kbd> on Windows and Linux; a web browser may keep these keys for its own windows), use the pen icon in the chat header (shown when the sidebar is hidden), or choose **New** in the command menu — from a project chat, these start the new chat in the same project.
+3. To pick a project on the new-chat screen, use the project chip at the foot of the composer (it reads **No project**) — search for a project, choose from **Recent** or **All projects**, create one with **New project**, or choose **No project**. The project is fixed once the chat starts.
 4. Type your first message and send.
 
 
@@ -49,21 +49,23 @@ Bearly titles each chat automatically from your first message, in the background
 
 The list is grouped, top to bottom:
 
-- **Projects**, with their chats.
+- **Projects**. Select a project to open its page; the arrow at the end of its row shows or hides its chats.
 - **Pinned** chats.
-- Everything else by last activity: **Today**, **This Week**, **This Month**, then each earlier month of this year, then each earlier year.
+- Everything else by last activity: **Today**, **This week**, **This month**, then each earlier month of this year, then each earlier year.
+
+Select a section's header to fold it. A folded section shows one row with what it holds, such as "12 chats", and a mark when a chat in it is unread, working, or waiting for approval. Bearly remembers which sections you folded on this device. To hide the whole sidebar, press <kbd>⌘</kbd> <kbd>\\</kbd> (<kbd>Ctrl</kbd> <kbd>\\</kbd> on Windows and Linux) or select the sidebar button at the top left.
 
 A chat's row can show:
 
 | Indicator | Meaning |
 |---|---|
-| Accent bar on the left | Unread replies |
+| Dot after the title | Unread replies |
 | Spinner ("Bearly is working") | An answer is running |
 | Shield ("Waiting for approval" or "Shell approval needed") | Bearly is waiting for you to approve an action |
 | Lock ("Approve this device to open this chat") | An end-to-end encrypted chat this device can't open yet |
 | Archive icon | The chat is archived |
 
-Pins and archives are saved to your account, so the sidebar looks the same on every device.
+Pins and archives are saved to your account, so they're the same on every device.
 
 ## Use the More actions menu
 

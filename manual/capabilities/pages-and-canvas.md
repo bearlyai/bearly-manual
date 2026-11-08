@@ -11,6 +11,8 @@ HTML: [https://bearly.ai/docs/manual/capabilities/pages-and-canvas/](https://bea
 
 > How to build interactive Pages in Bearly, refine them through versions, prepare and publish them to a stable bearly.sh link with the right audience, share a conversation's key takeaways, and edit an answer as a document in Canvas, with every limit that applies.
 
+These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
+
 A Page is something Bearly builds for you to use, not just read: a calculator, dashboard, planner, game, prototype, or interactive chart. Canvas is a document editor for revising an answer's text with Bearly's help. This page covers both, plus publishing a Page to a link.
 
 ## What a Page is
@@ -43,7 +45,7 @@ Bearly makes a Page when you ask it to build, make, or create an app, game, calc
 
 
 
-**What you get:** a live Page in the chat, saved as an `.html` file you can download and open in a browser. Reopen it later from **Browse files** → **Generated**.
+**What you get:** a live Page in the chat, saved as an `.html` file you can download and open in a browser. Reopen it later from **Files** → **Generated** in the chat header.
 
 **Limits:**
 
@@ -61,11 +63,11 @@ Bearly makes a Page when you ask it to build, make, or create an app, game, calc
 
 ## Versions and editing
 
-Every edit Bearly makes to a Page saves a new version (v1, v2, and so on). Once a Page has two or more versions, a version dropdown appears; select a version to view it. A label beside the dropdown says whether you're looking at the **Latest** version, the one **At this point** (the version from the message you opened it from), or an **Earlier** one.
+Every edit Bearly makes to a Page saves a new version (v1, v2, and so on). Once a Page has two or more versions, the **Asset version** dropdown appears; select a version to view it. In a phone browser, use **More** → **Version**. A label beside the dropdown says whether you're looking at the **Latest** version, the one **At this point** (the version from the message you opened it from), or an **Earlier** one.
 
 Edits always build on the latest version, even if you were looking at an older one. There's no restore button; to bring back part of an earlier design, describe what you want back.
 
-The side panel header also has **Copy**, **Share file** (when sharing is allowed and you can edit the chat), **Download**, and **Close**. Once a Page is prepared for sharing, **Publish** appears there too.
+The Page's tab in the side panel also has **Copy**, **Share file** (when sharing is allowed and you can edit the chat), and **Download**; close it with its tab's close button. Once a Page is prepared for sharing, **Publish** appears there too. On a phone, **Copy**, **Share file**, and the version list are under **More**.
 
 You can force the file tools with `/create-file` (**Create Asset**) to write a new Page and `/edit-file` (**Edit Asset**) to change one.
 
@@ -96,7 +98,7 @@ To share the whole conversation instead of one file, select the **Share** icon i
 **After publishing:**
 
 - **Publish update** sends your latest changes to the same link. If the popover says "Use Share to add a preview image and conversation brief before publishing an update.", select **Share file** and prepare the Page again first.
-- **Unpublish** takes the link down. **Retry cleanup** appears if an unpublish didn't finish.
+- **Unpublish** takes the link down after you confirm **Unpublish this page?** ("The link stops working for anyone who has it."). **Retry cleanup** appears if an unpublish didn't finish.
 - The link stays the same when you republish, rename the file, or change the audience. The address is built from the file name on the first publish, for example `mortgage-calculator-` followed by a short code, on bearly.sh.
 - Updates to a public link can take up to a minute to reach people who already opened it.
 - People on a **People and teams** link sign in to Bearly to open it.
@@ -137,7 +139,7 @@ Canvas turns an answer into a document you can edit side by side with Bearly. Se
 
 
 
-1. Under an answer that has text, select **Edit in Canvas** (the notebook-and-pencil icon) — Bearly opens the text as a Canvas and gives it a short title.
+1. Under an answer that has text, select **Edit in Canvas** (the notebook-and-pencil icon) — Bearly opens the text as a Canvas in the side panel beside the chat and gives it a short title.
 2. Switch between **Preview** ("Show the formatted document") and **Edit** ("Edit the Markdown") — on wide screens, **Edit** shows the editor beside the preview.
 3. Select some text, type in "Ask AI about this text...", and select **Submit** — Bearly runs a chat turn titled "Canvas Edit" that rewrites the selection. On a narrow screen, use the "How can I edit this for you?" box.
 4. Or ask in the chat — once a Canvas exists, Bearly can edit it directly from an ordinary message.
@@ -146,13 +148,13 @@ Canvas turns an answer into a document you can edit side by side with Bearly. Se
    In the Canvas, tighten the introduction to three sentences and make the closing paragraph more direct.
    ```
 
-5. Use **Copy** in the toolbar, **Undo** and **Redo** while in **Edit**, and **Close Canvas** or <kbd>Esc</kbd> to close it.
+5. Use **Copy** in the toolbar, and **Undo** and **Redo** while in **Edit**. Close the Canvas with its tab's close button, or close the whole panel with <kbd>Esc</kbd>.
 
 
 
 **What you get:** a live document inside the chat. Its card reads "Canvas", or "Editing in Canvas" while open.
 
-**Limits:** a Canvas has no version history and no download. **Copy** copies the Markdown; paste it wherever you need it, or ask Bearly to turn it into a file. A Canvas isn't a file, so it doesn't appear in **Browse files**. Not available in [Routines](https://bearly.ai/docs/manual/capabilities/routines.md).
+**Limits:** a Canvas has no version history and no download. **Copy** copies the Markdown; paste it wherever you need it, or ask Bearly to turn it into a file. A Canvas isn't a file, but it's listed under **Files** → **Generated** in the chat header so you can reopen it. Not available in [Routines](https://bearly.ai/docs/manual/capabilities/routines.md).
 
 **Combines with:** [Fix Grammar](https://bearly.ai/docs/manual/capabilities/documents.md#fix-grammar) for a final proofread, the [Document editor](https://bearly.ai/docs/manual/capabilities/documents.md#document-editor) for a Word or PDF version, and Pages for a styled version you can publish.
 

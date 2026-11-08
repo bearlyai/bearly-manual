@@ -118,7 +118,7 @@ You find the right people at a set of companies, get their work emails, build a 
 **Swap in:**
 - **Lead enrichment for Find people:** `/lead-enrichment` with up to 10 known profile links, emails, or name-and-employer pairs returns structured profile data for each.
 - **Your own list for Find people:** attach a spreadsheet and run step 2 on it. See the next recipe.
-- **A text for the email:** ask Bearly to text you the three things to remember from the brief before the meeting. Needs a verified phone in **Settings** → **Phone & SMS**.
+- **A text for the email:** ask Bearly to text you the three things to remember from the brief before the meeting. Needs a verified phone in **Settings** → **Phone and SMS**.
 
 **If it stalls:** With only a name, Bearly asks for one detail that tells people apart, such as employer, city, or role. If emails and the **Reach out** section are missing, your admin turned off **People Search contact routes**. Bearly doesn't retry a paid step on its own.
 

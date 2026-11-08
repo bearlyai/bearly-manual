@@ -1,6 +1,6 @@
 ---
 title: "Keyboard shortcuts"
-description: "Every Bearly keyboard shortcut for macOS and for Windows and Linux, covering sending, new lines, interrupting, the / and @ picker, the command menu, search, new and deleted chats, jumping between prompts, Settings, dialogs, dictation, and the desktop app's global shortcut."
+description: "Every Bearly keyboard shortcut for macOS and for Windows and Linux, covering sending, new lines, the / and @ picker, the command menu, search, the sidebar, new and deleted chats, jumping between prompts, Settings, dialogs, dictation, and the desktop app's global shortcut."
 canonical: "https://bearly.ai/docs/manual/chat/shortcuts/"
 markdown: "https://bearly.ai/docs/manual/chat/shortcuts.md"
 ---
@@ -9,7 +9,7 @@ markdown: "https://bearly.ai/docs/manual/chat/shortcuts.md"
 
 HTML: [https://bearly.ai/docs/manual/chat/shortcuts/](https://bearly.ai/docs/manual/chat/shortcuts/)
 
-> Every Bearly keyboard shortcut for macOS and for Windows and Linux, covering sending, new lines, interrupting, the / and @ picker, the command menu, search, new and deleted chats, jumping between prompts, Settings, dialogs, dictation, and the desktop app's global shortcut.
+> Every Bearly keyboard shortcut for macOS and for Windows and Linux, covering sending, new lines, the / and @ picker, the command menu, search, the sidebar, new and deleted chats, jumping between prompts, Settings, dialogs, dictation, and the desktop app's global shortcut.
 
 These shortcuts work in the web app on a computer and in the desktop app. On macOS, ⌘ is the Command key; on Windows and Linux, the same shortcuts use Ctrl. On phones and tablets, <kbd>Enter</kbd> doesn't send a message: tap the send button.
 
@@ -19,13 +19,12 @@ These shortcuts work in the web app on a computer and in the desktop app. On mac
 |---|---|---|
 | Send | <kbd>Enter</kbd> | <kbd>Enter</kbd> |
 | New line | <kbd>Shift</kbd> <kbd>Enter</kbd> | <kbd>Shift</kbd> <kbd>Enter</kbd> |
-| Send now, stopping the current answer and skipping the queue | <kbd>⌘</kbd> <kbd>Enter</kbd> | <kbd>Ctrl</kbd> <kbd>Enter</kbd> |
 | Bring back earlier messages, or the newest queued one (empty composer) | <kbd>↑</kbd> and <kbd>↓</kbd> | <kbd>↑</kbd> and <kbd>↓</kbd> |
 | Open the tool, file, and skill picker | <kbd>/</kbd> at the start of a message, <kbd>@</kbd> anywhere | <kbd>/</kbd> at the start of a message, <kbd>@</kbd> anywhere |
 | Remove a whole chip | <kbd>Backspace</kbd> | <kbd>Backspace</kbd> |
 | Cancel editing a message | <kbd>Esc</kbd> | <kbd>Esc</kbd> |
 
-While Bearly is still answering, <kbd>Enter</kbd> queues your draft instead of sending it right away. See [Send while Bearly is working](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-is-working).
+While Bearly is still answering, <kbd>Enter</kbd> does what **Send** does: it adds your message to the running answer, or, if that answer can't take it, waits for it to finish. To queue a message instead, select **Queue**; there's no shortcut for it. See [Send while Bearly is working](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-is-working).
 
 ## In the / and @ picker
 
@@ -46,6 +45,7 @@ Typing an item's exact label followed by a space or punctuation, such as `@web-s
 | Put the cursor in the composer | <kbd>⌘</kbd> <kbd>L</kbd> | <kbd>Ctrl</kbd> <kbd>L</kbd> |
 | Open or close the command menu | <kbd>⌘</kbd> <kbd>K</kbd> | <kbd>Ctrl</kbd> <kbd>K</kbd> |
 | Search chats and files | <kbd>⌘</kbd> <kbd>F</kbd> | <kbd>Ctrl</kbd> <kbd>F</kbd> |
+| Hide or show the sidebar, even while typing | <kbd>⌘</kbd> <kbd>\\</kbd> | <kbd>Ctrl</kbd> <kbd>\\</kbd> |
 | New chat, in the current chat's project if it has one | <kbd>⌘</kbd> <kbd>N</kbd> or <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>N</kbd> | <kbd>Ctrl</kbd> <kbd>N</kbd> or <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>N</kbd> |
 | Delete this chat, after you confirm | <kbd>⌘</kbd> <kbd>D</kbd> | <kbd>Ctrl</kbd> <kbd>D</kbd> |
 | Delete this chat and start a new one, after you confirm | <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>D</kbd> | <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>D</kbd> |
@@ -66,7 +66,7 @@ Web browsers keep some key combinations for themselves. If a shortcut does somet
 | Save or undo a title you're editing in the chat header | <kbd>Enter</kbd> to save, <kbd>Esc</kbd> to put the old title back |
 | Submit a Prompt Template form | <kbd>Shift</kbd> <kbd>Enter</kbd> |
 | Confirm in a confirmation dialog | <kbd>Shift</kbd> <kbd>Enter</kbd> |
-| Close search or a side panel, or stop selecting chats | <kbd>Esc</kbd> |
+| Close search, Settings, the image viewer, or the side panel, or stop selecting chats | <kbd>Esc</kbd> |
 | Move and choose in the **Move to project** dialog | <kbd>↑</kbd> <kbd>↓</kbd>, <kbd>Enter</kbd> |
 
 ## In the desktop app

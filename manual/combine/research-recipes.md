@@ -11,6 +11,8 @@ HTML: [https://bearly.ai/docs/manual/combine/research-recipes/](https://bearly.a
 
 > Step-by-step recipes that chain Bearly's research tools (Deep Research, Scholar, Read Site, document search, YouTube claim checks, X posts, Rerun, and Council of Experts) with Run Python, charts, Pages, and email to produce cited reports, checked figures, and published briefs.
 
+These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
+
 These recipes chain Bearly's research tools so that one step's output becomes the next step's input: a finished report becomes a chart, a paper becomes a searchable file, and a video's figures go to a literature check. Each recipe names its building blocks and the hand-off between them, so you can swap one block for another that produces the same kind of output. For what each block takes in and gives back, see [Building blocks](https://bearly.ai/docs/manual/combine/building-blocks.md).
 
 ## Turn a Deep Research report into a chart, a Page, and an email
@@ -61,7 +63,7 @@ You end up with a cited report and its PDF in your inbox, a chart of its numbers
 
 
 **Swap in:**
-- **Scholar for Deep Research** (any plan): ask `/scholar` the same question. The cited answer stays in the chat, and steps 3 to 6 work the same, without the PDF. In step 4, ask for the paper behind each number by title and authors; Bearly doesn't get a link for every paper, and the links are on the **Papers** cards.
+- **Scholar for Deep Research** (any plan): ask `/scholar` the same question. The cited answer stays in the chat, and steps 3 to 6 work the same, without the PDF. In step 4, ask for the paper behind each number by title and authors; Bearly doesn't get a link for every paper, and the links are on the paper-results cards.
 - **People and teams for a public link:** in step 5 choose **People and teams**, select **Publish**, then add viewers with **Manage viewers**, so only the people and teams you name can open the Page.
 - **Attach the Page instead of publishing it:** skip step 5 and ask "Email me the Page." Send Email attaches the HTML file itself, which opens in any browser.
 - **A schedule instead of a one-off:** a Routine can run Deep Research every week and email the PDF, but it can't run Python or draw charts. See [Schedule a weekly Deep Research digest](https://bearly.ai/docs/manual/combine/automation-recipes.md#schedule-a-weekly-deep-research-digest).
@@ -75,7 +77,7 @@ You end up with a cited report and its PDF in your inbox, a chart of its numbers
 
 You get a list of papers on a question, the best open-access one saved in the chat, exact figures quoted with page citations, and a one-page brief.
 
-**Why it works:** Scholar's paper reader returns an open-access PDF link when a paper has one. Read Site downloads that PDF into the chat as a file. Once a chat has a file, Bearly's document tools can search it and read it page by page, and answers from a document search carry citations that open the document near the cited page. The Page at the end is written from everything above it in the chat.
+**Why it works:** Scholar's paper reader returns an open-access PDF link when a paper has one. Read Site downloads that PDF into the chat as a file. Once a chat has a file, Bearly's document tools can search it and read it page by page, and answers carry citations that open the source document. Depending on how Bearly read it, a citation can open at a matching page or open the whole file. The Page at the end is written from everything above it in the chat.
 **You need:** Any plan. Any platform. Organization controls: **Scholar** and **Web**. The chat's **Web** setting on **Auto** (the default), which Read Site needs. Searching the saved paper needs a chat that isn't end-to-end encrypted; reading it page by page works in any chat.
 
 
@@ -86,7 +88,7 @@ You get a list of papers on a question, the best open-access one saved in the ch
    /scholar What do recent papers say about retrieval-augmented generation reducing hallucinations in question answering? Prefer peer-reviewed work and say where results conflict.
    ```
 
-   — Bearly searches papers and answers with superscript citations. Each search shows a Papers card listing the papers it found, with links, and each paper it read shows a card marked **Read** with the passage it used.
+   — Bearly searches papers and answers with superscript citations. Each search shows a paper-results card listing the papers it found, with links. When Bearly reads a paper, the results card quotes a passage it read, when available.
 
 2. Open one in full:
 
@@ -102,7 +104,7 @@ You get a list of papers on a question, the best open-access one saved in the ch
    From that paper, quote the exact datasets, the baseline, and the reported hallucination rates, with page numbers.
    ```
 
-   — Bearly searches and reads the saved PDF. Passages it found with a document search carry citations you can click to open the PDF near the cited page.
+   — Bearly searches and reads the saved PDF. Select a citation to open the PDF and check the passage. If the whole file opens, use the page or page range shown when you hover a Read Doc citation with a mouse or trackpad.
 
 4. Write the brief:
 
@@ -202,7 +204,7 @@ You get the figures a YouTube video states, how many websites agree with each on
    For the figures that sites disagreed on, what does the research literature say? Cite papers.
    ```
 
-   — Bearly reads the saved check and searches papers, with a **Papers** card and citations.
+   — Bearly reads the saved check and searches papers, with a paper-results card and citations.
 
 4. Cut the video to those moments:
 
@@ -319,7 +321,7 @@ You see how different models answer the same question, then get one synthesized 
 
 You line up the next three steps of an analysis while the first is still running, and they send themselves in order.
 
-**Why it works:** While Bearly is working, anything you send waits in a queue of up to four messages and goes out when the current answer finishes. Each queued message sees everything before it, so a chart request can build on an analysis that hadn't finished when you typed it.
+**Why it works:** While Bearly is working, **Queue** puts a message in a line of up to four that go out, in order, as each answer finishes. Each queued message sees everything before it, so a chart request can build on an analysis that hadn't finished when you typed it.
 **You need:** Any plan. Any platform. Organization controls: **File uploads** for the spreadsheet, **Run Python** and **Charts** to chart, and **Email notifications** to email.
 
 
@@ -332,7 +334,7 @@ You line up the next three steps of an analysis while the first is still running
 
    — Bearly starts working.
 
-2. While it's still working, type each of these and press <kbd>Enter</kbd> after each one:
+2. While it's still working, type each of these and select **Queue** after each one:
 
    ```text
    Chart monthly churn by plan as a line chart.
@@ -346,16 +348,16 @@ You line up the next three steps of an analysis while the first is still running
    Email me that summary.
    ```
 
-   — The send button reads **Queue message**, and each message joins **Up next** above the composer.
+   — Each message joins **Up next** above the composer.
 
-3. Let the queue run, or select **Send now** on a row to stop the current answer and send that message right away. — Messages go out in order as each answer finishes. To change one, empty the composer and select **Edit queued message**; **Remove from queue** drops it.
+3. Let the queue run, or select **Send now** on a row to add that message to the running answer right away. — Messages go out in order as each answer finishes. To change one, empty the composer and select **Edit queued message**; **Remove from queue** drops it.
 
 
 
 **Swap in:**
-- **Redirect instead of queue:** <kbd>⌘</kbd> <kbd>Enter</kbd> (<kbd>Ctrl</kbd> <kbd>Enter</kbd> on Windows and Linux) sends your draft right away, stopping the current answer and skipping the queue.
+- **Redirect instead of queue:** select **Send** instead of **Queue**, and Bearly reads your message as soon as its current tool finishes and carries on with it. To start over, select **Stop**, then send.
 - **A Page for the chart:** queue "Build a one-page Page with the chart and the summary" instead of the chart request.
-- **A text when it's done:** queue `/sms Text me "churn analysis is ready".` Bearly texts the phone you verified in **Settings** → **Phone & SMS** (US and Canadian numbers).
+- **A text when it's done:** queue `/sms Text me "churn analysis is ready".` Bearly texts the phone you verified in **Settings** → **Phone and SMS** (US and Canadian numbers).
 
 **If it stalls:** The queue pauses when an answer fails ("Queue paused — the last message failed.") or you reach a usage limit; a successful answer or **Send now** resumes it. Pressing **Stop** twice within two seconds pauses it on purpose. The queue isn't saved with the chat, so keep the chat open until it's empty. It holds four messages; when it's full, send, edit, or remove one first.
 

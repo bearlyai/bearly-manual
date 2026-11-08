@@ -78,7 +78,7 @@ Bearly includes API access: create a key, call Bearly's models from your own cod
 
 ## Company
 
-Bearly first launched in November 2022. It is not open source. For help, use **Give Feedback** in the app's account menu, or email support@bearly.ai.
+Bearly first launched in November 2022. It is not open source. For help, use **Give feedback** in the app's account menu, or email support@bearly.ai.
 
 ## Continue through the documentation
 
