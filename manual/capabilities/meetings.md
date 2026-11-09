@@ -225,6 +225,9 @@ You get a structured draft from a spoken idea, ready to polish.
 
 ## Related
 
+- [Convert audio to text](/tools/audio-to-text)
+- [Find themes in interview transcripts](/tools/interview-transcript-analyzer)
+
 - [Make images, video, and audio](https://bearly.ai/docs/manual/capabilities/images-video-audio.md)
 - [Talk to Bearly: dictation and voice calls](https://bearly.ai/docs/manual/chat/voice.md)
 - [Projects](https://bearly.ai/docs/manual/projects.md)

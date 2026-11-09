@@ -4541,6 +4541,12 @@ You get a corrected clip after Bearly reviews its own video.
 
 ## Related
 
+- [Remove an image background](/tools/background-remover)
+- [Upscale an image](/tools/image-upscaler)
+- [Restore an old photo](/tools/old-photo-restoration)
+- [Combine images](/tools/combine-images)
+- [Turn an image into a prompt](/tools/image-to-prompt)
+
 - [Record and use meetings](https://bearly.ai/docs/manual/capabilities/meetings.md)
 - [Talk to Bearly: dictation and voice calls](https://bearly.ai/docs/manual/chat/voice.md)
 - [Analyze data and run code](https://bearly.ai/docs/manual/capabilities/data-and-code.md)
@@ -4774,6 +4780,9 @@ You get a structured draft from a spoken idea, ready to polish.
 **If it stalls:** a recording with one speaker shows as a "Voice memo" without speaker names; that's expected.
 
 ## Related
+
+- [Convert audio to text](/tools/audio-to-text)
+- [Find themes in interview transcripts](/tools/interview-transcript-analyzer)
 
 - [Make images, video, and audio](https://bearly.ai/docs/manual/capabilities/images-video-audio.md)
 - [Talk to Bearly: dictation and voice calls](https://bearly.ai/docs/manual/chat/voice.md)
