@@ -94,6 +94,7 @@ A voice call is a live conversation: you talk, Bearly answers out loud, and you 
 - **Run actions.** It works through the chat's tools one at a time. Each spoken turn can take up to 12 action rounds; past that you'll see "Voice hit its action limit for this turn."
 - **Ask for approval.** The call bar shows "Approval needed". Some voice models accept spoken answers: "yes", "no", "don't ask me again", or "stop". Others need you to select the on-screen approval card. Connector sign-in always happens on screen.
 - **Use the chat so far.** A call starts with the chat's recent turns as background, so you can pick up a typed conversation by voice.
+- **Name its sources.** When Bearly looks something up during a call, it says where the information came from, such as "according to the planning memo", instead of reading out source markers or links.
 
 ### Choose the voice model
 
@@ -110,14 +111,16 @@ Open **Settings** → **Voice** (in the **Chats** section). It reads "Voice call
 
 - A call ends after 30 seconds of silence, including while you're muted.
 - If the connection stops making progress, the call ends with "Voice connection stalled."
-- Each call has a usage limit. When it's reached, the call bar shows "Voice limit reached" and the card says "This voice session reached its limit. Start a fresh one anytime."
+- Each call has a usage limit. When it's reached, the call bar shows "Voice limit reached" and the card says "This voice session reached its limit. Start a fresh one anytime." In most chats, the card reads **Call ended** instead.
+- In most chats, **Start voice call** is unavailable while Bearly is answering or messages are waiting to send; its tooltip reads "Voice can start once this reply finishes."
+- In most chats, if your organization turns off **Voice** during a call, the call ends before Bearly runs its next action.
 - On iOS the screen stays awake during a call, and the call doesn't continue in the background.
 - If the button is unavailable, its tooltip says why: "Voice isn't available in this app.", "Voice needs a secure connection.", or "No microphone is available." Older desktop app versions without microphone support show no button; update the app.
 - Voice calls don't run in [Routines](https://bearly.ai/docs/manual/capabilities/routines.md).
 
 ## Read aloud
 
-Under any answer that's all text, select **Read aloud** to hear it. It uses a standard voice unless you turn on **Use for Read Aloud** in Voice Studio, which switches Read aloud to the voice, engine, and delivery you picked there.
+Under any answer that's all text, select **Read aloud** to hear it. It skips the source markers shown in the answer. It uses a standard voice unless you turn on **Use for Read Aloud** in Voice Studio, which switches Read aloud to the voice, engine, and delivery you picked there.
 
 **You need:** any plan. Admin control: **Text to speech**.
 

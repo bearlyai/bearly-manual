@@ -115,7 +115,7 @@ A skill is a folder with an instruction file and, often, supporting files and sc
 
 
 
-1. In the desktop app, open **Settings** → **Skills** — the **Skill Store** opens.
+1. In the desktop app, open a chat, then **Settings** → **Skills** — the **Skill Store** opens. **Skills** is listed under **Chats**, which appears when you open Settings from a chat.
 2. Under **Skill repositories**, expand a repository to see its skills, and select **Install** beside one.
 3. Read **Install third-party skill?** — it shows the source and warns that a skill "can include instructions and scripts. It may be wrong or malicious, and local execution can modify or delete data". Select **I understand the risks** only for a source you trust.
 4. The skill appears under **Installed** as **Enabled**.

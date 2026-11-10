@@ -54,6 +54,7 @@ Bearly makes a Page when you ask it to build, make, or create an app, game, calc
 - When a Page uses files from the chat, such as images, saving embeds copies of them. Each file can be up to 10 MB and all embedded files together up to 25 MB; links to larger or unavailable files are removed and Bearly is told which.
 - A Page is saved to the chat. To save it into the chat's project, ask for that explicitly; you need write access to the project.
 - In a read-only chat you can view and download Pages but not change them.
+- A Page can save a file it makes, such as a CSV export, only when you select a button in it. Bearly asks first with **Save _file name_?** and the file's size; select **Save** to save it to your device. A file over 25 MB shows **Can't save _file name_** instead. Copying to your clipboard also works only from a click in the Page.
 
 **Combines with:** [Run Python](https://bearly.ai/docs/manual/capabilities/data-and-code.md#run-python), which cleans and aggregates data that Bearly then bakes into the Page; [Charts](https://bearly.ai/docs/manual/capabilities/data-and-code.md#charts) for a quick chart without a full Page; [Visualize](https://bearly.ai/docs/manual/capabilities/data-and-code.md#visualize) to let Bearly choose between a Page and a static visual.
 
@@ -67,7 +68,7 @@ Every edit Bearly makes to a Page saves a new version (v1, v2, and so on). Once 
 
 Edits always build on the latest version, even if you were looking at an older one. There's no restore button; to bring back part of an earlier design, describe what you want back.
 
-The Page's tab in the side panel also has **Copy**, **Share file** (when sharing is allowed and you can edit the chat), and **Download**; close it with its tab's close button. Once a Page is prepared for sharing, **Publish** appears there too. On a phone, **Copy**, **Share file**, and the version list are under **More**.
+The Page's tab in the side panel also has **Copy**, **Share file** (when sharing is allowed and you can edit the chat), and **Download**. Once a Page is prepared for sharing, **Publish** appears there too. On a phone, **Copy**, **Share file**, and the version list are under **More** (**…**). Close a tab with its close button, or the whole panel with **Close panel** or <kbd>Esc</kbd>.
 
 You can force the file tools with `/create-file` (**Create Asset**) to write a new Page and `/edit-file` (**Edit Asset**) to change one.
 
@@ -148,7 +149,7 @@ Canvas turns an answer into a document you can edit side by side with Bearly. Se
    In the Canvas, tighten the introduction to three sentences and make the closing paragraph more direct.
    ```
 
-5. Use **Copy** in the toolbar, and **Undo** and **Redo** while in **Edit**. Close the Canvas with its tab's close button, or close the whole panel with <kbd>Esc</kbd>.
+5. Use **Copy** in the toolbar, and **Undo** and **Redo** while in **Edit**. Close the Canvas with its tab's close button, or close the whole panel with **Close panel** or <kbd>Esc</kbd>.
 
 
 

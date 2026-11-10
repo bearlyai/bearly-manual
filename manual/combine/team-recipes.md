@@ -1,6 +1,6 @@
 ---
 title: "Recipes for teams and projects"
-description: "Step-by-step recipes that combine projects, Always Search Documents, meeting transcripts, project sharing and locked settings, organization policies, Memories and chat management, Prompt Templates, email to teammates, and restricted Pages for shared knowledge bases, meeting recaps, and team rollouts."
+description: "Step-by-step recipes that combine projects, Always search documents, meeting transcripts, project sharing and locked settings, organization policies, Memories and chat management, Prompt templates, email to teammates, and restricted Pages for shared knowledge bases, meeting recaps, and team rollouts."
 canonical: "https://bearly.ai/docs/manual/combine/team-recipes/"
 markdown: "https://bearly.ai/docs/manual/combine/team-recipes.md"
 ---
@@ -9,7 +9,7 @@ markdown: "https://bearly.ai/docs/manual/combine/team-recipes.md"
 
 HTML: [https://bearly.ai/docs/manual/combine/team-recipes/](https://bearly.ai/docs/manual/combine/team-recipes/)
 
-> Step-by-step recipes that combine projects, Always Search Documents, meeting transcripts, project sharing and locked settings, organization policies, Memories and chat management, Prompt Templates, email to teammates, and restricted Pages for shared knowledge bases, meeting recaps, and team rollouts.
+> Step-by-step recipes that combine projects, Always search documents, meeting transcripts, project sharing and locked settings, organization policies, Memories and chat management, Prompt templates, email to teammates, and restricted Pages for shared knowledge bases, meeting recaps, and team rollouts.
 
 These recipes use projects, meetings, sharing, and organization policies to make Bearly work the same way for a whole team. A project's files, instructions, and settings apply to every chat in it, so what one person adds, everyone in the project can use. Sharing a project needs an organization; emailing teammates and organization policies need a managed organization. For what each block takes in and gives back, see [Building blocks](https://bearly.ai/docs/manual/combine/building-blocks.md).
 
@@ -36,7 +36,7 @@ Every call you record goes into one project, and any chat in that project answer
 
 4. Select **Add to project** and choose Customer calls. — "Transcript added" confirms it. Repeat steps 3 and 4 after each call.
 
-5. Start a chat in the project and ask:
+5. On the project's **Chats** tab, type in **Ask in this project**:
 
    ```text
    What did customers say about onboarding this month? Group it by theme and quote them with the call and timestamp.
@@ -71,7 +71,7 @@ Your team works in one project where every chat uses the same model, style, inst
    Write for the strategy team. Lead with the answer, cite every number, prefer primary sources, and follow the style guide in this project.
    ```
 
-   Use the lock next to each field so members can't change it. — Locked fields apply to every chat in the project.
+   Select the lock beside each field so it reads "Members can't change …". — Locked fields apply to every chat in the project.
 
 3. Open the project's **Sharing** tab. Under **Groups**, set your strategy group's role to **Writer**. — The project's header reads **Shared**, and on the **Settings** tab the section becomes **Shared project settings**.
 
@@ -91,7 +91,7 @@ Your team works in one project where every chat uses the same model, style, inst
 - **Skills for instructions:** add a skill under **Skills** on the project's **Settings** tab so every chat in the project can use it.
 - **Personal settings for locks:** leave a field unlocked, and each member can set their own value under **Your chat settings**.
 
-**If it stalls:** Only the project's owner can change access on the **Sharing** tab, in an organization that allows **Project collaboration**. Only writers and owners can change shared project settings. In **Your chat settings**, a field the project has locked shows "Locked by the project owner." and can't be changed.
+**If it stalls:** Only the project's owner can change access on the **Sharing** tab, in an organization that allows **Project collaboration**; the tab says why when you can't. Only writers and owners can change shared project settings. In **Your chat settings**, a field the project has locked shows "Locked by the project owner." and can't be changed. In most shared chats, a teammate can't approve or add to an answer someone else started, so each person sends their own message.
 
 ## Send a meeting recap and a decisions Page only your team can open
 
@@ -144,7 +144,7 @@ You turn a recorded meeting into decisions and action items, email the follow-up
 
 As an organization admin, you give one group a policy that allows only chat models labeled ZDR, sets a locked default model and instructions, and turns off public links, then email yourself a plain-language summary of it.
 
-**Why it works:** A policy's model allow-list controls which chat models members can pick, and the model filter can search for ZDR models. Chat defaults set the model and instructions for members' chats outside projects, and locking them stops members from changing them. Assigning the policy to a group applies it to everyone in the group. **Summarize the Policy** describes the policy in plain language before you rely on it.
+**Why it works:** A policy's model allow-list controls which chat models members can pick, and the model filter can search for ZDR models. Chat defaults set the model and instructions for members' chats outside projects, and locking them stops members from changing them. Assigning the policy to a group applies it to everyone in the group. **Summarize policy** describes the policy in plain language before you rely on it.
 **You need:** Organization admin in a managed organization. Any plan. Any platform.
 
 
@@ -153,11 +153,11 @@ As an organization admin, you give one group a policy that allows only chat mode
 
 2. Under **Models** → **Model access**, choose **Allow-list**. Type "ZDR" in **Filter available models**, and add the models you want to **Allowed models**. — Members on this policy can pick only these chat models.
 
-3. Under **Chat defaults**, turn on **Enable chat defaults**. Choose the **Model**, enter **Instructions**, and set both to **Locked**. — Members can't change them in chats outside projects.
+3. Under **Chat defaults**, turn on **Enable chat defaults**. Choose the **Model**, enter **Instructions**, and select the lock beside each so it reads "Members can't change this". — Members can't change them in chats outside projects.
 
 4. In the feature list, turn off **Public links**. — Members can still share Pages with named people and teams, if **Share with people and teams** stays on.
 
-5. Select **Save**, which returns you to the policy list. Open the new policy again, select **Summarize the Policy**, read the **AI policy summary**, and select **Email me a copy**. — **Summarize the Policy** appears only on a policy that has been saved.
+5. Select **Save**, which returns you to the policy list. Open the new policy again, select **Summarize policy**, read the **AI policy summary**, and select **Email me a copy**. — **Summarize policy** appears only on a policy that has been saved.
 
 6. Open **Groups**, choose the group, and under **Policy and settings** set **Policy** to the new policy, then select **Save**. — Everyone in the group gets it, unless they have their own individual policy or belong to a group with a higher **Priority**.
 
@@ -169,7 +169,7 @@ As an organization admin, you give one group a policy that allows only chat mode
 - **Deny-list for Allow-list:** block specific models or providers and allow the rest.
 - **A spend limit:** set **Monthly spend limit** on the policy; at the limit, members can keep chatting only on Bearly Fast, and only if the policy allows it.
 - **Team connectors:** under **Team MCP servers**, add a server that appears for everyone on the policy; each member provides their own authentication values.
-- **Everyone for one group:** select **Make Default** so every new member gets this policy.
+- **Everyone for one group:** select **Make default** so every new member gets this policy.
 
 **If it stalls:**
 - An empty allow-list can't be saved: "Add at least one model, provider, or model family to the allow-list, or switch model access off."
@@ -240,7 +240,7 @@ A saved Prompt Template turns a few filled-in fields into a full write-up, such 
 - **Canvas before publishing:** select **Edit in Canvas** under the answer to edit the write-up before you share it.
 - **Email for a Page:** ask Bearly to email the postmortem to the people involved (needs a managed organization).
 
-**If it stalls:** Prompt Templates are saved to your account and sync across your devices, but not to teammates. Share the template text so each person can save their own copy.
+**If it stalls:** Prompt templates are saved to your account and sync across your devices, but not to teammates. Share the template text so each person can save their own copy.
 
 ## Related
 

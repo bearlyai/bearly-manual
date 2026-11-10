@@ -21,44 +21,44 @@ From top to bottom:
 
 | Area | What it does | More |
 |---|---|---|
-| Top row | **Hide sidebar**, then a magnifier (**Search chats**, which opens **Search chats and files**, with **Chats** and **Files** tabs; shortcut <kbd>⌘</kbd> <kbd>F</kbd>, or <kbd>Ctrl</kbd> <kbd>F</kbd> on Windows and Linux) and **New chat**, which opens the New Chat launcher outside any project | [Organize chats](https://bearly.ai/docs/manual/chat/organize.md) |
+| Top row | **Hide sidebar**, then a magnifier (**Search chats**, which opens **Search chats and files**, with **Chats** and **Files** tabs) and **New chat**, which opens the New Chat launcher outside any project. On a project's page and on **Routines**, **Prompt templates**, and **Meetings**, <kbd>⌘</kbd> <kbd>F</kbd> (<kbd>Ctrl</kbd> <kbd>F</kbd> on Windows and Linux) opens search too | [Organize chats](https://bearly.ai/docs/manual/chat/organize.md) |
 | **Needs attention** | Appears with a count when other chats are waiting for an approval or have replies you haven't read. Select it to see **Awaiting approval** and **Unread**; select it again to show all chats | [Organize chats](https://bearly.ai/docs/manual/chat/organize.md) |
 | **Encrypted chats locked** | Appears when this device can't open your end-to-end encrypted chats yet. **Approve** starts device approval | [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md) |
-| **Chat** | Opens the New Chat launcher | [The New Chat launcher](#the-new-chat-launcher) |
+| **Chat** | Opens the New Chat launcher, as **New chat** in the top row does | [The New Chat launcher](#the-new-chat-launcher) |
 | **Prompt templates** | Saved prompts with fill-in fields that run as a form in any chat | [Make a prompt template](https://bearly.ai/docs/manual/chat/compose.md#make-a-prompt-template) |
 | **Routines** | Prompts that run on a schedule. Pro and higher; on Free it shows only if you already have routines | [Routines](https://bearly.ai/docs/manual/capabilities/routines.md) |
 | **Meetings** | Record a meeting or a voice note and get a transcript | [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md) |
-| **Projects** | Your projects. The header has **New project**, and **Collapse all projects** once any project is expanded. Select a project to open its page; the arrow at the end of its row shows or hides its chats | [Projects](https://bearly.ai/docs/manual/projects.md) |
+| **Projects** | Your projects, one row each. The header has **New project**, and **Collapse all projects** once any project is expanded. Select a project to open its page; the arrow at the end of its row shows or hides its chats | [Projects](https://bearly.ai/docs/manual/projects.md) |
 | **Pinned** | Chats you pinned | [Organize chats](https://bearly.ai/docs/manual/chat/organize.md) |
 | Date groups | Every other chat by last activity: **Today**, **This week**, **This month**, then each earlier month of this year, then earlier years | [Organize chats](https://bearly.ai/docs/manual/chat/organize.md) |
 | **Archives** | Near the bottom, once you've archived something. Shows how many chats you've archived and opens the archive list | [Organize chats](https://bearly.ai/docs/manual/chat/organize.md) |
-| Account menu | The bottom row, with your email, plan, and usage | [The account menu](#the-account-menu) |
+| Account menu | The bottom row, with your email, your plan, and the percentage of your allowance used | [The account menu](#the-account-menu) |
 
 **Folding sections.** Select a section's header (**Projects**, **Pinned**, or a date group) to fold it. A folded section shows one row saying what it holds, such as "4 projects" or "2 chats", with a mark if a chat in it is unread, working, or waiting for approval. Bearly remembers which sections you folded on this device. Creating a project unfolds **Projects**.
 
-**Signs on a chat row.** A dot after the title means unread. A spinner means Bearly is working. A shield means the chat is waiting for your approval. A lock reads "Approve this device to open this chat": it's an end-to-end encrypted chat this device can't open yet. A people icon after a project's name means it's shared; hover it to see with how many people.
+**Signs on a chat row.** A dot at the end of the row means unread. A spinner means Bearly is working. A shield means the chat is waiting for your approval. A lock reads "Approve this device to open this chat": it's an end-to-end encrypted chat this device can't open yet. A people icon after a project's name means it's shared; hover it to see with how many people.
 
-**More actions** (the **…** on a chat row, shown on hover, and always on touch screens and for the open chat) offers **Rename**, **Pin** or **Unpin**, **Move to project...**, **Archive** or **Unarchive**, **Mark unread** or **Mark read**, **Delete**, and **Select** for choosing several chats at once. A project's **…** offers **Rename**, **Archive**, and **Delete**. With a mouse, you can also drag a chat onto a project to move it there.
+**More actions** (the **…** on a chat row, shown when you point at the row or tab to it, and always on touch screens) offers **Rename**, **Pin** or **Unpin**, **Move to project...**, **Archive** or **Unarchive**, **Mark unread** or **Mark read**, **Delete**, and **Select** for choosing several chats at once. A project's **…** offers **Rename**, **Archive**, and **Delete**. With a mouse, you can also drag a chat onto a project to move it there.
 
 ### The account menu
 
 Select the bottom row of the sidebar. The row shows your email, your plan, and how much of this month's plan you've used, plus "+boost" while a Credit Boost is active. The percentage turns red from 90%.
 
-- **Settings** opens the Settings window where you left it.
+- **Settings** opens the Settings window where you left it (on a phone, at the list of panes).
 - **Billing** opens **Settings** → **Billing**.
 - **Developers** opens **Settings** → **API keys**. It appears when API keys or personal remote modules are allowed for your account.
-- **Organizations** opens your organizations' pages.
+- **Organizations** opens your organizations' pages. Your organizations are also listed in Settings, under **Organizations**.
 - **Follow us on X**, **Give feedback**, and **Log out**.
 
 On the Free plan, an **Unlock more AI — Go Pro** link above the account row opens **Billing**. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
 
 ## The New Chat launcher
 
-The launcher is the screen a new chat opens on. Get there with **New chat** or **Chat** in the sidebar, <kbd>⌘</kbd> <kbd>N</kbd> (<kbd>Ctrl</kbd> <kbd>N</kbd> on Windows and Linux), or **New** in the command menu. From inside a project chat, the shortcut and **New** start the new chat in the same project; the sidebar button starts it outside any project.
+The launcher is the screen a new chat opens on. Get there with **New chat** or **Chat** in the sidebar, <kbd>⌘</kbd> <kbd>N</kbd> (<kbd>Ctrl</kbd> <kbd>N</kbd> on Windows and Linux), or **New** in the command menu. From inside a project chat, the shortcut and **New** start the new chat in the same project, and the shortcut does the same on a project's page; the sidebar buttons start it outside any project.
 
 - **Headline.** A short line at the top that changes with the date and the time of day. The default is "Ready when you are."
 - **Composer.** The same composer as in a chat, with the cursor already in it. Its placeholder rotates; the default is "How can I help today?" If the chat can't be prepared, your draft stays put and a notice offers **Try again**.
-- **Project chip.** In the context strip at the foot of the composer, it reads **No project** or the project's name. It opens a picker with "Find or create a project...", **Recent**, **All projects**, **New project**, and **No project**. The project is fixed once the chat starts.
+- **Project chip.** In the context strip at the foot of the composer, it reads **No project** (tooltip "Start this chat in a project") or the project's name. It opens a picker with "Find or create a project...", **Recent**, **All projects**, **New project**, and **No project**. The project is fixed once the chat starts.
 - **Encryption.** One quiet line under the composer says how this chat will be encrypted, with one action. It never stops you sending: a chat that can't be end-to-end encrypted on this device starts with standard encryption instead.
   - Before you set up end-to-end encryption: **Set up end-to-end encryption**, marked **Beta**. Dismissing it asks **Hide encryption setup?**; you can set it up later in **Settings** → **Privacy and security**.
   - When this device hasn't been approved yet: "Encrypted chats are locked on this device" with **Approve**.
@@ -76,7 +76,7 @@ When a release newer than the last one you saw on this device is out, **What's N
 
 From left to right:
 
-- **Project and title.** In a project chat, the project's name comes first. Select the title to rename the chat: <kbd>Enter</kbd> saves, <kbd>Esc</kbd> reverts.
+- **Project and title.** In a project chat, the project's name comes first; select it to open the project's page. Select the title to rename the chat: <kbd>Enter</kbd> saves, <kbd>Esc</kbd> reverts.
 - **Files.** Appears once the chat has files, with their count. It opens the side panel on **Files**, or closes it. See [The side panel](#the-side-panel).
 - **New chat.** A pen icon, shown only while the sidebar is hidden.
 - **Share.** Turns the substance of the conversation into a Page you review before publishing. See [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md).
@@ -87,11 +87,12 @@ From left to right:
 
 - **Messages.** Your messages and Bearly's answers. Controls sit under each one: they appear on hover with a mouse and stay visible on touch screens and in narrow windows. Under your messages: **Copy**, **Edit Query**, **Rerun with same model**, the **Rerun** model menu, a version switcher such as ‹ 2 / 3 ›, **Query info**, and **Delete Query**. Answers have most of the same, plus **Read aloud** on text-only answers and **Edit in Canvas**. While an answer is still running, its controls stay hidden. See [Work with answers](https://bearly.ai/docs/manual/chat/answers.md).
 - **Photos.** Several photos sent together show as one stack, the first on top with a count. Select it to open the image viewer, which fills the window: step through the chat's images with the arrows, keys, swipes, or the thumbnail strip, zoom, copy, download, or close.
-- **What Bearly is doing.** While an answer runs, one line under it names the current step: "Thinking", what a tool is doing (such as "Checking current prices…"), or "Waiting for your approval". A timer appears once a step passes 10 seconds, and the line hides while the answer's text streams in. When the answer ends, the line becomes a summary such as "Worked 28s · 4 steps · 3 sources", with "1 step failed" if one did. Select either to open the answer's steps in the side panel.
-- **Approval cards.** When a tool needs your OK, a card shows what it wants to do, with **Deny**, **Allow**, and an **Approval duration** choice. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
+- **What Bearly is doing.** While an answer runs, one line under it names the current step: "Thinking", what a tool is doing (such as "Checking current prices…"), or "Waiting for your approval". A timer appears once a step passes 10 seconds, and the line hides while the answer's text streams in. When the answer ends, the line becomes a summary such as "Worked 28s · 4 steps", with "1 step failed" if one did; in most chats it also counts the sources Bearly read. Select either to open the answer's **Steps** tab in the side panel, where a running step has a square **Stop**.
+- **Approval cards.** When a tool needs your OK, a card shows what it wants to do, with **Deny**, **Allow**, and an **Approval duration** choice. In most chats you can answer it from any of your devices; in a shared chat, only the person who sent the message can, and everyone else sees "Waiting for the person who sent this message". See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
 - **Result cards.** Interactive results such as a Deep Research report, a **Chart**, a YouTube video card, or the image editor. Research results such as sources start folded to one line; select them to expand.
 - **Timeline rail.** In windows at least 1,280 pixels wide, chats with 5 or more prompts get a slim rail of ticks on the right edge, one per prompt. Hover a tick for "Prompt N of M" and a preview; select it to jump. Ticks marked **Chapter** label a stretch of the conversation. <kbd>⌘</kbd> <kbd>Shift</kbd> <kbd>↑</kbd> and <kbd>⌘</kbd> <kbd>Shift</kbd> <kbd>↓</kbd> (<kbd>Ctrl</kbd> on Windows and Linux) jump between prompts.
 - **Scroll to bottom.** A button that appears when you've scrolled up.
+- **Running on another device** or **Stopped responding.** In most chats, if a running answer gets no updates for 2 minutes, a notice above the composer says so, with **Stop**.
 
 ### The side panel
 
@@ -109,14 +110,14 @@ The message box at the bottom. Its placeholder reads "How can I help? Type / or 
 
 - **Up next.** Above the box, messages waiting to send after the current answer.
 - **Left of the toolbar:** **+** (**Attach files** and **Share your screen**); **Take photo** on touch screens; the sliders button, which opens this chat's **Web**, **Style**, **Scholar**, **Reasoning**, **Memories**, and **History** settings plus **Chat Settings**. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md).
-- **Right of the toolbar:** the model button (**Select model**), which shows the current model's short name; **Start voice call**, with a sound-wave icon; and the send buttons. With nothing running there's one: **Send**. While Bearly works, an empty box shows **Stop**; once you type, you get **Stop**, **Queue**, and **Send**. See [Send while Bearly works](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-works), [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md), and [Voice](https://bearly.ai/docs/manual/chat/voice.md).
+- **Right of the toolbar:** the model button (**Select model**), which shows the current model's short name; **Start voice call**, with a sound-wave icon; and the send buttons. With nothing running there's one: **Send**. While Bearly works, an empty box shows **Stop**; once you type, you get **Stop**, **Queue**, and **Send**: **Send** adds your message to the running answer, and **Queue** holds it until the answer finishes. Chats that can't take a message mid-answer show only **Stop** and **Send**, and **Send** waits for the answer. See [Send while Bearly is working](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-is-working), [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md), and [Voice](https://bearly.ai/docs/manual/chat/voice.md).
 - **Top right of the box:** the dictation microphone. See [Voice](https://bearly.ai/docs/manual/chat/voice.md).
 
 ### Context strip
 
 A band at the foot of the message box, a shade darker than the box, holds the chat's context:
 
-- **Project.** The chat's project, if it has one.
+- **Project.** The chat's project, if it has one; on a new chat, the project chip.
 - **Encryption lock.** "End-to-end encrypted" or "Standard encryption". If your organization requires device-only encryption, it reads "Local key encryption" and can't be turned off.
 - **Work locally.** Desktop app only. It shows the working folder's name, or "Work locally" with "· Off". Its menu lists recent folders, **Choose folder…**, **Clear folder**, and **Off for this chat** or **Turn on for this chat**. In the web app it opens the desktop download pane; on phones and in the iOS app it's hidden. See [Browser and computer use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md).
 - **Connectors.** The connected service's name, or a count such as "2 connectors". Each row reads **Active**, **Off**, **Connect**, or **Retry**, and **Manage connectors...** opens settings. See [Connectors and skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md).
@@ -128,20 +129,20 @@ While you edit an earlier message, the strip shows **Editing message** with **Ca
 
 Press <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux) or select **…** in the header. It shows the chat's title, a **Search...** box, and two groups:
 
-- **Actions:** **New**, **Delete & New**, **Delete**, **Rename**, **Refresh Chat**, **Generate New Name**, **Download as Markdown**, **New Routine** (Pro and higher), and **Show all...**, which adds **Show Release Notes**.
+- **Actions:** **New**, **Delete & New**, **Delete**, **Rename** (opens the title in the header), **Refresh Chat**, **Generate New Name**, **Download as Markdown**, **New Routine** (Pro and higher), and **Show all...**, which adds **Show Release Notes**.
 - **Switch Chats:** every chat, including project chats.
 
 See [Keyboard shortcuts](https://bearly.ai/docs/manual/chat/shortcuts.md).
 
 ## The Settings window
 
-Settings open in a window over the page you're on, which stays as it was underneath. Open it with <kbd>⌘</kbd> <kbd>,</kbd> (<kbd>Ctrl</kbd> <kbd>,</kbd> on Windows and Linux), the account menu → **Settings**, or the sliders button → **Chat Settings**. Links elsewhere in Bearly that point to a setting, such as **Billing**, open the window on that pane. It opens on the pane you used last. The list of panes is on the left and the open pane on the right; the header shows **Saving...**, **Saved**, or **Not saved**. Close it with <kbd>Esc</kbd>, **Close settings**, or a click outside it; if a save fails, it stays open on that pane showing **Not saved**. On a phone it fills the screen and shows either the list or one pane, with **Back to settings** between them.
+Settings open in a window over the page you're on, which stays as it was underneath. Open it with <kbd>⌘</kbd> <kbd>,</kbd> (<kbd>Ctrl</kbd> <kbd>,</kbd> on Windows and Linux), the account menu → **Settings**, or the sliders button → **Chat Settings**. Links elsewhere in Bearly that point to a setting, such as **Billing**, open the window on that pane. It opens on the pane you used last. The list of panes is on the left and the open pane on the right; the header shows **Saving...**, **Saved**, or **Not saved**. Close it with <kbd>Esc</kbd>, **Close settings**, or a click outside it; if a save fails, it stays open on that pane showing **Not saved**. On a phone it fills the screen and shows either the list or one pane; select **Settings** at the top of a pane to go back to the list.
 
 | Group | Panes | When a pane shows |
 |---|---|---|
 | **Account** | **Profile**, **Billing**, **Usage** | **Usage** is on paid plans |
 | **Organizations** | Each organization you belong to, and **New organization** | When organizations are available to your account. Selecting one closes Settings and opens that organization's pages. **New organization** is hidden if your admin turned off creating organizations |
-| **Chats** | **This chat**, **New chats**, **Permissions**, **Personalization**, **Voice**, **Dictation**, **Skills** | **This chat** in a chat. **Voice** and **Dictation** need those features allowed for your account |
+| **Chats** | **This chat**, **New chats**, **Permissions**, **Personalization**, **Voice**, **Dictation**, **Skills** | **Permissions** always; the others when you open Settings from a chat. **Voice**, **Dictation**, and **Skills** need those features allowed for your account |
 | **Preferences** | **Appearance**, **Phone and SMS** | **Phone and SMS** when texting is allowed |
 | **Privacy** | **Privacy and security**, **Devices** | Always |
 | **Connections** | **Connectors**, **Chrome extension** | **Connectors** when connectors are allowed. **Chrome extension** in the desktop app only |
@@ -152,10 +153,10 @@ What each pane holds:
 
 - **Profile**: **Version**, **Lock all data**, **Change email**, **Delete account**, and **Log out**.
 - **Billing**: **Current Plan**, **Credit Boost**, and the plan picker. **Usage**: **Current Period** and **Usage by service**.
-- **This chat**: settings for this conversation only: **Model**, **Reasoning Effort**, **Language**, **Response Style**, **Memories**, **Web Search**, **Instructions**, **Temperature**, and **Reset all to defaults**.
+- **This chat**: settings for this conversation only, under **Model** (**Model**, **Reasoning Effort**), **Responses** (**Language**, **Response Style**, **Temperature**), and **Context** (**Memories**, **Web Search**, **Instructions**), plus **Reset all to defaults**.
 - **New chats**: the same settings as defaults for new chats, with **Recommended** as a model choice. Project chats use the project's settings instead.
-- **Permissions**: **Start new chats in Full access**, for this device. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
-- **Personalization**: what you write in **Name**, **Occupation**, and **About you**, added to your chats only while the switch is on. See [Personalization](https://bearly.ai/docs/manual/chat/settings.md#personalization).
+- **Permissions**: **Start new chats in Full access**, for this device only. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
+- **Personalization**: what you write in **Name**, **Occupation**, and **About you**, added to your chats only while **Use in chats** is on. See [Personalization](https://bearly.ai/docs/manual/chat/settings.md#personalization).
 - **Voice**: the model voice calls use. **Dictation**: **Enable dictation**, the push-to-talk shortcut, what happens after dictation, transcript cleanup, and words and names.
 - **Skills**: the **Skill Store** and your installed skills. Installing needs the desktop app.
 - **Appearance**: **Theme**, then **Font** and **Font size** under **Text**, for this device only.
@@ -190,7 +191,7 @@ The desktop app for Mac, Windows, and Linux has the same screens plus a few of i
 - **The menu bar or tray icon** shows the window when you click it.
 - **Closing the window quits Bearly** after asking **Quit Bearly?**. While it's recording a meeting or saving a Browser download to a chat, it asks **Bearly is still working** instead, with **Keep Bearly open** and **Quit when finished**.
 - **Updates** download in the background; an **Update ready · Restart** pill at the top installs them.
-- **Desktop-only areas**: the **Work locally** chip, **Open Browser**, the **Desktop** settings section, and running routines.
+- **Desktop-only areas**: the **Work locally** chip, **Open Browser**, the **Desktop**, **Runtime**, and **Browser** settings panes, syncing a folder into a project, and running routines.
 
 See [Get Bearly](https://bearly.ai/docs/manual/get-bearly.md).
 
@@ -216,7 +217,7 @@ There's no Android app; on Android, use Bearly in your phone's browser. Bearly r
 | Routines | Create and manage; they run in the desktop app ("Runs in the desktop app. **Get it**") | Same |
 | Meetings | **In person or voice note** only | Same |
 | Voice calls | Where the browser supports them; the screen can lock mid-call | The screen stays on during a call; keep the app in front |
-| PDFs | Preview in the app | **Open PDF** opens them outside the app |
+| PDFs | Preview in the app | Tapping a PDF opens it outside the app |
 | Downloads | A normal browser download | The iOS share sheet |
 | Billing | Web billing | App Store purchase and **Restore**; Credit Boost isn't offered in the iOS app |
 | **Get desktop app** | **Choose a computer** | Same |

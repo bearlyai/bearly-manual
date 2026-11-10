@@ -55,6 +55,8 @@ Change what you asked and get a new answer, without losing the old one.
 
 **Delete Query** removes one turn. Bearly asks "Delete this query?" with "This action cannot be undone." Select **Delete Message** to confirm. Later messages stay in the chat and attach to the message before the deleted one.
 
+In most chats, **Delete Query** isn't offered while that answer, or one after it, is still running, or on an answer that took a message you added while it ran.
+
 **Limits:** Deleting can't be undone. To remove a whole chat, see [Organize, find, share, and export chats](https://bearly.ai/docs/manual/chat/organize.md#delete-chats).
 
 ## Rerun and switch versions
@@ -73,7 +75,7 @@ Each rerun and each edit adds a version to the same turn instead of a new messag
 
 
 **What you get:** Several answers to one turn, kept in place. Rerunning with another model doesn't change the chat's model.
-**Limits:** Models that need a higher plan open the upgrade message instead of rerunning; see [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md#models-that-need-a-higher-plan).
+**Limits:** If a rerun can't start, Bearly shows **Rerun didn't start** ("Try it again."). Models that need a higher plan open the upgrade message instead of rerunning; see [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md#models-that-need-a-higher-plan).
 **Combines with:** [Council of Experts](https://bearly.ai/docs/manual/chat/models.md#ask-several-models-at-once-with-council-of-experts) when you want one combined answer from several models.
 
 ## Read aloud and Edit in Canvas
@@ -86,12 +88,14 @@ Each rerun and each edit adds a version to the same turn instead of a new messag
 
 While an answer runs, one line under it says what Bearly is doing right now: "Thinking" while the model reasons, what a tool is doing (each tool describes itself, such as "Checking current prices…"), or "Waiting for your approval" when a tool needs your OK. Once a step has run for 10 seconds, a timer shows how long it's taken. The line hides while the answer's text streams in, and comes back if Bearly starts another step.
 
-When the answer ends, the line becomes a summary of the work, such as "Worked 28s · 4 steps · 3 sources", with the sites it used and "1 step failed" if one did. An answer with no steps shows no line.
+When the answer ends, the line becomes a summary of the work, such as "Worked 28s · 4 steps", with "1 step failed" if one did. It reads "Done" instead of a time when Bearly can't tell how long it worked. In most chats, the summary also counts the sources Bearly read, such as "Worked 14s · 3 steps · 3 sources", with icons for up to five of the sites (then "+N"). An answer with no steps shows no line.
 
-Select the line, while it runs or after, to open the answer's **Steps** in the side panel. It lists every step in order, live while the answer runs:
+In most chats, an answer you started also shows live on your other devices where the chat is open, with its line and **Stop**, so you can follow it or stop it from any of them. See [Stop an answer or a single step](https://bearly.ai/docs/manual/chat/compose.md#stop-an-answer-or-a-single-step).
 
-- **Thinking**: the model's reasoning. If a model writes its reasoning into the answer between thinking tags, Bearly moves that here too.
-- Each tool call, with its **Input**, its **Result** (or "Runs once you approve it." while it waits), an **Error** if it failed, and how long it took. A running call has a stop button, so you can stop one tool without stopping the answer.
+Select the line ("See steps"), while it runs or after, to open the answer's **Steps** tab in the side panel. It lists every step in order, live while the answer runs:
+
+- **Thinking**: the model's reasoning. Select it and open **Summary** to read it. If a model writes its reasoning into the answer between thinking tags, Bearly moves that here too.
+- Each tool call, with its **Input**, its **Result** (or "Runs once you approve it." while it waits), an **Error** if it failed, and how long it took. A running call has a square **Stop** button, so you can stop one tool without stopping the answer; see [Stop an answer or a single step](https://bearly.ai/docs/manual/chat/compose.md#stop-an-answer-or-a-single-step).
 - Your messages, where Bearly read them: the one that started the answer and any you sent into it while it ran. Select one to jump to it in the chat.
 
 How much a model thinks depends on the model and on **Reasoning Effort**; see [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#reasoning-effort).
@@ -116,11 +120,15 @@ When an answer draws on sources, it cites them so you can check the claim:
 - Answers from your documents have citations that open the source file. **Search Docs** citations can open at a matching page. **Read Doc** citations open the whole file; with a mouse or trackpad, hover one to see its page or page range.
 - Deep Research reports include numbered citations and a **Sources** list.
 
+In most chats, an answer can also cite a source Bearly found earlier in the chat. Citations are numbered per answer, in the order the answer uses them.
+
 Details for each are on [Research](https://bearly.ai/docs/manual/capabilities/research.md) and [Documents](https://bearly.ai/docs/manual/capabilities/documents.md).
 
 ## When an answer fails
 
 A failed answer shows its error, or "An error occurred. Please wait and try again." when there's no specific message. **Get help** next to it opens a support dialog. A message that can't be displayed shows "Unable to load message."
+
+In most chats, if the chat itself can't open, the bar at the bottom of the message box says "Couldn't open this chat." or "Waiting for this chat to sync.", with **Retry**; a chat that's waiting to sync opens on its own once it catches up. "This chat has changes from a newer version of Bearly. Update Bearly to keep using it." means this copy of the app is out of date.
 
 
 
@@ -172,5 +180,5 @@ Long conversations get a map and shortcuts so you can get back to any point quic
 - [Next: Organize, find, share, and export chats](https://bearly.ai/docs/manual/chat/organize.md)
 - [Related: Talk to Bearly: dictation and voice calls](https://bearly.ai/docs/manual/chat/voice.md)
 - [Related: Make Pages and edit in Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md)
+- [Related: Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md)
 - [Related: Tune a chat: settings, style, reasoning, and memory](https://bearly.ai/docs/manual/chat/settings.md)
-- [Related: Analyze data and run code](https://bearly.ai/docs/manual/capabilities/data-and-code.md)

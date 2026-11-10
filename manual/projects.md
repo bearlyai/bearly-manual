@@ -30,24 +30,28 @@ A project is the right container when you'll come back to the same material acro
 
 
 
-You can also start a chat in a project from the new-chat screen. Select the project chip at the foot of the composer (it reads **No project**), then search with **Find or create a project...**, pick from **Recent** or **All projects**, or choose **New project**. **No project** starts an ordinary chat. The chip can't be changed once the chat starts; to move the chat later, use **Move to project...**.
+You can also start a chat in a project from the new-chat screen. Select the project chip at the foot of the composer (it reads **No project**; its tooltip says "Start this chat in a project"), then search with **Find or create a project...**, pick from **Recent** or **All projects**, or choose **New project**. **No project** starts an ordinary chat. The chip can't be changed once the chat starts; to move the chat later, use **Move to project...**.
 
 ## Find your way around a project
 
-Select a project in the sidebar to open its page. The header shows the project's icon and name, whether it's **Private** or **Shared with** a number of people, **Password protected** or **Device encrypted** if it is, and who created it. **Share** opens the **Sharing** tab. The page has four tabs:
+Select a project in the sidebar to open its page. It opens on the **Chats** tab. The header shows the project's icon and name, whether it's **Private**, **Shared**, or "Shared with 3 people", **Password protected** or **Device encrypted** if it is, and who created it. **Share** opens the **Sharing** tab; at phone width it's in the **More project actions** menu (**…**). The page has four tabs:
 
 - **Chats** — ask something in the project, and the project's chats. See [Chats tab](#chats-tab).
-- **Files** — the project's files and synced folders. See [Files tab](#files-tab).
+- **Files** — the project's files and, in the desktop app, synced folders. See [Files tab](#files-tab).
 - **Sharing** — who has access, and password protection. See [Sharing tab](#sharing-tab).
-- **Settings** — the icon, chat defaults, and Skills. See [Settings tab](#settings-tab).
+- **Settings** — the icon, chat defaults, and Skills, plus your own settings in a shared project. See [Settings tab](#settings-tab).
 
-In the sidebar, the arrow at the end of a project's row shows or hides its chats under it, pinned chats first. Opening a project, or a chat in it, unfolds it. Chats you archived individually don't appear there. A people icon after the name marks a shared project; hover it to see with how many people. The **Projects** header has **New project**, and **Collapse all projects** once any project is expanded.
+In the sidebar, each project has one row. The arrow at the end of the row (**Show chats** or **Hide chats**) shows or hides its chats under it, pinned chats first. Opening a project, or a chat in it, unfolds it. Chats you archived individually don't appear there. While a project's chats are hidden, a mark on its row tells you a chat in it is working, waiting for your approval, or unread. A people icon after the name marks a shared project; hover it to see with how many people. Select the **Projects** heading to fold the whole section; it then reads, for example, "4 projects". The heading has **New project**, and **Collapse all projects** once any project is expanded.
 
 The project's **…** menu in the sidebar offers **Rename** (owners), **Archive** or **Unarchive**, and **Delete** (owners). An archived project shows **Delete · unarchive first**.
 
 ### Chats tab
 
-**Ask in this project** is a message box: type a question and select **Ask in a new chat**, and Bearly starts a chat in the project with your question and opens it. **New chat** beside it opens an empty chat in the project. An empty project shows example questions such as "Summarize the files in this project". Below it are the project's chats, each with its status ("Waiting for approval", "Bearly is working", "Unread", "End-to-end encrypted", "Locked on this device") and when it started. More than eight chats are grouped under **Pinned**, **Today**, **This week**, and **Earlier**. Each chat's **…** offers **Rename**, **Pin** or **Unpin**, **Move to project…**, **Archive**, **Mark read** or **Mark unread**, and **Delete**.
+**Ask in this project** is a message box: type a question and select **Ask in a new chat**, and Bearly starts a chat in the project with your question and opens it. If the chat can't start, your question stays in the box with **Retry**. **New chat** beside it opens an empty chat in the project. An empty project shows example questions such as "Summarize the files in this project".
+
+Below it are the project's chats, pinned first, then by latest activity. Each row shows its status ("Waiting for approval", "Bearly is working", "Unread", "Locked on this device", "End-to-end encrypted", "Device encrypted") and when it started, such as "Started today". More than eight chats are grouped under **Pinned**, **Today**, **This week**, and **Earlier**. Each chat's **…** offers **Rename**, **Pin** or **Unpin**, **Move to project…**, **Archive**, **Mark read** or **Mark unread**, and **Delete**, which asks "Delete this chat?" first.
+
+On any of the project's tabs, <kbd>⌘</kbd> <kbd>N</kbd> (<kbd>Ctrl</kbd> <kbd>N</kbd> on Windows and Linux; a web browser may keep this key for its own windows) also starts a new chat in the project.
 
 ### Move chats into or out of a project
 
@@ -58,9 +62,11 @@ Open a chat's **…** menu and select **Move to project...**. Search with **Sear
 | Role | What the role picker says | What they can do |
 | --- | --- | --- |
 | **No Access** | — | Nothing through this grant |
-| **Reader** | "Can view chats and files within the project." | View the project and take part in its existing chats |
-| **Writer** | "Can view, participate, and create new chats within the project." | Everything a Reader can, plus start chats, add and delete project files, edit shared project settings, and add or remove project Skills when their policy allows adding Skills |
+| **Reader** | "Can view chats and files within the project." | View the project and its files, and take part in its existing chats |
+| **Writer** | "Can view, participate, and create new chats within the project." | Everything a Reader can, plus start chats, add, rename, and delete project files, edit shared project settings, and add or remove project Skills when their policy allows adding Skills |
 | **Owner** | "Full access including managing project settings, permissions, and deletion." | Everything a Writer can, plus rename, delete, password protection, sharing, and the project icon |
+
+In most shared chats, only the person who sent a message can approve that answer's actions or add to it while it runs. Everyone else sees "Waiting for the person who sent this message" on its approval cards, and a message they send waits until the answer finishes.
 
 Projects have no public link. Only people you share with can open them.
 
@@ -68,20 +74,21 @@ Projects have no public link. Only people you share with can open them.
 
 **Files** holds the project's files. Every chat in the project can search and read them without attaching them again.
 
-- **Upload** with the button, or drop files anywhere on the page ("Drop files here"). Each upload shows its progress; a failed upload can be dismissed. After upload, Bearly reads the file so chats can search it: the file shows **Reading…**, or **Couldn't read** with a way to retry.
+- **Upload** with the button, or drop files anywhere on the page ("Drop files here"). An empty project shows **Add files to this project** with **Upload**.
+- Each upload shows **Waiting…**, "Uploading" with a percentage, then **Added**. You can cancel one in progress or dismiss a failed one. After upload, Bearly reads the file so chats can search it: the file shows **Reading…**, or **Couldn't read** with **Retry**. A file Bearly couldn't read stays saved, but chats may not be able to search it.
 - **Search files** filters by name.
 - To work on several files, hover a file and tick its checkbox, or use <kbd>⌘</kbd>-click or <kbd>Shift</kbd>-click (<kbd>Ctrl</kbd>-click on Windows and Linux). A bar shows how many are selected, with **Select all**, **Clear**, and **Delete**.
-- Each file's **…** offers **Details**, **Download**, **Rename**, **Select**, and **Delete…**. **Details** opens a panel beside the list (a sheet on phones) with the file's size, type, and when it was added; **About this file** (topics, people, dates, and its text); its reading status; where it was synced from; **Download**; and delete.
+- Each file's **…** offers **Details**, **Download**, **Rename**, **Select**, and **Delete…**. **Details** opens a panel beside the list (a sheet on phones) with the file's size, type, and when it was added; **About this file** (topics, people, dates, and its text); its reading status, with **Get help** if a step failed; where it was synced from; **Download**; and delete.
 
-Deleting a project file is permanent.
+Deleting a project file is permanent; Bearly asks "Delete this file?" first.
 
-**Limits:** each file can be up to 1000 MB, and a project holds up to 2 GB of files on every plan. Writers and Owners add files; Readers see "You need writer access to add files to this Project." Your organization can turn uploads off ("File uploads are disabled by your organization.") or turn off project files ("Project files are disabled by your organization."). See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md) for what chats can do with files.
+**Limits:** each file can be up to 1000 MB, and a project holds up to 2 GB of files on every plan. Writers and Owners add files; Readers can open and download them, and files sent to the project from elsewhere are refused with "You need writer access to add files to this Project." When your organization turns off file uploads or project files, **Upload** and **Sync a folder** don't appear, and files sent from elsewhere are refused with "File uploads are disabled by your organization." or "Project files are disabled by your organization." See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md) for what chats can do with files.
 
 ### Sync a folder
 
 Keep a folder on your computer copied into the project.
 
-**You need:** the [desktop app](https://bearly.ai/docs/manual/get-bearly.md), Writer access, and file uploads allowed by your organization.
+**You need:** the [desktop app](https://bearly.ai/docs/manual/get-bearly.md), Writer access, and file uploads and project files allowed by your organization. Synced folders don't appear on the web, on phones, or in the iOS app.
 
 
 
@@ -96,13 +103,13 @@ Synced folders are listed above the files, each with the device it syncs from an
 
 ## Sharing tab
 
-**You need:** to be the project's owner to change access, to belong to at least one organization, and your organization's **Project collaboration** policy on. Otherwise the tab shows who has access and why you can't change it, such as "Only owners can change who has access." or "Join or create an organization to share projects."
+**You need:** to be the project's owner to change access, to belong to at least one organization, and your organization's **Project collaboration** policy on. Anyone with access can open the tab and see who else has it. If you can't change it, the tab says why: "Only owners can change who has access.", "Your organization has turned off project sharing.", or "Join or create an organization to share projects."
 
-- **People** — "Readers see chats and files. Writers also start chats. Owners manage sharing and settings." Search with "Add people by name or email" (type at least 2 characters). Only members of your organizations appear, and each organization's **Member directory** setting decides whether its members can be found. **People with access** lists everyone already shared.
-- **Groups** — your organization's groups. "Everyone in a group gets the access you choose." An inactive group shows **Unavailable**.
+- **People** — "Readers see chats and files. Writers also start chats. Owners manage sharing and settings." Search with "Add people by name or email" (type at least 2 characters). Only members of your organizations appear, and each organization's **Member directory** setting decides whether its members can be found. **People with access** lists everyone already shared, you first.
+- **Groups** — your organization's groups. "Everyone in a group gets the access you choose." An inactive group shows **Unavailable**. The section is hidden when your organizations have no groups.
 - **Organization access** — give everyone in an organization the same access.
 
-Give each row a role: **No Access**, **Reader**, **Writer**, or **Owner**. Changes apply right away. You can share with individuals only inside your own organizations. Organization admins can see and remove organization and group access from the [Projects tab](https://bearly.ai/docs/manual/organizations.md).
+Give each row a role: **No Access**, **Reader**, **Writer**, or **Owner**. Changes apply right away, and once someone else has access the header reads **Shared**. You can share with individuals only inside your own organizations. Organization admins can see and remove organization and group access from the [Projects tab](https://bearly.ai/docs/manual/organizations.md).
 
 ### Encryption
 
@@ -110,37 +117,39 @@ Owners manage the project password under **Encryption** → **Password protectio
 
 ## Settings tab
 
+The **Settings** tab has, in order: **Project**, the project's chat settings, **Skills**, and, in a shared project, **Your chat settings**.
+
 ### Project
 
-**Icon** — "Shown beside the project in the sidebar." Only owners can change it.
+**Icon** — "Shown beside the project in the sidebar." Only owners can change it; others see "Only owners can change the icon."
 
 ### Project chat settings
 
-This section sets the defaults for chats in the project ("Defaults for new chats in this project."). In a shared project it's called **Shared project settings** ("Defaults for everyone's chats in this project."). Turn it on with **Use project defaults** ("New chats in this project start with the settings below."); changes save automatically.
+This section sets the defaults for chats in the project ("Defaults for new chats in this project."). In a shared project it's called **Shared project settings** ("Defaults for everyone's chats in this project."). Turn it on with **Use project defaults** ("New chats in this project start with the settings below."); the fields stay dimmed while it's off, and changes save automatically.
 
 | Field | Options | What it does | Lockable |
 | --- | --- | --- | --- |
 | **Model** | **Not set**, or models available to your account | The model project chats use | Yes |
 | **Language** | **Default** or a reply language | The language replies are written in | Yes |
 | **Response style** | **Default** or a style such as **Concise** or **Formal** | Tone and length of replies | Yes |
-| **Temperature** | **Factual** (0.5), **Default** (1), **Creative** (1.5), or a slider from 0 to 2 | How focused or varied replies are | Yes |
+| **Temperature** | **Factual** (0.5), **Default** (1), **Creative** (1.5), or a slider from **Focused** to **Creative** (0 to 2) | How focused or varied replies are | Yes |
 | **Instructions** | Free text ("What every chat in this project should know or do") | Added to every chat in the project | Yes |
 | **Always search documents** | Switch: "Search the project's files before every answer." | Every message searches the project's files before the reply | Yes |
 | **Disable personalization** | Switch: "Ignore each person's personalization settings in this project." | Your name, occupation, and About you aren't sent in project chats | No |
 
-Each lockable field has a lock button beside it. Its tooltip reads "Members can change…" or "Members can't change…" the field; select it to lock the field so people can't change it in their own chats or in **Your chat settings**, where it then reads "Locked by the project owner." If your organization's policy controls a field, it shows "Disabled by policy." Only Writers and Owners can edit shared settings ("Only project writers and owners can change shared project settings.").
+Each lockable field has a lock button beside it. Its tooltip names the field, such as "Members can change Model" or "Members can't change Model"; select it to lock the field so people can't change it in their own chats or in **Your chat settings**, where it then reads "Locked by the project owner." If your organization's policy controls a field, the field and its lock are unavailable, with "Disabled by policy." Only Writers and Owners can edit shared settings ("Only project writers and owners can change shared project settings.").
 
 > **Tip — When to turn on Always search documents**
 > Turn it on when nearly every question in the project depends on its files, such as a contract set or a research library. Leave it off when most chats are general and only some need the files. Chats can still search the files when you ask. It has no effect in end-to-end encrypted chats, which can't search documents.
 
 
-### Your chat settings
-
-In a shared project, each person also gets **Your chat settings**: "Your own overrides of the shared settings. Only you see them." Turn on **Use my settings** ("Your chats in this project use these instead of the shared ones."). It has the same fields as the shared section. Your choices apply only to you and only to fields the shared settings leave unlocked.
-
 ### Skills
 
 "Skills available to chats in this project." Writers and Owners can add or remove project Skills when their policy allows adding Skills. Otherwise the section says "Your policy lets you use shared Skills, but not add or remove them." or "Only project writers and owners can change project Skills." See [Connectors and Skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md).
+
+### Your chat settings
+
+In a shared project, each person also gets **Your chat settings**: "Your own overrides of the shared settings. Only you see them." Turn on **Use my settings** ("Your chats in this project use these instead of the shared ones.") and pick your values. It has the same fields as the shared section, without locks. Your choices apply only to you and only to fields the shared settings leave unlocked.
 
 ## How project chats inherit settings
 
@@ -148,7 +157,7 @@ A project chat builds its settings in layers. A later layer overrides an earlier
 
 1. Bearly's defaults.
 2. Your organization's explicit chat rules and feature controls.
-3. The project's shared settings (**Project chat settings** or **Shared project settings**).
+3. The project's shared settings (**Project chat settings**, or **Shared project settings** in a shared project).
 4. **Your chat settings** in a shared project.
 5. **This chat** in Settings, or the composer controls for that one chat.
 
@@ -168,10 +177,10 @@ A project password adds a lock to the project's files and settings. While the pr
 
 
 
-1. Open the project's **Sharing** tab and, under **Encryption**, select **Protect** next to **Password protection**.
+1. Open the project's **Sharing** tab and, under **Encryption**, select **Protect** next to **Password protection** — "Set a password to encrypt this project. We can't recover your data if you forget it."
 2. Enter a **Password (at least 8 characters)** and **Confirm password**, then select **Protect** — the row reads "Protected. Opening this project needs its password."
 3. Select **Lock** when you're done — chats become read-only until the password is entered again.
-4. To unlock, open the project, enter the password, and select **Unlock** — turn on **Unlock all rooms that use this password?** to unlock other items that share it.
+4. To unlock, open any of the project's tabs, enter the password, and select **Unlock** — turn on **Unlock all rooms that use this password?** to unlock other items that share it.
 
 
 
@@ -221,7 +230,7 @@ Every answer in the project checks the project's files first and points to the p
 
 
 **Swap in:** use **Sync a folder** on the **Files** tab in the desktop app so new files in a folder join the knowledge base automatically. Set **Response Style** to **Concise** for short answers.
-**If it stalls:** a file showing **Couldn't read** can't be searched; retry it from the file, or open **Details** to see why. If replies ignore the files, confirm **Use project defaults** is on.
+**If it stalls:** a file showing **Couldn't read** can't be searched; select **Retry** on it, or open **Details** to see why. If replies ignore the files, confirm **Use project defaults** is on.
 
 ### A shared project where each person picks their own model
 
@@ -240,7 +249,7 @@ A team works from the same files and instructions, but each collaborator uses th
 
 
 **Swap in:** lock **Model** too when results must be comparable across the team. Give **Reader** to people who should only follow along.
-**If it stalls:** a teammate who can't change a field is looking at a locked one or a field set by organization policy ("Disabled by policy."). If **Share** is missing, check that you belong to an organization and that **Project collaboration** is on.
+**If it stalls:** a teammate who can't change a field is looking at one the project locked ("Locked by the project owner.") or one set by organization policy ("Disabled by policy."). If **Share** is missing, check that you belong to an organization and that **Project collaboration** is on; the **Sharing** tab says which.
 
 ### Keep a client's context inside its project
 

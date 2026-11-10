@@ -1,6 +1,6 @@
 ---
 title: "Write, attach, and send"
-description: "How to write and send messages in Bearly, attach files and photos, unlock password-protected PDFs, share your screen, call tools and files with / and @, make prompt templates, add to a running answer or queue follow-ups while Bearly works, stop an answer, and what the PII Blocker redacts."
+description: "How to write and send messages in Bearly, attach files and photos, unlock password-protected PDFs, share your screen, call tools and files with / and @, make prompt templates, add to a running answer or queue follow-ups while Bearly works, stop an answer or a single step, and what the PII Blocker redacts."
 canonical: "https://bearly.ai/docs/manual/chat/compose/"
 markdown: "https://bearly.ai/docs/manual/chat/compose.md"
 ---
@@ -9,7 +9,7 @@ markdown: "https://bearly.ai/docs/manual/chat/compose.md"
 
 HTML: [https://bearly.ai/docs/manual/chat/compose/](https://bearly.ai/docs/manual/chat/compose/)
 
-> How to write and send messages in Bearly, attach files and photos, unlock password-protected PDFs, share your screen, call tools and files with / and @, make prompt templates, add to a running answer or queue follow-ups while Bearly works, stop an answer, and what the PII Blocker redacts.
+> How to write and send messages in Bearly, attach files and photos, unlock password-protected PDFs, share your screen, call tools and files with / and @, make prompt templates, add to a running answer or queue follow-ups while Bearly works, stop an answer or a single step, and what the PII Blocker redacts.
 
 These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
 
@@ -64,6 +64,8 @@ Attach documents, spreadsheets, images, audio, and video to a message, and Bearl
 
 Each file shows its status while it gets ready: checking a PDF, password required, unlocking, uploading with progress, then analyzing. You can send once every file is ready.
 
+A photo or screenshot with a generic name, such as `image.jpg` from a phone camera or `image.png` from a paste, is saved under the time you added it, for example "Photo Nov 2, 3:13 PM.jpg" or "Screenshot Nov 2, 3:13 PM.png", so you can tell them apart later. Other files keep their names.
+
 To point at a file that's already in the chat or its project, type `@` and pick it under **Assets**. See [Reference tools, files, and skills](#reference-tools-files-and-skills).
 
 ### Unlock a password-protected PDF
@@ -82,7 +84,7 @@ Bearly detects a password-protected PDF when you attach it and asks for the pass
 If unlocking fails for another reason, the file shows "Unable to unlock this PDF."
 
 **What you get:** Files attached to your message and saved in the chat, so you can point at them again later with `@`.
-**Limits:** 1000 MB per file; larger files can't be attached. If a file shows "Unable to upload and process.", remove it and attach it again.
+**Limits:** 1000 MB per file; larger files can't be attached. In an end-to-end encrypted chat the limit is 100 MB, and a larger file shows "Encrypted chats take files up to 100 MB. Use a standard chat for files up to 1 GB." If a file shows "Unable to upload and process.", remove it and attach it again.
 **Combines with:** [/ and @ references](#reference-tools-files-and-skills) to name a file and a tool in the same message; [Search chats and files](https://bearly.ai/docs/manual/chat/organize.md#search-chats-and-files) to find a file later.
 
 ## Share your screen
@@ -173,7 +175,7 @@ You don't have to wait for an answer to finish. While Bearly works, type your ne
 - **Send** adds it to the answer that's running. Bearly reads it as soon as any tool it's running finishes, then carries on with your message in mind. Use it to correct course or add a detail mid-answer.
 - **Queue** holds it under **Up next** above the composer. Queued messages go out automatically, in order, as each answer finishes. Use it for the next step, such as "now make a table".
 
-Some answers can't take a new message while they run. Then you see only **Stop** and **Send**, and **Send** waits for the answer to finish (its tooltip reads "Send after this reply").
+Some chats can't take a new message while an answer runs: end-to-end encrypted chats, a routine's chat, chats whose history Bearly has compacted, and chats with very large files. There you see only **Stop** and **Send**, and **Send** waits for the answer to finish (its tooltip reads "Send after this reply").
 
 **Use it when:** an answer needs a correction or a missing detail now, or you want to stack a chain such as "now make a table", then "now email it to me".
 **You need:** Nothing extra. Every plan, on every app platform.
@@ -188,6 +190,12 @@ Some answers can't take a new message while they run. Then you see only **Stop**
 
 
 
+**Send now** doesn't stop the answer. Bearly finishes the step it's running, reads your message, and keeps going with it in the same answer: your message shows in the chat, and the answer continues below it. If the answer finishes before it gets to your message, the message goes back to the top of **Up next** and goes out as soon as the answer ends. When nothing is running, **Send now** sends the message right away.
+
+In a shared chat, only the person who started an answer can add to it. While someone else's answer runs, your message waits under **Up next**, and the send button's tooltip reads "Send after this reply".
+
+In most chats, a message that was sent but never ran, for example from a device that closed before it went out, shows under **Not sent yet**, marked "· from another device" when it came from one. Select **Send** to run it here, or **Remove** to drop it.
+
 The queue stops on its own instead of sending the next message when:
 
 - the last answer ended in an error: "Queue paused — the last message failed."
@@ -196,28 +204,32 @@ The queue stops on its own instead of sending the next message when:
 
 After an error or a usage limit, the queue starts again once a later answer finishes cleanly. A single **Stop** ends only the current answer, and the queue carries on. A queue you paused with a double Stop stays paused until you use **Send now** or clear the waiting messages. **Send now** also restarts a queue paused for any reason.
 
-Messages that never went out, for example because the page closed before they were sent, appear under **Not sent yet** with buttons to send or remove each one.
-
 **What you get:** Corrections that land while the answer is still being written, and a chain of follow-ups that runs without you watching and stops instead of piling up failures.
-**Limits:** Up to 4 waiting messages. When the queue is full, **Queue** is disabled ("Queue full — send, edit, or remove a waiting message first"); press <kbd>Enter</kbd> on a message that would queue and the header briefly reads **Queue is full**. Waiting messages aren't saved with the chat. Editing an earlier message never queues; it stops the current answer and reruns. There are no keyboard shortcuts for queueing or for stopping and sending at once.
+**Limits:** Up to 4 waiting messages. When the queue is full, **Queue** is disabled, as is the send button in chats where it waits for the answer ("Queue full — send, edit, or remove a waiting message first"); press <kbd>Enter</kbd> on a message that would queue and the header briefly reads **Queue is full**. Waiting messages aren't saved with the chat. Editing an earlier message never queues; it stops the current answer and reruns. There are no keyboard shortcuts for queueing or for stopping and sending at once.
 **Combines with:** [Email and text](https://bearly.ai/docs/manual/capabilities/email-and-text.md) as the last step of a chain; [History modes](https://bearly.ai/docs/manual/chat/settings.md#history-modes) for long chains of tool work.
 
-## Stop an answer
+## Stop an answer or a single step
 
-Stop an answer that's going the wrong way. Whatever it already wrote stays in the chat.
+Stop an answer that's going the wrong way, or stop one slow or wrong step and let the rest finish. Whatever Bearly already wrote stays in the chat.
 
-**Use it when:** an answer misread the question or is running long. To steer it without stopping, use **Send** instead (see above).
+**Use it when:** an answer misread the question, is running long, or one search or tool call is taking too long. To steer it without stopping, use **Send** instead (see above).
 **You need:** Nothing extra.
 
 
 
-1. Select **Stop**, the square button — Bearly stops the answer.
-2. To start over with new directions, type your message and select **Send** once the answer has stopped.
+1. To stop the whole answer, select the square **Stop** button beside the composer — Bearly stops; whatever it already wrote stays in the chat, and any draft stays in the composer. In most chats, **Stop** also shows on your other devices while your answer runs, so you can stop it from any of them.
+2. To stop one step, select the line under the answer that names what Bearly is doing to open the **Steps** tab, then select the square **Stop** beside the step that's running — that step ends, Bearly is told it was stopped, and the answer continues with the other steps.
+3. To start over with new directions, type your message and select **Send** once the answer has stopped.
 
 
+
+In most chats, if a running answer stops updating for 2 minutes, a notice above the composer says so, with **Stop**:
+
+- **Running on another device** — "No updates for 2 minutes. If that device is closed, stop the response here."
+- **Stopped responding** — "No updates for 2 minutes." It reads **Stopped responding in another tab**, or **window** in the desktop app, when the answer runs in another one on this computer.
 
 **What you get:** Partial work kept, and the conversation moving in the direction you want.
-**Limits:** Pressing **Stop** twice within 2 seconds also pauses anything waiting under **Up next**.
+**Limits:** No keyboard shortcut stops an answer; use **Stop**. A step can only be stopped while it's running, from the tab or window where the answer is running. Pressing **Stop** twice within 2 seconds also pauses anything waiting under **Up next**.
 
 ## PII Blocker
 

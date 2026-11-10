@@ -118,7 +118,7 @@ One message turns a chat that already produced the result you want into a schedu
 **Swap in:**
 - **A condition for the email:** add "Only tell me if a post gets over 500 likes" in step 2; it becomes the **Notification filter**.
 - **A text for the email:** say "text me" instead of "email me". Texts need a verified phone in **Settings** → **Phone and SMS**.
-- **The Routines page for the chat:** select **New Routine** in the command menu (<kbd>⌘</kbd> <kbd>K</kbd>, or <kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux). It opens **New routine**, where you can build the routine in the editor and paste the prompt from step 1 into **Instructions**.
+- **The Routines page for the chat:** select **New Routine** in the command menu (<kbd>⌘</kbd> <kbd>K</kbd>, or <kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux). It opens **Routines**; select **New routine**, choose **start from scratch**, and paste the prompt from step 1 into **Instructions**.
 
 **If it stalls:** If the chat used a tool routines can't run (Python, charts, images, YouTube, Maps, Weather, Best Pick, People Search, and others in the note at the top), rewrite the routine's instructions to do without it.
 

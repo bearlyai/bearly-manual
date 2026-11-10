@@ -31,10 +31,10 @@ What you type, attach, or let a tool read still goes to the model handling your 
 | **Zero Data Retention only** | **Settings** → **Privacy and security** | Chats use only zero-retention models, and fallbacks stay on them | Turn it off |
 | End-to-end encryption | **Settings** → **Privacy and security**, and the lock at the foot of the composer | New chats are encrypted on your devices | Choose standard encryption for a new chat. Existing encrypted chats stay encrypted. |
 | **Encrypt all new chats with this key** | Same pane, after setup | Makes end-to-end encryption the default for new chats | Turn it off |
-| **Personalization** | **Settings** → **Personalization** | Controls whether your name, occupation, and About you go to the model | Turn it on or off |
+| **Use in chats** | **Settings** → **Personalization** (open Settings from a chat) | Controls whether your name, occupation, and About you go to the model | Turn it on or off |
 | **Memories** | **This chat**, **New chats**, or the composer | Off stops recall of earlier chats | Set it back to **Auto** |
 | **Web Search** | **This chat**, **New chats**, or the composer | Off stops the chat from searching the web on its own | Set it back to **Auto** |
-| Project password | The project's **Sharing** tab → **Encryption** → **Protect** | Adds a password lock to a project, and its chats are read-only while locked | **Remove** |
+| Project password | The project's **Sharing** tab → **Encryption** → **Password protection** → **Protect** | Adds a password lock to a project, and its chats are read-only while locked | **Remove** |
 | **Lock all data** | **Settings** → **Profile** | Relocks every password-protected project on this device | Enter the passwords again |
 | **Permissions** | Composer | **Standard** asks before tools act. **Full access** doesn't. | Switch back |
 | Saved approvals | Composer → **Permissions** | **Revoke all saved approvals** or **Clear all permissions** | Approve again |
@@ -96,7 +96,11 @@ Signing in isn't enough to open your encrypted chats. A new device needs approva
 
 ### Choose encryption for each new chat
 
-After setup, a lock appears beside the project picker on a new chat. Orange and closed means "End-to-end encrypted". Gray and open means "Standard encryption". Turning encryption off for a draft asks you to confirm, and you can't change it while the draft has attachments ("Remove attachments before changing encryption"). If your organization requires device-only encryption, the lock is yellow, reads "Local key encryption", and can't be changed.
+After setup, a lock appears beside the project picker on a new chat. Orange and closed means "End-to-end encrypted". Gray and open means "Standard encryption". Turning encryption off for a draft asks you to confirm, and you can't change it while the draft has attachments ("Remove attachments before changing encryption").
+
+Encryption never holds up a new chat. On a device you haven't approved yet, new chats use standard encryption. If your encryption settings don't load within a few seconds, the new chat uses standard encryption and a line under the composer reads "This chat uses standard encryption." with **Turn on end-to-end encryption**. A draft waits only when you chose end-to-end encryption on a device that can't encrypt yet: the line reads "Approve this device to send this chat end-to-end encrypted." (or "Finish setup to send this chat end-to-end encrypted." if setup isn't done), and **Use standard encryption** switches the draft back without asking.
+
+If your organization requires device-only encryption, the lock is yellow, reads "Local key encryption", and can't be changed.
 
 Encryption never stops you starting a chat. One quiet line under the new-chat composer says how the chat will be encrypted:
 
@@ -111,7 +115,7 @@ Each browser and app needs its own approval, even on the same computer.
 
 
 1. Sign in on the new device, open **Settings** → **Privacy and security**, and select **Approve this device**. Name the device and select **Ask another device to approve** — it shows a **Verification code** and waits.
-2. On a device you already approved, open **Settings** → **Privacy and security** → **Approve a device** and choose the new device by name.
+2. On a device you already approved, open **Settings** → **Privacy and security** and, beside **Approved devices**, select **Approve a device**, then choose the new device by name.
 3. Enter the verification code shown on the new device, then approve — the new device can now open your encrypted chats.
 
 
@@ -123,16 +127,17 @@ From an approved phone, you can instead open "Using an approved phone? Scan inst
 Once this device is unlocked, the pane shows:
 
 - **Approved devices**: "These devices can open your encrypted chats and approve another device." **Remove** asks first and explains the result. Removing your only device means "You'll need your recovery phrase to get back in." Removing this device locks your encrypted chats here until another device approves it or you use your recovery phrase. Anything a removed device already downloaded stays on it.
-- **Recovery**: your saved passkeys with **Remove**, **Store a passkey in my keychain** ("Use your device keychain to unlock Bearly on a replacement device.") where your device supports it, and **Replace recovery phrase** ("Creates a new recovery phrase. The previous phrase or key stops working.").
+- **Recovery**: until you save a passkey, a **Passkey** row offers **Store a passkey in my keychain** ("Use your device keychain to unlock Bearly on a replacement device.") where your device supports it. Once saved, the passkey is listed with **Remove**. **Recovery phrase** has **Replace recovery phrase** ("Creates a new recovery phrase. The previous phrase or key stops working.").
 
 ### What changes in an encrypted chat
 
 - Memories are off. The setup screen says so.
 - The chat can't search documents, and **Always search documents** has no effect. Reading a specific file still works.
 - The chat doesn't appear in **Search chats and files**.
+- Each file you attach can be up to 100 MB; standard chats take up to 1 GB. A larger file isn't attached, and its chip shows "Encrypted chats take files up to 100 MB. Use a standard chat for files up to 1 GB."
 - The AI in a regular chat can't list, read, rename, move, or delete your encrypted chats.
 - When you send a prompt, "Bearly's execution service, the selected AI provider and tools still receive what they need."
-- A routine made from an encrypted chat keeps its instructions and results in standard storage, and its runs wait until a device is unlocked. If a routine texts you each result, the routine editor notes that the text summary leaves end-to-end encryption.
+- A routine made from an encrypted chat keeps its instructions and results in standard storage. Its runs don't wait for encryption: a device that isn't approved still runs its routines, because a routine's chat uses standard encryption and can't reach your encrypted chats. If a routine texts you each result, the routine editor notes that the text summary leaves end-to-end encryption.
 - Publishing a Page asks you to confirm that Bearly will store a readable copy of only the published Page, its preview, and any file you include. The chat stays encrypted.
 - On a device that isn't approved, encrypted chats appear as "Encrypted chat" placeholders with a lock, and the top of the sidebar shows **Encrypted chats locked** with **Approve**.
 
@@ -148,9 +153,9 @@ Once this device is unlocked, the pane shows:
 
 ## Personalization
 
-**Settings** → **Personalization** decides what Bearly tells the model about you. The **Personalization** switch is off by default.
+**Settings** → **Personalization** decides what Bearly tells the model about you. Its **Use in chats** switch is off by default.
 
-- Turn on **Personalization** ("Include your profile context in your chats.") and fill in **Name**, **Occupation**, and **About you**. "This is shared with AI models in your conversations."
+- Turn on **Use in chats** ("Include your profile context in your chats.") and fill in **Name**, **Occupation**, and **About you**. "This is shared with AI models in your conversations."
 - With the switch off, nothing from your profile is added to your chats.
 - A project can turn on **Disable personalization**, and then nothing from your profile is included in that project's chats.
 
@@ -162,7 +167,7 @@ Once this device is unlocked, the pane shows:
 
 ## Project passwords and Lock all data
 
-A project password locks a project's files and settings. While it's locked, its chats are read-only. Bearly can't recover a forgotten password, and you enter it again on each new device and after you log out. A project password is a separate lock on stored project data, not end-to-end encryption. See [Password protection](https://bearly.ai/docs/manual/projects.md).
+A project password locks a project. While it's locked, each of the project's tabs asks for the password and its chats are read-only. Bearly can't recover a forgotten password, and you enter it again on each new device and after you log out. A project password is a separate lock on stored project data, not end-to-end encryption. See [Password protection](https://bearly.ai/docs/manual/projects.md).
 
 **Settings** → **Profile** → **Lock all data** relocks every password-protected project on this device. The pane still calls them "notebooks". Select **Lock**, then confirm with **Lock All** — Bearly clears saved passwords on this device and reloads.
 
@@ -186,7 +191,7 @@ Routines have their own Full access setting in the routine editor. On a managed 
 
 ## Log out
 
-**Settings** → **Profile** → **Log out**, or **Log out** in the account menu: "Bearly syncs your recent changes, then clears its data from this device. You'll need to sign in again." If some changes haven't synced, Bearly asks before discarding them. Logging out also ends the session on Bearly's side.
+**Settings** → **Profile** → **Log out**, or **Log out** in the account menu: "Bearly syncs your recent changes, then clears its data from this device. You'll need to sign in again." If some changes haven't synced, Bearly asks before discarding them. In most chats, a message you just sent counts too, until the chat has saved it. Logging out also ends the session on Bearly's side.
 
 ## Delete your account
 
@@ -209,7 +214,7 @@ Routines have their own Full access setting in the routine editor. On a managed 
 
 Deletion runs 24 hours after you verify. You can keep using Bearly until then. To cancel, select **Delete** again and **Cancel scheduled deletion**. Cancelling closes when Bearly sends the final reminder, about one hour before deletion.
 
-## Phone & SMS
+## Phone and SMS
 
 **Settings** → **Phone and SMS** manages text messages. Set it up with a US or Canadian mobile number for verification codes and notifications. Once verified, the pane offers **Send test text**, **Change number**, **Turn off text messages** ("Stops codes and notifications. Same as replying STOP."), and **Remove phone number** ("Deletes the number from your Bearly account."). The pane appears when your organization's **Text messages** policy allows it. See [Email and text](https://bearly.ai/docs/manual/capabilities/email-and-text.md).
 

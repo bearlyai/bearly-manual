@@ -21,6 +21,7 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 |---|---|---|
 | "Unable to upload and process." on a file | The upload or the file's analysis didn't finish | Remove the file with the **×** on it, then attach it again |
 | A file is rejected as too large | Chat attachments can be up to 1000 MB each | Make it smaller, for example by splitting a long PDF or exporting a shorter video, then attach it again |
+| "Encrypted chats take files up to 100 MB. Use a standard chat for files up to 1 GB." | Encrypted chats take files up to 100 MB; standard chats take up to 1 GB | Remove the file, then attach it in a chat with standard encryption, or attach a smaller copy |
 | "Password required." and "Enter the PDF password. Bearly uses it once to unlock this file." | The PDF is password-protected | Type the password in **PDF password** and select **Unlock and add** |
 | "That password didn't work." | The password was wrong | Type it again. Remove the file to cancel |
 | "Unable to unlock this PDF." | Bearly couldn't unlock the file | Remove it, save an unlocked copy from an app that opens the PDF, and attach that copy |
@@ -43,11 +44,17 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 | "Queue paused." | You pressed **Stop** twice within 2 seconds | Select **Send now** on a waiting message to restart it |
 | "Queue full — send, edit, or remove a waiting message first" and **Queue is full** | The queue holds up to 4 waiting messages | Use **Send now**, **Edit queued message**, or **Remove from queue** on one |
 | "Clear the composer to edit this message" | You can only pull a queued message back into an empty composer | Clear the composer, then select **Edit queued message** |
-| Only **Stop** and **Send** while Bearly works, and **Send** reads "Send after this reply" | This answer can't take a new message while it runs, so **Send** waits for it to finish | Let it finish, or select **Stop** and then send |
+| Only **Stop** and **Send** while Bearly works, and **Send** reads "Send after this reply" | This chat can't take a new message while an answer runs, such as an end-to-end encrypted chat, so **Send** waits for the answer to finish | Let it finish, or select **Stop** and then send |
 | A message you sent shows **Sending…** above the composer | Bearly reads a message added to a running answer once its current tool finishes | Wait, or select **Cancel sending** to move it back into the queue |
+| **Running on another device** above the composer | An answer running on another device hasn't updated for 2 minutes; that device may be closed or offline | Open the chat on that device, or select **Stop** here and send again |
+| **Stopped responding** above the composer | An answer running in this window, or in another tab or window on this computer, hasn't updated for 2 minutes, often after the computer slept | Select **Stop**, then send again |
+| "Couldn't open this chat." with **Retry** | The chat couldn't load | Check your connection and select **Retry** |
+| "Waiting for this chat to sync." with **Retry** | The chat hasn't caught up with the server yet | Wait; it opens on its own once it catches up. Or select **Retry** |
+| "This chat has changes from a newer version of Bearly. Update Bearly to keep using it." | This copy of Bearly is older than one that already changed the chat | Reload the page, or update the desktop app |
+| **Message not sent** — "Your message is back in the message box. Try sending it again." | The message couldn't be sent | Send it again |
 | Bearly stops searching the web partway through an answer | Web Search runs at most twice per answer | Ask a follow-up, and the next answer can search again |
 | An answer has no web sources | The chat's **Web** setting is **Off**, which also removes `/web-search` | Open the sliders button and set **Web** to **Auto** |
-| Bearly seems to forget the start of a long chat | The default **History** mode, **Chat (Dynamic)**, shortens older messages | Open the sliders button → **History** → **Agentic (Compaction)**, or restate the key facts. "Conversation compacted so you can keep going" is normal in that mode |
+| Bearly seems to forget the start of a long chat | Once a chat is long, the default **History** mode, **Chat (Dynamic)**, shortens older tool results and long earlier messages, then drops the oldest | Open the sliders button → **History** → **Agentic (Compaction)**, or restate the key facts. "Conversation compacted so you can keep going" is normal in that mode |
 | The AI used a different file or tool than you meant | It chose on its own | Name the file with `@` and the tool with `/` or `@`. See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md#reference-tools-files-and-skills) |
 
 ## Usage limits and credits
@@ -125,7 +132,7 @@ Other chats that look broken:
 | **Work locally** opens the download pane: "Work locally lets Bearly read, edit, and run files in a folder you choose — available on the Bearly desktop app." | Local files need the desktop app | Install the desktop app |
 | "npm MCP servers require the Bearly desktop app." or **Desktop required** | npm connector servers run on your computer | Add the server in the desktop app |
 | "Use Skills in the desktop app" | Installed skills run local files | Install and use them in the desktop app |
-| "Computer Use is available in the Bearly desktop app." | Computer Use controls apps on your computer | Ask from a chat in the desktop app |
+| No `/computer` in the `/` menu | Computer Use controls apps on your computer, so it's offered only in the desktop app | Ask from a chat in the desktop app |
 | **Get desktop app** on the **Online meeting** card | Recording a call's computer audio needs the desktop app | Use the desktop app on Windows or macOS 13 or later, or record with **In person or voice note** |
 | "_Feature_ needs a newer Bearly desktop app." or **Update Bearly** | Your desktop app is too old for the feature | Select **Update ready · Restart** if it shows, or install the latest version from bearly.ai |
 | "This version of the Bearly desktop app does not support Browser." | Same, for Bearly Browser | Update the desktop app |
@@ -171,11 +178,11 @@ Routines run only in the desktop app, on the device the routine is installed on,
 1. Open the routine and check **Run location** — "Not installed anywhere — it won't run." means no device runs it.
 2. In the desktop app, select **Install on this device**, or **Move to this device** if another computer owns it — this device now runs the schedule.
 3. Keep the desktop app open at the scheduled times — a closed or sleeping computer can't run it.
-4. Select **Run now** to test it — this runs the last saved version on this computer right away.
+4. Select **Run now** on the routine's page to test it — this runs the last saved version on this computer right away.
 
 
 
-After the computer wakes or the app reopens, Bearly runs at most one catch-up for the latest missed time and lists older ones as "Skipped — device was away". If you use end-to-end encryption, a run waits until this device is unlocked.
+After the computer wakes or the app reopens, Bearly runs at most one catch-up for the latest missed time and lists older ones as "Skipped — device was away". Runs don't wait for end-to-end encryption, so a device that isn't approved for encrypted chats still runs its routines.
 
 | You see | Why | What to do |
 |---|---|---|
@@ -287,6 +294,7 @@ See [Browser and computer use](https://bearly.ai/docs/manual/capabilities/browse
 | "Choosing a voice model needs a paid plan." | Free calls use a fixed model | Upgrade to Pro or higher to choose the model |
 | A call ended by itself | Calls end after 30 seconds of silence, including while muted, or with "Voice connection stalled." | Start a new call |
 | "This voice session reached its limit. Start a fresh one anytime." | Each call has a usage limit | Start a new call |
+| "Voice can start once this reply finishes." on **Start voice call** | In most chats, a call can't start while an answer runs or messages wait to send | Wait for the answer, or select **Stop**, then start the call |
 | "Voice hit its action limit for this turn." | A single turn can run a limited number of tool steps, and the call ends when it runs out | Start a new call and ask again, or continue by typing |
 | A spoken "yes" doesn't approve a card | Some voice models can't take a spoken answer, and some cards, such as routine permissions, must be answered on screen | Answer the card on screen |
 | The dictation microphone opens **Settings** | Dictation is off by default | Turn on **Enable dictation** in **Settings** → **Chats** → **Dictation** |
@@ -330,9 +338,9 @@ See [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canv
 |---|---|---|
 | "Unarchive this chat before deleting it." or "Delete · unarchive first" | Archived chats can't be deleted | Select **Unarchive**, then **Delete** |
 | A chat won't move into a project | Chats can't move into an archived project | Unarchive the project first |
-| A project's chats are read-only and its **Settings** asks for a password | The project is locked with a password | Enter the project's password. **Lock all data** in **Settings** → **Profile** locks every password-protected project again |
+| A project's chats are read-only and its tabs ask for a password | The project is locked with a password | Enter the project's password. **Lock all data** in **Settings** → **Profile** locks every password-protected project again |
 | "Only owners can manage encryption." | Only a project's owners can change its password | Ask the owner |
-| "Only project writers and owners can change shared project settings." | Your role can't change shared settings | Use **Your chat settings**, or ask the owner |
+| "Only project writers and owners can change shared project settings." | Your role can't change shared settings | Use **Your chat settings** on the project's **Settings** tab, or ask the owner |
 
 See [Projects](https://bearly.ai/docs/manual/projects.md).
 

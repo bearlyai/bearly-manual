@@ -59,7 +59,7 @@ An admin of a free, unmanaged organization can request a managed organization.
 
 
 
-1. Select **Upgrade to Managed** — "Request a managed organization plan. Our team will set up billing and configure your organization."
+1. Select **Upgrade to Managed** at the top of the organization's pages — "Request a managed organization plan. Our team will set up billing and configure your organization."
 2. Choose a **Plan**: **Pro**, **Analyst**, **Research**, or **Max**.
 3. Optional: enter your email **Domain** — "Users with this email domain will automatically join your organization."
 4. Select **Send Request** — the header shows **Request is being reviewed** while Bearly reviews it.
@@ -74,7 +74,7 @@ Members see **Your membership** with their **Role** and **Policy**. **Leave orga
 
 ### Settings
 
-Admins see a **Settings** section:
+On a managed organization, admins see a **Settings** section:
 
 - **Managed-domain access** (managed): how people with your domain join. **Automatically add anyone with @_domain_** (the default) or **Require an organization administrator to add each person**. Turning off automatic access doesn't remove current members, and the new rule reaches all of Bearly within ten minutes. With the second option, someone on your domain who isn't a member is told to contact an administrator.
 - **Member directory** (managed): whether ordinary members can find managed-domain teammates by name or email. **All managed members** or **Disabled for members**. It never shows roles, policies, spending limits, or invite status. It affects teammate search in project sharing and the **Members** tab.
@@ -91,7 +91,7 @@ The access banner shows members a message they must accept before they can use B
 3. Fill in **Heading** (default "Before you continue", up to 120 characters), **Message (Markdown)** (required, up to 20,000 characters), and **Accept button text** (default "Accept & Continue", up to 80 characters).
 4. Optional: turn on **Let members sign out** — the banner adds a **Sign out** option.
 5. Choose a **Frequency**: **Session** (each time the app or browser opens), **Daily** (the default), or **Weekly**.
-6. Check **Preview** or **Open preview**, then select **Save banner** — **Discard changes** throws away unsaved edits.
+6. Check the **Preview**, which updates as you type, then select **Save banner** — **Discard changes** throws away unsaved edits.
 
 
 
@@ -178,7 +178,7 @@ Select a member's row to open their settings in a drawer at the side of the page
 | **Full access** (managed) | The member's [Agent access](#agent-access) exception |
 | **Individual monthly spend limit** (managed) | "Overrides the policy's spend limit for this member. Leave blank to use the policy limit." |
 
-Rows show badges such as **Admin**, **Suspended**, the member's effective policy and where it comes from, and their spending limit. **Remove** asks you to confirm and can't be undone. Bearly won't remove or demote the last active admin.
+Rows show **Admin** and **Suspended** badges, the member's effective policy and where it comes from, their spending limit, and **Full access allowed** when it applies; on narrow screens some of these are hidden. **Remove**, at the bottom of the panel, asks you to confirm **Remove Member** and can't be undone. Bearly won't remove or demote the last active admin.
 
 > **Caution — Removing someone on an auto-join domain**
 > If your organization adds everyone on the domain automatically, a removed member joins again the next time they use Bearly. To block access, turn off **Account access** to suspend them instead.
@@ -186,9 +186,9 @@ Rows show badges such as **Admin**, **Suspended**, the member's effective policy
 
 ## Groups
 
-Groups split an organization into departments or teams, each with its own members, policy, and shared projects. **Groups (_N_)** reads "Manage membership, policies, and shared projects for each group." Admins create one with **Add group**.
+Groups split an organization into departments or teams, each with its own members, policy, and shared projects. **Groups** reads "Manage membership, policies, and shared projects for each group." Admins create one with **Add group**.
 
-- **Members**: "Membership grants access to projects shared with this group." Organization admins search "Find an organization member to add…". Group admins type an existing member's exact email. Only organization admins can use **Make group admin** and **Remove admin role**. Synced memberships can't be removed by hand.
+- **Members**: "Membership grants access to projects shared with this group." Organization admins search "Find an organization member to add…". Group admins type an existing member's exact email. Each member's ⋯ menu has **Make group admin** or **Remove admin role** (organization admins only) and **Remove from group**. Members marked **Synced** can't be removed by hand.
 - **Policy and settings**: **Policy** (organization default or a policy from your list), **Priority**, and **Active** ("Inactive groups do not grant policy or project access."). A group admin can customize an assigned policy, which makes a copy for that group, but can't change its spending limit.
 - **Usage** (managed): the same report as the organization's **Usage** tab, limited to the group. It isn't a bill.
 - **Shared projects**: "Projects shared with this group that you can access. Project owners manage sharing in project settings."
@@ -199,30 +199,30 @@ Members who don't manage a group see only its **Shared projects**. Deleting a gr
 
 The **Projects** tab lists every project shared with the whole organization or one of its groups, with its audience, owners, and creation date.
 
-- **Remove access** takes away the organization's and its groups' access. People the owner shared with directly keep access, and chats people started in the project stay in their chat lists.
-- **Delete project** is available once none of the project's owners is still an active member. Its chats move back to the people who started them.
+- **Remove organization access** (in the project's ⋯ menu) takes away the organization's and its groups' access. People the owner shared with directly keep access, and chats people started in the project stay in their chat lists.
+- **Delete project** appears in the same menu once none of the project's owners is still an active member. Its chats move back to the people who started them.
 
 Both actions appear in **Activity**. Admins see project titles, owners, and sharing here, not project content. To share a project, its owner uses the project's **Sharing** tab. See [Projects](https://bearly.ai/docs/manual/projects.md).
 
 ## Policies
 
-**You need:** a managed organization. On an unmanaged one, the tab shows **Managed only** and **Upgrade to Managed**.
+**You need:** a managed organization. On an unmanaged one, the tab shows **Managed only**; request one with **Upgrade to Managed** at the top of the page.
 
-**Policies (_N_)** reads "Control what members can reach. The default policy applies to every new member." Each row shows **Default** and "New features: On" or "Off". **Add policy** creates one. **Disable new features by default**, confirmed with **Disable by default**, switches every policy so features added later start off. Current access doesn't change.
+**Policies** reads "Control what members can reach. The default policy applies to every new member." Each row says "Default for new members" or "Custom policy", "New features: On" or "Off", and its monthly limit or **No limit**. **Add policy** creates one. **Disable new features by default**, confirmed with **Disable by default**, switches every policy so features added later start off. Current access doesn't change.
 
 ### The policy editor
 
 | Section | Controls |
 | --- | --- |
 | **Policy** | **Policy name** (4 to 18 characters). **Monthly spend limit** in USD per month: "Applies per managed-domain member. Leave blank to use the plan allowance." |
-| **Chat defaults** | **Enable chat defaults** sets **Model**, **Instructions**, **Language**, and **Temperature** for members' chats outside projects. Each field is **Locked** ("Members can't change this") or **Unlocked**. When off: "Chat defaults are off. Members use their own model, instructions, language, and temperature." |
+| **Chat defaults** | **Enable chat defaults** sets **Model**, **Instructions**, **Language**, and **Temperature** for members' chats outside projects. Select the lock beside a field to lock it ("Members can't change this") or unlock it ("Members can change this"). When off: "Chat defaults are off. Members use their own model, instructions, language, and temperature." |
 | **Models** | **Model access**: **Off**, **Allow-list**, or **Deny-list**. Search **Filter available models** by model, provider, family, or ZDR, and move entries between **Available models** and **Allowed models** or **Denied models**. "A provider or model family also covers versions released later." An allow-list can't be empty. |
 | **Feature access** | **New feature default**: **Enabled by default** ("Features added later are available automatically.") or **Disabled by default** ("Features added later must be enabled here."), then the feature switches in the catalog below |
 | **Skills** extras | **Policy Skills**: "Skills available in free chats for users on this policy. Project skills add to these." |
 | **Code & Automation** extras | **Team MCP servers**: "Servers added here appear automatically for members on this policy. Members provide their own authentication values." **Add server** takes an HTTPS address or an npm package. |
 | **Developer** extras | **Remote modules**: **Add module** with an endpoint, module name, and secret key |
 
-**Summarize the Policy** writes a plain-language **AI policy summary**, and **Email me a copy** sends it to you. The footer has **Make Default** ("All new organization members will be assigned to this policy."), **Delete**, an **Unsaved changes** marker, **Cancel**, and **Save**.
+**Summarize policy** writes a plain-language **AI policy summary**, and **Email me a copy** sends it to you. The footer has **Make default** ("Everyone who joins the organization from now on gets this policy."), **Delete**, **Unsaved changes** with the sections you changed, **Cancel**, and **Save**.
 
 ### Which policy applies
 
@@ -308,7 +308,7 @@ Model access, spending limits, and **Developer API access** are enforced by Bear
 | **End-to-end encryption** | Members can create chats that only their approved devices can read. Team admins and Bearly can't read or recover these chats, even after a member leaves. | Lets members set up [end-to-end encryption](https://bearly.ai/docs/manual/privacy-and-security.md). Hidden while **Require local encryption** is on. Enforced by Bearly's servers. | — | Off, in either mode |
 | **Require local encryption** | Require new chats to use device-only encryption. | New chats can be opened only on the device that created them. Blocks end-to-end encryption. | — | Off |
 | **Lock existing chats** | Lock existing chats to local access. The keys are unrecoverable. | Converts members' existing chats to device-only. Asks you to confirm **Lock All Existing Users Chats** and can't be undone. | Require local encryption | Off |
-| **File uploads** | Allow members to upload and attach files. | Attachments, project file uploads, and desktop folder sync | — | Follows default |
+| **File uploads** | Allow members to upload and attach files. | Attachments, project file uploads (the **Files** tab), and desktop folder sync | — | Follows default |
 
 
 Turning on **Lock existing chats** asks "This will lock all existing chats to local access only. Keys are unrecoverable. This action cannot be undone." Members' chats then open only on the device that holds the key. Turning off **Require local encryption** also turns this switch off, but chats already locked stay locked.
@@ -328,7 +328,7 @@ Turning on **Lock existing chats** asks "This will lock all existing chats to lo
 | --- | --- | --- | --- | --- |
 | **Create projects** | Allow members to create projects. | The **New project** button | — | Follows default |
 | **Require project passwords** | Require a password when members create projects. | New projects must have a password, and **Remove** is hidden | — | Off |
-| **Project collaboration** | Allow members to invite other people to projects. | A project's **Sharing** tab | — | Follows default |
+| **Project collaboration** | Allow members to invite other people to projects. | **Share** and the role pickers on a project's **Sharing** tab | — | Follows default |
 | **Project documents and data** | Allow members to add, remove, and sync project files. | Project file changes and folder sync | — | Follows default |
 
 ### Developer
@@ -354,7 +354,7 @@ Before the first purchase, **Give your organization Bearly** explains: "Every se
 
 
 
-Once active, the tab shows the **Subscription** (billed monthly or yearly), **Seats**, **Renews**, **Next invoice**, and card status. The **Seats** list groups open seats by plan, with **Add seats** and **Search seats…**. Each seat's **Seat actions** menu has:
+Once active, the tab shows the **Subscription** (billed monthly or yearly, with card status) and a summary of **Ready to assign**, **Ending at renewal**, **Seats**, **Renews**, and **Next invoice**. The **Seats** list groups open seats by plan; **Add seats** is at the top, and **Search seats…** appears once you have more than 20 seats. Each seat's **Seat actions** menu has:
 
 - **Move seat** — gives the seat to someone else. The previous holder loses access immediately.
 - **Unassign** — frees the seat for someone else.
@@ -367,7 +367,7 @@ Seats go only to active members. A person uses the higher of their personal plan
 
 **You need:** a managed organization and the admin role.
 
-**Usage** ("Managed-domain usage by member, model, and month.") covers **1 mo**, **3 mo**, **6 mo**, or **12 mo**. It shows **Spend**, **Calls**, **Active members**, and **Top model**, then a **Members** table you can search and expand into **Models** and **Months**. It counts successful, charged usage by current active members on your managed domain.
+**Usage** ("Managed-domain usage by member, model, and month.") covers **1 mo**, **3 mo**, **6 mo**, or **12 mo**. It shows **Spend**, **Calls**, **Active members**, and **Top model**, then a **Members** table, with a **Total** row, that you can search and expand into **Models** and **Months**. It counts successful, charged usage by current active members on your managed domain.
 
 ## Activity
 

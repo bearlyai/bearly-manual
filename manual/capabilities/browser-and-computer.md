@@ -110,7 +110,7 @@ With the Bearly Companion extension installed, a desktop chat can work in your e
 
 
 
-1. In a desktop chat, select the **Work locally** chip next to the message box, then **Choose folder…** and pick the folder — the chip then shows the folder's name. Recent folders appear in the same menu.
+1. In a desktop chat, select the **Work locally** chip at the bottom of the message box, then **Choose folder…** and pick the folder — the chip then shows the folder's name. Recent folders appear in the same menu.
 2. Describe the result and what must not change:
 
    ```text
@@ -135,7 +135,7 @@ The chip's menu also has **Clear folder** (go back to a private folder for this 
 
 ## Computer Use
 
-Computer Use lets Bearly complete a task in the apps on your screen. It takes screenshots, reads the apps' accessibility text, and clicks, types, scrolls, drags, and uses keyboard shortcuts. Computer use runs on your device; the screenshots it takes while working go to the model you picked.
+Computer Use lets Bearly complete a task in the apps on your screen. It takes screenshots, reads the apps' accessibility text, and clicks, types, scrolls, drags, and uses keyboard shortcuts. Computer use runs on your device; the screenshots it takes while working go to the model named on the **Use your computer** card.
 
 **Use it when:** the task lives in a desktop app with no file or web route, such as reading figures from an open report window, changing a setting in an app, or moving data between two apps.
 **You need:** the desktop app on Mac, Windows, or Linux; your organization allows **Computer Use** and at least one of the models Computer Use supports. On a Mac, Bearly needs **Accessibility** and **Screen Recording** permission in **System Settings** → **Privacy & Security**.
@@ -150,13 +150,13 @@ Computer Use lets Bearly complete a task in the apps on your screen. It takes sc
    ```
 
 3. At **Use your computer**, open **Details** to see the goal, the model, the data that goes to it (relevant conversation context, attachments, screenshots, and app text captured while working), and the access (the full desktop: screenshots, focus, mouse, and keyboard). Pick an **Approval duration** and allow.
-4. Watch the **Computer** chip by the message box: it shows the status, such as **Looking** or **Working** in an app. Select **Stop** on the chip to end the task.
+4. Watch the **Computer** chip at the bottom of the message box: it shows the status, such as **Looking** or **Working** in an app. Select **Stop** on the chip to end the task.
 5. Read the **Computer Use** step in the answer: it lists the screen, the apps, and the actions taken.
 
 
 
 **What you get:** the task done in the app, with a record of each action.
-**Limits:** one Computer Use task at a time per chat. Bearly's own windows are never a target. Routines never see or control your screen. Before a consequential action your request didn't already authorize, such as sending, publishing, buying, deleting, or changing account or security settings, Bearly asks **Confirm this computer action**; Full access covers this one. A safety check raised during the task also shows **Confirm this computer action**, and that one always asks, even with Full access.
+**Limits:** one Computer Use task at a time per chat. Bearly's own windows are never a target. Routines never see or control your screen. Before a consequential action your request didn't already authorize, such as sending, publishing, buying, deleting, or changing account or security settings, Bearly asks **Confirm this computer action**; Full access covers this one. A safety check raised during the task also shows **Confirm this computer action**, and that one always asks, even with Full access; its **Stop** button ends the task.
 **Combines with:** [Run Python and charts](https://bearly.ai/docs/manual/capabilities/data-and-code.md) after it reports what it read; [email](https://bearly.ai/docs/manual/capabilities/email-and-text.md) to send the result.
 
 On a Mac, if a permission is missing, Bearly says "Computer Use needs Accessibility and Screen Recording access." Turn on **Bearly** under both in **System Settings** → **Privacy & Security**, then send the request again. On Windows, Bearly may offer **Finish setting up Computer Use** for a small helper that controls protected and background windows more reliably; select **Finish setup** and approve the administrator prompt. Its status lives at **Settings** → **Runtime** → **Windows Computer Use helper**.

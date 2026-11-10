@@ -77,7 +77,7 @@ Web Search looks things up on the public web and answers with numbered links to 
 
 
 
-**What you get:** an answer with numbered citations in the order they're first used; select a number to open its source. The search itself is one of the answer's **Steps**. When pictures would help and Image Search is allowed, a gallery can appear with the results.
+**What you get:** an answer with numbered citations in the order they're first used; select a number to open its source. The search itself is one of the answer's **Steps**. In most chats, an answer can also cite a source Bearly found earlier in the chat. When pictures would help and Image Search is allowed, a gallery can appear with the results.
 
 **Limits:** one search runs up to eight queries at once and returns at least two results per query. An answer can search at most twice. A query that fails isn't retried. For prices and stock, Bearly matches the exact model or variant, keeps price, shipping, and stock separate, states the currency, and calls a price it saw only in a search snippet unverified.
 
@@ -133,7 +133,7 @@ Image Search finds photos, illustrations, diagrams, and product images on the pu
 
 2. To make sure it searches images, start with `/image-search`.
 
-3. Select an image to preview it — from the preview you can zoom, copy, download, or open the page it came from.
+3. Select an image to open it full screen — double-click, scroll, or pinch to zoom, and use **Copy image**, **Download**, or **Open source page**.
 
 4. To use an image in later work, refer to it by position — Bearly saves that image into the chat first, then passes it to image editing.
 
@@ -179,9 +179,9 @@ Deep Research is a long research run that ends in a cited report. You review and
 
 
 
-**What you get:** a report in the chat, a PDF saved to the chat, and the same PDF emailed to the address on your Bearly account. The finished report stays available to the chat in full, so later messages can question it, chart it, or turn it into a Page without new research.
+**What you get:** a report in the chat, a PDF saved to the chat, and the same PDF emailed to the address on your Bearly account. The finished report stays available to the chat, so later messages can question it, chart it, or turn it into a Page without new research. In most chats, a very long report is also saved to the chat as `deep-research-report.md`: the card shows its start with **Open full report**, Bearly opens the file when a later message needs more, and the report's figures are saved as image files in the chat's **Files**.
 
-**Limits:** one Deep Research run at a time per person, and a daily spending limit. When either applies, Bearly says it can't start another run right now. Each run uses plan allowance based on its actual usage. A run keeps going if you refresh, close the app, or switch devices; reopen the chat to see it. The email goes only to you. When a run ends with **Research failed.**, type `/deep-research` to start a new one.
+**Limits:** one Deep Research run at a time per person, and a daily spending limit. When either applies, Bearly says it can't start another run right now. Each run uses plan allowance based on its actual usage. A run keeps going if you refresh, close the app, or switch devices; reopen the chat to see it. In most chats, edits to the plan show on your other devices too. The email goes only to you. When a run ends with **Research failed.**, type `/deep-research` to start a new one.
 
 **Runs in:** every app platform; outside the desktop app, a long run may suggest getting it. Routines: only when you add **Deep Research** to the routine and choose its tier; it runs at most once per routine run and emails the report. Council experts: no.
 
@@ -215,7 +215,7 @@ Scholar searches an index of academic papers from preprint servers and the biome
 
 
 
-**What you get:** superscript citations; hover one to see the paper, and select it to open the paper. A card for each search starts folded to one line with the query and the number of papers found; open it to see the first four papers, with each paper's source and link, and **Show all** for the rest. When Bearly reads a paper, the results card quotes a passage it read, when available.
+**What you get:** superscript citations; hover one to see the paper, and select it to open the paper. A card for each search starts folded to one line with the query and the number of papers found; open it to see the first four papers, with each paper's source and link, and **Show all** for the rest. When Bearly reads a paper, the results card quotes a passage it read, when available; a paper that isn't on a results card gets its own **Paper read** card.
 
 **Limits:** a search returns 8 papers by default and up to 10, and can be narrowed by date range, up to five subject categories, and up to five author surnames. A read returns up to five passages per paper; a related-papers lookup returns up to 10. When the index returns fewer than three papers, or you ask for journal articles only or the newest work, Scholar also searches 20 journal and repository sites. Many biomedical papers are indexed by abstract only, shown as "abstract only". Scholar doesn't report citation counts. Bearly prefers peer-reviewed work over preprints, flags retractions and contradictions, and says when the literature is thin.
 
@@ -247,7 +247,7 @@ Council of Experts sends one self-contained question to two to five AI models at
 
 
 
-**What you get:** each model's full answer in its own tab, and a synthesis that names consensus and disagreement.
+**What you get:** each model's full answer in its own tab, and a synthesis that names consensus and disagreement. In most chats, a very long answer is also saved to the chat's **Files** as "_model_ answer.md".
 
 **Limits:** a council needs at least two experts to finish. Each expert can take up to eight tool steps, and each answer is cut to 4,000 characters for the synthesis. The model list follows your plan and organization; with **Zero Data Retention only** on, it offers only zero-retention models. Experts can use Web Search, Read Site, Scholar, Search Docs, Read Doc, Scan Doc, and a YouTube video's transcript and saved claims check. They can't use Image Search, Deep Research, X, Maps, Weather, SEO data, Domain research, People Search, Best Pick, or connectors. Search Docs isn't available in end-to-end encrypted chats.
 

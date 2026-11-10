@@ -25,7 +25,7 @@ Bearly has a few doors for code and agents. Your own programs can call Bearly's 
 
 An API key lets your code call the Bearly API as your account.
 
-**You need:** a Bearly account. On a managed organization, the policy must allow **Developer API access**; if it doesn't, **Developers** or **API keys** is missing from the menu.
+**You need:** a Bearly account. On a managed organization, the policy must allow **Developer API access**; if it doesn't, **Developers** is missing from the account menu and **API keys** from Settings.
 
 
 
@@ -129,11 +129,11 @@ Remote modules let a developer add custom tools to Bearly chats from their own s
 
 If you're an AI agent using Bearly's interface for a person, these labels are stable places to start:
 
-- **Sidebar:** **Hide sidebar**, **Search chats**, and **New chat** in the top row; **Chat**, **Prompt templates**, **Routines**, **Meetings**, the **Projects** list, and the account menu at the bottom with **Settings**, **Billing**, **Developers**, and **Organizations**.
+- **Sidebar:** **Hide sidebar**, **Search chats**, and **New chat** in the top row; **Chat**, **Prompt templates**, **Routines**, **Meetings**, the **Projects** list (each project opens a page with **Chats**, **Files**, **Sharing**, and **Settings** tabs), and the account menu at the bottom with **Settings**, **Billing**, **Developers**, and **Organizations**.
 - **Composer:** the message box, the model picker, the **Send**, **Queue**, and **Stop** buttons, and the chips at the foot of the box: **Permissions** (or **Full access**), **Connectors**, and **Work locally** in the desktop app. Typing `/` opens commands such as `/email`, `/sms`, `/skill`, and `/visualize`.
 - **Command menu:** <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux), with **New**, **New Routine**, and **Switch Chats**.
-- **Settings:** a window titled **Settings** over the current page, with groups **Account**, **Organizations**, **Chats**, **Preferences**, **Privacy**, **Connections**, **Desktop app**, and **Developer**. See [Settings reference](https://bearly.ai/docs/manual/settings-reference.md).
-- **Routines:** **New routine**, **Draft routine**, **start from scratch**, **Create routine**, **Save**, and, on a routine's page, **Run now** and **Pause**.
+- **Settings:** a window titled **Settings** over the current page, with groups **Account**, **Organizations**, **Chats** (when opened from a chat), **Preferences**, **Privacy**, **Connections**, **Desktop app**, and **Developer**. See [Settings reference](https://bearly.ai/docs/manual/settings-reference.md).
+- **Routines:** **New routine**, **Describe the routine**, **Draft routine**, **start from scratch**, **Create routine**, **Edit**, **Save**, and, on a routine's page, **Run now** and **Pause**.
 
 Leave these to the person, and say so instead of acting:
 

@@ -120,6 +120,7 @@ Check claims never says a figure is true or false. As the card puts it, "Not fou
 
 - **No captions read:** in the desktop app, open the card's **Transcript** tab (it shows **No transcript yet.**) and select **Get transcript**. Once saved, the transcript shows on your other devices and **Check claims** becomes available. If the video has no captions at all, the tab then says **This video has no captions.**
 - **Video can't play in the card:** select **Open on YouTube**. In the desktop app, **Download to play here** saves a copy to the chat and plays it there; a chat file can be up to 300 MB.
+- **Video isn't available:** if a video was removed, made private, or is blocked where you are, the card says **This video isn't available here right now.** and Bearly tells you so instead of pointing you to another page. If Bearly says it couldn't load the video right now, try again later.
 
 ## Get Video
 

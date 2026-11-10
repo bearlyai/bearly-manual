@@ -30,9 +30,9 @@ You can also choose a model in three other places:
 
 The picker opens on a short list and expands on request:
 
-- **Favorites** — models you marked with the heart. Hover a model to see its heart.
+- **Favorites** — models you marked with the heart. With a mouse, hover a model to see its heart; on a touch screen it's always shown.
 - **Recently Used** — your two most recent models that aren't favorites.
-- **Featured** — a short list Bearly recommends.
+- **Featured** — a short list Bearly recommends, leaving out models already under **Favorites** or **Recently Used**.
 - **Show all models** — expands to every available model, grouped by the company that makes it. **Show featured models** goes back. The picker always reopens on the featured view.
 
 Each row shows the model's name, a one-line description, and a retention badge: **ZDR** (zero data retention) or **Standard**. Hover the badge for what it means for that model. Some rows carry a tag: **Featured**, **Recent**, or **Unavailable**. A double check mark shows the model the chat is using now.
@@ -56,7 +56,7 @@ Your default model depends on your plan and usage:
 | Any paid plan | **Bearly Pro**, with Medium reasoning |
 | Paid plan at 95% or more of its usage | **Bearly Fast**, while usage stays at or above 95% |
 
-The default applies when you haven't chosen a model yourself. A model you picked for a chat stays picked. An open chat on the default follows the switch to Bearly Fast as soon as you cross 95%. Your usage meter shows on the account menu button at the bottom of the sidebar; see [Plans and credits](https://bearly.ai/docs/manual/plans-and-credits.md).
+The default applies when you haven't chosen a model yourself. A model you picked for a chat stays picked. An open chat on the default follows the switch to Bearly Fast as soon as you cross 95%. The percentage you've used shows on the account menu button at the bottom of the sidebar; see [Plans and credits](https://bearly.ai/docs/manual/plans-and-credits.md).
 
 ## This chat or every new chat
 
@@ -98,7 +98,7 @@ Your settings or your organization can narrow the picker. A line at the top of t
 
 If a chat's saved model isn't allowed anymore, Bearly answers with the first available model in the picker instead. Your saved choice stays as it was, so the chat goes back to it if it becomes allowed again.
 
-When an organization's allow-list names fewer than five models, every allowed model shows as featured. When an organization or project locks the model, the model button and the **Rerun** menu disappear, and **This chat** no longer shows **Model**.
+When an organization's allow-list names fewer than five models, every allowed model shows as featured. When an organization or project locks the model, most chats keep the model button, showing the model with a lock: it can't be changed, and its tooltip says "Set by your team's policy" or "Set by this project". In the other chats, the model button and the **Rerun** menu disappear, and **This chat** no longer shows **Model**.
 
 **Limits:** Only an organization admin can change which models members may use; see [Organizations](https://bearly.ai/docs/manual/organizations.md).
 

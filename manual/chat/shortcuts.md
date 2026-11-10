@@ -24,7 +24,7 @@ These shortcuts work in the web app on a computer and in the desktop app. On mac
 | Remove a whole chip | <kbd>Backspace</kbd> | <kbd>Backspace</kbd> |
 | Cancel editing a message | <kbd>Esc</kbd> | <kbd>Esc</kbd> |
 
-While Bearly is still answering, <kbd>Enter</kbd> does what **Send** does: it adds your message to the running answer, or, if that answer can't take it, waits for it to finish. To queue a message instead, select **Queue**; there's no shortcut for it. See [Send while Bearly is working](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-is-working).
+While Bearly is still answering, <kbd>Enter</kbd> does what **Send** does: it adds your message to the running answer, or, if that answer can't take it, waits for it to finish. To queue a message instead, select **Queue**; there's no shortcut for it. No shortcut stops an answer either; select **Stop**. See [Send while Bearly is working](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-is-working).
 
 ## In the / and @ picker
 
@@ -44,9 +44,9 @@ Typing an item's exact label followed by a space or punctuation, such as `@web-s
 |---|---|---|
 | Put the cursor in the composer | <kbd>⌘</kbd> <kbd>L</kbd> | <kbd>Ctrl</kbd> <kbd>L</kbd> |
 | Open or close the command menu | <kbd>⌘</kbd> <kbd>K</kbd> | <kbd>Ctrl</kbd> <kbd>K</kbd> |
-| Search chats and files | <kbd>⌘</kbd> <kbd>F</kbd> | <kbd>Ctrl</kbd> <kbd>F</kbd> |
+| Search chats and files, on a project's page or on **Routines**, **Prompt templates**, or **Meetings** | <kbd>⌘</kbd> <kbd>F</kbd> | <kbd>Ctrl</kbd> <kbd>F</kbd> |
 | Hide or show the sidebar, even while typing | <kbd>⌘</kbd> <kbd>\\</kbd> | <kbd>Ctrl</kbd> <kbd>\\</kbd> |
-| New chat, in the current chat's project if it has one | <kbd>⌘</kbd> <kbd>N</kbd> or <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>N</kbd> | <kbd>Ctrl</kbd> <kbd>N</kbd> or <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>N</kbd> |
+| New chat, in the current project when you're in a project chat or on a project's page | <kbd>⌘</kbd> <kbd>N</kbd> or <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>N</kbd> | <kbd>Ctrl</kbd> <kbd>N</kbd> or <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>N</kbd> |
 | Delete this chat, after you confirm | <kbd>⌘</kbd> <kbd>D</kbd> | <kbd>Ctrl</kbd> <kbd>D</kbd> |
 | Delete this chat and start a new one, after you confirm | <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>D</kbd> | <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>D</kbd> |
 | Jump to the previous prompt | <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>↑</kbd> | <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>↑</kbd> |
@@ -54,7 +54,7 @@ Typing an item's exact label followed by a space or punctuation, such as `@web-s
 | Open Settings | <kbd>⌘</kbd> <kbd>,</kbd> | <kbd>Ctrl</kbd> <kbd>,</kbd> |
 | Dictate while you hold the key, with Bearly focused (push to talk) | Right <kbd>Shift</kbd> | Right <kbd>Shift</kbd> |
 
-Pressing the new-chat shortcut while you're already on a new chat puts the cursor in the composer and shows "You're already in a new chat". Right Shift is the default dictation key; change it in **Settings** → **Dictation** → **Keyboard shortcut**. See [Voice](https://bearly.ai/docs/manual/chat/voice.md).
+To search your chats and files, select **Search chats** (the magnifier at the top of the sidebar); on a project's page and on **Routines**, **Prompt templates**, and **Meetings**, <kbd>⌘</kbd> <kbd>F</kbd> (<kbd>Ctrl</kbd> <kbd>F</kbd>) opens it too. Pressing the new-chat shortcut while you're already on a new chat puts the cursor in the composer and shows "You're already in a new chat". Right Shift is the default dictation key; change it in **Settings** → **Dictation** → **Keyboard shortcut**. See [Voice](https://bearly.ai/docs/manual/chat/voice.md).
 
 Web browsers keep some key combinations for themselves. If a shortcut does something in your browser instead of in Bearly, use the matching button or the command menu, or use the desktop app.
 
@@ -66,7 +66,7 @@ Web browsers keep some key combinations for themselves. If a shortcut does somet
 | Save or undo a title you're editing in the chat header | <kbd>Enter</kbd> to save, <kbd>Esc</kbd> to put the old title back |
 | Submit a Prompt Template form | <kbd>Shift</kbd> <kbd>Enter</kbd> |
 | Confirm in a confirmation dialog | <kbd>Shift</kbd> <kbd>Enter</kbd> |
-| Close search, Settings, the image viewer, or the side panel, or stop selecting chats | <kbd>Esc</kbd> |
+| Close search, Settings, the image viewer, or the side panel (files, previews, Canvas), close the sidebar on a phone, or stop selecting chats | <kbd>Esc</kbd> |
 | Move and choose in the **Move to project** dialog | <kbd>↑</kbd> <kbd>↓</kbd>, <kbd>Enter</kbd> |
 
 ## In the desktop app

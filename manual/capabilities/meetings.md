@@ -19,7 +19,7 @@ HTML: [https://bearly.ai/docs/manual/capabilities/meetings/](https://bearly.ai/d
 
 Select **Meetings** in the sidebar — the page is titled **Meetings and recordings** — then pick a source under **New recording**:
 
-| Card | What it records | Where it works |
+| Option | What it records | Where it works |
 | --- | --- | --- |
 | **Online meeting** | The call's audio from your computer and your microphone together, for video calls in any app | The desktop app on Windows, or on a Mac with macOS 13 or later; on Linux and older macOS versions the desktop app records your microphone only. On the web app, phone browsers, and the iOS app, choosing it opens **Settings** → **Get desktop app** ("Get Bearly Desktop to record the call and your voice together.") |
 | **In person or voice note** | What this device's microphone hears ("Record what your microphone hears.") | Every platform |
@@ -59,8 +59,8 @@ The line beside **Start recording** sums up how it works: "Up to 1 hr 15 min. Sa
 After the upload is checked, Bearly transcribes the whole recording again with speaker separation and replaces the live transcript. You'll see "Improving speaker labels…" and then "Speaker labels improved". Older recordings that never had this pass offer **Improve speaker labels** under **More actions**.
 
 - The transcript header shows how many speakers were identified, or "Voice memo" for a single voice.
-- To name speakers, type each name once ("Name each speaker once. Every matching turn updates."). Names carry through to exports and to what you add to a chat.
-- If the final transcript fails, the recording shows **Needs attention** and "The final transcript could not be completed." with **Retry**. The audio stays saved.
+- To name speakers, type each name once under **Speakers** ("Name each speaker once. Every matching turn updates."). Names carry through to exports and to what you add to a chat.
+- If the final transcript fails, the recording shows **Needs attention** and "The final transcript could not be completed. Your recording is still saved." with **Retry**. The audio stays saved.
 
 ## Summarize, copy, and download
 
@@ -79,7 +79,7 @@ This is where a recording turns into work. The transcript becomes a file that Be
 
 
 
-1. Open the recording and select **Add to chat** — choose **New chat** ("Attach the transcript to a new draft"), or search with "Find a chat..." and pick an existing one.
+1. Open the recording and select **Add to chat**, its main button — choose **New chat** ("Attach the transcript to a new draft"), or search with "Find a chat..." and pick an existing one.
 2. Bearly attaches the transcript as a Markdown file and focuses the message box — nothing is sent until you send it.
 3. Type what you want done with it and send.
 
@@ -87,7 +87,7 @@ This is where a recording turns into work. The transcript becomes a file that Be
 
 The file has the title, when it was recorded, its length, and every turn with its timestamp, plus the speaker's name when more than one person spoke. The summary isn't included; ask Bearly for one in the chat if you want it there.
 
-**Add to project** uploads the same file to a project's files ("Transcript added"), so every chat in that project can search it. It needs write access to the project and the **File uploads** and **Project documents and data** controls. If you have no projects yet, the button is unavailable and its tooltip says "Create a Project before adding this transcript".
+**Add to project** uploads the same file to a project's **Files** tab ("Transcript added"), so every chat in that project can search it. At phone width it's in the **…** menu. It needs write access to the project and the **File uploads** and **Project documents and data** controls. If you have no projects yet, the button is unavailable and its tooltip says "Create a Project before adding this transcript".
 
 ### What you can ask once the transcript is in a chat
 
@@ -111,7 +111,7 @@ Bearly reads the attached transcript with its [document tools](https://bearly.ai
 
 ## Recovery
 
-- If an upload can't finish, the recording stays on the device that made it, marked **Saved on device**, with **Retry upload** and **Discard**. **Discard** asks "Discard this saved recording?" and then permanently removes the audio and transcript stored on that device.
+- If an upload can't finish, the recording stays on the device that made it, marked **Saved on device**, with **Retry upload**, and **Discard recording** in its **…** menu. Discarding asks "Discard this saved recording?" and then permanently removes the audio and transcript stored on that device.
 - Bearly deletes the local copy only after it confirms the uploaded file is complete.
 
 For an audio or video file you already have, use [Transcribe](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#transcribe) in a chat instead.
@@ -185,7 +185,7 @@ You get a project where you can ask questions across every meeting you've added,
 
 
 1. After each meeting, open the recording and select **Add to project**, then pick the project.
-2. On the project's **Settings** tab, turn on **Always search documents** — see [Work with files and documents](https://bearly.ai/docs/manual/capabilities/documents.md#always-search-documents-projects).
+2. On the project's **Settings** tab, turn on **Use project defaults** and **Always search documents** — see [Work with files and documents](https://bearly.ai/docs/manual/capabilities/documents.md#always-search-documents-projects).
 3. Ask across meetings in any chat in the project.
 
    ```text

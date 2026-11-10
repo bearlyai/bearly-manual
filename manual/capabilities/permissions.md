@@ -20,13 +20,15 @@ A card shows a title, the reason, and, for most tools, a **Details** disclosure 
 | Approval duration | Allow button reads | Lasts |
 |---|---|---|
 | **Once** | **Allow** | This one action |
-| **This response** | **Allow for this response** | "until this response ends", including if it errors or you stop it |
+| **This response** | **Allow for this response** | "until this response ends", including if it errors or you stop it. A message you add to the running answer, with **Send** or **Send now**, joins the same response, so the approval covers it too |
 | **This session** | **Allow for now** | "until this chat reloads or you revoke access" |
 | **This chat** | **Allow for this chat** | "in future responses in this chat on this device until you revoke access" |
 
 Work locally uses its own labels for read-only approvals: **Allow reads for this response**, **Allow reads for now**, and **Allow reads this chat**. Some tools word their button differently, and some show no duration menu because they approve one action at a time.
 
 After you decide, the card shows **Allowed**, **Denied**, **Stopped**, or **Allowed by Full access**.
+
+In most chats, a card waiting for an answer shows on every device where the chat is open, and you can answer it on any of them; on the others it reads "Asked on another device". In a shared chat, only the person who sent the message can approve its actions; everyone else sees "Waiting for the person who sent this message".
 
 **Deny** blocks that action, and Bearly continues without it where it can. **Stop** ends the whole task.
 
@@ -58,7 +60,7 @@ Open it to see:
 
 Revoking stops the work in progress and makes Bearly ask again next time. Stopping a response doesn't remove approvals.
 
-Saved approvals never sync to your other devices and never apply to routines. Each open window keeps its own copy, so if a chat is open in two windows, revoke in each. Approvals for a chat are deleted with the chat. Disconnecting, signing in again, or changing a connector's settings resets its approvals.
+Saved approvals never sync to your other devices and never apply to routines; only a card still waiting for an answer can be answered from another device. Each open window keeps its own copy, so if a chat is open in two windows, revoke in each. Approvals for a chat are deleted with the chat. Disconnecting, signing in again, or changing a connector's settings resets its approvals.
 
 ## Full access
 
@@ -132,7 +134,7 @@ On a managed organization, Full access eligibility is a separate setting from fe
 
 - **Allow full access by default** — on unless an administrator turned it off. "Each member must still enable it for each chat or routine on its device."
 - **Turn off full access for everyone** — "stops within 60 seconds", turns off the default, and removes individual exceptions. Saved tool approvals remain. Confirm with **Turn off for everyone**.
-- Per member, in **Members** → **Member settings** → **Full access**: **Use organization default**, **Allow full access**, or **Do not allow full access**.
+- Per member, in **Members** → select the member → **Full access**: **Use organization default**, **Allow full access**, or **Do not allow full access**.
 
 Group administrators can't grant Full access. Allowing it doesn't turn on tools your policies turn off. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
@@ -142,7 +144,7 @@ Group administrators can't grant Full access. Allowing it doesn't turn on tools 
 
 A folder of files renamed and updated with one approval instead of forty.
 
-**Why it works:** a **This response** approval covers every matching action until the answer ends, then expires on its own, so you review the plan once and nothing carries over to the next request.
+**Why it works:** a **This response** approval covers every matching action until the answer ends, then expires on its own, so you review the plan once and nothing carries over after the answer ends.
 **You need:** the desktop app; Work locally on for the chat with the folder chosen.
 
 
@@ -195,7 +197,7 @@ A clean slate in a chat where you approved more than you meant to.
 
 
 
-1. Select **Permissions** next to the message box — saved approvals are listed with their durations.
+1. Select **Permissions** at the bottom of the message box — saved approvals are listed with their durations.
 2. Select **Revoke** beside one, or **Clear all permissions** to switch to Standard and remove them all.
 3. If the chat is open in another window, repeat there.
 

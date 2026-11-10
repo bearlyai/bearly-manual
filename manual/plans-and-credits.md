@@ -39,7 +39,7 @@ Max is not sold to personal accounts. An organization admin buys it as a seat in
 | Deep Research, **Ultra** tier | Research | **Run Research** opens the upgrade flow |
 | [People Search](https://bearly.ai/docs/manual/capabilities/research.md) | Analyst | An upgrade card appears in the chat |
 | Some chat models | Pro or Analyst, per model | Choosing the model opens an upgrade prompt instead of switching |
-| **Usage** pane in Settings | Any paid plan | Free accounts use the meter in the account menu |
+| **Usage** pane in Settings | Any paid plan | Free accounts see the percentage used in the account menu |
 | Credit Boost | Any paid plan, outside the iOS app | Not shown |
 
 Web search, image search, reading web pages, Scholar, YouTube, X posts, SEO data, domain research, Maps, Weather, and document tools are on every plan. They draw on the same allowance as chat.
@@ -51,14 +51,14 @@ If you belong to an organization, its policy can still turn a feature off even w
 Each request uses credits according to the work it takes. A long answer from a large model, a big file, or a research tool uses more than a short reply from a fast model. The percentage meter is a better guide than counting messages.
 
 - **Paid plans** have a monthly allowance equal to the plan's price in AI credits. There is no separate daily limit.
-- **Free** has a daily allowance that resets every day and a monthly allowance. Whichever you're closer to using up sets the meter.
+- **Free** has a daily allowance that resets every day and a monthly allowance. Whichever you're closer to using up sets the percentage in the account menu.
 - **Personal plans** (bought on the web or in the iOS app) reset on the first day of each calendar month (UTC), not on your billing date. The **Usage** pane shows the exact reset date.
 - **Organization seats** follow the seat's billing period instead.
 - If you move from a paid plan to Free partway through a month, what you used earlier that month counts toward Free's monthly allowance. Free can then stay unavailable until the next month.
 
-### The usage meter
+### Your usage at a glance
 
-Open the account menu at the bottom of the sidebar. It shows your email, your plan badge, a meter bar, and a percentage. **+boost** appears beside the percentage while you have boost credits. On Free, the sidebar also shows **Unlock more AI — Go Pro**, which opens **Billing**.
+The account row at the bottom of the sidebar shows your email and, under it, your plan and how much of your allowance you've used, such as "Pro · 42%". The number turns red at 90%. **+boost** appears after it while you have boost credits. On a paid plan, **Settings** → **Usage** has the full breakdown. On Free, the sidebar also shows **Unlock more AI — Go Pro**, which opens **Billing**.
 
 ### Which model new chats use
 
@@ -106,7 +106,7 @@ A Credit Boost buys one-time credits on top of your plan. Use it when one month 
 
 
 
-**What you get:** extra credits on top of your plan allowance. The meter shows them as a separate boost segment, and the account menu shows **+boost**.
+**What you get:** extra credits on top of your plan allowance. The meter in **Usage** shows them as a separate segment, and the account menu shows **+boost**.
 
 **Limits:** boosts expire at the end of the calendar month, or at the end of the seat's billing period for an organization seat. If boosts become routine, the card may suggest a plan that includes more credits each month.
 

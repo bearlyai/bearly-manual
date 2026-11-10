@@ -32,7 +32,7 @@ You end up with a cited report and its PDF in your inbox, a chart of its numbers
 
    — Bearly shows a **Deep Research** card with an editable **Query**. Nothing runs yet; planning is free.
 
-2. Select **Create Plan**, read the **Plan**, and type changes in **Notes**, such as "Prefer government and industry-association sources, and mark forecasts separately from actuals." Select **Revise Plan**, then **Run Research**. — Your edits become part of the run. Turn on **Ultra** first only when the question needs a deeper run and your plan includes it. When the run finishes you see the report with numbered citations, a **Sources** list, and "PDF ready" with **View PDF**. Bearly also emails you the PDF.
+2. Select **Create Plan**, read the **Plan**, and type changes in **Notes**, such as "Prefer government and industry-association sources, and mark forecasts separately from actuals." Select **Revise Plan**, then **Run Research**. — Your edits become part of the run. Turn on **Ultra** first only when the question needs a deeper run and your plan includes it. When the run finishes you see the report with numbered citations, a sources card ("N sources"), and "PDF ready" with **View PDF**. Bearly also emails you the PDF.
 
 3. Ask for the numbers as a chart:
 

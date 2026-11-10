@@ -48,7 +48,7 @@ Imagine generates an image from your description. The result opens in an image e
 
 
 
-**What you get:** an image in the chat with **Copy image**, **Download**, and **View full size**. In full view, zoom with <kbd>+</kbd> and <kbd>-</kbd>, reset the zoom with <kbd>0</kbd>, move between images with the arrow keys, and close with <kbd>Esc</kbd>.
+**What you get:** an image in the chat with **Copy image**, **Download**, and **View full size**. Full view shows the chat's images with arrows and thumbnails, plus **Copy image** and **Download**. Zoom by double-clicking, scrolling, or pinching, or with <kbd>+</kbd> and <kbd>-</kbd>; <kbd>0</kbd> resets the zoom, the arrow keys move between images, and <kbd>Esc</kbd> closes it.
 
 **Limits:** there's no size or aspect-ratio setting; the output shape depends on the model. When Bearly runs an image request from the chat and the model's service fails, it switches to a backup model.
 
@@ -211,7 +211,7 @@ Transcribe turns speech in audio and video files into text with speaker labels a
 
 **What you get:** a transcript viewer, with previous and next buttons when you sent several files, and **Download subtitles**, which saves `AudioSubtitles.srt`. Bearly also saves each transcript in the chat as a subtitle file named after the original, such as `interview transcript.srt` for `interview.mp3`, so later messages and tools can read it. Bearly suggests speaker names from what's said in the recording, and you can change them.
 
-**Limits:** each attachment can be up to 1000 MB. Transcription has separate processing limits; compress or split a recording if it is too large to process. There's no language picker. If some files fail you'll see "Some assets could not be transcribed". Asking about the same file again reuses its transcript.
+**Limits:** each attachment can be up to 1000 MB (100 MB in an end-to-end encrypted chat). Transcription has separate processing limits; compress or split a recording if it is too large to process. There's no language picker. If some files fail you'll see "Some assets could not be transcribed". Asking about the same file again reuses its transcript.
 
 For live recording with a running transcript, use [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
 

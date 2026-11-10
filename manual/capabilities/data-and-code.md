@@ -43,8 +43,8 @@ Run Python executes a complete Python script in a fresh cloud sandbox and return
    /python From the attached sales.xlsx, total revenue by region and quarter, show the top three regions by growth, and save the summary as a CSV.
    ```
 
-3. Watch the **Run Python** step — select it to see **Input** (the code), **Result** (what it printed), and **Error** if something failed. Bearly often runs a quick look at the columns first, then the full analysis.
-4. Open the output files — they appear as file cards in the chat, and saved plots show inline.
+3. Watch the line under the answer — select it to open **Steps**, then select the **Run Python** step to see **Input** (the code), **Result** (what it printed), and **Error** if something failed. Bearly often runs a quick look at the columns first, then the full analysis.
+4. Open the output files — files Bearly shows appear as cards in the chat, with plots inline, and every file the run saved is in the chat's **Files**.
 
 
 

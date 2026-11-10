@@ -53,7 +53,7 @@ Details: [Research](https://bearly.ai/docs/manual/capabilities/research.md).
 | **Web Search** `/web-search` | A question; runs when the chat's **Web** setting is **Auto** | An answer with numbered source links, and sometimes an image gallery | Any | All | Yes | Yes |
 | **Image Search** `/image-search` | A description of the images you want | A gallery of up to 20 images with their source pages | Any | All | Yes | No |
 | **Read Site** `/read-site` | One web address | The page's text for the AI; long pages, documents, images, and media are saved as chat files | Any | All | Yes | Yes |
-| **Deep Research** `/deep-research` | A text question, then a plan you review and can edit | A cited report with sources and figures, a PDF in the chat, and the PDF by email | Analyst (Standard), Research (Ultra) | All | Only through a routine's Deep Research plugin | No |
+| **Deep Research** `/deep-research` | A text question, then a plan you review and can edit | A cited report with sources and figures, a PDF in the chat, the PDF by email, and in most chats (for a very long report) the full text as a chat file | Analyst (Standard), Research (Ultra) | All | Only through a routine's Deep Research plugin | No |
 | **Scholar** `/scholar` | A question about research literature | An answer with superscript citations, a paper-results card, and open-access PDF links when they exist | Any | All | Yes | Yes |
 | **Council of Experts** `/council` (listed as Ask Experts) | One self-contained question that names any files it should use | Answers from 2 to 5 models side by side, then one combined reply | Pro | All | No | — |
 | **Best Pick** `/bestpick` | A shopping question, such as the best stick vacuum for pet hair under a price | A card with one product to buy, a store link, the evidence, and follow-up chips | Pro | All | No | No |
@@ -80,7 +80,7 @@ Details: [Documents](https://bearly.ai/docs/manual/capabilities/documents.md).
 
 | Block | Takes | Produces | Plan | Where | In Routines | Council experts |
 |---|---|---|---|---|---|---|
-| **Attach files** (**+** → **Attach files**, drag and drop, paste, or **Take photo**) | Files from your device, up to 1000 MB each | Files in the chat, under **Uploaded** | Any | All | — | — |
+| **Attach files** (**+** → **Attach files**, drag and drop, paste, or **Take photo**) | Files from your device, up to 1000 MB each (100 MB in an encrypted chat) | Files in the chat, under **Uploaded** | Any | All | — | — |
 | **Share your screen** (**+** → **Share your screen**) | A window or screen you pick | A fresh still capture attached to each message you send | Any | Desktop app, and web browsers that support screen sharing | — | — |
 | **Search Docs** `/search-docs` | A question about the chat's and project's files | Cited passages; search citations open at a matching page when available | Any | All | Yes | Yes |
 | **Read Doc** `/read-document` and **Scan Doc** `/find-in-document` | A document and the pages to read, or exact text to find | Page text, or each match with its page, line, and surrounding text | Any | All | Yes | Yes |
@@ -107,7 +107,7 @@ Details: [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and
 | Block | Takes | Produces | Plan | Where | In Routines | Council experts |
 |---|---|---|---|---|---|---|
 | **Pages** (ask for an app, calculator, dashboard, game, or planner; or `/create-file`) | A description, data the AI bakes in, and chat files to embed | A single-file HTML app that runs live in the chat, with a version for each edit (v1, v2, …) | Any | All | Yes | No |
-| **Canvas** (**Edit in Canvas** under an answer) | An answer's text | An editable Markdown document in the chat that you and the AI revise in place | Any | All | No | — |
+| **Canvas** (**Edit in Canvas** under an answer) | An answer's text | An editable Markdown document that opens beside the chat, which you and the AI revise in place | Any | All | No | — |
 
 ### Media
 
@@ -156,10 +156,10 @@ Details: [Organize chats](https://bearly.ai/docs/manual/chat/organize.md) and [P
 | Block | Takes | Produces | Plan | Where | In Routines | Council experts |
 |---|---|---|---|---|---|---|
 | **File reference** (`@` → **Assets**) | Any file in the chat or its project | An exact pointer the AI uses for that turn | Any | All | — | — |
-| **Projects** (sidebar **Projects**) | Files on the project's **Files** tab, project instructions, and default chat settings | Shared files and defaults for every chat in the project | Any | All; **Local Directory Sync** needs the desktop app | — | — |
+| **Projects** (sidebar **Projects**) | Files on the project's **Files** tab, project instructions, and default chat settings | Shared files and defaults for every chat in the project | Any | All; **Sync a folder** needs the desktop app | — | — |
 | **Share** (`/share`, the header **Share** button, or **Share file** on a file) | The conversation, or one file | A Page with artwork and a link preview that you review, then publish to a stable bearly.sh link | Any | All | No | — |
 | **Download as Markdown** (command menu) | The chat | A `.md` file of the conversation, with tool activity if you include it | Any | All | — | — |
-| **Search chats and files** (<kbd>⌘</kbd> <kbd>F</kbd>) | Words or a topic | Matching chats and files, including files Bearly made | Any | All | — | — |
+| **Search chats and files** (**Search chats** at the top of the sidebar, or <kbd>⌘</kbd> <kbd>F</kbd>) | Words or a topic | Matching chats and files, including files Bearly made | Any | All | — | — |
 
 ### Notify
 
@@ -201,7 +201,7 @@ Each rule names an output type and the blocks that can take it next. These conne
 
 ### The conversation feeds later turns
 
-- **A Deep Research report** → passed in full to later turns → rewrite it, turn its numbers into a CSV and chart, build a Page, or email the report text. Bearly emails you the report's PDF on its own; the AI isn't told the PDF is in the chat, so **Send Email** doesn't attach it.
+- **A Deep Research report** → passed to later turns (in most chats, a very long one as a file Bearly opens when needed) → rewrite it, turn its numbers into a CSV and chart, build a Page, or email the report text. Bearly emails you the report's PDF on its own; the AI isn't told the PDF is in the chat, so **Send Email** doesn't attach it.
 - **Deep Research takes only text** → put what earlier steps found (from a file, a Chrome tab, or a call) into the research question.
 - **Council of Experts** → experts see only the question, not the chat or its files → name the files and facts they need in the `/council` question.
 - **Any answer** → **Edit in Canvas** to revise it line by line, **Read aloud** to hear it (on answers that are all text), or the **Rerun** menu to get another model's version.
@@ -215,7 +215,7 @@ Each rule names an output type and the blocks that can take it next. These conne
 
 ### Across chats and over time
 
-- **A meeting transcript** → **Add to chat** attaches it as a Markdown file to a new or existing chat's draft, without sending → summaries, action items, a follow-up email, or a Page. **Add to project** puts the same file in a project's files → every chat in that project. The meeting's **Quick summary** isn't included in the file.
+- **A meeting transcript** → **Add to chat** attaches it as a Markdown file to a new or existing chat's draft, without sending → summaries, action items, a follow-up email, or a Page. **Add to project** puts the same file in a project's files → every chat in that project. The meeting's **Summary** isn't included in the file.
 - **Project files** → every chat in the project, through `@` and the document tools; **Always search documents** makes every answer search them first.
 - **A routine run** → lands in the routine's chat → with **Build on previous runs** on, the next run sees earlier ones. Files a run writes, such as a Page or a CSV, can go out with **Email each result**.
 - **A chat that did the job once** → ask it to repeat on a schedule, for example "Do this every weekday at 8 and email me the result." Bearly sets up a routine from that chat.
@@ -240,7 +240,7 @@ In an organization, an admin's policy can turn off any block. The `/` label then
 
 - **Web** off removes Web Search, Image Search, Read Site, Deep Research, Scholar, YouTube, and Best Pick.
 - **Chat web search** off removes Image Search, Deep Research, Best Pick, Scholar's search of journal sites, and YouTube's **Find** and **Check claims**.
-- **File uploads** off removes attaching files, screen sharing, Get Video, viewing X videos, and the files YouTube saves; it also blocks uploads to a project's **Files** tab and **Local Directory Sync**.
+- **File uploads** off removes attaching files, screen sharing, Get Video, viewing X videos, and the files YouTube saves; it also blocks uploads to a project's **Files** tab and **Sync a folder**.
 - **Run Python** off removes both `/python` and `/document`. Charts then work only on a CSV that's already prepared, or one made with **Work locally** in the desktop app.
 - **Sharing** off removes Share. **Public links** and **Share with people and teams** decide who can open a published Page.
 - **Memory Recall** off turns off Recall and **Memories**.
@@ -249,7 +249,7 @@ Most other blocks have their own control: **Images**, **Video**, **Transcription
 
 ### Desktop-only blocks
 
-These need the desktop app: Work locally, Computer Use, Bearly Browser, Chrome control, installed skills and their scripts, npm connector servers, running routines, recording a meeting's computer audio, Get Video for YouTube links, and **Local Directory Sync** for projects. On the web or a phone, most of them show a prompt to get the desktop app. See [Get Bearly](https://bearly.ai/docs/manual/get-bearly.md).
+These need the desktop app: Work locally, Computer Use, Bearly Browser, Chrome control, installed skills and their scripts, npm connector servers, running routines, recording a meeting's computer audio, Get Video for YouTube links, and **Sync a folder** for projects. On the web or a phone, most of them show a prompt to get the desktop app. See [Get Bearly](https://bearly.ai/docs/manual/get-bearly.md).
 
 ### Routines run a smaller toolset
 
@@ -257,7 +257,7 @@ A scheduled run is a chat with nobody watching, so it gets a fixed set of tools:
 
 - **Can use:** Web Search, Image Search, Read Site, X (but not importing a post's video), Scholar, the document tools (Search Docs, Read Doc, Scan Doc, and Summarize Doc), View Media, creating, reading, editing, and renaming chat files (including Pages), Send Email, Send SMS, the connectors and skills you add to the routine, and Deep Research through the routine's **Deep Research** plugin.
 - **Only with an explicit routine setting:** Work locally (**Unattended local access**), a skill's scripts (that skill's **Allow scripts**), and Bearly Browser (**Browser access**, on the sites you list).
-- **Can't use:** Run Python, the Document editor, Fix Grammar, images, video, transcription, text to speech, voice, Canvas, charts, Visualize, Share, Council of Experts, YouTube, Best Pick, Get Video, People Search, Maps, Weather, SEO data, Domain research, Chat management, Recall, Prompt Templates, remote modules, Computer Use, and Chrome.
+- **Can't use:** Run Python, the Document editor, Fix Grammar, images, video, transcription, text to speech, voice, Canvas, charts, Visualize, Share, Council of Experts, YouTube, Best Pick, Get Video, People Search, Maps, Weather, SEO data, Domain research, Chat management, Recall, prompt templates, remote modules, Computer Use, and Chrome.
 
 A routine runs only in the desktop app, on the device it's installed on, while the app is open, and each run stops after 25 minutes. To get numbers or charts from a schedule, have the routine write a CSV or an HTML Page, or continue in the routine's chat afterwards.
 

@@ -1,6 +1,6 @@
 ---
 title: "Send email and texts"
-description: "How Bearly emails you or your teammates and texts your verified phone from a chat or a routine, how to set up Phone & SMS, who can receive messages, attachment and rate limits, and what to do when a send fails."
+description: "How Bearly emails you or your teammates and texts your verified phone from a chat or a routine, how to set up Phone and SMS, who can receive messages, attachment and rate limits, and what to do when a send fails."
 canonical: "https://bearly.ai/docs/manual/capabilities/email-and-text/"
 markdown: "https://bearly.ai/docs/manual/capabilities/email-and-text.md"
 ---
@@ -9,7 +9,7 @@ markdown: "https://bearly.ai/docs/manual/capabilities/email-and-text.md"
 
 HTML: [https://bearly.ai/docs/manual/capabilities/email-and-text/](https://bearly.ai/docs/manual/capabilities/email-and-text/)
 
-> How Bearly emails you or your teammates and texts your verified phone from a chat or a routine, how to set up Phone & SMS, who can receive messages, attachment and rate limits, and what to do when a send fails.
+> How Bearly emails you or your teammates and texts your verified phone from a chat or a routine, how to set up Phone and SMS, who can receive messages, attachment and rate limits, and what to do when a send fails.
 
 Ask Bearly to email or text you from any chat, and it sends the message as part of its answer. Email can go to you or to teammates in your organization, with files from the chat attached. Texts go only to your own verified phone. Routines use the same tools to deliver their results.
 
@@ -33,7 +33,7 @@ There's no approval card for these: asking is the go-ahead. Bearly sends when th
    Email me the decision summary from this chat with the subject "Launch review". Attach the budget CSV.
    ```
 
-3. Check the **Send Email** step in the answer — it reads "Email sent to" followed by the recipient (or the number of recipients) and the subject.
+3. Check the **Send Email** step in the answer — it reads "Email sent to" followed by the recipient, the number of recipients, or "you" for an email to yourself, and then the subject.
 4. Open the email to check the formatting and attachments.
 
 
@@ -76,7 +76,7 @@ Email Maya Chen and Sam Ortiz their action items from this meeting, one list eac
 **Limits:** US and Canadian numbers only. Texts you ask for in chats are limited to 20 a day. Texts from routines are capped at 3 per 24 hours across all your routines. Long messages can be rejected; ask for a shorter one without emoji.
 **Combines with:** [Routines](https://bearly.ai/docs/manual/capabilities/routines.md#results-and-delivery) with **Text each result** and a notification filter; any long task you want to hear about when it's done.
 
-### Set up Phone & SMS
+### Set up Phone and SMS
 
 
 

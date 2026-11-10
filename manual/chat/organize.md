@@ -20,9 +20,9 @@ Chats live in the left sidebar, grouped by project, pins, and date. This page co
 
 
 
-1. Select **New chat** (the pen icon at the top of the sidebar) or **Chat** — opens the new-chat screen, outside any project.
-2. Or press <kbd>⌘</kbd> <kbd>N</kbd> or <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>N</kbd> (<kbd>Ctrl</kbd> <kbd>N</kbd> or <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>N</kbd> on Windows and Linux; a web browser may keep these keys for its own windows), use the pen icon in the chat header (shown when the sidebar is hidden), or choose **New** in the command menu — from a project chat, these start the new chat in the same project.
-3. To pick a project on the new-chat screen, use the project chip at the foot of the composer (it reads **No project**) — search for a project, choose from **Recent** or **All projects**, create one with **New project**, or choose **No project**. The project is fixed once the chat starts.
+1. Select **New chat** (the pen icon at the top of the sidebar, next to search) or **Chat** — opens the new-chat screen, outside any project.
+2. Or press <kbd>⌘</kbd> <kbd>N</kbd> or <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>N</kbd> (<kbd>Ctrl</kbd> <kbd>N</kbd> or <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>N</kbd> on Windows and Linux; a web browser may keep these keys for its own windows), use the pen icon in the chat header (shown when the sidebar is hidden), or choose **New** in the command menu — from a project chat, these start the new chat in the same project. On a project's page, the shortcut and the **Chats** tab's **New chat** do too.
+3. To pick a project on the new-chat screen, use the project chip at the foot of the composer (it reads **No project**; its tooltip says "Start this chat in a project") — search for a project, choose from **Recent** or **All projects**, create one with **New project**, or choose **No project**. The project is fixed once the chat starts.
 4. Type your first message and send.
 
 
@@ -38,8 +38,8 @@ Bearly titles each chat automatically from your first message, in the background
 
 
 1. Click the title in the chat header and type a new one — <kbd>Enter</kbd> saves, <kbd>Esc</kbd> puts back the old title.
-2. Or open **More actions** (the **…** on the chat's sidebar row) → **Rename**, or choose **Rename** in the command menu.
-3. To have Bearly write a fresh title from the conversation so far, open the command menu and choose **Generate New Name**.
+2. Or open **More actions** (the **…** on the chat's sidebar row) → **Rename**. **Rename** in the command menu closes the menu and opens the title in the chat header.
+3. To have Bearly write a fresh title from the conversation so far, open the command menu and choose **Generate New Name**. In most chats it works once the chat has finished opening; if nothing changes, choose it again.
 
 
 
@@ -59,17 +59,19 @@ A chat's row can show:
 
 | Indicator | Meaning |
 |---|---|
-| Dot after the title | Unread replies |
+| Dot at the end of the row | Unread replies |
 | Spinner ("Bearly is working") | An answer is running |
 | Shield ("Waiting for approval" or "Shell approval needed") | Bearly is waiting for you to approve an action |
 | Lock ("Approve this device to open this chat") | An end-to-end encrypted chat this device can't open yet |
 | Archive icon | The chat is archived |
 
+In most chats, the spinner shows only for an answer running on this device. An answer running on another of your devices shows no mark here; the chat itself says **Running on another device** if that answer stops updating for 2 minutes.
+
 Pins and archives are saved to your account, so they're the same on every device.
 
 ## Use the More actions menu
 
-Each chat row has a **More actions** menu (**…**). It appears on hover, and is always visible on touch devices and for the chat you have open.
+Each chat row has a **More actions** menu (**…**). It appears when you point at the row or tab to it, and is always visible on touch screens.
 
 | Item | What it does |
 |---|---|
@@ -147,7 +149,7 @@ With a mouse or trackpad, you can also drag a chat onto a project in the sidebar
 
 ## Needs attention
 
-When other chats are waiting for an approval or have unread replies, a **Needs attention** chip with a count appears in the sidebar. Select it to replace the list with **Awaiting approval** and then **Unread** chats, newest first, including project chats with their project name. Select it again to show all chats.
+When other chats are waiting for an approval or have unread replies, a **Needs attention** row with a count appears at the top of the chat list. Select it to replace the list with **Awaiting approval** and then **Unread** chats, newest first, including project chats with their project name. Select it again to show all chats.
 
 **Use it when:** several chats are running tools at once and you want to see which ones need you.
 **Limits:** The chat you have open and archived chats aren't listed. Approvals show only for chats that have been active since you opened Bearly.
@@ -161,7 +163,7 @@ Search finds messages, files you uploaded, and files Bearly created, across all 
 
 
 
-1. Select the magnifier at the top of the sidebar, or press <kbd>⌘</kbd> <kbd>F</kbd> (<kbd>Ctrl</kbd> <kbd>F</kbd>) — the search box opens with "Search chats and files...".
+1. Select the magnifier (**Search chats**) at the top of the sidebar, or, on a project's page or on **Routines**, **Prompt templates**, or **Meetings**, press <kbd>⌘</kbd> <kbd>F</kbd> (<kbd>Ctrl</kbd> <kbd>F</kbd>) — the search box opens with "Search chats and files...".
 2. Type what you're looking for — results update as you type. Search matches meaning, not only exact words, and ranks exact text and title matches higher.
 3. Switch between the **Chats** and **Files** tabs. A chat result shows its title, the date of the matching message, the number of matches, and a preview. A file result is labeled **Uploaded**, **Generated**, or **Saved by Bearly**.
 4. Select a result to open its chat. Press <kbd>Esc</kbd> to close.
@@ -181,7 +183,7 @@ Press <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd>) or select **…
 | **New** | Start a new chat (in the same project when you're in a project chat) |
 | **Delete & New** | Delete this chat and start a new one, after you confirm |
 | **Delete** | Delete this chat, after you confirm |
-| **Rename** | Rename this chat |
+| **Rename** | Close the menu and edit the title in the chat header (<kbd>Enter</kbd> saves, <kbd>Esc</kbd> puts the old title back) |
 | **Refresh Chat** | Reload this chat's data |
 | **Generate New Name** | Retitle the chat from the conversation |
 | **Download as Markdown** | Export the chat as a Markdown file |
@@ -250,7 +252,7 @@ Before it lists your chats, Bearly asks for permission and explains: "Lists your
 Find my chats about the Q3 budget, rename each one to start with "Q3 budget:", and move them all into the Finance project.
 ```
 
-**Limits:** Up to 20 chats per delete, and a chat can't delete itself. Reading returns up to 100 turns at a time, and a very large chat comes back as a Markdown file. Regular chats can't see your end-to-end encrypted chats. Bearly can't send messages from one chat into another.
+**Limits:** Up to 20 chats per delete, and a chat can't delete itself. Reading returns up to 100 turns at a time, and a very large chat comes back as a Markdown file. In most chats, if the other chat can't be read from here, Bearly says "Couldn't read that chat here. Open it, then try again." Regular chats can't see your end-to-end encrypted chats. Bearly can't send messages from one chat into another.
 **Combines with:** [Memories](https://bearly.ai/docs/manual/chat/settings.md#memories) to find the right earlier chat by meaning; [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md) for how approvals work.
 
 ## What's New

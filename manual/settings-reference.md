@@ -11,19 +11,19 @@ HTML: [https://bearly.ai/docs/manual/settings-reference/](https://bearly.ai/docs
 
 > Every pane and control in Bearly's Settings window, in the order the app shows them, with options, defaults, and what each control does, plus how to open Settings, read its save status, and find the panes that only appear on some platforms or plans.
 
-This page walks through the Settings window pane by pane. Each table lists the control's exact label, its options and default, and what it changes, with a link to the page that explains it in depth.
+This page walks through the Settings window pane by pane, in the order the app lists them. Each table lists the control's exact label, its options and default, and what it changes, with a link to the page that explains it in depth.
 
 ## Open Settings
 
 Settings open in a window over the page you're on; the page stays as it was underneath.
 
-- Press <kbd>⌘</kbd> <kbd>,</kbd> on a Mac, or <kbd>Ctrl</kbd> <kbd>,</kbd> on Windows and Linux. Settings opens at the pane you used last.
+- Press <kbd>⌘</kbd> <kbd>,</kbd> on a Mac, or <kbd>Ctrl</kbd> <kbd>,</kbd> on Windows and Linux. Settings opens at the pane you used last, or at the list of panes on a phone.
 - Open the account menu at the bottom of the sidebar and select **Settings**.
 - In a chat, select the sliders icon in the composer, then **Chat Settings**. This opens **This chat**.
 - The account menu's **Billing** opens **Billing**, and **Developers** opens **API keys**.
 - In the model picker, the **ZDR on · Some models hidden** banner's **Change** link opens **Privacy and security**.
 
-The window is titled **Settings**, with the list of panes on the left and the open pane on the right. Panes are grouped under **Account**, **Organizations**, **Chats**, **Preferences**, **Privacy**, **Connections**, **Desktop app**, and **Developer**. On a phone the window fills the screen and shows the list or one pane at a time; **Back to settings** returns to the list.
+The window is titled **Settings**, with the list of panes on the left and the open pane on the right. Panes are grouped under **Account**, **Organizations**, **Chats**, **Preferences**, **Privacy**, **Connections**, **Desktop app**, and **Developer**. Under each pane's title, a short line names its group, or says what the pane applies to, such as "Applies to this device" or "Applies to this chat only". On a phone the window fills the screen and shows the list or one pane at a time; select **Settings** at the top of a pane to go back to the list.
 
 Changes save on their own. The header shows **Saving...**, then **Saved**. If a save fails it shows **Not saved**, and hovering shows why. Close Settings with <kbd>Esc</kbd>, **Close settings**, or a click outside the window. It stays open while a change hasn't saved, so check your connection and try again. For text boxes such as **Instructions**, click outside the box to save.
 
@@ -34,11 +34,11 @@ Changes save on their own. The header shows **Saving...**, then **Saved**. If a 
 | Account | **Profile**, **Billing** | Always |
 | Account | **Usage** | On a paid plan |
 | Organizations | Each organization, and **New organization** | Organizations are available to you. **New organization** is hidden when an admin turns off creating organizations |
-| Chats | **This chat** | When you open Settings from a chat |
-| Chats | **New chats**, **Permissions**, **Personalization** | Always |
-| Chats | **Voice** | Your organization allows voice calls |
-| Chats | **Dictation** | Your organization allows dictation |
-| Chats | **Skills** | Skills are allowed for you |
+| Chats | **This chat**, **New chats**, **Personalization** | When you open Settings from a chat |
+| Chats | **Permissions** | Always |
+| Chats | **Voice** | In a chat, when your organization allows voice calls |
+| Chats | **Dictation** | In a chat, when your organization allows dictation |
+| Chats | **Skills** | In a chat, when Skills are allowed for you |
 | Preferences | **Appearance** | Always |
 | Preferences | **Phone and SMS** | Your organization allows text messages |
 | Privacy | **Privacy and security**, **Devices** | Always |
@@ -82,18 +82,18 @@ Each organization you belong to has a row here. Selecting one closes Settings an
 
 ### This chat
 
-"Settings for this conversation only. Changes here don't affect other chats." The rows are grouped under **Model**, **Responses**, and **Context**. A row disappears when your project or organization locks it. See [Chat settings](https://bearly.ai/docs/manual/chat/settings.md).
+"Settings for this conversation only. Changes here don't affect other chats." The rows are grouped under **Model**, **Responses**, and **Context**. A row disappears when your project or organization locks it. In most chats, if you can only read the chat, the pane reads "You can see this chat's settings but can't change them." See [Chat settings](https://bearly.ai/docs/manual/chat/settings.md).
 
 | Control | Options and default | What it does |
 | --- | --- | --- |
 | **Model** | Models available to you. Default: the chat's current model. | The model that answers in this chat. See [Models](https://bearly.ai/docs/manual/chat/models.md). |
+| **Reasoning Effort** | **Default**, **None**, **Low**, **Medium**, **High**, **Extra High** | How much the model reasons before answering |
 | **Language** | **Default**, or a language such as English, English (UK & AU), French, German, Hindi, Japanese, Mandarin Chinese, Portuguese, Spanish, and more | The language replies are written in |
 | **Response Style** | **Normal** (default), **Classic**, **No Style**, **Learning**, **Concise**, **Explanatory**, **Formal** | Tone and length of replies |
+| **Temperature** | **Factual** (0.5), **Default** (1), **Creative** (1.5), or a slider from 0 to 2 | How focused or varied replies are. Above 1.5: "High temperatures may produce incoherent output." |
 | **Memories** | **Off**, **Auto**. Default comes from **New chats**. | Whether the chat recalls earlier conversations |
 | **Web Search** | **Off**, **Auto**. Default comes from **New chats**. | Whether the chat searches the web on its own |
-| **Reasoning Effort** | **Default**, **None**, **Low**, **Medium**, **High**, **Extra High** | How much the model reasons before answering |
 | **Instructions** | Free text ("Custom instructions for this chat...") | Standing directions for this chat |
-| **Temperature** | **Factual** (0.5), **Default** (1), **Creative** (1.5), or a slider from 0 to 2 | How focused or varied replies are. Above 1.5: "High temperatures may produce incoherent output." |
 | **Reset all to defaults** | Button. Appears once this chat has its own value for any row. | Returns this chat to your **New chats** settings, then reapplies project and organization rules |
 
 ### New chats
@@ -185,6 +185,7 @@ Saved on this device only. **Theme** shows each theme as a card; **Font** and **
 | Control | Options and default | What it does |
 | --- | --- | --- |
 | **Zero Data Retention only** | Switch, off by default. Saved to your account. | Bearly shows only zero-retention models, and automatic fallbacks stay on them too. Applies to chat models. See [Zero Data Retention only](https://bearly.ai/docs/manual/chat/models.md#zero-data-retention-only). |
+| **Unitemized billing** | Switch, off by default. Paid plans; on a managed organization, only when its policy allows it. | "A more private way to be billed. Bearly keeps one rounded total per day instead of a record of each request's model, cost, and time." **How it works** opens the guide. Asks you to confirm first. See [Turn on unitemized billing](https://bearly.ai/docs/unitemized-billing.md). |
 | **End-to-end encryption** (**Beta**) | **Set up end-to-end encryption**, or **Approve this device** on a new device | Encrypts new chats on your devices. After setup: **Encrypt all new chats with this key**, **Approved devices**, **Approve a device**, and **Recovery** (passkeys and **Replace recovery phrase**). |
 
 **Start new chats in Full access** moved to [Permissions](#permissions). See [Privacy and security controls](https://bearly.ai/docs/manual/privacy-and-security.md).
@@ -279,7 +280,7 @@ This pane appears only in the desktop app. Chrome control connects on your compu
 
 ### Modules
 
-Appears only when your organization's policy turns on **Personal remote modules**. **Add Module** takes an **Endpoint** (http or https), a **Module Name**, and a **Secret Key**. Connected modules show **CONNECTED** and **Remove**. "Only add modules from trusted sources."
+Appears only when your organization's policy turns on **Personal remote modules**. **Add Module** takes an **Endpoint** (http or https), a **Module Name**, and a **Secret Key**. Each module shows its name and endpoint, with **Remove**. "Only add modules from trusted sources."
 
 ## Settings that live elsewhere
 

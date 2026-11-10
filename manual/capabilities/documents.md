@@ -1,6 +1,6 @@
 ---
 title: "Work with files and documents"
-description: "How Bearly opens, previews, searches, cites, summarizes, edits, converts, and proofreads files in a chat or project, including supported file types, size limits, password-protected PDFs, Always Search Documents, the Document editor, and what changes in end-to-end encrypted chats."
+description: "How Bearly opens, previews, searches, cites, summarizes, edits, converts, and proofreads files in a chat or project, including supported file types, size limits, password-protected PDFs, Always search documents, the Document editor, and what changes in end-to-end encrypted chats."
 canonical: "https://bearly.ai/docs/manual/capabilities/documents/"
 markdown: "https://bearly.ai/docs/manual/capabilities/documents.md"
 ---
@@ -9,7 +9,7 @@ markdown: "https://bearly.ai/docs/manual/capabilities/documents.md"
 
 HTML: [https://bearly.ai/docs/manual/capabilities/documents/](https://bearly.ai/docs/manual/capabilities/documents/)
 
-> How Bearly opens, previews, searches, cites, summarizes, edits, converts, and proofreads files in a chat or project, including supported file types, size limits, password-protected PDFs, Always Search Documents, the Document editor, and what changes in end-to-end encrypted chats.
+> How Bearly opens, previews, searches, cites, summarizes, edits, converts, and proofreads files in a chat or project, including supported file types, size limits, password-protected PDFs, Always search documents, the Document editor, and what changes in end-to-end encrypted chats.
 
 These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
 
@@ -26,7 +26,7 @@ You can attach files in four ways. All of them need uploads to be allowed.
 
 **You need:** any plan. Admin control: **File uploads** (under **Privacy & Security**). When it's off, attaching, dropping, pasting files, and the camera are all hidden.
 
-**Limits:** 1000 MB per file; a larger file isn't attached. While a file is being prepared, its chip shows a spinner (hover it for "Checking PDF.", "Uploading" with progress, or "Analyzing."), and you can't send until it finishes. If a chip shows a warning icon with "Unable to upload and process.", remove it with its **×** and attach the file again; you can't send while it's there.
+**Limits:** 1000 MB per file; a larger file isn't attached. In an end-to-end encrypted chat the limit is 100 MB, and a larger file shows "Encrypted chats take files up to 100 MB. Use a standard chat for files up to 1 GB." While a file is being prepared, its chip shows a spinner (hover it for "Checking PDF.", "Uploading" with progress, or "Analyzing."), and you can't send until it finishes. If a chip shows a warning icon with "Unable to upload and process.", remove it with its **×** and attach the file again; you can't send while it's there.
 
 For everything else about the message box, see [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md).
 
@@ -83,9 +83,9 @@ When a chat has files, its header shows **Files**, a files icon with a count. It
 
 Filters with no files are hidden.
 
-Photos and PDFs show thumbnails. Select a file to open it in its own tab in the panel; a photo opens the image viewer on every image in the chat. **Jump to message** scrolls the chat to the message the file came with. In the iOS app, PDFs open outside the app. You can also ask in chat with `/files` (**Browse Files**) and Bearly lists them.
+Files are grouped by day (**Today**, **Yesterday**, then the date), newest first. Photos and PDFs show thumbnails. Select a file to open it in its own tab in the panel; a photo opens the image viewer on every image in the chat. Each file's **Jump to message** scrolls the chat to the message the file came with. In the iOS app, PDFs open outside the app. You can also ask in chat with `/files` (**Browse Files**) and Bearly lists them.
 
-To find a file in any chat, press <kbd>⌘</kbd> <kbd>F</kbd> (<kbd>Ctrl</kbd> <kbd>F</kbd> on Windows and Linux), type in **Search chats and files...**, and switch to the **Files** tab. Results are labelled **Uploaded**, **Generated**, or **Saved by Bearly**. End-to-end encrypted chats aren't searched. See [Organize, find, and share](https://bearly.ai/docs/manual/chat/organize.md).
+To find a file in any chat, select **Search chats** at the top of the sidebar (or press <kbd>⌘</kbd> <kbd>F</kbd>, <kbd>Ctrl</kbd> <kbd>F</kbd> on Windows and Linux), type in **Search chats and files...**, and switch to the **Files** tab. Results are labelled **Uploaded**, **Generated**, or **Saved by Bearly**. End-to-end encrypted chats aren't searched. See [Organize, find, and share](https://bearly.ai/docs/manual/chat/organize.md).
 
 ## Point Bearly at one file with @
 
@@ -110,7 +110,7 @@ These file tools are in the `/` menu under **Tools**:
 
 ## Preview, edit a table, and download
 
-Open any file in the side panel to get its controls: a version dropdown for files Bearly has edited, **Copy** where the content can be copied, **Share file** (when sharing is allowed and you can edit the chat), and **Download**. PDFs add page arrows and **Zoom in** and **Zoom out**. On a phone, **Copy**, **Share file**, and the versions are under **More**. Each file opens in its own tab; close it with the tab's close button, or close the panel with <kbd>Esc</kbd>. For documents previewed as PDF, **Download** offers **PDF** or **Original**; choose **Original** for the editable file.
+Open any file in the side panel to get its controls: a version dropdown for files Bearly has edited, **Copy** where the content can be copied, **Share file** (when sharing is allowed and you can edit the chat), and **Download**. PDFs add page arrows and **Zoom in** and **Zoom out**. On a phone, **Copy**, **Share file**, and the versions are under **More** (**…**). Each file opens in its own tab; close it with the tab's close button, or close the panel with **Close panel** or <kbd>Esc</kbd>. For documents previewed as PDF, **Download** offers **PDF** or **Original**; choose **Original** for the editable file.
 
 CSV files are editable in the side panel:
 
@@ -225,7 +225,7 @@ What it can do, by format:
    /document Revise the attached contract for plain language and return a new DOCX with tracked changes. Keep the clause numbering, defined terms, and existing comments.
    ```
 
-4. Watch the **Run Python** step — select it to see **Input** and **Result**, or **Error** if the run failed.
+4. Watch the line under the answer while Python runs — select it to open **Steps**, then select the **Run Python** step to see **Input** and **Result**, or **Error** if the run failed.
 5. Open the new file and select **Download** — for Word, Excel, and PowerPoint files the preview is a PDF, so choose **Original** to get the editable file.
 
 
