@@ -107,9 +107,9 @@ Read Site reads one address: a web page, a PDF, an Office or OpenDocument file, 
 
 
 
-**What you get:** a short page is read straight into the answer. A longer page is saved to the chat as a Markdown file. PDFs, Word, PowerPoint, Excel, OpenDocument, EPUB, and RTF files are saved as chat files with a short text preview, and Bearly reads them with its [document tools](https://bearly.ai/docs/manual/capabilities/documents.md). Images and audio or video become chat files that other tools can use.
+**What you get:** a short page is read straight into the answer, or saved to the chat as a Markdown file when Bearly shows you the page. A longer page is always saved as a Markdown file. PDFs, Word, PowerPoint, Excel, OpenDocument, EPUB, and RTF files are saved as chat files with a short text preview, and Bearly reads them with its [document tools](https://bearly.ai/docs/manual/capabilities/documents.md). Images and audio or video become chat files that other tools can use.
 
-**Limits:** HTTPS only; an `http://` link is upgraded. Addresses can be up to 2,000 characters, can't contain a username or password, and can't point at your own machine (such as `localhost`). Read Site reads; it doesn't click, scroll, or fill anything in. For pages that need that, see [Browser and computer use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md). In the desktop and iOS apps, Bearly fetches the page from your device when it can; otherwise through Bearly's servers.
+**Limits:** HTTPS only; an `http://` link is upgraded. Addresses can be up to 2,000 characters, can't contain a username or password, and can't point at your own machine (such as `localhost`). Read Site reads; it doesn't click, scroll, or fill anything in. When a site answers with a bot check, such as "Just a moment…" or a CAPTCHA, or shows its content only after JavaScript runs, Read Site says so instead of passing that page off as the content. In the desktop app, Bearly can open the page in Bearly Browser and read it there. For pages that need clicks or sign-ins, see [Browser and computer use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md). In the desktop and iOS apps, Bearly fetches the page from your device when it can; otherwise through Bearly's servers.
 
 **Runs in:** every app platform. Routines: yes. Council experts: yes.
 
@@ -173,7 +173,7 @@ Deep Research is a long research run that ends in a cited report. You review and
 
 4. Leave the run on Standard, or turn on **Ultra** for a run about twice as deep — the line beside the button says whether your plan covers the tier you picked.
 
-5. Select **Run Research** — this is your confirmation. There is no cancel button once a run starts. If your plan doesn't include the tier, the button opens the upgrade instead.
+5. Select **Run Research** — this is your confirmation. There is no cancel button once a run starts. If your plan doesn't include the tier, the button opens the upgrade instead. Saying "go ahead" in the chat before you've created the plan doesn't start anything; Bearly asks you to start it from the card: select **Create Plan**, then **Run Research**.
 
 6. Read the report — numbered citations and figures, a **Sources** list that starts folded to one line with its count (open it for the first four and **Show all** for the rest), and **Show research steps** to see what it did. **View PDF** opens the PDF, and **Sent to your inbox** shows when the email went out.
 

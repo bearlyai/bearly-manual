@@ -101,7 +101,7 @@ A voice call is a live conversation: you talk, Bearly answers out loud, and you 
 Open **Settings** → **Voice** (in the **Chats** section). It reads "Voice calls use this model to listen, answer, and run actions. Calls use your plan allowance."
 
 - On paid plans, pick a model under **Model** ("Takes effect on your next call.").
-- On the Free plan, calls use a fixed model and the list shows "Choosing a voice model needs a paid plan." See [Plans and credits](https://bearly.ai/docs/manual/plans-and-credits.md).
+- On the Free plan, calls use **GPT-Live 1** and the list shows "Choosing a voice model needs a paid plan." See [Plans and credits](https://bearly.ai/docs/manual/plans-and-credits.md).
 - Each model speaks in its own voice; there's no separate voice picker.
 - If a call switches to a backup model, the call bar adds "· fallback" after the model name.
 

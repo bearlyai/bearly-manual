@@ -25,7 +25,7 @@ To point a tool at a file that's already in the chat, type `@` and pick the file
 | A change to a short clip | [Edit Video](#edit-video) | `/edit-video` |
 | Spoken audio from text | [Text to speech](#text-to-speech) | `/say` |
 | Text from speech in a recording | [Transcribe](#transcribe) | `/transcribe` |
-| Bearly to look at an image or watch a video | [View Media](#view-media) | `/analyze-media` |
+| Bearly to look at an image, watch a video, or see PDF pages | [View Media](#view-media) | `/analyze-media` |
 
 ## Imagine
 
@@ -49,6 +49,8 @@ Imagine generates an image from your description. The result opens in an image e
 
 
 **What you get:** an image in the chat with **Copy image**, **Download**, and **View full size**. Full view shows the chat's images with arrows and thumbnails, plus **Copy image** and **Download**. Zoom by double-clicking, scrolling, or pinching, or with <kbd>+</kbd> and <kbd>-</kbd>; <kbd>0</kbd> resets the zoom, the arrow keys move between images, and <kbd>Esc</kbd> closes it.
+
+**Transparent backgrounds:** ask for one in the chat, for a logo, icon, sticker, or cutout, and Bearly makes a PNG with a transparent background. Only some models can do this, so Bearly switches to one that can, and the reply names the model it used. If you named a model that can't, the reply says so. If no model that can is available, Bearly tells you and offers the image on a plain background instead. The image editor's model buttons run exactly the model you pick and don't add transparency.
 
 **Limits:** there's no size or aspect-ratio setting; the output shape depends on the model. When Bearly runs an image request from the chat and the model's service fails, it switches to a backup model.
 
@@ -89,6 +91,12 @@ To edit from the chat instead, type `/edit-image` (**Touch Up**) and describe th
 /edit-image Make the background of the bottle photo a warm sunset and keep the bottle exactly as it is.
 ```
 
+To cut an object out, ask Touch Up to remove the background. You get a PNG with a transparent background, made by a model that can do it, as with [Imagine](#imagine).
+
+```text
+/edit-image Remove the background from the bottle photo and keep the bottle exactly as it is.
+```
+
 **Combines with:** [Make Video](#make-video), which can use any image in the chat as its first or last frame, and [Pages](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) for a gallery.
 
 ## Make Video
@@ -122,11 +130,14 @@ Make Video generates a short video with sound, from a description alone or by an
 **Options:**
 
 - **Length:** 4 to 15 seconds. The default is 5.
-- **Resolution:** standard 768p by default, or 2K, which costs more.
+- **Resolution:** standard 768p by default, or 2K, which costs more. A 16:9 clip at 2K is 2560 × 1440, too large for Edit Video, so make a clip you plan to edit at standard resolution.
 - **Shape:** 16:9 by default, 9:16, or 1:1. With a start image, the video keeps the image's shape.
 - **Sound:** every video includes generated sound.
 
-**Limits:** each attempt counts separately, and a failed attempt isn't retried on another model. On failure you'll see "The video model could not finish this request. Try again later."
+**Limits:**
+
+- A start image can be at most 2.5 times as wide as it is tall, or 2.5 times as tall as it is wide. Bearly refuses a wider or taller image before it starts, so crop or pad it first.
+- A failed attempt isn't retried on another model. On failure you'll see "The video model could not finish this request. Try again later."
 
 ## Edit Video
 
@@ -150,7 +161,7 @@ Edit Video changes a short clip you attach or one Bearly made, and saves the res
 
 **Options:** the original sound is kept by default. Resolution is 1080p by default, or 720p or 4K.
 
-**Limits:** use a source clip 3 to 10 seconds long. Files over 50 MB are refused.
+**Limits:** the source clip must be 3 to 10 seconds long, measured exactly, so a 10.1-second clip is too long. Each side must be 720 to 2160 pixels, so a 16:9 clip from Make Video at 2K (2560 × 1440) is too large. Files over 50 MB are refused. Bearly checks the length and size before it starts, and a clip that doesn't fit is refused without counting usage.
 
 ## Text to speech
 
@@ -211,15 +222,15 @@ Transcribe turns speech in audio and video files into text with speaker labels a
 
 **What you get:** a transcript viewer, with previous and next buttons when you sent several files, and **Download subtitles**, which saves `AudioSubtitles.srt`. Bearly also saves each transcript in the chat as a subtitle file named after the original, such as `interview transcript.srt` for `interview.mp3`, so later messages and tools can read it. Bearly suggests speaker names from what's said in the recording, and you can change them.
 
-**Limits:** each attachment can be up to 1000 MB (100 MB in an end-to-end encrypted chat). Transcription has separate processing limits; compress or split a recording if it is too large to process. There's no language picker. If some files fail you'll see "Some assets could not be transcribed". Asking about the same file again reuses its transcript.
+**Limits:** each attachment can be up to 1000 MB (100 MB in an end-to-end encrypted chat). Transcription has separate processing limits; compress or split a recording if it is too large to process. There's no language picker. If some files fail you'll see "Some assets could not be transcribed". Asking about the same file again reuses its transcript. When an admin has turned off **Transcription**, Bearly tells you it can't listen to the recording in that chat.
 
 For live recording with a running transcript, use [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
 
 ## View Media
 
-View Media lets Bearly look at images and watch video files in the chat, including images from much earlier in a long conversation.
+View Media lets Bearly look at images, watch video files, and see the pages of a PDF as images, including files from much earlier in a long conversation.
 
-**Use it when:** checking a generated video for mistakes, describing a chart screenshot, reading a whiteboard photo, or comparing two product images.
+**Use it when:** checking a generated video for mistakes, describing a chart screenshot, reading a whiteboard photo, comparing two product images, or checking a diagram, chart, or scanned page in a PDF.
 
 **You need:** any plan.
 
@@ -233,9 +244,9 @@ View Media lets Bearly look at images and watch video files in the chat, includi
 
 
 
-**What you get:** a written answer about what's in the image or video.
+**What you get:** a written answer about what's in the image, video, or PDF pages.
 
-**Limits:** Bearly watches up to 10 minutes of video per look and takes longer videos in sections. When it can't watch a video directly, it samples timestamped frames and pairs them with a transcript.
+**Limits:** Bearly watches up to 10 minutes of video per look and takes longer videos in sections. When it can't watch a video directly, it samples timestamped frames and pairs them with a transcript. View Media can't listen to audio-only files; for those Bearly uses [Transcribe](#transcribe). For PDFs, it looks at up to 4 pages per look in total, the first page unless you name others, and says which pages it hasn't seen; a password-protected PDF has to be unlocked first. To read a PDF's text rather than look at it, Bearly uses the [document tools](https://bearly.ai/docs/manual/capabilities/documents.md).
 
 ## Controls and model settings
 
@@ -285,7 +296,7 @@ You get a product image, an animated clip made from it, a recorded voiceover, an
 
 **Swap in:** skip the image and describe the whole shot in `/video` when you need a set shape, such as 16:9 for a presentation (an animated image keeps the image's shape); **Combine images** to place the product in a room before animating; **Edit Video** to change the scene before merging.
 
-**If it stalls:** Python runs are short and resource-limited, so keep the clip short and the resolution standard. If the voice runs longer than the video, shorten the script and record a new take.
+**If it stalls:** each Python run stops after 60 seconds, so keep the clip short and the resolution standard. If the voice runs longer than the video, shorten the script and record a new take.
 
 ### Burn subtitles into a video
 
@@ -343,7 +354,7 @@ You get a short summary of the episode's main points, recorded in a voice you ch
 
 You get a corrected clip after Bearly reviews its own video.
 
-**Why it works:** View Media lets Bearly watch any video in the chat, and Edit Video works on clips of 3 to 10 seconds under 50 MB, which covers generated clips of 10 seconds or less.
+**Why it works:** View Media lets Bearly watch any video in the chat, and Edit Video works on clips of 3 to 10 seconds, 720 to 2160 pixels on each side, and under 50 MB. A clip Bearly makes at standard resolution fits that size.
 
 **You need:** any plan. Admin control **Video**.
 
@@ -360,9 +371,9 @@ You get a corrected clip after Bearly reviews its own video.
 
 
 
-**Swap in:** your own phone video, as long as it's 3 to 10 seconds and under 50 MB; ask for a new clip with `/video` when the problem is the whole shot.
+**Swap in:** your own phone video, as long as it's 3 to 10 seconds, 720 to 2160 pixels on each side, and under 50 MB; ask for a new clip with `/video` when the problem is the whole shot.
 
-**If it stalls:** if the clip is longer than 10 seconds, trim it to 10 seconds or less with Run Python first.
+**If it stalls:** if Edit Video says the clip is too long, even at 10.1 seconds, trim it to 10 seconds or less with Run Python first. If it says the clip is too large, as a 16:9 clip at 2K is, scale it down with Run Python or make the clip again at standard resolution.
 
 ## Related
 
@@ -384,6 +395,6 @@ You get a corrected clip after Bearly reviews its own video.
 - [Previous: Make Pages and edit in Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md)
 - [Next: Record and use meetings](https://bearly.ai/docs/manual/capabilities/meetings.md)
 - [Related: Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md)
+- [Related: Work with files and documents](https://bearly.ai/docs/manual/capabilities/documents.md)
 - [Related: Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md)
 - [Related: Privacy and security controls](https://bearly.ai/docs/manual/privacy-and-security.md)
-- [Related: Automate with Routines](https://bearly.ai/docs/manual/capabilities/routines.md)

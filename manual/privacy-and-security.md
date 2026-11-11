@@ -1,6 +1,6 @@
 ---
 title: "Privacy and security controls"
-description: "Every privacy and security control in Bearly and what it changes, including Zero Data Retention only, end-to-end encryption with recovery phrase, device approval, and passkeys, personalization, memories and web search, project passwords, tool permissions, signed-in devices, logging out, account deletion, text messages, and admin-only controls."
+description: "Every privacy and security control in Bearly and what it changes, including Zero Data Retention only, end-to-end encryption with recovery phrase, device approval, and passkeys, personalization, memories and web search, project passwords, tool permissions, signed-in devices, logging out, account deletion, text messages, what organization admins can and can't see, and admin-only controls."
 canonical: "https://bearly.ai/docs/manual/privacy-and-security/"
 markdown: "https://bearly.ai/docs/manual/privacy-and-security.md"
 ---
@@ -9,7 +9,7 @@ markdown: "https://bearly.ai/docs/manual/privacy-and-security.md"
 
 HTML: [https://bearly.ai/docs/manual/privacy-and-security/](https://bearly.ai/docs/manual/privacy-and-security/)
 
-> Every privacy and security control in Bearly and what it changes, including Zero Data Retention only, end-to-end encryption with recovery phrase, device approval, and passkeys, personalization, memories and web search, project passwords, tool permissions, signed-in devices, logging out, account deletion, text messages, and admin-only controls.
+> Every privacy and security control in Bearly and what it changes, including Zero Data Retention only, end-to-end encryption with recovery phrase, device approval, and passkeys, personalization, memories and web search, project passwords, tool permissions, signed-in devices, logging out, account deletion, text messages, what organization admins can and can't see, and admin-only controls.
 
 This page lists every control that changes what Bearly stores, what reaches an AI model, and who can open your work, with the exact path to each one.
 
@@ -217,6 +217,26 @@ Deletion runs 24 hours after you verify. You can keep using Bearly until then. T
 ## Phone and SMS
 
 **Settings** → **Phone and SMS** manages text messages. Set it up with a US or Canadian mobile number for verification codes and notifications. Once verified, the pane offers **Send test text**, **Change number**, **Turn off text messages** ("Stops codes and notifications. Same as replying STOP."), and **Remove phone number** ("Deletes the number from your Bearly account."). The pane appears when your organization's **Text messages** policy allows it. See [Email and text](https://bearly.ai/docs/manual/capabilities/email-and-text.md).
+
+## What organization admins can see
+
+Organization admins manage members, groups, policies, and billing. Being an admin doesn't let them open anyone's chats.
+
+| What | Can an organization admin see it? |
+| --- | --- |
+| Your chats, with their messages, titles, files, and memories | No, whether the chat uses standard or end-to-end encryption. The exception is a project you share with them (below). |
+| A project you share with the organization or one of its groups, including its chats and files | Yes, like everyone else you shared it with. Sharing with a group reaches only that group's members. |
+| The title, owners, groups, and creation date of each project shared with the organization or its groups | Yes, on **Projects**, without the project's content |
+| Each member's name, email, role, policy, and spending limit | Yes, on **Members** |
+| Each managed-domain member's spend and number of calls, by model and month | Yes, on **Usage**, on a managed organization. A member with **Unitemized billing** on shows as one **Bearly Private** line, with no model breakdown or call count. |
+| Changes to members, groups, policies, settings, billing, and project access | Yes, on **Activity**. It doesn't record what anyone does in chats. |
+
+- **Access comes from sharing, not from the admin role.** An admin sees a project only when it's shared with the organization or with a group they belong to. Admins can add themselves to a group, which gives them that group's shared projects like any other group member, and the change appears in **Activity**.
+- **Admins can change access without reading anything.** They can remove the organization's access to a shared project, and delete a project once none of its owners is still a member; its chats go back to the people who started them. Policies decide which models and features you can use, and **Lock existing chats** makes members' chats open only on the device that holds their key. See [Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md).
+- **No admin export.** Admins have no way to export or download members' chats.
+- **Group admins** manage their own group's members and policy, and on a managed organization see the group's **Usage**.
+
+**End-to-end encrypted chats.** End-to-end encryption is optional: you choose it for each new chat, and on a managed organization an admin must allow it in your policy first. Neither your organization's admins nor Bearly can read your end-to-end encrypted chats: not the messages, the titles, or the files. If your organization later stops allowing it, your existing encrypted chats stay available to you. Each message you send still reaches the model that answers it. Standard chats are encrypted at rest with keys Bearly holds. See [End-to-end encryption](#end-to-end-encryption).
 
 ## Controls only an organization admin can set
 

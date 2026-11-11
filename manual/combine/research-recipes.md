@@ -69,6 +69,7 @@ You end up with a cited report and its PDF in your inbox, a chart of its numbers
 - **A schedule instead of a one-off:** a Routine can run Deep Research every week and email the PDF, but it can't run Python or draw charts. See [Schedule a weekly Deep Research digest](https://bearly.ai/docs/manual/combine/automation-recipes.md#schedule-a-weekly-deep-research-digest).
 
 **If it stalls:**
+- If you reply "go ahead" in the chat and Bearly asks you to start from the card, select **Create Plan**, then **Run Research** there.
 - "You can't start another Deep Research run right now" means one of your runs is still in progress or you've reached a usage limit. Wait for the run to finish, or check your plan's usage. There's no cancel button once a run starts, and a run keeps going if you refresh or switch devices.
 - Charts read a CSV of up to 10 columns, and a line chart draws up to 12 lines. If the chart fails, ask for fewer columns or fewer sources.
 - If Bearly can't find your teammate, use their full name as it appears in your organization, or their work email.
@@ -176,7 +177,7 @@ A long report at a public link becomes a searchable file in the chat, and its fi
 - **Email for the chart:** ask "Email me the table as a CSV." Send Email attaches files from the chat.
 
 **If it stalls:**
-- Read Site reads public HTTPS addresses only and doesn't sign in or click. For a report behind a sign-in, use Bearly Browser or Chrome in the desktop app; see [Recipes for automation and agents](https://bearly.ai/docs/manual/combine/automation-recipes.md).
+- Read Site reads public HTTPS addresses only and doesn't sign in or click. If it reports a bot check or a page that needs a browser, ask Bearly to open the link in Bearly Browser in the desktop app, or download the report yourself and attach it. For a report behind a sign-in, use Bearly Browser or Chrome in the desktop app; see [Recipes for automation and agents](https://bearly.ai/docs/manual/combine/automation-recipes.md).
 - If step 2 finds nothing, try a shorter phrase. Scan Doc matches exact text, ignoring case.
 
 ## Check a video's figures against the research literature

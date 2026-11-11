@@ -1,6 +1,6 @@
 ---
 title: "Run Bearly for an organization"
-description: "How to create and run a Bearly organization, including managed and unmanaged organizations, every console tab and setting (Overview, Agent access, Microsoft Entra and provisioning, Access banner, Members, Groups, Projects, Policies, Billing seats, Usage, Activity), and the complete policy control catalog."
+description: "How to create and run a Bearly organization, including managed and unmanaged organizations, every console tab and setting (Overview, Agent access, Microsoft Entra and provisioning, Access banner, Members, Groups, Projects, Policies, Billing seats, Usage, Activity), the complete policy control catalog, and what admins can and can't see."
 canonical: "https://bearly.ai/docs/manual/organizations/"
 markdown: "https://bearly.ai/docs/manual/organizations.md"
 ---
@@ -9,9 +9,9 @@ markdown: "https://bearly.ai/docs/manual/organizations.md"
 
 HTML: [https://bearly.ai/docs/manual/organizations/](https://bearly.ai/docs/manual/organizations/)
 
-> How to create and run a Bearly organization, including managed and unmanaged organizations, every console tab and setting (Overview, Agent access, Microsoft Entra and provisioning, Access banner, Members, Groups, Projects, Policies, Billing seats, Usage, Activity), and the complete policy control catalog.
+> How to create and run a Bearly organization, including managed and unmanaged organizations, every console tab and setting (Overview, Agent access, Microsoft Entra and provisioning, Access banner, Members, Groups, Projects, Policies, Billing seats, Usage, Activity), the complete policy control catalog, and what admins can and can't see.
 
-An organization holds your members, groups, and policies in one place. Admins add people, share projects with the whole organization or a group, buy seats, and, on a managed organization, decide which models and features members can use.
+An organization holds your members, groups, and policies in one place. Admins add people, share projects with the whole organization or a group, buy seats, and, on a managed organization, decide which models and features members can use. Admins can't open members' chats; see [What organization admins can see](https://bearly.ai/docs/manual/privacy-and-security.md#what-organization-admins-can-see).
 
 ## Managed and unmanaged organizations
 
@@ -125,6 +125,8 @@ Only organization admins can change these. Group admins and policies can't grant
 
 
 You only provide the tenant ID, never an application secret. Microsoft sign-in works only for a verified email that exactly matches the managed domain. The card shows **Enabled** once it's set up. Members then sign in with **Continue with Microsoft** on the sign-in screen. The iOS app doesn't offer that button and signs in with an emailed code.
+
+For one-click access from your intranet, SharePoint page, or Microsoft app tile, link to `https://bearly.ai/dashboard/sign-in/microsoft`. A member already signed in to Microsoft lands in Bearly without choosing an account, and someone already signed in to Bearly goes straight to the app. Microsoft doesn't let you change the address of the Bearly app it added to your tenant, so add a **Linked** app pointing at this link and hide the original; the [Microsoft Entra guide](https://bearly.ai/docs/teams/microsoft-entra.md#open-bearly-in-one-click-from-your-portal) has the steps.
 
 ### User and group provisioning
 
@@ -388,6 +390,6 @@ Seats go only to active members. A person uses the higher of their personal plan
 - [Previous: Projects: shared context, files, and settings](https://bearly.ai/docs/manual/projects.md)
 - [Next: Privacy and security controls](https://bearly.ai/docs/manual/privacy-and-security.md)
 - [Related: Approvals, permissions, and Full access](https://bearly.ai/docs/manual/capabilities/permissions.md)
+- [Related: Connect Microsoft Entra to an organization](https://bearly.ai/docs/teams/microsoft-entra.md)
 - [Related: Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md)
 - [Related: Recipes for teams and projects](https://bearly.ai/docs/manual/combine/team-recipes.md)
-- [Related: Set organization policies](https://bearly.ai/docs/teams/policies.md)

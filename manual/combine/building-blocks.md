@@ -83,11 +83,11 @@ Details: [Documents](https://bearly.ai/docs/manual/capabilities/documents.md).
 | **Attach files** (**+** → **Attach files**, drag and drop, paste, or **Take photo**) | Files from your device, up to 1000 MB each (100 MB in an encrypted chat) | Files in the chat, under **Uploaded** | Any | All | — | — |
 | **Share your screen** (**+** → **Share your screen**) | A window or screen you pick | A fresh still capture attached to each message you send | Any | Desktop app, and web browsers that support screen sharing | — | — |
 | **Search Docs** `/search-docs` | A question about the chat's and project's files | Cited passages; search citations open at a matching page when available | Any | All | Yes | Yes |
-| **Read Doc** `/read-document` and **Scan Doc** `/find-in-document` | A document and the pages to read, or exact text to find | Page text, or each match with its page, line, and surrounding text | Any | All | Yes | Yes |
+| **Read Doc** `/read-document` and **Scan Doc** `/find-in-document` | A document and the pages to read, or exact text to find in up to 20 documents | Page text, or each match with its page, line, and surrounding text, grouped by file | Any | All | Yes | Yes |
 | **Summarize Doc** `/summarize` | A long document | A **Deep Summary** in the reply | Any | All | Yes | No |
 | **Document editor** `/document` | A document task, plus any PDF, Word, PowerPoint, or Excel files in the chat to work on | New or edited files: filled PDF forms, .docx files with tracked changes, decks, spreadsheets with formulas | Any | All | No | No |
 | **Fix Grammar** `/grammar` | A passage of text | An editor card with suggested fixes you accept one at a time or all at once | Any | All | No | No |
-| **Chat files** `/create-file`, `/edit-file`, `/read-file`, `/rename-file`, `/files` | Content the AI writes, or a file already in the chat | Pages (HTML), Markdown, plain text, CSV, and JSON files, with a new version on every edit | Any | All | Yes | No |
+| **Chat files** `/create-file`, `/edit-file`, `/read-file`, `/rename-file`, `/files` | Content the AI writes, or a file already in the chat | Pages (HTML), Markdown, plain text, CSV, and JSON files, with a new version on every edit; or an existing file's card shown again, with no new version | Any | All | Yes | No |
 
 ### Data and code
 
@@ -95,7 +95,7 @@ Details: [Data and code](https://bearly.ai/docs/manual/capabilities/data-and-cod
 
 | Block | Takes | Produces | Plan | Where | In Routines | Council experts |
 |---|---|---|---|---|---|---|
-| **Run Python** `/python` | A task, plus the chat or project files it should use | Up to 5 files per run, plots shown in the chat, and printed results | Any | All; runs in the cloud | No | No |
+| **Run Python** `/python` | A task, plus the chat or project files it should use; each run stops after 60 seconds | Up to 5 files per run, plots shown in the chat, and printed results | Any | All; runs in the cloud | No | No |
 | **Create chart** `/chart` | A prepared CSV file in the chat with up to 10 columns and 2 MB | A **Chart** card (KPI, bar, or line) with **View data**, **Download CSV**, and, for bar and line charts, **Download PNG** | Any | All | No | No |
 | **Visualize** `/visualize` | A request for an interactive view, chart, or diagram | A Page, chart, or diagram | Any | All | No; the routine editor doesn't offer it | No |
 | **Work locally** (**Work locally** chip; `/terminal`, `/read-local-file`, `/write-local-file`, `/edit-local-file`, `/attach-local-file`, `/save-file-locally`) | A folder on your computer | Files read, written, and edited on disk, command output, and files copied between disk and chat (up to 50 MB each) | Any | Desktop | Only with **Unattended local access** | No |
@@ -115,13 +115,13 @@ Details: [Images, video, and audio](https://bearly.ai/docs/manual/capabilities/i
 
 | Block | Takes | Produces | Plan | Where | In Routines | Council experts |
 |---|---|---|---|---|---|---|
-| **Imagine** `/image` | A description, and optional reference images | Images in the inline image editor, ready to download | Any | All | No | No |
-| **Touch Up** `/edit-image` | One or more images in the chat, and optionally an area to change | Edited, extended, or combined images | Any | All | No | No |
-| **Make Video** `/video` | A description, and optionally an image as the start frame plus an end frame | A 4 to 15-second MP4 with generated sound, saved in the chat | Any | All | No | No |
-| **Edit Video** `/edit-video` | A 3 to 10-second clip under 50 MB | A separate edited clip; the original stays as it was | Any | All | No | No |
+| **Imagine** `/image` | A description, and optional reference images | Images in the inline image editor, ready to download; a PNG with a transparent background when you ask for one in the chat | Any | All | No | No |
+| **Touch Up** `/edit-image` | One or more images in the chat, and optionally an area to change | Edited, extended, or combined images; a transparent-background PNG when you ask to remove the background | Any | All | No | No |
+| **Make Video** `/video` | A description, and optionally an image as the start frame (at most 2.5 times as wide as tall, or as tall as wide) plus an end frame | A 4 to 15-second MP4 with generated sound, saved in the chat | Any | All | No | No |
+| **Edit Video** `/edit-video` | A clip of 3 to 10 seconds, 720 to 2160 pixels on each side, under 50 MB | A separate edited clip; the original stays as it was | Any | All | No | No |
 | **Read Aloud** `/say`, and Voice Studio | Text: a reply, your message, or a script | Spoken audio saved as a chat file; Voice Studio for voices, delivery, and takes | Any | All | No | No |
 | **Transcribe** `/transcribe` | Audio or video files in the chat; attachment limit 1000 MB, with separate transcription processing limits | A transcript with speaker names and timestamps, plus a `.srt` transcript file in the chat | Any | All | No | No |
-| **View Media** `/analyze-media` | Image or video files in the chat | What the AI sees, in the conversation; up to 10 minutes of video per look | Any | All | Yes | No |
+| **View Media** `/analyze-media` | Image or video files in the chat, or pages of a PDF | What the AI sees, in the conversation; up to 10 minutes of video or 4 PDF pages per look | Any | All | Yes | No |
 
 ### Voice and meetings
 
@@ -182,7 +182,7 @@ Each rule names an output type and the blocks that can take it next. These conne
 - **A CSV that's already chart-ready** → **Create chart** directly, with no Python step.
 - **Run Python output** (up to 5 files per run) → files in the chat → **Create chart**, a **Page** with the results baked in, or **Send Email** attachments. Each run starts fresh, so name the files a later run should use.
 - **Any image in the chat**, whether uploaded, generated, or saved by Read Site → **Touch Up** as a source, or **Make Video** as the start or end frame.
-- **A generated video** → **View Media** watches it → **Edit Video** changes it, if the clip is 3 to 10 seconds and under 50 MB.
+- **A generated video** → **View Media** watches it → **Edit Video** changes it, if the clip is 3 to 10 seconds, 720 to 2160 pixels on each side, and under 50 MB. A 16:9 clip at 2K is too large, so make clips to edit at standard resolution.
 - **Audio or video files**, whether uploaded, saved by **Get Video**, or a post's video from **X** → **Transcribe**. Video files also → **View Media**, which looks at images and video but not audio-only files.
 - **A transcript** → **Transcribe** also saves it in the chat as an `.srt` file named after the original → later turns read it, summarize it, or hand the summary to **Read Aloud**.
 - **PDF and Office files** → **Document editor** fills forms, adds tracked changes to .docx files, or builds decks and spreadsheets → new files in the chat.

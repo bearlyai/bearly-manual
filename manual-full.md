@@ -52,8 +52,8 @@ Index: [https://bearly.ai/docs/manual.md](https://bearly.ai/docs/manual.md)
 ### Workspace & Control
 
 - [Projects: shared context, files, and settings](https://bearly.ai/docs/manual/projects.md): How Bearly projects work, including creating one, the project page and its Chats, Files, Sharing, and Settings tabs, roles and sharing, every project setting, project files and desktop folder sync, how project chats inherit settings and memory, password protection, archiving, and tested setups.
-- [Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md): How to create and run a Bearly organization, including managed and unmanaged organizations, every console tab and setting (Overview, Agent access, Microsoft Entra and provisioning, Access banner, Members, Groups, Projects, Policies, Billing seats, Usage, Activity), and the complete policy control catalog.
-- [Privacy and security controls](https://bearly.ai/docs/manual/privacy-and-security.md): Every privacy and security control in Bearly and what it changes, including Zero Data Retention only, end-to-end encryption with recovery phrase, device approval, and passkeys, personalization, memories and web search, project passwords, tool permissions, signed-in devices, logging out, account deletion, text messages, and admin-only controls.
+- [Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md): How to create and run a Bearly organization, including managed and unmanaged organizations, every console tab and setting (Overview, Agent access, Microsoft Entra and provisioning, Access banner, Members, Groups, Projects, Policies, Billing seats, Usage, Activity), the complete policy control catalog, and what admins can and can't see.
+- [Privacy and security controls](https://bearly.ai/docs/manual/privacy-and-security.md): Every privacy and security control in Bearly and what it changes, including Zero Data Retention only, end-to-end encryption with recovery phrase, device approval, and passkeys, personalization, memories and web search, project passwords, tool permissions, signed-in devices, logging out, account deletion, text messages, what organization admins can and can't see, and admin-only controls.
 - [Settings reference](https://bearly.ai/docs/manual/settings-reference.md): Every pane and control in Bearly's Settings window, in the order the app shows them, with options, defaults, and what each control does, plus how to open Settings, read its save status, and find the panes that only appear on some platforms or plans.
 
 ### For AI & Agents
@@ -465,7 +465,7 @@ Max is not sold to personal accounts. An organization admin buys it as a seat in
 | [Routines](https://bearly.ai/docs/manual/capabilities/routines.md) (scheduled chats) | Pro | Free accounts see the Routines page with an upgrade prompt |
 | [Best Pick](https://bearly.ai/docs/manual/capabilities/research.md) (product research) | Pro | An upgrade card appears in the chat |
 | [Council](https://bearly.ai/docs/manual/capabilities/research.md) (ask several models at once) | Pro | The chat shows "Council of Experts requires Pro or higher." with **Upgrade to Pro** |
-| Choosing a voice model for [voice calls](https://bearly.ai/docs/manual/chat/voice.md) | Pro | Free calls use a fixed model, and the **Model** menu reads "Choosing a voice model needs a paid plan." |
+| Choosing a voice model for [voice calls](https://bearly.ai/docs/manual/chat/voice.md) | Pro | Free calls use GPT-Live 1, and the **Model** menu reads "Choosing a voice model needs a paid plan." |
 | [Deep Research](https://bearly.ai/docs/manual/capabilities/research.md), standard tier | Analyst | **Run Research** opens the upgrade flow |
 | Deep Research, **Ultra** tier | Research | **Run Research** opens the upgrade flow |
 | [People Search](https://bearly.ai/docs/manual/capabilities/research.md) | Analyst | An upgrade card appears in the chat |
@@ -2074,7 +2074,7 @@ A voice call is a live conversation: you talk, Bearly answers out loud, and you 
 Open **Settings** → **Voice** (in the **Chats** section). It reads "Voice calls use this model to listen, answer, and run actions. Calls use your plan allowance."
 
 - On paid plans, pick a model under **Model** ("Takes effect on your next call.").
-- On the Free plan, calls use a fixed model and the list shows "Choosing a voice model needs a paid plan." See [Plans and credits](https://bearly.ai/docs/manual/plans-and-credits.md).
+- On the Free plan, calls use **GPT-Live 1** and the list shows "Choosing a voice model needs a paid plan." See [Plans and credits](https://bearly.ai/docs/manual/plans-and-credits.md).
 - Each model speaks in its own voice; there's no separate voice picker.
 - If a call switches to a backup model, the call bar adds "· fallback" after the model name.
 
@@ -2396,9 +2396,9 @@ Read Site reads one address: a web page, a PDF, an Office or OpenDocument file, 
 
 
 
-**What you get:** a short page is read straight into the answer. A longer page is saved to the chat as a Markdown file. PDFs, Word, PowerPoint, Excel, OpenDocument, EPUB, and RTF files are saved as chat files with a short text preview, and Bearly reads them with its [document tools](https://bearly.ai/docs/manual/capabilities/documents.md). Images and audio or video become chat files that other tools can use.
+**What you get:** a short page is read straight into the answer, or saved to the chat as a Markdown file when Bearly shows you the page. A longer page is always saved as a Markdown file. PDFs, Word, PowerPoint, Excel, OpenDocument, EPUB, and RTF files are saved as chat files with a short text preview, and Bearly reads them with its [document tools](https://bearly.ai/docs/manual/capabilities/documents.md). Images and audio or video become chat files that other tools can use.
 
-**Limits:** HTTPS only; an `http://` link is upgraded. Addresses can be up to 2,000 characters, can't contain a username or password, and can't point at your own machine (such as `localhost`). Read Site reads; it doesn't click, scroll, or fill anything in. For pages that need that, see [Browser and computer use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md). In the desktop and iOS apps, Bearly fetches the page from your device when it can; otherwise through Bearly's servers.
+**Limits:** HTTPS only; an `http://` link is upgraded. Addresses can be up to 2,000 characters, can't contain a username or password, and can't point at your own machine (such as `localhost`). Read Site reads; it doesn't click, scroll, or fill anything in. When a site answers with a bot check, such as "Just a moment…" or a CAPTCHA, or shows its content only after JavaScript runs, Read Site says so instead of passing that page off as the content. In the desktop app, Bearly can open the page in Bearly Browser and read it there. For pages that need clicks or sign-ins, see [Browser and computer use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md). In the desktop and iOS apps, Bearly fetches the page from your device when it can; otherwise through Bearly's servers.
 
 **Runs in:** every app platform. Routines: yes. Council experts: yes.
 
@@ -2462,7 +2462,7 @@ Deep Research is a long research run that ends in a cited report. You review and
 
 4. Leave the run on Standard, or turn on **Ultra** for a run about twice as deep — the line beside the button says whether your plan covers the tier you picked.
 
-5. Select **Run Research** — this is your confirmation. There is no cancel button once a run starts. If your plan doesn't include the tier, the button opens the upgrade instead.
+5. Select **Run Research** — this is your confirmation. There is no cancel button once a run starts. If your plan doesn't include the tier, the button opens the upgrade instead. Saying "go ahead" in the chat before you've created the plan doesn't start anything; Bearly asks you to start it from the card: select **Create Plan**, then **Run Research**.
 
 6. Read the report — numbered citations and figures, a **Sources** list that starts folded to one line with its count (open it for the first four and **Show all** for the rest), and **Show research steps** to see what it did. **View PDF** opens the PDF, and **Sent to your inbox** shows when the email went out.
 
@@ -3362,13 +3362,13 @@ Every file appears as a card in the chat. Select the card, or **Open** on it, to
 | Word, Excel, PowerPoint, OpenDocument, `.pages`, `.numbers`, `.key`, `.epub` | Converted to PDF for the preview | PDF view; **Download** offers **PDF** or **Original** | Reads and searches the text; the Document editor edits Word, Excel, and PowerPoint files |
 | CSV, TSV, and pipe-separated (`.csv`, `.tsv`, `.tab`, `.psv`) | Spreadsheet grid showing rows × columns, with **Copy table** and **Open** | Editable grid | Searches it as text; Run Python can analyze it; Charts can draw from it |
 | Markdown | Rendered, with **Copy** and **Open** | Rendered | Reads and searches it |
-| Images | Image, or a stack of images with a count | Image viewer with arrows, thumbnails, zoom, copy, and download | Looks at it with View Media; Touch Up can edit it |
+| Images | Image, or a stack of images with a count | Image viewer with arrows, thumbnails, zoom, copy, and download | Looks at it with View Media; Touch Up can edit it. Reads and searches an SVG's source as text |
 | Audio | Compact player | Full player | Transcribe turns speech into text |
 | Video | Video player | Video player | View Media watches it; Transcribe turns speech into text |
 | HTML | Live [Page](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) preview | The live Page | Reads it |
 | JSON, plain text (`.txt`), logs | Text preview | Text | Reads it |
 | Code (about 60 file types, such as `.py`, `.ts`, `.go`, `.sql`, `.yaml`, `.xml`, `.jsonl`, Dockerfile, and Makefile) | Syntax-highlighted preview | Syntax-highlighted | Reads it |
-| Calendar (`.ics`) and anything else | Name card | Panel with **Download** | Can pass it to Run Python |
+| Calendar (`.ics`) and anything else | Name card | Panel with **Download** | Can pass it to Run Python. Reads plain-text files with an extension Bearly doesn't know, such as `.tex` or `.har` |
 
 Word covers `.doc`, `.docx`, `.docm`, `.dot`, `.dotx`, and `.dotm`. Excel covers `.xls`, `.xlsx`, `.xlsm`, `.xlt`, `.xltx`, and `.xltm`. PowerPoint covers `.ppt`, `.pptx`, `.pptm`, `.pot`, `.potx`, `.potm`, and `.pps`. OpenDocument covers `.odt`, `.ods`, `.odp`, and `.odg`.
 
@@ -3385,7 +3385,7 @@ When a chat has files, its header shows **Files**, a files icon with a count. It
 
 Filters with no files are hidden.
 
-Files are grouped by day (**Today**, **Yesterday**, then the date), newest first. Photos and PDFs show thumbnails. Select a file to open it in its own tab in the panel; a photo opens the image viewer on every image in the chat. Each file's **Jump to message** scrolls the chat to the message the file came with. In the iOS app, PDFs open outside the app. You can also ask in chat with `/files` (**Browse Files**) and Bearly lists them.
+Files are grouped by day (**Today**, **Yesterday**, then the date), newest first. Photos and PDFs show thumbnails. Select a file to open it in its own tab in the panel; a photo opens the image viewer on every image in the chat. Each file's **Jump to message** scrolls the chat to the message the file came with. In the iOS app, PDFs open outside the app. You can also ask in chat with `/files` (**Browse Files**) and Bearly lists them. To get a file's card back in the chat, with its **Download** button, ask Bearly to show it again. This doesn't change the file or save a new version.
 
 To find a file in any chat, select **Search chats** at the top of the sidebar (or press <kbd>⌘</kbd> <kbd>F</kbd>, <kbd>Ctrl</kbd> <kbd>F</kbd> on Windows and Linux), type in **Search chats and files...**, and switch to the **Files** tab. Results are labelled **Uploaded**, **Generated**, or **Saved by Bearly**. End-to-end encrypted chats aren't searched. See [Organize, find, and share](https://bearly.ai/docs/manual/chat/organize.md).
 
@@ -3434,7 +3434,7 @@ Bearly has four document tools. They appear once the chat or its project has at 
 | --- | --- | --- | --- |
 | `/search-docs` | Search Docs | Searches every attached and project document by meaning and returns cited passages | "Where do our contracts mention auto-renewal?" |
 | `/read-document` | Read Doc | Reads a document page by page | Reading a section in full before quoting it |
-| `/find-in-document` | Scan Doc | Finds exact words or a pattern in one document, with page, line, and surrounding text | Every mention of a name, clause number, or figure |
+| `/find-in-document` | Scan Doc | Finds exact words or a pattern in one document or up to 20 at once, with page, line, and surrounding text, grouped by file | Every mention of a name, clause number, or figure |
 | `/summarize` | Summarize Doc | Writes a structured summary of a long document | An overview before you dig in |
 
 **Use it when:** comparing terms across several agreements, pulling every figure from a report with its page, checking a claim against the source, or answering questions from a folder of policies.
@@ -3458,7 +3458,7 @@ Bearly has four document tools. They appear once the chat or its project has at 
 
 **What you get:** an answer with clickable citations, and sometimes a strip of matching document sources above it.
 
-**Limits:** one search returns up to 10 sources. Spreadsheets and CSV files are searched as text, not as tables; for sums, filters, or pivots, use [Run Python](https://bearly.ai/docs/manual/capabilities/data-and-code.md#run-python). Search Docs doesn't cover audio, video, or images. Scan Doc returns 10 matches at a time and pages through the rest.
+**Limits:** one search returns up to 10 sources. Spreadsheets and CSV files are searched as text, not as tables; for sums, filters, or pivots, use [Run Python](https://bearly.ai/docs/manual/capabilities/data-and-code.md#run-python). Search Docs doesn't cover audio, video, or images. Scan Doc returns 10 matches at a time from one document, or up to 30 across several, and pages through the rest. Read Doc uses the document's own page numbers and tells Bearly which pages are blank or only images, so a blank cover page doesn't stop it.
 
 **Combines with:** [Run Python](https://bearly.ai/docs/manual/capabilities/data-and-code.md) for numbers in a spreadsheet, the [Document editor](#document-editor) to turn findings into a Word or PDF file, and [Research](https://bearly.ai/docs/manual/capabilities/research.md) to check your documents against public sources.
 
@@ -3534,7 +3534,7 @@ What it can do, by format:
 
 **What you get:** one or more new files in the chat. Your original stays unchanged, so you can compare them or ask for another pass.
 
-**Limits:** up to five new files per run. Runs are short and resource-limited, so split a big batch into a few named requests. Check the downloaded file in the app where it will be used before you send or sign it; conversion can shift layout, fonts, or page breaks.
+**Limits:** up to five new files per run. Each run stops after 60 seconds, so split a big batch into a few named requests. Check the downloaded file in the app where it will be used before you send or sign it; conversion can shift layout, fonts, or page breaks.
 
 **Combines with:** the [document research tools](#research-your-documents-search-docs-read-doc-scan-doc) to gather facts first, [Share file](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md#share-and-publish-a-page) to give the result a Page and link, and [Run Python](https://bearly.ai/docs/manual/capabilities/data-and-code.md) for analysis that doesn't need a polished file.
 
@@ -3601,7 +3601,7 @@ You get a cited comparison table and a Word file with your proposed changes as t
 
 
 
-**Swap in:** Scan Doc for the first step when you need every exact mention of a term; a project with **Always search documents** instead of attaching the files each time; a filled PDF instead of a DOCX for a form.
+**Swap in:** Scan Doc for the first step when you need every exact mention of a term, across up to 20 agreements in one search; a project with **Always search documents** instead of attaching the files each time; a filled PDF instead of a DOCX for a form.
 
 **If it stalls:** if citations point to the wrong file, name the files with `@`. If the run fails, select the **Run Python** step, read **Error**, and ask Bearly to retry with one file.
 
@@ -3729,10 +3729,11 @@ Run Python executes a complete Python script in a fresh cloud sandbox and return
 **Limits:**
 
 - Each run starts from scratch. Nothing carries over between runs unless Bearly passes a file from an earlier run back in.
-- Runs are short and resource-limited. Long jobs, endless loops, and heavy processing of large media may not finish; split the work.
+- Each run stops after 60 seconds and has 2 GB of memory and one CPU core. A run that hits the time limit says so. Split long work, such as text recognition over many pages, into several runs.
 - Up to five output files per run; extras are dropped.
 - The sandbox has internet access for small public downloads, but it can't reach your computer, your local files, or your apps. For that, use [Work locally](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md) in the desktop app.
 - Not available in [Routines](https://bearly.ai/docs/manual/capabilities/routines.md).
+- If your organization turns off **Run Python**, Bearly says so when a request needs it, such as an Excel or Word file or an exact count over a whole spreadsheet. It then offers what it can do without it, such as a CSV that opens in Excel, and an organization admin can turn the control back on.
 
 **Combines with:** [Charts](#charts), which draw from a CSV that Python prepares; [Pages](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md), which can carry Python's results; [Text to speech](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#text-to-speech) and [Make Video](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#make-video), whose files Python can merge.
 
@@ -3993,13 +3994,19 @@ Bearly makes a Page when you ask it to build, make, or create an app, game, calc
 
 
 
+To put your own images in a Page, attach them or name images already in the chat or its project, and say where they go:
+
+```text
+Make a one-page trip summary with the three photos I attached as a header strip and a caption under each.
+```
+
 **What you get:** a live Page in the chat, saved as an `.html` file you can download and open in a browser. Reopen it later from **Files** → **Generated** in the chat header.
 
 **Limits:**
 
 - Bearly can't see what you type or pick inside a Page. If a follow-up depends on a value you chose there, tell Bearly the value.
 - A Page may remember what you entered when you reopen it in the side panel, but this isn't guaranteed, and the in-chat preview doesn't keep it. To keep a change, ask Bearly to revise the Page.
-- When a Page uses files from the chat, such as images, saving embeds copies of them. Each file can be up to 10 MB and all embedded files together up to 25 MB; links to larger or unavailable files are removed and Bearly is told which.
+- When a Page uses files from the chat or its project, such as images, saving embeds copies of them, so they also show in a downloaded copy. Images larger than 2,000 pixels on their longest side are scaled down to 2,000 first. Each file can be up to 10 MB and all embedded files together up to 25 MB; links to larger or unavailable files are removed and Bearly is told which.
 - A Page is saved to the chat. To save it into the chat's project, ask for that explicitly; you need write access to the project.
 - In a read-only chat you can view and download Pages but not change them.
 - A Page can save a file it makes, such as a CSV export, only when you select a button in it. Bearly asks first with **Save _file name_?** and the file's size; select **Save** to save it to your device. A file over 25 MB shows **Can't save _file name_** instead. Copying to your clipboard also works only from a click in the Page.
@@ -4146,26 +4153,26 @@ You get a polished document and a published, printable Page with the same text.
 
 You get a single Page that shows a set of images from the chat, with the images inside the file.
 
-**Why it works:** Run Python takes image files from the chat as inputs and can write one HTML file with the images embedded. Any HTML file in a chat renders as a live Page, whatever made it.
+**Why it works:** Bearly can use images in the chat or its project in a Page it writes, and saving the Page embeds them. The downloaded `.html` file shows them without Bearly.
 
-**You need:** any plan. Admin control **Run Python**; **Images** if you generate the images first.
+**You need:** any plan. Admin control **Images** if you generate the images first.
 
 
 
 1. Get the images into the chat — attach them, or make them with `/image`.
-2. Ask Python to build the Page.
+2. Ask Bearly to build the Page.
 
    ```text
-   /python Build a single HTML gallery Page from the images in this chat, with captions from the file names and a lightbox when I click one. Embed the images in the file.
+   Build a gallery Page from the images in this chat, with captions from the file names and a lightbox when I click one.
    ```
 
-3. Open the result — it renders as a Page; download it or prepare it for sharing.
+3. Open the result — download it or prepare it for sharing.
 
 
 
-**Swap in:** ask Bearly to write the Page directly and link the chat's files, which embeds each one up to 10 MB and 25 MB in total; a slideshow instead of a grid.
+**Swap in:** a slideshow instead of a grid; `/python` to resize or crop the images first and build the gallery in the same run (admin control **Run Python**).
 
-**If it stalls:** if the Page is too big to prepare for sharing (over 9 MB), ask Python to shrink the images first.
+**If it stalls:** large images are scaled down to 2,000 pixels on their longest side; each can still be up to 10 MB and all of them together up to 25 MB, and Bearly says which images it left out. If the Page is too big to prepare for sharing (over 9 MB), ask `/python` to shrink the images first.
 
 ### Share a research chat's conclusion without the back-and-forth
 
@@ -4228,7 +4235,7 @@ To point a tool at a file that's already in the chat, type `@` and pick the file
 | A change to a short clip | [Edit Video](#edit-video) | `/edit-video` |
 | Spoken audio from text | [Text to speech](#text-to-speech) | `/say` |
 | Text from speech in a recording | [Transcribe](#transcribe) | `/transcribe` |
-| Bearly to look at an image or watch a video | [View Media](#view-media) | `/analyze-media` |
+| Bearly to look at an image, watch a video, or see PDF pages | [View Media](#view-media) | `/analyze-media` |
 
 ## Imagine
 
@@ -4252,6 +4259,8 @@ Imagine generates an image from your description. The result opens in an image e
 
 
 **What you get:** an image in the chat with **Copy image**, **Download**, and **View full size**. Full view shows the chat's images with arrows and thumbnails, plus **Copy image** and **Download**. Zoom by double-clicking, scrolling, or pinching, or with <kbd>+</kbd> and <kbd>-</kbd>; <kbd>0</kbd> resets the zoom, the arrow keys move between images, and <kbd>Esc</kbd> closes it.
+
+**Transparent backgrounds:** ask for one in the chat, for a logo, icon, sticker, or cutout, and Bearly makes a PNG with a transparent background. Only some models can do this, so Bearly switches to one that can, and the reply names the model it used. If you named a model that can't, the reply says so. If no model that can is available, Bearly tells you and offers the image on a plain background instead. The image editor's model buttons run exactly the model you pick and don't add transparency.
 
 **Limits:** there's no size or aspect-ratio setting; the output shape depends on the model. When Bearly runs an image request from the chat and the model's service fails, it switches to a backup model.
 
@@ -4292,6 +4301,12 @@ To edit from the chat instead, type `/edit-image` (**Touch Up**) and describe th
 /edit-image Make the background of the bottle photo a warm sunset and keep the bottle exactly as it is.
 ```
 
+To cut an object out, ask Touch Up to remove the background. You get a PNG with a transparent background, made by a model that can do it, as with [Imagine](#imagine).
+
+```text
+/edit-image Remove the background from the bottle photo and keep the bottle exactly as it is.
+```
+
 **Combines with:** [Make Video](#make-video), which can use any image in the chat as its first or last frame, and [Pages](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) for a gallery.
 
 ## Make Video
@@ -4325,11 +4340,14 @@ Make Video generates a short video with sound, from a description alone or by an
 **Options:**
 
 - **Length:** 4 to 15 seconds. The default is 5.
-- **Resolution:** standard 768p by default, or 2K, which costs more.
+- **Resolution:** standard 768p by default, or 2K, which costs more. A 16:9 clip at 2K is 2560 × 1440, too large for Edit Video, so make a clip you plan to edit at standard resolution.
 - **Shape:** 16:9 by default, 9:16, or 1:1. With a start image, the video keeps the image's shape.
 - **Sound:** every video includes generated sound.
 
-**Limits:** each attempt counts separately, and a failed attempt isn't retried on another model. On failure you'll see "The video model could not finish this request. Try again later."
+**Limits:**
+
+- A start image can be at most 2.5 times as wide as it is tall, or 2.5 times as tall as it is wide. Bearly refuses a wider or taller image before it starts, so crop or pad it first.
+- A failed attempt isn't retried on another model. On failure you'll see "The video model could not finish this request. Try again later."
 
 ## Edit Video
 
@@ -4353,7 +4371,7 @@ Edit Video changes a short clip you attach or one Bearly made, and saves the res
 
 **Options:** the original sound is kept by default. Resolution is 1080p by default, or 720p or 4K.
 
-**Limits:** use a source clip 3 to 10 seconds long. Files over 50 MB are refused.
+**Limits:** the source clip must be 3 to 10 seconds long, measured exactly, so a 10.1-second clip is too long. Each side must be 720 to 2160 pixels, so a 16:9 clip from Make Video at 2K (2560 × 1440) is too large. Files over 50 MB are refused. Bearly checks the length and size before it starts, and a clip that doesn't fit is refused without counting usage.
 
 ## Text to speech
 
@@ -4414,15 +4432,15 @@ Transcribe turns speech in audio and video files into text with speaker labels a
 
 **What you get:** a transcript viewer, with previous and next buttons when you sent several files, and **Download subtitles**, which saves `AudioSubtitles.srt`. Bearly also saves each transcript in the chat as a subtitle file named after the original, such as `interview transcript.srt` for `interview.mp3`, so later messages and tools can read it. Bearly suggests speaker names from what's said in the recording, and you can change them.
 
-**Limits:** each attachment can be up to 1000 MB (100 MB in an end-to-end encrypted chat). Transcription has separate processing limits; compress or split a recording if it is too large to process. There's no language picker. If some files fail you'll see "Some assets could not be transcribed". Asking about the same file again reuses its transcript.
+**Limits:** each attachment can be up to 1000 MB (100 MB in an end-to-end encrypted chat). Transcription has separate processing limits; compress or split a recording if it is too large to process. There's no language picker. If some files fail you'll see "Some assets could not be transcribed". Asking about the same file again reuses its transcript. When an admin has turned off **Transcription**, Bearly tells you it can't listen to the recording in that chat.
 
 For live recording with a running transcript, use [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
 
 ## View Media
 
-View Media lets Bearly look at images and watch video files in the chat, including images from much earlier in a long conversation.
+View Media lets Bearly look at images, watch video files, and see the pages of a PDF as images, including files from much earlier in a long conversation.
 
-**Use it when:** checking a generated video for mistakes, describing a chart screenshot, reading a whiteboard photo, or comparing two product images.
+**Use it when:** checking a generated video for mistakes, describing a chart screenshot, reading a whiteboard photo, comparing two product images, or checking a diagram, chart, or scanned page in a PDF.
 
 **You need:** any plan.
 
@@ -4436,9 +4454,9 @@ View Media lets Bearly look at images and watch video files in the chat, includi
 
 
 
-**What you get:** a written answer about what's in the image or video.
+**What you get:** a written answer about what's in the image, video, or PDF pages.
 
-**Limits:** Bearly watches up to 10 minutes of video per look and takes longer videos in sections. When it can't watch a video directly, it samples timestamped frames and pairs them with a transcript.
+**Limits:** Bearly watches up to 10 minutes of video per look and takes longer videos in sections. When it can't watch a video directly, it samples timestamped frames and pairs them with a transcript. View Media can't listen to audio-only files; for those Bearly uses [Transcribe](#transcribe). For PDFs, it looks at up to 4 pages per look in total, the first page unless you name others, and says which pages it hasn't seen; a password-protected PDF has to be unlocked first. To read a PDF's text rather than look at it, Bearly uses the [document tools](https://bearly.ai/docs/manual/capabilities/documents.md).
 
 ## Controls and model settings
 
@@ -4488,7 +4506,7 @@ You get a product image, an animated clip made from it, a recorded voiceover, an
 
 **Swap in:** skip the image and describe the whole shot in `/video` when you need a set shape, such as 16:9 for a presentation (an animated image keeps the image's shape); **Combine images** to place the product in a room before animating; **Edit Video** to change the scene before merging.
 
-**If it stalls:** Python runs are short and resource-limited, so keep the clip short and the resolution standard. If the voice runs longer than the video, shorten the script and record a new take.
+**If it stalls:** each Python run stops after 60 seconds, so keep the clip short and the resolution standard. If the voice runs longer than the video, shorten the script and record a new take.
 
 ### Burn subtitles into a video
 
@@ -4546,7 +4564,7 @@ You get a short summary of the episode's main points, recorded in a voice you ch
 
 You get a corrected clip after Bearly reviews its own video.
 
-**Why it works:** View Media lets Bearly watch any video in the chat, and Edit Video works on clips of 3 to 10 seconds under 50 MB, which covers generated clips of 10 seconds or less.
+**Why it works:** View Media lets Bearly watch any video in the chat, and Edit Video works on clips of 3 to 10 seconds, 720 to 2160 pixels on each side, and under 50 MB. A clip Bearly makes at standard resolution fits that size.
 
 **You need:** any plan. Admin control **Video**.
 
@@ -4563,9 +4581,9 @@ You get a corrected clip after Bearly reviews its own video.
 
 
 
-**Swap in:** your own phone video, as long as it's 3 to 10 seconds and under 50 MB; ask for a new clip with `/video` when the problem is the whole shot.
+**Swap in:** your own phone video, as long as it's 3 to 10 seconds, 720 to 2160 pixels on each side, and under 50 MB; ask for a new clip with `/video` when the problem is the whole shot.
 
-**If it stalls:** if the clip is longer than 10 seconds, trim it to 10 seconds or less with Run Python first.
+**If it stalls:** if Edit Video says the clip is too long, even at 10.1 seconds, trim it to 10 seconds or less with Run Python first. If it says the clip is too large, as a 16:9 clip at 2K is, scale it down with Run Python or make the clip again at standard resolution.
 
 ## Related
 
@@ -6126,11 +6144,11 @@ Details: [Documents](https://bearly.ai/docs/manual/capabilities/documents.md).
 | **Attach files** (**+** → **Attach files**, drag and drop, paste, or **Take photo**) | Files from your device, up to 1000 MB each (100 MB in an encrypted chat) | Files in the chat, under **Uploaded** | Any | All | — | — |
 | **Share your screen** (**+** → **Share your screen**) | A window or screen you pick | A fresh still capture attached to each message you send | Any | Desktop app, and web browsers that support screen sharing | — | — |
 | **Search Docs** `/search-docs` | A question about the chat's and project's files | Cited passages; search citations open at a matching page when available | Any | All | Yes | Yes |
-| **Read Doc** `/read-document` and **Scan Doc** `/find-in-document` | A document and the pages to read, or exact text to find | Page text, or each match with its page, line, and surrounding text | Any | All | Yes | Yes |
+| **Read Doc** `/read-document` and **Scan Doc** `/find-in-document` | A document and the pages to read, or exact text to find in up to 20 documents | Page text, or each match with its page, line, and surrounding text, grouped by file | Any | All | Yes | Yes |
 | **Summarize Doc** `/summarize` | A long document | A **Deep Summary** in the reply | Any | All | Yes | No |
 | **Document editor** `/document` | A document task, plus any PDF, Word, PowerPoint, or Excel files in the chat to work on | New or edited files: filled PDF forms, .docx files with tracked changes, decks, spreadsheets with formulas | Any | All | No | No |
 | **Fix Grammar** `/grammar` | A passage of text | An editor card with suggested fixes you accept one at a time or all at once | Any | All | No | No |
-| **Chat files** `/create-file`, `/edit-file`, `/read-file`, `/rename-file`, `/files` | Content the AI writes, or a file already in the chat | Pages (HTML), Markdown, plain text, CSV, and JSON files, with a new version on every edit | Any | All | Yes | No |
+| **Chat files** `/create-file`, `/edit-file`, `/read-file`, `/rename-file`, `/files` | Content the AI writes, or a file already in the chat | Pages (HTML), Markdown, plain text, CSV, and JSON files, with a new version on every edit; or an existing file's card shown again, with no new version | Any | All | Yes | No |
 
 ### Data and code
 
@@ -6138,7 +6156,7 @@ Details: [Data and code](https://bearly.ai/docs/manual/capabilities/data-and-cod
 
 | Block | Takes | Produces | Plan | Where | In Routines | Council experts |
 |---|---|---|---|---|---|---|
-| **Run Python** `/python` | A task, plus the chat or project files it should use | Up to 5 files per run, plots shown in the chat, and printed results | Any | All; runs in the cloud | No | No |
+| **Run Python** `/python` | A task, plus the chat or project files it should use; each run stops after 60 seconds | Up to 5 files per run, plots shown in the chat, and printed results | Any | All; runs in the cloud | No | No |
 | **Create chart** `/chart` | A prepared CSV file in the chat with up to 10 columns and 2 MB | A **Chart** card (KPI, bar, or line) with **View data**, **Download CSV**, and, for bar and line charts, **Download PNG** | Any | All | No | No |
 | **Visualize** `/visualize` | A request for an interactive view, chart, or diagram | A Page, chart, or diagram | Any | All | No; the routine editor doesn't offer it | No |
 | **Work locally** (**Work locally** chip; `/terminal`, `/read-local-file`, `/write-local-file`, `/edit-local-file`, `/attach-local-file`, `/save-file-locally`) | A folder on your computer | Files read, written, and edited on disk, command output, and files copied between disk and chat (up to 50 MB each) | Any | Desktop | Only with **Unattended local access** | No |
@@ -6158,13 +6176,13 @@ Details: [Images, video, and audio](https://bearly.ai/docs/manual/capabilities/i
 
 | Block | Takes | Produces | Plan | Where | In Routines | Council experts |
 |---|---|---|---|---|---|---|
-| **Imagine** `/image` | A description, and optional reference images | Images in the inline image editor, ready to download | Any | All | No | No |
-| **Touch Up** `/edit-image` | One or more images in the chat, and optionally an area to change | Edited, extended, or combined images | Any | All | No | No |
-| **Make Video** `/video` | A description, and optionally an image as the start frame plus an end frame | A 4 to 15-second MP4 with generated sound, saved in the chat | Any | All | No | No |
-| **Edit Video** `/edit-video` | A 3 to 10-second clip under 50 MB | A separate edited clip; the original stays as it was | Any | All | No | No |
+| **Imagine** `/image` | A description, and optional reference images | Images in the inline image editor, ready to download; a PNG with a transparent background when you ask for one in the chat | Any | All | No | No |
+| **Touch Up** `/edit-image` | One or more images in the chat, and optionally an area to change | Edited, extended, or combined images; a transparent-background PNG when you ask to remove the background | Any | All | No | No |
+| **Make Video** `/video` | A description, and optionally an image as the start frame (at most 2.5 times as wide as tall, or as tall as wide) plus an end frame | A 4 to 15-second MP4 with generated sound, saved in the chat | Any | All | No | No |
+| **Edit Video** `/edit-video` | A clip of 3 to 10 seconds, 720 to 2160 pixels on each side, under 50 MB | A separate edited clip; the original stays as it was | Any | All | No | No |
 | **Read Aloud** `/say`, and Voice Studio | Text: a reply, your message, or a script | Spoken audio saved as a chat file; Voice Studio for voices, delivery, and takes | Any | All | No | No |
 | **Transcribe** `/transcribe` | Audio or video files in the chat; attachment limit 1000 MB, with separate transcription processing limits | A transcript with speaker names and timestamps, plus a `.srt` transcript file in the chat | Any | All | No | No |
-| **View Media** `/analyze-media` | Image or video files in the chat | What the AI sees, in the conversation; up to 10 minutes of video per look | Any | All | Yes | No |
+| **View Media** `/analyze-media` | Image or video files in the chat, or pages of a PDF | What the AI sees, in the conversation; up to 10 minutes of video or 4 PDF pages per look | Any | All | Yes | No |
 
 ### Voice and meetings
 
@@ -6225,7 +6243,7 @@ Each rule names an output type and the blocks that can take it next. These conne
 - **A CSV that's already chart-ready** → **Create chart** directly, with no Python step.
 - **Run Python output** (up to 5 files per run) → files in the chat → **Create chart**, a **Page** with the results baked in, or **Send Email** attachments. Each run starts fresh, so name the files a later run should use.
 - **Any image in the chat**, whether uploaded, generated, or saved by Read Site → **Touch Up** as a source, or **Make Video** as the start or end frame.
-- **A generated video** → **View Media** watches it → **Edit Video** changes it, if the clip is 3 to 10 seconds and under 50 MB.
+- **A generated video** → **View Media** watches it → **Edit Video** changes it, if the clip is 3 to 10 seconds, 720 to 2160 pixels on each side, and under 50 MB. A 16:9 clip at 2K is too large, so make clips to edit at standard resolution.
 - **Audio or video files**, whether uploaded, saved by **Get Video**, or a post's video from **X** → **Transcribe**. Video files also → **View Media**, which looks at images and video but not audio-only files.
 - **A transcript** → **Transcribe** also saves it in the chat as an `.srt` file named after the original → later turns read it, summarize it, or hand the summary to **Read Aloud**.
 - **PDF and Office files** → **Document editor** fills forms, adds tracked changes to .docx files, or builds decks and spreadsheets → new files in the chat.
@@ -6478,6 +6496,7 @@ You end up with a cited report and its PDF in your inbox, a chart of its numbers
 - **A schedule instead of a one-off:** a Routine can run Deep Research every week and email the PDF, but it can't run Python or draw charts. See [Schedule a weekly Deep Research digest](https://bearly.ai/docs/manual/combine/automation-recipes.md#schedule-a-weekly-deep-research-digest).
 
 **If it stalls:**
+- If you reply "go ahead" in the chat and Bearly asks you to start from the card, select **Create Plan**, then **Run Research** there.
 - "You can't start another Deep Research run right now" means one of your runs is still in progress or you've reached a usage limit. Wait for the run to finish, or check your plan's usage. There's no cancel button once a run starts, and a run keeps going if you refresh or switch devices.
 - Charts read a CSV of up to 10 columns, and a line chart draws up to 12 lines. If the chart fails, ask for fewer columns or fewer sources.
 - If Bearly can't find your teammate, use their full name as it appears in your organization, or their work email.
@@ -6585,7 +6604,7 @@ A long report at a public link becomes a searchable file in the chat, and its fi
 - **Email for the chart:** ask "Email me the table as a CSV." Send Email attaches files from the chat.
 
 **If it stalls:**
-- Read Site reads public HTTPS addresses only and doesn't sign in or click. For a report behind a sign-in, use Bearly Browser or Chrome in the desktop app; see [Recipes for automation and agents](https://bearly.ai/docs/manual/combine/automation-recipes.md).
+- Read Site reads public HTTPS addresses only and doesn't sign in or click. If it reports a bot check or a page that needs a browser, ask Bearly to open the link in Bearly Browser in the desktop app, or download the report yourself and attach it. For a report behind a sign-in, use Bearly Browser or Chrome in the desktop app; see [Recipes for automation and agents](https://bearly.ai/docs/manual/combine/automation-recipes.md).
 - If step 2 finds nothing, try a shorter phrase. Scan Doc matches exact text, ignoring case.
 
 ## Check a video's figures against the research literature
@@ -6843,12 +6862,12 @@ You get a generated product image, a short video animated from it, a recorded vo
 - **Your own photo for Imagine:** attach a product photo and start at step 2 with "Animate the attached photo…".
 - **An end frame:** name a second image as the last frame. Make Video then animates from the first image to the second.
 - **Subtitles:** send `/transcribe` on the merged clip, then select **Download subtitles** in the transcript viewer for an `.srt` file to upload with the clip.
-- **A fix pass:** ask "Watch the clip and list anything inconsistent." Bearly views the video, and `/edit-video` can change a clip of 3 to 10 seconds under 50 MB.
+- **A fix pass:** ask "Watch the clip and list anything inconsistent." Bearly views the video, and `/edit-video` can change a clip of 3 to 10 seconds, 720 to 2160 pixels on each side, and under 50 MB, which a standard-resolution clip fits.
 
 **If it stalls:**
 - Make Video doesn't retry on its own, and every attempt counts as usage. If one fails ("The video model could not finish this request. Try again later."), ask again or change the prompt.
 - Videos run 4 to 15 seconds. If the voiceover is longer than the clip, ask for a shorter script or a longer video.
-- Run Python runs are time-limited, so keep merges to short clips.
+- Each Run Python run stops after 60 seconds, so keep merges to short clips.
 
 ## Turn a talk into quotes, a short cut, and a spoken recap
 
@@ -8613,7 +8632,7 @@ Recall stays within one client's chats, and nothing about you rides along.
 
 ---
 title: "Run Bearly for an organization"
-description: "How to create and run a Bearly organization, including managed and unmanaged organizations, every console tab and setting (Overview, Agent access, Microsoft Entra and provisioning, Access banner, Members, Groups, Projects, Policies, Billing seats, Usage, Activity), and the complete policy control catalog."
+description: "How to create and run a Bearly organization, including managed and unmanaged organizations, every console tab and setting (Overview, Agent access, Microsoft Entra and provisioning, Access banner, Members, Groups, Projects, Policies, Billing seats, Usage, Activity), the complete policy control catalog, and what admins can and can't see."
 canonical: "https://bearly.ai/docs/manual/organizations/"
 markdown: "https://bearly.ai/docs/manual/organizations.md"
 ---
@@ -8622,9 +8641,9 @@ markdown: "https://bearly.ai/docs/manual/organizations.md"
 
 HTML: [https://bearly.ai/docs/manual/organizations/](https://bearly.ai/docs/manual/organizations/)
 
-> How to create and run a Bearly organization, including managed and unmanaged organizations, every console tab and setting (Overview, Agent access, Microsoft Entra and provisioning, Access banner, Members, Groups, Projects, Policies, Billing seats, Usage, Activity), and the complete policy control catalog.
+> How to create and run a Bearly organization, including managed and unmanaged organizations, every console tab and setting (Overview, Agent access, Microsoft Entra and provisioning, Access banner, Members, Groups, Projects, Policies, Billing seats, Usage, Activity), the complete policy control catalog, and what admins can and can't see.
 
-An organization holds your members, groups, and policies in one place. Admins add people, share projects with the whole organization or a group, buy seats, and, on a managed organization, decide which models and features members can use.
+An organization holds your members, groups, and policies in one place. Admins add people, share projects with the whole organization or a group, buy seats, and, on a managed organization, decide which models and features members can use. Admins can't open members' chats; see [What organization admins can see](https://bearly.ai/docs/manual/privacy-and-security.md#what-organization-admins-can-see).
 
 ## Managed and unmanaged organizations
 
@@ -8738,6 +8757,8 @@ Only organization admins can change these. Group admins and policies can't grant
 
 
 You only provide the tenant ID, never an application secret. Microsoft sign-in works only for a verified email that exactly matches the managed domain. The card shows **Enabled** once it's set up. Members then sign in with **Continue with Microsoft** on the sign-in screen. The iOS app doesn't offer that button and signs in with an emailed code.
+
+For one-click access from your intranet, SharePoint page, or Microsoft app tile, link to `https://bearly.ai/dashboard/sign-in/microsoft`. A member already signed in to Microsoft lands in Bearly without choosing an account, and someone already signed in to Bearly goes straight to the app. Microsoft doesn't let you change the address of the Bearly app it added to your tenant, so add a **Linked** app pointing at this link and hide the original; the [Microsoft Entra guide](https://bearly.ai/docs/teams/microsoft-entra.md#open-bearly-in-one-click-from-your-portal) has the steps.
 
 ### User and group provisioning
 
@@ -8998,7 +9019,7 @@ Seats go only to active members. A person uses the higher of their personal plan
 
 ---
 title: "Privacy and security controls"
-description: "Every privacy and security control in Bearly and what it changes, including Zero Data Retention only, end-to-end encryption with recovery phrase, device approval, and passkeys, personalization, memories and web search, project passwords, tool permissions, signed-in devices, logging out, account deletion, text messages, and admin-only controls."
+description: "Every privacy and security control in Bearly and what it changes, including Zero Data Retention only, end-to-end encryption with recovery phrase, device approval, and passkeys, personalization, memories and web search, project passwords, tool permissions, signed-in devices, logging out, account deletion, text messages, what organization admins can and can't see, and admin-only controls."
 canonical: "https://bearly.ai/docs/manual/privacy-and-security/"
 markdown: "https://bearly.ai/docs/manual/privacy-and-security.md"
 ---
@@ -9007,7 +9028,7 @@ markdown: "https://bearly.ai/docs/manual/privacy-and-security.md"
 
 HTML: [https://bearly.ai/docs/manual/privacy-and-security/](https://bearly.ai/docs/manual/privacy-and-security/)
 
-> Every privacy and security control in Bearly and what it changes, including Zero Data Retention only, end-to-end encryption with recovery phrase, device approval, and passkeys, personalization, memories and web search, project passwords, tool permissions, signed-in devices, logging out, account deletion, text messages, and admin-only controls.
+> Every privacy and security control in Bearly and what it changes, including Zero Data Retention only, end-to-end encryption with recovery phrase, device approval, and passkeys, personalization, memories and web search, project passwords, tool permissions, signed-in devices, logging out, account deletion, text messages, what organization admins can and can't see, and admin-only controls.
 
 This page lists every control that changes what Bearly stores, what reaches an AI model, and who can open your work, with the exact path to each one.
 
@@ -9215,6 +9236,26 @@ Deletion runs 24 hours after you verify. You can keep using Bearly until then. T
 ## Phone and SMS
 
 **Settings** → **Phone and SMS** manages text messages. Set it up with a US or Canadian mobile number for verification codes and notifications. Once verified, the pane offers **Send test text**, **Change number**, **Turn off text messages** ("Stops codes and notifications. Same as replying STOP."), and **Remove phone number** ("Deletes the number from your Bearly account."). The pane appears when your organization's **Text messages** policy allows it. See [Email and text](https://bearly.ai/docs/manual/capabilities/email-and-text.md).
+
+## What organization admins can see
+
+Organization admins manage members, groups, policies, and billing. Being an admin doesn't let them open anyone's chats.
+
+| What | Can an organization admin see it? |
+| --- | --- |
+| Your chats, with their messages, titles, files, and memories | No, whether the chat uses standard or end-to-end encryption. The exception is a project you share with them (below). |
+| A project you share with the organization or one of its groups, including its chats and files | Yes, like everyone else you shared it with. Sharing with a group reaches only that group's members. |
+| The title, owners, groups, and creation date of each project shared with the organization or its groups | Yes, on **Projects**, without the project's content |
+| Each member's name, email, role, policy, and spending limit | Yes, on **Members** |
+| Each managed-domain member's spend and number of calls, by model and month | Yes, on **Usage**, on a managed organization. A member with **Unitemized billing** on shows as one **Bearly Private** line, with no model breakdown or call count. |
+| Changes to members, groups, policies, settings, billing, and project access | Yes, on **Activity**. It doesn't record what anyone does in chats. |
+
+- **Access comes from sharing, not from the admin role.** An admin sees a project only when it's shared with the organization or with a group they belong to. Admins can add themselves to a group, which gives them that group's shared projects like any other group member, and the change appears in **Activity**.
+- **Admins can change access without reading anything.** They can remove the organization's access to a shared project, and delete a project once none of its owners is still a member; its chats go back to the people who started them. Policies decide which models and features you can use, and **Lock existing chats** makes members' chats open only on the device that holds their key. See [Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md).
+- **No admin export.** Admins have no way to export or download members' chats.
+- **Group admins** manage their own group's members and policy, and on a managed organization see the group's **Usage**.
+
+**End-to-end encrypted chats.** End-to-end encryption is optional: you choose it for each new chat, and on a managed organization an admin must allow it in your policy first. Neither your organization's admins nor Bearly can read your end-to-end encrypted chats: not the messages, the titles, or the files. If your organization later stops allowing it, your existing encrypted chats stay available to you. Each message you send still reaches the model that answers it. Standard chats are encrypted at rest with keys Bearly holds. See [End-to-end encryption](#end-to-end-encryption).
 
 ## Controls only an organization admin can set
 
@@ -9839,7 +9880,7 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 | "You need writer access to add files to this Project." | Your role in the project can't add files | Ask the project's owner for writer access |
 | A recording is too large to transcribe | The recording exceeds an attachment or transcription processing limit | Split or compress the recording, then transcribe each part |
 | "Some assets could not be transcribed" | One or more files in the request failed | Ask Bearly to transcribe the files that failed again |
-| Edit Video turns down your clip | Edit Video takes a 3 to 10-second clip under 50 MB | Trim or compress the clip, then ask again |
+| Edit Video turns down your clip | Edit Video takes a clip of 3 to 10 seconds, measured exactly, 720 to 2160 pixels on each side, and under 50 MB. A 10.1-second clip or a 16:9 clip from Make Video at 2K doesn't fit | Trim, scale down, or compress the clip, or make it again at standard resolution, then ask again |
 
 ## Answers, the queue, and long chats
 
@@ -10054,6 +10095,7 @@ See [Email and text](https://bearly.ai/docs/manual/capabilities/email-and-text.m
 | YouTube's **Find** or **Check claims** is missing | They need web search allowed and some usage left; **Check claims** also needs file uploads | Ask your admin about **Chat web search** and **File uploads**, or wait for your allowance to reset |
 | YouTube's **Download to play here** or **Get transcript** is missing | They work only in the desktop app, in a chat that can take files | Open the chat in the desktop app, or ask your admin about **File uploads** |
 | Best Pick shows "Limited store coverage in _country_" | Bearly has no store data for that country, so the pick comes from the product catalog and web searches | Check the price at a local store before you buy |
+| "That site asked for a bot check instead of showing the page." or "That page only loads its content in a browser." | Read Site got a bot check or an empty page that needs JavaScript, not the content | In the desktop app, ask Bearly to open the link in Bearly Browser. Otherwise download the page or file yourself and attach it |
 | A Council of Experts answer reads "This model couldn't answer." | One expert failed; Council needs at least 2 that answer | Ask again, or change the lineup in the panel's **Council settings** |
 
 See [Research](https://bearly.ai/docs/manual/capabilities/research.md).
@@ -10099,7 +10141,7 @@ See [Browser and computer use](https://bearly.ai/docs/manual/capabilities/browse
 |---|---|---|
 | **Start voice call** unavailable: "Voice isn't available in this app.", "Voice needs a secure connection.", or "No microphone is available." | Calls need a microphone, a secure connection, and an app version that supports them | Connect a microphone, and open Bearly at bearly.ai or in an up-to-date desktop app |
 | "Voice is temporarily unavailable in Firefox. Use Chrome or the desktop app." | Voice calls don't work in that browser | Use another browser or the desktop app |
-| "Choosing a voice model needs a paid plan." | Free calls use a fixed model | Upgrade to Pro or higher to choose the model |
+| "Choosing a voice model needs a paid plan." | Free calls always use GPT-Live 1 | Upgrade to Pro or higher to choose the model |
 | A call ended by itself | Calls end after 30 seconds of silence, including while muted, or with "Voice connection stalled." | Start a new call |
 | "This voice session reached its limit. Start a fresh one anytime." | Each call has a usage limit | Start a new call |
 | "Voice can start once this reply finishes." on **Start voice call** | In most chats, a call can't start while an answer runs or messages wait to send | Wait for the answer, or select **Stop**, then start the call |

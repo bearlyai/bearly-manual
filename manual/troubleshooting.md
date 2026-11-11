@@ -31,7 +31,7 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 | "You need writer access to add files to this Project." | Your role in the project can't add files | Ask the project's owner for writer access |
 | A recording is too large to transcribe | The recording exceeds an attachment or transcription processing limit | Split or compress the recording, then transcribe each part |
 | "Some assets could not be transcribed" | One or more files in the request failed | Ask Bearly to transcribe the files that failed again |
-| Edit Video turns down your clip | Edit Video takes a 3 to 10-second clip under 50 MB | Trim or compress the clip, then ask again |
+| Edit Video turns down your clip | Edit Video takes a clip of 3 to 10 seconds, measured exactly, 720 to 2160 pixels on each side, and under 50 MB. A 10.1-second clip or a 16:9 clip from Make Video at 2K doesn't fit | Trim, scale down, or compress the clip, or make it again at standard resolution, then ask again |
 
 ## Answers, the queue, and long chats
 
@@ -246,6 +246,7 @@ See [Email and text](https://bearly.ai/docs/manual/capabilities/email-and-text.m
 | YouTube's **Find** or **Check claims** is missing | They need web search allowed and some usage left; **Check claims** also needs file uploads | Ask your admin about **Chat web search** and **File uploads**, or wait for your allowance to reset |
 | YouTube's **Download to play here** or **Get transcript** is missing | They work only in the desktop app, in a chat that can take files | Open the chat in the desktop app, or ask your admin about **File uploads** |
 | Best Pick shows "Limited store coverage in _country_" | Bearly has no store data for that country, so the pick comes from the product catalog and web searches | Check the price at a local store before you buy |
+| "That site asked for a bot check instead of showing the page." or "That page only loads its content in a browser." | Read Site got a bot check or an empty page that needs JavaScript, not the content | In the desktop app, ask Bearly to open the link in Bearly Browser. Otherwise download the page or file yourself and attach it |
 | A Council of Experts answer reads "This model couldn't answer." | One expert failed; Council needs at least 2 that answer | Ask again, or change the lineup in the panel's **Council settings** |
 
 See [Research](https://bearly.ai/docs/manual/capabilities/research.md).
@@ -291,7 +292,7 @@ See [Browser and computer use](https://bearly.ai/docs/manual/capabilities/browse
 |---|---|---|
 | **Start voice call** unavailable: "Voice isn't available in this app.", "Voice needs a secure connection.", or "No microphone is available." | Calls need a microphone, a secure connection, and an app version that supports them | Connect a microphone, and open Bearly at bearly.ai or in an up-to-date desktop app |
 | "Voice is temporarily unavailable in Firefox. Use Chrome or the desktop app." | Voice calls don't work in that browser | Use another browser or the desktop app |
-| "Choosing a voice model needs a paid plan." | Free calls use a fixed model | Upgrade to Pro or higher to choose the model |
+| "Choosing a voice model needs a paid plan." | Free calls always use GPT-Live 1 | Upgrade to Pro or higher to choose the model |
 | A call ended by itself | Calls end after 30 seconds of silence, including while muted, or with "Voice connection stalled." | Start a new call |
 | "This voice session reached its limit. Start a fresh one anytime." | Each call has a usage limit | Start a new call |
 | "Voice can start once this reply finishes." on **Start voice call** | In most chats, a call can't start while an answer runs or messages wait to send | Wait for the answer, or select **Stop**, then start the call |

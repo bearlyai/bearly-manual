@@ -45,13 +45,19 @@ Bearly makes a Page when you ask it to build, make, or create an app, game, calc
 
 
 
+To put your own images in a Page, attach them or name images already in the chat or its project, and say where they go:
+
+```text
+Make a one-page trip summary with the three photos I attached as a header strip and a caption under each.
+```
+
 **What you get:** a live Page in the chat, saved as an `.html` file you can download and open in a browser. Reopen it later from **Files** → **Generated** in the chat header.
 
 **Limits:**
 
 - Bearly can't see what you type or pick inside a Page. If a follow-up depends on a value you chose there, tell Bearly the value.
 - A Page may remember what you entered when you reopen it in the side panel, but this isn't guaranteed, and the in-chat preview doesn't keep it. To keep a change, ask Bearly to revise the Page.
-- When a Page uses files from the chat, such as images, saving embeds copies of them. Each file can be up to 10 MB and all embedded files together up to 25 MB; links to larger or unavailable files are removed and Bearly is told which.
+- When a Page uses files from the chat or its project, such as images, saving embeds copies of them, so they also show in a downloaded copy. Images larger than 2,000 pixels on their longest side are scaled down to 2,000 first. Each file can be up to 10 MB and all embedded files together up to 25 MB; links to larger or unavailable files are removed and Bearly is told which.
 - A Page is saved to the chat. To save it into the chat's project, ask for that explicitly; you need write access to the project.
 - In a read-only chat you can view and download Pages but not change them.
 - A Page can save a file it makes, such as a CSV export, only when you select a button in it. Bearly asks first with **Save _file name_?** and the file's size; select **Save** to save it to your device. A file over 25 MB shows **Can't save _file name_** instead. Copying to your clipboard also works only from a click in the Page.
@@ -198,26 +204,26 @@ You get a polished document and a published, printable Page with the same text.
 
 You get a single Page that shows a set of images from the chat, with the images inside the file.
 
-**Why it works:** Run Python takes image files from the chat as inputs and can write one HTML file with the images embedded. Any HTML file in a chat renders as a live Page, whatever made it.
+**Why it works:** Bearly can use images in the chat or its project in a Page it writes, and saving the Page embeds them. The downloaded `.html` file shows them without Bearly.
 
-**You need:** any plan. Admin control **Run Python**; **Images** if you generate the images first.
+**You need:** any plan. Admin control **Images** if you generate the images first.
 
 
 
 1. Get the images into the chat — attach them, or make them with `/image`.
-2. Ask Python to build the Page.
+2. Ask Bearly to build the Page.
 
    ```text
-   /python Build a single HTML gallery Page from the images in this chat, with captions from the file names and a lightbox when I click one. Embed the images in the file.
+   Build a gallery Page from the images in this chat, with captions from the file names and a lightbox when I click one.
    ```
 
-3. Open the result — it renders as a Page; download it or prepare it for sharing.
+3. Open the result — download it or prepare it for sharing.
 
 
 
-**Swap in:** ask Bearly to write the Page directly and link the chat's files, which embeds each one up to 10 MB and 25 MB in total; a slideshow instead of a grid.
+**Swap in:** a slideshow instead of a grid; `/python` to resize or crop the images first and build the gallery in the same run (admin control **Run Python**).
 
-**If it stalls:** if the Page is too big to prepare for sharing (over 9 MB), ask Python to shrink the images first.
+**If it stalls:** large images are scaled down to 2,000 pixels on their longest side; each can still be up to 10 MB and all of them together up to 25 MB, and Bearly says which images it left out. If the Page is too big to prepare for sharing (over 9 MB), ask `/python` to shrink the images first.
 
 ### Share a research chat's conclusion without the back-and-forth
 

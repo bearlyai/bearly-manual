@@ -34,7 +34,7 @@ Max is not sold to personal accounts. An organization admin buys it as a seat in
 | [Routines](https://bearly.ai/docs/manual/capabilities/routines.md) (scheduled chats) | Pro | Free accounts see the Routines page with an upgrade prompt |
 | [Best Pick](https://bearly.ai/docs/manual/capabilities/research.md) (product research) | Pro | An upgrade card appears in the chat |
 | [Council](https://bearly.ai/docs/manual/capabilities/research.md) (ask several models at once) | Pro | The chat shows "Council of Experts requires Pro or higher." with **Upgrade to Pro** |
-| Choosing a voice model for [voice calls](https://bearly.ai/docs/manual/chat/voice.md) | Pro | Free calls use a fixed model, and the **Model** menu reads "Choosing a voice model needs a paid plan." |
+| Choosing a voice model for [voice calls](https://bearly.ai/docs/manual/chat/voice.md) | Pro | Free calls use GPT-Live 1, and the **Model** menu reads "Choosing a voice model needs a paid plan." |
 | [Deep Research](https://bearly.ai/docs/manual/capabilities/research.md), standard tier | Analyst | **Run Research** opens the upgrade flow |
 | Deep Research, **Ultra** tier | Research | **Run Research** opens the upgrade flow |
 | [People Search](https://bearly.ai/docs/manual/capabilities/research.md) | Analyst | An upgrade card appears in the chat |

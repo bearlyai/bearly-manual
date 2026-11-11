@@ -53,10 +53,11 @@ Run Python executes a complete Python script in a fresh cloud sandbox and return
 **Limits:**
 
 - Each run starts from scratch. Nothing carries over between runs unless Bearly passes a file from an earlier run back in.
-- Runs are short and resource-limited. Long jobs, endless loops, and heavy processing of large media may not finish; split the work.
+- Each run stops after 60 seconds and has 2 GB of memory and one CPU core. A run that hits the time limit says so. Split long work, such as text recognition over many pages, into several runs.
 - Up to five output files per run; extras are dropped.
 - The sandbox has internet access for small public downloads, but it can't reach your computer, your local files, or your apps. For that, use [Work locally](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md) in the desktop app.
 - Not available in [Routines](https://bearly.ai/docs/manual/capabilities/routines.md).
+- If your organization turns off **Run Python**, Bearly says so when a request needs it, such as an Excel or Word file or an exact count over a whole spreadsheet. It then offers what it can do without it, such as a CSV that opens in Excel, and an organization admin can turn the control back on.
 
 **Combines with:** [Charts](#charts), which draw from a CSV that Python prepares; [Pages](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md), which can carry Python's results; [Text to speech](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#text-to-speech) and [Make Video](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#make-video), whose files Python can merge.
 

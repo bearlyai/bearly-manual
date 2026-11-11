@@ -60,13 +60,13 @@ Every file appears as a card in the chat. Select the card, or **Open** on it, to
 | Word, Excel, PowerPoint, OpenDocument, `.pages`, `.numbers`, `.key`, `.epub` | Converted to PDF for the preview | PDF view; **Download** offers **PDF** or **Original** | Reads and searches the text; the Document editor edits Word, Excel, and PowerPoint files |
 | CSV, TSV, and pipe-separated (`.csv`, `.tsv`, `.tab`, `.psv`) | Spreadsheet grid showing rows × columns, with **Copy table** and **Open** | Editable grid | Searches it as text; Run Python can analyze it; Charts can draw from it |
 | Markdown | Rendered, with **Copy** and **Open** | Rendered | Reads and searches it |
-| Images | Image, or a stack of images with a count | Image viewer with arrows, thumbnails, zoom, copy, and download | Looks at it with View Media; Touch Up can edit it |
+| Images | Image, or a stack of images with a count | Image viewer with arrows, thumbnails, zoom, copy, and download | Looks at it with View Media; Touch Up can edit it. Reads and searches an SVG's source as text |
 | Audio | Compact player | Full player | Transcribe turns speech into text |
 | Video | Video player | Video player | View Media watches it; Transcribe turns speech into text |
 | HTML | Live [Page](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) preview | The live Page | Reads it |
 | JSON, plain text (`.txt`), logs | Text preview | Text | Reads it |
 | Code (about 60 file types, such as `.py`, `.ts`, `.go`, `.sql`, `.yaml`, `.xml`, `.jsonl`, Dockerfile, and Makefile) | Syntax-highlighted preview | Syntax-highlighted | Reads it |
-| Calendar (`.ics`) and anything else | Name card | Panel with **Download** | Can pass it to Run Python |
+| Calendar (`.ics`) and anything else | Name card | Panel with **Download** | Can pass it to Run Python. Reads plain-text files with an extension Bearly doesn't know, such as `.tex` or `.har` |
 
 Word covers `.doc`, `.docx`, `.docm`, `.dot`, `.dotx`, and `.dotm`. Excel covers `.xls`, `.xlsx`, `.xlsm`, `.xlt`, `.xltx`, and `.xltm`. PowerPoint covers `.ppt`, `.pptx`, `.pptm`, `.pot`, `.potx`, `.potm`, and `.pps`. OpenDocument covers `.odt`, `.ods`, `.odp`, and `.odg`.
 
@@ -83,7 +83,7 @@ When a chat has files, its header shows **Files**, a files icon with a count. It
 
 Filters with no files are hidden.
 
-Files are grouped by day (**Today**, **Yesterday**, then the date), newest first. Photos and PDFs show thumbnails. Select a file to open it in its own tab in the panel; a photo opens the image viewer on every image in the chat. Each file's **Jump to message** scrolls the chat to the message the file came with. In the iOS app, PDFs open outside the app. You can also ask in chat with `/files` (**Browse Files**) and Bearly lists them.
+Files are grouped by day (**Today**, **Yesterday**, then the date), newest first. Photos and PDFs show thumbnails. Select a file to open it in its own tab in the panel; a photo opens the image viewer on every image in the chat. Each file's **Jump to message** scrolls the chat to the message the file came with. In the iOS app, PDFs open outside the app. You can also ask in chat with `/files` (**Browse Files**) and Bearly lists them. To get a file's card back in the chat, with its **Download** button, ask Bearly to show it again. This doesn't change the file or save a new version.
 
 To find a file in any chat, select **Search chats** at the top of the sidebar (or press <kbd>⌘</kbd> <kbd>F</kbd>, <kbd>Ctrl</kbd> <kbd>F</kbd> on Windows and Linux), type in **Search chats and files...**, and switch to the **Files** tab. Results are labelled **Uploaded**, **Generated**, or **Saved by Bearly**. End-to-end encrypted chats aren't searched. See [Organize, find, and share](https://bearly.ai/docs/manual/chat/organize.md).
 
@@ -132,7 +132,7 @@ Bearly has four document tools. They appear once the chat or its project has at 
 | --- | --- | --- | --- |
 | `/search-docs` | Search Docs | Searches every attached and project document by meaning and returns cited passages | "Where do our contracts mention auto-renewal?" |
 | `/read-document` | Read Doc | Reads a document page by page | Reading a section in full before quoting it |
-| `/find-in-document` | Scan Doc | Finds exact words or a pattern in one document, with page, line, and surrounding text | Every mention of a name, clause number, or figure |
+| `/find-in-document` | Scan Doc | Finds exact words or a pattern in one document or up to 20 at once, with page, line, and surrounding text, grouped by file | Every mention of a name, clause number, or figure |
 | `/summarize` | Summarize Doc | Writes a structured summary of a long document | An overview before you dig in |
 
 **Use it when:** comparing terms across several agreements, pulling every figure from a report with its page, checking a claim against the source, or answering questions from a folder of policies.
@@ -156,7 +156,7 @@ Bearly has four document tools. They appear once the chat or its project has at 
 
 **What you get:** an answer with clickable citations, and sometimes a strip of matching document sources above it.
 
-**Limits:** one search returns up to 10 sources. Spreadsheets and CSV files are searched as text, not as tables; for sums, filters, or pivots, use [Run Python](https://bearly.ai/docs/manual/capabilities/data-and-code.md#run-python). Search Docs doesn't cover audio, video, or images. Scan Doc returns 10 matches at a time and pages through the rest.
+**Limits:** one search returns up to 10 sources. Spreadsheets and CSV files are searched as text, not as tables; for sums, filters, or pivots, use [Run Python](https://bearly.ai/docs/manual/capabilities/data-and-code.md#run-python). Search Docs doesn't cover audio, video, or images. Scan Doc returns 10 matches at a time from one document, or up to 30 across several, and pages through the rest. Read Doc uses the document's own page numbers and tells Bearly which pages are blank or only images, so a blank cover page doesn't stop it.
 
 **Combines with:** [Run Python](https://bearly.ai/docs/manual/capabilities/data-and-code.md) for numbers in a spreadsheet, the [Document editor](#document-editor) to turn findings into a Word or PDF file, and [Research](https://bearly.ai/docs/manual/capabilities/research.md) to check your documents against public sources.
 
@@ -232,7 +232,7 @@ What it can do, by format:
 
 **What you get:** one or more new files in the chat. Your original stays unchanged, so you can compare them or ask for another pass.
 
-**Limits:** up to five new files per run. Runs are short and resource-limited, so split a big batch into a few named requests. Check the downloaded file in the app where it will be used before you send or sign it; conversion can shift layout, fonts, or page breaks.
+**Limits:** up to five new files per run. Each run stops after 60 seconds, so split a big batch into a few named requests. Check the downloaded file in the app where it will be used before you send or sign it; conversion can shift layout, fonts, or page breaks.
 
 **Combines with:** the [document research tools](#research-your-documents-search-docs-read-doc-scan-doc) to gather facts first, [Share file](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md#share-and-publish-a-page) to give the result a Page and link, and [Run Python](https://bearly.ai/docs/manual/capabilities/data-and-code.md) for analysis that doesn't need a polished file.
 
@@ -299,7 +299,7 @@ You get a cited comparison table and a Word file with your proposed changes as t
 
 
 
-**Swap in:** Scan Doc for the first step when you need every exact mention of a term; a project with **Always search documents** instead of attaching the files each time; a filled PDF instead of a DOCX for a form.
+**Swap in:** Scan Doc for the first step when you need every exact mention of a term, across up to 20 agreements in one search; a project with **Always search documents** instead of attaching the files each time; a filled PDF instead of a DOCX for a form.
 
 **If it stalls:** if citations point to the wrong file, name the files with `@`. If the run fails, select the **Run Python** step, read **Error**, and ask Bearly to retry with one file.
 

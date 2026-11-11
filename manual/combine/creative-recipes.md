@@ -62,12 +62,12 @@ You get a generated product image, a short video animated from it, a recorded vo
 - **Your own photo for Imagine:** attach a product photo and start at step 2 with "Animate the attached photo…".
 - **An end frame:** name a second image as the last frame. Make Video then animates from the first image to the second.
 - **Subtitles:** send `/transcribe` on the merged clip, then select **Download subtitles** in the transcript viewer for an `.srt` file to upload with the clip.
-- **A fix pass:** ask "Watch the clip and list anything inconsistent." Bearly views the video, and `/edit-video` can change a clip of 3 to 10 seconds under 50 MB.
+- **A fix pass:** ask "Watch the clip and list anything inconsistent." Bearly views the video, and `/edit-video` can change a clip of 3 to 10 seconds, 720 to 2160 pixels on each side, and under 50 MB, which a standard-resolution clip fits.
 
 **If it stalls:**
 - Make Video doesn't retry on its own, and every attempt counts as usage. If one fails ("The video model could not finish this request. Try again later."), ask again or change the prompt.
 - Videos run 4 to 15 seconds. If the voiceover is longer than the clip, ask for a shorter script or a longer video.
-- Run Python runs are time-limited, so keep merges to short clips.
+- Each Run Python run stops after 60 seconds, so keep merges to short clips.
 
 ## Turn a talk into quotes, a short cut, and a spoken recap
 
