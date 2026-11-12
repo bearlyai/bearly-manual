@@ -20,7 +20,7 @@ Every Bearly capability is a building block: it takes something in, does one job
 **Every result lands in the chat.** A block leaves its output in one of five places:
 
 - **Text in the conversation**: the answer, plus what tools return to the AI, such as search results, page text, or data.
-- **Files in the chat**: uploads and everything Bearly saves or makes, such as Pages, CSV and Markdown files, images, audio, video, PDFs, and transcripts. They're listed under **Files** in the chat header, under **Uploaded** and **Generated**, and each has an ID the AI can hand to the next tool.
+- **Files in the chat**: uploads and everything Bearly saves or makes, such as Pages, CSV and Markdown files, images, audio, video, PDFs, and transcripts. They're listed under the chat's title → **Files**, under **Uploaded** and **Generated**, and each has an ID the AI can hand to the next tool.
 - **Cards**: interactive results such as a Deep Research report, a **Chart**, a YouTube video card, a Best Pick card, or the image editor. Some cards also save files.
 - **Links**: a Page you publish gets a stable bearly.sh link.
 - **Messages outside Bearly**: an email to you or a teammate, or a text to your phone.
@@ -87,7 +87,7 @@ Details: [Documents](https://bearly.ai/docs/manual/capabilities/documents.md).
 | **Summarize Doc** `/summarize` | A long document | A **Deep Summary** in the reply | Any | All | Yes | No |
 | **Document editor** `/document` | A document task, plus any PDF, Word, PowerPoint, or Excel files in the chat to work on | New or edited files: filled PDF forms, .docx files with tracked changes, decks, spreadsheets with formulas | Any | All | No | No |
 | **Fix Grammar** `/grammar` | A passage of text | An editor card with suggested fixes you accept one at a time or all at once | Any | All | No | No |
-| **Chat files** `/create-file`, `/edit-file`, `/read-file`, `/rename-file`, `/files` | Content the AI writes, or a file already in the chat | Pages (HTML), Markdown, plain text, CSV, and JSON files, with a new version on every edit; or an existing file's card shown again, with no new version | Any | All | Yes | No |
+| **Chat files** `/create-file`, `/edit-file`, `/read-file`, `/rename-file`, `/files` | Content the AI writes, or a file already in the chat | Pages (HTML), Markdown, plain text, CSV, and JSON files, with a new version on every edit; editing an uploaded text file saves an edited copy; or an existing file's card shown again, with no new version | Any | All | Yes | No |
 
 ### Data and code
 
@@ -145,7 +145,7 @@ Details: [Routines](https://bearly.ai/docs/manual/capabilities/routines.md), [Co
 | **Bearly Browser** | Sites you approve | Page text, screenshots, clicks, typing, form submissions, and downloads saved to the chat (one file up to 50 MiB) | Any | Desktop | Only with the routine's **Browser access**, on the sites you list | No |
 | **Chrome control** | Your open Chrome tabs | Page text, screenshots, clicks and typing, console and network detail | Any | Desktop app, with Chrome and the Bearly extension | No | No |
 | **Computer Use** `/computer` | A task in an app that's open on screen | The task done by clicking and typing, and a **Computer Use** step listing the actions | Any | Desktop | No | No |
-| **Chat management** (ask in any chat) | A request to list, read, create, rename, move, or delete chats | Your chat list, an earlier chat's contents, or the change; listing, reading, and deleting ask you first | Any | All | No | No |
+| **Chat management** (ask in any chat) | A request to list, read, create, rename, move, or delete chats, or to create a project | Your chat list, an earlier chat's contents, or the change; listing, reading, and deleting ask you first | Any | All | No | No |
 | **Prompt templates** (sidebar **Prompt templates**; run from `/` → **Skills**) | Values for the template's fields, and optional files | A filled form in the chat that runs as a prompt and can run again with new values | Any | All | No | No |
 | **Remote modules** (tools labeled `fn-…`) | Tools from a server you or your admin add | That server's results | Any | Web app and desktop app; servers on a private network need the desktop app | No | No |
 
@@ -157,7 +157,7 @@ Details: [Organize chats](https://bearly.ai/docs/manual/chat/organize.md) and [P
 |---|---|---|---|---|---|---|
 | **File reference** (`@` → **Assets**) | Any file in the chat or its project | An exact pointer the AI uses for that turn | Any | All | — | — |
 | **Projects** (sidebar **Projects**) | Files on the project's **Files** tab, project instructions, and default chat settings | Shared files and defaults for every chat in the project | Any | All; **Sync a folder** needs the desktop app | — | — |
-| **Share** (`/share`, the header **Share** button, or **Share file** on a file) | The conversation, or one file | A Page with artwork and a link preview that you review, then publish to a stable bearly.sh link | Any | All | No | — |
+| **Share** (`/share`, the **Share** button at the chat's top right, or **Share file** on a file) | The conversation, or one file | A Page with artwork and a link preview that you review, then publish to a stable bearly.sh link | Any | All | No | — |
 | **Download as Markdown** (command menu) | The chat | A `.md` file of the conversation, with tool activity if you include it | Any | All | — | — |
 | **Search chats and files** (**Search chats** at the top of the sidebar, or <kbd>⌘</kbd> <kbd>F</kbd>) | Words or a topic | Matching chats and files, including files Bearly made | Any | All | — | — |
 
@@ -177,6 +177,7 @@ Each rule names an output type and the blocks that can take it next. These conne
 ### Files feed tools
 
 - **Any file in the chat or its project** → `@` it by name under **Assets**, so the next tool uses that exact file.
+- **A file in a project chat** → ask Bearly to copy it into the project, so every chat in the project can use it.
 - **A document in the chat or project** (PDF, Office file, text) → **Search Docs**, **Read Doc**, **Scan Doc**, and **Summarize Doc**. These tools appear once the chat or its project has at least one file.
 - **A spreadsheet or raw data file** → **Run Python** reads it and writes a chart-ready CSV → **Create chart**. Charts read data only from a CSV file in the chat: up to 10 columns and 2 MB, one row for a KPI, up to 100 rows for a bar chart, and up to 2,000 rows for a line chart. They never sample or cut rows to fit.
 - **A CSV that's already chart-ready** → **Create chart** directly, with no Python step.

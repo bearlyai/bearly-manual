@@ -32,6 +32,8 @@ A project is the right container when you'll come back to the same material acro
 
 You can also start a chat in a project from the new-chat screen. Select the project chip at the foot of the composer (it reads **No project**; its tooltip says "Start this chat in a project"), then search with **Find or create a project...**, pick from **Recent** or **All projects**, or choose **New project**. **No project** starts an ordinary chat. The chip can't be changed once the chat starts; to move the chat later, use **Move to project...**.
 
+Or ask Bearly in any chat, for example "Create a project called Client onboarding". It creates an empty project without leaving your chat, and you can then ask it to move chats into it. If a project with that name already exists, Bearly asks whether to use that one or make a second. It follows the same **Create projects** policy; when your organization requires project passwords, create the project yourself with **New project**, because only you can set the password.
+
 ## Find your way around a project
 
 Select a project in the sidebar to open its page. It opens on the **Chats** tab. The header shows the project's icon and name, whether it's **Private**, **Shared**, or "Shared with 3 people", **Password protected** or **Device encrypted** if it is, and who created it. **Share** opens the **Sharing** tab; at phone width it's in the **More project actions** menu (**…**). The page has four tabs:
@@ -79,6 +81,8 @@ Projects have no public link. Only people you share with can open them.
 - **Search files** filters by name.
 - To work on several files, hover a file and tick its checkbox, or use <kbd>⌘</kbd>-click or <kbd>Shift</kbd>-click (<kbd>Ctrl</kbd>-click on Windows and Linux). A bar shows how many are selected, with **Select all**, **Clear**, and **Delete**.
 - Each file's **…** offers **Details**, **Download**, **Rename**, **Select**, and **Delete…**. **Details** opens a panel beside the list (a sheet on phones) with the file's size, type, and when it was added; **About this file** (topics, people, dates, and its text); its reading status, with **Get help** if a step failed; where it was synced from; **Download**; and delete.
+
+To keep a file from a chat in the project, ask in a chat that's in the project, for example "Copy budget.xlsx into this project". Bearly saves a copy on the **Files** tab and shows it in the chat with the project's name under the file. The original stays in the chat. You need Writer access, and each file can be up to 100 MB. Project files aren't end-to-end encrypted, so when you copy a file out of an end-to-end encrypted chat, Bearly tells you the project copy is a regular project file.
 
 Deleting a project file is permanent; Bearly asks "Delete this file?" first.
 

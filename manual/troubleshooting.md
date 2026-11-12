@@ -325,7 +325,7 @@ See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
 
 | You see | Why | What to do |
 |---|---|---|
-| **Publish** is greyed out: "Use Share to add a preview image and conversation brief before publishing an update." | A Page must be prepared before it's published | Select **Share file** on the Page or **Share** in the header, then **Prepare share** |
+| **Publish** is greyed out: "Use Share to add a preview image and conversation brief before publishing an update." | A Page must be prepared before it's published | Select **Share file** on the Page or **Share** in the chat's top-right corner, then **Prepare share** |
 | "Choose a Page under 9 MB or a file under 300 MB." | The item is too large to share | Share a smaller version |
 | "Using simple artwork; review it before publishing" | Artwork couldn't be generated | Check the preview, then publish or **Prepare again** |
 | "Building stopped. Nothing was published." | You selected **Stop building** | Select **Prepare again** |

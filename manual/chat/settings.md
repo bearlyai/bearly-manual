@@ -183,6 +183,8 @@ With the switch off, nothing from your profile is added to your chats.
 
 Bearly tells the AI today's date, so "tomorrow", "next Friday", and "last week" work out correctly. There's no setting for it. On the first message of a chat, and again whenever the date has changed or at least 12 hours have passed since the last message, Bearly gives the AI your local date, your time zone, and how long it's been since the previous message (for example, "about 3 days"). None of this is saved in the chat.
 
+When a question needs the exact time, such as "how long until 5 pm?", the AI checks your device's current time and time zone instead of guessing.
+
 ## Combinations to try
 
 **Your profile everywhere, with one-off exceptions.** In **Personalization**, turn on **Use in chats**, then set **New chats** → **Response Style** to **Concise** and **Language** to the language you work in. Every new chat starts that way. For a single chat that needs a different voice, add **Instructions** in **This chat**; they apply to that chat only.

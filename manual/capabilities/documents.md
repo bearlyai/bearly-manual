@@ -74,7 +74,7 @@ Bearly pulls the text out of documents up to 200 MB so the document tools can se
 
 ## Find files again with Files
 
-When a chat has files, its header shows **Files**, a files icon with a count. It opens the side panel on **Files**: every file in the chat, newest first and grouped by day. Search with **Search files**, or narrow the list with an available filter, each showing its count:
+When a chat has files, select the chat's title → **Files**, which shows their count. It opens the side panel on **Files**: every file in the chat, newest first and grouped by day. Search with **Search files**, or narrow the list with an available filter, each showing its count:
 
 - **All** — every file.
 - **Uploaded** — files you attached.
@@ -104,9 +104,13 @@ These file tools are in the `/` menu under **Tools**:
 | `/files` | Browse Files | Lists the chat's files |
 | `/read-file` | Read Asset | Reads a file |
 | `/create-file` | Create Asset | Writes a new file: a Page (HTML), Markdown, plain text, CSV, or JSON |
-| `/edit-file` | Edit Asset | Edits a file Bearly wrote; each edit saves a new version |
+| `/edit-file` | Edit Asset | Edits a text file, including code, HTML, CSV, and JSON. A file Bearly wrote or a tool saved, such as a Python output, gets a new version; a file you uploaded gets an edited copy and your upload stays as it was |
 | `/rename-file` | Rename File | Renames a file without making a new version |
 | `/analyze-media` | View Media | Looks at an image or video |
+
+Ask Bearly to edit a file you uploaded and it saves the edited copy as a new file in the chat, listed under **Generated**; your upload doesn't change. Later edits continue that copy, one version each.
+
+Ask Bearly to delete a file it made in the chat and it asks first: **Delete "file name"?**, with **Allow** and **Deny**. Deleting a file Bearly edited removes every version, and **Details** shows how many. Full access never skips this question. Bearly can't delete files you uploaded or project files. A message that showed a deleted file now shows **File unavailable**.
 
 ## Preview, edit a table, and download
 

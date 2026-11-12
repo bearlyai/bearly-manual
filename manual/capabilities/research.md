@@ -504,7 +504,7 @@ You get a cited report, a chart of its key numbers, and a Page you can send to p
    Chart those estimates as a line chart, one line per source.
    ```
 
-4. Type `/share`, or select **Share** in the chat header and then **Prepare share** — Bearly turns the substance of the chat into a Page and opens it, marked **Ready to share**. Review it, then select **Publish** in its header, choose the **Audience**, and select **Publish**.
+4. Type `/share`, or select **Share** in the top-right corner of the chat and then **Prepare share** — Bearly turns the substance of the chat into a Page and opens it, marked **Ready to share**. Review it, then select **Publish** in its header, choose the **Audience**, and select **Publish**.
 
 
 

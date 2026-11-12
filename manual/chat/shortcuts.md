@@ -63,7 +63,7 @@ Web browsers keep some key combinations for themselves. If a shortcut does somet
 | Action | Keys |
 |---|---|
 | Move, run, and close in the command menu | <kbd>↑</kbd> <kbd>↓</kbd>, <kbd>Enter</kbd>, <kbd>Esc</kbd> |
-| Save or undo a title you're editing in the chat header | <kbd>Enter</kbd> to save, <kbd>Esc</kbd> to put the old title back |
+| Save or undo a chat title you're renaming | <kbd>Enter</kbd> to save, <kbd>Esc</kbd> to put the old title back |
 | Submit a Prompt Template form | <kbd>Shift</kbd> <kbd>Enter</kbd> |
 | Confirm in a confirmation dialog | <kbd>Shift</kbd> <kbd>Enter</kbd> |
 | Close search, Settings, the image viewer, or the side panel (files, previews, Canvas), close the sidebar on a phone, or stop selecting chats | <kbd>Esc</kbd> |

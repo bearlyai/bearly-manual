@@ -12,7 +12,7 @@ Index: [https://bearly.ai/docs/manual.md](https://bearly.ai/docs/manual.md)
 - [What Bearly is](https://bearly.ai/docs/manual/what-is-bearly.md): The facts about Bearly in one place, including what it does, who it's for, which models and platforms it covers, how plans and privacy work, and where to go next.
 - [Get Bearly on every device](https://bearly.ai/docs/manual/get-bearly.md): Where Bearly runs (web app, phone browsers, desktop app, iOS app, Chrome extension), how to install and sign in on each, what the desktop app adds, and a table of which capabilities work on which platform.
 - [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md): Bearly's plans and prices, which features each plan unlocks, how AI credits and the usage meter work, what you see at a limit, Credit Boost, and how to change, cancel, or restore a plan bought on the web, in the iOS app, or as an organization seat.
-- [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md): A map of Bearly's screens and where each control lives — the sidebar and account menu, the New Chat launcher, the chat header, thread, side panel, composer, and context strip, the command menu, the Settings window, the other pages, and what changes in the desktop app, on phones, and in the iOS app.
+- [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md): A map of Bearly's screens and where each control lives — the sidebar and account menu, the New Chat launcher, the chat's title menu and Share button, thread, side panel, composer, and context strip, the command menu, the Settings window, the other pages, and what changes in the desktop app, on phones, and in the iOS app.
 
 ### Chat
 
@@ -615,7 +615,7 @@ If an organization admin set a spending limit for you, the limit shown here can 
 
 ---
 title: "Tour the workspace"
-description: "A map of Bearly's screens and where each control lives — the sidebar and account menu, the New Chat launcher, the chat header, thread, side panel, composer, and context strip, the command menu, the Settings window, the other pages, and what changes in the desktop app, on phones, and in the iOS app."
+description: "A map of Bearly's screens and where each control lives — the sidebar and account menu, the New Chat launcher, the chat's title menu and Share button, thread, side panel, composer, and context strip, the command menu, the Settings window, the other pages, and what changes in the desktop app, on phones, and in the iOS app."
 canonical: "https://bearly.ai/docs/manual/workspace-tour/"
 markdown: "https://bearly.ai/docs/manual/workspace-tour.md"
 ---
@@ -624,7 +624,7 @@ markdown: "https://bearly.ai/docs/manual/workspace-tour.md"
 
 HTML: [https://bearly.ai/docs/manual/workspace-tour/](https://bearly.ai/docs/manual/workspace-tour/)
 
-> A map of Bearly's screens and where each control lives — the sidebar and account menu, the New Chat launcher, the chat header, thread, side panel, composer, and context strip, the command menu, the Settings window, the other pages, and what changes in the desktop app, on phones, and in the iOS app.
+> A map of Bearly's screens and where each control lives — the sidebar and account menu, the New Chat launcher, the chat's title menu and Share button, thread, side panel, composer, and context strip, the command menu, the Settings window, the other pages, and what changes in the desktop app, on phones, and in the iOS app.
 
 The web app, a phone browser, the desktop app, and the iOS app all run the same Bearly app, so the screens on this page look alike everywhere. Each area below names its controls as the app shows them and links to the page that covers it in depth. The browser extension is separate: it has its own side panel for quick page actions, covered in [Get Bearly](https://bearly.ai/docs/manual/get-bearly.md).
 
@@ -687,16 +687,18 @@ When a release newer than the last one you saw on this device is out, **What's N
 
 ## The chat screen
 
-### Header
+### Title menu and Share
 
-From left to right:
+The chat's title sits at the top center, and the thread scrolls up behind it. In a project chat, the project's name comes first. Select the title to open the chat's menu:
 
-- **Project and title.** In a project chat, the project's name comes first; select it to open the project's page. Select the title to rename the chat: <kbd>Enter</kbd> saves, <kbd>Esc</kbd> reverts.
-- **Files.** Appears once the chat has files, with their count. It opens the side panel on **Files**, or closes it. See [The side panel](#the-side-panel).
-- **New chat.** A pen icon, shown only while the sidebar is hidden.
-- **Share.** Turns the substance of the conversation into a Page you review before publishing. See [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md).
-- **Open Browser.** In the desktop app, a globe that opens Bearly Browser. See [Browser and computer use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md).
-- **…** opens the command menu. See [The command menu](#the-command-menu).
+- **Rename.** Turns the title into a text box: <kbd>Enter</kbd> saves, <kbd>Esc</kbd> reverts.
+- **Open** plus the project's name, in a project chat. Opens the project's page. See [Projects](https://bearly.ai/docs/manual/projects.md).
+- **Files.** Appears once the chat has files, with their count. It opens the side panel on **Files**; while that tab is showing, it reads **Hide files** and closes the panel. See [The side panel](#the-side-panel).
+- **Open Browser.** In the desktop app, opens Bearly Browser. When agents have tabs open, it shows how many, and how many are working. It's hidden while Browser is open. See [Browser and computer use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md).
+- **New chat** (<kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>N</kbd>, or <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>N</kbd> on Windows and Linux). Starts a new chat, in the same project when you're in a project chat.
+- **All commands** (<kbd>⌘</kbd> <kbd>K</kbd>, or <kbd>Ctrl</kbd> <kbd>K</kbd>). Opens the command menu. See [The command menu](#the-command-menu).
+
+**Share**, the round button in the top-right corner, turns the substance of the conversation into a Page you review before publishing. See [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md).
 
 ### Thread
 
@@ -742,9 +744,9 @@ While you edit an earlier message, the strip shows **Editing message** with **Ca
 
 ### The command menu
 
-Press <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux) or select **…** in the header. It shows the chat's title, a **Search...** box, and two groups:
+Press <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux) or select the chat's title → **All commands**. It shows the chat's title, a **Search...** box, and two groups:
 
-- **Actions:** **New**, **Delete & New**, **Delete**, **Rename** (opens the title in the header), **Refresh Chat**, **Generate New Name**, **Download as Markdown**, **New Routine** (Pro and higher), and **Show all...**, which adds **Show Release Notes**.
+- **Actions:** **New**, **Delete & New**, **Delete**, **Rename** (opens the chat's title for editing), **Refresh Chat**, **Generate New Name**, **Download as Markdown**, **New Routine** (Pro and higher), and **Show all...**, which adds **Show Release Notes**.
 - **Switch Chats:** every chat, including project chats.
 
 See [Keyboard shortcuts](https://bearly.ai/docs/manual/chat/shortcuts.md).
@@ -1510,7 +1512,7 @@ Chats live in the left sidebar, grouped by project, pins, and date. This page co
 
 
 1. Select **New chat** (the pen icon at the top of the sidebar, next to search) or **Chat** — opens the new-chat screen, outside any project.
-2. Or press <kbd>⌘</kbd> <kbd>N</kbd> or <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>N</kbd> (<kbd>Ctrl</kbd> <kbd>N</kbd> or <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>N</kbd> on Windows and Linux; a web browser may keep these keys for its own windows), use the pen icon in the chat header (shown when the sidebar is hidden), or choose **New** in the command menu — from a project chat, these start the new chat in the same project. On a project's page, the shortcut and the **Chats** tab's **New chat** do too.
+2. Or press <kbd>⌘</kbd> <kbd>N</kbd> or <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>N</kbd> (<kbd>Ctrl</kbd> <kbd>N</kbd> or <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>N</kbd> on Windows and Linux; a web browser may keep these keys for its own windows), select the chat's title → **New chat**, or choose **New** in the command menu — from a project chat, these start the new chat in the same project. On a project's page, the shortcut and the **Chats** tab's **New chat** do too.
 3. To pick a project on the new-chat screen, use the project chip at the foot of the composer (it reads **No project**; its tooltip says "Start this chat in a project") — search for a project, choose from **Recent** or **All projects**, create one with **New project**, or choose **No project**. The project is fixed once the chat starts.
 4. Type your first message and send.
 
@@ -1526,8 +1528,8 @@ Bearly titles each chat automatically from your first message, in the background
 
 
 
-1. Click the title in the chat header and type a new one — <kbd>Enter</kbd> saves, <kbd>Esc</kbd> puts back the old title.
-2. Or open **More actions** (the **…** on the chat's sidebar row) → **Rename**. **Rename** in the command menu closes the menu and opens the title in the chat header.
+1. Select the chat's title at the top of the chat → **Rename**, and type a new one — <kbd>Enter</kbd> saves, <kbd>Esc</kbd> puts back the old title.
+2. Or open **More actions** (the **…** on the chat's sidebar row) → **Rename**, or choose **Rename** in the command menu.
 3. To have Bearly write a fresh title from the conversation so far, open the command menu and choose **Generate New Name**. In most chats it works once the chat has finished opening; if nothing changes, choose it again.
 
 
@@ -1665,14 +1667,14 @@ Search finds messages, files you uploaded, and files Bearly created, across all 
 
 ## The command menu
 
-Press <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd>) or select **…** in the chat header to open the command menu. It shows the chat's title, a **Search...** box, an **Actions** group, and **Switch Chats**, which lists every chat, including project chats. Use <kbd>↑</kbd> <kbd>↓</kbd> to move, <kbd>Enter</kbd> to run, and <kbd>Esc</kbd> to close.
+Press <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd>) or select the chat's title → **All commands** to open the command menu. It shows the chat's title, a **Search...** box, an **Actions** group, and **Switch Chats**, which lists every chat, including project chats. Use <kbd>↑</kbd> <kbd>↓</kbd> to move, <kbd>Enter</kbd> to run, and <kbd>Esc</kbd> to close.
 
 | Action | What it does |
 |---|---|
 | **New** | Start a new chat (in the same project when you're in a project chat) |
 | **Delete & New** | Delete this chat and start a new one, after you confirm |
 | **Delete** | Delete this chat, after you confirm |
-| **Rename** | Close the menu and edit the title in the chat header (<kbd>Enter</kbd> saves, <kbd>Esc</kbd> puts the old title back) |
+| **Rename** | Close the menu and edit the chat's title (<kbd>Enter</kbd> saves, <kbd>Esc</kbd> puts the old title back) |
 | **Refresh Chat** | Reload this chat's data |
 | **Generate New Name** | Retitle the chat from the conversation |
 | **Download as Markdown** | Export the chat as a Markdown file |
@@ -1708,7 +1710,7 @@ Sharing doesn't hand out your conversation. Bearly turns the substance of the ch
 
 
 
-1. Select **Share** in the chat header — the **Share conversation** panel opens.
+1. Select **Share** in the top-right corner of the chat — the **Share conversation** panel opens.
 2. Select **Prepare share** — Bearly writes the Page. The panel notes "Your full conversation isn't shared. You review the Page before publishing."
 3. When it's ready, the Page opens on its own, marked "Ready to share" — check it, then select **Publish** in its header to choose who can open it. If you closed it, select **Share** again and choose **Review and publish**, or **Create another** for a different take.
 
@@ -1733,15 +1735,16 @@ What Bearly can do from a chat:
 - Create a new chat, optionally in a project, without switching you to it.
 - Read another chat, at three levels of detail: your messages only, the conversation, or the conversation with tool activity.
 - Rename chats, and move them into or out of projects.
+- Copy a file from another chat into this one, so it can open, edit, or run code on it here.
 - Delete chats.
 
-Before it lists your chats, Bearly asks for permission and explains: "Lists your chats and their titles so Bearly can find the right one." Before it reads another chat, it names that chat and says: "Reads another chat's full history into this chat. Allow only chats you want this chat to see." You can allow it for this response, for this session, or for this chat on this device. Before deleting, Bearly shows "Delete this chat?" or how many chats it will delete, with their titles. If you allow deleting for longer than one request, later deletions asked for in that chat go ahead within that scope without asking again. **Full access** never skips any of these questions.
+Before it lists your chats, Bearly asks for permission and explains: "Lists your chats and their titles so Bearly can find the right one." Before it reads another chat, it names that chat and says: "Reads another chat's full history into this chat. Allow only chats you want this chat to see." Before it copies a file from another chat, it names that chat and says: "Copies a file from another chat into this chat. Allow only chats you want this chat to see." Reading and copying share one permission, so allowing one for the session or chat also allows the other. You can allow it for this response, for this session, or for this chat on this device. Before deleting, Bearly shows "Delete this chat?" or how many chats it will delete, with their titles. If you allow deleting for longer than one request, later deletions asked for in that chat go ahead within that scope without asking again. **Full access** never skips any of these questions.
 
 ```text
 Find my chats about the Q3 budget, rename each one to start with "Q3 budget:", and move them all into the Finance project.
 ```
 
-**Limits:** Up to 20 chats per delete, and a chat can't delete itself. Reading returns up to 100 turns at a time, and a very large chat comes back as a Markdown file. In most chats, if the other chat can't be read from here, Bearly says "Couldn't read that chat here. Open it, then try again." Regular chats can't see your end-to-end encrypted chats. Bearly can't send messages from one chat into another.
+**Limits:** Up to 20 chats per delete, and a chat can't delete itself. Reading returns up to 100 turns at a time, and a very large chat comes back as a Markdown file. In most chats, if the other chat can't be read from here, Bearly says "Couldn't read that chat here. Open it, then try again." Files up to 100 MB can be copied, and the original stays in its chat. Regular chats can't see your end-to-end encrypted chats, and an encrypted chat that's locked on this device can't be read or copied from. Bearly can't send messages from one chat into another.
 **Combines with:** [Memories](https://bearly.ai/docs/manual/chat/settings.md#memories) to find the right earlier chat by meaning; [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md) for how approvals work.
 
 ## What's New
@@ -1954,6 +1957,8 @@ With the switch off, nothing from your profile is added to your chats.
 ## Date awareness
 
 Bearly tells the AI today's date, so "tomorrow", "next Friday", and "last week" work out correctly. There's no setting for it. On the first message of a chat, and again whenever the date has changed or at least 12 hours have passed since the last message, Bearly gives the AI your local date, your time zone, and how long it's been since the previous message (for example, "about 3 days"). None of this is saved in the chat.
+
+When a question needs the exact time, such as "how long until 5 pm?", the AI checks your device's current time and time zone instead of guessing.
 
 ## Combinations to try
 
@@ -2251,7 +2256,7 @@ Web browsers keep some key combinations for themselves. If a shortcut does somet
 | Action | Keys |
 |---|---|
 | Move, run, and close in the command menu | <kbd>↑</kbd> <kbd>↓</kbd>, <kbd>Enter</kbd>, <kbd>Esc</kbd> |
-| Save or undo a title you're editing in the chat header | <kbd>Enter</kbd> to save, <kbd>Esc</kbd> to put the old title back |
+| Save or undo a chat title you're renaming | <kbd>Enter</kbd> to save, <kbd>Esc</kbd> to put the old title back |
 | Submit a Prompt Template form | <kbd>Shift</kbd> <kbd>Enter</kbd> |
 | Confirm in a confirmation dialog | <kbd>Shift</kbd> <kbd>Enter</kbd> |
 | Close search, Settings, the image viewer, or the side panel (files, previews, Canvas), close the sidebar on a phone, or stop selecting chats | <kbd>Esc</kbd> |
@@ -2793,7 +2798,7 @@ You get a cited report, a chart of its key numbers, and a Page you can send to p
    Chart those estimates as a line chart, one line per source.
    ```
 
-4. Type `/share`, or select **Share** in the chat header and then **Prepare share** — Bearly turns the substance of the chat into a Page and opens it, marked **Ready to share**. Review it, then select **Publish** in its header, choose the **Audience**, and select **Publish**.
+4. Type `/share`, or select **Share** in the top-right corner of the chat and then **Prepare share** — Bearly turns the substance of the chat into a Page and opens it, marked **Ready to share**. Review it, then select **Publish** in its header, choose the **Audience**, and select **Publish**.
 
 
 
@@ -3376,7 +3381,7 @@ Bearly pulls the text out of documents up to 200 MB so the document tools can se
 
 ## Find files again with Files
 
-When a chat has files, its header shows **Files**, a files icon with a count. It opens the side panel on **Files**: every file in the chat, newest first and grouped by day. Search with **Search files**, or narrow the list with an available filter, each showing its count:
+When a chat has files, select the chat's title → **Files**, which shows their count. It opens the side panel on **Files**: every file in the chat, newest first and grouped by day. Search with **Search files**, or narrow the list with an available filter, each showing its count:
 
 - **All** — every file.
 - **Uploaded** — files you attached.
@@ -3406,9 +3411,13 @@ These file tools are in the `/` menu under **Tools**:
 | `/files` | Browse Files | Lists the chat's files |
 | `/read-file` | Read Asset | Reads a file |
 | `/create-file` | Create Asset | Writes a new file: a Page (HTML), Markdown, plain text, CSV, or JSON |
-| `/edit-file` | Edit Asset | Edits a file Bearly wrote; each edit saves a new version |
+| `/edit-file` | Edit Asset | Edits a text file, including code, HTML, CSV, and JSON. A file Bearly wrote or a tool saved, such as a Python output, gets a new version; a file you uploaded gets an edited copy and your upload stays as it was |
 | `/rename-file` | Rename File | Renames a file without making a new version |
 | `/analyze-media` | View Media | Looks at an image or video |
+
+Ask Bearly to edit a file you uploaded and it saves the edited copy as a new file in the chat, listed under **Generated**; your upload doesn't change. Later edits continue that copy, one version each.
+
+Ask Bearly to delete a file it made in the chat and it asks first: **Delete "file name"?**, with **Allow** and **Deny**. Deleting a file Bearly edited removes every version, and **Details** shows how many. Full access never skips this question. Bearly can't delete files you uploaded or project files. A message that showed a deleted file now shows **File unavailable**.
 
 ## Preview, edit a table, and download
 
@@ -4000,7 +4009,7 @@ To put your own images in a Page, attach them or name images already in the chat
 Make a one-page trip summary with the three photos I attached as a header strip and a caption under each.
 ```
 
-**What you get:** a live Page in the chat, saved as an `.html` file you can download and open in a browser. Reopen it later from **Files** → **Generated** in the chat header.
+**What you get:** a live Page in the chat, saved as an `.html` file you can download and open in a browser. Reopen it later from the chat's title → **Files** → **Generated**.
 
 **Limits:**
 
@@ -4047,7 +4056,7 @@ Publishing gives a Page its own link on bearly.sh. It happens in two stages: **p
 
 
 
-To share the whole conversation instead of one file, select the **Share** icon in the chat header. The popover reads "Share conversation" ("Turn the substance of this conversation into a Page, with artwork and a link preview.") with **Prepare share**. Your full conversation isn't shared: Bearly writes a Page with the substance itself, such as the answer, plan, findings, or the finished version of a creative piece, and you review it before publishing. If you close the prepared Page, select the **Share** icon again: **Review and publish** reopens it, and **Create another** prepares a fresh version.
+To share the whole conversation instead of one file, select **Share** in the top-right corner of the chat. The popover reads "Share conversation" ("Turn the substance of this conversation into a Page, with artwork and a link preview.") with **Prepare share**. Your full conversation isn't shared: Bearly writes a Page with the substance itself, such as the answer, plan, findings, or the finished version of a creative piece, and you review it before publishing. If you close the prepared Page, select the **Share** icon again: **Review and publish** reopens it, and **Create another** prepares a fresh version.
 
 **While it prepares:** **Stop building** cancels ("Building stopped. Nothing was published."). Closing the screen with its **×** returns you to the chat without cancelling. If the artwork can't be made, the popover says "The image model could not make artwork. Review the simple preview before publishing."
 
@@ -4077,7 +4086,7 @@ From an encrypted chat, a file included with the Page can be up to 25 MB ("Files
 
 ## Share the key takeaways
 
-`/share` (**Share the key takeaways**) asks Bearly to prepare the conversation as a Page, the same as the header **Share** button. You can also ask in plain words, such as "make this shareable". Preparing doesn't publish or send anything; you still review and select **Publish**.
+`/share` (**Share the key takeaways**) asks Bearly to prepare the conversation as a Page, the same as the **Share** button. You can also ask in plain words, such as "make this shareable". Preparing doesn't publish or send anything; you still review and select **Publish**.
 
 ```text
 /share Focus on the final recommendation and the cost table, for a finance audience.
@@ -4110,7 +4119,7 @@ Canvas turns an answer into a document you can edit side by side with Bearly. Se
 
 **What you get:** a live document inside the chat. Its card reads "Canvas", or "Editing in Canvas" while open.
 
-**Limits:** a Canvas has no version history and no download. **Copy** copies the Markdown; paste it wherever you need it, or ask Bearly to turn it into a file. A Canvas isn't a file, but it's listed under **Files** → **Generated** in the chat header so you can reopen it. Not available in [Routines](https://bearly.ai/docs/manual/capabilities/routines.md).
+**Limits:** a Canvas has no version history and no download. **Copy** copies the Markdown; paste it wherever you need it, or ask Bearly to turn it into a file. A Canvas isn't a file, but it's listed under the chat's title → **Files** → **Generated** so you can reopen it. Not available in [Routines](https://bearly.ai/docs/manual/capabilities/routines.md).
 
 **Combines with:** [Fix Grammar](https://bearly.ai/docs/manual/capabilities/documents.md#fix-grammar) for a final proofread, the [Document editor](https://bearly.ai/docs/manual/capabilities/documents.md#document-editor) for a Word or PDF version, and Pages for a styled version you can publish.
 
@@ -4197,7 +4206,7 @@ You get a clean Page with just the findings, and a link that lets readers ask th
 
 **Swap in:** **People and teams** for internal findings; a single file's **Share file** instead of the whole chat.
 
-**If it stalls:** if the Page isn't what you wanted, select the header **Share** icon again and choose **Create another**, or add direction in a new `/share` message.
+**If it stalls:** if the Page isn't what you wanted, select **Share** again and choose **Create another**, or add direction in a new `/share` message.
 
 ## Related
 
@@ -4430,7 +4439,7 @@ Transcribe turns speech in audio and video files into text with speaker labels a
 
 
 
-**What you get:** a transcript viewer, with previous and next buttons when you sent several files, and **Download subtitles**, which saves `AudioSubtitles.srt`. Bearly also saves each transcript in the chat as a subtitle file named after the original, such as `interview transcript.srt` for `interview.mp3`, so later messages and tools can read it. Bearly suggests speaker names from what's said in the recording, and you can change them.
+**What you get:** a transcript viewer, with previous and next buttons when you sent several files, and **Download subtitles**, which saves `AudioSubtitles.srt`. Bearly also saves each transcript in the chat as a subtitle file named after the original, such as `interview transcript.srt` for `interview.mp3`, so later messages and tools can read it. Bearly suggests speaker names from what's said in the recording, and you can change them. When a recording has two or more speakers, each line of the saved transcript and of **Download subtitles** starts with the speaker's name, such as `Dana: Thanks for joining.`, or **Speaker B** when no name is known.
 
 **Limits:** each attachment can be up to 1000 MB (100 MB in an end-to-end encrypted chat). Transcription has separate processing limits; compress or split a recording if it is too large to process. There's no language picker. If some files fail you'll see "Some assets could not be transcribed". Asking about the same file again reuses its transcript. When an admin has turned off **Transcription**, Bearly tells you it can't listen to the recording in that chat.
 
@@ -4533,6 +4542,8 @@ You get your video with captions drawn onto the picture, ready for platforms tha
 
 
 **Swap in:** a clip from Make Video instead of your own; **Download subtitles** to upload captions to a video platform separately instead of burning them in.
+
+With two or more speakers, the captions include each speaker's name. To leave them out, add "without speaker names" to the second prompt.
 
 **If it stalls:** long or high-resolution videos may be too heavy for one Python run; trim the clip first or split it into parts.
 
@@ -4892,7 +4903,7 @@ Bearly Browser is a browser built into the desktop app. Chats work in their own 
    ```
 
 4. At **Let this chat use this site?**, check the site, pick an **Approval duration**, and select the Allow button — approval covers that one site for this chat. Another site asks separately.
-5. To watch, select the **Open Browser** globe in the title bar. Tabs a chat opened show a robot icon, and their tooltip reads **Agent-owned tab**; tabs you opened show a globe. Select **Take over this tab** to pause the agent while you work on the page, and **Resume this tab's agent** to hand it back.
+5. To watch, select the chat's title → **Open Browser**. Tabs a chat opened show a robot icon, and their tooltip reads **Agent-owned tab**; tabs you opened show a globe. Select **Take over this tab** to pause the agent while you work on the page, and **Resume this tab's agent** to hand it back.
 
 
 
@@ -6081,7 +6092,7 @@ Every Bearly capability is a building block: it takes something in, does one job
 **Every result lands in the chat.** A block leaves its output in one of five places:
 
 - **Text in the conversation**: the answer, plus what tools return to the AI, such as search results, page text, or data.
-- **Files in the chat**: uploads and everything Bearly saves or makes, such as Pages, CSV and Markdown files, images, audio, video, PDFs, and transcripts. They're listed under **Files** in the chat header, under **Uploaded** and **Generated**, and each has an ID the AI can hand to the next tool.
+- **Files in the chat**: uploads and everything Bearly saves or makes, such as Pages, CSV and Markdown files, images, audio, video, PDFs, and transcripts. They're listed under the chat's title → **Files**, under **Uploaded** and **Generated**, and each has an ID the AI can hand to the next tool.
 - **Cards**: interactive results such as a Deep Research report, a **Chart**, a YouTube video card, a Best Pick card, or the image editor. Some cards also save files.
 - **Links**: a Page you publish gets a stable bearly.sh link.
 - **Messages outside Bearly**: an email to you or a teammate, or a text to your phone.
@@ -6148,7 +6159,7 @@ Details: [Documents](https://bearly.ai/docs/manual/capabilities/documents.md).
 | **Summarize Doc** `/summarize` | A long document | A **Deep Summary** in the reply | Any | All | Yes | No |
 | **Document editor** `/document` | A document task, plus any PDF, Word, PowerPoint, or Excel files in the chat to work on | New or edited files: filled PDF forms, .docx files with tracked changes, decks, spreadsheets with formulas | Any | All | No | No |
 | **Fix Grammar** `/grammar` | A passage of text | An editor card with suggested fixes you accept one at a time or all at once | Any | All | No | No |
-| **Chat files** `/create-file`, `/edit-file`, `/read-file`, `/rename-file`, `/files` | Content the AI writes, or a file already in the chat | Pages (HTML), Markdown, plain text, CSV, and JSON files, with a new version on every edit; or an existing file's card shown again, with no new version | Any | All | Yes | No |
+| **Chat files** `/create-file`, `/edit-file`, `/read-file`, `/rename-file`, `/files` | Content the AI writes, or a file already in the chat | Pages (HTML), Markdown, plain text, CSV, and JSON files, with a new version on every edit; editing an uploaded text file saves an edited copy; or an existing file's card shown again, with no new version | Any | All | Yes | No |
 
 ### Data and code
 
@@ -6206,7 +6217,7 @@ Details: [Routines](https://bearly.ai/docs/manual/capabilities/routines.md), [Co
 | **Bearly Browser** | Sites you approve | Page text, screenshots, clicks, typing, form submissions, and downloads saved to the chat (one file up to 50 MiB) | Any | Desktop | Only with the routine's **Browser access**, on the sites you list | No |
 | **Chrome control** | Your open Chrome tabs | Page text, screenshots, clicks and typing, console and network detail | Any | Desktop app, with Chrome and the Bearly extension | No | No |
 | **Computer Use** `/computer` | A task in an app that's open on screen | The task done by clicking and typing, and a **Computer Use** step listing the actions | Any | Desktop | No | No |
-| **Chat management** (ask in any chat) | A request to list, read, create, rename, move, or delete chats | Your chat list, an earlier chat's contents, or the change; listing, reading, and deleting ask you first | Any | All | No | No |
+| **Chat management** (ask in any chat) | A request to list, read, create, rename, move, or delete chats, or to create a project | Your chat list, an earlier chat's contents, or the change; listing, reading, and deleting ask you first | Any | All | No | No |
 | **Prompt templates** (sidebar **Prompt templates**; run from `/` → **Skills**) | Values for the template's fields, and optional files | A filled form in the chat that runs as a prompt and can run again with new values | Any | All | No | No |
 | **Remote modules** (tools labeled `fn-…`) | Tools from a server you or your admin add | That server's results | Any | Web app and desktop app; servers on a private network need the desktop app | No | No |
 
@@ -6218,7 +6229,7 @@ Details: [Organize chats](https://bearly.ai/docs/manual/chat/organize.md) and [P
 |---|---|---|---|---|---|---|
 | **File reference** (`@` → **Assets**) | Any file in the chat or its project | An exact pointer the AI uses for that turn | Any | All | — | — |
 | **Projects** (sidebar **Projects**) | Files on the project's **Files** tab, project instructions, and default chat settings | Shared files and defaults for every chat in the project | Any | All; **Sync a folder** needs the desktop app | — | — |
-| **Share** (`/share`, the header **Share** button, or **Share file** on a file) | The conversation, or one file | A Page with artwork and a link preview that you review, then publish to a stable bearly.sh link | Any | All | No | — |
+| **Share** (`/share`, the **Share** button at the chat's top right, or **Share file** on a file) | The conversation, or one file | A Page with artwork and a link preview that you review, then publish to a stable bearly.sh link | Any | All | No | — |
 | **Download as Markdown** (command menu) | The chat | A `.md` file of the conversation, with tool activity if you include it | Any | All | — | — |
 | **Search chats and files** (**Search chats** at the top of the sidebar, or <kbd>⌘</kbd> <kbd>F</kbd>) | Words or a topic | Matching chats and files, including files Bearly made | Any | All | — | — |
 
@@ -6238,6 +6249,7 @@ Each rule names an output type and the blocks that can take it next. These conne
 ### Files feed tools
 
 - **Any file in the chat or its project** → `@` it by name under **Assets**, so the next tool uses that exact file.
+- **A file in a project chat** → ask Bearly to copy it into the project, so every chat in the project can use it.
 - **A document in the chat or project** (PDF, Office file, text) → **Search Docs**, **Read Doc**, **Scan Doc**, and **Summarize Doc**. These tools appear once the chat or its project has at least one file.
 - **A spreadsheet or raw data file** → **Run Python** reads it and writes a chart-ready CSV → **Create chart**. Charts read data only from a CSV file in the chat: up to 10 columns and 2 MB, one row for a KPI, up to 100 rows for a bar chart, and up to 2,000 rows for a line chart. They never sample or cut rows to fit.
 - **A CSV that's already chart-ready** → **Create chart** directly, with no Python step.
@@ -7443,7 +7455,7 @@ Every weekday morning a Routine reads the sites you choose in Bearly Browser, wr
 
 
 
-1. In the desktop app, select the globe (**Open Browser**) in the title bar and sign in to each site. Or use **Settings** → **Browser** → **Import browser cookies** to bring your current sign-ins over from Chrome or Edge. — Routine runs use these sign-ins. Import copies cookies only, never passwords, history, bookmarks, or autofill.
+1. In the desktop app, select a chat's title → **Open Browser** and sign in to each site. Or use **Settings** → **Browser** → **Import browser cookies** to bring your current sign-ins over from Chrome or Edge. — Routine runs use these sign-ins. Import copies cookies only, never passwords, history, bookmarks, or autofill.
 
 2. Open **Routines** in the sidebar, select **New routine**, and type in **Describe the routine**:
 
@@ -7639,7 +7651,7 @@ Bearly opens your app in Bearly Browser, reproduces the problem, fixes the code 
    Open http://localhost:3000/settings in Bearly Browser and tell me why the Save button does nothing.
    ```
 
-   — Bearly asks "Let this chat use this site?"; approve it. It reads the page and clicks in a background tab. Select **Open Browser** to watch, or **Take over this tab** to drive it yourself.
+   — Bearly asks "Let this chat use this site?"; approve it. It reads the page and clicks in a background tab. Select the chat's title → **Open Browser** to watch, or **Take over this tab** to drive it yourself.
 
 4. Fix it:
 
@@ -8324,7 +8336,7 @@ A saved Prompt Template turns a few filled-in fields into a full write-up, such 
 
 2. In any chat, type `/`, pick the template under **Skills**, fill in the fields, and select **Submit** (or press <kbd>Shift</kbd> <kbd>Enter</kbd>). — The postmortem appears. The filled form stays in the chat; change a value and **Submit** again for a new version. Blank fields are sent as "N/A".
 
-3. Select **Share** in the chat header → **Prepare share**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header. Set **Audience** to **People and teams** and select **Publish**. Then select **Manage viewers**, add your teammates or your organization, and select **Copy link**. — The Page holds the postmortem itself, not the whole chat.
+3. Select **Share** in the top-right corner of the chat → **Prepare share**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header. Set **Audience** to **People and teams** and select **Publish**. Then select **Manage viewers**, add your teammates or your organization, and select **Copy link**. — The Page holds the postmortem itself, not the whole chat.
 
 
 
@@ -8378,6 +8390,8 @@ A project is the right container when you'll come back to the same material acro
 
 You can also start a chat in a project from the new-chat screen. Select the project chip at the foot of the composer (it reads **No project**; its tooltip says "Start this chat in a project"), then search with **Find or create a project...**, pick from **Recent** or **All projects**, or choose **New project**. **No project** starts an ordinary chat. The chip can't be changed once the chat starts; to move the chat later, use **Move to project...**.
 
+Or ask Bearly in any chat, for example "Create a project called Client onboarding". It creates an empty project without leaving your chat, and you can then ask it to move chats into it. If a project with that name already exists, Bearly asks whether to use that one or make a second. It follows the same **Create projects** policy; when your organization requires project passwords, create the project yourself with **New project**, because only you can set the password.
+
 ## Find your way around a project
 
 Select a project in the sidebar to open its page. It opens on the **Chats** tab. The header shows the project's icon and name, whether it's **Private**, **Shared**, or "Shared with 3 people", **Password protected** or **Device encrypted** if it is, and who created it. **Share** opens the **Sharing** tab; at phone width it's in the **More project actions** menu (**…**). The page has four tabs:
@@ -8425,6 +8439,8 @@ Projects have no public link. Only people you share with can open them.
 - **Search files** filters by name.
 - To work on several files, hover a file and tick its checkbox, or use <kbd>⌘</kbd>-click or <kbd>Shift</kbd>-click (<kbd>Ctrl</kbd>-click on Windows and Linux). A bar shows how many are selected, with **Select all**, **Clear**, and **Delete**.
 - Each file's **…** offers **Details**, **Download**, **Rename**, **Select**, and **Delete…**. **Details** opens a panel beside the list (a sheet on phones) with the file's size, type, and when it was added; **About this file** (topics, people, dates, and its text); its reading status, with **Get help** if a step failed; where it was synced from; **Download**; and delete.
+
+To keep a file from a chat in the project, ask in a chat that's in the project, for example "Copy budget.xlsx into this project". Bearly saves a copy on the **Files** tab and shows it in the chat with the project's name under the file. The original stays in the chat. You need Writer access, and each file can be up to 100 MB. Project files aren't end-to-end encrypted, so when you copy a file out of an end-to-end encrypted chat, Bearly tells you the project copy is a regular project file.
 
 Deleting a project file is permanent; Bearly asks "Delete this file?" first.
 
@@ -9727,7 +9743,7 @@ Call `GET https://api.bearly.ai/v1/models` for the current list; each model list
 
 - Usage is billed to your account like chat: your plan's allowance, your credits, and your organization's limits and model policy all apply.
 - If your code stops reading a stream early, the model still finishes and the full response is billed.
-- Up to 10 requests can run at once per account; the 11th gets `429`.
+- Up to 10 requests can run at once per account, and the next one gets `429`. If you need more at once, email support@bearly.ai; Bearly can raise the limit for your account.
 - Only tools your own code defines and runs work. Tools hosted by a model provider, background mode, and priority processing return `400`.
 - Continuing from an earlier response with `previous_response_id`, or retrieving a past response, isn't available. Send the conversation history with each request.
 - The API covers model calls only. It doesn't offer embeddings, image, audio, or file endpoints. Bearly doesn't offer a hosted MCP server, webhooks, or a command-line tool.
@@ -9741,7 +9757,7 @@ Call `GET https://api.bearly.ai/v1/models` for the current list; each model list
 | `402` | Your plan doesn't include the model, your allowance or credits can't cover the request, or a Free-plan check refused it |
 | `403` | Your organization turned off **Developer API access** for you, or its model policy blocks the model |
 | `404` | `model_not_found`: the model name is wrong, doesn't support that format, or isn't offered any more |
-| `429` | 10 requests are already running for your account |
+| `429` | Your account already has its limit of requests running: 10, unless Bearly raised it |
 
 Other errors come from the model provider, passed through unchanged. Full examples are in [Use the Bearly API](https://bearly.ai/docs/api-access.md).
 
@@ -9818,7 +9834,7 @@ Your editor's AI assistant, or any tool that accepts a custom base URL, running 
 
 
 **Swap in:** `bearly-fast` for quick, inexpensive completions; `bearly-ultra` for the hardest work.
-**If it stalls:** `404 model_not_found` usually means the model doesn't support the format the tool uses; pick another from the list. `429` means 10 requests are already running; lower the tool's parallelism.
+**If it stalls:** `404 model_not_found` usually means the model doesn't support the format the tool uses; pick another from the list. `429` means your account already has its limit of requests running (10 unless raised); lower the tool's parallelism.
 
 ### Give an agent the right manual page
 
@@ -10174,7 +10190,7 @@ See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
 
 | You see | Why | What to do |
 |---|---|---|
-| **Publish** is greyed out: "Use Share to add a preview image and conversation brief before publishing an update." | A Page must be prepared before it's published | Select **Share file** on the Page or **Share** in the header, then **Prepare share** |
+| **Publish** is greyed out: "Use Share to add a preview image and conversation brief before publishing an update." | A Page must be prepared before it's published | Select **Share file** on the Page or **Share** in the chat's top-right corner, then **Prepare share** |
 | "Choose a Page under 9 MB or a file under 300 MB." | The item is too large to share | Share a smaller version |
 | "Using simple artwork; review it before publishing" | Artwork couldn't be generated | Check the preview, then publish or **Prepare again** |
 | "Building stopped. Nothing was published." | You selected **Stop building** | Select **Prepare again** |
@@ -10277,7 +10293,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Chrome control**: In the desktop app, Bearly can read and act in your regular Chrome tabs through the Bearly extension, with your approval. See [Browser and computer use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#control-chrome).
 
-**Command menu**: Opens with <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux) or **…** in the chat header. It holds chat actions such as **New**, **Rename**, **Download as Markdown**, and **New Routine**, and a list for switching chats. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#the-command-menu).
+**Command menu**: Opens with <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux) or **All commands** in the chat's title menu. It holds chat actions such as **New**, **Rename**, **Download as Markdown**, and **New Routine**, and a list for switching chats. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#the-command-menu).
 
 **Composer**: The message box at the bottom of a chat, with its toolbar, the **Send**, **Queue**, and **Stop** buttons, and the context strip at its foot. See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md).
 
@@ -10317,7 +10333,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 ## F
 
-**Files**: The chat header button, with a count, that opens the side panel's **Files** tab: every file in the chat, grouped by day, with **All**, **Uploaded**, **Generated**, and **Project** filters. A project's page also has a **Files** tab for the project's files, which every chat in the project can use. See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md#find-files-again-with-files) and [Projects](https://bearly.ai/docs/manual/projects.md#files-tab).
+**Files**: The item in the chat's title menu, with a count, that opens the side panel's **Files** tab: every file in the chat, grouped by day, with **All**, **Uploaded**, **Generated**, and **Project** filters. A project's page also has a **Files** tab for the project's files, which every chat in the project can use. See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md#find-files-again-with-files) and [Projects](https://bearly.ai/docs/manual/projects.md#files-tab).
 
 **Free**: The plan with no charge. It includes a small daily and monthly allowance, and new chats use Bearly Fast. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
 

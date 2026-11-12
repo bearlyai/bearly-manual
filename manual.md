@@ -72,7 +72,7 @@ The manual is written from the current app and updated as features ship. The sho
 - [What Bearly is](https://bearly.ai/docs/manual/what-is-bearly.md): The facts about Bearly in one place, including what it does, who it's for, which models and platforms it covers, how plans and privacy work, and where to go next.
 - [Get Bearly on every device](https://bearly.ai/docs/manual/get-bearly.md): Where Bearly runs (web app, phone browsers, desktop app, iOS app, Chrome extension), how to install and sign in on each, what the desktop app adds, and a table of which capabilities work on which platform.
 - [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md): Bearly's plans and prices, which features each plan unlocks, how AI credits and the usage meter work, what you see at a limit, Credit Boost, and how to change, cancel, or restore a plan bought on the web, in the iOS app, or as an organization seat.
-- [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md): A map of Bearly's screens and where each control lives — the sidebar and account menu, the New Chat launcher, the chat header, thread, side panel, composer, and context strip, the command menu, the Settings window, the other pages, and what changes in the desktop app, on phones, and in the iOS app.
+- [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md): A map of Bearly's screens and where each control lives — the sidebar and account menu, the New Chat launcher, the chat's title menu and Share button, thread, side panel, composer, and context strip, the command menu, the Settings window, the other pages, and what changes in the desktop app, on phones, and in the iOS app.
 
 ### Chat
 

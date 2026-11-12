@@ -21,7 +21,7 @@ Chats live in the left sidebar, grouped by project, pins, and date. This page co
 
 
 1. Select **New chat** (the pen icon at the top of the sidebar, next to search) or **Chat** — opens the new-chat screen, outside any project.
-2. Or press <kbd>⌘</kbd> <kbd>N</kbd> or <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>N</kbd> (<kbd>Ctrl</kbd> <kbd>N</kbd> or <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>N</kbd> on Windows and Linux; a web browser may keep these keys for its own windows), use the pen icon in the chat header (shown when the sidebar is hidden), or choose **New** in the command menu — from a project chat, these start the new chat in the same project. On a project's page, the shortcut and the **Chats** tab's **New chat** do too.
+2. Or press <kbd>⌘</kbd> <kbd>N</kbd> or <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>N</kbd> (<kbd>Ctrl</kbd> <kbd>N</kbd> or <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>N</kbd> on Windows and Linux; a web browser may keep these keys for its own windows), select the chat's title → **New chat**, or choose **New** in the command menu — from a project chat, these start the new chat in the same project. On a project's page, the shortcut and the **Chats** tab's **New chat** do too.
 3. To pick a project on the new-chat screen, use the project chip at the foot of the composer (it reads **No project**; its tooltip says "Start this chat in a project") — search for a project, choose from **Recent** or **All projects**, create one with **New project**, or choose **No project**. The project is fixed once the chat starts.
 4. Type your first message and send.
 
@@ -37,8 +37,8 @@ Bearly titles each chat automatically from your first message, in the background
 
 
 
-1. Click the title in the chat header and type a new one — <kbd>Enter</kbd> saves, <kbd>Esc</kbd> puts back the old title.
-2. Or open **More actions** (the **…** on the chat's sidebar row) → **Rename**. **Rename** in the command menu closes the menu and opens the title in the chat header.
+1. Select the chat's title at the top of the chat → **Rename**, and type a new one — <kbd>Enter</kbd> saves, <kbd>Esc</kbd> puts back the old title.
+2. Or open **More actions** (the **…** on the chat's sidebar row) → **Rename**, or choose **Rename** in the command menu.
 3. To have Bearly write a fresh title from the conversation so far, open the command menu and choose **Generate New Name**. In most chats it works once the chat has finished opening; if nothing changes, choose it again.
 
 
@@ -176,14 +176,14 @@ Search finds messages, files you uploaded, and files Bearly created, across all 
 
 ## The command menu
 
-Press <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd>) or select **…** in the chat header to open the command menu. It shows the chat's title, a **Search...** box, an **Actions** group, and **Switch Chats**, which lists every chat, including project chats. Use <kbd>↑</kbd> <kbd>↓</kbd> to move, <kbd>Enter</kbd> to run, and <kbd>Esc</kbd> to close.
+Press <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd>) or select the chat's title → **All commands** to open the command menu. It shows the chat's title, a **Search...** box, an **Actions** group, and **Switch Chats**, which lists every chat, including project chats. Use <kbd>↑</kbd> <kbd>↓</kbd> to move, <kbd>Enter</kbd> to run, and <kbd>Esc</kbd> to close.
 
 | Action | What it does |
 |---|---|
 | **New** | Start a new chat (in the same project when you're in a project chat) |
 | **Delete & New** | Delete this chat and start a new one, after you confirm |
 | **Delete** | Delete this chat, after you confirm |
-| **Rename** | Close the menu and edit the title in the chat header (<kbd>Enter</kbd> saves, <kbd>Esc</kbd> puts the old title back) |
+| **Rename** | Close the menu and edit the chat's title (<kbd>Enter</kbd> saves, <kbd>Esc</kbd> puts the old title back) |
 | **Refresh Chat** | Reload this chat's data |
 | **Generate New Name** | Retitle the chat from the conversation |
 | **Download as Markdown** | Export the chat as a Markdown file |
@@ -219,7 +219,7 @@ Sharing doesn't hand out your conversation. Bearly turns the substance of the ch
 
 
 
-1. Select **Share** in the chat header — the **Share conversation** panel opens.
+1. Select **Share** in the top-right corner of the chat — the **Share conversation** panel opens.
 2. Select **Prepare share** — Bearly writes the Page. The panel notes "Your full conversation isn't shared. You review the Page before publishing."
 3. When it's ready, the Page opens on its own, marked "Ready to share" — check it, then select **Publish** in its header to choose who can open it. If you closed it, select **Share** again and choose **Review and publish**, or **Create another** for a different take.
 
@@ -244,15 +244,16 @@ What Bearly can do from a chat:
 - Create a new chat, optionally in a project, without switching you to it.
 - Read another chat, at three levels of detail: your messages only, the conversation, or the conversation with tool activity.
 - Rename chats, and move them into or out of projects.
+- Copy a file from another chat into this one, so it can open, edit, or run code on it here.
 - Delete chats.
 
-Before it lists your chats, Bearly asks for permission and explains: "Lists your chats and their titles so Bearly can find the right one." Before it reads another chat, it names that chat and says: "Reads another chat's full history into this chat. Allow only chats you want this chat to see." You can allow it for this response, for this session, or for this chat on this device. Before deleting, Bearly shows "Delete this chat?" or how many chats it will delete, with their titles. If you allow deleting for longer than one request, later deletions asked for in that chat go ahead within that scope without asking again. **Full access** never skips any of these questions.
+Before it lists your chats, Bearly asks for permission and explains: "Lists your chats and their titles so Bearly can find the right one." Before it reads another chat, it names that chat and says: "Reads another chat's full history into this chat. Allow only chats you want this chat to see." Before it copies a file from another chat, it names that chat and says: "Copies a file from another chat into this chat. Allow only chats you want this chat to see." Reading and copying share one permission, so allowing one for the session or chat also allows the other. You can allow it for this response, for this session, or for this chat on this device. Before deleting, Bearly shows "Delete this chat?" or how many chats it will delete, with their titles. If you allow deleting for longer than one request, later deletions asked for in that chat go ahead within that scope without asking again. **Full access** never skips any of these questions.
 
 ```text
 Find my chats about the Q3 budget, rename each one to start with "Q3 budget:", and move them all into the Finance project.
 ```
 
-**Limits:** Up to 20 chats per delete, and a chat can't delete itself. Reading returns up to 100 turns at a time, and a very large chat comes back as a Markdown file. In most chats, if the other chat can't be read from here, Bearly says "Couldn't read that chat here. Open it, then try again." Regular chats can't see your end-to-end encrypted chats. Bearly can't send messages from one chat into another.
+**Limits:** Up to 20 chats per delete, and a chat can't delete itself. Reading returns up to 100 turns at a time, and a very large chat comes back as a Markdown file. In most chats, if the other chat can't be read from here, Bearly says "Couldn't read that chat here. Open it, then try again." Files up to 100 MB can be copied, and the original stays in its chat. Regular chats can't see your end-to-end encrypted chats, and an encrypted chat that's locked on this device can't be read or copied from. Bearly can't send messages from one chat into another.
 **Combines with:** [Memories](https://bearly.ai/docs/manual/chat/settings.md#memories) to find the right earlier chat by meaning; [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md) for how approvals work.
 
 ## What's New

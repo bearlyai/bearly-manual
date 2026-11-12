@@ -220,7 +220,7 @@ Transcribe turns speech in audio and video files into text with speaker labels a
 
 
 
-**What you get:** a transcript viewer, with previous and next buttons when you sent several files, and **Download subtitles**, which saves `AudioSubtitles.srt`. Bearly also saves each transcript in the chat as a subtitle file named after the original, such as `interview transcript.srt` for `interview.mp3`, so later messages and tools can read it. Bearly suggests speaker names from what's said in the recording, and you can change them.
+**What you get:** a transcript viewer, with previous and next buttons when you sent several files, and **Download subtitles**, which saves `AudioSubtitles.srt`. Bearly also saves each transcript in the chat as a subtitle file named after the original, such as `interview transcript.srt` for `interview.mp3`, so later messages and tools can read it. Bearly suggests speaker names from what's said in the recording, and you can change them. When a recording has two or more speakers, each line of the saved transcript and of **Download subtitles** starts with the speaker's name, such as `Dana: Thanks for joining.`, or **Speaker B** when no name is known.
 
 **Limits:** each attachment can be up to 1000 MB (100 MB in an end-to-end encrypted chat). Transcription has separate processing limits; compress or split a recording if it is too large to process. There's no language picker. If some files fail you'll see "Some assets could not be transcribed". Asking about the same file again reuses its transcript. When an admin has turned off **Transcription**, Bearly tells you it can't listen to the recording in that chat.
 
@@ -323,6 +323,8 @@ You get your video with captions drawn onto the picture, ready for platforms tha
 
 
 **Swap in:** a clip from Make Video instead of your own; **Download subtitles** to upload captions to a video platform separately instead of burning them in.
+
+With two or more speakers, the captions include each speaker's name. To leave them out, add "without speaker names" to the second prompt.
 
 **If it stalls:** long or high-resolution videos may be too heavy for one Python run; trim the clip first or split it into parts.
 

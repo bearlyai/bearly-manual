@@ -74,7 +74,7 @@ Call `GET https://api.bearly.ai/v1/models` for the current list; each model list
 
 - Usage is billed to your account like chat: your plan's allowance, your credits, and your organization's limits and model policy all apply.
 - If your code stops reading a stream early, the model still finishes and the full response is billed.
-- Up to 10 requests can run at once per account; the 11th gets `429`.
+- Up to 10 requests can run at once per account, and the next one gets `429`. If you need more at once, email support@bearly.ai; Bearly can raise the limit for your account.
 - Only tools your own code defines and runs work. Tools hosted by a model provider, background mode, and priority processing return `400`.
 - Continuing from an earlier response with `previous_response_id`, or retrieving a past response, isn't available. Send the conversation history with each request.
 - The API covers model calls only. It doesn't offer embeddings, image, audio, or file endpoints. Bearly doesn't offer a hosted MCP server, webhooks, or a command-line tool.
@@ -88,7 +88,7 @@ Call `GET https://api.bearly.ai/v1/models` for the current list; each model list
 | `402` | Your plan doesn't include the model, your allowance or credits can't cover the request, or a Free-plan check refused it |
 | `403` | Your organization turned off **Developer API access** for you, or its model policy blocks the model |
 | `404` | `model_not_found`: the model name is wrong, doesn't support that format, or isn't offered any more |
-| `429` | 10 requests are already running for your account |
+| `429` | Your account already has its limit of requests running: 10, unless Bearly raised it |
 
 Other errors come from the model provider, passed through unchanged. Full examples are in [Use the Bearly API](https://bearly.ai/docs/api-access.md).
 
@@ -165,7 +165,7 @@ Your editor's AI assistant, or any tool that accepts a custom base URL, running 
 
 
 **Swap in:** `bearly-fast` for quick, inexpensive completions; `bearly-ultra` for the hardest work.
-**If it stalls:** `404 model_not_found` usually means the model doesn't support the format the tool uses; pick another from the list. `429` means 10 requests are already running; lower the tool's parallelism.
+**If it stalls:** `404 model_not_found` usually means the model doesn't support the format the tool uses; pick another from the list. `429` means your account already has its limit of requests running (10 unless raised); lower the tool's parallelism.
 
 ### Give an agent the right manual page
 

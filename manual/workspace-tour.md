@@ -1,6 +1,6 @@
 ---
 title: "Tour the workspace"
-description: "A map of Bearly's screens and where each control lives — the sidebar and account menu, the New Chat launcher, the chat header, thread, side panel, composer, and context strip, the command menu, the Settings window, the other pages, and what changes in the desktop app, on phones, and in the iOS app."
+description: "A map of Bearly's screens and where each control lives — the sidebar and account menu, the New Chat launcher, the chat's title menu and Share button, thread, side panel, composer, and context strip, the command menu, the Settings window, the other pages, and what changes in the desktop app, on phones, and in the iOS app."
 canonical: "https://bearly.ai/docs/manual/workspace-tour/"
 markdown: "https://bearly.ai/docs/manual/workspace-tour.md"
 ---
@@ -9,7 +9,7 @@ markdown: "https://bearly.ai/docs/manual/workspace-tour.md"
 
 HTML: [https://bearly.ai/docs/manual/workspace-tour/](https://bearly.ai/docs/manual/workspace-tour/)
 
-> A map of Bearly's screens and where each control lives — the sidebar and account menu, the New Chat launcher, the chat header, thread, side panel, composer, and context strip, the command menu, the Settings window, the other pages, and what changes in the desktop app, on phones, and in the iOS app.
+> A map of Bearly's screens and where each control lives — the sidebar and account menu, the New Chat launcher, the chat's title menu and Share button, thread, side panel, composer, and context strip, the command menu, the Settings window, the other pages, and what changes in the desktop app, on phones, and in the iOS app.
 
 The web app, a phone browser, the desktop app, and the iOS app all run the same Bearly app, so the screens on this page look alike everywhere. Each area below names its controls as the app shows them and links to the page that covers it in depth. The browser extension is separate: it has its own side panel for quick page actions, covered in [Get Bearly](https://bearly.ai/docs/manual/get-bearly.md).
 
@@ -72,16 +72,18 @@ When a release newer than the last one you saw on this device is out, **What's N
 
 ## The chat screen
 
-### Header
+### Title menu and Share
 
-From left to right:
+The chat's title sits at the top center, and the thread scrolls up behind it. In a project chat, the project's name comes first. Select the title to open the chat's menu:
 
-- **Project and title.** In a project chat, the project's name comes first; select it to open the project's page. Select the title to rename the chat: <kbd>Enter</kbd> saves, <kbd>Esc</kbd> reverts.
-- **Files.** Appears once the chat has files, with their count. It opens the side panel on **Files**, or closes it. See [The side panel](#the-side-panel).
-- **New chat.** A pen icon, shown only while the sidebar is hidden.
-- **Share.** Turns the substance of the conversation into a Page you review before publishing. See [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md).
-- **Open Browser.** In the desktop app, a globe that opens Bearly Browser. See [Browser and computer use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md).
-- **…** opens the command menu. See [The command menu](#the-command-menu).
+- **Rename.** Turns the title into a text box: <kbd>Enter</kbd> saves, <kbd>Esc</kbd> reverts.
+- **Open** plus the project's name, in a project chat. Opens the project's page. See [Projects](https://bearly.ai/docs/manual/projects.md).
+- **Files.** Appears once the chat has files, with their count. It opens the side panel on **Files**; while that tab is showing, it reads **Hide files** and closes the panel. See [The side panel](#the-side-panel).
+- **Open Browser.** In the desktop app, opens Bearly Browser. When agents have tabs open, it shows how many, and how many are working. It's hidden while Browser is open. See [Browser and computer use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md).
+- **New chat** (<kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>N</kbd>, or <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>N</kbd> on Windows and Linux). Starts a new chat, in the same project when you're in a project chat.
+- **All commands** (<kbd>⌘</kbd> <kbd>K</kbd>, or <kbd>Ctrl</kbd> <kbd>K</kbd>). Opens the command menu. See [The command menu](#the-command-menu).
+
+**Share**, the round button in the top-right corner, turns the substance of the conversation into a Page you review before publishing. See [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md).
 
 ### Thread
 
@@ -127,9 +129,9 @@ While you edit an earlier message, the strip shows **Editing message** with **Ca
 
 ### The command menu
 
-Press <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux) or select **…** in the header. It shows the chat's title, a **Search...** box, and two groups:
+Press <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux) or select the chat's title → **All commands**. It shows the chat's title, a **Search...** box, and two groups:
 
-- **Actions:** **New**, **Delete & New**, **Delete**, **Rename** (opens the title in the header), **Refresh Chat**, **Generate New Name**, **Download as Markdown**, **New Routine** (Pro and higher), and **Show all...**, which adds **Show Release Notes**.
+- **Actions:** **New**, **Delete & New**, **Delete**, **Rename** (opens the chat's title for editing), **Refresh Chat**, **Generate New Name**, **Download as Markdown**, **New Routine** (Pro and higher), and **Show all...**, which adds **Show Release Notes**.
 - **Switch Chats:** every chat, including project chats.
 
 See [Keyboard shortcuts](https://bearly.ai/docs/manual/chat/shortcuts.md).

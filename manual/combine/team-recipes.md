@@ -231,7 +231,7 @@ A saved Prompt Template turns a few filled-in fields into a full write-up, such 
 
 2. In any chat, type `/`, pick the template under **Skills**, fill in the fields, and select **Submit** (or press <kbd>Shift</kbd> <kbd>Enter</kbd>). — The postmortem appears. The filled form stays in the chat; change a value and **Submit** again for a new version. Blank fields are sent as "N/A".
 
-3. Select **Share** in the chat header → **Prepare share**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header. Set **Audience** to **People and teams** and select **Publish**. Then select **Manage viewers**, add your teammates or your organization, and select **Copy link**. — The Page holds the postmortem itself, not the whole chat.
+3. Select **Share** in the top-right corner of the chat → **Prepare share**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header. Set **Audience** to **People and teams** and select **Publish**. Then select **Manage viewers**, add your teammates or your organization, and select **Copy link**. — The Page holds the postmortem itself, not the whole chat.
 
 
 

@@ -51,7 +51,7 @@ To put your own images in a Page, attach them or name images already in the chat
 Make a one-page trip summary with the three photos I attached as a header strip and a caption under each.
 ```
 
-**What you get:** a live Page in the chat, saved as an `.html` file you can download and open in a browser. Reopen it later from **Files** → **Generated** in the chat header.
+**What you get:** a live Page in the chat, saved as an `.html` file you can download and open in a browser. Reopen it later from the chat's title → **Files** → **Generated**.
 
 **Limits:**
 
@@ -98,7 +98,7 @@ Publishing gives a Page its own link on bearly.sh. It happens in two stages: **p
 
 
 
-To share the whole conversation instead of one file, select the **Share** icon in the chat header. The popover reads "Share conversation" ("Turn the substance of this conversation into a Page, with artwork and a link preview.") with **Prepare share**. Your full conversation isn't shared: Bearly writes a Page with the substance itself, such as the answer, plan, findings, or the finished version of a creative piece, and you review it before publishing. If you close the prepared Page, select the **Share** icon again: **Review and publish** reopens it, and **Create another** prepares a fresh version.
+To share the whole conversation instead of one file, select **Share** in the top-right corner of the chat. The popover reads "Share conversation" ("Turn the substance of this conversation into a Page, with artwork and a link preview.") with **Prepare share**. Your full conversation isn't shared: Bearly writes a Page with the substance itself, such as the answer, plan, findings, or the finished version of a creative piece, and you review it before publishing. If you close the prepared Page, select the **Share** icon again: **Review and publish** reopens it, and **Create another** prepares a fresh version.
 
 **While it prepares:** **Stop building** cancels ("Building stopped. Nothing was published."). Closing the screen with its **×** returns you to the chat without cancelling. If the artwork can't be made, the popover says "The image model could not make artwork. Review the simple preview before publishing."
 
@@ -128,7 +128,7 @@ From an encrypted chat, a file included with the Page can be up to 25 MB ("Files
 
 ## Share the key takeaways
 
-`/share` (**Share the key takeaways**) asks Bearly to prepare the conversation as a Page, the same as the header **Share** button. You can also ask in plain words, such as "make this shareable". Preparing doesn't publish or send anything; you still review and select **Publish**.
+`/share` (**Share the key takeaways**) asks Bearly to prepare the conversation as a Page, the same as the **Share** button. You can also ask in plain words, such as "make this shareable". Preparing doesn't publish or send anything; you still review and select **Publish**.
 
 ```text
 /share Focus on the final recommendation and the cost table, for a finance audience.
@@ -161,7 +161,7 @@ Canvas turns an answer into a document you can edit side by side with Bearly. Se
 
 **What you get:** a live document inside the chat. Its card reads "Canvas", or "Editing in Canvas" while open.
 
-**Limits:** a Canvas has no version history and no download. **Copy** copies the Markdown; paste it wherever you need it, or ask Bearly to turn it into a file. A Canvas isn't a file, but it's listed under **Files** → **Generated** in the chat header so you can reopen it. Not available in [Routines](https://bearly.ai/docs/manual/capabilities/routines.md).
+**Limits:** a Canvas has no version history and no download. **Copy** copies the Markdown; paste it wherever you need it, or ask Bearly to turn it into a file. A Canvas isn't a file, but it's listed under the chat's title → **Files** → **Generated** so you can reopen it. Not available in [Routines](https://bearly.ai/docs/manual/capabilities/routines.md).
 
 **Combines with:** [Fix Grammar](https://bearly.ai/docs/manual/capabilities/documents.md#fix-grammar) for a final proofread, the [Document editor](https://bearly.ai/docs/manual/capabilities/documents.md#document-editor) for a Word or PDF version, and Pages for a styled version you can publish.
 
@@ -248,7 +248,7 @@ You get a clean Page with just the findings, and a link that lets readers ask th
 
 **Swap in:** **People and teams** for internal findings; a single file's **Share file** instead of the whole chat.
 
-**If it stalls:** if the Page isn't what you wanted, select the header **Share** icon again and choose **Create another**, or add direction in a new `/share` message.
+**If it stalls:** if the Page isn't what you wanted, select **Share** again and choose **Create another**, or add direction in a new `/share` message.
 
 ## Related
 

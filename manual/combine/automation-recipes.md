@@ -26,7 +26,7 @@ Every weekday morning a Routine reads the sites you choose in Bearly Browser, wr
 
 
 
-1. In the desktop app, select the globe (**Open Browser**) in the title bar and sign in to each site. Or use **Settings** → **Browser** → **Import browser cookies** to bring your current sign-ins over from Chrome or Edge. — Routine runs use these sign-ins. Import copies cookies only, never passwords, history, bookmarks, or autofill.
+1. In the desktop app, select a chat's title → **Open Browser** and sign in to each site. Or use **Settings** → **Browser** → **Import browser cookies** to bring your current sign-ins over from Chrome or Edge. — Routine runs use these sign-ins. Import copies cookies only, never passwords, history, bookmarks, or autofill.
 
 2. Open **Routines** in the sidebar, select **New routine**, and type in **Describe the routine**:
 
@@ -222,7 +222,7 @@ Bearly opens your app in Bearly Browser, reproduces the problem, fixes the code 
    Open http://localhost:3000/settings in Bearly Browser and tell me why the Save button does nothing.
    ```
 
-   — Bearly asks "Let this chat use this site?"; approve it. It reads the page and clicks in a background tab. Select **Open Browser** to watch, or **Take over this tab** to drive it yourself.
+   — Bearly asks "Let this chat use this site?"; approve it. It reads the page and clicks in a background tab. Select the chat's title → **Open Browser** to watch, or **Take over this tab** to drive it yourself.
 
 4. Fix it:
 

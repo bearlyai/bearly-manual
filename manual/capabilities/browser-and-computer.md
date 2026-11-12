@@ -53,7 +53,7 @@ Bearly Browser is a browser built into the desktop app. Chats work in their own 
    ```
 
 4. At **Let this chat use this site?**, check the site, pick an **Approval duration**, and select the Allow button — approval covers that one site for this chat. Another site asks separately.
-5. To watch, select the **Open Browser** globe in the title bar. Tabs a chat opened show a robot icon, and their tooltip reads **Agent-owned tab**; tabs you opened show a globe. Select **Take over this tab** to pause the agent while you work on the page, and **Resume this tab's agent** to hand it back.
+5. To watch, select the chat's title → **Open Browser**. Tabs a chat opened show a robot icon, and their tooltip reads **Agent-owned tab**; tabs you opened show a globe. Select **Take over this tab** to pause the agent while you work on the page, and **Resume this tab's agent** to hand it back.
 
 
 
