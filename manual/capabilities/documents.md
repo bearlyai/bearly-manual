@@ -152,11 +152,11 @@ Bearly has four document tools. They appear once the chat or its project has at 
    Compare the renewal, termination, and price-increase terms in these three agreements. Make a table with one row per agreement and cite the page for every cell.
    ```
 
-3. Select a citation in the answer to open its source document and check the surrounding text.
+3. Select a citation in the answer to open its source document at the cited page and check the surrounding text.
 
 
 
-**Search Docs** citations open at the matching page when one is available. **Read Doc** citations open the whole file. With a mouse or trackpad, hover a Read Doc citation to see its page or page range.
+Both **Read Doc** and **Search Docs** citations open at the cited page. If a citation covers a page range, the file opens at the first page in that range.
 
 **What you get:** an answer with clickable citations, and sometimes a strip of matching document sources above it.
 

@@ -67,7 +67,7 @@ Two reset actions sit at the bottom of the Browser settings. **Reset open tabs**
 
 ## Control Chrome
 
-With the Bearly Companion extension installed, a desktop chat can work in your everyday Chrome: list and switch tabs, open pages, read them and their console output, take screenshots, click, type, scroll, and, with the highest approval, inspect network activity and run DevTools commands. It uses your Chrome profile, so sites you're signed in to stay signed in.
+With the Bearly Companion extension installed, a desktop chat can work in your everyday Chrome: list and switch tabs, open pages, read them and their console output, take screenshots, click, type, fill in forms, answer page dialogs, scroll, and, with the highest approval, inspect network activity and run DevTools commands. It uses your Chrome profile, so sites you're signed in to stay signed in.
 
 **Use it when:** the work is in a site you're already signed in to, you want to point at a tab you have open, or you're debugging a page with the console and network log.
 **You need:** the desktop app, Chrome itself (not another browser) with the Bearly Companion extension, and your organization allows **Chrome extension browser**. The extension doesn't need to be signed in to Bearly for this.
@@ -89,17 +89,21 @@ With the Bearly Companion extension installed, a desktop chat can work in your e
 
 | Prompt | What it allows |
 |---|---|
-| **Read your Chrome tabs** | The tab list, page text, screenshots, console output, and page events |
-| **Control Chrome** | Everything above, plus opening and closing tabs, navigating, clicking, typing, scrolling, and key presses |
+| **Read your Chrome tabs** | The tab list, page text, the page's buttons, links, and fields, screenshots, console output, and page events |
+| **Control Chrome** | Everything above, plus opening and closing tabs, navigating, clicking, typing, filling in forms, hovering, answering page dialogs, scrolling, and key presses |
 | **Use Chrome DevTools** | Everything above, plus network requests and responses, storage, running JavaScript, debugging, profiling, and request interception |
 
+Bearly reads a page's buttons, links, and fields and acts on them directly. For new work it opens its own tabs, behind the tab you're looking at, and brings one to the front only when you need to see it or act in it. When you ask about the page you're on, it uses that tab. When the work is done, it closes the tabs it opened, except one you'll want to look at, and says which one it left open. In the answer's **Steps**, these actions are named **Read Chrome elements**, **Click in Chrome**, **Type in Chrome**, **Fill a Chrome form**, **Press Chrome keys**, **Hover in Chrome**, **Handle Chrome dialog**, and **Wait for Chrome text**, unless Bearly describes the step itself.
+
 **What you get:** results in the chat, from the tabs you see. While Bearly is attached to a tab, Chrome shows its own debugging banner.
-**Limits:** page reads blank out password and payment-card field values, and Bearly can never open other extensions' pages. Tabs Bearly opened stay open when the chat finishes. Finishing, stopping, or closing a chat doesn't detach Bearly from your tabs; quitting the desktop app or Chrome does. Routines can't use Chrome. To use Chrome with Full access, keep the extension up to date; an older one shows "Update the Bearly browser extension to use Chrome with Full access, or switch this chat to Standard."
+**Limits:** page reads blank out password and payment-card field values, and Bearly can never open other extensions' pages. If a site shows a CAPTCHA, a bot check, or a block, Bearly stops and asks you to do that step. One form fill covers up to 50 fields and stops at the first field that fails. Bearly sets a standard dropdown directly; a page that only accepts a choice you make yourself may ignore it, and then Bearly asks you to pick the option. Waiting for text to appear or disappear lasts up to 30 seconds. The first console read on a tab returns what Chrome still holds, so output from before the page navigated or cleared its console may be missing. **Stop** ends a Chrome step at once: nothing new is clicked or typed, and any key or mouse button Bearly was holding down is let go, which finishes a click already under way. Finishing, stopping, or closing a chat doesn't detach Bearly from your tabs; quitting the desktop app or Chrome does. Routines can't use Chrome. To use Chrome with Full access, keep the extension up to date; an older one shows "Update the Bearly browser extension to use Chrome with Full access, or switch this chat to Standard."
 **Combines with:** Deep Research, by having the chat read an internal page first and then research the public web about it (see [Research](https://bearly.ai/docs/manual/capabilities/research.md)); [Work locally](#work-locally) for debugging with DevTools.
 
 > **Caution — This is your real browser**
 > Bearly acts in your signed-in Chrome profile and sees whatever those tabs show. At the DevTools level that includes request contents and stored session data. Page text can contain instructions written to mislead an assistant. State limits in your request, and use Bearly Browser when the task doesn't need your own sign-ins.
 
+
+Tabs Bearly opens sit together in one tab group in each Chrome window. Tabs you open yourself stay where they are, and Bearly never puts its tabs in a group you made. To name the group, open the Bearly side panel in Chrome, select the **Settings** gear, and under **Desktop app** turn on **Label Bearly’s tabs**. Chrome asks to let Bearly view and manage your tab groups; once you allow it, Bearly's group is orange and named **Bearly**. If you decline, the setting stays off and the tabs are still grouped, without a name. Turning the setting off removes that permission, and groups already named keep their name.
 
 ## Work locally
 

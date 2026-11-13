@@ -88,6 +88,7 @@ On Pro, Analyst, Research, and Max, running out of credits doesn't stop chat. Be
 - Paid tools still need credits.
 - **Zero Data Retention only** and your organization's model rules still apply.
 - If your organization's spending limit stopped you, chat continues on **Bearly Fast** only. The notice reads "You've used your team allowance. Chat continues with Bearly Fast until it resets." with **View usage**. Your admin's limit still applies to every other model.
+- With chat management on, asking Bearly which models you can use gets the same shorter list and the reason for it.
 - Free accounts don't get this. They wait for the reset or upgrade.
 
 When your credits reset or you add more, the full model list comes back.
@@ -108,7 +109,7 @@ A Credit Boost buys one-time credits on top of your plan. Use it when one month 
 
 **What you get:** extra credits on top of your plan allowance. The meter in **Usage** shows them as a separate segment, and the account menu shows **+boost**.
 
-**Limits:** boosts expire at the end of the calendar month, or at the end of the seat's billing period for an organization seat. If boosts become routine, the card may suggest a plan that includes more credits each month.
+**Limits:** boosts expire at the end of the calendar month, or at the end of the seat's billing period for an organization seat. Boosts only work while you're on a paid plan, so you can't buy one after canceling a plan that ends before the boost would expire. The card says when your plan ends; on a plan you pay for on the web, **Reactivate** keeps it and brings the boost options back. If boosts become routine, the card may suggest a plan that includes more credits each month.
 
 ## The Billing pane
 

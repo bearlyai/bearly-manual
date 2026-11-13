@@ -154,7 +154,7 @@ The app loads the current Bearly from the web, so most improvements arrive witho
 
 When you run an action, the extension sends the page's readable text (or only your selection, for **Explain selection**) and a picture of the visible part of the tab. Scroll away from anything you don't want in that picture.
 
-Settings live behind the gear in the panel: **Response language**, **Quick actions** (which presets show, and their order), **Website access**, **Page button**, and **Disconnect Bearly**. Disconnecting removes Bearly from this browser; your account and work stay in Bearly. You can also remove the extension's key from any device under **Settings** → **Devices** → **Browser extension and API keys**.
+Settings live behind the gear in the panel: **Response language**, **Quick actions** (which presets show, and their order), **Website access**, **Page button**, **Label Bearly’s tabs** (in Chrome, names the tab group for tabs the desktop app opens; see [Control Chrome](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#control-chrome)), and **Disconnect Bearly**. Disconnecting removes Bearly from this browser; your account and work stay in Bearly. You can also remove the extension's key from any device under **Settings** → **Devices** → **Browser extension and API keys**.
 
 ## Sign in
 

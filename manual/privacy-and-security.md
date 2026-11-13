@@ -21,6 +21,7 @@ This page lists every control that changes what Bearly stores, what reaches an A
 - AI labs never learn who is asking: no name, account, or IP address reaches them. Anything you type about yourself is still part of your message.
 - Web search sends the search provider your query, never your name, account, or IP address. Image search runs on a provider that keeps nothing after it answers.
 - Computer use runs on your device. It's in the desktop app only, and the screenshots you approve go to the model you picked.
+- We keep your email and plan, a usage record for each request (which model, how much, and your IP address), and server logs that include your IP. The full list, with who can read what, is in [How Bearly handles your chats](https://bearly.ai/docs/privacy-security.md).
 
 What you type, attach, or let a tool read still goes to the model handling your request. The controls below decide how much context goes with it and where your chats are kept.
 
@@ -228,7 +229,7 @@ Organization admins manage members, groups, policies, and billing. Being an admi
 | A project you share with the organization or one of its groups, including its chats and files | Yes, like everyone else you shared it with. Sharing with a group reaches only that group's members. |
 | The title, owners, groups, and creation date of each project shared with the organization or its groups | Yes, on **Projects**, without the project's content |
 | Each member's name, email, role, policy, and spending limit | Yes, on **Members** |
-| Each managed-domain member's spend and number of calls, by model and month | Yes, on **Usage**, on a managed organization. A member with **Unitemized billing** on shows as one **Bearly Private** line, with no model breakdown or call count. |
+| Each managed-domain member's spend and number of calls, by model and month | Yes, on **Usage**, on a managed organization. |
 | Changes to members, groups, policies, settings, billing, and project access | Yes, on **Activity**. It doesn't record what anyone does in chats. |
 
 - **Access comes from sharing, not from the admin role.** An admin sees a project only when it's shared with the organization or with a group they belong to. Admins can add themselves to a group, which gives them that group's shared projects like any other group member, and the change appears in **Activity**.
@@ -254,7 +255,7 @@ On a managed organization, admins can set these for members in a policy. The ful
 - [Settings reference](https://bearly.ai/docs/manual/settings-reference.md) — every pane and control
 - [Projects](https://bearly.ai/docs/manual/projects.md) — project passwords and sharing
 - [Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md) — admin controls
-- [Privacy and security in Bearly](https://bearly.ai/docs/privacy-security.md) and [Delete your Bearly account](https://bearly.ai/docs/account/delete-account.md)
+- [How Bearly handles your chats](https://bearly.ai/docs/privacy-security.md) and [Delete your Bearly account](https://bearly.ai/docs/account/delete-account.md)
 - [Privacy Policy](https://bearly.ai/privacy-policy.md)
 
 ## Continue through the documentation
@@ -263,7 +264,7 @@ On a managed organization, admins can set these for members in a policy. The ful
 - [Documentation index](https://bearly.ai/docs.md): Browse every Bearly guide.
 - [Previous: Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md)
 - [Next: Settings reference](https://bearly.ai/docs/manual/settings-reference.md)
+- [Related: How Bearly handles your chats](https://bearly.ai/docs/privacy-security.md)
 - [Related: Choose and compare models](https://bearly.ai/docs/manual/chat/models.md)
 - [Related: Projects: shared context, files, and settings](https://bearly.ai/docs/manual/projects.md)
 - [Related: Automate with Routines](https://bearly.ai/docs/manual/capabilities/routines.md)
-- [Related: Tune a chat: settings, style, reasoning, and memory](https://bearly.ai/docs/manual/chat/settings.md)

@@ -288,7 +288,7 @@ Model access, spending limits, and **Developer API access** are enforced by Bear
 | **Text messages** | Allow members to add a phone number and receive Bearly text messages. | Text messages and the **Phone and SMS** pane | — | Follows default |
 | **Routines** | Allow members to run scheduled prompts. | Routines (also needs Pro) | — | Follows default |
 | **Browser in Routines** | Allow members to let Routines use Bearly Browser on the sites they approve, without asking first. | Browser use in scheduled runs | Routines | Follows default |
-| **Chat management** | Allow chats to list, read, create, rename, move, and delete chats. | The AI organizing chats for the member | — | Follows default |
+| **Chat management** | Allow chats to list, read, create, rename, move, and delete chats. | The AI organizing chats for the member, and reading their plan and available models | — | Follows default |
 
 ### Collaboration
 

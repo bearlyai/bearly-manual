@@ -1,6 +1,6 @@
 ---
 title: "Organize, find, share, and export chats"
-description: "How to start, rename, pin, archive, delete, select, and move chats into projects in Bearly, read the sidebar, use Needs attention, search chats and files, use the command menu, download a chat as Markdown, share a chat as a Page, ask Bearly to manage chats for you, and open What's New."
+description: "How to start, rename, pin, archive, delete, select, and move chats into projects in Bearly, read the sidebar and its Needs attention section, pin chats and projects, group projects into folders, search chats and files, use the command menu, download a chat as Markdown, share a chat as a Page, ask Bearly to manage chats for you, and open What's New."
 canonical: "https://bearly.ai/docs/manual/chat/organize/"
 markdown: "https://bearly.ai/docs/manual/chat/organize.md"
 ---
@@ -9,9 +9,9 @@ markdown: "https://bearly.ai/docs/manual/chat/organize.md"
 
 HTML: [https://bearly.ai/docs/manual/chat/organize/](https://bearly.ai/docs/manual/chat/organize/)
 
-> How to start, rename, pin, archive, delete, select, and move chats into projects in Bearly, read the sidebar, use Needs attention, search chats and files, use the command menu, download a chat as Markdown, share a chat as a Page, ask Bearly to manage chats for you, and open What's New.
+> How to start, rename, pin, archive, delete, select, and move chats into projects in Bearly, read the sidebar and its Needs attention section, pin chats and projects, group projects into folders, search chats and files, use the command menu, download a chat as Markdown, share a chat as a Page, ask Bearly to manage chats for you, and open What's New.
 
-Chats live in the left sidebar, grouped by project, pins, and date. This page covers starting and naming chats, keeping the list tidy, finding anything you wrote or uploaded, exporting and sharing a chat, and having Bearly do the filing for you. Everything here works in the web app, phone browser, desktop app, and iOS app, except dragging chats into projects, which needs a mouse or trackpad.
+Chats live in the left sidebar, grouped by what needs you, pins, projects, and date. This page covers starting and naming chats, keeping the list tidy, finding anything you wrote or uploaded, exporting and sharing a chat, and having Bearly do the filing for you. Everything here works in the web app, phone browser, desktop app, and iOS app, except dragging chats into projects, which needs a mouse or trackpad.
 
 ## Start a new chat
 
@@ -49,11 +49,12 @@ Bearly titles each chat automatically from your first message, in the background
 
 The list is grouped, top to bottom:
 
-- **Projects**. Select a project to open its page; the arrow at the end of its row shows or hides its chats.
-- **Pinned** chats.
+- **Needs attention**, with its title in orange and a count: chats waiting for your approval or with an unread reply. Shown only when something is waiting. See [Needs attention](#needs-attention).
+- **Pinned**: the chats and projects you pinned. See [Pin chats and projects](#pin-chats-and-projects).
+- **Projects**: your folders first, then the rest of your projects. Select a project to open its page; the arrow at the end of its row shows or hides its chats. See [Group projects into folders](#group-projects-into-folders).
 - Everything else by last activity: **Today**, **This week**, **This month**, then each earlier month of this year, then each earlier year.
 
-Select a section's header to fold it. A folded section shows one row with what it holds, such as "12 chats", and a mark when a chat in it is unread, working, or waiting for approval. Bearly remembers which sections you folded on this device. To hide the whole sidebar, press <kbd>⌘</kbd> <kbd>\\</kbd> (<kbd>Ctrl</kbd> <kbd>\\</kbd> on Windows and Linux) or select the sidebar button at the top left.
+Select a section's header to fold it. A folded section shows one row with what it holds, such as "12 chats" or "3 pinned", and a mark when a chat in it is unread, working, or waiting for approval. Bearly remembers which sections you folded on this device. To hide the whole sidebar, press <kbd>⌘</kbd> <kbd>\\</kbd> (<kbd>Ctrl</kbd> <kbd>\\</kbd> on Windows and Linux) or select the sidebar button at the top left.
 
 A chat's row can show:
 
@@ -67,7 +68,7 @@ A chat's row can show:
 
 In most chats, the spinner shows only for an answer running on this device. An answer running on another of your devices shows no mark here; the chat itself says **Running on another device** if that answer stops updating for 2 minutes.
 
-Pins and archives are saved to your account, so they're the same on every device.
+Pins, folders, and archives are saved to your account, so they're the same on every device.
 
 ## Use the More actions menu
 
@@ -76,7 +77,7 @@ Each chat row has a **More actions** menu (**…**). It appears when you point a
 | Item | What it does |
 |---|---|
 | **Rename** | Edit the title in place. <kbd>Enter</kbd> or clicking away saves. |
-| **Pin** / **Unpin** | Keep the chat at the top, under **Pinned**. |
+| **Pin** / **Unpin** | Show the chat under **Pinned**, above **Projects**. |
 | **Move to project...** | Move the chat into a project, or out of one. Shown when you have projects. |
 | **Archive** / **Unarchive** | Take the chat out of the main list without deleting it. |
 | **Mark unread** / **Mark read** | Flag a chat to come back to. Shown once the chat has activity. |
@@ -149,10 +150,42 @@ With a mouse or trackpad, you can also drag a chat onto a project in the sidebar
 
 ## Needs attention
 
-When other chats are waiting for an approval or have unread replies, a **Needs attention** row with a count appears at the top of the chat list. Select it to replace the list with **Awaiting approval** and then **Unread** chats, newest first, including project chats with their project name. Select it again to show all chats.
+**Needs attention** is the first section of the chat list, with its title in orange and a count. It lists the chats waiting for your approval, then the chats with an unread reply, newest first, from any project. A project chat shows its project's name.
+
+Opening a chat takes it off the list, and the section hides when nothing is waiting. An unread chat also stays in its usual place, with its dot.
 
 **Use it when:** several chats are running tools at once and you want to see which ones need you.
 **Limits:** The chat you have open and archived chats aren't listed. Approvals show only for chats that have been active since you opened Bearly.
+
+## Pin chats and projects
+
+**Pinned** sits above **Projects** and holds what you want in view, even when **Projects** is folded.
+
+
+
+1. To pin a chat, open its **More actions** menu (**…**) and choose **Pin** — it appears under **Pinned**. A pinned project chat shows its project's name there, and stays in its project with a pin icon.
+2. To pin a project, open the project's **…** menu in the sidebar and choose **Pin** — the project moves from **Projects** to **Pinned**, with its chats.
+3. To unpin either, choose **Unpin** in the same menu.
+
+
+
+**Limits:** Archived projects can't be pinned.
+
+## Group projects into folders
+
+Folders sort your projects inside **Projects**. They sit at the top of the section, sorted by name, above projects that aren't in a folder.
+
+
+
+1. Open a project's **…** menu in the sidebar and choose **Move to folder** — it lists your folders and **New folder**.
+2. Choose a folder to move the project into it, or **New folder** to make one with this project in it. The new folder's name is ready to type; <kbd>Enter</kbd> or clicking away saves it.
+3. To take a project out, choose **Move to folder** → **Take out of folder**. To move it elsewhere, pick another folder.
+
+
+
+Select a folder's row to fold or unfold it. A folded folder shows a mark when a chat inside is unread, working, or waiting for approval. A folder's **…** menu has **Rename** and **Remove folder**. Removing a folder keeps its projects; they go back to the main **Projects** list. A folder disappears on its own when its last project leaves it.
+
+**Limits:** Folders are yours alone: people you share a project with don't see your folders. They sync across your devices. Archived projects can't be moved into a folder, and a pinned project shows under **Pinned** instead of in its folder.
 
 ## Search chats and files
 
@@ -246,6 +279,7 @@ What Bearly can do from a chat:
 - Rename chats, and move them into or out of projects.
 - Copy a file from another chat into this one, so it can open, edit, or run code on it here.
 - Delete chats.
+- Tell you which plan you're on and which models you can pick in this chat, after your organization's model policy and **Zero Data Retention only**. If you're out of credits, it says why fewer models are listed. It can't see your usage or billing; those are in **Settings** → **Usage** on a paid plan, or **Settings** → **Billing** on Free.
 
 Before it lists your chats, Bearly asks for permission and explains: "Lists your chats and their titles so Bearly can find the right one." Before it reads another chat, it names that chat and says: "Reads another chat's full history into this chat. Allow only chats you want this chat to see." Before it copies a file from another chat, it names that chat and says: "Copies a file from another chat into this chat. Allow only chats you want this chat to see." Reading and copying share one permission, so allowing one for the session or chat also allows the other. You can allow it for this response, for this session, or for this chat on this device. Before deleting, Bearly shows "Delete this chat?" or how many chats it will delete, with their titles. If you allow deleting for longer than one request, later deletions asked for in that chat go ahead within that scope without asking again. **Full access** never skips any of these questions.
 

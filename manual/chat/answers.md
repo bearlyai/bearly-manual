@@ -11,6 +11,18 @@ HTML: [https://bearly.ai/docs/manual/chat/answers/](https://bearly.ai/docs/manua
 
 > How to copy, edit, delete, rerun, and compare versions of messages in Bearly, read answers aloud or open them in Canvas, follow what Bearly is doing and read an answer's steps and citations, what answers can display, what to do when an answer fails, and how to move around long chats with the timeline and chapters.
 
+## Make the answer better
+
+1. **Send a request** — Ask for a draft, such as `Write a two-line welcome for new customers.`, and select **Send**.
+2. **Copy the answer** — When the answer finishes, select **Copy** under it. On a computer, a message's controls appear when you move the pointer over it.
+3. **Edit your request** — Select **Edit Query**, the pencil under your message. Your request moves back into the message box.
+4. **Send the new version** — Change the wording, for example add `Keep it formal.`, and select **Send**.
+5. **Compare versions** — Select **‹** (**Previous version of query**) under your message to see the first answer again.
+
+
+
+
+
 These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
 
 Every message in a chat has its own controls: copy it, edit what you asked, rerun it on another model, step through versions, or hear it read aloud. This page covers those controls, how answers are displayed, and how to find your way around a long conversation.
@@ -117,7 +129,7 @@ When an answer draws on sources, it cites them so you can check the claim:
 
 - Web search answers carry numbered links to the pages they used.
 - Scholar answers mark claims with small superscript citations. Hover one for the paper; select it to open the paper.
-- Answers from your documents have citations that open the source file. **Search Docs** citations can open at a matching page. **Read Doc** citations open the whole file; with a mouse or trackpad, hover one to see its page or page range.
+- **Read Doc** and **Search Docs** citations open the source file at the cited page. For a page range, the file opens at the start of that range.
 - Deep Research reports include numbered citations and a **Sources** list.
 
 In most chats, an answer can also cite a source Bearly found earlier in the chat. Citations are numbered per answer, in the order the answer uses them.

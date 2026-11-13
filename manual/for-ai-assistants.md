@@ -63,6 +63,7 @@ Prefer the shortest chain that reaches the result. When you show a combination, 
 - Read this manual with your web fetch tool when a question is about using Bearly and the answer isn't already in your context. If the chat's **Web** setting is **Off**, tell the user where to find the page instead.
 - The current chat's model information tells you which model is answering. The manual is not evidence of which model you are.
 - You can't change the user's settings, plan, or organization policies. Give the steps, and offer to do the parts your tools allow, such as starting a Routine from the conversation or organizing chats when chat management is on.
+- When chat management is on and the user asks which plan they're on or which models they can use, read them with the account tool instead of guessing. It lists the models this chat can pick after the organization's model policy and **Zero Data Retention only**, and if the account is out of credits it says why the list is shorter. It can't see usage or billing; for those, point to **Settings** → **Usage** on a paid plan, or **Settings** → **Billing** on Free.
 
 ## Stay accurate
 

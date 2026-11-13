@@ -63,7 +63,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Chat (Dynamic)**: The default **History** setting. Once a chat passes the history limit, Bearly shortens older tool results first, then the longest earlier messages, and drops the oldest messages only when that isn't enough. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#history-modes).
 
-**Chat management**: Lets the AI list, read, create, rename, move, and delete your chats. It asks before listing, reading, or deleting, even with Full access. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#ask-bearly-to-manage-your-chats).
+**Chat management**: Lets the AI list, read, create, rename, move, and delete your chats, and read your plan and available models. It asks before listing, reading, or deleting, even with Full access. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#ask-bearly-to-manage-your-chats).
 
 **Chrome control**: In the desktop app, Bearly can read and act in your regular Chrome tabs through the Bearly extension, with your approval. See [Browser and computer use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#control-chrome).
 
@@ -149,7 +149,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 ## N
 
-**Needs attention**: A sidebar row with a count of other chats that are waiting for your approval or have replies you haven't read. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#needs-attention).
+**Needs attention**: The first section of the chat sidebar, with an orange title and a count. It lists chats from any project that are waiting for your approval or have a reply you haven't read, and hides when nothing is waiting. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#needs-attention).
 
 **New chats**: The settings pane for the defaults new chats start with. Project chats use project settings instead. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#this-chat-and-new-chats).
 
@@ -171,13 +171,17 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **PII Blocker**: An organization setting that replaces email addresses, phone numbers, credit card numbers, and US Social Security numbers in your messages with placeholders before they're sent. See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md#pii-blocker).
 
+**Pinned**: The sidebar section above **Projects** that holds the chats and projects you pinned with **Pin** in their **…** menu. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#pin-chats-and-projects).
+
 **Plan**: Your subscription level: Free, Pro, Analyst, Research, or Max. Higher plans add credits and features. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
 
 **Policy**: A managed organization admin's set of rules for members, covering which models and features they can use and how much they can spend. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
 **Pro**: The first paid plan. It adds Routines, Council of Experts, Best Pick, and the choice of voice-call model. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
 
-**Project**: A folder for chats that shares files, instructions, and default settings. Its page has **Chats**, **Files**, **Sharing**, and **Settings** tabs. You can share a project with people, groups, or a whole organization, and protect it with a password. See [Projects](https://bearly.ai/docs/manual/projects.md).
+**Project**: A space for chats that shares files, instructions, and default settings. Its page has **Chats**, **Files**, **Sharing**, and **Settings** tabs. You can share a project with people, groups, or a whole organization, and protect it with a password. See [Projects](https://bearly.ai/docs/manual/projects.md).
+
+**Project folder**: A group of projects in the sidebar, made with **Move to folder** → **New folder** in a project's **…** menu. Folders are personal and sync across your devices; removing one keeps its projects. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#group-projects-into-folders).
 
 **Prompt template**: A saved prompt with fill-in fields, made on the **Prompt templates** page. Pick it from the `/` menu under **Skills**, fill in the form, and select **Submit**; the filled form stays in the chat so you can run it again. See [Make a prompt template](https://bearly.ai/docs/manual/chat/compose.md#make-a-prompt-template).
 

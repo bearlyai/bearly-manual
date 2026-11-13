@@ -516,7 +516,7 @@ You get a cited report, a chart of its key numbers, and a Page you can send to p
 
 You get the strongest study on a question, read in full, with its exact methods and numbers cited to pages.
 
-**Why it works:** Scholar finds and ranks papers and, for open-access papers, returns a link to the PDF. Read Site saves that PDF into the chat as a document, and the document tools can search it or read it page by page. Citations open the source document; some open at a matching page, while Read Doc citations open the whole file. With a mouse or trackpad, hover a Read Doc citation to see its page or page range.
+**Why it works:** Scholar finds and ranks papers and, for open-access papers, returns a link to the PDF. Read Site saves that PDF into the chat as a document, and the document tools can search it or read it page by page. Both **Read Doc** and **Search Docs** citations open the source document at the cited page.
 
 **You need:** any plan. Admin controls **Scholar** and **Web**. The chat's **Web** setting on **Auto**. A paper with an open-access PDF.
 

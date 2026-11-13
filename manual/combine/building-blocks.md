@@ -82,7 +82,7 @@ Details: [Documents](https://bearly.ai/docs/manual/capabilities/documents.md).
 |---|---|---|---|---|---|---|
 | **Attach files** (**+** → **Attach files**, drag and drop, paste, or **Take photo**) | Files from your device, up to 1000 MB each (100 MB in an encrypted chat) | Files in the chat, under **Uploaded** | Any | All | — | — |
 | **Share your screen** (**+** → **Share your screen**) | A window or screen you pick | A fresh still capture attached to each message you send | Any | Desktop app, and web browsers that support screen sharing | — | — |
-| **Search Docs** `/search-docs` | A question about the chat's and project's files | Cited passages; search citations open at a matching page when available | Any | All | Yes | Yes |
+| **Search Docs** `/search-docs` | A question about the chat's and project's files | Cited passages; citations open the file at the cited page | Any | All | Yes | Yes |
 | **Read Doc** `/read-document` and **Scan Doc** `/find-in-document` | A document and the pages to read, or exact text to find in up to 20 documents | Page text, or each match with its page, line, and surrounding text, grouped by file | Any | All | Yes | Yes |
 | **Summarize Doc** `/summarize` | A long document | A **Deep Summary** in the reply | Any | All | Yes | No |
 | **Document editor** `/document` | A document task, plus any PDF, Word, PowerPoint, or Excel files in the chat to work on | New or edited files: filled PDF forms, .docx files with tracked changes, decks, spreadsheets with formulas | Any | All | No | No |
@@ -119,7 +119,7 @@ Details: [Images, video, and audio](https://bearly.ai/docs/manual/capabilities/i
 | **Touch Up** `/edit-image` | One or more images in the chat, and optionally an area to change | Edited, extended, or combined images; a transparent-background PNG when you ask to remove the background | Any | All | No | No |
 | **Make Video** `/video` | A description, and optionally an image as the start frame (at most 2.5 times as wide as tall, or as tall as wide) plus an end frame | A 4 to 15-second MP4 with generated sound, saved in the chat | Any | All | No | No |
 | **Edit Video** `/edit-video` | A clip of 3 to 10 seconds, 720 to 2160 pixels on each side, under 50 MB | A separate edited clip; the original stays as it was | Any | All | No | No |
-| **Read Aloud** `/say`, and Voice Studio | Text: a reply, your message, or a script | Spoken audio saved as a chat file; Voice Studio for voices, delivery, and takes | Any | All | No | No |
+| **Read Aloud** `/say`, and Voice Studio | Text: a reply, your message, or a script, up to about 22,500 characters of English (about 7,500 in Chinese, Japanese or Korean) | Spoken audio saved as a chat file; Voice Studio for voices, delivery, and takes | Any | All | No | No |
 | **Transcribe** `/transcribe` | Audio or video files in the chat; attachment limit 1000 MB, with separate transcription processing limits | A transcript with speaker names and timestamps, plus a `.srt` transcript file in the chat | Any | All | No | No |
 | **View Media** `/analyze-media` | Image or video files in the chat, or pages of a PDF | What the AI sees, in the conversation; up to 10 minutes of video or 4 PDF pages per look | Any | All | Yes | No |
 
@@ -143,9 +143,9 @@ Details: [Routines](https://bearly.ai/docs/manual/capabilities/routines.md), [Co
 | **Connectors** (**Connectors** chip in the composer) | A service you connect, turned on for this chat | That service's tool results, such as issues, pages, or records | Any | All; services that need a sign-in can't be set up in the iOS app; npm servers need the desktop app | Yes, the ones you add to the routine | No |
 | **Skills** (`/skill-<name>`; built-ins **Visualize** and **Bearly AI Models**) | A skill's instructions, files, and scripts | Whatever the skill makes; its scripts run on your computer | Any | Installed skills: Desktop; built-ins: All | Yes, the ones you add to the routine | No |
 | **Bearly Browser** | Sites you approve | Page text, screenshots, clicks, typing, form submissions, and downloads saved to the chat (one file up to 50 MiB) | Any | Desktop | Only with the routine's **Browser access**, on the sites you list | No |
-| **Chrome control** | Your open Chrome tabs | Page text, screenshots, clicks and typing, console and network detail | Any | Desktop app, with Chrome and the Bearly extension | No | No |
+| **Chrome control** | Your open Chrome tabs | Page text, screenshots, clicks, typing and form fills, console and network detail | Any | Desktop app, with Chrome and the Bearly extension | No | No |
 | **Computer Use** `/computer` | A task in an app that's open on screen | The task done by clicking and typing, and a **Computer Use** step listing the actions | Any | Desktop | No | No |
-| **Chat management** (ask in any chat) | A request to list, read, create, rename, move, or delete chats, or to create a project | Your chat list, an earlier chat's contents, or the change; listing, reading, and deleting ask you first | Any | All | No | No |
+| **Chat management** (ask in any chat) | A request to list, read, create, rename, move, or delete chats, to create a project, or to check your plan and models | Your chat list, an earlier chat's contents, the change, or your plan and the models this chat can use; listing, reading, and deleting ask you first | Any | All | No | No |
 | **Prompt templates** (sidebar **Prompt templates**; run from `/` → **Skills**) | Values for the template's fields, and optional files | A filled form in the chat that runs as a prompt and can run again with new values | Any | All | No | No |
 | **Remote modules** (tools labeled `fn-…`) | Tools from a server you or your admin add | That server's results | Any | Web app and desktop app; servers on a private network need the desktop app | No | No |
 
@@ -281,7 +281,7 @@ Turn on **Zero Data Retention only** and Bearly shows only zero-retention models
 
 ### Approvals and Full access
 
-- In **Standard** permissions, Bearly asks before a tool reaches outside the chat: local files, desktop control, browsers, connectors, skill scripts, People Search, and listing, reading, or deleting your chats. The chain waits at that step until you answer. **Needs attention** in the sidebar lists chats waiting on you.
+- In **Standard** permissions, Bearly asks before a tool reaches outside the chat: local files, desktop control, browsers, connectors, skill scripts, People Search, and listing, reading, or deleting your chats. The chain waits at that step until you answer. **Needs attention**, at the top of the chat sidebar, lists the chats waiting on you.
 - Approvals you save stay on this device: **This response** lasts until the answer ends, **This session** until the chat reloads, and **This chat** until you revoke it. They never sync and never authorize a routine.
 - **Full access** lets one chat on one device use your enabled tools without asking. It still asks before connecting a new service, before listing, reading, or deleting your chats, before People Search runs, before giving a routine browser access or unattended local access, and for Computer Use safety checks and certificate warnings.
 - On the web and phones, Full access covers connectors only.

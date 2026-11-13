@@ -45,7 +45,9 @@ Select a project in the sidebar to open its page. It opens on the **Chats** tab.
 
 In the sidebar, each project has one row. The arrow at the end of the row (**Show chats** or **Hide chats**) shows or hides its chats under it, pinned chats first. Opening a project, or a chat in it, unfolds it. Chats you archived individually don't appear there. While a project's chats are hidden, a mark on its row tells you a chat in it is working, waiting for your approval, or unread. A people icon after the name marks a shared project; hover it to see with how many people. Select the **Projects** heading to fold the whole section; it then reads, for example, "4 projects". The heading has **New project**, and **Collapse all projects** once any project is expanded.
 
-The project's **…** menu in the sidebar offers **Rename** (owners), **Archive** or **Unarchive**, and **Delete** (owners). An archived project shows **Delete · unarchive first**.
+The project's **…** menu in the sidebar offers **Pin** or **Unpin**, **Move to folder**, **Rename** (owners), **Archive** or **Unarchive**, and **Delete** (owners). An archived project shows **Delete · unarchive first**.
+
+**Pin** moves the project from **Projects** to **Pinned**, above it, so it stays in view when **Projects** is folded. **Move to folder** puts the project in one of your folders or in a **New folder**, and **Take out of folder** moves it back. Folders sit at the top of **Projects**, sorted by name, and fold on their own. Pins and folders are yours alone: people you share the project with don't see them. See [Pin chats and projects](https://bearly.ai/docs/manual/chat/organize.md#pin-chats-and-projects) and [Group projects into folders](https://bearly.ai/docs/manual/chat/organize.md#group-projects-into-folders).
 
 ### Chats tab
 

@@ -22,23 +22,23 @@ From top to bottom:
 | Area | What it does | More |
 |---|---|---|
 | Top row | **Hide sidebar**, then a magnifier (**Search chats**, which opens **Search chats and files**, with **Chats** and **Files** tabs) and **New chat**, which opens the New Chat launcher outside any project. On a project's page and on **Routines**, **Prompt templates**, and **Meetings**, <kbd>⌘</kbd> <kbd>F</kbd> (<kbd>Ctrl</kbd> <kbd>F</kbd> on Windows and Linux) opens search too | [Organize chats](https://bearly.ai/docs/manual/chat/organize.md) |
-| **Needs attention** | Appears with a count when other chats are waiting for an approval or have replies you haven't read. Select it to see **Awaiting approval** and **Unread**; select it again to show all chats | [Organize chats](https://bearly.ai/docs/manual/chat/organize.md) |
 | **Encrypted chats locked** | Appears when this device can't open your end-to-end encrypted chats yet. **Approve** starts device approval | [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md) |
 | **Chat** | Opens the New Chat launcher, as **New chat** in the top row does | [The New Chat launcher](#the-new-chat-launcher) |
 | **Prompt templates** | Saved prompts with fill-in fields that run as a form in any chat | [Make a prompt template](https://bearly.ai/docs/manual/chat/compose.md#make-a-prompt-template) |
 | **Routines** | Prompts that run on a schedule. Pro and higher; on Free it shows only if you already have routines | [Routines](https://bearly.ai/docs/manual/capabilities/routines.md) |
 | **Meetings** | Record a meeting or a voice note and get a transcript | [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md) |
-| **Projects** | Your projects, one row each. The header has **New project**, and **Collapse all projects** once any project is expanded. Select a project to open its page; the arrow at the end of its row shows or hides its chats | [Projects](https://bearly.ai/docs/manual/projects.md) |
-| **Pinned** | Chats you pinned | [Organize chats](https://bearly.ai/docs/manual/chat/organize.md) |
+| **Needs attention** | Appears, with its title in orange and a count, when chats are waiting for your approval or have a reply you haven't read, from any project. Opening a chat takes it off the list | [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#needs-attention) |
+| **Pinned** | Chats and projects you pinned, from anywhere | [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#pin-chats-and-projects) |
+| **Projects** | Your folders of projects, by name, then your other projects, one row each. The header has **New project**, and **Collapse all projects** once any project is expanded. Select a project to open its page; the arrow at the end of its row shows or hides its chats | [Projects](https://bearly.ai/docs/manual/projects.md) |
 | Date groups | Every other chat by last activity: **Today**, **This week**, **This month**, then each earlier month of this year, then earlier years | [Organize chats](https://bearly.ai/docs/manual/chat/organize.md) |
 | **Archives** | Near the bottom, once you've archived something. Shows how many chats you've archived and opens the archive list | [Organize chats](https://bearly.ai/docs/manual/chat/organize.md) |
 | Account menu | The bottom row, with your email, your plan, and the percentage of your allowance used | [The account menu](#the-account-menu) |
 
-**Folding sections.** Select a section's header (**Projects**, **Pinned**, or a date group) to fold it. A folded section shows one row saying what it holds, such as "4 projects" or "2 chats", with a mark if a chat in it is unread, working, or waiting for approval. Bearly remembers which sections you folded on this device. Creating a project unfolds **Projects**.
+**Folding sections.** Select a section's header (**Needs attention**, **Pinned**, **Projects**, or a date group) to fold it, or a folder's row to fold that folder. A folded section shows one row saying what it holds, such as "4 projects" or "2 chats", with a mark if a chat in it is unread, working, or waiting for approval. Bearly remembers which sections you folded on this device. Creating a project unfolds **Projects**.
 
 **Signs on a chat row.** A dot at the end of the row means unread. A spinner means Bearly is working. A shield means the chat is waiting for your approval. A lock reads "Approve this device to open this chat": it's an end-to-end encrypted chat this device can't open yet. A people icon after a project's name means it's shared; hover it to see with how many people.
 
-**More actions** (the **…** on a chat row, shown when you point at the row or tab to it, and always on touch screens) offers **Rename**, **Pin** or **Unpin**, **Move to project...**, **Archive** or **Unarchive**, **Mark unread** or **Mark read**, **Delete**, and **Select** for choosing several chats at once. A project's **…** offers **Rename**, **Archive**, and **Delete**. With a mouse, you can also drag a chat onto a project to move it there.
+**More actions** (the **…** on a chat row, shown when you point at the row or tab to it, and always on touch screens) offers **Rename**, **Pin** or **Unpin**, **Move to project...**, **Archive** or **Unarchive**, **Mark unread** or **Mark read**, **Delete**, and **Select** for choosing several chats at once. A project's **…** offers **Pin** or **Unpin**, **Move to folder**, **Rename**, **Archive**, and **Delete**; a folder's **…** offers **Rename** and **Remove folder**. With a mouse, you can also drag a chat onto a project to move it there.
 
 ### The account menu
 
@@ -163,7 +163,7 @@ What each pane holds:
 - **Skills**: the **Skill Store** and your installed skills. Installing needs the desktop app.
 - **Appearance**: **Theme**, then **Font** and **Font size** under **Text**, for this device only.
 - **Phone and SMS**: add and verify a US or Canadian mobile number for texts and codes, or turn texts off.
-- **Privacy and security**: **Zero Data Retention only**, unitemized billing, and **End-to-end encryption** with your approved devices and recovery options.
+- **Privacy and security**: **Zero Data Retention only** and **End-to-end encryption** with your approved devices and recovery options.
 - **Devices**: where you're signed in, **Sign out all other devices**, and the browser extension and API keys that have their own access.
 - **Connectors**: **Your connectors**, **Built-in connectors**, and **Add custom MCP server**.
 - **Chrome extension**: **Control Chrome from chat** and the connection status.

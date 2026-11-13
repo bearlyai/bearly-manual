@@ -78,7 +78,7 @@ You end up with a cited report and its PDF in your inbox, a chart of its numbers
 
 You get a list of papers on a question, the best open-access one saved in the chat, exact figures quoted with page citations, and a one-page brief.
 
-**Why it works:** Scholar's paper reader returns an open-access PDF link when a paper has one. Read Site downloads that PDF into the chat as a file. Once a chat has a file, Bearly's document tools can search it and read it page by page, and answers carry citations that open the source document. Depending on how Bearly read it, a citation can open at a matching page or open the whole file. The Page at the end is written from everything above it in the chat.
+**Why it works:** Scholar's paper reader returns an open-access PDF link when a paper has one. Read Site downloads that PDF into the chat as a file. Once a chat has a file, Bearly's document tools can search it and read it page by page, and answers carry citations that open the source document at the cited page. The Page at the end is written from everything above it in the chat.
 **You need:** Any plan. Any platform. Organization controls: **Scholar** and **Web**. The chat's **Web** setting on **Auto** (the default), which Read Site needs. Searching the saved paper needs a chat that isn't end-to-end encrypted; reading it page by page works in any chat.
 
 
@@ -105,7 +105,7 @@ You get a list of papers on a question, the best open-access one saved in the ch
    From that paper, quote the exact datasets, the baseline, and the reported hallucination rates, with page numbers.
    ```
 
-   — Bearly searches and reads the saved PDF. Select a citation to open the PDF and check the passage. If the whole file opens, use the page or page range shown when you hover a Read Doc citation with a mouse or trackpad.
+   — Bearly searches and reads the saved PDF. Select a citation to open the PDF at the cited page and check the passage.
 
 4. Write the brief:
 

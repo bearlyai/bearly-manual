@@ -195,9 +195,11 @@ Voice Studio is where you write a script, pick a voice, direct the delivery, and
 
 
 
-**What you get:** takes in a player that highlights words as they play, with **Download audio**. Older takes are under **Earlier takes**. Each take is also saved as an audio file in the chat (`.wav` or `.mp3`), so later steps can use it.
+**What you get:** takes in a player that highlights words as they play, with **Download audio**. Older takes are under **Earlier takes**. Each take is also saved as an audio file in the chat (`.wav` or `.mp3`), so later steps can use it. A long script is read in parts and saved as one recording.
 
-**Limits:** Voice Studio appears on the latest text-to-speech result in the chat; earlier results show a plain player. The word highlighting uses estimated timing. A failed recording isn't retried automatically; when a recording you asked for in the chat fails, you'll see "The audio could not be created." In read-only chats you get plain players only. The studio's model switch picks the voice engine, such as **Fast** or **Studio**.
+Rarely, a reading comes out too large for one file. It's then saved as numbered parts. A reading you asked for in the chat shows a player for each part, and the studio shows it as one take with "This reading was saved as 2 files because it was too long for one. Play them in order." Select **Part 1 of 2** or **Part 2 of 2** to choose which part plays; **Download audio** saves the selected part. If a part is later deleted from the chat, the others keep their numbers and the studio says, for example, "Part 2 of this reading was deleted."
+
+**Limits:** a recording can be up to about 22,500 characters of English (about 7,500 in Chinese, Japanese or Korean), roughly 30 minutes of audio. Longer text is refused before anything is recorded or charged, with "Text this long would make more than about 30 minutes of audio. Split it into shorter parts." If the voice service fails partway through a long reading, the part already read is kept and the studio says "Only the first N of M characters were read aloud. Shorten the text or split it into parts."; when you asked in the chat, Bearly tells you the audio stops early and can read the rest. Voice Studio appears on the latest text-to-speech result in the chat; earlier results show a plain player. The word highlighting uses estimated timing. A failed recording isn't retried automatically; when a recording you asked for in the chat fails, you'll see "The audio could not be created." In read-only chats you get plain players only. The studio's model switch picks the voice engine, such as **Fast** or **Studio**.
 
 ## Transcribe
 
