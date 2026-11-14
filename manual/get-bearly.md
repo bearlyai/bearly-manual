@@ -115,7 +115,7 @@ The app also puts an icon in the menu bar (Mac) or system tray (Windows and Linu
 
 ### Updates
 
-The desktop app downloads updates in the background. When one is ready, **Update ready · Restart** appears at the top of the window; select it to restart into the new version. Most improvements arrive without a new download, because the app loads the current Bearly from the web. A feature that needs a newer app shows **Update Bearly**.
+The desktop app downloads updates in the background. When one is ready, an **Update** button appears at the top of the window, under the chat's title or, on pages without one, beside the sidebar button. Select it to restart into the new version. Most improvements arrive without a new download, because the app loads the current Bearly from the web. A feature that needs a newer app shows **Update Bearly**.
 
 ## iOS app
 

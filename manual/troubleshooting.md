@@ -54,7 +54,7 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 | **Message not sent** — "Your message is back in the message box. Try sending it again." | The message couldn't be sent | Send it again |
 | Bearly stops searching the web partway through an answer | Web Search runs at most twice per answer | Ask a follow-up, and the next answer can search again |
 | An answer has no web sources | The chat's **Web** setting is **Off**, which also removes `/web-search` | Open the sliders button and set **Web** to **Auto** |
-| Bearly seems to forget the start of a long chat | Once a chat is long, the default **History** mode, **Chat (Dynamic)**, shortens older tool results and long earlier messages, then drops the oldest | Open the sliders button → **History** → **Agentic (Compaction)**, or restate the key facts. "Conversation compacted so you can keep going" is normal in that mode |
+| Bearly seems to forget the start of a long chat | Once a chat is long, Bearly shortens older tool results and long earlier messages, then drops the oldest messages if that isn't enough | Restate the key facts, or start a new chat with a short summary of this one. If this chat's sliders menu shows **History**, you can also choose **Agentic (Compaction)**; "Conversation compacted so you can keep going" is normal there. See [Long conversations and History](https://bearly.ai/docs/manual/chat/settings.md#long-conversations-and-history) |
 | The AI used a different file or tool than you meant | It chose on its own | Name the file with `@` and the tool with `/` or `@`. See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md#reference-tools-files-and-skills) |
 
 ## Usage limits and credits
@@ -135,7 +135,7 @@ Other chats that look broken:
 | "Use Skills in the desktop app" | Installed skills run local files | Install and use them in the desktop app |
 | No `/computer` in the `/` menu | Computer Use controls apps on your computer, so it's offered only in the desktop app | Ask from a chat in the desktop app |
 | **Get desktop app** on the **Online meeting** card | Recording a call's computer audio needs the desktop app | Use the desktop app on Windows or macOS 13 or later, or record with **In person or voice note** |
-| "_Feature_ needs a newer Bearly desktop app." or **Update Bearly** | Your desktop app is too old for the feature | Select **Update ready · Restart** if it shows, or install the latest version from bearly.ai |
+| "_Feature_ needs a newer Bearly desktop app." or **Update Bearly** | Your desktop app is too old for the feature | Select **Update** at the top of the window if it shows, or install the latest version from bearly.ai |
 | "This version of the Bearly desktop app does not support Browser." | Same, for Bearly Browser | Update the desktop app |
 | "Update Bearly to continue" — "This copy of Bearly is older than one already used on this computer." | An older copy opened after a newer one | Install the latest version from bearly.ai and open it. Until then, you can start new chats in your browser at bearly.ai/dashboard |
 | "We can't reach Bearly." in the desktop app | The app can't load Bearly | Check your connection and select **Try again**. If your connection works, quit and reopen Bearly |
@@ -364,7 +364,7 @@ See [Get Bearly](https://bearly.ai/docs/manual/get-bearly.md) and [Privacy and s
 - [Documentation index](https://bearly.ai/docs.md): Browse every Bearly guide.
 - [Previous: Use Bearly from scripts and agents](https://bearly.ai/docs/manual/api-and-agents.md)
 - [Next: Glossary](https://bearly.ai/docs/manual/glossary.md)
+- [Related: Tune a chat: settings, style, reasoning, and memory](https://bearly.ai/docs/manual/chat/settings.md)
 - [Related: Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md)
 - [Related: Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md)
 - [Related: Choose and compare models](https://bearly.ai/docs/manual/chat/models.md)
-- [Related: Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md)

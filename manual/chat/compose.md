@@ -19,7 +19,7 @@ The composer at the bottom of every chat is where you type, attach files, name t
 
 - **+** opens the **Add** menu: **Attach files** and **Share your screen**.
 - **Take photo**, a camera button, appears on phones and tablets.
-- The sliders button opens this chat's controls: **Web**, **Style**, **Scholar**, **Reasoning**, **Memories**, and **History**. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md).
+- The sliders button opens this chat's controls: **Web**, **Style**, **Scholar**, **Reasoning**, and **Memories**, plus **History** on some older chats. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md).
 - The model button on the right shows the current model's short name and chooses who answers. See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
 - Voice and dictation controls sit next to it. See [Voice](https://bearly.ai/docs/manual/chat/voice.md).
 - The send buttons. With nothing running there's one, **Send**. While Bearly works, an empty composer shows **Stop**; once you type, you get **Stop**, **Queue**, and **Send**. See [Send while Bearly is working](#send-while-bearly-is-working).
@@ -206,7 +206,7 @@ After an error or a usage limit, the queue starts again once a later answer fini
 
 **What you get:** Corrections that land while the answer is still being written, and a chain of follow-ups that runs without you watching and stops instead of piling up failures.
 **Limits:** Up to 4 waiting messages. When the queue is full, **Queue** is disabled, as is the send button in chats where it waits for the answer ("Queue full — send, edit, or remove a waiting message first"); press <kbd>Enter</kbd> on a message that would queue and the header briefly reads **Queue is full**. Waiting messages aren't saved with the chat. Editing an earlier message never queues; it stops the current answer and reruns. There are no keyboard shortcuts for queueing or for stopping and sending at once.
-**Combines with:** [Email and text](https://bearly.ai/docs/manual/capabilities/email-and-text.md) as the last step of a chain; [History modes](https://bearly.ai/docs/manual/chat/settings.md#history-modes) for long chains of tool work.
+**Combines with:** [Email and text](https://bearly.ai/docs/manual/capabilities/email-and-text.md) as the last step of a chain; [Long conversations and History](https://bearly.ai/docs/manual/chat/settings.md#long-conversations-and-history) for long chains of tool work.
 
 ## Stop an answer or a single step
 

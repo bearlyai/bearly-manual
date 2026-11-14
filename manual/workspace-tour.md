@@ -65,6 +65,7 @@ The launcher is the screen a new chat opens on. Get there with **New chat** or *
   - When this draft is set to end-to-end encryption but this device can't encrypt it yet: "Approve this device to send this chat end-to-end encrypted." (or "Finish setup to send…") with **Use standard encryption**. The send button reads **Approve this device to send** until you approve the device or switch.
   - When Bearly couldn't check your encryption settings in time: "This chat uses standard encryption." with **Turn on end-to-end encryption**.
   - After setup, the lock in the context strip switches this draft between end-to-end and standard encryption. It can't change while the draft has attachments. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
+- **How did you hear about Bearly?** On a new personal account's first day, a card under the composer asks this once. Pick an answer, choose **Other** to type a few words, or select **Skip**. Either way it doesn't come back on any of your devices, and it never stops you sending. While it shows, it takes the place of **Set up end-to-end encryption**, which returns as soon as you answer or skip.
 - **Strip controls.** While the chat prepares, the context strip shows **Work locally**, **Permissions**, and **Connectors**; they work once the chat has loaded.
 - **Tips.** Short notes appear under the composer, labeled **Tip**, **Note**, **What's new**, or **Required**, and you get at most one tip a day. Dismissing one hides tips for the rest of the day on all your devices. A **Required** notice blocks sending until you select **Acknowledge**.
 
@@ -111,7 +112,7 @@ Photos and screenshots you upload with a generic name, such as image.png, are re
 The message box at the bottom. Its placeholder reads "How can I help? Type / or @ for tools". See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md).
 
 - **Up next.** Above the box, messages waiting to send after the current answer.
-- **Left of the toolbar:** **+** (**Attach files** and **Share your screen**); **Take photo** on touch screens; the sliders button, which opens this chat's **Web**, **Style**, **Scholar**, **Reasoning**, **Memories**, and **History** settings plus **Chat Settings**. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md).
+- **Left of the toolbar:** **+** (**Attach files** and **Share your screen**); **Take photo** on touch screens; the sliders button, which opens this chat's **Web**, **Style**, **Scholar**, **Reasoning**, and **Memories** settings (plus **History** on some older chats) and **Chat Settings**. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md).
 - **Right of the toolbar:** the model button (**Select model**), which shows the current model's short name; **Start voice call**, with a sound-wave icon; and the send buttons. With nothing running there's one: **Send**. While Bearly works, an empty box shows **Stop**; once you type, you get **Stop**, **Queue**, and **Send**: **Send** adds your message to the running answer, and **Queue** holds it until the answer finishes. Chats that can't take a message mid-answer show only **Stop** and **Send**, and **Send** waits for the answer. See [Send while Bearly is working](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-is-working), [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md), and [Voice](https://bearly.ai/docs/manual/chat/voice.md).
 - **Top right of the box:** the dictation microphone. See [Voice](https://bearly.ai/docs/manual/chat/voice.md).
 
@@ -192,7 +193,7 @@ The desktop app for Mac, Windows, and Linux has the same screens plus a few of i
 - **Summon Bearly from anywhere** with <kbd>⌘</kbd> <kbd>Shift</kbd> <kbd>P</kbd> (<kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>P</kbd> on Windows and Linux). Change it in **Settings** → **Desktop** → **Keyboard shortcut**.
 - **The menu bar or tray icon** shows the window when you click it.
 - **Closing the window quits Bearly** after asking **Quit Bearly?**. While it's recording a meeting or saving a Browser download to a chat, it asks **Bearly is still working** instead, with **Keep Bearly open** and **Quit when finished**.
-- **Updates** download in the background; an **Update ready · Restart** pill at the top installs them.
+- **Updates** download in the background; an **Update** button at the top of the window installs them.
 - **Desktop-only areas**: the **Work locally** chip, **Open Browser**, the **Desktop**, **Runtime**, and **Browser** settings panes, syncing a folder into a project, and running routines.
 
 See [Get Bearly](https://bearly.ai/docs/manual/get-bearly.md).

@@ -20,7 +20,7 @@ Index: [https://bearly.ai/docs/manual.md](https://bearly.ai/docs/manual.md)
 - [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md): How to choose, compare, and switch AI models in Bearly, including the model picker, Bearly Fast, Pro, and Ultra, defaults by plan and usage, per-chat and new-chat defaults, plan-gated and hidden models, Zero Data Retention only, running out of credits, and comparing answers with Rerun and Council of Experts.
 - [Work with answers](https://bearly.ai/docs/manual/chat/answers.md): How to copy, edit, delete, rerun, and compare versions of messages in Bearly, read answers aloud or open them in Canvas, follow what Bearly is doing and read an answer's steps and citations, what answers can display, what to do when an answer fails, and how to move around long chats with the timeline and chapters.
 - [Organize, find, share, and export chats](https://bearly.ai/docs/manual/chat/organize.md): How to start, rename, pin, archive, delete, select, and move chats into projects in Bearly, read the sidebar and its Needs attention section, pin chats and projects, group projects into folders, search chats and files, use the command menu, download a chat as Markdown, share a chat as a Page, ask Bearly to manage chats for you, and open What's New.
-- [Tune a chat: settings, style, reasoning, and memory](https://bearly.ai/docs/manual/chat/settings.md): Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Temperature, Instructions, Language, Web Search, History modes, Memories, Personalization, and how Bearly tells the AI today's date.
+- [Tune a chat: settings, style, reasoning, and memory](https://bearly.ai/docs/manual/chat/settings.md): Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Temperature, Instructions, Language, Web Search, how long conversations are kept, Memories, Personalization, and how Bearly tells the AI today's date.
 - [Talk to Bearly: dictation and voice calls](https://bearly.ai/docs/manual/chat/voice.md): How to speak to Bearly instead of typing, with push-to-talk dictation into the message box and live voice calls that can run actions, plus Read aloud, every Dictation and Voice setting, plan and platform requirements, and limits.
 - [Keyboard shortcuts](https://bearly.ai/docs/manual/chat/shortcuts.md): Every Bearly keyboard shortcut for macOS and for Windows and Linux, covering sending, new lines, the / and @ picker, the command menu, search, the sidebar, new and deleted chats, jumping between prompts, Settings, dialogs, dictation, and the desktop app's global shortcut.
 
@@ -61,7 +61,7 @@ Index: [https://bearly.ai/docs/manual.md](https://bearly.ai/docs/manual.md)
 - [Guide for AI assistants](https://bearly.ai/docs/manual/for-ai-assistants.md): How an AI assistant, including Bearly's own, should use this manual to answer questions about Bearly, check what a user's plan and device allow, and walk them through a task or a new combination of features.
 - [Use Bearly from scripts and agents](https://bearly.ai/docs/manual/api-and-agents.md): How developers and AI agents use Bearly programmatically, including API keys, the Bearly API's endpoints, authentication, models, limits, and errors, the Bearly AI Models skill for scripts inside Bearly, links that open Bearly with a prompt, the Markdown versions of this manual, remote modules, and guidance for agents that operate Bearly's interface for a person.
 - [Fix common problems](https://bearly.ai/docs/manual/troubleshooting.md): What a Bearly message or symptom means and what to do about it — upload and PDF password errors, failed answers, a paused queue, usage limits and out-of-credits notices, hidden models, missing features, desktop-only tools, locked encrypted chats, routines that didn't run, connectors, email and text, Deep Research, Full access, Chrome control, voice, dictation, meetings, sharing, and sign-in.
-- [Glossary](https://bearly.ai/docs/manual/glossary.md): Plain definitions of the Bearly terms you meet in the app and in this manual, from Agentic (Compaction) and Bearly Fast to Full access, Routines, Voice Studio, and Zero Data Retention only, each with a link to the page that covers it.
+- [Glossary](https://bearly.ai/docs/manual/glossary.md): Plain definitions of the Bearly terms you meet in the app and in this manual, from Bearly Fast and Chat (Dynamic) to Full access, Routines, Voice Studio, and Zero Data Retention only, each with a link to the page that covers it.
 
 ---
 
@@ -334,7 +334,7 @@ The app also puts an icon in the menu bar (Mac) or system tray (Windows and Linu
 
 ### Updates
 
-The desktop app downloads updates in the background. When one is ready, **Update ready · Restart** appears at the top of the window; select it to restart into the new version. Most improvements arrive without a new download, because the app loads the current Bearly from the web. A feature that needs a newer app shows **Update Bearly**.
+The desktop app downloads updates in the background. When one is ready, an **Update** button appears at the top of the window, under the chat's title or, on pages without one, beside the sidebar button. Select it to restart into the new version. Most improvements arrive without a new download, because the app loads the current Bearly from the web. A feature that needs a newer app shows **Update Bearly**.
 
 ## iOS app
 
@@ -681,6 +681,7 @@ The launcher is the screen a new chat opens on. Get there with **New chat** or *
   - When this draft is set to end-to-end encryption but this device can't encrypt it yet: "Approve this device to send this chat end-to-end encrypted." (or "Finish setup to send…") with **Use standard encryption**. The send button reads **Approve this device to send** until you approve the device or switch.
   - When Bearly couldn't check your encryption settings in time: "This chat uses standard encryption." with **Turn on end-to-end encryption**.
   - After setup, the lock in the context strip switches this draft between end-to-end and standard encryption. It can't change while the draft has attachments. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
+- **How did you hear about Bearly?** On a new personal account's first day, a card under the composer asks this once. Pick an answer, choose **Other** to type a few words, or select **Skip**. Either way it doesn't come back on any of your devices, and it never stops you sending. While it shows, it takes the place of **Set up end-to-end encryption**, which returns as soon as you answer or skip.
 - **Strip controls.** While the chat prepares, the context strip shows **Work locally**, **Permissions**, and **Connectors**; they work once the chat has loaded.
 - **Tips.** Short notes appear under the composer, labeled **Tip**, **Note**, **What's new**, or **Required**, and you get at most one tip a day. Dismissing one hides tips for the rest of the day on all your devices. A **Required** notice blocks sending until you select **Acknowledge**.
 
@@ -727,7 +728,7 @@ Photos and screenshots you upload with a generic name, such as image.png, are re
 The message box at the bottom. Its placeholder reads "How can I help? Type / or @ for tools". See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md).
 
 - **Up next.** Above the box, messages waiting to send after the current answer.
-- **Left of the toolbar:** **+** (**Attach files** and **Share your screen**); **Take photo** on touch screens; the sliders button, which opens this chat's **Web**, **Style**, **Scholar**, **Reasoning**, **Memories**, and **History** settings plus **Chat Settings**. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md).
+- **Left of the toolbar:** **+** (**Attach files** and **Share your screen**); **Take photo** on touch screens; the sliders button, which opens this chat's **Web**, **Style**, **Scholar**, **Reasoning**, and **Memories** settings (plus **History** on some older chats) and **Chat Settings**. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md).
 - **Right of the toolbar:** the model button (**Select model**), which shows the current model's short name; **Start voice call**, with a sound-wave icon; and the send buttons. With nothing running there's one: **Send**. While Bearly works, an empty box shows **Stop**; once you type, you get **Stop**, **Queue**, and **Send**: **Send** adds your message to the running answer, and **Queue** holds it until the answer finishes. Chats that can't take a message mid-answer show only **Stop** and **Send**, and **Send** waits for the answer. See [Send while Bearly is working](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-is-working), [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md), and [Voice](https://bearly.ai/docs/manual/chat/voice.md).
 - **Top right of the box:** the dictation microphone. See [Voice](https://bearly.ai/docs/manual/chat/voice.md).
 
@@ -808,7 +809,7 @@ The desktop app for Mac, Windows, and Linux has the same screens plus a few of i
 - **Summon Bearly from anywhere** with <kbd>⌘</kbd> <kbd>Shift</kbd> <kbd>P</kbd> (<kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>P</kbd> on Windows and Linux). Change it in **Settings** → **Desktop** → **Keyboard shortcut**.
 - **The menu bar or tray icon** shows the window when you click it.
 - **Closing the window quits Bearly** after asking **Quit Bearly?**. While it's recording a meeting or saving a Browser download to a chat, it asks **Bearly is still working** instead, with **Keep Bearly open** and **Quit when finished**.
-- **Updates** download in the background; an **Update ready · Restart** pill at the top installs them.
+- **Updates** download in the background; an **Update** button at the top of the window installs them.
 - **Desktop-only areas**: the **Work locally** chip, **Open Browser**, the **Desktop**, **Runtime**, and **Browser** settings panes, syncing a folder into a project, and running routines.
 
 See [Get Bearly](https://bearly.ai/docs/manual/get-bearly.md).
@@ -873,7 +874,7 @@ The composer at the bottom of every chat is where you type, attach files, name t
 
 - **+** opens the **Add** menu: **Attach files** and **Share your screen**.
 - **Take photo**, a camera button, appears on phones and tablets.
-- The sliders button opens this chat's controls: **Web**, **Style**, **Scholar**, **Reasoning**, **Memories**, and **History**. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md).
+- The sliders button opens this chat's controls: **Web**, **Style**, **Scholar**, **Reasoning**, and **Memories**, plus **History** on some older chats. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md).
 - The model button on the right shows the current model's short name and chooses who answers. See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
 - Voice and dictation controls sit next to it. See [Voice](https://bearly.ai/docs/manual/chat/voice.md).
 - The send buttons. With nothing running there's one, **Send**. While Bearly works, an empty composer shows **Stop**; once you type, you get **Stop**, **Queue**, and **Send**. See [Send while Bearly is working](#send-while-bearly-is-working).
@@ -1060,7 +1061,7 @@ After an error or a usage limit, the queue starts again once a later answer fini
 
 **What you get:** Corrections that land while the answer is still being written, and a chain of follow-ups that runs without you watching and stops instead of piling up failures.
 **Limits:** Up to 4 waiting messages. When the queue is full, **Queue** is disabled, as is the send button in chats where it waits for the answer ("Queue full — send, edit, or remove a waiting message first"); press <kbd>Enter</kbd> on a message that would queue and the header briefly reads **Queue is full**. Waiting messages aren't saved with the chat. Editing an earlier message never queues; it stops the current answer and reruns. There are no keyboard shortcuts for queueing or for stopping and sending at once.
-**Combines with:** [Email and text](https://bearly.ai/docs/manual/capabilities/email-and-text.md) as the last step of a chain; [History modes](https://bearly.ai/docs/manual/chat/settings.md#history-modes) for long chains of tool work.
+**Combines with:** [Email and text](https://bearly.ai/docs/manual/capabilities/email-and-text.md) as the last step of a chain; [Long conversations and History](https://bearly.ai/docs/manual/chat/settings.md#long-conversations-and-history) for long chains of tool work.
 
 ## Stop an answer or a single step
 
@@ -1822,7 +1823,7 @@ Find what we decided about pricing in this project, summarize it in five bullets
 
 ---
 title: "Tune a chat: settings, style, reasoning, and memory"
-description: "Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Temperature, Instructions, Language, Web Search, History modes, Memories, Personalization, and how Bearly tells the AI today's date."
+description: "Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Temperature, Instructions, Language, Web Search, how long conversations are kept, Memories, Personalization, and how Bearly tells the AI today's date."
 canonical: "https://bearly.ai/docs/manual/chat/settings/"
 markdown: "https://bearly.ai/docs/manual/chat/settings.md"
 ---
@@ -1831,7 +1832,7 @@ markdown: "https://bearly.ai/docs/manual/chat/settings.md"
 
 HTML: [https://bearly.ai/docs/manual/chat/settings/](https://bearly.ai/docs/manual/chat/settings/)
 
-> Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Temperature, Instructions, Language, Web Search, History modes, Memories, Personalization, and how Bearly tells the AI today's date.
+> Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Temperature, Instructions, Language, Web Search, how long conversations are kept, Memories, Personalization, and how Bearly tells the AI today's date.
 
 Each chat has its own model, reply language, style, reasoning level, instructions, and memory settings. You can change them for the chat in front of you, set defaults for every chat you start later, and tell Bearly about yourself once so every chat can use it. This page covers every chat setting and how they combine with project and organization settings.
 
@@ -1845,7 +1846,7 @@ You can reach chat settings three ways:
 
 The **Settings** window opens over the page you're on and lists chat settings under **Chats**: **This chat**, **New chats**, **Permissions**, **Personalization**, **Voice**, **Dictation**, and **Skills**. **Chat Settings** opens it on **This chat**. Voice and dictation are on [Voice](https://bearly.ai/docs/manual/chat/voice.md), and **Permissions** on [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md). The window's header shows **Saving...**, **Saved**, or **Not saved** as changes save. On a phone, the window fills the screen and shows the list of panes or one pane at a time; select **Settings** at the top to go back to the list.
 
-The sliders button in the composer holds quick per-chat switches: **Web**, **Style**, **Scholar**, **Reasoning**, **Memories**, and **History**. **History** and **Scholar** live only there, not in the **Settings** window.
+The sliders button in the composer holds quick per-chat switches: **Web**, **Style**, **Scholar**, **Reasoning**, and **Memories**. Some older chats also show **History** there (see [Long conversations and History](https://bearly.ai/docs/manual/chat/settings.md#long-conversations-and-history)). **History** and **Scholar** live only in the sliders menu, not in the **Settings** window.
 
 ## This chat and New chats
 
@@ -1948,18 +1949,20 @@ I'm preparing a board update. Use plain language, round numbers to one decimal p
 
 **Scholar**, in the sliders menu only, works the same way for research papers: **Auto** or **Off**. Typing `/scholar` uses it for one message even when it's off. See [Research](https://bearly.ai/docs/manual/capabilities/research.md).
 
-## History modes
+## Long conversations and History
 
-**History** in the sliders menu decides how the AI reads a long conversation. It's set per chat and follows the chat to your other devices.
+Every new chat handles a long conversation the same way, and so does an older chat once you open it. The AI reads the whole conversation until it passes the history limit. Then Bearly shortens older tool results first, then the longest earlier messages, only as much as needed; the oldest messages drop out only when that isn't enough. Your newest message is read whole unless it's over the limit on its own. There's no setting for this, so these chats have no **History** item in the sliders menu.
+
+Some older chats that Bearly hasn't upgraded yet, mostly end-to-end encrypted ones, still show **History** in the sliders menu. There it decides how the AI reads a long conversation. It's set per chat and follows the chat to your other devices.
 
 | Mode | What the AI reads | Best for |
 |---|---|---|
-| **Chat (Dynamic)** (default) | The whole conversation until it passes the history limit. Then Bearly shortens older tool results first, then the longest earlier messages, only as much as needed; the oldest messages drop out only when that isn't enough. Your newest message is read whole unless it's over the limit on its own. | Ordinary conversations |
+| **Chat (Dynamic)** (default) | The same as every other chat: the whole conversation until it passes the history limit, then older tool results and the longest earlier messages are shortened, and the oldest messages drop out only when that isn't enough. | Ordinary conversations |
 | **Agentic (Compaction)** | When the conversation gets long, Bearly writes a summary of the older part in the background and keeps the most recent part word for word. The chat shows **Conversation compacted so you can keep going**. If a summary fails, the full history is kept. | Long working sessions with many tool steps, such as research, data work, or coding |
 
-In both modes, a single very long message or tool result is shortened when the AI rereads it.
+In every chat, a single very long message or tool result is shortened when the AI rereads it.
 
-**Use it when:** a long, tool-heavy chat starts losing track of what happened early on: switch it to **Agentic (Compaction)** so the early work survives as a summary instead of being trimmed away.
+**Use it when:** a long, tool-heavy chat starts losing track of what happened early on. Restate the facts that matter, or start a new chat with a short summary of this one. In a chat that shows **History**, you can also switch it to **Agentic (Compaction)** so the early work survives as a summary rather than being trimmed away.
 
 ## Memories
 
@@ -2011,7 +2014,7 @@ When a question needs the exact time, such as "how long until 5 pm?", the AI che
 
 **Your profile everywhere, with one-off exceptions.** In **Personalization**, turn on **Use in chats**, then set **New chats** → **Response Style** to **Concise** and **Language** to the language you work in. Every new chat starts that way. For a single chat that needs a different voice, add **Instructions** in **This chat**; they apply to that chat only.
 
-**Long agentic session.** Before starting a long chain of tool work, switch **History** to **Agentic (Compaction)** and raise **Reasoning** to **High**. Then queue the follow-up steps in **Up next** so they run in order. See [Send while Bearly is working](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-is-working).
+**Long agentic session.** Before starting a long chain of tool work, raise **Reasoning** to **High**. Then queue the follow-up steps in **Up next** so they run in order. See [Send while Bearly is working](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-is-working).
 
 **Project memory only.** In a project, leave **Memories** on **Project Only** so recall stays inside the project's chats, and turn on **Always search documents** on the project's **Settings** tab so every answer checks the project's files first. See [Projects](https://bearly.ai/docs/manual/projects.md).
 
@@ -5026,8 +5029,8 @@ Tabs Bearly opens sit together in one tab group in each Chrome window. Tabs you 
 
 
 
-**What you get:** files changed or created on your computer, and chat files when you ask for them. The tools appear in the chat as **Shell**, **Read File**, **Write File**, **Edit File**, **Attach File** (a local file into the chat), and **Save Locally** (a chat file onto your computer).
-**Limits:** a command times out after 2 minutes unless Bearly sets a longer limit, up to 10 minutes. Bearly won't start servers, watchers, or anything meant to keep running; start those yourself. **Attach File** and **Save Locally** handle files up to 50 MB. If you deny a request, Bearly doesn't retry the same one. Bearly installs the runtimes it needs for scripts the first time a task uses them; you can see them under **Settings** → **Runtime**.
+**What you get:** files changed or created on your computer, and chat files when you ask for them. The tools appear in the chat as **Shell**, **Read File**, **Read Output** (more of a long command's output), **Write File**, **Edit File**, **Attach File** (a local file into the chat), and **Save Locally** (a chat file onto your computer).
+**Limits:** a command times out after 2 minutes unless Bearly sets a longer limit, up to 10 minutes. Bearly won't start servers, watchers, or anything meant to keep running; start those yourself. **Attach File** and **Save Locally** handle files up to 50 MB. When a command prints a lot, Bearly sees its first and last lines and reads the rest a page at a time with **Read Output** instead of running the command again; the desktop app keeps that output for 24 hours. **Read File** also reads long files a page at a time. If you deny a request, Bearly doesn't retry the same one. Bearly installs the runtimes it needs for scripts the first time a task uses them; you can see them under **Settings** → **Runtime**.
 **Combines with:** [Routines](https://bearly.ai/docs/manual/capabilities/routines.md#unattended-local-access) with unattended local access; [skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md#skills) whose scripts run on your computer; [Pages](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) built from what it computes.
 
 The chip's menu also has **Clear folder** (go back to a private folder for this chat), **Off for this chat**, and **Turn on for this chat**. Without a chosen folder, Bearly works in a private folder of its own for that chat. The folder and any chat-length approvals belong to this chat on this device.
@@ -6150,7 +6153,7 @@ Every Bearly capability is a building block: it takes something in, does one job
 - **Links**: a Page you publish gets a stable bearly.sh link.
 - **Messages outside Bearly**: an email to you or a teammate, or a text to your phone.
 
-**Later steps can use what earlier steps left.** The AI reads the conversation on every turn and can open any file in the chat by its ID. A finished Deep Research report is passed to later turns in full. In long chats, the **History** setting decides how older messages are kept: **Chat (Dynamic)** keeps the newest messages in full and shortens older ones, and **Agentic (Compaction)** writes a summary of older history and keeps the recent part word for word. Files stay in the chat either way, and the AI can still look at an image after the message that added it has been shortened. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md).
+**Later steps can use what earlier steps left.** The AI reads the conversation on every turn and can open any file in the chat by its ID. A finished Deep Research report is passed to later turns in full. In long chats, Bearly keeps the newest messages in full and shortens older ones first, dropping the oldest only when that isn't enough. Some older chats still show a **History** setting, where **Agentic (Compaction)** writes a summary of older history instead. Files stay in the chat either way, and the AI can still look at an image after the message that added it has been shortened. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md).
 
 **References point at exact files and tools.** Type `/` at the start of a message or `@` anywhere in it to pick a tool, skill, prompt template, or file by name. A message can start with one `/` command and hold any number of `@` references, so one message can name a file and a tool together. A reference only selects a tool you already have; it never turns on one your plan or organization has turned off. See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md#reference-tools-files-and-skills).
 
@@ -9976,7 +9979,7 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 | **Message not sent** — "Your message is back in the message box. Try sending it again." | The message couldn't be sent | Send it again |
 | Bearly stops searching the web partway through an answer | Web Search runs at most twice per answer | Ask a follow-up, and the next answer can search again |
 | An answer has no web sources | The chat's **Web** setting is **Off**, which also removes `/web-search` | Open the sliders button and set **Web** to **Auto** |
-| Bearly seems to forget the start of a long chat | Once a chat is long, the default **History** mode, **Chat (Dynamic)**, shortens older tool results and long earlier messages, then drops the oldest | Open the sliders button → **History** → **Agentic (Compaction)**, or restate the key facts. "Conversation compacted so you can keep going" is normal in that mode |
+| Bearly seems to forget the start of a long chat | Once a chat is long, Bearly shortens older tool results and long earlier messages, then drops the oldest messages if that isn't enough | Restate the key facts, or start a new chat with a short summary of this one. If this chat's sliders menu shows **History**, you can also choose **Agentic (Compaction)**; "Conversation compacted so you can keep going" is normal there. See [Long conversations and History](https://bearly.ai/docs/manual/chat/settings.md#long-conversations-and-history) |
 | The AI used a different file or tool than you meant | It chose on its own | Name the file with `@` and the tool with `/` or `@`. See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md#reference-tools-files-and-skills) |
 
 ## Usage limits and credits
@@ -10057,7 +10060,7 @@ Other chats that look broken:
 | "Use Skills in the desktop app" | Installed skills run local files | Install and use them in the desktop app |
 | No `/computer` in the `/` menu | Computer Use controls apps on your computer, so it's offered only in the desktop app | Ask from a chat in the desktop app |
 | **Get desktop app** on the **Online meeting** card | Recording a call's computer audio needs the desktop app | Use the desktop app on Windows or macOS 13 or later, or record with **In person or voice note** |
-| "_Feature_ needs a newer Bearly desktop app." or **Update Bearly** | Your desktop app is too old for the feature | Select **Update ready · Restart** if it shows, or install the latest version from bearly.ai |
+| "_Feature_ needs a newer Bearly desktop app." or **Update Bearly** | Your desktop app is too old for the feature | Select **Update** at the top of the window if it shows, or install the latest version from bearly.ai |
 | "This version of the Bearly desktop app does not support Browser." | Same, for Bearly Browser | Update the desktop app |
 | "Update Bearly to continue" — "This copy of Bearly is older than one already used on this computer." | An older copy opened after a newer one | Install the latest version from bearly.ai and open it. Until then, you can start new chats in your browser at bearly.ai/dashboard |
 | "We can't reach Bearly." in the desktop app | The app can't load Bearly | Check your connection and select **Try again**. If your connection works, quit and reopen Bearly |
@@ -10284,7 +10287,7 @@ See [Get Bearly](https://bearly.ai/docs/manual/get-bearly.md) and [Privacy and s
 
 ---
 title: "Glossary"
-description: "Plain definitions of the Bearly terms you meet in the app and in this manual, from Agentic (Compaction) and Bearly Fast to Full access, Routines, Voice Studio, and Zero Data Retention only, each with a link to the page that covers it."
+description: "Plain definitions of the Bearly terms you meet in the app and in this manual, from Bearly Fast and Chat (Dynamic) to Full access, Routines, Voice Studio, and Zero Data Retention only, each with a link to the page that covers it."
 canonical: "https://bearly.ai/docs/manual/glossary/"
 markdown: "https://bearly.ai/docs/manual/glossary.md"
 ---
@@ -10293,7 +10296,7 @@ markdown: "https://bearly.ai/docs/manual/glossary.md"
 
 HTML: [https://bearly.ai/docs/manual/glossary/](https://bearly.ai/docs/manual/glossary/)
 
-> Plain definitions of the Bearly terms you meet in the app and in this manual, from Agentic (Compaction) and Bearly Fast to Full access, Routines, Voice Studio, and Zero Data Retention only, each with a link to the page that covers it.
+> Plain definitions of the Bearly terms you meet in the app and in this manual, from Bearly Fast and Chat (Dynamic) to Full access, Routines, Voice Studio, and Zero Data Retention only, each with a link to the page that covers it.
 
 Every term below is written the way the app shows it. Each definition links to the manual page with the details.
 
@@ -10309,7 +10312,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Agent access**: A managed organization's admin setting that decides which members may turn on **Full access**. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
-**Agentic (Compaction)**: A **History** setting for long chats. When a conversation gets long, Bearly writes a summary of the older part and keeps recent messages word for word, so long tool-heavy work can keep going. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#history-modes).
+**Agentic (Compaction)**: A **History** setting, offered only on older chats that still show **History**. When a conversation gets long, Bearly writes a summary of the older part and keeps recent messages word for word, so long tool-heavy work can keep going. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#long-conversations-and-history).
 
 **Always search documents**: A project chat setting that makes every answer in the project search the project's files first. It has no effect in end-to-end encrypted chats. See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md#always-search-documents-projects).
 
@@ -10345,7 +10348,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Chapters**: Short labels Bearly adds about every 5 turns to name stretches of a conversation. They show as **Chapter** ticks on the timeline rail. See [Work with answers](https://bearly.ai/docs/manual/chat/answers.md#move-around-a-long-chat).
 
-**Chat (Dynamic)**: The default **History** setting. Once a chat passes the history limit, Bearly shortens older tool results first, then the longest earlier messages, and drops the oldest messages only when that isn't enough. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#history-modes).
+**Chat (Dynamic)**: How Bearly keeps long chats going. Once a chat passes the history limit, Bearly shortens older tool results first, then the longest earlier messages, and drops the oldest messages only when that isn't enough. Every new chat works this way; on older chats that still show **History**, it's the default choice. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#long-conversations-and-history).
 
 **Chat management**: Lets the AI list, read, create, rename, move, and delete your chats, and read your plan and available models. It asks before listing, reading, or deleting, even with Full access. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#ask-bearly-to-manage-your-chats).
 
@@ -10405,7 +10408,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 ## H
 
-**History**: A per-chat setting in the sliders button that decides how older messages are kept: **Chat (Dynamic)** or **Agentic (Compaction)**. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#history-modes).
+**History**: A per-chat setting in the sliders button, shown only on some older chats Bearly hasn't upgraded yet, that decides how older messages are kept: **Chat (Dynamic)** or **Agentic (Compaction)**. Other chats always work the **Chat (Dynamic)** way. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#long-conversations-and-history).
 
 ## I
 

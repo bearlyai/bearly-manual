@@ -1,6 +1,6 @@
 ---
 title: "Tune a chat: settings, style, reasoning, and memory"
-description: "Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Temperature, Instructions, Language, Web Search, History modes, Memories, Personalization, and how Bearly tells the AI today's date."
+description: "Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Temperature, Instructions, Language, Web Search, how long conversations are kept, Memories, Personalization, and how Bearly tells the AI today's date."
 canonical: "https://bearly.ai/docs/manual/chat/settings/"
 markdown: "https://bearly.ai/docs/manual/chat/settings.md"
 ---
@@ -9,7 +9,7 @@ markdown: "https://bearly.ai/docs/manual/chat/settings.md"
 
 HTML: [https://bearly.ai/docs/manual/chat/settings/](https://bearly.ai/docs/manual/chat/settings/)
 
-> Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Temperature, Instructions, Language, Web Search, History modes, Memories, Personalization, and how Bearly tells the AI today's date.
+> Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Temperature, Instructions, Language, Web Search, how long conversations are kept, Memories, Personalization, and how Bearly tells the AI today's date.
 
 Each chat has its own model, reply language, style, reasoning level, instructions, and memory settings. You can change them for the chat in front of you, set defaults for every chat you start later, and tell Bearly about yourself once so every chat can use it. This page covers every chat setting and how they combine with project and organization settings.
 
@@ -23,7 +23,7 @@ You can reach chat settings three ways:
 
 The **Settings** window opens over the page you're on and lists chat settings under **Chats**: **This chat**, **New chats**, **Permissions**, **Personalization**, **Voice**, **Dictation**, and **Skills**. **Chat Settings** opens it on **This chat**. Voice and dictation are on [Voice](https://bearly.ai/docs/manual/chat/voice.md), and **Permissions** on [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md). The window's header shows **Saving...**, **Saved**, or **Not saved** as changes save. On a phone, the window fills the screen and shows the list of panes or one pane at a time; select **Settings** at the top to go back to the list.
 
-The sliders button in the composer holds quick per-chat switches: **Web**, **Style**, **Scholar**, **Reasoning**, **Memories**, and **History**. **History** and **Scholar** live only there, not in the **Settings** window.
+The sliders button in the composer holds quick per-chat switches: **Web**, **Style**, **Scholar**, **Reasoning**, and **Memories**. Some older chats also show **History** there (see [Long conversations and History](https://bearly.ai/docs/manual/chat/settings.md#long-conversations-and-history)). **History** and **Scholar** live only in the sliders menu, not in the **Settings** window.
 
 ## This chat and New chats
 
@@ -126,18 +126,20 @@ I'm preparing a board update. Use plain language, round numbers to one decimal p
 
 **Scholar**, in the sliders menu only, works the same way for research papers: **Auto** or **Off**. Typing `/scholar` uses it for one message even when it's off. See [Research](https://bearly.ai/docs/manual/capabilities/research.md).
 
-## History modes
+## Long conversations and History
 
-**History** in the sliders menu decides how the AI reads a long conversation. It's set per chat and follows the chat to your other devices.
+Every new chat handles a long conversation the same way, and so does an older chat once you open it. The AI reads the whole conversation until it passes the history limit. Then Bearly shortens older tool results first, then the longest earlier messages, only as much as needed; the oldest messages drop out only when that isn't enough. Your newest message is read whole unless it's over the limit on its own. There's no setting for this, so these chats have no **History** item in the sliders menu.
+
+Some older chats that Bearly hasn't upgraded yet, mostly end-to-end encrypted ones, still show **History** in the sliders menu. There it decides how the AI reads a long conversation. It's set per chat and follows the chat to your other devices.
 
 | Mode | What the AI reads | Best for |
 |---|---|---|
-| **Chat (Dynamic)** (default) | The whole conversation until it passes the history limit. Then Bearly shortens older tool results first, then the longest earlier messages, only as much as needed; the oldest messages drop out only when that isn't enough. Your newest message is read whole unless it's over the limit on its own. | Ordinary conversations |
+| **Chat (Dynamic)** (default) | The same as every other chat: the whole conversation until it passes the history limit, then older tool results and the longest earlier messages are shortened, and the oldest messages drop out only when that isn't enough. | Ordinary conversations |
 | **Agentic (Compaction)** | When the conversation gets long, Bearly writes a summary of the older part in the background and keeps the most recent part word for word. The chat shows **Conversation compacted so you can keep going**. If a summary fails, the full history is kept. | Long working sessions with many tool steps, such as research, data work, or coding |
 
-In both modes, a single very long message or tool result is shortened when the AI rereads it.
+In every chat, a single very long message or tool result is shortened when the AI rereads it.
 
-**Use it when:** a long, tool-heavy chat starts losing track of what happened early on: switch it to **Agentic (Compaction)** so the early work survives as a summary instead of being trimmed away.
+**Use it when:** a long, tool-heavy chat starts losing track of what happened early on. Restate the facts that matter, or start a new chat with a short summary of this one. In a chat that shows **History**, you can also switch it to **Agentic (Compaction)** so the early work survives as a summary rather than being trimmed away.
 
 ## Memories
 
@@ -189,7 +191,7 @@ When a question needs the exact time, such as "how long until 5 pm?", the AI che
 
 **Your profile everywhere, with one-off exceptions.** In **Personalization**, turn on **Use in chats**, then set **New chats** → **Response Style** to **Concise** and **Language** to the language you work in. Every new chat starts that way. For a single chat that needs a different voice, add **Instructions** in **This chat**; they apply to that chat only.
 
-**Long agentic session.** Before starting a long chain of tool work, switch **History** to **Agentic (Compaction)** and raise **Reasoning** to **High**. Then queue the follow-up steps in **Up next** so they run in order. See [Send while Bearly is working](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-is-working).
+**Long agentic session.** Before starting a long chain of tool work, raise **Reasoning** to **High**. Then queue the follow-up steps in **Up next** so they run in order. See [Send while Bearly is working](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-is-working).
 
 **Project memory only.** In a project, leave **Memories** on **Project Only** so recall stays inside the project's chats, and turn on **Always search documents** on the project's **Settings** tab so every answer checks the project's files first. See [Projects](https://bearly.ai/docs/manual/projects.md).
 

@@ -1,6 +1,6 @@
 ---
 title: "Glossary"
-description: "Plain definitions of the Bearly terms you meet in the app and in this manual, from Agentic (Compaction) and Bearly Fast to Full access, Routines, Voice Studio, and Zero Data Retention only, each with a link to the page that covers it."
+description: "Plain definitions of the Bearly terms you meet in the app and in this manual, from Bearly Fast and Chat (Dynamic) to Full access, Routines, Voice Studio, and Zero Data Retention only, each with a link to the page that covers it."
 canonical: "https://bearly.ai/docs/manual/glossary/"
 markdown: "https://bearly.ai/docs/manual/glossary.md"
 ---
@@ -9,7 +9,7 @@ markdown: "https://bearly.ai/docs/manual/glossary.md"
 
 HTML: [https://bearly.ai/docs/manual/glossary/](https://bearly.ai/docs/manual/glossary/)
 
-> Plain definitions of the Bearly terms you meet in the app and in this manual, from Agentic (Compaction) and Bearly Fast to Full access, Routines, Voice Studio, and Zero Data Retention only, each with a link to the page that covers it.
+> Plain definitions of the Bearly terms you meet in the app and in this manual, from Bearly Fast and Chat (Dynamic) to Full access, Routines, Voice Studio, and Zero Data Retention only, each with a link to the page that covers it.
 
 Every term below is written the way the app shows it. Each definition links to the manual page with the details.
 
@@ -25,7 +25,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Agent access**: A managed organization's admin setting that decides which members may turn on **Full access**. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
-**Agentic (Compaction)**: A **History** setting for long chats. When a conversation gets long, Bearly writes a summary of the older part and keeps recent messages word for word, so long tool-heavy work can keep going. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#history-modes).
+**Agentic (Compaction)**: A **History** setting, offered only on older chats that still show **History**. When a conversation gets long, Bearly writes a summary of the older part and keeps recent messages word for word, so long tool-heavy work can keep going. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#long-conversations-and-history).
 
 **Always search documents**: A project chat setting that makes every answer in the project search the project's files first. It has no effect in end-to-end encrypted chats. See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md#always-search-documents-projects).
 
@@ -61,7 +61,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Chapters**: Short labels Bearly adds about every 5 turns to name stretches of a conversation. They show as **Chapter** ticks on the timeline rail. See [Work with answers](https://bearly.ai/docs/manual/chat/answers.md#move-around-a-long-chat).
 
-**Chat (Dynamic)**: The default **History** setting. Once a chat passes the history limit, Bearly shortens older tool results first, then the longest earlier messages, and drops the oldest messages only when that isn't enough. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#history-modes).
+**Chat (Dynamic)**: How Bearly keeps long chats going. Once a chat passes the history limit, Bearly shortens older tool results first, then the longest earlier messages, and drops the oldest messages only when that isn't enough. Every new chat works this way; on older chats that still show **History**, it's the default choice. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#long-conversations-and-history).
 
 **Chat management**: Lets the AI list, read, create, rename, move, and delete your chats, and read your plan and available models. It asks before listing, reading, or deleting, even with Full access. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#ask-bearly-to-manage-your-chats).
 
@@ -121,7 +121,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 ## H
 
-**History**: A per-chat setting in the sliders button that decides how older messages are kept: **Chat (Dynamic)** or **Agentic (Compaction)**. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#history-modes).
+**History**: A per-chat setting in the sliders button, shown only on some older chats Bearly hasn't upgraded yet, that decides how older messages are kept: **Chat (Dynamic)** or **Agentic (Compaction)**. Other chats always work the **Chat (Dynamic)** way. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#long-conversations-and-history).
 
 ## I
 
