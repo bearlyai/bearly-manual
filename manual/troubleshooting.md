@@ -75,6 +75,7 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 | **Manage in iOS App**, greyed out | Your plan was bought in the App Store | Change or cancel it in the iOS app |
 | "No subscription found for this account" and "Sign in with the account that has the subscription, or choose a plan." after **Restore** | This account has no subscription | Sign in with the account that bought the plan |
 | "This account's billing is managed by a team admin. Contact support for billing assistance." | A team admin controls your billing | Ask your admin, or select **Contact Support** |
+| "Your _Plan_ payment didn't go through, so _Plan_ is paused." | Your card was declined when your plan renewed | Select **Update card** and pay with a new card. The plan comes back as soon as it's paid |
 | "Team seat access is blocked until an admin fixes the payment. Every team admin has been notified." | Your organization's payment is past due | Ask an organization admin to fix the payment |
 | **You have two paid plans** | Your team seat already includes your personal plan's access | Select **End personal plan** if you don't need it; it ends at its own period end, and nothing is canceled automatically |
 
@@ -352,6 +353,9 @@ See [Projects](https://bearly.ai/docs/manual/projects.md).
 |---|---|---|
 | Only an email field on the sign-in screen in the iOS app | The iOS app signs in with an emailed code only | Enter your email, then the code |
 | "Codewords invalid. Make sure you typed them in correctly." | The three-word code didn't match | Paste or type the three words exactly as emailed |
+| "This code has expired. Send another code below, …" | A code works for 30 minutes after it's sent | Select **Send another code** and use the code from the newest email, or sign in with Microsoft or Google where they're offered |
+| "Too many sign-in attempts. Wait a few minutes and try again." | Too many wrong codes were entered in a short time | Wait a few minutes, then enter the code again |
+| No code email after a few minutes | Some school and work email systems hold messages for several minutes | Check spam, or wait: the code still works when it arrives within 30 minutes. A minute after the **Check your email** screen opens, **Send another code** emails a new one; use the newest. You can also sign in with Microsoft or Google instead |
 | "Desktop sign-in didn't finish. Make sure Bearly is open. If your browser blocks local network access, allow it for this site, then try again." | The browser couldn't hand the sign-in to the desktop app | Keep the desktop app open, allow local network access if asked, and select **Retry desktop sign-in** |
 | A device you don't recognize in **Settings** → **Devices** | Your account is signed in there | Select **Sign out** on it, or **Sign out all other devices** |
 | The browser extension asks you to connect again | It was disconnected, or its key was removed under **Settings** → **Devices** → **Browser extension and API keys** | Open the extension and select **Sign in with Bearly** |

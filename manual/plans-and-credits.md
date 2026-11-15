@@ -139,6 +139,10 @@ Choose **Monthly** or **Yearly**, then compare the cards for **Pro**, **Analyst*
 
 Outside the iOS app, an App Store subscription's plan buttons read **Manage in iOS App** and can't be selected: "Plan changes for App Store subscriptions happen in the iOS app." Accounts whose billing a team admin manages see **Team-Managed Billing**: "This account's billing is managed by a team admin. Contact support for billing assistance." with **Contact Support**.
 
+### When a renewal payment doesn't go through
+
+If your card is declined when a plan bought on the web renews, the plan pauses and your account works like Free. Bearly keeps retrying the payment for a few weeks before the plan ends. Above the message box, "Your _Plan_ payment didn't go through, so _Plan_ is paused." appears with **Update card**. It opens a secure payment page for the amount due. Pay there with a new card and the plan comes back as soon as the payment clears. That card is used for future renewals. The notice isn't shown in the iOS app or for billing a team admin manages.
+
 ### When you have a seat and a personal plan
 
 - A seat card reads "_Organization_ gives you a _Plan_ seat".

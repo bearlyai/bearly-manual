@@ -31,7 +31,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Analyst**: A paid plan above Pro that adds Deep Research (Standard) and People Search. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
 
-**Approval duration**: How long an approval lasts: **Once**, **This response** (until the answer ends), **This session** (until the chat reloads), or **This chat** (on this device until you revoke it). Approvals never sync to your other devices. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
+**Approval duration**: How long an approval lasts: **Once**, **This response** (until the answer ends), **This session** (until the chat reloads), or **This chat** (on this device until you revoke it). Bearly Browser's site card has no **Once** and starts on **This response**. Approvals never sync to your other devices. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
 
 **Archive**: Hides a chat from the main list without deleting it. **Archives** at the bottom of the sidebar lists archived chats, and an archived chat must be unarchived before it can be deleted. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#archive-chats).
 

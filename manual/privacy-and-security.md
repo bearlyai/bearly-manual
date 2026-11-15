@@ -97,7 +97,13 @@ Signing in isn't enough to open your encrypted chats. A new device needs approva
 
 ### Choose encryption for each new chat
 
-After setup, a lock appears beside the project picker on a new chat. Orange and closed means "End-to-end encrypted". Gray and open means "Standard encryption". Turning encryption off for a draft asks you to confirm, and you can't change it while the draft has attachments ("Remove attachments before changing encryption").
+After setup, a lock appears beside the project picker on a new chat. Orange and closed means "End-to-end encrypted". Gray and open means "Standard encryption". Select the lock to see how the chat is set up: the dialog says "This chat is end-to-end encrypted" or "This chat uses standard encryption".
+
+- **Keep end-to-end** or **Keep standard** closes the dialog without changing anything.
+- **Switch to standard encryption** or **Encrypt this chat end-to-end** changes only this draft.
+- **Encrypt new chats end-to-end** turns your default for new chats on or off, on all your devices, without changing the draft you're writing. It appears only on a device you've approved.
+- While the draft has attachments, you can't change its encryption: "Remove the attachments to change how this chat is encrypted."
+- On a device that can't encrypt yet, the dialog reads "This chat will be end-to-end encrypted" with **Approve this device** (or **Finish setup**) and **Use standard instead**.
 
 Encryption never holds up a new chat. On a device you haven't approved yet, new chats use standard encryption. If your encryption settings don't load within a few seconds, the new chat uses standard encryption and a line under the composer reads "This chat uses standard encryption." with **Turn on end-to-end encryption**. A draft waits only when you chose end-to-end encryption on a device that can't encrypt yet: the line reads "Approve this device to send this chat end-to-end encrypted." (or "Finish setup to send this chat end-to-end encrypted." if setup isn't done), and **Use standard encryption** switches the draft back without asking.
 

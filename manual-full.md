@@ -570,6 +570,10 @@ Choose **Monthly** or **Yearly**, then compare the cards for **Pro**, **Analyst*
 
 Outside the iOS app, an App Store subscription's plan buttons read **Manage in iOS App** and can't be selected: "Plan changes for App Store subscriptions happen in the iOS app." Accounts whose billing a team admin manages see **Team-Managed Billing**: "This account's billing is managed by a team admin. Contact support for billing assistance." with **Contact Support**.
 
+### When a renewal payment doesn't go through
+
+If your card is declined when a plan bought on the web renews, the plan pauses and your account works like Free. Bearly keeps retrying the payment for a few weeks before the plan ends. Above the message box, "Your _Plan_ payment didn't go through, so _Plan_ is paused." appears with **Update card**. It opens a secure payment page for the amount due. Pay there with a new card and the plan comes back as soon as the payment clears. That card is used for future renewals. The notice isn't shown in the iOS app or for billing a team admin manages.
+
 ### When you have a seat and a personal plan
 
 - A seat card reads "_Organization_ gives you a _Plan_ seat".
@@ -680,7 +684,7 @@ The launcher is the screen a new chat opens on. Get there with **New chat** or *
   - When this device hasn't been approved yet: "Encrypted chats are locked on this device" with **Approve**.
   - When this draft is set to end-to-end encryption but this device can't encrypt it yet: "Approve this device to send this chat end-to-end encrypted." (or "Finish setup to send…") with **Use standard encryption**. The send button reads **Approve this device to send** until you approve the device or switch.
   - When Bearly couldn't check your encryption settings in time: "This chat uses standard encryption." with **Turn on end-to-end encryption**.
-  - After setup, the lock in the context strip switches this draft between end-to-end and standard encryption. It can't change while the draft has attachments. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
+  - After setup, selecting the lock in the context strip shows how this draft is encrypted, lets you switch it between end-to-end and standard encryption, and sets whether new chats start end-to-end encrypted. The draft's encryption can't change while it has attachments. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
 - **How did you hear about Bearly?** On a new personal account's first day, a card under the composer asks this once. Pick an answer, choose **Other** to type a few words, or select **Skip**. Either way it doesn't come back on any of your devices, and it never stops you sending. While it shows, it takes the place of **Set up end-to-end encryption**, which returns as soon as you answer or skip.
 - **Strip controls.** While the chat prepares, the context strip shows **Work locally**, **Permissions**, and **Connectors**; they work once the chat has loaded.
 - **Tips.** Short notes appear under the composer, labeled **Tip**, **Note**, **What's new**, or **Required**, and you get at most one tip a day. Dismissing one hides tips for the rest of the day on all your devices. A **Required** notice blocks sending until you select **Acknowledge**.
@@ -4954,7 +4958,7 @@ Bearly Browser is a browser built into the desktop app. Chats work in their own 
    In Bearly Browser, open the pricing pages for these three tools and compare their plans in a table. Don't sign in, start a trial, or submit anything.
    ```
 
-4. At **Let this chat use this site?**, check the site, pick an **Approval duration**, and select the Allow button — approval covers that one site for this chat. Another site asks separately.
+4. At **Let this chat use this site?**, check the site and select **Allow for this response**, or pick a longer **Approval duration** first. The approval covers that one site; another site asks separately. This card has no **Once**: opening, reading, and clicking on a page each use the site, so one approval covers them for the whole answer.
 5. To watch, select the chat's title → **Open Browser**. Tabs a chat opened show a robot icon, and their tooltip reads **Agent-owned tab**; tabs you opened show a globe. Select **Take over this tab** to pause the agent while you work on the page, and **Resume this tab's agent** to hand it back.
 
 
@@ -5935,6 +5939,8 @@ A card shows a title, the reason, and, for most tools, a **Details** disclosure 
 | **This response** | **Allow for this response** | "until this response ends", including if it errors or you stop it. A message you add to the running answer, with **Send** or **Send now**, joins the same response, so the approval covers it too |
 | **This session** | **Allow for now** | "until this chat reloads or you revoke access" |
 | **This chat** | **Allow for this chat** | "in future responses in this chat on this device until you revoke access" |
+
+Bearly Browser's site card (**Let this chat use this site?**) has no **Once**. It starts on **This response**, because opening, reading, and clicking on a page each use the site.
 
 Work locally uses its own labels for read-only approvals: **Allow reads for this response**, **Allow reads for now**, and **Allow reads this chat**. Some tools word their button differently, and some show no duration menu because they approve one action at a time.
 
@@ -9190,7 +9196,13 @@ Signing in isn't enough to open your encrypted chats. A new device needs approva
 
 ### Choose encryption for each new chat
 
-After setup, a lock appears beside the project picker on a new chat. Orange and closed means "End-to-end encrypted". Gray and open means "Standard encryption". Turning encryption off for a draft asks you to confirm, and you can't change it while the draft has attachments ("Remove attachments before changing encryption").
+After setup, a lock appears beside the project picker on a new chat. Orange and closed means "End-to-end encrypted". Gray and open means "Standard encryption". Select the lock to see how the chat is set up: the dialog says "This chat is end-to-end encrypted" or "This chat uses standard encryption".
+
+- **Keep end-to-end** or **Keep standard** closes the dialog without changing anything.
+- **Switch to standard encryption** or **Encrypt this chat end-to-end** changes only this draft.
+- **Encrypt new chats end-to-end** turns your default for new chats on or off, on all your devices, without changing the draft you're writing. It appears only on a device you've approved.
+- While the draft has attachments, you can't change its encryption: "Remove the attachments to change how this chat is encrypted."
+- On a device that can't encrypt yet, the dialog reads "This chat will be end-to-end encrypted" with **Approve this device** (or **Finish setup**) and **Use standard instead**.
 
 Encryption never holds up a new chat. On a device you haven't approved yet, new chats use standard encryption. If your encryption settings don't load within a few seconds, the new chat uses standard encryption and a line under the composer reads "This chat uses standard encryption." with **Turn on end-to-end encryption**. A draft waits only when you chose end-to-end encryption on a device that can't encrypt yet: the line reads "Approve this device to send this chat end-to-end encrypted." (or "Finish setup to send this chat end-to-end encrypted." if setup isn't done), and **Use standard encryption** switches the draft back without asking.
 
@@ -10000,6 +10012,7 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 | **Manage in iOS App**, greyed out | Your plan was bought in the App Store | Change or cancel it in the iOS app |
 | "No subscription found for this account" and "Sign in with the account that has the subscription, or choose a plan." after **Restore** | This account has no subscription | Sign in with the account that bought the plan |
 | "This account's billing is managed by a team admin. Contact support for billing assistance." | A team admin controls your billing | Ask your admin, or select **Contact Support** |
+| "Your _Plan_ payment didn't go through, so _Plan_ is paused." | Your card was declined when your plan renewed | Select **Update card** and pay with a new card. The plan comes back as soon as it's paid |
 | "Team seat access is blocked until an admin fixes the payment. Every team admin has been notified." | Your organization's payment is past due | Ask an organization admin to fix the payment |
 | **You have two paid plans** | Your team seat already includes your personal plan's access | Select **End personal plan** if you don't need it; it ends at its own period end, and nothing is canceled automatically |
 
@@ -10277,6 +10290,9 @@ See [Projects](https://bearly.ai/docs/manual/projects.md).
 |---|---|---|
 | Only an email field on the sign-in screen in the iOS app | The iOS app signs in with an emailed code only | Enter your email, then the code |
 | "Codewords invalid. Make sure you typed them in correctly." | The three-word code didn't match | Paste or type the three words exactly as emailed |
+| "This code has expired. Send another code below, …" | A code works for 30 minutes after it's sent | Select **Send another code** and use the code from the newest email, or sign in with Microsoft or Google where they're offered |
+| "Too many sign-in attempts. Wait a few minutes and try again." | Too many wrong codes were entered in a short time | Wait a few minutes, then enter the code again |
+| No code email after a few minutes | Some school and work email systems hold messages for several minutes | Check spam, or wait: the code still works when it arrives within 30 minutes. A minute after the **Check your email** screen opens, **Send another code** emails a new one; use the newest. You can also sign in with Microsoft or Google instead |
 | "Desktop sign-in didn't finish. Make sure Bearly is open. If your browser blocks local network access, allow it for this site, then try again." | The browser couldn't hand the sign-in to the desktop app | Keep the desktop app open, allow local network access if asked, and select **Retry desktop sign-in** |
 | A device you don't recognize in **Settings** → **Devices** | Your account is signed in there | Select **Sign out** on it, or **Sign out all other devices** |
 | The browser extension asks you to connect again | It was disconnected, or its key was removed under **Settings** → **Devices** → **Browser extension and API keys** | Open the extension and select **Sign in with Bearly** |
@@ -10318,7 +10334,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Analyst**: A paid plan above Pro that adds Deep Research (Standard) and People Search. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
 
-**Approval duration**: How long an approval lasts: **Once**, **This response** (until the answer ends), **This session** (until the chat reloads), or **This chat** (on this device until you revoke it). Approvals never sync to your other devices. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
+**Approval duration**: How long an approval lasts: **Once**, **This response** (until the answer ends), **This session** (until the chat reloads), or **This chat** (on this device until you revoke it). Bearly Browser's site card has no **Once** and starts on **This response**. Approvals never sync to your other devices. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
 
 **Archive**: Hides a chat from the main list without deleting it. **Archives** at the bottom of the sidebar lists archived chats, and an archived chat must be unarchived before it can be deleted. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#archive-chats).
 

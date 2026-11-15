@@ -24,6 +24,8 @@ A card shows a title, the reason, and, for most tools, a **Details** disclosure 
 | **This session** | **Allow for now** | "until this chat reloads or you revoke access" |
 | **This chat** | **Allow for this chat** | "in future responses in this chat on this device until you revoke access" |
 
+Bearly Browser's site card (**Let this chat use this site?**) has no **Once**. It starts on **This response**, because opening, reading, and clicking on a page each use the site.
+
 Work locally uses its own labels for read-only approvals: **Allow reads for this response**, **Allow reads for now**, and **Allow reads this chat**. Some tools word their button differently, and some show no duration menu because they approve one action at a time.
 
 After you decide, the card shows **Allowed**, **Denied**, **Stopped**, or **Allowed by Full access**.

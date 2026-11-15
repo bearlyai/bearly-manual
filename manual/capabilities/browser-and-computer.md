@@ -52,7 +52,7 @@ Bearly Browser is a browser built into the desktop app. Chats work in their own 
    In Bearly Browser, open the pricing pages for these three tools and compare their plans in a table. Don't sign in, start a trial, or submit anything.
    ```
 
-4. At **Let this chat use this site?**, check the site, pick an **Approval duration**, and select the Allow button — approval covers that one site for this chat. Another site asks separately.
+4. At **Let this chat use this site?**, check the site and select **Allow for this response**, or pick a longer **Approval duration** first. The approval covers that one site; another site asks separately. This card has no **Once**: opening, reading, and clicking on a page each use the site, so one approval covers them for the whole answer.
 5. To watch, select the chat's title → **Open Browser**. Tabs a chat opened show a robot icon, and their tooltip reads **Agent-owned tab**; tabs you opened show a globe. Select **Take over this tab** to pause the agent while you work on the page, and **Resume this tab's agent** to hand it back.
 
 
