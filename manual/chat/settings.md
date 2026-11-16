@@ -1,6 +1,6 @@
 ---
 title: "Tune a chat: settings, style, reasoning, and memory"
-description: "Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Temperature, Instructions, Language, Web Search, how long conversations are kept, Memories, Personalization, and how Bearly tells the AI today's date."
+description: "Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Execution Mode (Classic or Code Mode), Temperature, Instructions, Language, Web Search, how long conversations are kept, Memories, Personalization, and how Bearly tells the AI today's date."
 canonical: "https://bearly.ai/docs/manual/chat/settings/"
 markdown: "https://bearly.ai/docs/manual/chat/settings.md"
 ---
@@ -9,7 +9,7 @@ markdown: "https://bearly.ai/docs/manual/chat/settings.md"
 
 HTML: [https://bearly.ai/docs/manual/chat/settings/](https://bearly.ai/docs/manual/chat/settings/)
 
-> Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Temperature, Instructions, Language, Web Search, how long conversations are kept, Memories, Personalization, and how Bearly tells the AI today's date.
+> Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Execution Mode (Classic or Code Mode), Temperature, Instructions, Language, Web Search, how long conversations are kept, Memories, Personalization, and how Bearly tells the AI today's date.
 
 Each chat has its own model, reply language, style, reasoning level, instructions, and memory settings. You can change them for the chat in front of you, set defaults for every chat you start later, and tell Bearly about yourself once so every chat can use it. This page covers every chat setting and how they combine with project and organization settings.
 
@@ -23,7 +23,7 @@ You can reach chat settings three ways:
 
 The **Settings** window opens over the page you're on and lists chat settings under **Chats**: **This chat**, **New chats**, **Permissions**, **Personalization**, **Voice**, **Dictation**, and **Skills**. **Chat Settings** opens it on **This chat**. Voice and dictation are on [Voice](https://bearly.ai/docs/manual/chat/voice.md), and **Permissions** on [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md). The window's header shows **Saving...**, **Saved**, or **Not saved** as changes save. On a phone, the window fills the screen and shows the list of panes or one pane at a time; select **Settings** at the top to go back to the list.
 
-The sliders button in the composer holds quick per-chat switches: **Web**, **Style**, **Scholar**, **Reasoning**, and **Memories**. Some older chats also show **History** there (see [Long conversations and History](https://bearly.ai/docs/manual/chat/settings.md#long-conversations-and-history)). **History** and **Scholar** live only in the sliders menu, not in the **Settings** window.
+The sliders button in the composer holds quick per-chat switches: **Web**, **Style**, **Scholar**, **Reasoning**, **Execution Mode**, and **Memories**. Some older chats also show **History** there (see [Long conversations and History](https://bearly.ai/docs/manual/chat/settings.md#long-conversations-and-history)). **History**, **Scholar**, and **Execution Mode** live only in the sliders menu, not in the **Settings** window.
 
 ## This chat and New chats
 
@@ -60,7 +60,7 @@ A chat's settings are built up in layers. Each later layer overrides the ones be
 6. Your personal settings for that project.
 7. **This chat**.
 
-An organization or project can also lock a setting. A locked setting can't be changed in **This chat**, and its control disappears from the chat or stays fixed. In most chats, a locked item in the sliders menu (**Web**, **Style**, **Scholar**, **Reasoning**, **Memories**) shows a lock and can't be changed; hover the lock to see "Set by your team's policy" or "Set by this project". Settings that can be locked: model, instructions, language, temperature, reasoning effort, response style, memories, web search, always searching project documents, and personalization.
+An organization or project can also lock a setting. A locked setting can't be changed in **This chat**, and its control disappears from the chat or stays fixed. In most chats, a locked item in the sliders menu (**Web**, **Style**, **Scholar**, **Reasoning**, **Execution Mode**, **Memories**) shows a lock and can't be changed; hover the lock to see "Set by your team's policy" or "Set by this project". Settings that can be locked: model, instructions, language, temperature, reasoning effort, response style, memories, web search, always searching project documents, and personalization.
 
 One exception: if your organization or project sets a reasoning level, it applies even when it isn't locked.
 
@@ -99,6 +99,40 @@ While the model reasons, the line under the answer reads "Thinking", and the rea
 
 **Use it when:** a multi-step problem, math, or code needs more care (raise it), or you want faster replies to simple questions (lower it).
 **Limits:** Your reasoning choice is your own, even in a shared chat. A reasoning level set by your organization or project overrides yours.
+
+## Execution Mode
+
+**Execution Mode**, in the sliders menu, sets how Bearly works through tools in this chat:
+
+| Option | What it does |
+|---|---|
+| **Classic** (default) | "Bearly calls tools one at a time." After each call, the model reads the result and decides the next step. |
+| **Code Mode** | "Bearly writes code that runs many tool calls at once." The code makes the calls, then counts, matches, or adds up their results, and only what it works out goes back to the model. |
+
+Code Mode makes a difference when a task needs many tool calls, such as reading 20 chats, pages, or files and then totaling, comparing, or listing what they say. Bearly finishes those tasks in far fewer model steps, so they take less time and use less of your plan. For a question that needs one or two tool calls, the two modes work about the same. How often Bearly writes code for a task also depends on the chat's model.
+
+
+
+1. Open the sliders button in the composer and choose **Execution Mode**.
+2. Select **Classic** or **Code Mode**. — The choice is saved for this chat and applies from your next message. Other chats keep their own setting.
+
+
+
+**Use it when:** a request has Bearly reading or checking many things before it answers, such as every chat in a project, a list of web pages, or a folder of files, and then working with all of the results together.
+**You need:** Any plan. The web app (including phone browsers), the desktop app, or the iOS app. In an organization, the policy must allow **Code Mode**.
+
+**What you get:** Your answer and any files it makes, usually sooner. In the answer's [**Steps**](https://bearly.ai/docs/manual/chat/answers.md#thinking-steps), a step that made many calls shows as one row with its description and a count, such as "12 tool calls". Open it to see each call in order, each with what it was asked and what came back; **Show details** at the end shows the code Bearly wrote. When Bearly looks up a set of tools it doesn't use often, the row reads like "Checked the maps tools".
+
+Approvals work the same way in both modes. When a step needs actions that ask first, one card lists every kind of action the step will take, under "Bearly will:", and you answer for the whole step: **Deny**, **Once** (this step), **This chat**, or **Always**. **Show details** on the card shows the code. With **Deny**, the step goes on without those actions. Actions that always ask, such as deleting or reading your other chats, still get their own card. See [Approvals, permissions, and Full access](https://bearly.ai/docs/manual/capabilities/permissions.md).
+
+**Limits:**
+- The code can use only Bearly's tools: it reaches the web, your files, and your apps only through the same tools, approvals, and per-reply limits as Classic.
+- Results Bearly keeps between steps last until the answer ends. The next message starts fresh, apart from what's in the chat.
+- On a device that can't run this kind of code, such as an iPhone or iPad in Lockdown Mode, Code Mode still works, but Bearly looks up and calls tools one at a time.
+- If your organization turns **Code Mode** off, **Execution Mode** shows **Classic** with a lock and can't be changed. You can't change it in a chat you can only read.
+- **Execution Mode** appears in most chats. A chat that doesn't show it uses Classic.
+
+**Combines with:** [Ask Bearly to manage your chats](https://bearly.ai/docs/manual/chat/organize.md#ask-bearly-to-manage-your-chats) to read many chats in one step; [Projects](https://bearly.ai/docs/manual/projects.md) to work across a project's chats and files.
 
 ## Temperature
 
@@ -191,7 +225,7 @@ When a question needs the exact time, such as "how long until 5 pm?", the AI che
 
 **Your profile everywhere, with one-off exceptions.** In **Personalization**, turn on **Use in chats**, then set **New chats** → **Response Style** to **Concise** and **Language** to the language you work in. Every new chat starts that way. For a single chat that needs a different voice, add **Instructions** in **This chat**; they apply to that chat only.
 
-**Long agentic session.** Before starting a long chain of tool work, raise **Reasoning** to **High**. Then queue the follow-up steps in **Up next** so they run in order. See [Send while Bearly is working](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-is-working).
+**Long agentic session.** Before starting a long chain of tool work, raise **Reasoning** to **High**, and set **Execution Mode** to **Code Mode** if the work reads or checks many things. Then queue the follow-up steps in **Up next** so they run in order. See [Send while Bearly is working](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-is-working).
 
 **Project memory only.** In a project, leave **Memories** on **Project Only** so recall stays inside the project's chats, and turn on **Always search documents** on the project's **Settings** tab so every answer checks the project's files first. See [Projects](https://bearly.ai/docs/manual/projects.md).
 

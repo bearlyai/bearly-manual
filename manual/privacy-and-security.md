@@ -37,8 +37,9 @@ What you type, attach, or let a tool read still goes to the model handling your 
 | **Web Search** | **This chat**, **New chats**, or the composer | Off stops the chat from searching the web on its own | Set it back to **Auto** |
 | Project password | The project's **Sharing** tab → **Encryption** → **Password protection** → **Protect** | Adds a password lock to a project, and its chats are read-only while locked | **Remove** |
 | **Lock all data** | **Settings** → **Profile** | Relocks every password-protected project on this device | Enter the passwords again |
-| **Permissions** | Composer | **Standard** asks before tools act. **Full access** doesn't. | Switch back |
-| Saved approvals | Composer → **Permissions** | **Revoke all saved approvals** or **Clear all permissions** | Approve again |
+| **Permissions** | Composer | **Ask first** asks before tools act. **Full access** doesn't. | Switch back |
+| This chat's answers | Composer → **Permissions** | Set a kind of action to **Ask**, **Revoke** one item, or **Ask about everything again** | Allow again |
+| **Always** answers | **Settings** → **Permissions** | Set a kind of action back to **Ask**, on every device | Allow again |
 | **Devices** | **Settings** → **Devices** | Signs out other devices and removes extension or API keys | Sign in again |
 | **Log out** | **Settings** → **Profile**, or the account menu | Syncs, then clears Bearly's data from this device | Sign in |
 | **Delete account** | **Settings** → **Profile** | Schedules permanent deletion after email verification | **Cancel scheduled deletion** before the final reminder |
@@ -63,6 +64,7 @@ Turn on **Zero Data Retention only** and Bearly shows only zero-retention models
 **Limits:**
 
 - It covers the language models that write and work in your chats, including the models Bearly uses inside chat tools such as Council's experts. Council can offer fewer experts when it's on.
+- It also covers text to speech: Read aloud and Voice Studio use only the **OpenAI** voice engine, which has zero data retention, and the other engines are refused. If your organization's policy doesn't allow that engine either, speech isn't made: "No speech model that meets your Zero Data Retention only setting is available, so audio can't be created."
 - It doesn't cover image and video generation, transcription, text extraction from files, voice calls, or other tool services. Deep Research, People Search, Scholar's academic web search, YouTube search, and reading web pages also reach their usual services.
 - If settings can't sync, Bearly keeps the rule on and the switch is unavailable: "Settings sync is unavailable. Zero Data Retention routes remain required until Bearly reconnects." The banner reads **ZDR on until settings sync**.
 - If your organization also limits models, you see only models allowed by both, and the banner notes **managed account**.
@@ -178,13 +180,14 @@ A project password locks a project. While it's locked, each of the project's tab
 
 **Settings** → **Profile** → **Lock all data** relocks every password-protected project on this device. The pane still calls them "notebooks". Select **Lock**, then confirm with **Lock All** — Bearly clears saved passwords on this device and reloads.
 
-## Permissions: Standard and Full access
+## Permissions: Ask first and Full access
 
-The **Permissions** button at the foot of the composer decides whether Bearly asks before it uses tools that act outside the chat, such as local files, Computer Use, Bearly Browser, Chrome, Skill scripts, and connectors.
+The **Permissions** button at the foot of the composer decides whether Bearly asks before it uses tools that act outside the chat, such as local files, Computer Use, Bearly Browser, Chrome, Skill scripts, and connectors. Approval cards are answered **Once**, **This chat**, or **Always** for a kind of action, such as **Read files** or **Use connected apps**.
 
-- **Standard**: "Ask for approval when needed. Saved approvals still apply."
-- **Full access**: "Use enabled tools without asking each time." Turning it on asks **Enable full access?** and applies to this chat on this device only. Organization rules, operating-system permissions, and required safety checks still apply. Full access never turns on a tool or connects an account.
-- **Saved approvals · _N_** lists approvals you've given, each scoped to "This response", "This session", or "This chat · this device", with **Revoke**. **Revoke all saved approvals** clears them. **Clear all permissions** switches to Standard and revokes them all.
+- **Ask first**: "Bearly asks before it acts, unless you've said yes below."
+- **Full access**: "Use enabled tools without asking. This chat on this device." Turning it on asks **Enable full access?**. Organization rules, operating-system permissions, and required safety checks still apply. Full access never turns on a tool, connects an account, sends messages past a reply's limit, or spends from your plan.
+- **What Bearly may do without asking** lists each kind of action as **Ask**, **This chat**, or **Always**, with single things you allowed and **Revoke**. **Ask about everything again** "Clears this chat's answers and turns Full access off. Always answers stay; change them in Settings."
+- **This chat** answers stay on this device. **Always** answers apply in every chat, on every device you're signed in on; review them in **Settings** → **Permissions**.
 - **Settings** → **Permissions** → **Start new chats in Full access** makes new chats on this device start in Full access. It asks **Start every new chat in Full access?** first. Existing chats and routines aren't changed. If Full access isn't available for your account or app, the switch says why.
 
 Routines have their own Full access setting in the routine editor. On a managed organization, admins decide who may use Full access under [Agent access](https://bearly.ai/docs/manual/organizations.md). See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).

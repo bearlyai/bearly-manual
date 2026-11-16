@@ -104,8 +104,10 @@ The access banner shows members a message they must accept before they can use B
 Agent access decides who on your managed domain may use Full access, which lets agents use enabled tools without asking for approval each time. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
 
 - **Allow full access by default** is on unless an admin turns it off. "Applies to members on your managed domain. Each member must still enable it for each chat or routine on its device. Change individual exceptions in Members."
-- **Turn off full access for everyone** opens a dialog with the number of eligible members: "Active full access stops within 60 seconds. The organization default will be off, and all individual exceptions will be removed. Saved tool approvals remain." Confirm with **Turn off for everyone**.
+- **Turn off full access for everyone** opens a dialog with the number of eligible members: "Active full access stops within 60 seconds. The organization default will be off, and all individual exceptions will be removed. Members return to Ask first, and their This chat and Always answers stop applying." Confirm with **Turn off for everyone**.
 - Per member: **Members** → select the member → **Full access**: **Use organization default**, **Allow full access**, or **Do not allow full access**. Changes save immediately, and the member still chooses when to turn Full access on.
+
+A member who can't use Full access also can't answer approval cards with **This chat** or **Always**: their cards offer only **Once**, with "Your team requires asking each time." Answers they saved earlier stop applying.
 
 Only organization admins can change these. Group admins and policies can't grant Full access, and allowing it doesn't turn on tools a policy has turned off. Changes appear in **Activity**.
 
@@ -234,6 +236,8 @@ Both actions appear in **Activity**. Admins see project titles, owners, and shar
 
 A member's **Individual monthly spend limit** beats the policy's limit. When a member reaches it, chat continues on **Bearly Fast** only until the limit resets. See [After paid credits run out](https://bearly.ai/docs/manual/plans-and-credits.md).
 
+**Model access** also covers image, video, text-to-speech, and transcription models. A deny-list applies to them, and a provider group in it covers the media models that provider serves. An allow-list limits one of those tools only when it names one of its models, so an allow-list of chat models leaves images, video, speech, and transcription available. When the default voice engine isn't allowed, Read aloud and Voice Studio use the first allowed one; when none is, they say "Your organization's model policy doesn't allow any speech model, so audio can't be created."
+
 Model access, spending limits, and **Developer API access** are enforced by Bearly's servers. Most feature switches are enforced in the Bearly app.
 
 ## Policy control catalog
@@ -278,6 +282,7 @@ Model access, spending limits, and **Developer API access** are enforced by Bear
 | Control | Description in the editor | What it changes | Needs | Starts |
 | --- | --- | --- | --- | --- |
 | **Run Python** | Allow members to run Python in Bearly's cloud interpreter. | Running code in the cloud | — | Follows default |
+| **Code Mode** | Let members choose Code Mode, where Bearly writes code that runs many tool calls at once. | **Execution Mode** in the sliders menu. Off: it shows **Classic** with a lock, and every chat uses Classic | — | On |
 | **Work locally** | Allow members to use local shell, file-reading, writing, and editing tools. | Local files and commands in the desktop app | — | Follows default |
 | **Computer Use** | Allow members to let Bearly inspect and control local desktop apps. | Computer Use in the desktop app | — | Follows default |
 | **Browser** | Allow members to use the isolated Bearly Browser. | Bearly Browser in the desktop app | — | Follows default |

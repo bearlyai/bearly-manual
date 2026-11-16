@@ -43,7 +43,7 @@ These tools run in Bearly chats in the web app, phone browsers, the desktop app,
 - **Ask in plain words.** Bearly picks the tool that fits. Web Search, Read Site, Image Search, Scholar, Best Pick, SEO data, Domain research, Maps, Weather, and X all start from an ordinary request. People Search starts when you explicitly ask to look up or vet a named person. Deep Research prepares its setup card when you ask for an in-depth research run. Council of Experts runs only from `/council`.
 - **Type a label to choose the tool.** Type `/` at the very start of a message, or `@` anywhere in it, then a label such as `deep-research`. The menu lists research tools under **Research**. Only one `/` label counts per message, but you can add several `@` labels. A label chooses a tool that is already available to you; it can't switch on a tool your plan or organization has turned off. More in [Compose messages](https://bearly.ai/docs/manual/chat/compose.md).
 - **Switch web and paper search for one chat.** The sliders button in the composer opens a **Search** section with **Web** (**Off** or **Auto**) and **Scholar** (**Off** or **Auto**). Both start on **Auto**. **Auto** makes the tools available; it doesn't force a search on every message.
-- **Approve paid work on cards.** Deep Research and People Search show cards and prompts. Nothing paid starts until you select the button or approve the prompt.
+- **Approve paid work on cards.** Deep Research and People Search show cards and prompts. Nothing paid starts until you select the button or approve the prompt, and People Search's lookup cards ask every time. Best Pick, SEO data, X, and Scholar's journal-site search ask after 5 paid lookups in one answer, and Council of Experts after one council; see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
 
 > **Note — Admin controls**
 > In a managed organization, administrators switch these tools on or off under **Organizations** → organization name → **Policies** → policy name. Most live in the **Web & Research** group; **Council** is under **Collaboration**, and **File uploads** is under **Privacy & Security**. A control nobody has set follows the policy's default. Each section below names the controls its tool needs. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
@@ -249,7 +249,7 @@ Council of Experts sends one self-contained question to two to five AI models at
 
 **What you get:** each model's full answer in its own tab, and a synthesis that names consensus and disagreement. In most chats, a very long answer is also saved to the chat's **Files** as "_model_ answer.md".
 
-**Limits:** a council needs at least two experts to finish. Each expert can take up to eight tool steps, and each answer is cut to 4,000 characters for the synthesis. The model list follows your plan and organization; with **Zero Data Retention only** on, it offers only zero-retention models. Experts can use Web Search, Read Site, Scholar, Search Docs, Read Doc, Scan Doc, and a YouTube video's transcript and saved claims check. They can't use Image Search, Deep Research, X, Maps, Weather, SEO data, Domain research, People Search, Best Pick, or connectors. Search Docs isn't available in end-to-end encrypted chats.
+**Limits:** one council per answer; another asks **Start another model run?** first. A council needs at least two experts to finish. Each expert can take up to eight tool steps, and each answer is cut to 4,000 characters for the synthesis. The model list follows your plan and organization; with **Zero Data Retention only** on, it offers only zero-retention models. Experts can use Web Search, Read Site, Scholar, Search Docs, Read Doc, Scan Doc, and a YouTube video's transcript and saved claims check. They can't use Image Search, Deep Research, X, Maps, Weather, SEO data, Domain research, People Search, Best Pick, or connectors. Search Docs isn't available in end-to-end encrypted chats.
 
 **Runs in:** every app platform. Routines: no.
 
@@ -315,7 +315,7 @@ People Search identifies one named person, asks you to confirm the right candida
 
 **What you get:** a candidate card, then a brief card with tabs and numbered citations, and an optional public-records band.
 
-**Limits:** every paid step asks first, and no paid step is retried automatically. Public records cover US jurisdictions only and need a first and last name plus a city, a US state, or a date of birth. The records band carries the notice that results are for personal, informational use only, not for decisions about employment, housing, credit, or insurance. With contact routes off, there's no **Reach out** section and no work-email lookup; with public records off, there's no **On the record** band.
+**Limits:** every paid step asks first, every time; neither **This chat**, **Always**, nor Full access covers it. No paid step is retried automatically. Public records cover US jurisdictions only and need a first and last name plus a city, a US state, or a date of birth. The records band carries the notice that results are for personal, informational use only, not for decisions about employment, housing, credit, or insurance. With contact routes off, there's no **Reach out** section and no work-email lookup; with public records off, there's no **On the record** band.
 
 **Runs in:** every app platform. Routines: no. Council experts: no.
 
@@ -669,5 +669,5 @@ You get a route with a stop along the way and a forecast for when you'll be out.
 - [Next: Learn from YouTube, online video, and posts on X](https://bearly.ai/docs/manual/capabilities/videos-and-posts.md)
 - [Related: Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md)
 - [Related: Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md)
+- [Related: Approvals, permissions, and Full access](https://bearly.ai/docs/manual/capabilities/permissions.md)
 - [Related: Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md)
-- [Related: Privacy and security controls](https://bearly.ai/docs/manual/privacy-and-security.md)

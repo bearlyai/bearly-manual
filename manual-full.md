@@ -20,7 +20,7 @@ Index: [https://bearly.ai/docs/manual.md](https://bearly.ai/docs/manual.md)
 - [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md): How to choose, compare, and switch AI models in Bearly, including the model picker, Bearly Fast, Pro, and Ultra, defaults by plan and usage, per-chat and new-chat defaults, plan-gated and hidden models, Zero Data Retention only, running out of credits, and comparing answers with Rerun and Council of Experts.
 - [Work with answers](https://bearly.ai/docs/manual/chat/answers.md): How to copy, edit, delete, rerun, and compare versions of messages in Bearly, read answers aloud or open them in Canvas, follow what Bearly is doing and read an answer's steps and citations, what answers can display, what to do when an answer fails, and how to move around long chats with the timeline and chapters.
 - [Organize, find, share, and export chats](https://bearly.ai/docs/manual/chat/organize.md): How to start, rename, pin, archive, delete, select, and move chats into projects in Bearly, read the sidebar and its Needs attention section, pin chats and projects, group projects into folders, search chats and files, use the command menu, download a chat as Markdown, share a chat as a Page, ask Bearly to manage chats for you, and open What's New.
-- [Tune a chat: settings, style, reasoning, and memory](https://bearly.ai/docs/manual/chat/settings.md): Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Temperature, Instructions, Language, Web Search, how long conversations are kept, Memories, Personalization, and how Bearly tells the AI today's date.
+- [Tune a chat: settings, style, reasoning, and memory](https://bearly.ai/docs/manual/chat/settings.md): Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Execution Mode (Classic or Code Mode), Temperature, Instructions, Language, Web Search, how long conversations are kept, Memories, Personalization, and how Bearly tells the AI today's date.
 - [Talk to Bearly: dictation and voice calls](https://bearly.ai/docs/manual/chat/voice.md): How to speak to Bearly instead of typing, with push-to-talk dictation into the message box and live voice calls that can run actions, plus Read aloud, every Dictation and Voice setting, plan and platform requirements, and limits.
 - [Keyboard shortcuts](https://bearly.ai/docs/manual/chat/shortcuts.md): Every Bearly keyboard shortcut for macOS and for Windows and Linux, covering sending, new lines, the / and @ picker, the command menu, search, the sidebar, new and deleted chats, jumping between prompts, Settings, dialogs, dictation, and the desktop app's global shortcut.
 
@@ -33,11 +33,11 @@ Index: [https://bearly.ai/docs/manual.md](https://bearly.ai/docs/manual.md)
 - [Make Pages and edit in Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md): How to build interactive Pages in Bearly, refine them through versions, prepare and publish them to a stable bearly.sh link with the right audience, share a conversation's key takeaways, and edit an answer as a document in Canvas, with every limit that applies.
 - [Make images, video, and audio](https://bearly.ai/docs/manual/capabilities/images-video-audio.md): How to generate and edit images, make and edit short videos, turn text into speech with Read aloud and Voice Studio, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls.
 - [Record and use meetings](https://bearly.ai/docs/manual/capabilities/meetings.md): How to record online meetings, in-person conversations, and voice notes in Bearly's Meetings page, follow the live transcript, get the final transcript and speaker names, summarize, export, and hand a transcript to a chat or project to draft follow-ups.
-- [Let Bearly use a browser, your files, and your computer](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md): How a Bearly desktop chat browses sites in Bearly Browser, works in your signed-in Chrome tabs, reads and edits files and runs commands with Work locally, and operates apps with Computer Use, including the approvals each asks for and how to choose between them.
+- [Let Bearly use a browser, your files, and your computer](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md): How a Bearly desktop chat browses sites in Bearly Browser, works in your signed-in Chrome tabs, offers to install the Chrome extension in chat, reads and edits files and runs commands with Work locally, and operates apps with Computer Use, including the approvals each asks for and how to choose between them.
 - [Connect apps and add skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md): How to connect services and your own MCP servers to Bearly, turn a connector on for a chat or a routine, sign in on each device, and install and run skills, including the built-in Visualize and Bearly AI Models skills, with platform limits and approvals.
 - [Automate with Routines](https://bearly.ai/docs/manual/capabilities/routines.md): How to create, schedule, equip, and deliver Bearly routines, including the Pro requirement, where routines run, exactly which tools a scheduled run can use, connectors, skills, Deep Research, permission mode, unattended local access, browser access, the notification filter, email and text delivery, and run history.
 - [Send email and texts](https://bearly.ai/docs/manual/capabilities/email-and-text.md): How Bearly emails you or your teammates and texts your verified phone from a chat or a routine, how to set up Phone and SMS, who can receive messages, attachment and rate limits, and what to do when a send fails.
-- [Approvals, permissions, and Full access](https://bearly.ai/docs/manual/capabilities/permissions.md): How Bearly asks before using tools outside the chat, how long each approval lasts, how to review and revoke saved approvals in the Permissions control, how Standard and Full access differ, what always asks, starting new chats in Full access, organization Agent access, routine permission mode, and spoken approvals.
+- [Approvals, permissions, and Full access](https://bearly.ai/docs/manual/capabilities/permissions.md): How Bearly asks before it acts outside the chat, answering a card Once, This chat, or Always for each kind of action, the one card that covers a whole Code Mode step, the per-reply limits on sending and spending, what always asks, reviewing and changing answers in the Permissions panel and Settings, Full access, organization Agent access, routine permission mode, and spoken approvals.
 
 ### Combine
 
@@ -47,7 +47,7 @@ Index: [https://bearly.ai/docs/manual.md](https://bearly.ai/docs/manual.md)
 - [Recipes for founders, sales, and operations](https://bearly.ai/docs/manual/combine/business-recipes.md): Step-by-step recipes that chain Bearly's Domain research, SEO data, People Search, Council of Experts, Document editor, Run Python, charts, Pages, and email for naming a product, meeting prep, contact lists, contract redlines, shareable dashboards, and search-gap content plans.
 - [Recipes for automation and agents](https://bearly.ai/docs/manual/combine/automation-recipes.md): Step-by-step recipes that combine Routines, Bearly Browser, Chrome control, Work locally, Computer Use, connectors, Deep Research, and email or text delivery, including what scheduled runs can and can't use and which steps need the desktop app.
 - [Recipes for everyday life](https://bearly.ai/docs/manual/combine/everyday-recipes.md): Step-by-step recipes that chain Bearly's Maps, Weather, Best Pick, YouTube, Scholar, voice calls, text to speech, Run Python, Pages, and email for rides, trips, shopping, learning, reading health research, language practice, and splitting bills.
-- [Recipes for teams and projects](https://bearly.ai/docs/manual/combine/team-recipes.md): Step-by-step recipes that combine projects, Always search documents, meeting transcripts, project sharing and locked settings, organization policies, Memories and chat management, Prompt templates, email to teammates, and restricted Pages for shared knowledge bases, meeting recaps, and team rollouts.
+- [Recipes for teams and projects](https://bearly.ai/docs/manual/combine/team-recipes.md): Step-by-step recipes that combine projects, Always search documents, meeting transcripts, project sharing and locked settings, organization policies, Memories and chat management, Code Mode for totaling a figure across a project's chats, Prompt templates, email to teammates, and restricted Pages for shared knowledge bases, meeting recaps, and team rollouts.
 
 ### Workspace & Control
 
@@ -60,7 +60,7 @@ Index: [https://bearly.ai/docs/manual.md](https://bearly.ai/docs/manual.md)
 
 - [Guide for AI assistants](https://bearly.ai/docs/manual/for-ai-assistants.md): How an AI assistant, including Bearly's own, should use this manual to answer questions about Bearly, check what a user's plan and device allow, and walk them through a task or a new combination of features.
 - [Use Bearly from scripts and agents](https://bearly.ai/docs/manual/api-and-agents.md): How developers and AI agents use Bearly programmatically, including API keys, the Bearly API's endpoints, authentication, models, limits, and errors, the Bearly AI Models skill for scripts inside Bearly, links that open Bearly with a prompt, the Markdown versions of this manual, remote modules, and guidance for agents that operate Bearly's interface for a person.
-- [Fix common problems](https://bearly.ai/docs/manual/troubleshooting.md): What a Bearly message or symptom means and what to do about it — upload and PDF password errors, failed answers, a paused queue, usage limits and out-of-credits notices, hidden models, missing features, desktop-only tools, locked encrypted chats, routines that didn't run, connectors, email and text, Deep Research, Full access, Chrome control, voice, dictation, meetings, sharing, and sign-in.
+- [Fix common problems](https://bearly.ai/docs/manual/troubleshooting.md): What a Bearly message or symptom means and what to do about it — upload and PDF password errors, failed answers, a paused queue, slow many-step tasks and Code Mode, usage limits and out-of-credits notices, hidden models, missing features, desktop-only tools, locked encrypted chats, routines that didn't run, connectors, email and text, Deep Research, Full access, Chrome control, voice, dictation, meetings, sharing, and sign-in.
 - [Glossary](https://bearly.ai/docs/manual/glossary.md): Plain definitions of the Bearly terms you meet in the app and in this manual, from Bearly Fast and Chat (Dynamic) to Full access, Routines, Voice Studio, and Zero Data Retention only, each with a link to the page that covers it.
 
 ---
@@ -105,6 +105,7 @@ New to Bearly? Read [What Bearly is](https://bearly.ai/docs/manual/what-is-bearl
 | Encrypt chats end to end, or use only zero-retention models | [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md) |
 | Find, organize, share, or export chats | [Organize, find, and share](https://bearly.ai/docs/manual/chat/organize.md) |
 | Set a tone, language, or instructions for every chat | [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md) |
+| Speed up a task that reads many chats, pages, or files | [Tune a chat → Execution Mode](https://bearly.ai/docs/manual/chat/settings.md#execution-mode) |
 | Share files and instructions across chats or with people | [Projects](https://bearly.ai/docs/manual/projects.md) |
 | Set up Bearly for a company | [Organizations](https://bearly.ai/docs/manual/organizations.md) |
 | Understand plans, credits, and limits | [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md) |
@@ -361,7 +362,7 @@ The app loads the current Bearly from the web, so most improvements arrive witho
 
 
 
-1. Install **Bearly Companion** from the Chrome Web Store — in the desktop app, **Settings** → **Chrome extension** → **Install Chrome extension** opens it.
+1. Install **Bearly Companion** from the Chrome Web Store — in the desktop app, **Settings** → **Chrome extension** → **Install Chrome extension** opens it. Bearly may also offer an [install card in a desktop chat](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#install-the-chrome-extension-from-chat).
 2. Select the Bearly icon in the Chrome toolbar — the side panel opens.
 3. Select **Sign in with Bearly**. In the window that opens, check the account shown under **Connect the Bearly extension**, then select **Continue** — the extension gets its own key, not your dashboard login.
 4. Select **Allow website access** and approve Chrome's request — this one grant covers every site, and Bearly still reads a page only when you choose an action. The panel then shows **Ready for this page**.
@@ -393,6 +394,7 @@ Bearly has no passwords. On the sign-in screen, enter your **Email** and select 
 | Web research and Deep Research | Yes | Yes | Yes | Yes | No |
 | Images, video, and spoken audio | Yes | Yes | Yes | Yes | No |
 | Run Python (cloud) | Yes | Yes | Yes | Yes | No |
+| Code Mode (**Execution Mode**) | Yes | Yes | Yes | Yes; in Lockdown Mode, tools are called one at a time | No |
 | Voice calls | Yes, not in Firefox | Where the browser supports it | Yes | Yes | No |
 | Dictation | Yes | Yes | Yes | Yes | No |
 | Meeting recording with the microphone | Yes | Yes | Yes | Yes | No |
@@ -710,8 +712,8 @@ The chat's title sits at the top center, and the thread scrolls up behind it. In
 
 - **Messages.** Your messages and Bearly's answers. Controls sit under each one: they appear on hover with a mouse and stay visible on touch screens and in narrow windows. Under your messages: **Copy**, **Edit Query**, **Rerun with same model**, the **Rerun** model menu, a version switcher such as ‹ 2 / 3 ›, **Query info**, and **Delete Query**. Answers have most of the same, plus **Read aloud** on text-only answers and **Edit in Canvas**. While an answer is still running, its controls stay hidden. See [Work with answers](https://bearly.ai/docs/manual/chat/answers.md).
 - **Photos.** Several photos sent together show as one stack, the first on top with a count. Select it to open the image viewer, which fills the window: step through the chat's images with the arrows, keys, swipes, or the thumbnail strip, zoom, copy, download, or close.
-- **What Bearly is doing.** While an answer runs, one line under it names the current step: "Thinking", what a tool is doing (such as "Checking current prices…"), or "Waiting for your approval". A timer appears once a step passes 10 seconds, and the line hides while the answer's text streams in. When the answer ends, the line becomes a summary such as "Worked 28s · 4 steps", with "1 step failed" if one did; in most chats it also counts the sources Bearly read. Select either to open the answer's **Steps** tab in the side panel, where a running step has a square **Stop**.
-- **Approval cards.** When a tool needs your OK, a card shows what it wants to do, with **Deny**, **Allow**, and an **Approval duration** choice. In most chats you can answer it from any of your devices; in a shared chat, only the person who sent the message can, and everyone else sees "Waiting for the person who sent this message". See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
+- **What Bearly is doing.** While an answer runs, one line under it names the current step: "Thinking", what a tool is doing (such as "Checking current prices…"), or "Waiting for your approval". A timer appears once a step passes 10 seconds, and the line hides while the answer's text streams in. When the answer ends, the line becomes a summary such as "Worked 28s · 4 steps"; in most chats it also counts the sources Bearly read. Select either to open the answer's **Steps** tab in the side panel, where a running step has a square **Stop**.
+- **Approval cards.** When a tool needs your OK, a card shows what it wants to do and the kind of action, with **Deny**, **Once**, **This chat**, and **Always**. In most chats you can answer it from any of your devices; in a shared chat, only the person who sent the message can, and everyone else sees "Waiting for the person who sent this message". See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
 - **Result cards.** Interactive results such as a Deep Research report, a **Chart**, a YouTube video card, or the image editor. Research results such as sources start folded to one line; select them to expand.
 - **Timeline rail.** In windows at least 1,280 pixels wide, chats with 5 or more prompts get a slim rail of ticks on the right edge, one per prompt. Hover a tick for "Prompt N of M" and a preview; select it to jump. Ticks marked **Chapter** label a stretch of the conversation. <kbd>⌘</kbd> <kbd>Shift</kbd> <kbd>↑</kbd> and <kbd>⌘</kbd> <kbd>Shift</kbd> <kbd>↓</kbd> (<kbd>Ctrl</kbd> on Windows and Linux) jump between prompts.
 - **Scroll to bottom.** A button that appears when you've scrolled up.
@@ -723,7 +725,7 @@ Files, file previews, Canvas, and an answer's steps open as tabs in one panel to
 
 - **Files.** Every file in the chat, newest first and grouped by day, with **Search files** and **All**, **Uploaded**, **Generated**, and **Project** filters, each with a count. Photos and PDFs show thumbnails, Canvas documents are listed too, and each file has **Jump to message**. Opening a photo opens the image viewer on every image in the chat.
 - **A file or Canvas.** Opens as its own tab. See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md) and [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md).
-- **Steps.** Every step of one answer, live while it runs: thinking, each tool call with its **Input**, **Result**, and, if something failed, **Error**, and how long each took. A running tool call has a stop button. Messages you sent into the running answer appear in order; **Jump to your message** scrolls the chat back to one.
+- **Steps.** Every step of one answer, live while it runs: thinking, each tool call with its **Input** and **Result**, and how long each took, not counting waits for your approval. A running tool call has a stop button. Messages you sent into the running answer appear in order; **Jump to your message** scrolls the chat back to one.
 
 Photos and screenshots you upload with a generic name, such as image.png, are renamed by when you took them, like "Photo Nov 2, 3:13 PM.jpg" or "Screenshot Nov 2, 3:13 PM.png".
 
@@ -732,7 +734,7 @@ Photos and screenshots you upload with a generic name, such as image.png, are re
 The message box at the bottom. Its placeholder reads "How can I help? Type / or @ for tools". See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md).
 
 - **Up next.** Above the box, messages waiting to send after the current answer.
-- **Left of the toolbar:** **+** (**Attach files** and **Share your screen**); **Take photo** on touch screens; the sliders button, which opens this chat's **Web**, **Style**, **Scholar**, **Reasoning**, and **Memories** settings (plus **History** on some older chats) and **Chat Settings**. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md).
+- **Left of the toolbar:** **+** (**Attach files** and **Share your screen**); **Take photo** on touch screens; the sliders button, which opens this chat's **Web**, **Style**, **Scholar**, **Reasoning**, **Execution Mode**, and **Memories** settings (plus **History** on some older chats) and **Chat Settings**. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md).
 - **Right of the toolbar:** the model button (**Select model**), which shows the current model's short name; **Start voice call**, with a sound-wave icon; and the send buttons. With nothing running there's one: **Send**. While Bearly works, an empty box shows **Stop**; once you type, you get **Stop**, **Queue**, and **Send**: **Send** adds your message to the running answer, and **Queue** holds it until the answer finishes. Chats that can't take a message mid-answer show only **Stop** and **Send**, and **Send** waits for the answer. See [Send while Bearly is working](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-is-working), [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md), and [Voice](https://bearly.ai/docs/manual/chat/voice.md).
 - **Top right of the box:** the dictation microphone. See [Voice](https://bearly.ai/docs/manual/chat/voice.md).
 
@@ -744,7 +746,7 @@ A band at the foot of the message box, a shade darker than the box, holds the ch
 - **Encryption lock.** "End-to-end encrypted" or "Standard encryption". If your organization requires device-only encryption, it reads "Local key encryption" and can't be turned off.
 - **Work locally.** Desktop app only. It shows the working folder's name, or "Work locally" with "· Off". Its menu lists recent folders, **Choose folder…**, **Clear folder**, and **Off for this chat** or **Turn on for this chat**. In the web app it opens the desktop download pane; on phones and in the iOS app it's hidden. See [Browser and computer use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md).
 - **Connectors.** The connected service's name, or a count such as "2 connectors". Each row reads **Active**, **Off**, **Connect**, or **Retry**, and **Manage connectors...** opens settings. See [Connectors and skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md).
-- **Permissions.** Reads **Permissions**, or **Full access** while Full access is on, with a **Paused** badge if it's paused. It opens **Standard** and **Full access**, your saved approvals with **Revoke**, **Revoke all saved approvals**, and **Clear all permissions**. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
+- **Permissions.** Reads **Permissions**, or **Full access** while Full access is on, with a **Paused** badge if it's paused. It opens **Ask first** and **Full access**, each kind of action with **Ask**, **This chat**, or **Always**, single things you allowed with **Revoke**, and **Ask about everything again**. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
 
 While you edit an earlier message, the strip shows **Editing message** with **Cancel**. While Computer Use works in the desktop app, a **Computer** chip shows its status and a **Stop** action.
 
@@ -878,7 +880,7 @@ The composer at the bottom of every chat is where you type, attach files, name t
 
 - **+** opens the **Add** menu: **Attach files** and **Share your screen**.
 - **Take photo**, a camera button, appears on phones and tablets.
-- The sliders button opens this chat's controls: **Web**, **Style**, **Scholar**, **Reasoning**, and **Memories**, plus **History** on some older chats. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md).
+- The sliders button opens this chat's controls: **Web**, **Style**, **Scholar**, **Reasoning**, **Execution Mode**, and **Memories**, plus **History** on some older chats. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md).
 - The model button on the right shows the current model's short name and chooses who answers. See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
 - Voice and dictation controls sit next to it. See [Voice](https://bearly.ai/docs/manual/chat/voice.md).
 - The send buttons. With nothing running there's one, **Send**. While Bearly works, an empty composer shows **Stop**; once you type, you get **Stop**, **Queue**, and **Send**. See [Send while Bearly is working](#send-while-bearly-is-working).
@@ -1244,7 +1246,7 @@ When an organization's allow-list names fewer than five models, every allowed mo
 
 ## Zero Data Retention only
 
-Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. This applies to chat models.
+Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. This applies to chat models and to text to speech (see [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md#zero-data-retention-only)).
 
 **Use it when:** you want your chats to run only on zero-retention models.
 **You need:** Nothing extra. Any plan.
@@ -1421,14 +1423,15 @@ Each rerun and each edit adds a version to the same turn instead of a new messag
 
 While an answer runs, one line under it says what Bearly is doing right now: "Thinking" while the model reasons, what a tool is doing (each tool describes itself, such as "Checking current prices…"), or "Waiting for your approval" when a tool needs your OK. Once a step has run for 10 seconds, a timer shows how long it's taken. The line hides while the answer's text streams in, and comes back if Bearly starts another step.
 
-When the answer ends, the line becomes a summary of the work, such as "Worked 28s · 4 steps", with "1 step failed" if one did. It reads "Done" instead of a time when Bearly can't tell how long it worked. In most chats, the summary also counts the sources Bearly read, such as "Worked 14s · 3 steps · 3 sources", with icons for up to five of the sites (then "+N"). An answer with no steps shows no line.
+When the answer ends, the line becomes a summary of the work, such as "Worked 28s · 4 steps". It reads "Done" instead of a time when Bearly can't tell how long it worked. In most chats, the summary also counts the sources Bearly read, such as "Worked 14s · 3 steps · 3 sources", with icons for up to five of the sites (then "+N"). An answer with no steps shows no line.
 
 In most chats, an answer you started also shows live on your other devices where the chat is open, with its line and **Stop**, so you can follow it or stop it from any of them. See [Stop an answer or a single step](https://bearly.ai/docs/manual/chat/compose.md#stop-an-answer-or-a-single-step).
 
 Select the line ("See steps"), while it runs or after, to open the answer's **Steps** tab in the side panel. It lists every step in order, live while the answer runs:
 
 - **Thinking**: the model's reasoning. Select it and open **Summary** to read it. If a model writes its reasoning into the answer between thinking tags, Bearly moves that here too.
-- Each tool call, with its **Input**, its **Result** (or "Runs once you approve it." while it waits), an **Error** if it failed, and how long it took. A running call has a square **Stop** button, so you can stop one tool without stopping the answer; see [Stop an answer or a single step](https://bearly.ai/docs/manual/chat/compose.md#stop-an-answer-or-a-single-step).
+- Each tool call, with its **Input**, its **Result** (or "Runs once you approve it." while it waits), and how long it took. A call that didn't work shows what it returned under **Result**, and a call you denied reads "You declined this." The time leaves out any wait for your approval. A running call has a square **Stop** button, so you can stop one tool without stopping the answer; see [Stop an answer or a single step](https://bearly.ai/docs/manual/chat/compose.md#stop-an-answer-or-a-single-step).
+- With [**Execution Mode**](https://bearly.ai/docs/manual/chat/settings.md#execution-mode) set to **Code Mode**, a step that made many calls at once: one row with the step's description and how many calls it made, such as "12 tool calls" ("3 tool calls so far" while it runs). Open it to see each call, each with its **Input** and **Result**; **Show details** shows the code Bearly wrote. A row such as "Checked the maps tools" means Bearly looked up tools it doesn't use often.
 - Your messages, where Bearly read them: the one that started the answer and any you sent into it while it ran. Select one to jump to it in the chat.
 
 How much a model thinks depends on the model and on **Reasoning Effort**; see [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#reasoning-effort).
@@ -1790,7 +1793,7 @@ What Bearly can do from a chat:
 - Delete chats.
 - Tell you which plan you're on and which models you can pick in this chat, after your organization's model policy and **Zero Data Retention only**. If you're out of credits, it says why fewer models are listed. It can't see your usage or billing; those are in **Settings** → **Usage** on a paid plan, or **Settings** → **Billing** on Free.
 
-Before it lists your chats, Bearly asks for permission and explains: "Lists your chats and their titles so Bearly can find the right one." Before it reads another chat, it names that chat and says: "Reads another chat's full history into this chat. Allow only chats you want this chat to see." Before it copies a file from another chat, it names that chat and says: "Copies a file from another chat into this chat. Allow only chats you want this chat to see." Reading and copying share one permission, so allowing one for the session or chat also allows the other. You can allow it for this response, for this session, or for this chat on this device. Before deleting, Bearly shows "Delete this chat?" or how many chats it will delete, with their titles. If you allow deleting for longer than one request, later deletions asked for in that chat go ahead within that scope without asking again. **Full access** never skips any of these questions.
+Before it lists your chats, Bearly asks for permission and explains: "Lists your chats and their titles so Bearly can find the right one." Before it reads another chat, it names that chat and says: "Reads another chat's full history into this chat. Allow only chats you want this chat to see." Before it copies a file from another chat, it names that chat and says: "Copies a file from another chat into this chat. Allow only chats you want this chat to see." Reading and copying share one permission, so allowing one for the chat also allows the other. These cards offer **Allow** for this request, or **This chat** to allow it in this chat on this device; they never offer **Always**. Before deleting, Bearly shows "Delete this chat?" or how many chats it will delete, with their titles, with **Deny** and **Allow**. Every deletion asks, including in a voice call, where "don't ask me again" doesn't answer a delete card. **Full access** never skips any of these questions.
 
 ```text
 Find my chats about the Q3 budget, rename each one to start with "Q3 budget:", and move them all into the Finance project.
@@ -1827,7 +1830,7 @@ Find what we decided about pricing in this project, summarize it in five bullets
 
 ---
 title: "Tune a chat: settings, style, reasoning, and memory"
-description: "Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Temperature, Instructions, Language, Web Search, how long conversations are kept, Memories, Personalization, and how Bearly tells the AI today's date."
+description: "Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Execution Mode (Classic or Code Mode), Temperature, Instructions, Language, Web Search, how long conversations are kept, Memories, Personalization, and how Bearly tells the AI today's date."
 canonical: "https://bearly.ai/docs/manual/chat/settings/"
 markdown: "https://bearly.ai/docs/manual/chat/settings.md"
 ---
@@ -1836,7 +1839,7 @@ markdown: "https://bearly.ai/docs/manual/chat/settings.md"
 
 HTML: [https://bearly.ai/docs/manual/chat/settings/](https://bearly.ai/docs/manual/chat/settings/)
 
-> Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Temperature, Instructions, Language, Web Search, how long conversations are kept, Memories, Personalization, and how Bearly tells the AI today's date.
+> Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Execution Mode (Classic or Code Mode), Temperature, Instructions, Language, Web Search, how long conversations are kept, Memories, Personalization, and how Bearly tells the AI today's date.
 
 Each chat has its own model, reply language, style, reasoning level, instructions, and memory settings. You can change them for the chat in front of you, set defaults for every chat you start later, and tell Bearly about yourself once so every chat can use it. This page covers every chat setting and how they combine with project and organization settings.
 
@@ -1850,7 +1853,7 @@ You can reach chat settings three ways:
 
 The **Settings** window opens over the page you're on and lists chat settings under **Chats**: **This chat**, **New chats**, **Permissions**, **Personalization**, **Voice**, **Dictation**, and **Skills**. **Chat Settings** opens it on **This chat**. Voice and dictation are on [Voice](https://bearly.ai/docs/manual/chat/voice.md), and **Permissions** on [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md). The window's header shows **Saving...**, **Saved**, or **Not saved** as changes save. On a phone, the window fills the screen and shows the list of panes or one pane at a time; select **Settings** at the top to go back to the list.
 
-The sliders button in the composer holds quick per-chat switches: **Web**, **Style**, **Scholar**, **Reasoning**, and **Memories**. Some older chats also show **History** there (see [Long conversations and History](https://bearly.ai/docs/manual/chat/settings.md#long-conversations-and-history)). **History** and **Scholar** live only in the sliders menu, not in the **Settings** window.
+The sliders button in the composer holds quick per-chat switches: **Web**, **Style**, **Scholar**, **Reasoning**, **Execution Mode**, and **Memories**. Some older chats also show **History** there (see [Long conversations and History](https://bearly.ai/docs/manual/chat/settings.md#long-conversations-and-history)). **History**, **Scholar**, and **Execution Mode** live only in the sliders menu, not in the **Settings** window.
 
 ## This chat and New chats
 
@@ -1887,7 +1890,7 @@ A chat's settings are built up in layers. Each later layer overrides the ones be
 6. Your personal settings for that project.
 7. **This chat**.
 
-An organization or project can also lock a setting. A locked setting can't be changed in **This chat**, and its control disappears from the chat or stays fixed. In most chats, a locked item in the sliders menu (**Web**, **Style**, **Scholar**, **Reasoning**, **Memories**) shows a lock and can't be changed; hover the lock to see "Set by your team's policy" or "Set by this project". Settings that can be locked: model, instructions, language, temperature, reasoning effort, response style, memories, web search, always searching project documents, and personalization.
+An organization or project can also lock a setting. A locked setting can't be changed in **This chat**, and its control disappears from the chat or stays fixed. In most chats, a locked item in the sliders menu (**Web**, **Style**, **Scholar**, **Reasoning**, **Execution Mode**, **Memories**) shows a lock and can't be changed; hover the lock to see "Set by your team's policy" or "Set by this project". Settings that can be locked: model, instructions, language, temperature, reasoning effort, response style, memories, web search, always searching project documents, and personalization.
 
 One exception: if your organization or project sets a reasoning level, it applies even when it isn't locked.
 
@@ -1926,6 +1929,40 @@ While the model reasons, the line under the answer reads "Thinking", and the rea
 
 **Use it when:** a multi-step problem, math, or code needs more care (raise it), or you want faster replies to simple questions (lower it).
 **Limits:** Your reasoning choice is your own, even in a shared chat. A reasoning level set by your organization or project overrides yours.
+
+## Execution Mode
+
+**Execution Mode**, in the sliders menu, sets how Bearly works through tools in this chat:
+
+| Option | What it does |
+|---|---|
+| **Classic** (default) | "Bearly calls tools one at a time." After each call, the model reads the result and decides the next step. |
+| **Code Mode** | "Bearly writes code that runs many tool calls at once." The code makes the calls, then counts, matches, or adds up their results, and only what it works out goes back to the model. |
+
+Code Mode makes a difference when a task needs many tool calls, such as reading 20 chats, pages, or files and then totaling, comparing, or listing what they say. Bearly finishes those tasks in far fewer model steps, so they take less time and use less of your plan. For a question that needs one or two tool calls, the two modes work about the same. How often Bearly writes code for a task also depends on the chat's model.
+
+
+
+1. Open the sliders button in the composer and choose **Execution Mode**.
+2. Select **Classic** or **Code Mode**. — The choice is saved for this chat and applies from your next message. Other chats keep their own setting.
+
+
+
+**Use it when:** a request has Bearly reading or checking many things before it answers, such as every chat in a project, a list of web pages, or a folder of files, and then working with all of the results together.
+**You need:** Any plan. The web app (including phone browsers), the desktop app, or the iOS app. In an organization, the policy must allow **Code Mode**.
+
+**What you get:** Your answer and any files it makes, usually sooner. In the answer's [**Steps**](https://bearly.ai/docs/manual/chat/answers.md#thinking-steps), a step that made many calls shows as one row with its description and a count, such as "12 tool calls". Open it to see each call in order, each with what it was asked and what came back; **Show details** at the end shows the code Bearly wrote. When Bearly looks up a set of tools it doesn't use often, the row reads like "Checked the maps tools".
+
+Approvals work the same way in both modes. When a step needs actions that ask first, one card lists every kind of action the step will take, under "Bearly will:", and you answer for the whole step: **Deny**, **Once** (this step), **This chat**, or **Always**. **Show details** on the card shows the code. With **Deny**, the step goes on without those actions. Actions that always ask, such as deleting or reading your other chats, still get their own card. See [Approvals, permissions, and Full access](https://bearly.ai/docs/manual/capabilities/permissions.md).
+
+**Limits:**
+- The code can use only Bearly's tools: it reaches the web, your files, and your apps only through the same tools, approvals, and per-reply limits as Classic.
+- Results Bearly keeps between steps last until the answer ends. The next message starts fresh, apart from what's in the chat.
+- On a device that can't run this kind of code, such as an iPhone or iPad in Lockdown Mode, Code Mode still works, but Bearly looks up and calls tools one at a time.
+- If your organization turns **Code Mode** off, **Execution Mode** shows **Classic** with a lock and can't be changed. You can't change it in a chat you can only read.
+- **Execution Mode** appears in most chats. A chat that doesn't show it uses Classic.
+
+**Combines with:** [Ask Bearly to manage your chats](https://bearly.ai/docs/manual/chat/organize.md#ask-bearly-to-manage-your-chats) to read many chats in one step; [Projects](https://bearly.ai/docs/manual/projects.md) to work across a project's chats and files.
 
 ## Temperature
 
@@ -2018,7 +2055,7 @@ When a question needs the exact time, such as "how long until 5 pm?", the AI che
 
 **Your profile everywhere, with one-off exceptions.** In **Personalization**, turn on **Use in chats**, then set **New chats** → **Response Style** to **Concise** and **Language** to the language you work in. Every new chat starts that way. For a single chat that needs a different voice, add **Instructions** in **This chat**; they apply to that chat only.
 
-**Long agentic session.** Before starting a long chain of tool work, raise **Reasoning** to **High**. Then queue the follow-up steps in **Up next** so they run in order. See [Send while Bearly is working](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-is-working).
+**Long agentic session.** Before starting a long chain of tool work, raise **Reasoning** to **High**, and set **Execution Mode** to **Code Mode** if the work reads or checks many things. Then queue the follow-up steps in **Up next** so they run in order. See [Send while Bearly is working](https://bearly.ai/docs/manual/chat/compose.md#send-while-bearly-is-working).
 
 **Project memory only.** In a project, leave **Memories** on **Project Only** so recall stays inside the project's chats, and turn on **Always search documents** on the project's **Settings** tab so every answer checks the project's files first. See [Projects](https://bearly.ai/docs/manual/projects.md).
 
@@ -2124,7 +2161,7 @@ A voice call is a live conversation: you talk, Bearly answers out loud, and you 
 ### What Bearly can do during a call
 
 - **Run actions.** It works through the chat's tools one at a time. Each spoken turn can take up to 12 action rounds; past that you'll see "Voice hit its action limit for this turn."
-- **Ask for approval.** The call bar shows "Approval needed". Some voice models accept spoken answers: "yes", "no", "don't ask me again", or "stop". Others need you to select the on-screen approval card. Connector sign-in always happens on screen.
+- **Ask for approval.** The call bar shows "Approval needed". Some voice models accept spoken answers: "yes", "no", "don't ask me again" (the same as **This chat**), or "stop". Others need you to select the on-screen approval card. Connector sign-in always happens on screen.
 - **Use the chat so far.** A call starts with the chat's recent turns as background, so you can pick up a typed conversation by voice.
 - **Name its sources.** When Bearly looks something up during a call, it says where the information came from, such as "according to the planning memo", instead of reading out source markers or links.
 
@@ -2154,7 +2191,7 @@ Open **Settings** → **Voice** (in the **Chats** section). It reads "Voice call
 
 Under any answer that's all text, select **Read aloud** to hear it. It skips the source markers shown in the answer. It uses a standard voice unless you turn on **Use for Read Aloud** in Voice Studio, which switches Read aloud to the voice, engine, and delivery you picked there.
 
-**You need:** any plan. Admin control: **Text to speech**.
+**You need:** any plan. Admin control: **Text to speech**. Your organization's **Model access** policy and **Zero Data Retention only** also decide which voice engines it can use; when none is left, a notice reads **Read Aloud isn't available** with the reason.
 
 For downloadable recordings, voice presets, and comparing voices, see [Text to speech](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#text-to-speech).
 
@@ -2391,7 +2428,7 @@ These tools run in Bearly chats in the web app, phone browsers, the desktop app,
 - **Ask in plain words.** Bearly picks the tool that fits. Web Search, Read Site, Image Search, Scholar, Best Pick, SEO data, Domain research, Maps, Weather, and X all start from an ordinary request. People Search starts when you explicitly ask to look up or vet a named person. Deep Research prepares its setup card when you ask for an in-depth research run. Council of Experts runs only from `/council`.
 - **Type a label to choose the tool.** Type `/` at the very start of a message, or `@` anywhere in it, then a label such as `deep-research`. The menu lists research tools under **Research**. Only one `/` label counts per message, but you can add several `@` labels. A label chooses a tool that is already available to you; it can't switch on a tool your plan or organization has turned off. More in [Compose messages](https://bearly.ai/docs/manual/chat/compose.md).
 - **Switch web and paper search for one chat.** The sliders button in the composer opens a **Search** section with **Web** (**Off** or **Auto**) and **Scholar** (**Off** or **Auto**). Both start on **Auto**. **Auto** makes the tools available; it doesn't force a search on every message.
-- **Approve paid work on cards.** Deep Research and People Search show cards and prompts. Nothing paid starts until you select the button or approve the prompt.
+- **Approve paid work on cards.** Deep Research and People Search show cards and prompts. Nothing paid starts until you select the button or approve the prompt, and People Search's lookup cards ask every time. Best Pick, SEO data, X, and Scholar's journal-site search ask after 5 paid lookups in one answer, and Council of Experts after one council; see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
 
 > **Note — Admin controls**
 > In a managed organization, administrators switch these tools on or off under **Organizations** → organization name → **Policies** → policy name. Most live in the **Web & Research** group; **Council** is under **Collaboration**, and **File uploads** is under **Privacy & Security**. A control nobody has set follows the policy's default. Each section below names the controls its tool needs. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
@@ -2597,7 +2634,7 @@ Council of Experts sends one self-contained question to two to five AI models at
 
 **What you get:** each model's full answer in its own tab, and a synthesis that names consensus and disagreement. In most chats, a very long answer is also saved to the chat's **Files** as "_model_ answer.md".
 
-**Limits:** a council needs at least two experts to finish. Each expert can take up to eight tool steps, and each answer is cut to 4,000 characters for the synthesis. The model list follows your plan and organization; with **Zero Data Retention only** on, it offers only zero-retention models. Experts can use Web Search, Read Site, Scholar, Search Docs, Read Doc, Scan Doc, and a YouTube video's transcript and saved claims check. They can't use Image Search, Deep Research, X, Maps, Weather, SEO data, Domain research, People Search, Best Pick, or connectors. Search Docs isn't available in end-to-end encrypted chats.
+**Limits:** one council per answer; another asks **Start another model run?** first. A council needs at least two experts to finish. Each expert can take up to eight tool steps, and each answer is cut to 4,000 characters for the synthesis. The model list follows your plan and organization; with **Zero Data Retention only** on, it offers only zero-retention models. Experts can use Web Search, Read Site, Scholar, Search Docs, Read Doc, Scan Doc, and a YouTube video's transcript and saved claims check. They can't use Image Search, Deep Research, X, Maps, Weather, SEO data, Domain research, People Search, Best Pick, or connectors. Search Docs isn't available in end-to-end encrypted chats.
 
 **Runs in:** every app platform. Routines: no.
 
@@ -2663,7 +2700,7 @@ People Search identifies one named person, asks you to confirm the right candida
 
 **What you get:** a candidate card, then a brief card with tabs and numbered citations, and an optional public-records band.
 
-**Limits:** every paid step asks first, and no paid step is retried automatically. Public records cover US jurisdictions only and need a first and last name plus a city, a US state, or a date of birth. The records band carries the notice that results are for personal, informational use only, not for decisions about employment, housing, credit, or insurance. With contact routes off, there's no **Reach out** section and no work-email lookup; with public records off, there's no **On the record** band.
+**Limits:** every paid step asks first, every time; neither **This chat**, **Always**, nor Full access covers it. No paid step is retried automatically. Public records cover US jurisdictions only and need a first and last name plus a city, a US state, or a date of birth. The records band carries the notice that results are for personal, informational use only, not for decisions about employment, housing, credit, or insurance. With contact routes off, there's no **Reach out** section and no work-email lookup; with public records off, there's no **On the record** band.
 
 **Runs in:** every app platform. Routines: no. Council experts: no.
 
@@ -3471,7 +3508,7 @@ These file tools are in the `/` menu under **Tools**:
 
 Ask Bearly to edit a file you uploaded and it saves the edited copy as a new file in the chat, listed under **Generated**; your upload doesn't change. Later edits continue that copy, one version each.
 
-Ask Bearly to delete a file it made in the chat and it asks first: **Delete "file name"?**, with **Allow** and **Deny**. Deleting a file Bearly edited removes every version, and **Details** shows how many. Full access never skips this question. Bearly can't delete files you uploaded or project files. A message that showed a deleted file now shows **File unavailable**.
+Ask Bearly to delete a file it made in the chat and it asks first: **Delete "file name"?**, with **Deny** and **Allow**. Every deletion asks. Deleting a file Bearly edited removes every version, and **Show details** shows how many. Full access never skips this question. Bearly can't delete files you uploaded or project files. A message that showed a deleted file now shows **File unavailable**.
 
 ## Preview, edit a table, and download
 
@@ -3590,7 +3627,7 @@ What it can do, by format:
    /document Revise the attached contract for plain language and return a new DOCX with tracked changes. Keep the clause numbering, defined terms, and existing comments.
    ```
 
-4. Watch the line under the answer while Python runs — select it to open **Steps**, then select the **Run Python** step to see **Input** and **Result**, or **Error** if the run failed.
+4. Watch the line under the answer while Python runs — select it to open **Steps**, then select the **Run Python** step to see **Input** and **Result**, which includes any error message.
 5. Open the new file and select **Download** — for Word, Excel, and PowerPoint files the preview is a PDF, so choose **Original** to get the editable file.
 
 
@@ -3666,7 +3703,7 @@ You get a cited comparison table and a Word file with your proposed changes as t
 
 **Swap in:** Scan Doc for the first step when you need every exact mention of a term, across up to 20 agreements in one search; a project with **Always search documents** instead of attaching the files each time; a filled PDF instead of a DOCX for a form.
 
-**If it stalls:** if citations point to the wrong file, name the files with `@`. If the run fails, select the **Run Python** step, read **Error**, and ask Bearly to retry with one file.
+**If it stalls:** if citations point to the wrong file, name the files with `@`. If the run fails, select the **Run Python** step, read its **Result**, and ask Bearly to retry with one file.
 
 ### Fill a PDF form from your own documents
 
@@ -3782,7 +3819,7 @@ Run Python executes a complete Python script in a fresh cloud sandbox and return
    /python From the attached sales.xlsx, total revenue by region and quarter, show the top three regions by growth, and save the summary as a CSV.
    ```
 
-3. Watch the line under the answer — select it to open **Steps**, then select the **Run Python** step to see **Input** (the code), **Result** (what it printed), and **Error** if something failed. Bearly often runs a quick look at the columns first, then the full analysis.
+3. Watch the line under the answer — select it to open **Steps**, then select the **Run Python** step to see **Input** (the code) and **Result** (what it printed, including any error message). Bearly often runs a quick look at the columns first, then the full analysis.
 4. Open the output files — files Bearly shows appear as cards in the chat, with plots inline, and every file the run saved is in the chat's **Files**.
 
 
@@ -4325,7 +4362,7 @@ Imagine generates an image from your description. The result opens in an image e
 
 **Transparent backgrounds:** ask for one in the chat, for a logo, icon, sticker, or cutout, and Bearly makes a PNG with a transparent background. Only some models can do this, so Bearly switches to one that can, and the reply names the model it used. If you named a model that can't, the reply says so. If no model that can is available, Bearly tells you and offers the image on a plain background instead. The image editor's model buttons run exactly the model you pick and don't add transparency.
 
-**Limits:** there's no size or aspect-ratio setting; the output shape depends on the model. When Bearly runs an image request from the chat and the model's service fails, it switches to a backup model.
+**Limits:** there's no size or aspect-ratio setting; the output shape depends on the model. One answer makes up to 4 images or speech clips before it asks **Make more images or speech?**; see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits). When Bearly runs an image request from the chat and the model's service fails, it switches to a backup model.
 
 ## The image editor
 
@@ -4364,7 +4401,7 @@ To edit from the chat instead, type `/edit-image` (**Touch Up**) and describe th
 /edit-image Make the background of the bottle photo a warm sunset and keep the bottle exactly as it is.
 ```
 
-To cut an object out, ask Touch Up to remove the background. You get a PNG with a transparent background, made by a model that can do it, as with [Imagine](#imagine).
+To cut an object out, ask Touch Up to remove the background. You get a PNG with a transparent background, made by a model that can do it, as with [Imagine](#imagine). Editing an image that already has a transparent background keeps it, unless you ask for a solid one. If you named a model that can't keep it, or none that can is available, you get an opaque image and the reply says so.
 
 ```text
 /edit-image Remove the background from the bottle photo and keep the bottle exactly as it is.
@@ -4409,6 +4446,7 @@ Make Video generates a short video with sound, from a description alone or by an
 
 **Limits:**
 
+- One video per answer; a second asks **Make another video?** first. See [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
 - A start image can be at most 2.5 times as wide as it is tall, or 2.5 times as tall as it is wide. Bearly refuses a wider or taller image before it starts, so crop or pad it first.
 - A failed attempt isn't retried on another model. On failure you'll see "The video model could not finish this request. Try again later."
 
@@ -4442,7 +4480,7 @@ Bearly can read any text answer aloud and make downloadable voice recordings in 
 
 ### Read aloud
 
-Under any answer that's all text, select the speaker icon (**Read aloud**) to hear it in a standard voice. To use your own choice of voice and delivery instead, turn on **Use for Read Aloud** in Voice Studio.
+Under any answer that's all text, select the speaker icon (**Read aloud**) to hear it in a standard voice. To use your own choice of voice and delivery instead, turn on **Use for Read Aloud** in Voice Studio. If your organization's model policy doesn't allow that voice engine, Read aloud uses the first engine it allows; if it allows none, a notice reads **Read Aloud isn't available** with the reason.
 
 ### Voice Studio
 
@@ -4472,7 +4510,9 @@ Voice Studio is where you write a script, pick a voice, direct the delivery, and
 
 Rarely, a reading comes out too large for one file. It's then saved as numbered parts. A reading you asked for in the chat shows a player for each part, and the studio shows it as one take with "This reading was saved as 2 files because it was too long for one. Play them in order." Select **Part 1 of 2** or **Part 2 of 2** to choose which part plays; **Download audio** saves the selected part. If a part is later deleted from the chat, the others keep their numbers and the studio says, for example, "Part 2 of this reading was deleted."
 
-**Limits:** a recording can be up to about 22,500 characters of English (about 7,500 in Chinese, Japanese or Korean), roughly 30 minutes of audio. Longer text is refused before anything is recorded or charged, with "Text this long would make more than about 30 minutes of audio. Split it into shorter parts." If the voice service fails partway through a long reading, the part already read is kept and the studio says "Only the first N of M characters were read aloud. Shorten the text or split it into parts."; when you asked in the chat, Bearly tells you the audio stops early and can read the rest. Voice Studio appears on the latest text-to-speech result in the chat; earlier results show a plain player. The word highlighting uses estimated timing. A failed recording isn't retried automatically; when a recording you asked for in the chat fails, you'll see "The audio could not be created." In read-only chats you get plain players only. The studio's model switch picks the voice engine, such as **Fast** or **Studio**.
+**Limits:** a recording can be up to about 22,500 characters of English (about 7,500 in Chinese, Japanese or Korean), roughly 30 minutes of audio. Longer text is refused before anything is recorded or charged, with "Text this long would make more than about 30 minutes of audio. Split it into shorter parts." If the voice service fails partway through a long reading, the part already read is kept and the studio says "Only the first N of M characters were read aloud. Shorten the text or split it into parts."; when you asked in the chat, Bearly tells you the audio stops early and can read the rest. Voice Studio appears on the latest text-to-speech result in the chat; earlier results show a plain player. The word highlighting uses estimated timing. A failed recording isn't retried automatically; when a recording you asked for in the chat fails, you'll see "The audio could not be created." In read-only chats you get plain players only. The studio's model switch picks the voice engine: **Fast**, **Studio**, or **OpenAI**.
+
+When your organization's model policy doesn't allow the engine you picked, **Generate** shows "Your organization's model policy doesn't allow _engine_. Choose another speech model." With **Zero Data Retention only** on, **Fast** and **Studio** show "_Engine_ doesn't meet your Zero Data Retention only setting. Choose another speech model." When no engine is allowed at all, the studio shows "Your organization's model policy doesn't allow any speech model, so audio can't be created." or, with Zero Data Retention only on, "No speech model that meets your Zero Data Retention only setting is available, so audio can't be created." Speech you ask for in the chat, and an unedited studio, use the first allowed engine instead of the default when the default isn't allowed.
 
 ## Transcribe
 
@@ -4526,7 +4566,8 @@ View Media lets Bearly look at images, watch video files, and see the pages of a
 ## Controls and model settings
 
 - Organization admins turn these tools on or off with **Images**, **Video**, **Text to speech**, and **Transcription** under **Media & Creativity**. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
-- **Zero Data Retention only** applies to chat models. It doesn't filter the image, video, transcription, or text-to-speech models, and organization model allow-lists don't apply to them either. With it on, text to speech starts from a different default voice engine. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
+- An organization's **Model access** policy covers the image, video, text-to-speech, and transcription models too. A deny-list applies to them, and a provider group in it covers the image, video, speech, and transcription models that provider serves. An allow-list limits one of these tools only when it names one of that tool's models; allow-lists that name only chat models leave all four available. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
+- **Zero Data Retention only** applies to text to speech as well as chat models: Read aloud and Voice Studio use only the **OpenAI** engine, which has zero data retention. It doesn't filter the image, video, or transcription models. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
 - [Routines](https://bearly.ai/docs/manual/capabilities/routines.md) can't generate images or video, run text to speech, or transcribe.
 
 ## Try this
@@ -4906,7 +4947,7 @@ You get a structured draft from a spoken idea, ready to polish.
 
 ---
 title: "Let Bearly use a browser, your files, and your computer"
-description: "How a Bearly desktop chat browses sites in Bearly Browser, works in your signed-in Chrome tabs, reads and edits files and runs commands with Work locally, and operates apps with Computer Use, including the approvals each asks for and how to choose between them."
+description: "How a Bearly desktop chat browses sites in Bearly Browser, works in your signed-in Chrome tabs, offers to install the Chrome extension in chat, reads and edits files and runs commands with Work locally, and operates apps with Computer Use, including the approvals each asks for and how to choose between them."
 canonical: "https://bearly.ai/docs/manual/capabilities/browser-and-computer/"
 markdown: "https://bearly.ai/docs/manual/capabilities/browser-and-computer.md"
 ---
@@ -4915,7 +4956,7 @@ markdown: "https://bearly.ai/docs/manual/capabilities/browser-and-computer.md"
 
 HTML: [https://bearly.ai/docs/manual/capabilities/browser-and-computer/](https://bearly.ai/docs/manual/capabilities/browser-and-computer/)
 
-> How a Bearly desktop chat browses sites in Bearly Browser, works in your signed-in Chrome tabs, reads and edits files and runs commands with Work locally, and operates apps with Computer Use, including the approvals each asks for and how to choose between them.
+> How a Bearly desktop chat browses sites in Bearly Browser, works in your signed-in Chrome tabs, offers to install the Chrome extension in chat, reads and edits files and runs commands with Work locally, and operates apps with Computer Use, including the approvals each asks for and how to choose between them.
 
 In the desktop app, a chat can do more than answer: it can open and use websites, work in the Chrome you already use, read and change files in a folder you pick, run commands, and click and type in the apps on your screen. Each tool asks before it acts unless you've turned on [Full access](https://bearly.ai/docs/manual/capabilities/permissions.md), and each one can be turned off by your organization.
 
@@ -4935,7 +4976,7 @@ All four tools need the desktop app for Mac, Windows, or Linux. On the web and o
 |---|---|---|---|---|
 | Works in | The desktop app | The desktop app plus Chrome with the Bearly Companion extension | The desktop app | The desktop app |
 | Uses your sign-ins | Only ones you sign in to or import into Bearly Browser | Yes, your Chrome profile | Whatever your computer account can reach | Whatever is on screen |
-| Standard asks before | Each new site, submissions, visual clicks, downloads, website tools | Reading tabs, controlling tabs, or using DevTools | Each read, write, edit, file transfer, and command | The task, then consequential actions |
+| **Ask first** asks before | Each new site, submissions, visual clicks, downloads, website tools | Reading tabs, controlling tabs, or using DevTools | Each read, write, edit, file transfer, and command | The task, then consequential actions |
 | In routines | Yes, with browser access on listed sites | No | Yes, with unattended local access | No |
 | Organization control | **Browser** | **Chrome extension browser** | **Work locally** | **Computer Use** |
 
@@ -4958,13 +4999,13 @@ Bearly Browser is a browser built into the desktop app. Chats work in their own 
    In Bearly Browser, open the pricing pages for these three tools and compare their plans in a table. Don't sign in, start a trial, or submit anything.
    ```
 
-4. At **Let this chat use this site?**, check the site and select **Allow for this response**, or pick a longer **Approval duration** first. The approval covers that one site; another site asks separately. This card has no **Once**: opening, reading, and clicking on a page each use the site, so one approval covers them for the whole answer.
+4. At **Let this chat use this site?**, check the site and select **Once**. On this card, **Once** lets Bearly use that one site until the answer ends, because opening, reading, and clicking on a page each use the site; another site asks separately. **This chat** covers every site in this chat; to allow only this site for the chat, set **This chat and Always cover** to **Only** plus the site first.
 5. To watch, select the chat's title → **Open Browser**. Tabs a chat opened show a robot icon, and their tooltip reads **Agent-owned tab**; tabs you opened show a globe. Select **Take over this tab** to pause the agent while you work on the page, and **Resume this tab's agent** to hand it back.
 
 
 
 **What you get:** the answer in the chat, plus open tabs you can inspect. Bearly can open, read, screenshot, click, type, choose options, scroll, press keys, and save a download into the chat.
-**Limits:** up to eight tabs across your chats. In Standard, these also ask first: **Confirm this Browser action** before a form submission or other consequential action, **Allow this visual Browser action?** for clicks on canvases and embedded frames, and **Save this website file to chat?** for downloads (one file up to 50 MiB, never opened or run). Passwords, payment details, file uploads, CAPTCHAs, and system permission prompts stay with you. Only you can decide on a certificate warning; neither an approval nor Full access can skip it. A page load Bearly started that takes more than 10 seconds is stopped.
+**Limits:** up to eight tabs across your chats. In **Ask first**, these also ask first: **Confirm this Browser action** before a form submission or other consequential action, **Allow this visual Browser action?** for clicks on canvases and embedded frames, and **Save this website file to chat?** for downloads (one file up to 50 MiB, never opened or run). Passwords, payment details, file uploads, CAPTCHAs, and system permission prompts stay with you. Only you can decide on a certificate warning; neither an approval nor Full access can skip it. A page load Bearly started that takes more than 10 seconds is stopped.
 **Combines with:** [Routines](https://bearly.ai/docs/manual/capabilities/routines.md#browser-access) for scheduled site checks on exact sites; [Work locally](#work-locally) to fix a site you're building.
 
 To point at part of a page, select **Capture and annotate page**, click an element or drag over a region, answer **What should Bearly change or inspect?**, and select **Attach** (<kbd>⌘</kbd> <kbd>Enter</kbd> or <kbd>Ctrl</kbd> <kbd>Enter</kbd>). The capture goes into your message.
@@ -5011,6 +5052,24 @@ Bearly reads a page's buttons, links, and fields and acts on them directly. For 
 
 Tabs Bearly opens sit together in one tab group in each Chrome window. Tabs you open yourself stay where they are, and Bearly never puts its tabs in a group you made. To name the group, open the Bearly side panel in Chrome, select the **Settings** gear, and under **Desktop app** turn on **Label Bearly’s tabs**. Chrome asks to let Bearly view and manage your tab groups; once you allow it, Bearly's group is orange and named **Bearly**. If you decline, the setting stays off and the tabs are still grouped, without a name. Turning the setting off removes that permission, and groups already named keep their name.
 
+### Install the Chrome extension from chat
+
+When the extension isn't connected on your computer, Bearly may show **Let Bearly work in your Chrome** in a desktop chat if your signed-in sites or an open tab would change the task's outcome. The card explains what Bearly could do for that task. It isn't suggested for public pages Bearly can read another way.
+
+- **Install Chrome extension** opens the extension's Chrome Web Store page. Add it in Chrome; if the page opened in another browser, open it in Chrome. The card changes to **Waiting for Chrome**, with **Open Chrome Web Store** to reopen the page.
+- **Not now** collapses the card to "You can add the Chrome extension later in Settings." Select **Settings** there to open **Chrome extension** settings.
+
+Keep Chrome and Bearly open while the card says **Connecting to Chrome…**. Once it says **Chrome is connected**, Bearly can use your Chrome tabs from your next message. Bearly continues its current reply without waiting for you to install.
+
+The card appears at most once per reply and once per chat. Leaving it unanswered pauses invites in other chats on that computer for 3 days; **Not now** pauses them for 14 days. Opening the store clears the unanswered pause, but doesn't shorten a **Not now** pause.
+
+Bearly doesn't show the card:
+
+- when the extension is already connected, including while it's still pairing;
+- in Routines or read-only chats;
+- when your organization has turned Chrome control off;
+- where Chrome control can't be set up.
+
 ## Work locally
 
 **Work locally** lets a chat read, write, and edit files and run commands on your computer. You pick a working folder; Bearly shows each action and asks before it runs.
@@ -5027,7 +5086,7 @@ Tabs Bearly opens sit together in one tab group in each Chrome window. Tabs you 
    Read the CSV files in this folder and make one monthly summary workbook. Don't change the source files. Add the finished workbook to this chat.
    ```
 
-3. Review each card: it shows the command or the file. Open **Details** for the working folder, the timeout, or whether a write overwrites a file, then pick an **Approval duration**. For reads, the Allow button then reads **Allow reads for this response**, **Allow reads for now**, or **Allow reads this chat**; an approval for writes, edits, or commands also covers reads.
+3. Review each card: it shows the command or the file, and "Bearly will:" names the kind of action: **Read files**, **Change files**, or **Run commands**. Select **Show details** for the working folder, the timeout, or whether a write overwrites a file, then answer **Once**, **This chat**, or **Always**. Each kind is answered separately, so allowing commands doesn't allow file changes.
 4. Check the result. Ask Bearly to reopen a file it made, or to run a check. Ask it to "add it to this chat" to keep a file with the conversation.
 5. Select **Stop** to stop the response; a running command stops with it.
 
@@ -5037,7 +5096,7 @@ Tabs Bearly opens sit together in one tab group in each Chrome window. Tabs you 
 **Limits:** a command times out after 2 minutes unless Bearly sets a longer limit, up to 10 minutes. Bearly won't start servers, watchers, or anything meant to keep running; start those yourself. **Attach File** and **Save Locally** handle files up to 50 MB. When a command prints a lot, Bearly sees its first and last lines and reads the rest a page at a time with **Read Output** instead of running the command again; the desktop app keeps that output for 24 hours. **Read File** also reads long files a page at a time. If you deny a request, Bearly doesn't retry the same one. Bearly installs the runtimes it needs for scripts the first time a task uses them; you can see them under **Settings** → **Runtime**.
 **Combines with:** [Routines](https://bearly.ai/docs/manual/capabilities/routines.md#unattended-local-access) with unattended local access; [skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md#skills) whose scripts run on your computer; [Pages](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) built from what it computes.
 
-The chip's menu also has **Clear folder** (go back to a private folder for this chat), **Off for this chat**, and **Turn on for this chat**. Without a chosen folder, Bearly works in a private folder of its own for that chat. The folder and any chat-length approvals belong to this chat on this device.
+The chip's menu also has **Clear folder** (go back to a private folder for this chat), **Off for this chat**, and **Turn on for this chat**. Without a chosen folder, Bearly works in a private folder of its own for that chat. The folder and any **This chat** answers belong to this chat on this device.
 
 > **Caution — The folder is not a sandbox**
 > The working folder is where Bearly starts, not a boundary. An approved command can reach any file your computer account can. Use a folder that holds only what the task needs, and keep backups of anything important.
@@ -5059,17 +5118,17 @@ Computer Use lets Bearly complete a task in the apps on your screen. It takes sc
    In the spreadsheet that's open, sort the Budget tab by due date. Stop before saving.
    ```
 
-3. At **Use your computer**, open **Details** to see the goal, the model, the data that goes to it (relevant conversation context, attachments, screenshots, and app text captured while working), and the access (the full desktop: screenshots, focus, mouse, and keyboard). Pick an **Approval duration** and allow.
+3. At **Use your computer**, select **Show details** to see the goal, the model, the data that goes to it (relevant conversation context, attachments, screenshots, and app text captured while working), and the access (the full desktop: screenshots, focus, mouse, and keyboard). Select **Once** for this task, or **This chat** to let later tasks in this chat control your computer without asking.
 4. Watch the **Computer** chip at the bottom of the message box: it shows the status, such as **Looking** or **Working** in an app. Select **Stop** on the chip to end the task.
 5. Read the **Computer Use** step in the answer: it lists the screen, the apps, and the actions taken.
 
 
 
 **What you get:** the task done in the app, with a record of each action.
-**Limits:** one Computer Use task at a time per chat. Bearly's own windows are never a target. Routines never see or control your screen. Before a consequential action your request didn't already authorize, such as sending, publishing, buying, deleting, or changing account or security settings, Bearly asks **Confirm this computer action**; Full access covers this one. A safety check raised during the task also shows **Confirm this computer action**, and that one always asks, even with Full access; its **Stop** button ends the task.
+**Limits:** one Computer Use task at a time per chat. A Computer Use task counts as a model run, so a second one in the same answer, or one after a council, asks **Start another model run?** first; see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits). Bearly's own windows are never a target. Routines never see or control your screen. Before a consequential action your request didn't already authorize, such as sending, publishing, buying, deleting, or changing account or security settings, Bearly asks **Confirm this computer action**; Full access covers this one. A safety check raised during the task also shows **Confirm this computer action**, and that one always asks, even with Full access; its **Stop** button ends the task.
 **Combines with:** [Run Python and charts](https://bearly.ai/docs/manual/capabilities/data-and-code.md) after it reports what it read; [email](https://bearly.ai/docs/manual/capabilities/email-and-text.md) to send the result.
 
-On a Mac, if a permission is missing, Bearly says "Computer Use needs Accessibility and Screen Recording access." Turn on **Bearly** under both in **System Settings** → **Privacy & Security**, then send the request again. On Windows, Bearly may offer **Finish setting up Computer Use** for a small helper that controls protected and background windows more reliably; select **Finish setup** and approve the administrator prompt. Its status lives at **Settings** → **Runtime** → **Windows Computer Use helper**.
+On a Mac, if a permission is missing, Bearly says "Computer Use needs Accessibility and Screen Recording access." Turn on **Bearly** under both in **System Settings** → **Privacy & Security**, then send the request again. On Windows, Computer Use works without the optional helper. If the helper is on your PC, update or remove it in **Settings** → **Runtime** → **Windows Computer Use helper**; Windows asks for administrator approval.
 
 If your organization's model policy blocks every model Computer Use supports, Bearly says so instead of starting.
 
@@ -5100,7 +5159,7 @@ A chart and a CSV of the table, built from a page only your Chrome sign-in can s
    ```
 
    Bearly lists your tabs and asks **Read your Chrome tabs**.
-3. Choose **This response** and allow — one approval covers the tab list, the page read, and a screenshot if it takes one.
+3. Select **This chat** — that covers the tab list, the page read, and a screenshot if it takes one. When you're done, set **Use websites in your browser** back to **Ask** in **Permissions**.
 4. Check the chart against the dashboard, then ask follow-ups in the same chat; the CSV stays in the chat's files.
 
 
@@ -5124,7 +5183,7 @@ A combined `summary.csv` in the folder and a one-page summary in the chat, witho
    Combine every CSV in this folder by month and region without changing the source files. Write the totals to summary.csv in this folder, then make a one-page summary with a table and the three biggest month-over-month changes, and add it to this chat.
    ```
 
-3. For the reads, choose **This response** and select **Allow reads for this response**. When the command and the write appear, open **Details**, confirm the path is `summary.csv` and nothing is overwritten, then allow.
+3. At the first **Read files** card, select **This chat** so the rest of the reads run. When the command and the write appear, select **Show details**, confirm the path is `summary.csv` and nothing is overwritten, then select **Once**.
 4. Open the summary in the chat; `summary.csv` is in your folder.
 
 
@@ -5149,7 +5208,7 @@ A fixed page, confirmed in the same browser tab Bearly used to find the problem.
    Open http://localhost:3000/settings in Bearly Browser and find out why the Save button does nothing. Then fix it in this folder and reload the page to confirm. Don't start any servers.
    ```
 
-4. Approve the site, then the reads and edits Bearly shows.
+4. Approve the site, then the reads and edits Bearly shows; **This chat** on each kind saves answering again as it fixes and reloads.
 5. Ask for a short summary of what changed and why.
 
 
@@ -5173,7 +5232,7 @@ A chart of numbers that only exist in a native app's window.
    In the accounting app that's open, read the twelve monthly totals from the Reports window. Don't change anything. Then chart them and tell me which months stand out.
    ```
 
-3. At **Use your computer**, check **Details** and allow **Once** — the task is short.
+3. At **Use your computer**, select **Show details** to check the task, then select **Once** — the task is short.
 4. Watch the **Computer** chip; select **Stop** if it heads somewhere unexpected.
 
 
@@ -5259,12 +5318,12 @@ Tokens and header values you enter are stored in this Bearly profile on this dev
    Using Linear, list the issues assigned to me that changed this week, grouped by project. Don't edit anything.
    ```
 
-4. At **Allow Linear?** (the card names your connector), pick an **Approval duration** and allow — the card warns that "This connected server controls what its tools do." One approval covers that server's tools, including ones that change data.
+4. At **Allow Linear?** (the card names your connector), read the warning, "This connected server controls what its tools do.", then answer. **Once** allows that one tool call. **This chat** covers **Use connected apps** in this chat, including tools that change data; set **This chat and Always cover** to **Only** first to allow just this connector.
 
 
 
 **What you get:** answers built from the service's own data, and changes made there when you ask for them. Bearly can do only what the server's tools and your account in that service allow.
-**Limits:** a tool image over 20 MB is rejected. Approvals reset when you disconnect, sign in again, or change the server's settings. A server's own "read-only" labels don't limit an approval.
+**Limits:** a tool image over 20 MB is rejected. A connector's answers reset when you disconnect, sign in again, or change the server's settings. A server's own "read-only" labels don't limit an approval.
 **Combines with:** [Routines](https://bearly.ai/docs/manual/capabilities/routines.md#tools-and-skills) for scheduled digests; [Pages](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) and `/visualize` to turn results into a page; [email](https://bearly.ai/docs/manual/capabilities/email-and-text.md) to send them.
 
 You can also ask Bearly to find and connect a service for you, in a typed chat or a voice call: "connect Linear and show my open issues". Bearly asks with a card such as **Connect Linear?**, and that card always asks, even in Full access. If the service needs a sign-in, Bearly then shows **Continue sign-in**.
@@ -5323,11 +5382,11 @@ If your organization limits who adds skills, the pane says "Admins can add and r
 
 1. Type `/skill` in the message box — enabled skills appear in the list, each as `/skill-` followed by its name.
 2. Pick one and describe the job — Bearly opens that skill before answering.
-3. If the skill needs a script, a card titled with the skill and the script's path appears, showing the command. Open **Details** for the file, runtime, any packages it installs, and the timeout. Pick an **Approval duration** and allow, or **Deny**.
+3. If the skill needs a script, a card titled with the skill and the script's path appears, showing the command, under **Run commands**. Select **Show details** for the file, runtime, any packages it installs, and the timeout. Answer **Once**, **This chat**, or **Always**, or **Deny**.
 
 
 
-**What you get:** work done the skill's way. A longer approval is saved as "Run" plus the skill's name plus "scripts" and covers that skill's scripts.
+**What you get:** work done the skill's way. **This chat** with **Only** chosen in the card's menu is listed in **Permissions** as "Run" plus the skill's name plus "scripts" and covers that skill's scripts in this chat.
 **Limits:** scripts run as you on your computer; it isn't a sandbox. Installed skills and their files are on this desktop only; on the web and phones, chats that used one stay readable, but Bearly can't open its files there.
 **Combines with:** [Routines](https://bearly.ai/docs/manual/capabilities/routines.md#tools-and-skills), where a skill's **Allow scripts** switch lets its scripts run unattended; [Work locally](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#work-locally); [Projects](https://bearly.ai/docs/manual/projects.md), where owners and writers can attach skills to every chat in the project.
 
@@ -5375,7 +5434,7 @@ A one-page view of open pull requests, grouped by reviewer and age, that you can
    Using GitHub, list the open pull requests in our main repository with author, reviewers, and days open. Don't comment or change anything.
    ```
 
-   Approve **Allow GitHub?** for **This response**.
+   Answer **Allow GitHub?** with **This chat**.
 3. Type `/visualize` and ask:
 
    ```text
@@ -5405,7 +5464,7 @@ A `labels.csv` that tags hundreds of text files, made by a script that calls Bea
    Use the Bearly AI Models skill. Write a script that reads every .txt file in this folder, asks a fast model to label each as bug, billing, or how-to, and writes filename and label to labels.csv. Try it on 5 files first, show me the results, then run it on the rest.
    ```
 
-3. Review the script and the command in **Details**, then allow — the trial run on 5 files shows the labels before the full run.
+3. Review the script and the command with **Show details**, then select **Once** — the trial run on 5 files shows the labels before the full run.
 4. Open `labels.csv`, or ask Bearly to add it to the chat.
 
 
@@ -5748,7 +5807,7 @@ Ask Bearly to email or text you from any chat, and it sends the message as part 
 
 **You need:** your organization allows **Email notifications** and **Text messages**. Both work in the web app, phone browsers, the desktop app, and the iOS app.
 
-There's no approval card for these: asking is the go-ahead. Bearly sends when that step of the answer runs, and a sent message can't be edited or recalled from Bearly. Check the recipient and the contents in your request.
+Asking is the go-ahead: up to 3 emails and texts in one answer go without an approval card. A fourth asks **Send more messages?** ("This reply has sent 3 messages."); select **Once** for one more, or **This chat** or **Always** to stop asking. See [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits). Bearly sends when that step of the answer runs, and a sent message can't be edited or recalled from Bearly. Check the recipient and the contents in your request.
 
 ## Send Email
 
@@ -5878,7 +5937,8 @@ Separate, short emails to each person with only their tasks from a meeting.
    List the action items by owner. Then email each owner only their items, subject "From Thursday's meeting", one email per person.
    ```
 
-3. Check the **Send Email** steps — each shows who it went to.
+3. If the meeting has more than three owners, Bearly asks **Send more messages?** at the fourth email; select **This chat** to send the rest.
+4. Check the **Send Email** steps — each shows who it went to.
 
 
 
@@ -5916,7 +5976,7 @@ A text on your phone when a long research or file job is done, so you can walk a
 
 ---
 title: "Approvals, permissions, and Full access"
-description: "How Bearly asks before using tools outside the chat, how long each approval lasts, how to review and revoke saved approvals in the Permissions control, how Standard and Full access differ, what always asks, starting new chats in Full access, organization Agent access, routine permission mode, and spoken approvals."
+description: "How Bearly asks before it acts outside the chat, answering a card Once, This chat, or Always for each kind of action, the one card that covers a whole Code Mode step, the per-reply limits on sending and spending, what always asks, reviewing and changing answers in the Permissions panel and Settings, Full access, organization Agent access, routine permission mode, and spoken approvals."
 canonical: "https://bearly.ai/docs/manual/capabilities/permissions/"
 markdown: "https://bearly.ai/docs/manual/capabilities/permissions.md"
 ---
@@ -5925,91 +5985,147 @@ markdown: "https://bearly.ai/docs/manual/capabilities/permissions.md"
 
 HTML: [https://bearly.ai/docs/manual/capabilities/permissions/](https://bearly.ai/docs/manual/capabilities/permissions/)
 
-> How Bearly asks before using tools outside the chat, how long each approval lasts, how to review and revoke saved approvals in the Permissions control, how Standard and Full access differ, what always asks, starting new chats in Full access, organization Agent access, routine permission mode, and spoken approvals.
+> How Bearly asks before it acts outside the chat, answering a card Once, This chat, or Always for each kind of action, the one card that covers a whole Code Mode step, the per-reply limits on sending and spending, what always asks, reviewing and changing answers in the Permissions panel and Settings, Full access, organization Agent access, routine permission mode, and spoken approvals.
 
-When a chat wants to reach outside itself, such as reading a local file, opening a site, working in Chrome, using a connected service, running a skill script, or controlling your screen, Bearly shows an approval card first. You decide how long each approval lasts. If you'd rather not be asked, **Full access** lets one chat on one device use its enabled tools without asking, with a short list of checks that always ask anyway.
+When a chat wants to reach outside itself, such as reading a local file, opening a site, working in Chrome, using a connected app, running a skill script, or controlling your screen, Bearly shows an approval card first. You answer for the kind of action: just this once, for the rest of this chat, or always. If you'd rather not be asked at all, **Full access** lets one chat on one device use its enabled tools without asking, with a short list of checks that always ask anyway.
 
 ## Approval cards
 
-A card shows a title, the reason, and, for most tools, a **Details** disclosure with the specifics, such as the file path, site, or connector. A command shows on the card itself. Its buttons are **Deny**, **Stop** where offered, an **Approval duration** menu when longer approvals are offered, and the Allow button. Risky actions get a red Allow button.
+A card's title says what Bearly is about to do, such as **Let this chat use this site?** or **Make more images or speech?**. Under it, "Bearly will:" names the kind of action, such as **Change files** or **Spend from your plan**, then the reason. A command or file path shows on the card itself, and **Show details** opens the specifics, such as the site, connector, or tool.
 
-| Approval duration | Allow button reads | Lasts |
-|---|---|---|
-| **Once** | **Allow** | This one action |
-| **This response** | **Allow for this response** | "until this response ends", including if it errors or you stop it. A message you add to the running answer, with **Send** or **Send now**, joins the same response, so the approval covers it too |
-| **This session** | **Allow for now** | "until this chat reloads or you revoke access" |
-| **This chat** | **Allow for this chat** | "in future responses in this chat on this device until you revoke access" |
+The buttons are **Deny**, **Stop** where offered, **Once**, **This chat**, and **Always**:
 
-Bearly Browser's site card (**Let this chat use this site?**) has no **Once**. It starts on **This response**, because opening, reading, and clicking on a page each use the site.
+| Answer | Covers |
+|---|---|
+| **Once** | This one action |
+| **This chat** | Every action of this kind in this chat, on this device, until you change it in **Permissions** |
+| **Always** | Every action of this kind, in every chat, on every device you're signed in on |
 
-Work locally uses its own labels for read-only approvals: **Allow reads for this response**, **Allow reads for now**, and **Allow reads this chat**. Some tools word their button differently, and some show no duration menu because they approve one action at a time.
+**Always** asks you to confirm. The card swaps its buttons for what it covers, for example "Bearly will read files without asking, in every chat, on every device you're signed in on. Undo it in Permissions.", with **Back** and a confirm button such as **Always allow reading files**.
 
-After you decide, the card shows **Allowed**, **Denied**, **Stopped**, or **Allowed by Full access**.
+Some cards add a menu under the buttons, **This chat and Always cover**, set to the kind of action. Change it to:
+
+- **Only** plus the one thing the card names, such as **Only example.com** on a site card. This applies to this chat only, so **Always** is unavailable while it's selected.
+- **Everything (Full access)**, "Every enabled tool, without asking". This opens the **Enable full access?** dialog; see [Full access](#full-access). It's offered only where Full access is available for the chat on this device.
+
+Bearly Browser's site card, **Let this chat use this site?**, is the one where **Once** covers more than one action: it lets Bearly use that site until the reply ends, because opening, reading, and clicking on a page each use the site.
+
+After you answer, the card shows **Allowed**, **Allowed in this chat**, **Always allowed**, **Denied**, **Stopped**, or **Allowed by Full access**. A card for a kind you've just allowed with **This chat** or **Always** closes by itself, except a card for a destructive action, such as deleting or overwriting, which always waits for its own answer.
 
 In most chats, a card waiting for an answer shows on every device where the chat is open, and you can answer it on any of them; on the others it reads "Asked on another device". In a shared chat, only the person who sent the message can approve its actions; everyone else sees "Waiting for the person who sent this message".
 
-**Deny** blocks that action, and Bearly continues without it where it can. **Stop** ends the whole task.
+**Deny** blocks that action, and Bearly continues without it where it can. In the answer's **Steps**, that call opens to "You declined this." **Stop** ends the whole task. A step's time in **Steps** leaves out the time it waited for your answer.
 
-### What Standard asks for, by tool
+### One card for a whole step
 
-| Tool | What asks first |
-|---|---|
-| [Work locally](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#work-locally) | Every read, write, edit, file transfer, and command, with the command or file on the card |
-| [Bearly Browser](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#bearly-browser) | **Let this chat use this site?** for each new site; **Confirm this Browser action** before a submission or other consequential action; **Allow this visual Browser action?**; **Save this website file to chat?**; **Run this website tool?** |
-| [Control Chrome](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#control-chrome) | **Read your Chrome tabs**, **Control Chrome**, or **Use Chrome DevTools**; a higher level covers the lower ones |
-| [Computer Use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#computer-use) | **Use your computer** for the task; **Confirm this computer action** before a consequential step your request didn't cover, or when a safety check is raised |
-| [Connectors](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md#connectors) | **Connect** plus the service's name, when Bearly connects a new service for you; **Allow** plus the connector's name before using its tools |
-| [Skill scripts](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md#skills) | A card titled with the skill and the script's path that shows the command, with the runtime and timeout in **Details** |
-| Chat management | Listing your chats, reading other chats, and **Delete this chat?** before deleting |
-| People Search | **Search for people?**, **Build the brief?**, and the other People Search confirmations before lookups that use your plan allowance |
-| [Email and texts](https://bearly.ai/docs/manual/capabilities/email-and-text.md) | Nothing: asking for the email or text is the approval |
+With [**Execution Mode**](https://bearly.ai/docs/manual/chat/settings.md#execution-mode) set to **Code Mode**, one step can make many tool calls. Before it starts, one card lists every kind of action the step will take that you haven't already allowed, under "Bearly will:", such as **Read files** and **Change files**. Its title is the step's description, or one such as **Bearly wants to read files and change files**, and **Show details** shows the code Bearly wrote. You answer for the whole step:
+
+- **Once** allows those kinds of action for this step only.
+- **This chat** and **Always** allow every listed kind, as on any card. **Always** asks you to confirm, with a button such as **Always allow both**.
+- **Deny** lets the step go on without any of the listed actions; those calls aren't allowed and don't ask again during the step.
+- **Stop**, where offered, ends the task.
+
+Each action still shows in **Steps** as it happens. Cards that always ask, and the per-reply limit cards, still come up on their own for the call that needs them. If your organization requires asking each time, the card reads "Your team requires asking each time." and offers only **Once**; each action in the step then asks for itself.
+
+### Kinds of action
+
+| Kind | What it covers | Cards you'll see |
+|---|---|---|
+| **Read files** | "Open, list and search files on your computer." | [Work locally](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#work-locally) reading a file or attaching one to the chat |
+| **Change files** | "Create, edit and save files on your computer." | Work locally writing, editing, or saving a file |
+| **Run commands** | "Run shell commands and skill scripts on your computer." | Work locally commands, shown on the card; [skill scripts](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md#skills), on a card titled with the skill and the script's path |
+| **Control your computer** | "Move the pointer, type and click in your apps." | [Computer Use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#computer-use): **Use your computer**, **Confirm this computer action** before a consequential step your request didn't cover, and **Use your keyboard and pointer briefly** |
+| **Use websites in your browser** | "Open sites, fill in forms and click in your signed-in browser." | [Bearly Browser](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#bearly-browser): **Let this chat use this site?**, **Confirm this Browser action**, **Allow this visual Browser action?**, **Save this website file to chat?**, **Run this website tool?**. [Chrome](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#control-chrome): **Read your Chrome tabs**, **Control Chrome**, **Use Chrome DevTools**; a higher level covers the lower ones |
+| **Use connected apps** | "Read and change data in Gmail, Calendar and your other connected apps." | [Connectors](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md#connectors): **Allow** plus the connector's name; Gmail and Google Calendar cards such as **Create this Gmail draft?** |
+| **Send messages** | "Send email and texts beyond 3 in one reply." | **Send more messages?**; see [Per-reply limits](#per-reply-limits) |
+| **Spend from your plan** | "Paid lookups, images, speech, video and model runs beyond a reply's allowance." | The per-reply limit cards |
+
+## Per-reply limits
+
+In one reply, Bearly sends a few messages and makes a few paid items without asking. Past these limits, each additional one asks first:
+
+| Limit in one reply | What counts | Card |
+|---|---|---|
+| 3 messages | [Send Email and Send SMS](https://bearly.ai/docs/manual/capabilities/email-and-text.md), together | **Send more messages?** |
+| 4 images or speech clips | [Imagine](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#imagine), Touch Up, and [Read aloud](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#read-aloud), together | **Make more images or speech?** |
+| 1 video | [Make Video and Edit Video](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#make-video) | **Make another video?** |
+| 1 model run | [Council of Experts](https://bearly.ai/docs/manual/capabilities/research.md#council-of-experts) and [Computer Use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#computer-use) tasks, together | **Start another model run?** |
+| 5 paid lookups | [Best Pick](https://bearly.ai/docs/manual/capabilities/research.md#best-pick), [SEO data](https://bearly.ai/docs/manual/capabilities/research.md#seo-data), [X](https://bearly.ai/docs/manual/capabilities/videos-and-posts.md#x), and Scholar's journal-site search | **Run more paid lookups?** |
+
+The card says what the reply has done so far, such as "This reply has made 4 images or speech clips. More count against your plan." **Once** allows one more. **This chat** or **Always** for **Send messages** or **Spend from your plan** stops these cards for that kind. **Deny** refuses the rest of that reply's calls past the same limit, such as more images, without another card.
+
+Each message you send starts a fresh count, including one you send while an answer is still running and each thing you say in a voice call. Work that Council of Experts' experts do counts toward the same reply's limits. Full access never answers these cards, and [routines](https://bearly.ai/docs/manual/capabilities/routines.md) don't count against them.
+
+## What always asks
+
+The Permissions panel and Settings say it in one line: "Bearly asks every time before it deletes chats or files, publishes or shares, changes who pays, connects an account, or sets up unattended access. Reading your other chats can be allowed for one chat, never always."
+
+These cards have **Deny** and one confirm button, such as **Allow**, which is red for a deletion or unattended access. **This chat**, **Always**, and Full access never cover them, except reading your other chats, which can be allowed for this chat:
+
+- **Deleting** — **Delete this chat?** (or how many chats), and **Delete "file name"?** for a file Bearly made in the chat. Every deletion gets its own card.
+- **Reading your other chats** — listing your chats or reading another chat. The card also offers **This chat**.
+- **People Search lookups** — **Search for people?**, **Find work emails for…**, **Enrich… leads?**, and **Build the brief?**, with "Bearly will:" naming the lookup, such as **Search for people** or **Build a brief about a person**. Each shows what it will look up and asks every time.
+- **Connecting an account** — the **Connect** card for a connector, such as **Connect Linear?**.
+- **Unattended access** — turning on unattended local access or browser access for a [routine](https://bearly.ai/docs/manual/capabilities/routines.md).
+- **Computer Use safety checks** — a **Confirm this computer action** card raised by a safety check during the task.
+- **Certificate warnings** in Bearly Browser — only you can decide.
+
+Your computer's own permission prompts, such as macOS **Accessibility** and **Screen Recording**, or a Windows administrator prompt, are always yours to answer.
 
 ## The Permissions control
 
-At the foot of the message box, the **Permissions** control shows this chat's mode and saved approvals. It reads **Full access** while Full access is on, with a **Paused** badge when it's paused. In the iOS app on a phone, it shows only a shield icon.
+At the foot of the message box, the **Permissions** control opens this chat's permissions. It reads **Permissions**, with a count when the chat has answers saved, or **Full access** while Full access is on, with a **Paused** badge when it's paused. In the iOS app on a phone, it shows only a shield icon.
 
 Open it to see:
 
-- **Permissions** and "This chat · this device" — everything here applies only to this chat on this device.
-- **Standard** — "Ask for approval when needed. Saved approvals still apply."
-- **Full access** — "Use enabled tools without asking each time."
-- The saved approvals, each with its duration and **Revoke**. With none: "No saved approvals in this chat."
-- **Revoke all saved approvals**, and **Clear all permissions**, which also switches the chat to Standard.
+- **Permissions** and "This chat".
+- **Ask first** — "Bearly asks before it acts, unless you've said yes below."
+- **Full access** — "Use enabled tools without asking. This chat on this device." When Full access can't be turned on here, the reason shows under it.
+- **What Bearly may do without asking** — each kind of action with a menu: **Ask**, **This chat** ("Until you change it here"), or **Always** ("Every chat, on every device"). Choosing **Always** asks you to confirm, as on a card. While Full access is on, every kind except **Send messages** and **Spend from your plan** reads **Full access**.
+- Single things you allowed with **Only**, or a site you allowed **Once**, listed under their kind with how long they last and **Revoke**. Others are under **Also allowed in this chat**.
+- The line on what always asks.
+- **Ask about everything again** — "Clears this chat's answers and turns Full access off. Always answers stay; change them in Settings."
 
-Revoking stops the work in progress and makes Bearly ask again next time. Stopping a response doesn't remove approvals.
+Setting a kind back to **Ask**, revoking, or **Ask about everything again** stops the reply in progress, so nothing it planned runs on the old answer, and Bearly asks again next time. Stopping a reply doesn't change your answers.
 
-Saved approvals never sync to your other devices and never apply to routines; only a card still waiting for an answer can be answered from another device. Each open window keeps its own copy, so if a chat is open in two windows, revoke in each. Approvals for a chat are deleted with the chat. Disconnecting, signing in again, or changing a connector's settings resets its approvals.
+**This chat** answers stay on the device where you gave them and never apply to routines; only a card still waiting for an answer can be answered from another device. Each open window keeps its own copy, so if a chat is open in two windows, change it in each. A chat's answers are deleted with the chat. Disconnecting a connector, signing in to it again, or changing its settings resets its answers.
+
+**Always** answers belong to your account. Setting one back to **Ask** on any device stops it everywhere from the next action.
+
+### Settings → Permissions
+
+**Settings** → **Permissions** lists your **Always** answers under **What Bearly may do without asking**: "Always applies in every chat, on every device you're signed in on." Each kind shows what it covers and a menu with **Ask** or **Always**; choosing **Always** asks you to confirm. Answers for a single chat are in that chat's **Permissions** control. The same pane holds [Start new chats in Full access](#start-new-chats-in-full-access).
 
 ## Full access
 
-Full access lets a chat use its enabled tools without asking each time. It covers only tools that are already on for the chat. It never turns on a tool, connects an account, grants a system permission, or removes the checks listed under [What always asks](#what-always-asks).
+Full access lets a chat use its enabled tools without asking each time. It covers only tools that are already on for the chat. It never turns on a tool, connects an account, grants a system permission, covers **Send messages** or **Spend from your plan**, or removes the checks listed under [What always asks](#what-always-asks).
 
 **Use it when:** you trust the task and the content it touches, and approving each step slows you down, for example a long refactor in a dedicated project folder.
 **You need:** Full access available to your account and app version. On a managed organization, it's allowed unless an administrator turned it off. In the desktop app it covers every tool below; on the web, phones, and the iOS app it covers connectors only.
 
 
 
-1. In the chat, select **Permissions** at the foot of the message box, then **Full access**.
+1. In the chat, select **Permissions** at the foot of the message box, then **Full access**. You can also choose **Everything (Full access)** in a card's **This chat and Always cover** menu.
 2. Read **Enable full access?** — "Bearly can use enabled tools to read, change, or delete files, run programs, and act in signed-in apps and websites without asking each time. Mistakes or instructions in untrusted content can cause unintended changes." It lists the enabled tools and says it "Applies to this chat on this device."
-3. Select **Enable full access**, or **Cancel** to stay in Standard.
+3. Select **Enable full access**, or **Cancel** to keep asking first.
 
 
 
 **What you get:** the control reads **Full access**, and actions run without cards; each shows **Allowed by Full access**. Tools and accounts you enable later in the chat are included.
-**Limits:** "Organization rules, operating-system permissions, and required safety checks still apply." It's one chat on one device; other chats, other devices, and copies of the chat don't inherit it.
+**Limits:** "Organization rules, operating-system permissions, and required safety checks still apply." Per-reply limits and People Search still ask. It's one chat on one device; other chats, other devices, and copies of the chat don't inherit it.
 **Combines with:** [Routines](https://bearly.ai/docs/manual/capabilities/routines.md#permission-mode), which have their own, separate Full access.
 
-The tools Full access can cover appear in the dialog as "Local files and commands", "Enabled skill scripts", "Computer control", "Bearly Browser", "Connected Chrome", and "Connected tools" (connectors). With nothing enabled it says "Enable an external tool in this chat to use Full Access."
+The tools Full access can cover appear as "Local files and commands", "Enabled skill scripts", "Computer control", "Bearly Browser", "Connected Chrome", "Connected tools" (connectors), "Connected Gmail accounts", and "Connected Google Calendar accounts". With nothing enabled it says "Enable an external tool in this chat to use Full Access."
 
 > **Caution — Full access acts without checking with you**
-> In Full access, Bearly can change or delete files, run programs, send messages, and act in signed-in sites without a card. Instructions hidden in a web page, file, or email can steer it. Use it in chats where you know what the task will touch.
+> In Full access, Bearly can change or delete files, run programs, and act in signed-in apps and sites without a card. Instructions hidden in a web page, file, or email can steer it. Use it in chats where you know what the task will touch.
 
 
 ### How long it stays on
 
-Full access stays on in that chat on that device until you choose **Standard**: "Stays on in this chat on this device until you choose Standard or revoke it." Restarting the app, sleep, time away, and losing your connection don't turn it off.
+Full access stays on in that chat on that device until you choose **Ask first**: "Stays on in this chat on this device until you choose Ask first." Restarting the app, sleep, time away, and losing your connection don't turn it off.
 
-It pauses only when Bearly or your device can't allow it: your organization turned it off, your account isn't eligible, or the desktop app needs an update. The control then shows the **Paused** badge, and the chat uses Standard approvals in the meantime ("Full access is paused. Approvals apply until it turns back on."). The pause notice says why:
+It pauses only when Bearly or your device can't allow it: your organization turned it off, your account isn't eligible, or the desktop app needs an update. The control then shows the **Paused** badge, and the chat asks first in the meantime ("Full access is paused. Approvals apply until it turns back on."). The pause notice says why:
 
 - "Update Bearly to keep using Full access on this device. Until then, Bearly asks before using tools."
 - "Your team turned off Full access. Bearly asks before using tools until your team turns it back on."
@@ -6017,42 +6133,31 @@ It pauses only when Bearly or your device can't allow it: your organization turn
 
 A paused chat keeps your choice. Once Full access is allowed again, it turns back on by itself when you send the next message or when the window comes back into focus. You can also open **Permissions** and select **Resume full access**.
 
-To turn it off, open the control and select **Standard**. Bearly stops current work where it can; actions already finished elsewhere aren't undone. Your saved approvals stay.
+To turn it off, open the control and select **Ask first**. Bearly stops current work where it can; actions already finished elsewhere aren't undone. Your **This chat** and **Always** answers stay.
 
 ### Start new chats in Full access
 
 **Settings** → **Permissions** → **Start new chats in Full access**: "New chats on this device use your enabled tools without asking. Not recommended unless you know what you're doing."
 
-Turning it on asks **Start every new chat in Full access?**, which warns that agents make mistakes and that "instructions hidden in web pages, files, or emails can steer them", and notes it "Applies on this device only. You can switch any chat back to Standard from Permissions." Select **Turn on**. It doesn't change existing chats, chats where you chose Standard, or routines. If Full access isn't available, the setting says why, for example "Your team administrator turned off Full Access."
-
-## What always asks
-
-These keep asking even in Full access:
-
-- **Connecting a new service** — the **Connect** card for a connector.
-- **Chat management** — listing your chats, reading other chats, and deleting chats.
-- **Computer Use safety checks** — the **Confirm this computer action** card raised by a safety check during the task.
-- **People Search lookups that use your plan allowance** — such as **Search for people?** and **Build the brief?**.
-- **Routine consent** — turning on unattended local access or browser access for a routine.
-- **Certificate warnings** in Bearly Browser — only you can decide.
-
-Your computer's own permission prompts, such as macOS **Accessibility** and **Screen Recording**, or a Windows administrator prompt, are always yours to answer.
+Turning it on asks **Start every new chat in Full access?**, which warns that agents make mistakes and that "instructions hidden in web pages, files, or emails can steer them", and notes it "Applies on this device only. You can switch any chat back to Ask first from Permissions." Select **Turn on**. It doesn't change existing chats, chats where you chose **Ask first**, or routines. If Full access isn't available, the setting says why, for example "Your team administrator turned off Full Access."
 
 ## Approvals in a voice call
 
-During a voice call, with voice models that support it, Bearly reads a pending approval aloud and takes your spoken answer; with other voice models, the card stays on screen for you to answer. Say a complete reply such as "yes", "approve", "allow once", or "sure, go ahead". "Don't ask me again" or "allow for this chat" approves for this chat when that duration is offered. "No" or "deny" skips the action; "stop" ends the task and the call. Questions, conditions, and blanket approvals leave the card waiting. Routine consent cards always need the on-screen card. This listens for words, not for your voice, so use the card when others nearby could answer.
+During a voice call, with voice models that support it, Bearly reads a pending approval aloud and takes your spoken answer; with other voice models, the card stays on screen for you to answer. Say a complete reply such as "yes", "approve", "allow once", or "sure, go ahead" to allow it once. "Don't ask me again" or "allow for this chat" answers **This chat** when the card offers it. **Always** and **Everything (Full access)** are on the card only. "No" or "deny" skips the action; "stop" ends the task and the call. Questions, conditions, and blanket approvals leave the card waiting. Routine consent cards always need the on-screen card. This listens for words, not for your voice, so use the card when others nearby could answer.
 
 ## Routines
 
-A routine doesn't use the chat's approvals or the chat's Full access. In **Standard**, of the tools that would ask in a chat, a scheduled run can use only what you turned on for that routine: selected connectors, skill scripts you allowed, unattended local access, and Bearly Browser on the sites you approved. Anything else that needs approval is denied, and the run continues without it. A routine's own **Full access** is enabled in its editor on the desktop device that runs it, and a material edit sends it back to **Full access needs review**. See [Automate with Routines](https://bearly.ai/docs/manual/capabilities/routines.md#permission-mode).
+A routine doesn't use the chat's answers, your **Always** answers, or the chat's Full access, and its runs don't count against per-reply limits. In **Standard**, of the tools that would ask in a chat, a scheduled run can use only what you turned on for that routine: selected connectors, skill scripts you allowed, unattended local access, and Bearly Browser on the sites you approved. Anything else that needs approval is denied, and the run continues without it. A routine's own **Full access** is enabled in its editor on the desktop device that runs it, and a material edit sends it back to **Full access needs review**. See [Automate with Routines](https://bearly.ai/docs/manual/capabilities/routines.md#permission-mode).
 
 ## For organization administrators
 
 On a managed organization, Full access eligibility is a separate setting from feature policies. Open **Organizations**, choose the organization, and on **Overview** find **Agent access**: "Control who can let agents use enabled external tools without asking for approval each time."
 
 - **Allow full access by default** — on unless an administrator turned it off. "Each member must still enable it for each chat or routine on its device."
-- **Turn off full access for everyone** — "stops within 60 seconds", turns off the default, and removes individual exceptions. Saved tool approvals remain. Confirm with **Turn off for everyone**.
+- **Turn off full access for everyone** — "stops within 60 seconds", turns off the default, and removes individual exceptions. Confirm with **Turn off for everyone**.
 - Per member, in **Members** → select the member → **Full access**: **Use organization default**, **Allow full access**, or **Do not allow full access**.
+
+A member without Full access also can't answer **This chat** or **Always**: cards offer only **Deny** and **Once**, with "Your team requires asking each time.", and the Permissions panel and Settings show every kind as **Ask**. Answers they saved earlier stop applying but aren't deleted.
 
 Group administrators can't grant Full access. Allowing it doesn't turn on tools your policies turn off. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
@@ -6060,9 +6165,9 @@ Group administrators can't grant Full access. Allowing it doesn't turn on tools 
 
 ### Approve a batch of edits once
 
-A folder of files renamed and updated with one approval instead of forty.
+A folder of files renamed and updated without a card for every file.
 
-**Why it works:** a **This response** approval covers every matching action until the answer ends, then expires on its own, so you review the plan once and nothing carries over after the answer ends.
+**Why it works:** **This chat** covers every action of one kind in this chat, so you review the plan once, answer the first card, and the rest run. Setting the kind back to **Ask** afterwards takes it back.
 **You need:** the desktop app; Work locally on for the chat with the folder chosen.
 
 
@@ -6074,12 +6179,12 @@ A folder of files renamed and updated with one approval instead of forty.
    ```
 
 2. Check the list, then ask: "Go ahead with exactly that list."
-3. At the first card, open **Details**, choose **This response**, and select **Allow for this response** — the rest of the renames run without cards.
-4. When the answer ends, the approval ends with it.
+3. At the first card, check the command or file, then select **This chat** — the rest of that kind run without cards. If a card for another kind appears, such as **Change files** after **Run commands**, answer it the same way.
+4. When the renames are done, open **Permissions** and set those kinds back to **Ask**.
 
 
 
-**Swap in:** **This chat** when you'll keep working in the same folder for days; **Once** when each action needs its own look.
+**Swap in:** **Only** in the card's **This chat and Always cover** menu to allow just that one thing; **Once** when each action needs its own look; **Always** for a kind you never want to be asked about.
 **If it stalls:** if a card asks for something outside the plan, deny it and ask Bearly why.
 
 ### Give one chat Full access for one folder
@@ -6099,30 +6204,31 @@ A chat that can work through a project folder without stopping, while every othe
    Update every import of the old logger to the new one in this folder, run the tests, and fix what breaks. Don't touch anything outside this folder or push anything.
    ```
 
-4. When you're done, open **Permissions** and select **Standard**.
+4. When you're done, open **Permissions** and select **Ask first**.
 
 
 
-**Swap in:** turn on Bearly Browser in the same chat to check a local page after each change; keep Standard and use **This chat** approvals instead when you want a record of each step.
+**Swap in:** turn on Bearly Browser in the same chat to check a local page after each change; keep **Ask first** and answer **This chat** for each kind instead when you want to see each kind of action before it starts.
 **If it stalls:** if the control shows **Paused**, read the notice; Full access comes back by itself once it's allowed again.
 
 ### Check what a chat can do, and take it back
 
-A clean slate in a chat where you approved more than you meant to.
+A clean slate in a chat where you allowed more than you meant to.
 
-**Why it works:** every saved approval for a chat on this device is listed in one place, and revoking stops current work at once.
+**Why it works:** every answer that applies to a chat, from this chat and from **Always**, is listed in one panel, and changing one stops current work at once.
 **You need:** nothing beyond the chat.
 
 
 
-1. Select **Permissions** at the bottom of the message box — saved approvals are listed with their durations.
-2. Select **Revoke** beside one, or **Clear all permissions** to switch to Standard and remove them all.
-3. If the chat is open in another window, repeat there.
+1. Select **Permissions** at the foot of the message box — each kind of action shows **Ask**, **This chat**, or **Always**.
+2. Set a kind back to **Ask**, select **Revoke** beside a single site or item, or select **Ask about everything again** to clear this chat's answers and turn Full access off.
+3. To take back an **Always** answer, set it to **Ask** here or in **Settings** → **Permissions**; it stops on every device.
+4. If the chat is open in another window, repeat there.
 
 
 
-**Swap in:** **Revoke all saved approvals** to keep Full access but drop the saved approvals.
-**If it stalls:** for a routine, change its own settings in the routine editor; chat approvals never applied to it.
+**Swap in:** **Ask first** to turn off Full access but keep your other answers.
+**If it stalls:** for a routine, change its own settings in the routine editor; chat answers never applied to it.
 
 ## Related
 
@@ -6164,6 +6270,8 @@ Every Bearly capability is a building block: it takes something in, does one job
 **References point at exact files and tools.** Type `/` at the start of a message or `@` anywhere in it to pick a tool, skill, prompt template, or file by name. A message can start with one `/` command and hold any number of `@` references, so one message can name a file and a tool together. A reference only selects a tool you already have; it never turns on one your plan or organization has turned off. See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md#reference-tools-files-and-skills).
 
 **Projects share files across chats.** Files on a project's **Files** tab are available to every chat in that project: they appear in the `@` menu, and the document tools search them. Turn on **Always search documents** in the project's chat settings and every answer searches them first. See [Projects](https://bearly.ai/docs/manual/projects.md).
+
+**Code Mode chains tools inside one step.** With **Execution Mode** set to **Code Mode**, Bearly writes code that calls many tools at once and works through their results before the model sees them, so a chain of reads and calculations can finish in one step. What it keeps between steps lasts until the answer ends; files it saves stay in the chat. See [Execution Mode](https://bearly.ai/docs/manual/chat/settings.md#execution-mode).
 
 **Routines replay a chain on a schedule.** A routine runs a saved prompt in its own chat at the times you set, with a smaller set of tools, and each run can build on the ones before it. See [Routines](https://bearly.ai/docs/manual/capabilities/routines.md) and [Routines run a smaller toolset](#routines-run-a-smaller-toolset).
 
@@ -6250,7 +6358,7 @@ Details: [Images, video, and audio](https://bearly.ai/docs/manual/capabilities/i
 | Block | Takes | Produces | Plan | Where | In Routines | Council experts |
 |---|---|---|---|---|---|---|
 | **Imagine** `/image` | A description, and optional reference images | Images in the inline image editor, ready to download; a PNG with a transparent background when you ask for one in the chat | Any | All | No | No |
-| **Touch Up** `/edit-image` | One or more images in the chat, and optionally an area to change | Edited, extended, or combined images; a transparent-background PNG when you ask to remove the background | Any | All | No | No |
+| **Touch Up** `/edit-image` | One or more images in the chat, and optionally an area to change | Edited, extended, or combined images; a transparent-background PNG when you ask to remove the background or edit an image that has one | Any | All | No | No |
 | **Make Video** `/video` | A description, and optionally an image as the start frame (at most 2.5 times as wide as tall, or as tall as wide) plus an end frame | A 4 to 15-second MP4 with generated sound, saved in the chat | Any | All | No | No |
 | **Edit Video** `/edit-video` | A clip of 3 to 10 seconds, 720 to 2160 pixels on each side, under 50 MB | A separate edited clip; the original stays as it was | Any | All | No | No |
 | **Read Aloud** `/say`, and Voice Studio | Text: a reply, your message, or a script, up to about 22,500 characters of English (about 7,500 in Chinese, Japanese or Korean) | Spoken audio saved as a chat file; Voice Studio for voices, delivery, and takes | Any | All | No | No |
@@ -6281,6 +6389,7 @@ Details: [Routines](https://bearly.ai/docs/manual/capabilities/routines.md), [Co
 | **Computer Use** `/computer` | A task in an app that's open on screen | The task done by clicking and typing, and a **Computer Use** step listing the actions | Any | Desktop | No | No |
 | **Chat management** (ask in any chat) | A request to list, read, create, rename, move, or delete chats, to create a project, or to check your plan and models | Your chat list, an earlier chat's contents, the change, or your plan and the models this chat can use; listing, reading, and deleting ask you first | Any | All | No | No |
 | **Prompt templates** (sidebar **Prompt templates**; run from `/` → **Skills**) | Values for the template's fields, and optional files | A filled form in the chat that runs as a prompt and can run again with new values | Any | All | No | No |
+| **Code Mode** (sliders menu → **Execution Mode**) | A task that needs many tool calls, such as reading many chats, pages, or files, then counting, matching, or totaling what they say | The same results as the tools it calls, worked through together in one step; in **Steps**, one row per step with its call count | Any | All; on a device that can't run the code, such as an iPhone in Lockdown Mode, tools are looked up and called one at a time | No; routines use Classic | No |
 | **Remote modules** (tools labeled `fn-…`) | Tools from a server you or your admin add | That server's results | Any | Web app and desktop app; servers on a private network need the desktop app | No | No |
 
 ### Organize and share
@@ -6380,7 +6489,7 @@ In an organization, an admin's policy can turn off any block. The `/` label then
 - **Sharing** off removes Share. **Public links** and **Share with people and teams** decide who can open a published Page.
 - **Memory Recall** off turns off Recall and **Memories**.
 
-Most other blocks have their own control: **Images**, **Video**, **Transcription**, **Text to speech**, **Voice**, **Dictation**, **Meetings**, **Council**, **Deep Research**, **People Search**, **Charts**, **Routines**, **Work locally**, **Computer Use**, **Browser**, **Chrome extension browser**, **MCP Connectors**, **Skills**, **Email notifications**, **Text messages**, and **Chat management**. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
+Most other blocks have their own control: **Images**, **Video**, **Transcription**, **Text to speech**, **Voice**, **Dictation**, **Meetings**, **Council**, **Deep Research**, **People Search**, **Charts**, **Routines**, **Work locally**, **Computer Use**, **Browser**, **Chrome extension browser**, **Code Mode**, **MCP Connectors**, **Skills**, **Email notifications**, **Text messages**, and **Chat management**. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
 ### Desktop-only blocks
 
@@ -6415,9 +6524,11 @@ Turn on **Zero Data Retention only** and Bearly shows only zero-retention models
 
 ### Approvals and Full access
 
-- In **Standard** permissions, Bearly asks before a tool reaches outside the chat: local files, desktop control, browsers, connectors, skill scripts, People Search, and listing, reading, or deleting your chats. The chain waits at that step until you answer. **Needs attention**, at the top of the chat sidebar, lists the chats waiting on you.
-- Approvals you save stay on this device: **This response** lasts until the answer ends, **This session** until the chat reloads, and **This chat** until you revoke it. They never sync and never authorize a routine.
-- **Full access** lets one chat on one device use your enabled tools without asking. It still asks before connecting a new service, before listing, reading, or deleting your chats, before People Search runs, before giving a routine browser access or unattended local access, and for Computer Use safety checks and certificate warnings.
+- In **Ask first**, Bearly asks before a tool reaches outside the chat: local files, desktop control, browsers, connectors, skill scripts, People Search, and listing, reading, or deleting your chats. The chain waits at that step until you answer. **Needs attention**, at the top of the chat sidebar, lists the chats waiting on you.
+- You answer for a kind of action: **Once**, **This chat** (this chat on this device), or **Always** (every chat, every device you're signed in on). None of them authorizes a routine.
+- One reply sends up to 3 messages and makes up to 4 images or speech clips, 1 video, 1 model run, and 5 paid lookups before it asks. A chain that emails each person separately, or makes a set of images, stops at the limit until you answer; **This chat** for **Send messages** or **Spend from your plan** lets it finish. See [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
+- In **Code Mode**, one card covers every kind of action a step will take, answered **Deny**, **Once**, **This chat**, or **Always** for the whole step. Deleting, reading your other chats, and the per-reply limits still ask on their own. See [One card for a whole step](https://bearly.ai/docs/manual/capabilities/permissions.md#one-card-for-a-whole-step).
+- **Full access** lets one chat on one device use your enabled tools without asking. It still asks before deleting, connecting a new service, reading your other chats, giving a routine browser access or unattended local access, sending or spending past a reply's limits, People Search lookups, and for Computer Use safety checks and certificate warnings.
 - On the web and phones, Full access covers connectors only.
 - Routines have their own **Permission mode**, turned on from the desktop device that runs them.
 
@@ -7618,7 +7729,7 @@ One message turns a chat that already produced the result you want into a schedu
 Bearly reads every invoice in a folder on your computer, builds an Excel workbook with a summary sheet, and saves it back into the folder.
 
 **Why it works:** Work locally lets a chat list, read, and copy files in a folder you choose. It copies each invoice into the chat as a file, where the Document editor (which runs on Run Python) can read them and write an Excel workbook with formulas. Bearly then saves the workbook from the chat back to your folder.
-**You need:** Any plan. Desktop app. Organization controls: **Work locally** and **Run Python**. In Standard permissions, commands, file changes, and saves ask first; attaching a file from inside the chosen folder doesn't. On an approval card, pick **This chat** instead of **Once** so the same kind of action doesn't ask again in this chat on this device.
+**You need:** Any plan. Desktop app. Organization controls: **Work locally** and **Run Python**. In **Ask first**, commands, file changes, and saves ask first; attaching a file from inside the chosen folder doesn't. On an approval card, pick **This chat** instead of **Once** so the same kind of action doesn't ask again in this chat on this device.
 
 
 
@@ -7692,7 +7803,7 @@ Bearly reads values from an app window on your screen, charts them, and points o
 - **Work locally for the chart:** add Work locally and ask Bearly to save the CSV into a folder.
 - **Typing for reading:** ask Computer Use to enter the totals into a spreadsheet app. Before anything consequential, such as sending or deleting, it asks **Confirm this computer action**.
 
-**If it stalls:** Computer Use can't work in Bearly's own windows and runs one task per chat at a time. If it says it needs Accessibility and Screen Recording access, turn both on for Bearly and try again. On Windows, finish the optional helper setup if Bearly offers it.
+**If it stalls:** Computer Use can't work in Bearly's own windows and runs one task per chat at a time. If it says it needs Accessibility and Screen Recording access, turn both on for Bearly and try again.
 
 ## Find and fix a bug in a local web app
 
@@ -7741,7 +7852,7 @@ Bearly reads a document open in your signed-in Chrome, runs Deep Research on com
 
 
 
-1. In the desktop app, open **Settings** → **Chrome extension**. Select **Install Chrome extension** if it's not installed, and keep Chrome and Bearly open until it shows **Connected to Chrome**.
+1. In the desktop app, open **Settings** → **Chrome extension**. Select **Install Chrome extension** if it's not installed, and keep Chrome and Bearly open until it shows **Connected to Chrome**. Bearly may also offer an [install card in a desktop chat](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#install-the-chrome-extension-from-chat).
 
 2. Open the brief in Chrome, then ask:
 
@@ -7819,7 +7930,7 @@ Every Friday a Routine pulls the week's closed issues from a connected app, writ
 - [Routines](https://bearly.ai/docs/manual/capabilities/routines.md) for the editor, schedules, limits, and delivery
 - [Browser and computer](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md) for Bearly Browser, Chrome control, and Computer Use
 - [Connectors and skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md) for adding services and skills
-- [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md) for approval cards, Standard, and Full access
+- [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md) for approval cards, **Ask first**, and Full access
 
 ---
 
@@ -8167,7 +8278,7 @@ You photograph a receipt and get each person's exact share with tip, then a Page
 
 ---
 title: "Recipes for teams and projects"
-description: "Step-by-step recipes that combine projects, Always search documents, meeting transcripts, project sharing and locked settings, organization policies, Memories and chat management, Prompt templates, email to teammates, and restricted Pages for shared knowledge bases, meeting recaps, and team rollouts."
+description: "Step-by-step recipes that combine projects, Always search documents, meeting transcripts, project sharing and locked settings, organization policies, Memories and chat management, Code Mode for totaling a figure across a project's chats, Prompt templates, email to teammates, and restricted Pages for shared knowledge bases, meeting recaps, and team rollouts."
 canonical: "https://bearly.ai/docs/manual/combine/team-recipes/"
 markdown: "https://bearly.ai/docs/manual/combine/team-recipes.md"
 ---
@@ -8176,7 +8287,7 @@ markdown: "https://bearly.ai/docs/manual/combine/team-recipes.md"
 
 HTML: [https://bearly.ai/docs/manual/combine/team-recipes/](https://bearly.ai/docs/manual/combine/team-recipes/)
 
-> Step-by-step recipes that combine projects, Always search documents, meeting transcripts, project sharing and locked settings, organization policies, Memories and chat management, Prompt templates, email to teammates, and restricted Pages for shared knowledge bases, meeting recaps, and team rollouts.
+> Step-by-step recipes that combine projects, Always search documents, meeting transcripts, project sharing and locked settings, organization policies, Memories and chat management, Code Mode for totaling a figure across a project's chats, Prompt templates, email to teammates, and restricted Pages for shared knowledge bases, meeting recaps, and team rollouts.
 
 These recipes use projects, meetings, sharing, and organization policies to make Bearly work the same way for a whole team. A project's files, instructions, and settings apply to every chat in it, so what one person adds, everyone in the project can use. Sharing a project needs an organization; emailing teammates and organization policies need a managed organization. For what each block takes in and gives back, see [Building blocks](https://bearly.ai/docs/manual/combine/building-blocks.md).
 
@@ -8377,7 +8488,7 @@ You find what was decided in an earlier chat, then have Bearly rename and move t
 - **Archive for move:** ask Bearly to list the chats, then select them in the sidebar with **Select** and **Archive** them.
 - **An export for the record:** open the command menu and choose **Download as Markdown** for a copy of the decision chat.
 
-**If it stalls:** Recall doesn't work in end-to-end encrypted chats, and a regular chat can't list, read, rename, or move encrypted ones. Full access never approves listing or reading other chats for you; Bearly asks unless you saved an approval for that.
+**If it stalls:** Recall doesn't work in end-to-end encrypted chats, and a regular chat can't list, read, rename, or move encrypted ones. Full access never approves listing or reading other chats for you; Bearly asks unless you answered **This chat** on that card earlier in the chat.
 
 ## Turn a team form into a published Page
 
@@ -8816,8 +8927,10 @@ The access banner shows members a message they must accept before they can use B
 Agent access decides who on your managed domain may use Full access, which lets agents use enabled tools without asking for approval each time. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
 
 - **Allow full access by default** is on unless an admin turns it off. "Applies to members on your managed domain. Each member must still enable it for each chat or routine on its device. Change individual exceptions in Members."
-- **Turn off full access for everyone** opens a dialog with the number of eligible members: "Active full access stops within 60 seconds. The organization default will be off, and all individual exceptions will be removed. Saved tool approvals remain." Confirm with **Turn off for everyone**.
+- **Turn off full access for everyone** opens a dialog with the number of eligible members: "Active full access stops within 60 seconds. The organization default will be off, and all individual exceptions will be removed. Members return to Ask first, and their This chat and Always answers stop applying." Confirm with **Turn off for everyone**.
 - Per member: **Members** → select the member → **Full access**: **Use organization default**, **Allow full access**, or **Do not allow full access**. Changes save immediately, and the member still chooses when to turn Full access on.
+
+A member who can't use Full access also can't answer approval cards with **This chat** or **Always**: their cards offer only **Once**, with "Your team requires asking each time." Answers they saved earlier stop applying.
 
 Only organization admins can change these. Group admins and policies can't grant Full access, and allowing it doesn't turn on tools a policy has turned off. Changes appear in **Activity**.
 
@@ -8946,6 +9059,8 @@ Both actions appear in **Activity**. Admins see project titles, owners, and shar
 
 A member's **Individual monthly spend limit** beats the policy's limit. When a member reaches it, chat continues on **Bearly Fast** only until the limit resets. See [After paid credits run out](https://bearly.ai/docs/manual/plans-and-credits.md).
 
+**Model access** also covers image, video, text-to-speech, and transcription models. A deny-list applies to them, and a provider group in it covers the media models that provider serves. An allow-list limits one of those tools only when it names one of its models, so an allow-list of chat models leaves images, video, speech, and transcription available. When the default voice engine isn't allowed, Read aloud and Voice Studio use the first allowed one; when none is, they say "Your organization's model policy doesn't allow any speech model, so audio can't be created."
+
 Model access, spending limits, and **Developer API access** are enforced by Bearly's servers. Most feature switches are enforced in the Bearly app.
 
 ## Policy control catalog
@@ -8990,6 +9105,7 @@ Model access, spending limits, and **Developer API access** are enforced by Bear
 | Control | Description in the editor | What it changes | Needs | Starts |
 | --- | --- | --- | --- | --- |
 | **Run Python** | Allow members to run Python in Bearly's cloud interpreter. | Running code in the cloud | — | Follows default |
+| **Code Mode** | Let members choose Code Mode, where Bearly writes code that runs many tool calls at once. | **Execution Mode** in the sliders menu. Off: it shows **Classic** with a lock, and every chat uses Classic | — | On |
 | **Work locally** | Allow members to use local shell, file-reading, writing, and editing tools. | Local files and commands in the desktop app | — | Follows default |
 | **Computer Use** | Allow members to let Bearly inspect and control local desktop apps. | Computer Use in the desktop app | — | Follows default |
 | **Browser** | Allow members to use the isolated Bearly Browser. | Bearly Browser in the desktop app | — | Follows default |
@@ -9136,8 +9252,9 @@ What you type, attach, or let a tool read still goes to the model handling your 
 | **Web Search** | **This chat**, **New chats**, or the composer | Off stops the chat from searching the web on its own | Set it back to **Auto** |
 | Project password | The project's **Sharing** tab → **Encryption** → **Password protection** → **Protect** | Adds a password lock to a project, and its chats are read-only while locked | **Remove** |
 | **Lock all data** | **Settings** → **Profile** | Relocks every password-protected project on this device | Enter the passwords again |
-| **Permissions** | Composer | **Standard** asks before tools act. **Full access** doesn't. | Switch back |
-| Saved approvals | Composer → **Permissions** | **Revoke all saved approvals** or **Clear all permissions** | Approve again |
+| **Permissions** | Composer | **Ask first** asks before tools act. **Full access** doesn't. | Switch back |
+| This chat's answers | Composer → **Permissions** | Set a kind of action to **Ask**, **Revoke** one item, or **Ask about everything again** | Allow again |
+| **Always** answers | **Settings** → **Permissions** | Set a kind of action back to **Ask**, on every device | Allow again |
 | **Devices** | **Settings** → **Devices** | Signs out other devices and removes extension or API keys | Sign in again |
 | **Log out** | **Settings** → **Profile**, or the account menu | Syncs, then clears Bearly's data from this device | Sign in |
 | **Delete account** | **Settings** → **Profile** | Schedules permanent deletion after email verification | **Cancel scheduled deletion** before the final reminder |
@@ -9162,6 +9279,7 @@ Turn on **Zero Data Retention only** and Bearly shows only zero-retention models
 **Limits:**
 
 - It covers the language models that write and work in your chats, including the models Bearly uses inside chat tools such as Council's experts. Council can offer fewer experts when it's on.
+- It also covers text to speech: Read aloud and Voice Studio use only the **OpenAI** voice engine, which has zero data retention, and the other engines are refused. If your organization's policy doesn't allow that engine either, speech isn't made: "No speech model that meets your Zero Data Retention only setting is available, so audio can't be created."
 - It doesn't cover image and video generation, transcription, text extraction from files, voice calls, or other tool services. Deep Research, People Search, Scholar's academic web search, YouTube search, and reading web pages also reach their usual services.
 - If settings can't sync, Bearly keeps the rule on and the switch is unavailable: "Settings sync is unavailable. Zero Data Retention routes remain required until Bearly reconnects." The banner reads **ZDR on until settings sync**.
 - If your organization also limits models, you see only models allowed by both, and the banner notes **managed account**.
@@ -9277,13 +9395,14 @@ A project password locks a project. While it's locked, each of the project's tab
 
 **Settings** → **Profile** → **Lock all data** relocks every password-protected project on this device. The pane still calls them "notebooks". Select **Lock**, then confirm with **Lock All** — Bearly clears saved passwords on this device and reloads.
 
-## Permissions: Standard and Full access
+## Permissions: Ask first and Full access
 
-The **Permissions** button at the foot of the composer decides whether Bearly asks before it uses tools that act outside the chat, such as local files, Computer Use, Bearly Browser, Chrome, Skill scripts, and connectors.
+The **Permissions** button at the foot of the composer decides whether Bearly asks before it uses tools that act outside the chat, such as local files, Computer Use, Bearly Browser, Chrome, Skill scripts, and connectors. Approval cards are answered **Once**, **This chat**, or **Always** for a kind of action, such as **Read files** or **Use connected apps**.
 
-- **Standard**: "Ask for approval when needed. Saved approvals still apply."
-- **Full access**: "Use enabled tools without asking each time." Turning it on asks **Enable full access?** and applies to this chat on this device only. Organization rules, operating-system permissions, and required safety checks still apply. Full access never turns on a tool or connects an account.
-- **Saved approvals · _N_** lists approvals you've given, each scoped to "This response", "This session", or "This chat · this device", with **Revoke**. **Revoke all saved approvals** clears them. **Clear all permissions** switches to Standard and revokes them all.
+- **Ask first**: "Bearly asks before it acts, unless you've said yes below."
+- **Full access**: "Use enabled tools without asking. This chat on this device." Turning it on asks **Enable full access?**. Organization rules, operating-system permissions, and required safety checks still apply. Full access never turns on a tool, connects an account, sends messages past a reply's limit, or spends from your plan.
+- **What Bearly may do without asking** lists each kind of action as **Ask**, **This chat**, or **Always**, with single things you allowed and **Revoke**. **Ask about everything again** "Clears this chat's answers and turns Full access off. Always answers stay; change them in Settings."
+- **This chat** answers stay on this device. **Always** answers apply in every chat, on every device you're signed in on; review them in **Settings** → **Permissions**.
 - **Settings** → **Permissions** → **Start new chats in Full access** makes new chats on this device start in Full access. It asks **Start every new chat in Full access?** first. Existing chats and routines aren't changed. If Full access isn't available for your account or app, the switch says why.
 
 Routines have their own Full access setting in the routine editor. On a managed organization, admins decide who may use Full access under [Agent access](https://bearly.ai/docs/manual/organizations.md). See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
@@ -9469,10 +9588,11 @@ Each organization you belong to has a row here. Selecting one closes Settings an
 
 ### Permissions
 
-Applies to new chats on this device.
+**What Bearly may do without asking** holds your **Always** answers, which follow your account: "Always applies in every chat, on every device you're signed in on." **Start new chats in Full access** applies to new chats on this device.
 
 | Control | Options and default | What it does |
 | --- | --- | --- |
+| **Read files**, **Change files**, **Run commands**, **Control your computer**, **Use websites in your browser**, **Use connected apps**, **Send messages**, **Spend from your plan** | **Ask** (default) or **Always** | **Always** lets Bearly do that kind of action without asking, in every chat. Choosing it asks you to confirm, such as **Always allow reading files**. Below the list: "Bearly asks every time before it deletes chats or files, publishes or shares, changes who pays, connects an account, or sets up unattended access. Reading your other chats can be allowed for one chat, never always." When your team requires asking, the menus are off and read **Ask**. |
 | **Start new chats in Full access** | Switch, off by default. This device only. | "New chats on this device use your enabled tools without asking. Not recommended unless you know what you're doing." Asks you to confirm first ("Start every new chat in Full access?"). Unavailable when your organization doesn't allow Full access. |
 
 See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
@@ -9551,7 +9671,7 @@ Saved on this device only. **Theme** shows each theme as a card; **Font** and **
 
 | Control | Options and default | What it does |
 | --- | --- | --- |
-| **Zero Data Retention only** | Switch, off by default. Saved to your account. | Bearly shows only zero-retention models, and automatic fallbacks stay on them too. Applies to chat models. See [Zero Data Retention only](https://bearly.ai/docs/manual/chat/models.md#zero-data-retention-only). |
+| **Zero Data Retention only** | Switch, off by default. Saved to your account. | Bearly shows only zero-retention models, and automatic fallbacks stay on them too. Applies to chat models and text to speech. See [Zero Data Retention only](https://bearly.ai/docs/manual/chat/models.md#zero-data-retention-only). |
 | **Unitemized billing** | Not available yet; the switch doesn't appear. When it launches: off by default, paid plans, and on a managed organization only when its policy allows it. | "A more private way to be billed. Bearly keeps one rounded total per day instead of a record of each request's model, cost, and time." **How it works** opens the guide. Asks you to confirm first. See [Unitemized billing](https://bearly.ai/docs/unitemized-billing.md). |
 | **End-to-end encryption** (**Beta**) | **Set up end-to-end encryption**, or **Approve this device** on a new device | Encrypts new chats on your devices. After setup: **Encrypt all new chats with this key**, **Approved devices**, **Approve a device**, and **Recovery** (passkeys and **Replace recovery phrase**). |
 
@@ -9585,7 +9705,7 @@ See [Connectors and Skills](https://bearly.ai/docs/manual/capabilities/connector
 
 ### Chrome extension
 
-**Control Chrome from chat**: "Use your regular Chrome tabs and signed-in sessions." Bearly can navigate, read pages, fill forms, and inspect console and network activity, asking for approval in Standard.
+**Control Chrome from chat**: "Use your regular Chrome tabs and signed-in sessions." Bearly can navigate, read pages, fill forms, and inspect console and network activity, asking for approval in **Ask first**.
 
 | Status | What it means |
 | --- | --- |
@@ -9596,6 +9716,8 @@ See [Connectors and Skills](https://bearly.ai/docs/manual/capabilities/connector
 | **Disabled by your workspace** | "Your workspace policy does not allow Chrome control." |
 
 This pane appears only in the desktop app. Chrome control connects on your computer and doesn't need the extension's own Bearly sign-in. Bearly Browser is a separate, isolated browser.
+
+Bearly may also offer an [install card in a desktop chat](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#install-the-chrome-extension-from-chat).
 
 ## Desktop app
 
@@ -9616,7 +9738,7 @@ This pane appears only in the desktop app. Chrome control connects on your compu
 | Control | What it does |
 | --- | --- |
 | **Managed runtimes** | "Desktop tools Bearly installs and verifies for local work." Each shows **Ready**, **Installing**, **Not installed**, **Error**, or **Verifying**, when it installs, and a verify button. **Refresh runtimes** checks again. |
-| **Windows Computer Use helper** | Windows only. "Install the helper for reliable control of protected and background windows." Installing, updating, or removing it asks for administrator approval. |
+| **Windows Computer Use helper** | Windows only. An optional helper installed for everyone on the PC; Computer Use works without it. The section has **Install** or **Update**, and the trash icon labelled **Remove Computer Use helper**. Installing, updating, or removing it asks for administrator approval. |
 | **Environment variables** | "Inherited by local commands, skills, video downloads, and runtime checks." **Add variable**, then **Save**, or **Reset** to discard. Values are hidden until you reveal them. Saved on this device only. |
 
 ### Browser
@@ -9624,7 +9746,7 @@ This pane appears only in the desktop app. Chrome control connects on your compu
 | Control | Options and default | What it does |
 | --- | --- | --- |
 | **Enable Browser** | On by default | "Keep Bearly Browser available to you and your chats. Turning it off does not delete site data." |
-| **Allow chats to use Browser** | On by default | Lets chats drive Bearly Browser. In Standard, Bearly asks before new sites. In Full access it doesn't. |
+| **Allow chats to use Browser** | On by default | Lets chats drive Bearly Browser. In **Ask first**, Bearly asks before new sites. In Full access it doesn't. |
 | **Block ads and trackers** | On by default | Blocks ads and trackers in Bearly Browser |
 | **Import browser cookies** | Choose a **Browser profile** | "Bring current site sign-ins from Chrome or Edge into Bearly Browser. Cookies only—never passwords, history, bookmarks, or autofill." |
 | **Reset open tabs** | Button | "Close tabs and clear workspace history and approvals. Site sign-ins remain." |
@@ -9654,7 +9776,8 @@ Appears only when your organization's policy turns on **Personal remote modules*
 | Setting | Where |
 | --- | --- |
 | Web, Scholar, Style, Reasoning, Memories, History for one chat | The sliders icon beside the composer. See [Chat settings](https://bearly.ai/docs/manual/chat/settings.md). |
-| **Permissions** (Standard or Full access) for one chat | **Permissions** at the foot of the composer. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md). |
+| **Execution Mode** for one chat: **Classic** (default), "Bearly calls tools one at a time.", or **Code Mode**, "Bearly writes code that runs many tool calls at once." Applies from the next message. | The sliders icon beside the composer. See [Execution Mode](https://bearly.ai/docs/manual/chat/settings.md#execution-mode). |
+| **Permissions** (**Ask first** or Full access, and **This chat** answers) for one chat | **Permissions** at the foot of the composer. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md). |
 | Project defaults and skills | The project's **Settings** tab. Sharing and passwords are on its **Sharing** tab, and folder sync on its **Files** tab. See [Projects](https://bearly.ai/docs/manual/projects.md). |
 | Organization members, policies, seats | Account menu → **Organizations**, or the organization's row in Settings. See [Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md). |
 
@@ -9706,7 +9829,7 @@ When a step needs something the user doesn't have, say so first and offer the cl
 - One action per step, and say what it does: "Select **Create Plan**, which drafts a research plan you can edit before anything runs."
 - Put text the user should type or paste in a code block, so they can copy it.
 - Name `/` and `@` references when they make a request reliable, for example `/deep-research` or `@web-search`. Typing `/` at the very start of a message, or `@` at the start of a word, opens the list.
-- Say when something costs money or asks for approval: a Deep Research run uses plan allowance, People Search asks you to confirm the person and approve the cost before it builds a brief, and agent actions ask for approval unless the chat is in **Full access**.
+- Say when something costs money or asks for approval: a Deep Research run uses plan allowance, People Search asks you to confirm the person and approve the cost before it builds a brief, and agent actions ask for approval unless the person allowed that kind of action for the chat or always, or the chat is in **Full access**. One answer sends at most 3 messages and makes at most 4 images or speech clips, 1 video, 1 model run (a council or a Computer Use task), and 5 paid lookups before it asks, with a fresh count for each message.
 - Mark desktop-only steps.
 - Keep the user's goal in view; skip settings they don't need.
 
@@ -9720,6 +9843,8 @@ Bearly's features pass work to each other through the chat: text in the conversa
 4. Check every block against the user's plan, device, organization, and chat type. If the chain will run on a schedule, use only the blocks that run in Routines.
 5. Write one prompt per step, and tell the user what to check before the next step.
 
+When a step reads or checks many things, such as every chat in a project, a list of pages, or a folder of files, and then totals or compares them, suggest setting **Execution Mode** to **Code Mode** in the sliders menu before sending it. In Code Mode, Bearly writes code that runs many tool calls at once, so the step takes far fewer model steps. It applies from the next message, uses the same approvals and per-reply limits, and makes little difference to a request that needs one or two tool calls. Classic is the default. See [Execution Mode](https://bearly.ai/docs/manual/chat/settings.md#execution-mode).
+
 Prefer the shortest chain that reaches the result. When you show a combination, say why each step can feed the next, so the user can adapt it.
 
 ## When you are Bearly's own assistant
@@ -9727,6 +9852,7 @@ Prefer the shortest chain that reaches the result. When you show a combination, 
 - The tools available in the current chat are the truth about what you can do here. Use them instead of describing steps when the user wants the result, and don't describe a tool you weren't given.
 - Read this manual with your web fetch tool when a question is about using Bearly and the answer isn't already in your context. If the chat's **Web** setting is **Off**, tell the user where to find the page instead.
 - The current chat's model information tells you which model is answering. The manual is not evidence of which model you are.
+- When your tools let you write code that calls other tools, this chat is in Code Mode. When you aren't given that and a task needs many tool calls, you can suggest the user switch **Execution Mode** to **Code Mode** for the next message.
 - You can't change the user's settings, plan, or organization policies. Give the steps, and offer to do the parts your tools allow, such as starting a Routine from the conversation or organizing chats when chat management is on.
 - When chat management is on and the user asks which plan they're on or which models they can use, read them with the account tool instead of guessing. It lists the models this chat can pick after the organization's model policy and **Zero Data Retention only**, and if the account is out of credits it says why the list is shorter. It can't see usage or billing; for those, point to **Settings** → **Usage** on a paid plan, or **Settings** → **Billing** on Free.
 
@@ -9878,7 +10004,8 @@ If you're an AI agent using Bearly's interface for a person, these labels are st
 
 Leave these to the person, and say so instead of acting:
 
-- **Approval cards** for actions they haven't clearly asked for, and anything that always asks: connecting a new service, listing, reading, or deleting chats, Computer Use safety checks, People Search lookups that use the plan allowance, and routine consent cards for unattended local access and browser access.
+- **Approval cards** for actions they haven't clearly asked for, and anything that always asks: connecting a new service, listing, reading, or deleting chats, Computer Use safety checks, and routine consent cards for unattended local access and browser access. Leave **Send more messages?**, People Search confirmations, and cards that spend from the plan to the person too.
+- **Always** on any approval card, and **Always** in **Settings** → **Permissions** — it applies in every chat on every device.
 - **Enable full access?** and **Start every new chat in Full access?** — turn these on only when the person asks for exactly that.
 - **Certificate warnings** in Bearly Browser, passwords, payment details, CAPTCHAs, and the computer's own permission prompts.
 - **Sign-in codes** from email, phone verification codes, and **Agree & send code** for texting terms.
@@ -9937,7 +10064,7 @@ An outside agent that answers "how do I…" questions about Bearly from the manu
 
 ---
 title: "Fix common problems"
-description: "What a Bearly message or symptom means and what to do about it — upload and PDF password errors, failed answers, a paused queue, usage limits and out-of-credits notices, hidden models, missing features, desktop-only tools, locked encrypted chats, routines that didn't run, connectors, email and text, Deep Research, Full access, Chrome control, voice, dictation, meetings, sharing, and sign-in."
+description: "What a Bearly message or symptom means and what to do about it — upload and PDF password errors, failed answers, a paused queue, slow many-step tasks and Code Mode, usage limits and out-of-credits notices, hidden models, missing features, desktop-only tools, locked encrypted chats, routines that didn't run, connectors, email and text, Deep Research, Full access, Chrome control, voice, dictation, meetings, sharing, and sign-in."
 canonical: "https://bearly.ai/docs/manual/troubleshooting/"
 markdown: "https://bearly.ai/docs/manual/troubleshooting.md"
 ---
@@ -9946,7 +10073,7 @@ markdown: "https://bearly.ai/docs/manual/troubleshooting.md"
 
 HTML: [https://bearly.ai/docs/manual/troubleshooting/](https://bearly.ai/docs/manual/troubleshooting/)
 
-> What a Bearly message or symptom means and what to do about it — upload and PDF password errors, failed answers, a paused queue, usage limits and out-of-credits notices, hidden models, missing features, desktop-only tools, locked encrypted chats, routines that didn't run, connectors, email and text, Deep Research, Full access, Chrome control, voice, dictation, meetings, sharing, and sign-in.
+> What a Bearly message or symptom means and what to do about it — upload and PDF password errors, failed answers, a paused queue, slow many-step tasks and Code Mode, usage limits and out-of-credits notices, hidden models, missing features, desktop-only tools, locked encrypted chats, routines that didn't run, connectors, email and text, Deep Research, Full access, Chrome control, voice, dictation, meetings, sharing, and sign-in.
 
 These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
 
@@ -9992,6 +10119,8 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 | Bearly stops searching the web partway through an answer | Web Search runs at most twice per answer | Ask a follow-up, and the next answer can search again |
 | An answer has no web sources | The chat's **Web** setting is **Off**, which also removes `/web-search` | Open the sliders button and set **Web** to **Auto** |
 | Bearly seems to forget the start of a long chat | Once a chat is long, Bearly shortens older tool results and long earlier messages, then drops the oldest messages if that isn't enough | Restate the key facts, or start a new chat with a short summary of this one. If this chat's sliders menu shows **History**, you can also choose **Agentic (Compaction)**; "Conversation compacted so you can keep going" is normal there. See [Long conversations and History](https://bearly.ai/docs/manual/chat/settings.md#long-conversations-and-history) |
+| A task that reads or checks many things, such as every chat in a project, takes a long time, with one tool call after another in **Steps** | The chat's **Execution Mode** is **Classic**, which calls tools one at a time | Open the sliders button, set **Execution Mode** to **Code Mode**, and send the request again. See [Execution Mode](https://bearly.ai/docs/manual/chat/settings.md#execution-mode) |
+| **Execution Mode** shows a lock and can't be changed | Your organization turned off **Code Mode**; hover the lock to see "Set by your team's policy" | Ask your organization's admin |
 | The AI used a different file or tool than you meant | It chose on its own | Name the file with `@` and the tool with `/` or `@`. See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md#reference-tools-files-and-skills) |
 
 ## Usage limits and credits
@@ -10029,6 +10158,9 @@ See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits
 | A model marked **Unavailable** | The model is suspended | Select **Read the announcement** for details, and choose another model |
 | The chat answers with a different model than the one you picked | Your choice isn't allowed right now (organization policy, **Zero Data Retention only**, or plan), so Bearly uses the first available model in the list without changing your saved choice | Pick a model that's allowed |
 | No model button in the composer, and no **Model** in **This chat** | Your organization or project fixed the model | Ask the project owner or your admin |
+| **Read Aloud isn't available**, or "Your organization's model policy doesn't allow any speech model, so audio can't be created." | Your organization's policy denies every voice engine | Ask your admin |
+| "Your organization's model policy doesn't allow _engine_. Choose another speech model." in Voice Studio | The engine you picked isn't allowed, but another is | Pick another engine in the studio's model switch |
+| "No speech model that meets your Zero Data Retention only setting is available, so audio can't be created.", or "_Engine_ doesn't meet your Zero Data Retention only setting. Choose another speech model." | **Zero Data Retention only** allows only the **OpenAI** voice engine, and your organization's policy may deny it | Pick **OpenAI** in Voice Studio; if that's refused too, ask your admin or turn the setting off |
 
 See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
 
@@ -10040,7 +10172,7 @@ When a `/` command or a control you expect isn't there, one of these is usually 
 - **Your organization.** An admin can turn off any feature, and a `/` reference can't bring it back. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 - **The desktop app.** Work locally, Computer Use, Bearly Browser, Chrome control, installed skills, and running routines need it. See [Desktop-only features](#desktop-only-features-on-the-web-or-a-phone).
 - **What's in the chat.** The document tools appear once the chat or its project has a file. **Read aloud** appears on answers that are all text.
-- **The chat's settings.** Web Search, Image Search, and Read Site need **Web** set to **Auto** in the sliders button. Scholar runs only when **Scholar** is **Auto**; `/scholar` forces it for one message.
+- **The chat's settings.** Web Search, Image Search, and Read Site need **Web** set to **Auto** in the sliders button. Scholar runs only when **Scholar** is **Auto**; `/scholar` forces it for one message. **Code Mode** applies from the message after you choose it in **Execution Mode**.
 - **An encrypted chat.** Search Docs and Memories aren't available there. See [End-to-end encrypted chats](#end-to-end-encrypted-chats).
 
 Messages that mean an admin turned something off:
@@ -10198,21 +10330,26 @@ See [Research](https://bearly.ai/docs/manual/capabilities/research.md).
 | "Update Bearly to keep using Full access on this device. Until then, Bearly asks before using tools." | The desktop app is too old | Update the desktop app |
 | "Your team turned off Full access. Bearly asks before using tools until your team turns it back on." | Your admin turned it off | Ask your admin |
 | "Full access isn't available right now. Bearly asks before using tools until it is, then turns Full access back on." | A temporary block | Nothing to do; it turns back on by itself. You can also select **Resume full access** |
-| **Start new chats in Full access** shows "Full Access is not available yet.", "Full Access is unavailable for this account.", or "Your team administrator turned off Full Access." | Full access isn't available to your account here | Use **Standard**, or ask your admin |
+| **Start new chats in Full access** shows "Full Access is not available yet.", "Full Access is unavailable for this account.", or "Your team administrator turned off Full Access." | Full access isn't available to your account here | Use **Ask first**, or ask your admin |
 | "Could not check Full Access availability. Try again when connected." | Bearly couldn't reach its server | Check your connection and try again |
-| Full access still asks before some actions | It never covers connecting a new service, listing, reading, or deleting your chats, People Search requests, Computer Use safety checks, routine consent, or certificate warnings | Answer the card. This is by design |
-| You approved something, and another device, or the same chat after a reload, asks again | Approvals stay on the device where you gave them. **This response** ends with the answer, and **This session** ends when the chat reloads | Approve it again. Choose **This chat** to keep the approval on this device until you revoke it |
+| Full access still asks before some actions | It never covers deleting, connecting a new service, reading your other chats, sending messages or spending past a reply's limits, People Search lookups, Computer Use safety checks, routine consent, or certificate warnings | Answer the card. For sending and spending, **This chat** or **Always** stops the cards |
+| You chose **This chat**, and another device asks again | **This chat** answers stay on the device where you gave them | Answer it there too, or choose **Always** to cover every device |
+| Cards offer only **Once**, with "Your team requires asking each time." | Your organization doesn't allow Full access for you, so **This chat** and **Always** aren't offered either | Answer each card, or ask your admin about [Agent access](https://bearly.ai/docs/manual/organizations.md) |
+| In **Code Mode**, you answered a step's card with **Once**, and cards still come up during the step | The step's card covers the kinds of action it lists. Deleting, reading your other chats, and the per-reply limits always ask on their own, and with "Your team requires asking each time." each action asks for itself | Answer each card. See [One card for a whole step](https://bearly.ai/docs/manual/capabilities/permissions.md#one-card-for-a-whole-step) |
+| **Send more messages?**, **Make more images or speech?**, or another "more" card mid-answer | The reply passed its [per-reply limit](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits) | **Once** for one more, or **This chat** to stop asking in this chat |
 
 See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
 
 ## Bearly Browser, Chrome, and Computer Use
+
+Bearly may also offer an [install card in a desktop chat](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#install-the-chrome-extension-from-chat).
 
 | You see | Why | What to do |
 |---|---|---|
 | "Chrome extension not connected" in **Settings** → **Chrome extension** | Chrome control needs the Bearly extension in Chrome | Select **Install Chrome extension**, then keep Chrome and the desktop app open until it says "Connected to Chrome". The extension doesn't need its own sign-in for this |
 | "Finishing secure connection…" | Pairing is in progress | Wait; the status updates on its own |
 | **Update Bearly** in the Chrome pane | This desktop version can't manage the connection | Update the desktop app |
-| Chrome steps fail in a chat with Full access, and Bearly says the extension needs an update | The extension is too old for Full access | Update the extension in Chrome, or switch the chat to **Standard** |
+| Chrome steps fail in a chat with Full access, and Bearly says the extension needs an update | The extension is too old for Full access | Update the extension in Chrome, or switch the chat to **Ask first** |
 | Chrome's debugger banner stays on after the chat ends | Finishing or closing a chat doesn't detach Bearly from Chrome tabs | Ask Bearly to detach from the tab, or quit Chrome or the desktop app |
 | A Chrome step fails | The action didn't complete, often because Bearly isn't attached to that tab | Ask Bearly to attach to the tab again, then retry |
 | "Browser can keep up to eight tabs open." | Bearly Browser holds up to 8 tabs across chats | Close tabs you don't need |
@@ -10220,7 +10357,7 @@ See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
 | Bearly Browser isn't signed in to a site you use | Bearly Browser keeps its own sign-ins | Sign in inside Bearly Browser, or use **Import browser cookies** in **Settings** → **Browser** |
 | "Computer Use needs Accessibility and Screen Recording access. Open System Settings → Privacy & Security and enable Bearly in Accessibility and Screen Recording, then try again." The message can name only one of them | macOS hasn't granted Bearly those permissions | Turn on Bearly in each place the message names, then ask again |
 | "Computer Use is already working on another task." | One Computer Use task runs per chat | Wait, or select **Stop** on the **Computer** chip |
-| **Finish setting up Computer Use** on Windows | The optional Windows helper isn't installed | Select **Finish setup** and approve as an administrator, or skip it |
+| **Not installed** under **Settings** → **Runtime** → **Windows Computer Use helper** | The optional Windows helper isn't installed | Nothing to fix. Computer Use works without the helper |
 | A message that Computer Use's models are blocked by your workspace's model policy | Your organization allows none of the models Computer Use needs | Ask your admin |
 
 See [Browser and computer use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md).
@@ -10292,7 +10429,7 @@ See [Projects](https://bearly.ai/docs/manual/projects.md).
 | "Codewords invalid. Make sure you typed them in correctly." | The three-word code didn't match | Paste or type the three words exactly as emailed |
 | "This code has expired. Send another code below, …" | A code works for 30 minutes after it's sent | Select **Send another code** and use the code from the newest email, or sign in with Microsoft or Google where they're offered |
 | "Too many sign-in attempts. Wait a few minutes and try again." | Too many wrong codes were entered in a short time | Wait a few minutes, then enter the code again |
-| No code email after a few minutes | Some school and work email systems hold messages for several minutes | Check spam, or wait: the code still works when it arrives within 30 minutes. A minute after the **Check your email** screen opens, **Send another code** emails a new one; use the newest. You can also sign in with Microsoft or Google instead |
+| No code email after a few minutes | Some school and work email systems hold messages for several minutes | Check spam, or wait: the code still works when it arrives within 30 minutes. A minute after the **Check your email** screen opens, **Send another code** emails a new one. If the screen then says "Either code works", use whichever email arrives first; otherwise use the newest. You can also sign in with Microsoft or Google instead |
 | "Desktop sign-in didn't finish. Make sure Bearly is open. If your browser blocks local network access, allow it for this site, then try again." | The browser couldn't hand the sign-in to the desktop app | Keep the desktop app open, allow local network access if asked, and select **Retry desktop sign-in** |
 | A device you don't recognize in **Settings** → **Devices** | Your account is signed in there | Select **Sign out** on it, or **Sign out all other devices** |
 | The browser extension asks you to connect again | It was disconnected, or its key was removed under **Settings** → **Devices** → **Browser extension and API keys** | Open the extension and select **Sign in with Bearly** |
@@ -10330,15 +10467,19 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Agentic (Compaction)**: A **History** setting, offered only on older chats that still show **History**. When a conversation gets long, Bearly writes a summary of the older part and keeps recent messages word for word, so long tool-heavy work can keep going. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#long-conversations-and-history).
 
+**Always (permissions)**: An answer on an approval card that lets Bearly do one kind of action, such as **Read files**, without asking, in every chat, on every device you're signed in on. It asks you to confirm first. Change it in **Settings** → **Permissions**. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
+
 **Always search documents**: A project chat setting that makes every answer in the project search the project's files first. It has no effect in end-to-end encrypted chats. See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md#always-search-documents-projects).
 
 **Analyst**: A paid plan above Pro that adds Deep Research (Standard) and People Search. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
 
-**Approval duration**: How long an approval lasts: **Once**, **This response** (until the answer ends), **This session** (until the chat reloads), or **This chat** (on this device until you revoke it). Bearly Browser's site card has no **Once** and starts on **This response**. Approvals never sync to your other devices. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
+**Approval card**: The card Bearly shows before it acts outside the chat. It names what Bearly is about to do and the kind of action, and you answer **Once**, **This chat**, or **Always**, or **Deny**. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md#approval-cards).
 
 **Archive**: Hides a chat from the main list without deleting it. **Archives** at the bottom of the sidebar lists archived chats, and an archived chat must be unarchived before it can be deleted. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#archive-chats).
 
 **Ask Experts**: The name `/council` shows in the `/` menu. See **Council of Experts**.
+
+**Ask first**: The default permission mode for a chat: Bearly asks before it acts, unless you've allowed that kind of action for this chat or always. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md#the-permissions-control).
 
 **Assets**: The heading in the `/` and `@` menu that lists the files in this chat and its project. See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md).
 
@@ -10369,6 +10510,10 @@ Every term below is written the way the app shows it. Each definition links to t
 **Chat management**: Lets the AI list, read, create, rename, move, and delete your chats, and read your plan and available models. It asks before listing, reading, or deleting, even with Full access. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#ask-bearly-to-manage-your-chats).
 
 **Chrome control**: In the desktop app, Bearly can read and act in your regular Chrome tabs through the Bearly extension, with your approval. See [Browser and computer use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#control-chrome).
+
+**Classic (Execution Mode)**: The default **Execution Mode**: "Bearly calls tools one at a time." Not the same as the **Classic** response style. See [Execution Mode](https://bearly.ai/docs/manual/chat/settings.md#execution-mode).
+
+**Code Mode**: The **Execution Mode** choice where "Bearly writes code that runs many tool calls at once", so tasks that read or check many things finish in fewer model steps. Set per chat in the sliders menu; an organization can turn it off. See [Execution Mode](https://bearly.ai/docs/manual/chat/settings.md#execution-mode).
 
 **Command menu**: Opens with <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux) or **All commands** in the chat's title menu. It holds chat actions such as **New**, **Rename**, **Download as Markdown**, and **New Routine**, and a list for switching chats. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#the-command-menu).
 
@@ -10408,13 +10553,15 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **End-to-end encryption**: An opt-in setting, labeled Beta, for new chats. Turn on end-to-end encryption and your new chats are encrypted on your devices. Bearly stores and syncs only the locked copies, and each message still goes to the model to be answered. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md#end-to-end-encryption).
 
+**Execution Mode**: A per-chat setting in the sliders menu: **Classic** (default) or **Code Mode**. It applies from the next message. See [Execution Mode](https://bearly.ai/docs/manual/chat/settings.md#execution-mode).
+
 ## F
 
 **Files**: The item in the chat's title menu, with a count, that opens the side panel's **Files** tab: every file in the chat, grouped by day, with **All**, **Uploaded**, **Generated**, and **Project** filters. A project's page also has a **Files** tab for the project's files, which every chat in the project can use. See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md#find-files-again-with-files) and [Projects](https://bearly.ai/docs/manual/projects.md#files-tab).
 
 **Free**: The plan with no charge. It includes a small daily and monthly allowance, and new chats use Bearly Fast. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
 
-**Full access**: A permission mode for one chat on one device that lets Bearly use your enabled tools without asking each time. It still asks before connecting a new service and before listing, reading, or deleting your chats. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md#full-access).
+**Full access**: A permission mode for one chat on one device that lets Bearly use your enabled tools without asking each time. It still asks before deleting, connecting a new service, reading your other chats, sending messages or spending past a reply's limits, and People Search lookups. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md#full-access).
 
 ## G
 
@@ -10431,6 +10578,8 @@ Every term below is written the way the app shows it. Each definition links to t
 **Imagine**: `/image` creates images from a description. Results open in an inline image editor. See [Images, video, and audio](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#imagine).
 
 ## L
+
+**Kind of action**: What an approval answer covers: **Read files**, **Change files**, **Run commands**, **Control your computer**, **Use websites in your browser**, **Use connected apps**, **Send messages**, or **Spend from your plan**. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md#kinds-of-action).
 
 **Launcher**: The screen a new chat opens on, with a headline, the message box, a project chip, and daily tips. See [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md#the-new-chat-launcher).
 
@@ -10468,7 +10617,9 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **People Search**: Identifies one named person after you confirm the right candidate, then builds a cited brief. It also finds people from a description and looks up work emails. Analyst and higher. See [Research](https://bearly.ai/docs/manual/capabilities/research.md#people-search).
 
-**Permissions**: The control at the foot of the composer for this chat's permission mode, **Standard** or **Full access**, and its saved approvals. Also the **Settings** pane with **Start new chats in Full access**. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md#the-permissions-control).
+**Per-reply limits**: How much one reply sends or makes before it asks: 3 messages, 4 images or speech clips, 1 video, 1 model run, and 5 paid lookups. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
+
+**Permissions**: The control at the foot of the composer for this chat's permission mode, **Ask first** or **Full access**, and what Bearly may do without asking, by kind of action. Also the **Settings** pane with your **Always** answers and **Start new chats in Full access**. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md#the-permissions-control).
 
 **Personalization**: Context you write about yourself (how to address you, your work, anything else useful), added to your chats only while **Use in chats** is on. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#personalization).
 
@@ -10522,7 +10673,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 ## S
 
-**Saved approvals**: Approvals you gave for longer than once in a chat. Review and revoke them in **Permissions**. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
+**Saved answers**: **This chat** and **Always** answers on approval cards. Review and change them in the chat's **Permissions** control; **Always** answers are also in **Settings** → **Permissions**. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
 
 **Scholar**: Searches academic papers, reads passages, and cites them with superscript markers. It runs when **Scholar** is **Auto**, or when you type `/scholar`. See [Research](https://bearly.ai/docs/manual/capabilities/research.md#scholar).
 
@@ -10540,13 +10691,13 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Skill Store**: The section of **Settings** → **Skills** in the desktop app for finding and installing skills. See [Connectors and skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md#skills).
 
-**Standard (permissions)**: The default permission mode: Bearly asks for approval when a tool needs it, and approvals you saved still apply. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
+**Standard (routine permissions)**: A routine's default permission mode: a run can use only the tools you turned on for that routine, and anything else that needs approval is denied. See [Routines](https://bearly.ai/docs/manual/capabilities/routines.md#permission-mode).
 
 **Standard encryption**: The lock label on chats that aren't end-to-end encrypted, shown when end-to-end encryption is available to you. Chats and files are encrypted at rest, each with its own key. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
 
 **Standard retention**: What the model picker's **Standard** badge means: the model's main route has no verified zero-data-retention guarantee. See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
 
-**Steps**: A side panel tab listing everything one answer did: thinking, each tool call with its input and result, and how long each took, with **Stop** on a running step. Open it from the line under an answer, such as "Worked 28s · 4 steps". See [Work with answers](https://bearly.ai/docs/manual/chat/answers.md#thinking-steps).
+**Steps**: A side panel tab listing everything one answer did: thinking, each tool call with its input and result, and how long each took, not counting waits for your approval, with **Stop** on a running step. In **Code Mode**, a step that made many calls is one row with a call count that opens to each call. Open it from the line under an answer, such as "Worked 28s · 4 steps". See [Work with answers](https://bearly.ai/docs/manual/chat/answers.md#thinking-steps).
 
 **Sync a folder**: A project's **Files** tab option in the desktop app that keeps a folder on your computer copied into the project's files. See [Projects](https://bearly.ai/docs/manual/projects.md#sync-a-folder).
 

@@ -27,15 +27,19 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Agentic (Compaction)**: A **History** setting, offered only on older chats that still show **History**. When a conversation gets long, Bearly writes a summary of the older part and keeps recent messages word for word, so long tool-heavy work can keep going. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#long-conversations-and-history).
 
+**Always (permissions)**: An answer on an approval card that lets Bearly do one kind of action, such as **Read files**, without asking, in every chat, on every device you're signed in on. It asks you to confirm first. Change it in **Settings** → **Permissions**. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
+
 **Always search documents**: A project chat setting that makes every answer in the project search the project's files first. It has no effect in end-to-end encrypted chats. See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md#always-search-documents-projects).
 
 **Analyst**: A paid plan above Pro that adds Deep Research (Standard) and People Search. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
 
-**Approval duration**: How long an approval lasts: **Once**, **This response** (until the answer ends), **This session** (until the chat reloads), or **This chat** (on this device until you revoke it). Bearly Browser's site card has no **Once** and starts on **This response**. Approvals never sync to your other devices. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
+**Approval card**: The card Bearly shows before it acts outside the chat. It names what Bearly is about to do and the kind of action, and you answer **Once**, **This chat**, or **Always**, or **Deny**. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md#approval-cards).
 
 **Archive**: Hides a chat from the main list without deleting it. **Archives** at the bottom of the sidebar lists archived chats, and an archived chat must be unarchived before it can be deleted. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#archive-chats).
 
 **Ask Experts**: The name `/council` shows in the `/` menu. See **Council of Experts**.
+
+**Ask first**: The default permission mode for a chat: Bearly asks before it acts, unless you've allowed that kind of action for this chat or always. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md#the-permissions-control).
 
 **Assets**: The heading in the `/` and `@` menu that lists the files in this chat and its project. See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md).
 
@@ -66,6 +70,10 @@ Every term below is written the way the app shows it. Each definition links to t
 **Chat management**: Lets the AI list, read, create, rename, move, and delete your chats, and read your plan and available models. It asks before listing, reading, or deleting, even with Full access. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#ask-bearly-to-manage-your-chats).
 
 **Chrome control**: In the desktop app, Bearly can read and act in your regular Chrome tabs through the Bearly extension, with your approval. See [Browser and computer use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#control-chrome).
+
+**Classic (Execution Mode)**: The default **Execution Mode**: "Bearly calls tools one at a time." Not the same as the **Classic** response style. See [Execution Mode](https://bearly.ai/docs/manual/chat/settings.md#execution-mode).
+
+**Code Mode**: The **Execution Mode** choice where "Bearly writes code that runs many tool calls at once", so tasks that read or check many things finish in fewer model steps. Set per chat in the sliders menu; an organization can turn it off. See [Execution Mode](https://bearly.ai/docs/manual/chat/settings.md#execution-mode).
 
 **Command menu**: Opens with <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux) or **All commands** in the chat's title menu. It holds chat actions such as **New**, **Rename**, **Download as Markdown**, and **New Routine**, and a list for switching chats. See [Organize chats](https://bearly.ai/docs/manual/chat/organize.md#the-command-menu).
 
@@ -105,13 +113,15 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **End-to-end encryption**: An opt-in setting, labeled Beta, for new chats. Turn on end-to-end encryption and your new chats are encrypted on your devices. Bearly stores and syncs only the locked copies, and each message still goes to the model to be answered. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md#end-to-end-encryption).
 
+**Execution Mode**: A per-chat setting in the sliders menu: **Classic** (default) or **Code Mode**. It applies from the next message. See [Execution Mode](https://bearly.ai/docs/manual/chat/settings.md#execution-mode).
+
 ## F
 
 **Files**: The item in the chat's title menu, with a count, that opens the side panel's **Files** tab: every file in the chat, grouped by day, with **All**, **Uploaded**, **Generated**, and **Project** filters. A project's page also has a **Files** tab for the project's files, which every chat in the project can use. See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md#find-files-again-with-files) and [Projects](https://bearly.ai/docs/manual/projects.md#files-tab).
 
 **Free**: The plan with no charge. It includes a small daily and monthly allowance, and new chats use Bearly Fast. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
 
-**Full access**: A permission mode for one chat on one device that lets Bearly use your enabled tools without asking each time. It still asks before connecting a new service and before listing, reading, or deleting your chats. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md#full-access).
+**Full access**: A permission mode for one chat on one device that lets Bearly use your enabled tools without asking each time. It still asks before deleting, connecting a new service, reading your other chats, sending messages or spending past a reply's limits, and People Search lookups. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md#full-access).
 
 ## G
 
@@ -128,6 +138,8 @@ Every term below is written the way the app shows it. Each definition links to t
 **Imagine**: `/image` creates images from a description. Results open in an inline image editor. See [Images, video, and audio](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#imagine).
 
 ## L
+
+**Kind of action**: What an approval answer covers: **Read files**, **Change files**, **Run commands**, **Control your computer**, **Use websites in your browser**, **Use connected apps**, **Send messages**, or **Spend from your plan**. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md#kinds-of-action).
 
 **Launcher**: The screen a new chat opens on, with a headline, the message box, a project chip, and daily tips. See [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md#the-new-chat-launcher).
 
@@ -165,7 +177,9 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **People Search**: Identifies one named person after you confirm the right candidate, then builds a cited brief. It also finds people from a description and looks up work emails. Analyst and higher. See [Research](https://bearly.ai/docs/manual/capabilities/research.md#people-search).
 
-**Permissions**: The control at the foot of the composer for this chat's permission mode, **Standard** or **Full access**, and its saved approvals. Also the **Settings** pane with **Start new chats in Full access**. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md#the-permissions-control).
+**Per-reply limits**: How much one reply sends or makes before it asks: 3 messages, 4 images or speech clips, 1 video, 1 model run, and 5 paid lookups. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
+
+**Permissions**: The control at the foot of the composer for this chat's permission mode, **Ask first** or **Full access**, and what Bearly may do without asking, by kind of action. Also the **Settings** pane with your **Always** answers and **Start new chats in Full access**. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md#the-permissions-control).
 
 **Personalization**: Context you write about yourself (how to address you, your work, anything else useful), added to your chats only while **Use in chats** is on. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#personalization).
 
@@ -219,7 +233,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 ## S
 
-**Saved approvals**: Approvals you gave for longer than once in a chat. Review and revoke them in **Permissions**. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
+**Saved answers**: **This chat** and **Always** answers on approval cards. Review and change them in the chat's **Permissions** control; **Always** answers are also in **Settings** → **Permissions**. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
 
 **Scholar**: Searches academic papers, reads passages, and cites them with superscript markers. It runs when **Scholar** is **Auto**, or when you type `/scholar`. See [Research](https://bearly.ai/docs/manual/capabilities/research.md#scholar).
 
@@ -237,13 +251,13 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Skill Store**: The section of **Settings** → **Skills** in the desktop app for finding and installing skills. See [Connectors and skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md#skills).
 
-**Standard (permissions)**: The default permission mode: Bearly asks for approval when a tool needs it, and approvals you saved still apply. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
+**Standard (routine permissions)**: A routine's default permission mode: a run can use only the tools you turned on for that routine, and anything else that needs approval is denied. See [Routines](https://bearly.ai/docs/manual/capabilities/routines.md#permission-mode).
 
 **Standard encryption**: The lock label on chats that aren't end-to-end encrypted, shown when end-to-end encryption is available to you. Chats and files are encrypted at rest, each with its own key. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
 
 **Standard retention**: What the model picker's **Standard** badge means: the model's main route has no verified zero-data-retention guarantee. See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
 
-**Steps**: A side panel tab listing everything one answer did: thinking, each tool call with its input and result, and how long each took, with **Stop** on a running step. Open it from the line under an answer, such as "Worked 28s · 4 steps". See [Work with answers](https://bearly.ai/docs/manual/chat/answers.md#thinking-steps).
+**Steps**: A side panel tab listing everything one answer did: thinking, each tool call with its input and result, and how long each took, not counting waits for your approval, with **Stop** on a running step. In **Code Mode**, a step that made many calls is one row with a call count that opens to each call. Open it from the line under an answer, such as "Worked 28s · 4 steps". See [Work with answers](https://bearly.ai/docs/manual/chat/answers.md#thinking-steps).
 
 **Sync a folder**: A project's **Files** tab option in the desktop app that keeps a folder on your computer copied into the project's files. See [Projects](https://bearly.ai/docs/manual/projects.md#sync-a-folder).
 

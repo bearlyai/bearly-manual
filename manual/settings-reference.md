@@ -102,10 +102,11 @@ Each organization you belong to has a row here. Selecting one closes Settings an
 
 ### Permissions
 
-Applies to new chats on this device.
+**What Bearly may do without asking** holds your **Always** answers, which follow your account: "Always applies in every chat, on every device you're signed in on." **Start new chats in Full access** applies to new chats on this device.
 
 | Control | Options and default | What it does |
 | --- | --- | --- |
+| **Read files**, **Change files**, **Run commands**, **Control your computer**, **Use websites in your browser**, **Use connected apps**, **Send messages**, **Spend from your plan** | **Ask** (default) or **Always** | **Always** lets Bearly do that kind of action without asking, in every chat. Choosing it asks you to confirm, such as **Always allow reading files**. Below the list: "Bearly asks every time before it deletes chats or files, publishes or shares, changes who pays, connects an account, or sets up unattended access. Reading your other chats can be allowed for one chat, never always." When your team requires asking, the menus are off and read **Ask**. |
 | **Start new chats in Full access** | Switch, off by default. This device only. | "New chats on this device use your enabled tools without asking. Not recommended unless you know what you're doing." Asks you to confirm first ("Start every new chat in Full access?"). Unavailable when your organization doesn't allow Full access. |
 
 See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
@@ -184,7 +185,7 @@ Saved on this device only. **Theme** shows each theme as a card; **Font** and **
 
 | Control | Options and default | What it does |
 | --- | --- | --- |
-| **Zero Data Retention only** | Switch, off by default. Saved to your account. | Bearly shows only zero-retention models, and automatic fallbacks stay on them too. Applies to chat models. See [Zero Data Retention only](https://bearly.ai/docs/manual/chat/models.md#zero-data-retention-only). |
+| **Zero Data Retention only** | Switch, off by default. Saved to your account. | Bearly shows only zero-retention models, and automatic fallbacks stay on them too. Applies to chat models and text to speech. See [Zero Data Retention only](https://bearly.ai/docs/manual/chat/models.md#zero-data-retention-only). |
 | **Unitemized billing** | Not available yet; the switch doesn't appear. When it launches: off by default, paid plans, and on a managed organization only when its policy allows it. | "A more private way to be billed. Bearly keeps one rounded total per day instead of a record of each request's model, cost, and time." **How it works** opens the guide. Asks you to confirm first. See [Unitemized billing](https://bearly.ai/docs/unitemized-billing.md). |
 | **End-to-end encryption** (**Beta**) | **Set up end-to-end encryption**, or **Approve this device** on a new device | Encrypts new chats on your devices. After setup: **Encrypt all new chats with this key**, **Approved devices**, **Approve a device**, and **Recovery** (passkeys and **Replace recovery phrase**). |
 
@@ -218,7 +219,7 @@ See [Connectors and Skills](https://bearly.ai/docs/manual/capabilities/connector
 
 ### Chrome extension
 
-**Control Chrome from chat**: "Use your regular Chrome tabs and signed-in sessions." Bearly can navigate, read pages, fill forms, and inspect console and network activity, asking for approval in Standard.
+**Control Chrome from chat**: "Use your regular Chrome tabs and signed-in sessions." Bearly can navigate, read pages, fill forms, and inspect console and network activity, asking for approval in **Ask first**.
 
 | Status | What it means |
 | --- | --- |
@@ -229,6 +230,8 @@ See [Connectors and Skills](https://bearly.ai/docs/manual/capabilities/connector
 | **Disabled by your workspace** | "Your workspace policy does not allow Chrome control." |
 
 This pane appears only in the desktop app. Chrome control connects on your computer and doesn't need the extension's own Bearly sign-in. Bearly Browser is a separate, isolated browser.
+
+Bearly may also offer an [install card in a desktop chat](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#install-the-chrome-extension-from-chat).
 
 ## Desktop app
 
@@ -249,7 +252,7 @@ This pane appears only in the desktop app. Chrome control connects on your compu
 | Control | What it does |
 | --- | --- |
 | **Managed runtimes** | "Desktop tools Bearly installs and verifies for local work." Each shows **Ready**, **Installing**, **Not installed**, **Error**, or **Verifying**, when it installs, and a verify button. **Refresh runtimes** checks again. |
-| **Windows Computer Use helper** | Windows only. "Install the helper for reliable control of protected and background windows." Installing, updating, or removing it asks for administrator approval. |
+| **Windows Computer Use helper** | Windows only. An optional helper installed for everyone on the PC; Computer Use works without it. The section has **Install** or **Update**, and the trash icon labelled **Remove Computer Use helper**. Installing, updating, or removing it asks for administrator approval. |
 | **Environment variables** | "Inherited by local commands, skills, video downloads, and runtime checks." **Add variable**, then **Save**, or **Reset** to discard. Values are hidden until you reveal them. Saved on this device only. |
 
 ### Browser
@@ -257,7 +260,7 @@ This pane appears only in the desktop app. Chrome control connects on your compu
 | Control | Options and default | What it does |
 | --- | --- | --- |
 | **Enable Browser** | On by default | "Keep Bearly Browser available to you and your chats. Turning it off does not delete site data." |
-| **Allow chats to use Browser** | On by default | Lets chats drive Bearly Browser. In Standard, Bearly asks before new sites. In Full access it doesn't. |
+| **Allow chats to use Browser** | On by default | Lets chats drive Bearly Browser. In **Ask first**, Bearly asks before new sites. In Full access it doesn't. |
 | **Block ads and trackers** | On by default | Blocks ads and trackers in Bearly Browser |
 | **Import browser cookies** | Choose a **Browser profile** | "Bring current site sign-ins from Chrome or Edge into Bearly Browser. Cookies only—never passwords, history, bookmarks, or autofill." |
 | **Reset open tabs** | Button | "Close tabs and clear workspace history and approvals. Site sign-ins remain." |
@@ -287,7 +290,8 @@ Appears only when your organization's policy turns on **Personal remote modules*
 | Setting | Where |
 | --- | --- |
 | Web, Scholar, Style, Reasoning, Memories, History for one chat | The sliders icon beside the composer. See [Chat settings](https://bearly.ai/docs/manual/chat/settings.md). |
-| **Permissions** (Standard or Full access) for one chat | **Permissions** at the foot of the composer. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md). |
+| **Execution Mode** for one chat: **Classic** (default), "Bearly calls tools one at a time.", or **Code Mode**, "Bearly writes code that runs many tool calls at once." Applies from the next message. | The sliders icon beside the composer. See [Execution Mode](https://bearly.ai/docs/manual/chat/settings.md#execution-mode). |
+| **Permissions** (**Ask first** or Full access, and **This chat** answers) for one chat | **Permissions** at the foot of the composer. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md). |
 | Project defaults and skills | The project's **Settings** tab. Sharing and passwords are on its **Sharing** tab, and folder sync on its **Files** tab. See [Projects](https://bearly.ai/docs/manual/projects.md). |
 | Organization members, policies, seats | Account menu → **Organizations**, or the organization's row in Settings. See [Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md). |
 

@@ -1,6 +1,6 @@
 ---
 title: "Fix common problems"
-description: "What a Bearly message or symptom means and what to do about it — upload and PDF password errors, failed answers, a paused queue, usage limits and out-of-credits notices, hidden models, missing features, desktop-only tools, locked encrypted chats, routines that didn't run, connectors, email and text, Deep Research, Full access, Chrome control, voice, dictation, meetings, sharing, and sign-in."
+description: "What a Bearly message or symptom means and what to do about it — upload and PDF password errors, failed answers, a paused queue, slow many-step tasks and Code Mode, usage limits and out-of-credits notices, hidden models, missing features, desktop-only tools, locked encrypted chats, routines that didn't run, connectors, email and text, Deep Research, Full access, Chrome control, voice, dictation, meetings, sharing, and sign-in."
 canonical: "https://bearly.ai/docs/manual/troubleshooting/"
 markdown: "https://bearly.ai/docs/manual/troubleshooting.md"
 ---
@@ -9,7 +9,7 @@ markdown: "https://bearly.ai/docs/manual/troubleshooting.md"
 
 HTML: [https://bearly.ai/docs/manual/troubleshooting/](https://bearly.ai/docs/manual/troubleshooting/)
 
-> What a Bearly message or symptom means and what to do about it — upload and PDF password errors, failed answers, a paused queue, usage limits and out-of-credits notices, hidden models, missing features, desktop-only tools, locked encrypted chats, routines that didn't run, connectors, email and text, Deep Research, Full access, Chrome control, voice, dictation, meetings, sharing, and sign-in.
+> What a Bearly message or symptom means and what to do about it — upload and PDF password errors, failed answers, a paused queue, slow many-step tasks and Code Mode, usage limits and out-of-credits notices, hidden models, missing features, desktop-only tools, locked encrypted chats, routines that didn't run, connectors, email and text, Deep Research, Full access, Chrome control, voice, dictation, meetings, sharing, and sign-in.
 
 These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
 
@@ -55,6 +55,8 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 | Bearly stops searching the web partway through an answer | Web Search runs at most twice per answer | Ask a follow-up, and the next answer can search again |
 | An answer has no web sources | The chat's **Web** setting is **Off**, which also removes `/web-search` | Open the sliders button and set **Web** to **Auto** |
 | Bearly seems to forget the start of a long chat | Once a chat is long, Bearly shortens older tool results and long earlier messages, then drops the oldest messages if that isn't enough | Restate the key facts, or start a new chat with a short summary of this one. If this chat's sliders menu shows **History**, you can also choose **Agentic (Compaction)**; "Conversation compacted so you can keep going" is normal there. See [Long conversations and History](https://bearly.ai/docs/manual/chat/settings.md#long-conversations-and-history) |
+| A task that reads or checks many things, such as every chat in a project, takes a long time, with one tool call after another in **Steps** | The chat's **Execution Mode** is **Classic**, which calls tools one at a time | Open the sliders button, set **Execution Mode** to **Code Mode**, and send the request again. See [Execution Mode](https://bearly.ai/docs/manual/chat/settings.md#execution-mode) |
+| **Execution Mode** shows a lock and can't be changed | Your organization turned off **Code Mode**; hover the lock to see "Set by your team's policy" | Ask your organization's admin |
 | The AI used a different file or tool than you meant | It chose on its own | Name the file with `@` and the tool with `/` or `@`. See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md#reference-tools-files-and-skills) |
 
 ## Usage limits and credits
@@ -92,6 +94,9 @@ See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits
 | A model marked **Unavailable** | The model is suspended | Select **Read the announcement** for details, and choose another model |
 | The chat answers with a different model than the one you picked | Your choice isn't allowed right now (organization policy, **Zero Data Retention only**, or plan), so Bearly uses the first available model in the list without changing your saved choice | Pick a model that's allowed |
 | No model button in the composer, and no **Model** in **This chat** | Your organization or project fixed the model | Ask the project owner or your admin |
+| **Read Aloud isn't available**, or "Your organization's model policy doesn't allow any speech model, so audio can't be created." | Your organization's policy denies every voice engine | Ask your admin |
+| "Your organization's model policy doesn't allow _engine_. Choose another speech model." in Voice Studio | The engine you picked isn't allowed, but another is | Pick another engine in the studio's model switch |
+| "No speech model that meets your Zero Data Retention only setting is available, so audio can't be created.", or "_Engine_ doesn't meet your Zero Data Retention only setting. Choose another speech model." | **Zero Data Retention only** allows only the **OpenAI** voice engine, and your organization's policy may deny it | Pick **OpenAI** in Voice Studio; if that's refused too, ask your admin or turn the setting off |
 
 See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
 
@@ -103,7 +108,7 @@ When a `/` command or a control you expect isn't there, one of these is usually 
 - **Your organization.** An admin can turn off any feature, and a `/` reference can't bring it back. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 - **The desktop app.** Work locally, Computer Use, Bearly Browser, Chrome control, installed skills, and running routines need it. See [Desktop-only features](#desktop-only-features-on-the-web-or-a-phone).
 - **What's in the chat.** The document tools appear once the chat or its project has a file. **Read aloud** appears on answers that are all text.
-- **The chat's settings.** Web Search, Image Search, and Read Site need **Web** set to **Auto** in the sliders button. Scholar runs only when **Scholar** is **Auto**; `/scholar` forces it for one message.
+- **The chat's settings.** Web Search, Image Search, and Read Site need **Web** set to **Auto** in the sliders button. Scholar runs only when **Scholar** is **Auto**; `/scholar` forces it for one message. **Code Mode** applies from the message after you choose it in **Execution Mode**.
 - **An encrypted chat.** Search Docs and Memories aren't available there. See [End-to-end encrypted chats](#end-to-end-encrypted-chats).
 
 Messages that mean an admin turned something off:
@@ -261,21 +266,26 @@ See [Research](https://bearly.ai/docs/manual/capabilities/research.md).
 | "Update Bearly to keep using Full access on this device. Until then, Bearly asks before using tools." | The desktop app is too old | Update the desktop app |
 | "Your team turned off Full access. Bearly asks before using tools until your team turns it back on." | Your admin turned it off | Ask your admin |
 | "Full access isn't available right now. Bearly asks before using tools until it is, then turns Full access back on." | A temporary block | Nothing to do; it turns back on by itself. You can also select **Resume full access** |
-| **Start new chats in Full access** shows "Full Access is not available yet.", "Full Access is unavailable for this account.", or "Your team administrator turned off Full Access." | Full access isn't available to your account here | Use **Standard**, or ask your admin |
+| **Start new chats in Full access** shows "Full Access is not available yet.", "Full Access is unavailable for this account.", or "Your team administrator turned off Full Access." | Full access isn't available to your account here | Use **Ask first**, or ask your admin |
 | "Could not check Full Access availability. Try again when connected." | Bearly couldn't reach its server | Check your connection and try again |
-| Full access still asks before some actions | It never covers connecting a new service, listing, reading, or deleting your chats, People Search requests, Computer Use safety checks, routine consent, or certificate warnings | Answer the card. This is by design |
-| You approved something, and another device, or the same chat after a reload, asks again | Approvals stay on the device where you gave them. **This response** ends with the answer, and **This session** ends when the chat reloads | Approve it again. Choose **This chat** to keep the approval on this device until you revoke it |
+| Full access still asks before some actions | It never covers deleting, connecting a new service, reading your other chats, sending messages or spending past a reply's limits, People Search lookups, Computer Use safety checks, routine consent, or certificate warnings | Answer the card. For sending and spending, **This chat** or **Always** stops the cards |
+| You chose **This chat**, and another device asks again | **This chat** answers stay on the device where you gave them | Answer it there too, or choose **Always** to cover every device |
+| Cards offer only **Once**, with "Your team requires asking each time." | Your organization doesn't allow Full access for you, so **This chat** and **Always** aren't offered either | Answer each card, or ask your admin about [Agent access](https://bearly.ai/docs/manual/organizations.md) |
+| In **Code Mode**, you answered a step's card with **Once**, and cards still come up during the step | The step's card covers the kinds of action it lists. Deleting, reading your other chats, and the per-reply limits always ask on their own, and with "Your team requires asking each time." each action asks for itself | Answer each card. See [One card for a whole step](https://bearly.ai/docs/manual/capabilities/permissions.md#one-card-for-a-whole-step) |
+| **Send more messages?**, **Make more images or speech?**, or another "more" card mid-answer | The reply passed its [per-reply limit](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits) | **Once** for one more, or **This chat** to stop asking in this chat |
 
 See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
 
 ## Bearly Browser, Chrome, and Computer Use
+
+Bearly may also offer an [install card in a desktop chat](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#install-the-chrome-extension-from-chat).
 
 | You see | Why | What to do |
 |---|---|---|
 | "Chrome extension not connected" in **Settings** → **Chrome extension** | Chrome control needs the Bearly extension in Chrome | Select **Install Chrome extension**, then keep Chrome and the desktop app open until it says "Connected to Chrome". The extension doesn't need its own sign-in for this |
 | "Finishing secure connection…" | Pairing is in progress | Wait; the status updates on its own |
 | **Update Bearly** in the Chrome pane | This desktop version can't manage the connection | Update the desktop app |
-| Chrome steps fail in a chat with Full access, and Bearly says the extension needs an update | The extension is too old for Full access | Update the extension in Chrome, or switch the chat to **Standard** |
+| Chrome steps fail in a chat with Full access, and Bearly says the extension needs an update | The extension is too old for Full access | Update the extension in Chrome, or switch the chat to **Ask first** |
 | Chrome's debugger banner stays on after the chat ends | Finishing or closing a chat doesn't detach Bearly from Chrome tabs | Ask Bearly to detach from the tab, or quit Chrome or the desktop app |
 | A Chrome step fails | The action didn't complete, often because Bearly isn't attached to that tab | Ask Bearly to attach to the tab again, then retry |
 | "Browser can keep up to eight tabs open." | Bearly Browser holds up to 8 tabs across chats | Close tabs you don't need |
@@ -283,7 +293,7 @@ See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
 | Bearly Browser isn't signed in to a site you use | Bearly Browser keeps its own sign-ins | Sign in inside Bearly Browser, or use **Import browser cookies** in **Settings** → **Browser** |
 | "Computer Use needs Accessibility and Screen Recording access. Open System Settings → Privacy & Security and enable Bearly in Accessibility and Screen Recording, then try again." The message can name only one of them | macOS hasn't granted Bearly those permissions | Turn on Bearly in each place the message names, then ask again |
 | "Computer Use is already working on another task." | One Computer Use task runs per chat | Wait, or select **Stop** on the **Computer** chip |
-| **Finish setting up Computer Use** on Windows | The optional Windows helper isn't installed | Select **Finish setup** and approve as an administrator, or skip it |
+| **Not installed** under **Settings** → **Runtime** → **Windows Computer Use helper** | The optional Windows helper isn't installed | Nothing to fix. Computer Use works without the helper |
 | A message that Computer Use's models are blocked by your workspace's model policy | Your organization allows none of the models Computer Use needs | Ask your admin |
 
 See [Browser and computer use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md).
@@ -355,7 +365,7 @@ See [Projects](https://bearly.ai/docs/manual/projects.md).
 | "Codewords invalid. Make sure you typed them in correctly." | The three-word code didn't match | Paste or type the three words exactly as emailed |
 | "This code has expired. Send another code below, …" | A code works for 30 minutes after it's sent | Select **Send another code** and use the code from the newest email, or sign in with Microsoft or Google where they're offered |
 | "Too many sign-in attempts. Wait a few minutes and try again." | Too many wrong codes were entered in a short time | Wait a few minutes, then enter the code again |
-| No code email after a few minutes | Some school and work email systems hold messages for several minutes | Check spam, or wait: the code still works when it arrives within 30 minutes. A minute after the **Check your email** screen opens, **Send another code** emails a new one; use the newest. You can also sign in with Microsoft or Google instead |
+| No code email after a few minutes | Some school and work email systems hold messages for several minutes | Check spam, or wait: the code still works when it arrives within 30 minutes. A minute after the **Check your email** screen opens, **Send another code** emails a new one. If the screen then says "Either code works", use whichever email arrives first; otherwise use the newest. You can also sign in with Microsoft or Google instead |
 | "Desktop sign-in didn't finish. Make sure Bearly is open. If your browser blocks local network access, allow it for this site, then try again." | The browser couldn't hand the sign-in to the desktop app | Keep the desktop app open, allow local network access if asked, and select **Retry desktop sign-in** |
 | A device you don't recognize in **Settings** → **Devices** | Your account is signed in there | Select **Sign out** on it, or **Sign out all other devices** |
 | The browser extension asks you to connect again | It was disconnected, or its key was removed under **Settings** → **Devices** → **Browser extension and API keys** | Open the extension and select **Sign in with Bearly** |

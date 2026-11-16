@@ -142,7 +142,7 @@ The app loads the current Bearly from the web, so most improvements arrive witho
 
 
 
-1. Install **Bearly Companion** from the Chrome Web Store — in the desktop app, **Settings** → **Chrome extension** → **Install Chrome extension** opens it.
+1. Install **Bearly Companion** from the Chrome Web Store — in the desktop app, **Settings** → **Chrome extension** → **Install Chrome extension** opens it. Bearly may also offer an [install card in a desktop chat](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#install-the-chrome-extension-from-chat).
 2. Select the Bearly icon in the Chrome toolbar — the side panel opens.
 3. Select **Sign in with Bearly**. In the window that opens, check the account shown under **Connect the Bearly extension**, then select **Continue** — the extension gets its own key, not your dashboard login.
 4. Select **Allow website access** and approve Chrome's request — this one grant covers every site, and Bearly still reads a page only when you choose an action. The panel then shows **Ready for this page**.
@@ -174,6 +174,7 @@ Bearly has no passwords. On the sign-in screen, enter your **Email** and select 
 | Web research and Deep Research | Yes | Yes | Yes | Yes | No |
 | Images, video, and spoken audio | Yes | Yes | Yes | Yes | No |
 | Run Python (cloud) | Yes | Yes | Yes | Yes | No |
+| Code Mode (**Execution Mode**) | Yes | Yes | Yes | Yes; in Lockdown Mode, tools are called one at a time | No |
 | Voice calls | Yes, not in Firefox | Where the browser supports it | Yes | Yes | No |
 | Dictation | Yes | Yes | Yes | Yes | No |
 | Meeting recording with the microphone | Yes | Yes | Yes | Yes | No |

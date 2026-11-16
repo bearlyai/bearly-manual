@@ -31,6 +31,8 @@ Every Bearly capability is a building block: it takes something in, does one job
 
 **Projects share files across chats.** Files on a project's **Files** tab are available to every chat in that project: they appear in the `@` menu, and the document tools search them. Turn on **Always search documents** in the project's chat settings and every answer searches them first. See [Projects](https://bearly.ai/docs/manual/projects.md).
 
+**Code Mode chains tools inside one step.** With **Execution Mode** set to **Code Mode**, Bearly writes code that calls many tools at once and works through their results before the model sees them, so a chain of reads and calculations can finish in one step. What it keeps between steps lasts until the answer ends; files it saves stay in the chat. See [Execution Mode](https://bearly.ai/docs/manual/chat/settings.md#execution-mode).
+
 **Routines replay a chain on a schedule.** A routine runs a saved prompt in its own chat at the times you set, with a smaller set of tools, and each run can build on the ones before it. See [Routines](https://bearly.ai/docs/manual/capabilities/routines.md) and [Routines run a smaller toolset](#routines-run-a-smaller-toolset).
 
 ## The block catalog
@@ -116,7 +118,7 @@ Details: [Images, video, and audio](https://bearly.ai/docs/manual/capabilities/i
 | Block | Takes | Produces | Plan | Where | In Routines | Council experts |
 |---|---|---|---|---|---|---|
 | **Imagine** `/image` | A description, and optional reference images | Images in the inline image editor, ready to download; a PNG with a transparent background when you ask for one in the chat | Any | All | No | No |
-| **Touch Up** `/edit-image` | One or more images in the chat, and optionally an area to change | Edited, extended, or combined images; a transparent-background PNG when you ask to remove the background | Any | All | No | No |
+| **Touch Up** `/edit-image` | One or more images in the chat, and optionally an area to change | Edited, extended, or combined images; a transparent-background PNG when you ask to remove the background or edit an image that has one | Any | All | No | No |
 | **Make Video** `/video` | A description, and optionally an image as the start frame (at most 2.5 times as wide as tall, or as tall as wide) plus an end frame | A 4 to 15-second MP4 with generated sound, saved in the chat | Any | All | No | No |
 | **Edit Video** `/edit-video` | A clip of 3 to 10 seconds, 720 to 2160 pixels on each side, under 50 MB | A separate edited clip; the original stays as it was | Any | All | No | No |
 | **Read Aloud** `/say`, and Voice Studio | Text: a reply, your message, or a script, up to about 22,500 characters of English (about 7,500 in Chinese, Japanese or Korean) | Spoken audio saved as a chat file; Voice Studio for voices, delivery, and takes | Any | All | No | No |
@@ -147,6 +149,7 @@ Details: [Routines](https://bearly.ai/docs/manual/capabilities/routines.md), [Co
 | **Computer Use** `/computer` | A task in an app that's open on screen | The task done by clicking and typing, and a **Computer Use** step listing the actions | Any | Desktop | No | No |
 | **Chat management** (ask in any chat) | A request to list, read, create, rename, move, or delete chats, to create a project, or to check your plan and models | Your chat list, an earlier chat's contents, the change, or your plan and the models this chat can use; listing, reading, and deleting ask you first | Any | All | No | No |
 | **Prompt templates** (sidebar **Prompt templates**; run from `/` → **Skills**) | Values for the template's fields, and optional files | A filled form in the chat that runs as a prompt and can run again with new values | Any | All | No | No |
+| **Code Mode** (sliders menu → **Execution Mode**) | A task that needs many tool calls, such as reading many chats, pages, or files, then counting, matching, or totaling what they say | The same results as the tools it calls, worked through together in one step; in **Steps**, one row per step with its call count | Any | All; on a device that can't run the code, such as an iPhone in Lockdown Mode, tools are looked up and called one at a time | No; routines use Classic | No |
 | **Remote modules** (tools labeled `fn-…`) | Tools from a server you or your admin add | That server's results | Any | Web app and desktop app; servers on a private network need the desktop app | No | No |
 
 ### Organize and share
@@ -246,7 +249,7 @@ In an organization, an admin's policy can turn off any block. The `/` label then
 - **Sharing** off removes Share. **Public links** and **Share with people and teams** decide who can open a published Page.
 - **Memory Recall** off turns off Recall and **Memories**.
 
-Most other blocks have their own control: **Images**, **Video**, **Transcription**, **Text to speech**, **Voice**, **Dictation**, **Meetings**, **Council**, **Deep Research**, **People Search**, **Charts**, **Routines**, **Work locally**, **Computer Use**, **Browser**, **Chrome extension browser**, **MCP Connectors**, **Skills**, **Email notifications**, **Text messages**, and **Chat management**. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
+Most other blocks have their own control: **Images**, **Video**, **Transcription**, **Text to speech**, **Voice**, **Dictation**, **Meetings**, **Council**, **Deep Research**, **People Search**, **Charts**, **Routines**, **Work locally**, **Computer Use**, **Browser**, **Chrome extension browser**, **Code Mode**, **MCP Connectors**, **Skills**, **Email notifications**, **Text messages**, and **Chat management**. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
 ### Desktop-only blocks
 
@@ -281,9 +284,11 @@ Turn on **Zero Data Retention only** and Bearly shows only zero-retention models
 
 ### Approvals and Full access
 
-- In **Standard** permissions, Bearly asks before a tool reaches outside the chat: local files, desktop control, browsers, connectors, skill scripts, People Search, and listing, reading, or deleting your chats. The chain waits at that step until you answer. **Needs attention**, at the top of the chat sidebar, lists the chats waiting on you.
-- Approvals you save stay on this device: **This response** lasts until the answer ends, **This session** until the chat reloads, and **This chat** until you revoke it. They never sync and never authorize a routine.
-- **Full access** lets one chat on one device use your enabled tools without asking. It still asks before connecting a new service, before listing, reading, or deleting your chats, before People Search runs, before giving a routine browser access or unattended local access, and for Computer Use safety checks and certificate warnings.
+- In **Ask first**, Bearly asks before a tool reaches outside the chat: local files, desktop control, browsers, connectors, skill scripts, People Search, and listing, reading, or deleting your chats. The chain waits at that step until you answer. **Needs attention**, at the top of the chat sidebar, lists the chats waiting on you.
+- You answer for a kind of action: **Once**, **This chat** (this chat on this device), or **Always** (every chat, every device you're signed in on). None of them authorizes a routine.
+- One reply sends up to 3 messages and makes up to 4 images or speech clips, 1 video, 1 model run, and 5 paid lookups before it asks. A chain that emails each person separately, or makes a set of images, stops at the limit until you answer; **This chat** for **Send messages** or **Spend from your plan** lets it finish. See [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
+- In **Code Mode**, one card covers every kind of action a step will take, answered **Deny**, **Once**, **This chat**, or **Always** for the whole step. Deleting, reading your other chats, and the per-reply limits still ask on their own. See [One card for a whole step](https://bearly.ai/docs/manual/capabilities/permissions.md#one-card-for-a-whole-step).
+- **Full access** lets one chat on one device use your enabled tools without asking. It still asks before deleting, connecting a new service, reading your other chats, giving a routine browser access or unattended local access, sending or spending past a reply's limits, People Search lookups, and for Computer Use safety checks and certificate warnings.
 - On the web and phones, Full access covers connectors only.
 - Routines have their own **Permission mode**, turned on from the desktop device that runs them.
 

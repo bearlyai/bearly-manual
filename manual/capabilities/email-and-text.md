@@ -15,7 +15,7 @@ Ask Bearly to email or text you from any chat, and it sends the message as part 
 
 **You need:** your organization allows **Email notifications** and **Text messages**. Both work in the web app, phone browsers, the desktop app, and the iOS app.
 
-There's no approval card for these: asking is the go-ahead. Bearly sends when that step of the answer runs, and a sent message can't be edited or recalled from Bearly. Check the recipient and the contents in your request.
+Asking is the go-ahead: up to 3 emails and texts in one answer go without an approval card. A fourth asks **Send more messages?** ("This reply has sent 3 messages."); select **Once** for one more, or **This chat** or **Always** to stop asking. See [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits). Bearly sends when that step of the answer runs, and a sent message can't be edited or recalled from Bearly. Check the recipient and the contents in your request.
 
 ## Send Email
 
@@ -145,7 +145,8 @@ Separate, short emails to each person with only their tasks from a meeting.
    List the action items by owner. Then email each owner only their items, subject "From Thursday's meeting", one email per person.
    ```
 
-3. Check the **Send Email** steps — each shows who it went to.
+3. If the meeting has more than three owners, Bearly asks **Send more messages?** at the fourth email; select **This chat** to send the rest.
+4. Check the **Send Email** steps — each shows who it went to.
 
 
 

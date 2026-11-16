@@ -1,6 +1,6 @@
 ---
 title: "Recipes for teams and projects"
-description: "Step-by-step recipes that combine projects, Always search documents, meeting transcripts, project sharing and locked settings, organization policies, Memories and chat management, Prompt templates, email to teammates, and restricted Pages for shared knowledge bases, meeting recaps, and team rollouts."
+description: "Step-by-step recipes that combine projects, Always search documents, meeting transcripts, project sharing and locked settings, organization policies, Memories and chat management, Code Mode for totaling a figure across a project's chats, Prompt templates, email to teammates, and restricted Pages for shared knowledge bases, meeting recaps, and team rollouts."
 canonical: "https://bearly.ai/docs/manual/combine/team-recipes/"
 markdown: "https://bearly.ai/docs/manual/combine/team-recipes.md"
 ---
@@ -9,7 +9,7 @@ markdown: "https://bearly.ai/docs/manual/combine/team-recipes.md"
 
 HTML: [https://bearly.ai/docs/manual/combine/team-recipes/](https://bearly.ai/docs/manual/combine/team-recipes/)
 
-> Step-by-step recipes that combine projects, Always search documents, meeting transcripts, project sharing and locked settings, organization policies, Memories and chat management, Prompt templates, email to teammates, and restricted Pages for shared knowledge bases, meeting recaps, and team rollouts.
+> Step-by-step recipes that combine projects, Always search documents, meeting transcripts, project sharing and locked settings, organization policies, Memories and chat management, Code Mode for totaling a figure across a project's chats, Prompt templates, email to teammates, and restricted Pages for shared knowledge bases, meeting recaps, and team rollouts.
 
 These recipes use projects, meetings, sharing, and organization policies to make Bearly work the same way for a whole team. A project's files, instructions, and settings apply to every chat in it, so what one person adds, everyone in the project can use. Sharing a project needs an organization; emailing teammates and organization policies need a managed organization. For what each block takes in and gives back, see [Building blocks](https://bearly.ai/docs/manual/combine/building-blocks.md).
 
@@ -210,7 +210,7 @@ You find what was decided in an earlier chat, then have Bearly rename and move t
 - **Archive for move:** ask Bearly to list the chats, then select them in the sidebar with **Select** and **Archive** them.
 - **An export for the record:** open the command menu and choose **Download as Markdown** for a copy of the decision chat.
 
-**If it stalls:** Recall doesn't work in end-to-end encrypted chats, and a regular chat can't list, read, rename, or move encrypted ones. Full access never approves listing or reading other chats for you; Bearly asks unless you saved an approval for that.
+**If it stalls:** Recall doesn't work in end-to-end encrypted chats, and a regular chat can't list, read, rename, or move encrypted ones. Full access never approves listing or reading other chats for you; Bearly asks unless you answered **This chat** on that card earlier in the chat.
 
 ## Turn a team form into a published Page
 

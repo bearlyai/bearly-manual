@@ -68,12 +68,12 @@ Tokens and header values you enter are stored in this Bearly profile on this dev
    Using Linear, list the issues assigned to me that changed this week, grouped by project. Don't edit anything.
    ```
 
-4. At **Allow Linear?** (the card names your connector), pick an **Approval duration** and allow — the card warns that "This connected server controls what its tools do." One approval covers that server's tools, including ones that change data.
+4. At **Allow Linear?** (the card names your connector), read the warning, "This connected server controls what its tools do.", then answer. **Once** allows that one tool call. **This chat** covers **Use connected apps** in this chat, including tools that change data; set **This chat and Always cover** to **Only** first to allow just this connector.
 
 
 
 **What you get:** answers built from the service's own data, and changes made there when you ask for them. Bearly can do only what the server's tools and your account in that service allow.
-**Limits:** a tool image over 20 MB is rejected. Approvals reset when you disconnect, sign in again, or change the server's settings. A server's own "read-only" labels don't limit an approval.
+**Limits:** a tool image over 20 MB is rejected. A connector's answers reset when you disconnect, sign in again, or change the server's settings. A server's own "read-only" labels don't limit an approval.
 **Combines with:** [Routines](https://bearly.ai/docs/manual/capabilities/routines.md#tools-and-skills) for scheduled digests; [Pages](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) and `/visualize` to turn results into a page; [email](https://bearly.ai/docs/manual/capabilities/email-and-text.md) to send them.
 
 You can also ask Bearly to find and connect a service for you, in a typed chat or a voice call: "connect Linear and show my open issues". Bearly asks with a card such as **Connect Linear?**, and that card always asks, even in Full access. If the service needs a sign-in, Bearly then shows **Continue sign-in**.
@@ -132,11 +132,11 @@ If your organization limits who adds skills, the pane says "Admins can add and r
 
 1. Type `/skill` in the message box — enabled skills appear in the list, each as `/skill-` followed by its name.
 2. Pick one and describe the job — Bearly opens that skill before answering.
-3. If the skill needs a script, a card titled with the skill and the script's path appears, showing the command. Open **Details** for the file, runtime, any packages it installs, and the timeout. Pick an **Approval duration** and allow, or **Deny**.
+3. If the skill needs a script, a card titled with the skill and the script's path appears, showing the command, under **Run commands**. Select **Show details** for the file, runtime, any packages it installs, and the timeout. Answer **Once**, **This chat**, or **Always**, or **Deny**.
 
 
 
-**What you get:** work done the skill's way. A longer approval is saved as "Run" plus the skill's name plus "scripts" and covers that skill's scripts.
+**What you get:** work done the skill's way. **This chat** with **Only** chosen in the card's menu is listed in **Permissions** as "Run" plus the skill's name plus "scripts" and covers that skill's scripts in this chat.
 **Limits:** scripts run as you on your computer; it isn't a sandbox. Installed skills and their files are on this desktop only; on the web and phones, chats that used one stay readable, but Bearly can't open its files there.
 **Combines with:** [Routines](https://bearly.ai/docs/manual/capabilities/routines.md#tools-and-skills), where a skill's **Allow scripts** switch lets its scripts run unattended; [Work locally](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#work-locally); [Projects](https://bearly.ai/docs/manual/projects.md), where owners and writers can attach skills to every chat in the project.
 
@@ -184,7 +184,7 @@ A one-page view of open pull requests, grouped by reviewer and age, that you can
    Using GitHub, list the open pull requests in our main repository with author, reviewers, and days open. Don't comment or change anything.
    ```
 
-   Approve **Allow GitHub?** for **This response**.
+   Answer **Allow GitHub?** with **This chat**.
 3. Type `/visualize` and ask:
 
    ```text
@@ -214,7 +214,7 @@ A `labels.csv` that tags hundreds of text files, made by a script that calls Bea
    Use the Bearly AI Models skill. Write a script that reads every .txt file in this folder, asks a fast model to label each as bug, billing, or how-to, and writes filename and label to labels.csv. Try it on 5 files first, show me the results, then run it on the rest.
    ```
 
-3. Review the script and the command in **Details**, then allow — the trial run on 5 files shows the labels before the full run.
+3. Review the script and the command with **Show details**, then select **Once** — the trial run on 5 files shows the labels before the full run.
 4. Open `labels.csv`, or ask Bearly to add it to the chat.
 
 

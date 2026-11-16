@@ -127,7 +127,7 @@ One message turns a chat that already produced the result you want into a schedu
 Bearly reads every invoice in a folder on your computer, builds an Excel workbook with a summary sheet, and saves it back into the folder.
 
 **Why it works:** Work locally lets a chat list, read, and copy files in a folder you choose. It copies each invoice into the chat as a file, where the Document editor (which runs on Run Python) can read them and write an Excel workbook with formulas. Bearly then saves the workbook from the chat back to your folder.
-**You need:** Any plan. Desktop app. Organization controls: **Work locally** and **Run Python**. In Standard permissions, commands, file changes, and saves ask first; attaching a file from inside the chosen folder doesn't. On an approval card, pick **This chat** instead of **Once** so the same kind of action doesn't ask again in this chat on this device.
+**You need:** Any plan. Desktop app. Organization controls: **Work locally** and **Run Python**. In **Ask first**, commands, file changes, and saves ask first; attaching a file from inside the chosen folder doesn't. On an approval card, pick **This chat** instead of **Once** so the same kind of action doesn't ask again in this chat on this device.
 
 
 
@@ -201,7 +201,7 @@ Bearly reads values from an app window on your screen, charts them, and points o
 - **Work locally for the chart:** add Work locally and ask Bearly to save the CSV into a folder.
 - **Typing for reading:** ask Computer Use to enter the totals into a spreadsheet app. Before anything consequential, such as sending or deleting, it asks **Confirm this computer action**.
 
-**If it stalls:** Computer Use can't work in Bearly's own windows and runs one task per chat at a time. If it says it needs Accessibility and Screen Recording access, turn both on for Bearly and try again. On Windows, finish the optional helper setup if Bearly offers it.
+**If it stalls:** Computer Use can't work in Bearly's own windows and runs one task per chat at a time. If it says it needs Accessibility and Screen Recording access, turn both on for Bearly and try again.
 
 ## Find and fix a bug in a local web app
 
@@ -250,7 +250,7 @@ Bearly reads a document open in your signed-in Chrome, runs Deep Research on com
 
 
 
-1. In the desktop app, open **Settings** → **Chrome extension**. Select **Install Chrome extension** if it's not installed, and keep Chrome and Bearly open until it shows **Connected to Chrome**.
+1. In the desktop app, open **Settings** → **Chrome extension**. Select **Install Chrome extension** if it's not installed, and keep Chrome and Bearly open until it shows **Connected to Chrome**. Bearly may also offer an [install card in a desktop chat](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#install-the-chrome-extension-from-chat).
 
 2. Open the brief in Chrome, then ask:
 
@@ -328,7 +328,7 @@ Every Friday a Routine pulls the week's closed issues from a connected app, writ
 - [Routines](https://bearly.ai/docs/manual/capabilities/routines.md) for the editor, schedules, limits, and delivery
 - [Browser and computer](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md) for Bearly Browser, Chrome control, and Computer Use
 - [Connectors and skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md) for adding services and skills
-- [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md) for approval cards, Standard, and Full access
+- [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md) for approval cards, **Ask first**, and Full access
 
 ## Continue through the documentation
 
@@ -338,5 +338,5 @@ Every Friday a Routine pulls the week's closed issues from a connected app, writ
 - [Next: Recipes for everyday life](https://bearly.ai/docs/manual/combine/everyday-recipes.md)
 - [Related: Approvals, permissions, and Full access](https://bearly.ai/docs/manual/capabilities/permissions.md)
 - [Related: Building blocks: how Bearly's features connect](https://bearly.ai/docs/manual/combine/building-blocks.md)
-- [Related: Automate with Routines](https://bearly.ai/docs/manual/capabilities/routines.md)
 - [Related: Let Bearly use a browser, your files, and your computer](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md)
+- [Related: Automate with Routines](https://bearly.ai/docs/manual/capabilities/routines.md)

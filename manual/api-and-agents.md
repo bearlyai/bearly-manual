@@ -137,7 +137,8 @@ If you're an AI agent using Bearly's interface for a person, these labels are st
 
 Leave these to the person, and say so instead of acting:
 
-- **Approval cards** for actions they haven't clearly asked for, and anything that always asks: connecting a new service, listing, reading, or deleting chats, Computer Use safety checks, People Search lookups that use the plan allowance, and routine consent cards for unattended local access and browser access.
+- **Approval cards** for actions they haven't clearly asked for, and anything that always asks: connecting a new service, listing, reading, or deleting chats, Computer Use safety checks, and routine consent cards for unattended local access and browser access. Leave **Send more messages?**, People Search confirmations, and cards that spend from the plan to the person too.
+- **Always** on any approval card, and **Always** in **Settings** → **Permissions** — it applies in every chat on every device.
 - **Enable full access?** and **Start every new chat in Full access?** — turn these on only when the person asks for exactly that.
 - **Certificate warnings** in Bearly Browser, passwords, payment details, CAPTCHAs, and the computer's own permission prompts.
 - **Sign-in codes** from email, phone verification codes, and **Agree & send code** for texting terms.

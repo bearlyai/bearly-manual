@@ -110,7 +110,7 @@ These file tools are in the `/` menu under **Tools**:
 
 Ask Bearly to edit a file you uploaded and it saves the edited copy as a new file in the chat, listed under **Generated**; your upload doesn't change. Later edits continue that copy, one version each.
 
-Ask Bearly to delete a file it made in the chat and it asks first: **Delete "file name"?**, with **Allow** and **Deny**. Deleting a file Bearly edited removes every version, and **Details** shows how many. Full access never skips this question. Bearly can't delete files you uploaded or project files. A message that showed a deleted file now shows **File unavailable**.
+Ask Bearly to delete a file it made in the chat and it asks first: **Delete "file name"?**, with **Deny** and **Allow**. Every deletion asks. Deleting a file Bearly edited removes every version, and **Show details** shows how many. Full access never skips this question. Bearly can't delete files you uploaded or project files. A message that showed a deleted file now shows **File unavailable**.
 
 ## Preview, edit a table, and download
 
@@ -229,7 +229,7 @@ What it can do, by format:
    /document Revise the attached contract for plain language and return a new DOCX with tracked changes. Keep the clause numbering, defined terms, and existing comments.
    ```
 
-4. Watch the line under the answer while Python runs — select it to open **Steps**, then select the **Run Python** step to see **Input** and **Result**, or **Error** if the run failed.
+4. Watch the line under the answer while Python runs — select it to open **Steps**, then select the **Run Python** step to see **Input** and **Result**, which includes any error message.
 5. Open the new file and select **Download** — for Word, Excel, and PowerPoint files the preview is a PDF, so choose **Original** to get the editable file.
 
 
@@ -305,7 +305,7 @@ You get a cited comparison table and a Word file with your proposed changes as t
 
 **Swap in:** Scan Doc for the first step when you need every exact mention of a term, across up to 20 agreements in one search; a project with **Always search documents** instead of attaching the files each time; a filled PDF instead of a DOCX for a form.
 
-**If it stalls:** if citations point to the wrong file, name the files with `@`. If the run fails, select the **Run Python** step, read **Error**, and ask Bearly to retry with one file.
+**If it stalls:** if citations point to the wrong file, name the files with `@`. If the run fails, select the **Run Python** step, read its **Result**, and ask Bearly to retry with one file.
 
 ### Fill a PDF form from your own documents
 

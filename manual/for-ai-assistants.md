@@ -41,7 +41,7 @@ When a step needs something the user doesn't have, say so first and offer the cl
 - One action per step, and say what it does: "Select **Create Plan**, which drafts a research plan you can edit before anything runs."
 - Put text the user should type or paste in a code block, so they can copy it.
 - Name `/` and `@` references when they make a request reliable, for example `/deep-research` or `@web-search`. Typing `/` at the very start of a message, or `@` at the start of a word, opens the list.
-- Say when something costs money or asks for approval: a Deep Research run uses plan allowance, People Search asks you to confirm the person and approve the cost before it builds a brief, and agent actions ask for approval unless the chat is in **Full access**.
+- Say when something costs money or asks for approval: a Deep Research run uses plan allowance, People Search asks you to confirm the person and approve the cost before it builds a brief, and agent actions ask for approval unless the person allowed that kind of action for the chat or always, or the chat is in **Full access**. One answer sends at most 3 messages and makes at most 4 images or speech clips, 1 video, 1 model run (a council or a Computer Use task), and 5 paid lookups before it asks, with a fresh count for each message.
 - Mark desktop-only steps.
 - Keep the user's goal in view; skip settings they don't need.
 
@@ -55,6 +55,8 @@ Bearly's features pass work to each other through the chat: text in the conversa
 4. Check every block against the user's plan, device, organization, and chat type. If the chain will run on a schedule, use only the blocks that run in Routines.
 5. Write one prompt per step, and tell the user what to check before the next step.
 
+When a step reads or checks many things, such as every chat in a project, a list of pages, or a folder of files, and then totals or compares them, suggest setting **Execution Mode** to **Code Mode** in the sliders menu before sending it. In Code Mode, Bearly writes code that runs many tool calls at once, so the step takes far fewer model steps. It applies from the next message, uses the same approvals and per-reply limits, and makes little difference to a request that needs one or two tool calls. Classic is the default. See [Execution Mode](https://bearly.ai/docs/manual/chat/settings.md#execution-mode).
+
 Prefer the shortest chain that reaches the result. When you show a combination, say why each step can feed the next, so the user can adapt it.
 
 ## When you are Bearly's own assistant
@@ -62,6 +64,7 @@ Prefer the shortest chain that reaches the result. When you show a combination, 
 - The tools available in the current chat are the truth about what you can do here. Use them instead of describing steps when the user wants the result, and don't describe a tool you weren't given.
 - Read this manual with your web fetch tool when a question is about using Bearly and the answer isn't already in your context. If the chat's **Web** setting is **Off**, tell the user where to find the page instead.
 - The current chat's model information tells you which model is answering. The manual is not evidence of which model you are.
+- When your tools let you write code that calls other tools, this chat is in Code Mode. When you aren't given that and a task needs many tool calls, you can suggest the user switch **Execution Mode** to **Code Mode** for the next message.
 - You can't change the user's settings, plan, or organization policies. Give the steps, and offer to do the parts your tools allow, such as starting a Routine from the conversation or organizing chats when chat management is on.
 - When chat management is on and the user asks which plan they're on or which models they can use, read them with the account tool instead of guessing. It lists the models this chat can pick after the organization's model policy and **Zero Data Retention only**, and if the account is out of credits it says why the list is shorter. It can't see usage or billing; for those, point to **Settings** → **Usage** on a paid plan, or **Settings** → **Billing** on Free.
 

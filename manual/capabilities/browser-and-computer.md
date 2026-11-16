@@ -1,6 +1,6 @@
 ---
 title: "Let Bearly use a browser, your files, and your computer"
-description: "How a Bearly desktop chat browses sites in Bearly Browser, works in your signed-in Chrome tabs, reads and edits files and runs commands with Work locally, and operates apps with Computer Use, including the approvals each asks for and how to choose between them."
+description: "How a Bearly desktop chat browses sites in Bearly Browser, works in your signed-in Chrome tabs, offers to install the Chrome extension in chat, reads and edits files and runs commands with Work locally, and operates apps with Computer Use, including the approvals each asks for and how to choose between them."
 canonical: "https://bearly.ai/docs/manual/capabilities/browser-and-computer/"
 markdown: "https://bearly.ai/docs/manual/capabilities/browser-and-computer.md"
 ---
@@ -9,7 +9,7 @@ markdown: "https://bearly.ai/docs/manual/capabilities/browser-and-computer.md"
 
 HTML: [https://bearly.ai/docs/manual/capabilities/browser-and-computer/](https://bearly.ai/docs/manual/capabilities/browser-and-computer/)
 
-> How a Bearly desktop chat browses sites in Bearly Browser, works in your signed-in Chrome tabs, reads and edits files and runs commands with Work locally, and operates apps with Computer Use, including the approvals each asks for and how to choose between them.
+> How a Bearly desktop chat browses sites in Bearly Browser, works in your signed-in Chrome tabs, offers to install the Chrome extension in chat, reads and edits files and runs commands with Work locally, and operates apps with Computer Use, including the approvals each asks for and how to choose between them.
 
 In the desktop app, a chat can do more than answer: it can open and use websites, work in the Chrome you already use, read and change files in a folder you pick, run commands, and click and type in the apps on your screen. Each tool asks before it acts unless you've turned on [Full access](https://bearly.ai/docs/manual/capabilities/permissions.md), and each one can be turned off by your organization.
 
@@ -29,7 +29,7 @@ All four tools need the desktop app for Mac, Windows, or Linux. On the web and o
 |---|---|---|---|---|
 | Works in | The desktop app | The desktop app plus Chrome with the Bearly Companion extension | The desktop app | The desktop app |
 | Uses your sign-ins | Only ones you sign in to or import into Bearly Browser | Yes, your Chrome profile | Whatever your computer account can reach | Whatever is on screen |
-| Standard asks before | Each new site, submissions, visual clicks, downloads, website tools | Reading tabs, controlling tabs, or using DevTools | Each read, write, edit, file transfer, and command | The task, then consequential actions |
+| **Ask first** asks before | Each new site, submissions, visual clicks, downloads, website tools | Reading tabs, controlling tabs, or using DevTools | Each read, write, edit, file transfer, and command | The task, then consequential actions |
 | In routines | Yes, with browser access on listed sites | No | Yes, with unattended local access | No |
 | Organization control | **Browser** | **Chrome extension browser** | **Work locally** | **Computer Use** |
 
@@ -52,13 +52,13 @@ Bearly Browser is a browser built into the desktop app. Chats work in their own 
    In Bearly Browser, open the pricing pages for these three tools and compare their plans in a table. Don't sign in, start a trial, or submit anything.
    ```
 
-4. At **Let this chat use this site?**, check the site and select **Allow for this response**, or pick a longer **Approval duration** first. The approval covers that one site; another site asks separately. This card has no **Once**: opening, reading, and clicking on a page each use the site, so one approval covers them for the whole answer.
+4. At **Let this chat use this site?**, check the site and select **Once**. On this card, **Once** lets Bearly use that one site until the answer ends, because opening, reading, and clicking on a page each use the site; another site asks separately. **This chat** covers every site in this chat; to allow only this site for the chat, set **This chat and Always cover** to **Only** plus the site first.
 5. To watch, select the chat's title → **Open Browser**. Tabs a chat opened show a robot icon, and their tooltip reads **Agent-owned tab**; tabs you opened show a globe. Select **Take over this tab** to pause the agent while you work on the page, and **Resume this tab's agent** to hand it back.
 
 
 
 **What you get:** the answer in the chat, plus open tabs you can inspect. Bearly can open, read, screenshot, click, type, choose options, scroll, press keys, and save a download into the chat.
-**Limits:** up to eight tabs across your chats. In Standard, these also ask first: **Confirm this Browser action** before a form submission or other consequential action, **Allow this visual Browser action?** for clicks on canvases and embedded frames, and **Save this website file to chat?** for downloads (one file up to 50 MiB, never opened or run). Passwords, payment details, file uploads, CAPTCHAs, and system permission prompts stay with you. Only you can decide on a certificate warning; neither an approval nor Full access can skip it. A page load Bearly started that takes more than 10 seconds is stopped.
+**Limits:** up to eight tabs across your chats. In **Ask first**, these also ask first: **Confirm this Browser action** before a form submission or other consequential action, **Allow this visual Browser action?** for clicks on canvases and embedded frames, and **Save this website file to chat?** for downloads (one file up to 50 MiB, never opened or run). Passwords, payment details, file uploads, CAPTCHAs, and system permission prompts stay with you. Only you can decide on a certificate warning; neither an approval nor Full access can skip it. A page load Bearly started that takes more than 10 seconds is stopped.
 **Combines with:** [Routines](https://bearly.ai/docs/manual/capabilities/routines.md#browser-access) for scheduled site checks on exact sites; [Work locally](#work-locally) to fix a site you're building.
 
 To point at part of a page, select **Capture and annotate page**, click an element or drag over a region, answer **What should Bearly change or inspect?**, and select **Attach** (<kbd>⌘</kbd> <kbd>Enter</kbd> or <kbd>Ctrl</kbd> <kbd>Enter</kbd>). The capture goes into your message.
@@ -105,6 +105,24 @@ Bearly reads a page's buttons, links, and fields and acts on them directly. For 
 
 Tabs Bearly opens sit together in one tab group in each Chrome window. Tabs you open yourself stay where they are, and Bearly never puts its tabs in a group you made. To name the group, open the Bearly side panel in Chrome, select the **Settings** gear, and under **Desktop app** turn on **Label Bearly’s tabs**. Chrome asks to let Bearly view and manage your tab groups; once you allow it, Bearly's group is orange and named **Bearly**. If you decline, the setting stays off and the tabs are still grouped, without a name. Turning the setting off removes that permission, and groups already named keep their name.
 
+### Install the Chrome extension from chat
+
+When the extension isn't connected on your computer, Bearly may show **Let Bearly work in your Chrome** in a desktop chat if your signed-in sites or an open tab would change the task's outcome. The card explains what Bearly could do for that task. It isn't suggested for public pages Bearly can read another way.
+
+- **Install Chrome extension** opens the extension's Chrome Web Store page. Add it in Chrome; if the page opened in another browser, open it in Chrome. The card changes to **Waiting for Chrome**, with **Open Chrome Web Store** to reopen the page.
+- **Not now** collapses the card to "You can add the Chrome extension later in Settings." Select **Settings** there to open **Chrome extension** settings.
+
+Keep Chrome and Bearly open while the card says **Connecting to Chrome…**. Once it says **Chrome is connected**, Bearly can use your Chrome tabs from your next message. Bearly continues its current reply without waiting for you to install.
+
+The card appears at most once per reply and once per chat. Leaving it unanswered pauses invites in other chats on that computer for 3 days; **Not now** pauses them for 14 days. Opening the store clears the unanswered pause, but doesn't shorten a **Not now** pause.
+
+Bearly doesn't show the card:
+
+- when the extension is already connected, including while it's still pairing;
+- in Routines or read-only chats;
+- when your organization has turned Chrome control off;
+- where Chrome control can't be set up.
+
 ## Work locally
 
 **Work locally** lets a chat read, write, and edit files and run commands on your computer. You pick a working folder; Bearly shows each action and asks before it runs.
@@ -121,7 +139,7 @@ Tabs Bearly opens sit together in one tab group in each Chrome window. Tabs you 
    Read the CSV files in this folder and make one monthly summary workbook. Don't change the source files. Add the finished workbook to this chat.
    ```
 
-3. Review each card: it shows the command or the file. Open **Details** for the working folder, the timeout, or whether a write overwrites a file, then pick an **Approval duration**. For reads, the Allow button then reads **Allow reads for this response**, **Allow reads for now**, or **Allow reads this chat**; an approval for writes, edits, or commands also covers reads.
+3. Review each card: it shows the command or the file, and "Bearly will:" names the kind of action: **Read files**, **Change files**, or **Run commands**. Select **Show details** for the working folder, the timeout, or whether a write overwrites a file, then answer **Once**, **This chat**, or **Always**. Each kind is answered separately, so allowing commands doesn't allow file changes.
 4. Check the result. Ask Bearly to reopen a file it made, or to run a check. Ask it to "add it to this chat" to keep a file with the conversation.
 5. Select **Stop** to stop the response; a running command stops with it.
 
@@ -131,7 +149,7 @@ Tabs Bearly opens sit together in one tab group in each Chrome window. Tabs you 
 **Limits:** a command times out after 2 minutes unless Bearly sets a longer limit, up to 10 minutes. Bearly won't start servers, watchers, or anything meant to keep running; start those yourself. **Attach File** and **Save Locally** handle files up to 50 MB. When a command prints a lot, Bearly sees its first and last lines and reads the rest a page at a time with **Read Output** instead of running the command again; the desktop app keeps that output for 24 hours. **Read File** also reads long files a page at a time. If you deny a request, Bearly doesn't retry the same one. Bearly installs the runtimes it needs for scripts the first time a task uses them; you can see them under **Settings** → **Runtime**.
 **Combines with:** [Routines](https://bearly.ai/docs/manual/capabilities/routines.md#unattended-local-access) with unattended local access; [skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md#skills) whose scripts run on your computer; [Pages](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) built from what it computes.
 
-The chip's menu also has **Clear folder** (go back to a private folder for this chat), **Off for this chat**, and **Turn on for this chat**. Without a chosen folder, Bearly works in a private folder of its own for that chat. The folder and any chat-length approvals belong to this chat on this device.
+The chip's menu also has **Clear folder** (go back to a private folder for this chat), **Off for this chat**, and **Turn on for this chat**. Without a chosen folder, Bearly works in a private folder of its own for that chat. The folder and any **This chat** answers belong to this chat on this device.
 
 > **Caution — The folder is not a sandbox**
 > The working folder is where Bearly starts, not a boundary. An approved command can reach any file your computer account can. Use a folder that holds only what the task needs, and keep backups of anything important.
@@ -153,17 +171,17 @@ Computer Use lets Bearly complete a task in the apps on your screen. It takes sc
    In the spreadsheet that's open, sort the Budget tab by due date. Stop before saving.
    ```
 
-3. At **Use your computer**, open **Details** to see the goal, the model, the data that goes to it (relevant conversation context, attachments, screenshots, and app text captured while working), and the access (the full desktop: screenshots, focus, mouse, and keyboard). Pick an **Approval duration** and allow.
+3. At **Use your computer**, select **Show details** to see the goal, the model, the data that goes to it (relevant conversation context, attachments, screenshots, and app text captured while working), and the access (the full desktop: screenshots, focus, mouse, and keyboard). Select **Once** for this task, or **This chat** to let later tasks in this chat control your computer without asking.
 4. Watch the **Computer** chip at the bottom of the message box: it shows the status, such as **Looking** or **Working** in an app. Select **Stop** on the chip to end the task.
 5. Read the **Computer Use** step in the answer: it lists the screen, the apps, and the actions taken.
 
 
 
 **What you get:** the task done in the app, with a record of each action.
-**Limits:** one Computer Use task at a time per chat. Bearly's own windows are never a target. Routines never see or control your screen. Before a consequential action your request didn't already authorize, such as sending, publishing, buying, deleting, or changing account or security settings, Bearly asks **Confirm this computer action**; Full access covers this one. A safety check raised during the task also shows **Confirm this computer action**, and that one always asks, even with Full access; its **Stop** button ends the task.
+**Limits:** one Computer Use task at a time per chat. A Computer Use task counts as a model run, so a second one in the same answer, or one after a council, asks **Start another model run?** first; see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits). Bearly's own windows are never a target. Routines never see or control your screen. Before a consequential action your request didn't already authorize, such as sending, publishing, buying, deleting, or changing account or security settings, Bearly asks **Confirm this computer action**; Full access covers this one. A safety check raised during the task also shows **Confirm this computer action**, and that one always asks, even with Full access; its **Stop** button ends the task.
 **Combines with:** [Run Python and charts](https://bearly.ai/docs/manual/capabilities/data-and-code.md) after it reports what it read; [email](https://bearly.ai/docs/manual/capabilities/email-and-text.md) to send the result.
 
-On a Mac, if a permission is missing, Bearly says "Computer Use needs Accessibility and Screen Recording access." Turn on **Bearly** under both in **System Settings** → **Privacy & Security**, then send the request again. On Windows, Bearly may offer **Finish setting up Computer Use** for a small helper that controls protected and background windows more reliably; select **Finish setup** and approve the administrator prompt. Its status lives at **Settings** → **Runtime** → **Windows Computer Use helper**.
+On a Mac, if a permission is missing, Bearly says "Computer Use needs Accessibility and Screen Recording access." Turn on **Bearly** under both in **System Settings** → **Privacy & Security**, then send the request again. On Windows, Computer Use works without the optional helper. If the helper is on your PC, update or remove it in **Settings** → **Runtime** → **Windows Computer Use helper**; Windows asks for administrator approval.
 
 If your organization's model policy blocks every model Computer Use supports, Bearly says so instead of starting.
 
@@ -194,7 +212,7 @@ A chart and a CSV of the table, built from a page only your Chrome sign-in can s
    ```
 
    Bearly lists your tabs and asks **Read your Chrome tabs**.
-3. Choose **This response** and allow — one approval covers the tab list, the page read, and a screenshot if it takes one.
+3. Select **This chat** — that covers the tab list, the page read, and a screenshot if it takes one. When you're done, set **Use websites in your browser** back to **Ask** in **Permissions**.
 4. Check the chart against the dashboard, then ask follow-ups in the same chat; the CSV stays in the chat's files.
 
 
@@ -218,7 +236,7 @@ A combined `summary.csv` in the folder and a one-page summary in the chat, witho
    Combine every CSV in this folder by month and region without changing the source files. Write the totals to summary.csv in this folder, then make a one-page summary with a table and the three biggest month-over-month changes, and add it to this chat.
    ```
 
-3. For the reads, choose **This response** and select **Allow reads for this response**. When the command and the write appear, open **Details**, confirm the path is `summary.csv` and nothing is overwritten, then allow.
+3. At the first **Read files** card, select **This chat** so the rest of the reads run. When the command and the write appear, select **Show details**, confirm the path is `summary.csv` and nothing is overwritten, then select **Once**.
 4. Open the summary in the chat; `summary.csv` is in your folder.
 
 
@@ -243,7 +261,7 @@ A fixed page, confirmed in the same browser tab Bearly used to find the problem.
    Open http://localhost:3000/settings in Bearly Browser and find out why the Save button does nothing. Then fix it in this folder and reload the page to confirm. Don't start any servers.
    ```
 
-4. Approve the site, then the reads and edits Bearly shows.
+4. Approve the site, then the reads and edits Bearly shows; **This chat** on each kind saves answering again as it fixes and reloads.
 5. Ask for a short summary of what changed and why.
 
 
@@ -267,7 +285,7 @@ A chart of numbers that only exist in a native app's window.
    In the accounting app that's open, read the twelve monthly totals from the Reports window. Don't change anything. Then chart them and tell me which months stand out.
    ```
 
-3. At **Use your computer**, check **Details** and allow **Once** — the task is short.
+3. At **Use your computer**, select **Show details** to check the task, then select **Once** — the task is short.
 4. Watch the **Computer** chip; select **Stop** if it heads somewhere unexpected.
 
 

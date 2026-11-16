@@ -52,7 +52,7 @@ Imagine generates an image from your description. The result opens in an image e
 
 **Transparent backgrounds:** ask for one in the chat, for a logo, icon, sticker, or cutout, and Bearly makes a PNG with a transparent background. Only some models can do this, so Bearly switches to one that can, and the reply names the model it used. If you named a model that can't, the reply says so. If no model that can is available, Bearly tells you and offers the image on a plain background instead. The image editor's model buttons run exactly the model you pick and don't add transparency.
 
-**Limits:** there's no size or aspect-ratio setting; the output shape depends on the model. When Bearly runs an image request from the chat and the model's service fails, it switches to a backup model.
+**Limits:** there's no size or aspect-ratio setting; the output shape depends on the model. One answer makes up to 4 images or speech clips before it asks **Make more images or speech?**; see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits). When Bearly runs an image request from the chat and the model's service fails, it switches to a backup model.
 
 ## The image editor
 
@@ -91,7 +91,7 @@ To edit from the chat instead, type `/edit-image` (**Touch Up**) and describe th
 /edit-image Make the background of the bottle photo a warm sunset and keep the bottle exactly as it is.
 ```
 
-To cut an object out, ask Touch Up to remove the background. You get a PNG with a transparent background, made by a model that can do it, as with [Imagine](#imagine).
+To cut an object out, ask Touch Up to remove the background. You get a PNG with a transparent background, made by a model that can do it, as with [Imagine](#imagine). Editing an image that already has a transparent background keeps it, unless you ask for a solid one. If you named a model that can't keep it, or none that can is available, you get an opaque image and the reply says so.
 
 ```text
 /edit-image Remove the background from the bottle photo and keep the bottle exactly as it is.
@@ -136,6 +136,7 @@ Make Video generates a short video with sound, from a description alone or by an
 
 **Limits:**
 
+- One video per answer; a second asks **Make another video?** first. See [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
 - A start image can be at most 2.5 times as wide as it is tall, or 2.5 times as tall as it is wide. Bearly refuses a wider or taller image before it starts, so crop or pad it first.
 - A failed attempt isn't retried on another model. On failure you'll see "The video model could not finish this request. Try again later."
 
@@ -169,7 +170,7 @@ Bearly can read any text answer aloud and make downloadable voice recordings in 
 
 ### Read aloud
 
-Under any answer that's all text, select the speaker icon (**Read aloud**) to hear it in a standard voice. To use your own choice of voice and delivery instead, turn on **Use for Read Aloud** in Voice Studio.
+Under any answer that's all text, select the speaker icon (**Read aloud**) to hear it in a standard voice. To use your own choice of voice and delivery instead, turn on **Use for Read Aloud** in Voice Studio. If your organization's model policy doesn't allow that voice engine, Read aloud uses the first engine it allows; if it allows none, a notice reads **Read Aloud isn't available** with the reason.
 
 ### Voice Studio
 
@@ -199,7 +200,9 @@ Voice Studio is where you write a script, pick a voice, direct the delivery, and
 
 Rarely, a reading comes out too large for one file. It's then saved as numbered parts. A reading you asked for in the chat shows a player for each part, and the studio shows it as one take with "This reading was saved as 2 files because it was too long for one. Play them in order." Select **Part 1 of 2** or **Part 2 of 2** to choose which part plays; **Download audio** saves the selected part. If a part is later deleted from the chat, the others keep their numbers and the studio says, for example, "Part 2 of this reading was deleted."
 
-**Limits:** a recording can be up to about 22,500 characters of English (about 7,500 in Chinese, Japanese or Korean), roughly 30 minutes of audio. Longer text is refused before anything is recorded or charged, with "Text this long would make more than about 30 minutes of audio. Split it into shorter parts." If the voice service fails partway through a long reading, the part already read is kept and the studio says "Only the first N of M characters were read aloud. Shorten the text or split it into parts."; when you asked in the chat, Bearly tells you the audio stops early and can read the rest. Voice Studio appears on the latest text-to-speech result in the chat; earlier results show a plain player. The word highlighting uses estimated timing. A failed recording isn't retried automatically; when a recording you asked for in the chat fails, you'll see "The audio could not be created." In read-only chats you get plain players only. The studio's model switch picks the voice engine, such as **Fast** or **Studio**.
+**Limits:** a recording can be up to about 22,500 characters of English (about 7,500 in Chinese, Japanese or Korean), roughly 30 minutes of audio. Longer text is refused before anything is recorded or charged, with "Text this long would make more than about 30 minutes of audio. Split it into shorter parts." If the voice service fails partway through a long reading, the part already read is kept and the studio says "Only the first N of M characters were read aloud. Shorten the text or split it into parts."; when you asked in the chat, Bearly tells you the audio stops early and can read the rest. Voice Studio appears on the latest text-to-speech result in the chat; earlier results show a plain player. The word highlighting uses estimated timing. A failed recording isn't retried automatically; when a recording you asked for in the chat fails, you'll see "The audio could not be created." In read-only chats you get plain players only. The studio's model switch picks the voice engine: **Fast**, **Studio**, or **OpenAI**.
+
+When your organization's model policy doesn't allow the engine you picked, **Generate** shows "Your organization's model policy doesn't allow _engine_. Choose another speech model." With **Zero Data Retention only** on, **Fast** and **Studio** show "_Engine_ doesn't meet your Zero Data Retention only setting. Choose another speech model." When no engine is allowed at all, the studio shows "Your organization's model policy doesn't allow any speech model, so audio can't be created." or, with Zero Data Retention only on, "No speech model that meets your Zero Data Retention only setting is available, so audio can't be created." Speech you ask for in the chat, and an unedited studio, use the first allowed engine instead of the default when the default isn't allowed.
 
 ## Transcribe
 
@@ -253,7 +256,8 @@ View Media lets Bearly look at images, watch video files, and see the pages of a
 ## Controls and model settings
 
 - Organization admins turn these tools on or off with **Images**, **Video**, **Text to speech**, and **Transcription** under **Media & Creativity**. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
-- **Zero Data Retention only** applies to chat models. It doesn't filter the image, video, transcription, or text-to-speech models, and organization model allow-lists don't apply to them either. With it on, text to speech starts from a different default voice engine. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
+- An organization's **Model access** policy covers the image, video, text-to-speech, and transcription models too. A deny-list applies to them, and a provider group in it covers the image, video, speech, and transcription models that provider serves. An allow-list limits one of these tools only when it names one of that tool's models; allow-lists that name only chat models leave all four available. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
+- **Zero Data Retention only** applies to text to speech as well as chat models: Read aloud and Voice Studio use only the **OpenAI** engine, which has zero data retention. It doesn't filter the image, video, or transcription models. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
 - [Routines](https://bearly.ai/docs/manual/capabilities/routines.md) can't generate images or video, run text to speech, or transcribe.
 
 ## Try this
@@ -399,6 +403,6 @@ You get a corrected clip after Bearly reviews its own video.
 - [Previous: Make Pages and edit in Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md)
 - [Next: Record and use meetings](https://bearly.ai/docs/manual/capabilities/meetings.md)
 - [Related: Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md)
+- [Related: Approvals, permissions, and Full access](https://bearly.ai/docs/manual/capabilities/permissions.md)
 - [Related: Work with files and documents](https://bearly.ai/docs/manual/capabilities/documents.md)
 - [Related: Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md)
-- [Related: Privacy and security controls](https://bearly.ai/docs/manual/privacy-and-security.md)
