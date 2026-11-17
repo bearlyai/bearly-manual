@@ -1,6 +1,6 @@
 ---
 title: "Work with files and documents"
-description: "How Bearly opens, previews, searches, cites, summarizes, edits, converts, and proofreads files in a chat or project, including supported file types, size limits, password-protected PDFs, Always search documents, the Document editor, and what changes in end-to-end encrypted chats."
+description: "How Bearly opens, previews, searches, cites, summarizes, edits, converts, translates, and proofreads files in a chat or project, including supported file types, size limits, password-protected PDFs, Always search documents, the Document editor, and what changes in end-to-end encrypted chats."
 canonical: "https://bearly.ai/docs/manual/capabilities/documents/"
 markdown: "https://bearly.ai/docs/manual/capabilities/documents.md"
 ---
@@ -9,11 +9,11 @@ markdown: "https://bearly.ai/docs/manual/capabilities/documents.md"
 
 HTML: [https://bearly.ai/docs/manual/capabilities/documents/](https://bearly.ai/docs/manual/capabilities/documents/)
 
-> How Bearly opens, previews, searches, cites, summarizes, edits, converts, and proofreads files in a chat or project, including supported file types, size limits, password-protected PDFs, Always search documents, the Document editor, and what changes in end-to-end encrypted chats.
+> How Bearly opens, previews, searches, cites, summarizes, edits, converts, translates, and proofreads files in a chat or project, including supported file types, size limits, password-protected PDFs, Always search documents, the Document editor, and what changes in end-to-end encrypted chats.
 
 These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
 
-Attach a file and Bearly can show it, read it, search it, quote it with page citations, summarize it, or hand back a new edited copy. This page covers every file and document tool in a chat: adding files, what each file type looks like, finding files again, the document research tools, the Document editor, and Fix Grammar.
+Attach a file and Bearly can show it, read it, search it, quote it with page citations, summarize it, or hand back a new edited copy. This page covers every file and document tool in a chat: adding files, what each file type looks like, finding files again, the document research tools, the Document editor, Translate Document, and Fix Grammar.
 
 ## Add files to a chat
 
@@ -239,6 +239,36 @@ What it can do, by format:
 **Limits:** up to five new files per run. Each run stops after 60 seconds, so split a big batch into a few named requests. Check the downloaded file in the app where it will be used before you send or sign it; conversion can shift layout, fonts, or page breaks.
 
 **Combines with:** the [document research tools](#research-your-documents-search-docs-read-doc-scan-doc) to gather facts first, [Share file](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md#share-and-publish-a-page) to give the result a Page and link, and [Run Python](https://bearly.ai/docs/manual/capabilities/data-and-code.md) for analysis that doesn't need a polished file.
+
+## Translate Document
+
+Translate Document translates a Word (.docx) file into another language and returns a new Word file with the same layout: paragraphs, formatting, tables, headers and footers, footnotes, endnotes, and comments. Your original stays unchanged.
+
+**Use it when:** you need a contract, report, or handout in another language and want it to look like the original, not like pasted text.
+
+**You need:** any plan; each translation uses your plan allowance. It has no admin control of its own; attaching files needs **File uploads**. A chat you can edit.
+
+
+
+1. Attach the .docx, or type `@` and pick it under **Assets**, then name the language — Bearly detects the source language unless you name it.
+
+   ```text
+   Translate the attached employee handbook into Spanish and keep the formatting.
+   ```
+
+2. Wait for the file card — a long document can take several minutes.
+
+3. Open the new file and select **Download**.
+
+
+
+**What you get:** a new Word file named after the original with the language added, shown as a file card in the chat.
+
+**Limits:** Word .docx files only; PDFs and other formats aren't translated. Up to 50 MB and 200,000 characters of text. Translated text can wrap differently, so line breaks and page breaks may move. A read-only chat can't save the translation. A translation that fails or that the model declines saves no file, isn't charged, and isn't retried automatically. Each translation counts toward the 5 paid lookups one answer makes before it asks; see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
+
+**Runs in:** every app platform. Routines: yes, on a Word file in the routine's chat. Council experts: no.
+
+**Combines with:** the [Document editor](#document-editor) to edit the translation with tracked changes, and [email](https://bearly.ai/docs/manual/capabilities/email-and-text.md) to send the translated file as an attachment.
 
 ## Fix Grammar
 

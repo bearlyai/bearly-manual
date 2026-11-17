@@ -248,7 +248,7 @@ Model access, spending limits, and **Developer API access** are enforced by Bear
 
 | Control | Description in the editor | What it changes | Needs | Starts |
 | --- | --- | --- | --- | --- |
-| **Web** | Allow members to use web tools in chat. | Web search, image search, reading web pages, Deep Research, Scholar, YouTube, and Best Pick | — | Follows default |
+| **Web** | Allow members to use web tools in chat. | Web search, image search, reading web pages, Deep Research, Scholar, YouTube, Best Pick, hotel search, company filings and economic data, property, sanctions, and package lookups, and everyday lookups | — | Follows default |
 | **Chat web search** | Allow web search inside chats. | Image search, Deep Research, Best Pick, Scholar's academic web search, and YouTube's Find and Check claims depend on it | — | Follows default |
 | **Image search** | Allow chats to find and display images from the public web. | Image results in chat | Web, Chat web search | Follows default |
 | **Deep Research** | Allow members to run Deep Research. | Long-form research reports (also needs the Analyst plan) | Web, Chat web search | Follows default |

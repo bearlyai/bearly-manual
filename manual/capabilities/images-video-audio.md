@@ -1,6 +1,6 @@
 ---
 title: "Make images, video, and audio"
-description: "How to generate and edit images, make and edit short videos, turn text into speech with Read aloud and Voice Studio, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls."
+description: "How to generate and edit images, upscale a photo, remove a photo's background, make and edit short videos, turn text into speech with Read aloud and Voice Studio, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls."
 canonical: "https://bearly.ai/docs/manual/capabilities/images-video-audio/"
 markdown: "https://bearly.ai/docs/manual/capabilities/images-video-audio.md"
 ---
@@ -9,7 +9,7 @@ markdown: "https://bearly.ai/docs/manual/capabilities/images-video-audio.md"
 
 HTML: [https://bearly.ai/docs/manual/capabilities/images-video-audio/](https://bearly.ai/docs/manual/capabilities/images-video-audio/)
 
-> How to generate and edit images, make and edit short videos, turn text into speech with Read aloud and Voice Studio, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls.
+> How to generate and edit images, upscale a photo, remove a photo's background, make and edit short videos, turn text into speech with Read aloud and Voice Studio, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls.
 
 These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
 
@@ -21,6 +21,8 @@ To point a tool at a file that's already in the chat, type `@` and pick the file
 | --- | --- | --- |
 | A new image from a description | [Imagine](#imagine) | `/image` |
 | A change to an image, an edited area, wider edges, or a combined image | [The image editor](#the-image-editor) and Touch Up | `/edit-image` |
+| A larger, sharper copy of a photo | [Upscale](#upscale) | Ask in words |
+| A photo's subject on a transparent background | [Remove background](#remove-background) | Ask in words |
 | A short video from text or an image | [Make Video](#make-video) | `/video` |
 | A change to a short clip | [Edit Video](#edit-video) | `/edit-video` |
 | Spoken audio from text | [Text to speech](#text-to-speech) | `/say` |
@@ -91,13 +93,73 @@ To edit from the chat instead, type `/edit-image` (**Touch Up**) and describe th
 /edit-image Make the background of the bottle photo a warm sunset and keep the bottle exactly as it is.
 ```
 
-To cut an object out, ask Touch Up to remove the background. You get a PNG with a transparent background, made by a model that can do it, as with [Imagine](#imagine). Editing an image that already has a transparent background keeps it, unless you ask for a solid one. If you named a model that can't keep it, or none that can is available, you get an opaque image and the reply says so.
+To cut the subject out of a photo you have, ask to remove its background without `/edit-image`; Bearly uses [Remove background](#remove-background). To get a transparent background as part of an edit, ask for it in the edit: you get a PNG made by a model that can do it, as with [Imagine](#imagine). Editing an image that already has a transparent background keeps it, unless you ask for a solid one. If you named a model that can't keep it, or none that can is available, you get an opaque image and the reply says so.
 
 ```text
-/edit-image Remove the background from the bottle photo and keep the bottle exactly as it is.
+/edit-image Turn the logo into a flat white version and keep the background transparent.
 ```
 
 **Combines with:** [Make Video](#make-video), which can use any image in the chat as its first or last frame, and [Pages](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) for a gallery.
+
+## Upscale
+
+Upscale makes a larger, sharper copy of an image in the chat: 2K by default, or 4K when you ask. It generates the fine detail it adds, so faces come out plausible rather than exact.
+
+**Use it when:** a photo is too small or soft for print, a slide, or a product page, or you want a sharper version of an image Bearly made.
+
+**You need:** any plan; each upscale counts as image usage. Admin control: **Images**.
+
+
+
+1. Attach the image, or type `@` and pick it under **Assets**, then ask to upscale it — Bearly saves a new copy at 2K and leaves the original as it is.
+
+   ```text
+   Upscale the storefront photo so it's sharp enough to print.
+   ```
+
+2. For 4K, say so.
+
+   ```text
+   Upscale the storefront photo to 4K.
+   ```
+
+
+
+**What you get:** a new image in the chat, shown like an edit, with **Copy image**, **Download**, and **View full size**.
+
+**Limits:** 2K or 4K only. Bearly keeps the content, colors, and composition and adds detail, so check faces and small text before you rely on them. If the image model fails, Bearly doesn't switch to another one. Upscaling an image with a transparent background makes it opaque, so upscale first and remove the background afterwards. Each upscale counts toward the 4 images or speech clips one answer makes before it asks; see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
+
+**Combines with:** [Remove background](#remove-background) after upscaling, and [Make Video](#make-video) with the sharper image as a start frame.
+
+## Remove background
+
+Remove background cuts the subject out of a photo and saves it as a PNG with a transparent background, at the photo's original size. The subject keeps the photo's own pixels; only the background goes.
+
+**Use it when:** you need a product on a clear background for a store listing or a slide, a person or pet cut out for a design, or a sticker made from a photo.
+
+**You need:** any plan; each cutout counts as image usage. Admin control: **Images**. If your organization's model policy doesn't allow the image model that background removal uses, Bearly says so.
+
+
+
+1. Attach the photo, or type `@` and pick it under **Assets**, then ask to remove the background — Bearly keeps the main subject.
+
+   ```text
+   Remove the background from the bottle photo.
+   ```
+
+2. To keep only part of the picture, say what to keep.
+
+   ```text
+   Remove the background from the park photo and keep just the dog.
+   ```
+
+
+
+**What you get:** a new PNG named after the original with `-cutout` at the end, shown in the chat like an edited image. The original stays as it is.
+
+**Limits:** JPEG, PNG, and GIF photos up to 20 MB; Bearly first converts other formats your browser can open, such as WebP. Fine hair and glass edges are approximations. An image that's already transparent is refused before anything runs, and isn't charged. When the model declines a photo or can't separate the subject cleanly, no cutout is saved, nothing is charged, and Bearly doesn't retry on its own. Each cutout counts toward the 4 images or speech clips one answer makes before it asks.
+
+**Combines with:** [Upscale](#upscale) before the cutout, and the [image editor](#the-image-editor)'s **Combine images** to place the cutout in a new scene.
 
 ## Make Video
 

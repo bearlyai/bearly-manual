@@ -98,14 +98,14 @@ A run works with nobody watching, so it gets a fixed, smaller set of tools than 
 
 | Always available in runs | Only when you turn it on for the routine |
 |---|---|
-| Web search, image search, and reading web pages | Connectors you select |
+| Web search, image search, reading web pages, hotel search, and the property, sanctions, and package lookups | Connectors you select |
 | Reading public posts on X | Skills you select; their scripts only with **Allow scripts** or unattended local access |
 | Scholar paper search | Deep Research, through the plugin |
-| Reading and searching the routine chat's files | Local files and commands, with **Unattended local access** |
+| Reading, searching, and translating the routine chat's files | Local files and commands, with **Unattended local access** |
 | Writing files, including CSV files and HTML Pages | Bearly Browser on listed sites, with **Browser access** |
 | Sending you email and texts | |
 
-Never available in runs: Computer Use, Chrome, Run Python (the cloud interpreter) and the document editor that uses it, image generation, video generation, transcription, text to speech, voice, Council, watching and cutting videos, Best Pick, People Search, maps, weather, SEO data, domain research, chart authoring, canvas, prompt templates, memory recall, chat management, video downloads, grammar fixes, Browse Files, and remote modules.
+Never available in runs: Computer Use, Chrome, Run Python (the cloud interpreter) and the document editor that uses it, image generation and editing (including upscaling and background removal), video generation, transcription, text to speech, voice, Council, watching and cutting videos, Best Pick, People Search, maps, weather, company filings and economic data, everyday lookups (events, food, medicines, vehicles, podcasts), SEO data, domain research, chart authoring, canvas, prompt templates, memory recall, chat management, video downloads, grammar fixes, Browse Files, and remote modules.
 
 To get numbers, tables, or visuals from a routine, ask it to write a CSV file or an HTML Page, then open the routine's chat and keep going there: it's an ordinary chat with every tool you normally have. With unattended local access, a run can also compute with commands on your computer.
 

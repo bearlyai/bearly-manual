@@ -61,10 +61,14 @@ Details: [Research](https://bearly.ai/docs/manual/capabilities/research.md).
 | **Best Pick** `/bestpick` | A shopping question, such as the best stick vacuum for pet hair under a price | A card with one product to buy, a store link, the evidence, and follow-up chips | Pro | All | No | No |
 | **People Search** `/people-search`, `/find-people`, `/work-emails`, `/lead-enrichment` | A named person plus one detail, a description of the people you want, names with a company domain, or known profiles | A candidate card, then a cited brief; lists and email lookups as tables in the reply | Analyst | All | No | No |
 | **Recall** `/recall` | A mention of earlier work or a past decision | Matching excerpts from your past chats | Any | All | No | No |
-| **Maps** `/maps` | Places, an area, or a route | A place or route card on the final answer | Any | All | No | No |
+| **Maps** `/maps` | Places, an area, or a route | A place or route card on the final answer; gas prices and EV charger availability in the reply when you ask | Any | All | No | No |
 | **Weather** `/weather`, `/air-quality`, `/pollen` | A place and a time range | A weather card; past weather as text | Any | All | No | No |
 | **SEO data** `/seo` | Keywords, sites, or a page to audit | Search data in the reply | Any | All | No | No |
 | **Domain research** `/domains` | A naming brief or one domain | Name ideas, and whether a domain is available to register | Any | All | No | No |
+| **Hotel search** (ask in words) | A city and country, dates of 1 to 30 nights, and up to 6 adults | Up to 20 hotels with star class, guest rating, nightly price, and a link, in the reply | Any | All | Yes | No |
+| **Company filings and economic data** (ask in words) | A US-listed company, a phrase to find in filings, an economic series such as CPI, or currencies to convert | Reported financials, filing lists and links, full-text filing hits, series values, or exchange rates, each with its source, in the reply | Any | All | No | No |
+| **Property, sanctions, and package lookups** (ask in words) | A US address or area, a person's or company's name with its country, or a tracking number | Property records, a value or rent estimate with comparables, listings, possible sanctions-list matches, or a package's status and scans, in the reply | Any | All | Yes | No |
+| **Everyday lookups** (ask in words) | A place and dates, a barcode or product name, a medicine name, a VIN, or a podcast topic | Events with ticket links, packaged-food nutrition and allergens, medicine label sections, side-effect reports and recalls, vehicle details and recalls, or podcasts and episodes, in the reply | Any | All | No | No |
 
 ### Video and social
 
@@ -88,6 +92,7 @@ Details: [Documents](https://bearly.ai/docs/manual/capabilities/documents.md).
 | **Read Doc** `/read-document` and **Scan Doc** `/find-in-document` | A document and the pages to read, or exact text to find in up to 20 documents | Page text, or each match with its page, line, and surrounding text, grouped by file | Any | All | Yes | Yes |
 | **Summarize Doc** `/summarize` | A long document | A **Deep Summary** in the reply | Any | All | Yes | No |
 | **Document editor** `/document` | A document task, plus any PDF, Word, PowerPoint, or Excel files in the chat to work on | New or edited files: filled PDF forms, .docx files with tracked changes, decks, spreadsheets with formulas | Any | All | No | No |
+| **Translate Document** (ask in words) | A Word .docx file in the chat, up to 50 MB and 200,000 characters, and a target language | A new translated .docx with the same layout; the original stays as it was | Any | All | Yes | No |
 | **Fix Grammar** `/grammar` | A passage of text | An editor card with suggested fixes you accept one at a time or all at once | Any | All | No | No |
 | **Chat files** `/create-file`, `/edit-file`, `/read-file`, `/rename-file`, `/files` | Content the AI writes, or a file already in the chat | Pages (HTML), Markdown, plain text, CSV, and JSON files, with a new version on every edit; editing an uploaded text file saves an edited copy; or an existing file's card shown again, with no new version | Any | All | Yes | No |
 
@@ -118,7 +123,9 @@ Details: [Images, video, and audio](https://bearly.ai/docs/manual/capabilities/i
 | Block | Takes | Produces | Plan | Where | In Routines | Council experts |
 |---|---|---|---|---|---|---|
 | **Imagine** `/image` | A description, and optional reference images | Images in the inline image editor, ready to download; a PNG with a transparent background when you ask for one in the chat | Any | All | No | No |
-| **Touch Up** `/edit-image` | One or more images in the chat, and optionally an area to change | Edited, extended, or combined images; a transparent-background PNG when you ask to remove the background or edit an image that has one | Any | All | No | No |
+| **Touch Up** `/edit-image` | One or more images in the chat, and optionally an area to change | Edited, extended, or combined images; a transparent-background PNG when you ask for one in an edit or edit an image that has one | Any | All | No | No |
+| **Upscale** (ask in words) | One image in the chat | A new 2K copy, or 4K when you ask; a transparent background becomes opaque | Any | All | No | No |
+| **Remove background** (ask in words) | One JPEG, PNG, or GIF photo in the chat, up to 20 MB, and optionally what to keep | A new PNG of the subject on a transparent background, at the photo's original size, named with `-cutout` | Any | All | No | No |
 | **Make Video** `/video` | A description, and optionally an image as the start frame (at most 2.5 times as wide as tall, or as tall as wide) plus an end frame | A 4 to 15-second MP4 with generated sound, saved in the chat | Any | All | No | No |
 | **Edit Video** `/edit-video` | A clip of 3 to 10 seconds, 720 to 2160 pixels on each side, under 50 MB | A separate edited clip; the original stays as it was | Any | All | No | No |
 | **Read Aloud** `/say`, and Voice Studio | Text: a reply, your message, or a script, up to about 22,500 characters of English (about 7,500 in Chinese, Japanese or Korean) | Spoken audio saved as a chat file; Voice Studio for voices, delivery, and takes | Any | All | No | No |
@@ -185,7 +192,9 @@ Each rule names an output type and the blocks that can take it next. These conne
 - **A spreadsheet or raw data file** → **Run Python** reads it and writes a chart-ready CSV → **Create chart**. Charts read data only from a CSV file in the chat: up to 10 columns and 2 MB, one row for a KPI, up to 100 rows for a bar chart, and up to 2,000 rows for a line chart. They never sample or cut rows to fit.
 - **A CSV that's already chart-ready** → **Create chart** directly, with no Python step.
 - **Run Python output** (up to 5 files per run) → files in the chat → **Create chart**, a **Page** with the results baked in, or **Send Email** attachments. Each run starts fresh, so name the files a later run should use.
-- **Any image in the chat**, whether uploaded, generated, or saved by Read Site → **Touch Up** as a source, or **Make Video** as the start or end frame.
+- **Any image in the chat**, whether uploaded, generated, or saved by Read Site → **Touch Up** as a source, **Upscale**, **Remove background**, or **Make Video** as the start or end frame.
+- **An upscaled image** → **Remove background** for a sharp cutout. Do it in that order: upscaling a transparent PNG makes its background opaque.
+- **A Word .docx file**, uploaded or made by the **Document editor** → **Translate Document** → a new .docx in the chat → **Send Email** as an attachment.
 - **A generated video** → **View Media** watches it → **Edit Video** changes it, if the clip is 3 to 10 seconds, 720 to 2160 pixels on each side, and under 50 MB. A 16:9 clip at 2K is too large, so make clips to edit at standard resolution.
 - **Audio or video files**, whether uploaded, saved by **Get Video**, or a post's video from **X** → **Transcribe**. Video files also → **View Media**, which looks at images and video but not audio-only files.
 - **A transcript** → **Transcribe** also saves it in the chat as an `.srt` file named after the original → later turns read it, summarize it, or hand the summary to **Read Aloud**.
@@ -242,7 +251,7 @@ Some chat models also need Pro or Analyst; the model picker opens **Billing** if
 
 In an organization, an admin's policy can turn off any block. The `/` label then disappears, and a reference can't bring it back. Some controls switch off several blocks at once:
 
-- **Web** off removes Web Search, Image Search, Read Site, Deep Research, Scholar, YouTube, and Best Pick.
+- **Web** off removes Web Search, Image Search, Read Site, Deep Research, Scholar, YouTube, Best Pick, hotel search, company filings and economic data, the property, sanctions, and package lookups, and the everyday lookups.
 - **Chat web search** off removes Image Search, Deep Research, Best Pick, Scholar's search of journal sites, and YouTube's **Find** and **Check claims**.
 - **File uploads** off removes attaching files, screen sharing, Get Video, viewing X videos, and the files YouTube saves; it also blocks uploads to a project's **Files** tab and **Sync a folder**.
 - **Run Python** off removes both `/python` and `/document`. Charts then work only on a CSV that's already prepared, or one made with **Work locally** in the desktop app.
@@ -259,9 +268,9 @@ These need the desktop app: Work locally, Computer Use, Bearly Browser, Chrome c
 
 A scheduled run is a chat with nobody watching, so it gets a fixed set of tools:
 
-- **Can use:** Web Search, Image Search, Read Site, X (but not importing a post's video), Scholar, the document tools (Search Docs, Read Doc, Scan Doc, and Summarize Doc), View Media, creating, reading, editing, and renaming chat files (including Pages), Send Email, Send SMS, the connectors and skills you add to the routine, and Deep Research through the routine's **Deep Research** plugin.
+- **Can use:** Web Search, Image Search, Read Site, X (but not importing a post's video), Scholar, hotel search, the property, sanctions, and package lookups, the document tools (Search Docs, Read Doc, Scan Doc, and Summarize Doc), Translate Document, View Media, creating, reading, editing, and renaming chat files (including Pages), Send Email, Send SMS, the connectors and skills you add to the routine, and Deep Research through the routine's **Deep Research** plugin.
 - **Only with an explicit routine setting:** Work locally (**Unattended local access**), a skill's scripts (that skill's **Allow scripts**), and Bearly Browser (**Browser access**, on the sites you list).
-- **Can't use:** Run Python, the Document editor, Fix Grammar, images, video, transcription, text to speech, voice, Canvas, charts, Visualize, Share, Council of Experts, YouTube, Best Pick, Get Video, People Search, Maps, Weather, SEO data, Domain research, Chat management, Recall, prompt templates, remote modules, Computer Use, and Chrome.
+- **Can't use:** Run Python, the Document editor, Fix Grammar, images, video, transcription, text to speech, voice, Canvas, charts, Visualize, Share, Council of Experts, YouTube, Best Pick, Get Video, People Search, Maps, Weather, company filings and economic data, the everyday lookups, SEO data, Domain research, Chat management, Recall, prompt templates, remote modules, Computer Use, and Chrome.
 
 A routine runs only in the desktop app, on the device it's installed on, while the app is open, and each run stops after 25 minutes. To get numbers or charts from a schedule, have the routine write a CSV or an HTML Page, or continue in the routine's chat afterwards.
 

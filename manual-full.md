@@ -26,12 +26,12 @@ Index: [https://bearly.ai/docs/manual.md](https://bearly.ai/docs/manual.md)
 
 ### Capabilities
 
-- [Research the web, papers, people, products, and places](https://bearly.ai/docs/manual/capabilities/research.md): Which Bearly research tool fits a job, and how to start, steer, and limit Web Search, Read Site, Image Search, Deep Research, Scholar, Council of Experts, Best Pick, People Search, SEO data, Domain research, Maps, Weather, and X, with plans, admin controls, Routines support, and tested combinations.
+- [Research the web, papers, people, products, and places](https://bearly.ai/docs/manual/capabilities/research.md): Which Bearly research tool fits a job, and how to start, steer, and limit Web Search, Read Site, Image Search, Deep Research, Scholar, Council of Experts, Best Pick, People Search, SEO data, Domain research, Maps (including gas prices and EV chargers), Weather, hotel search, company filings and economic data, property, sanctions, and package lookups, everyday lookups (events, food, medicines, vehicles, podcasts), and X, with plans, admin controls, Routines support, and tested combinations.
 - [Learn from YouTube, online video, and posts on X](https://bearly.ai/docs/manual/capabilities/videos-and-posts.md): How to open, summarize, cut, quote, and fact-check YouTube videos in Bearly, save videos from YouTube and other sites into a chat with Get Video, and search and read public posts, threads, videos, and profiles on X.
-- [Work with files and documents](https://bearly.ai/docs/manual/capabilities/documents.md): How Bearly opens, previews, searches, cites, summarizes, edits, converts, and proofreads files in a chat or project, including supported file types, size limits, password-protected PDFs, Always search documents, the Document editor, and what changes in end-to-end encrypted chats.
+- [Work with files and documents](https://bearly.ai/docs/manual/capabilities/documents.md): How Bearly opens, previews, searches, cites, summarizes, edits, converts, translates, and proofreads files in a chat or project, including supported file types, size limits, password-protected PDFs, Always search documents, the Document editor, and what changes in end-to-end encrypted chats.
 - [Analyze data and run code](https://bearly.ai/docs/manual/capabilities/data-and-code.md): How to analyze spreadsheets and files with Run Python, draw KPI, bar, and line charts with Charts, and pick the right visual with Visualize in Bearly, including what the Python sandbox includes, file inputs and outputs, chart limits, and how these combine with documents and Pages.
 - [Make Pages and edit in Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md): How to build interactive Pages in Bearly, refine them through versions, prepare and publish them to a stable bearly.sh link with the right audience, share a conversation's key takeaways, and edit an answer as a document in Canvas, with every limit that applies.
-- [Make images, video, and audio](https://bearly.ai/docs/manual/capabilities/images-video-audio.md): How to generate and edit images, make and edit short videos, turn text into speech with Read aloud and Voice Studio, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls.
+- [Make images, video, and audio](https://bearly.ai/docs/manual/capabilities/images-video-audio.md): How to generate and edit images, upscale a photo, remove a photo's background, make and edit short videos, turn text into speech with Read aloud and Voice Studio, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls.
 - [Record and use meetings](https://bearly.ai/docs/manual/capabilities/meetings.md): How to record online meetings, in-person conversations, and voice notes in Bearly's Meetings page, follow the live transcript, get the final transcript and speaker names, summarize, export, and hand a transcript to a chat or project to draft follow-ups.
 - [Let Bearly use a browser, your files, and your computer](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md): How a Bearly desktop chat browses sites in Bearly Browser, works in your signed-in Chrome tabs, offers to install the Chrome extension in chat, reads and edits files and runs commands with Work locally, and operates apps with Computer Use, including the approvals each asks for and how to choose between them.
 - [Connect apps and add skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md): How to connect services and your own MCP servers to Bearly, turn a connector on for a chat or a routine, sign in on each device, and install and run skills, including the built-in Visualize and Bearly AI Models skills, with platform limits and approvals.
@@ -156,12 +156,12 @@ People use Bearly for real work: editors, founders, engineers, researchers, anal
 | Area | What Bearly does | Manual page |
 |---|---|---|
 | Chat with any model | Pick a model per chat, rerun an answer with another model, or ask several at once with `/council` (Pro and up). | [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md) |
-| Research | Web search with sources, reading web pages, image search, Deep Research reports, academic papers with Scholar, product picks with Best Pick, people briefs, SEO and domain data, maps, and weather. | [Research](https://bearly.ai/docs/manual/capabilities/research.md) |
+| Research | Web search with sources, reading web pages, image search, Deep Research reports, academic papers with Scholar, product picks with Best Pick, people briefs, SEO and domain data, maps with gas prices and EV chargers, weather, hotel prices, company filings and economic data, property, sanctions, and package lookups, and everyday lookups for events, food, medicines, cars, and podcasts. | [Research](https://bearly.ai/docs/manual/capabilities/research.md) |
 | Videos and posts | Summaries, chapters, quotes, cuts, and claim checks for YouTube videos; downloading video from supported sites; reading public posts on X. | [Videos and posts](https://bearly.ai/docs/manual/capabilities/videos-and-posts.md) |
-| Files | Read, search, summarize, and quote PDFs, office documents, spreadsheets, and more; create and edit office documents; fix grammar. | [Files and documents](https://bearly.ai/docs/manual/capabilities/documents.md) |
+| Files | Read, search, summarize, and quote PDFs, office documents, spreadsheets, and more; create and edit office documents; translate Word documents with their layout; fix grammar. | [Files and documents](https://bearly.ai/docs/manual/capabilities/documents.md) |
 | Data and code | Run Python on your files, and turn prepared data into charts. | [Data and code](https://bearly.ai/docs/manual/capabilities/data-and-code.md) |
 | Publishing | Build Pages (documents, dashboards, small interactive tools) and publish them at a stable link. | [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) |
-| Media | Generate and edit images, make short videos with sound, turn text into speech, and transcribe audio and video. | [Images, video, and audio](https://bearly.ai/docs/manual/capabilities/images-video-audio.md) |
+| Media | Generate and edit images, upscale photos, cut out a photo's subject on a transparent background, make short videos with sound, turn text into speech, and transcribe audio and video. | [Images, video, and audio](https://bearly.ai/docs/manual/capabilities/images-video-audio.md) |
 | Voice and meetings | Dictate into the composer, talk with Bearly on a voice call, and record meetings with transcripts. | [Talk to Bearly](https://bearly.ai/docs/manual/chat/voice.md), [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md) |
 | Agents | In the desktop app, Bearly can work in a browser, in a folder you choose, and on your screen, with your approval. | [Browser and computer](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md) |
 | Your other apps | Connect services such as Notion, Linear, and GitHub, or your own servers, and add skills. | [Connectors and skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md) |
@@ -475,7 +475,7 @@ Max is not sold to personal accounts. An organization admin buys it as a seat in
 | **Usage** pane in Settings | Any paid plan | Free accounts see the percentage used in the account menu |
 | Credit Boost | Any paid plan, outside the iOS app | Not shown |
 
-Web search, image search, reading web pages, Scholar, YouTube, X posts, SEO data, domain research, Maps, Weather, and document tools are on every plan. They draw on the same allowance as chat.
+Web search, image search, reading web pages, Scholar, YouTube, X posts, SEO data, domain research, Maps, Weather, hotel search, company filings and economic data, the property, sanctions, and package lookups, the everyday lookups, document tools, and Translate Document are on every plan. They draw on the same allowance as chat; the company-filings and everyday lookups themselves are free.
 
 If you belong to an organization, its policy can still turn a feature off even when your plan includes it. See the [policy control catalog](https://bearly.ai/docs/manual/organizations.md).
 
@@ -504,9 +504,11 @@ When a request can't run, the chat shows a message and a button.
 | Situation | Message | Button |
 | --- | --- | --- |
 | A feature needs a higher plan | "_Feature_ requires _Plan_ or higher." | **Upgrade to _Plan_** (or **View plans**) |
-| Free monthly allowance used up | "You've used this month's free allowance. It resets on _date_. Upgrade to Pro to keep going now." | **Go Pro** |
-| Free daily allowance used up | "You're out of credits. Please upgrade your plan to continue. Credits will reset tomorrow." | **Go Pro** |
-| A Free request trips Bearly's free-plan checks | "This request tripped our free-plan checks. Go Pro to continue, or email support@bearly.ai if we've misread it." | **Go Pro** |
+| Free monthly allowance used up | "You've used this month's free allowance. It resets on _date_. Go Pro to keep going now." | **Go Pro** |
+| Free daily allowance used up | "You've used today's free allowance. It resets tomorrow. Go Pro to keep going now." | **Go Pro** |
+| A Free account signed up with an email address Free doesn't cover, such as a work address | "Free AI works with personal email addresses like Gmail, iCloud, Outlook and Proton. Go Pro for $20 a month to use Bearly with this address." | **Go Pro** |
+| A Free request comes from a VPN or cloud network | "Free AI doesn't work over a VPN or cloud network. Turn off your VPN to keep going free, or go Pro to use Bearly from any network." | **Go Pro** |
+| A Free request trips another of Bearly's free-plan checks | "This request tripped our free-plan checks. Go Pro to continue, or email support@bearly.ai if we've misread it." | **Go Pro** |
 | Paid plan used up, boost available | "You've used your plan credits. Buy a boost to keep going, or upgrade your plan." The boost amounts appear as buttons. | **Upgrade Plan**, or **View Billing** if your plan can't be changed here |
 | Paid plan and boost both used up | "You've used all your credits, including your boost. Buy another boost to keep going, or upgrade your plan." | **Upgrade Plan** or **View Billing** |
 | Anything else | "You've used your plan credits. Open billing to see your options." | **View Billing** |
@@ -2385,7 +2387,7 @@ With **Auto-hide** on in the same pane, Bearly hides when it loses focus, and th
 
 ---
 title: "Research the web, papers, people, products, and places"
-description: "Which Bearly research tool fits a job, and how to start, steer, and limit Web Search, Read Site, Image Search, Deep Research, Scholar, Council of Experts, Best Pick, People Search, SEO data, Domain research, Maps, Weather, and X, with plans, admin controls, Routines support, and tested combinations."
+description: "Which Bearly research tool fits a job, and how to start, steer, and limit Web Search, Read Site, Image Search, Deep Research, Scholar, Council of Experts, Best Pick, People Search, SEO data, Domain research, Maps (including gas prices and EV chargers), Weather, hotel search, company filings and economic data, property, sanctions, and package lookups, everyday lookups (events, food, medicines, vehicles, podcasts), and X, with plans, admin controls, Routines support, and tested combinations."
 canonical: "https://bearly.ai/docs/manual/capabilities/research/"
 markdown: "https://bearly.ai/docs/manual/capabilities/research.md"
 ---
@@ -2394,11 +2396,11 @@ markdown: "https://bearly.ai/docs/manual/capabilities/research.md"
 
 HTML: [https://bearly.ai/docs/manual/capabilities/research/](https://bearly.ai/docs/manual/capabilities/research/)
 
-> Which Bearly research tool fits a job, and how to start, steer, and limit Web Search, Read Site, Image Search, Deep Research, Scholar, Council of Experts, Best Pick, People Search, SEO data, Domain research, Maps, Weather, and X, with plans, admin controls, Routines support, and tested combinations.
+> Which Bearly research tool fits a job, and how to start, steer, and limit Web Search, Read Site, Image Search, Deep Research, Scholar, Council of Experts, Best Pick, People Search, SEO data, Domain research, Maps (including gas prices and EV chargers), Weather, hotel search, company filings and economic data, property, sanctions, and package lookups, everyday lookups (events, food, medicines, vehicles, podcasts), and X, with plans, admin controls, Routines support, and tested combinations.
 
 These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
 
-Bearly can search the web, read a page or file at a link, run a long investigation that ends in a cited report, read academic papers, put one question to several AI models, pick a product to buy, research a person, pull search-engine data, check domain names, plan routes, and read the weather. Most of these start from an ordinary request. This page says which tool fits which job, how to start each one on purpose, and what each one needs.
+Bearly can search the web, read a page or file at a link, run a long investigation that ends in a cited report, read academic papers, put one question to several AI models, pick a product to buy, research a person, pull search-engine data, check domain names, plan routes, find gas prices and EV chargers, read the weather, price hotels for your dates, read company filings and economic data, look up property values, sanctions lists, and packages, and answer everyday questions about events, food, medicines, cars, and podcasts. Most of these start from an ordinary request. This page says which tool fits which job, how to start each one on purpose, and what each one needs.
 
 ## Which research tool for which job
 
@@ -2415,8 +2417,12 @@ Bearly can search the web, read a page or file at a link, run a long investigati
 | A list of people who fit a description, their work emails, or profiles for leads you already have | [Find people, work emails, and lead enrichment](#find-people-work-emails-and-lead-enrichment) | `/find-people`, `/work-emails`, `/lead-enrichment` | Analyst |
 | Keyword demand, search rankings, competitors, backlinks, or a page audit | [SEO data](#seo-data) | Ask, or `/seo` | Every plan |
 | Name ideas and whether a domain is free to register | [Domain research](#domain-research) | Ask, or `/domains` | Every plan |
-| Places, reviews, routes, and travel times | [Maps](#maps) | Ask, or `/maps` | Every plan |
+| Places, reviews, routes, travel times, gas prices, and EV chargers | [Maps](#maps) | Ask, or `/maps` | Every plan |
 | Forecasts, alerts, past weather, air quality, or pollen | [Weather](#weather) | Ask, or `/weather` | Every plan |
+| Hotels with nightly prices for your dates | [Hotel search](#hotel-search) | Ask | Every plan |
+| A US-listed company's filings and reported financials, US economic data, or exchange rates | [Company filings and economic data](#company-filings-and-economic-data) | Ask | Every plan |
+| A US property's value or rent, a sanctions check on a person or company, or where a package is | [Property, sanctions, and package lookups](#property-sanctions-and-package-lookups) | Ask | Every plan |
+| Events near a place, a food by barcode, a medicine's label, a car's VIN, or a podcast | [Everyday lookups](#everyday-lookups) | Ask | Every plan |
 | What people are posting on X, or one post, thread, or profile | [X](#x) | Paste a post link, or `/search-x`, `/read-x`, `/x-profile` | Every plan |
 
 "Every plan" tools use your plan allowance like any other reply. Plans are compared in [Plans and credits](https://bearly.ai/docs/manual/plans-and-credits.md). On a plan below a tool's minimum, the chat shows an upgrade card instead of running it.
@@ -2425,13 +2431,13 @@ These tools run in Bearly chats in the web app, phone browsers, the desktop app,
 
 ## How research tools start
 
-- **Ask in plain words.** Bearly picks the tool that fits. Web Search, Read Site, Image Search, Scholar, Best Pick, SEO data, Domain research, Maps, Weather, and X all start from an ordinary request. People Search starts when you explicitly ask to look up or vet a named person. Deep Research prepares its setup card when you ask for an in-depth research run. Council of Experts runs only from `/council`.
+- **Ask in plain words.** Bearly picks the tool that fits. Web Search, Read Site, Image Search, Scholar, Best Pick, SEO data, Domain research, Maps, Weather, X, hotel search, company filings and economic data, the property, sanctions, and package lookups, and the everyday lookups all start from an ordinary request; the last four have no `/` label, so you ask in words. People Search starts when you explicitly ask to look up or vet a named person. Deep Research prepares its setup card when you ask for an in-depth research run. Council of Experts runs only from `/council`.
 - **Type a label to choose the tool.** Type `/` at the very start of a message, or `@` anywhere in it, then a label such as `deep-research`. The menu lists research tools under **Research**. Only one `/` label counts per message, but you can add several `@` labels. A label chooses a tool that is already available to you; it can't switch on a tool your plan or organization has turned off. More in [Compose messages](https://bearly.ai/docs/manual/chat/compose.md).
 - **Switch web and paper search for one chat.** The sliders button in the composer opens a **Search** section with **Web** (**Off** or **Auto**) and **Scholar** (**Off** or **Auto**). Both start on **Auto**. **Auto** makes the tools available; it doesn't force a search on every message.
-- **Approve paid work on cards.** Deep Research and People Search show cards and prompts. Nothing paid starts until you select the button or approve the prompt, and People Search's lookup cards ask every time. Best Pick, SEO data, X, and Scholar's journal-site search ask after 5 paid lookups in one answer, and Council of Experts after one council; see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
+- **Approve paid work on cards.** Deep Research and People Search show cards and prompts. Nothing paid starts until you select the button or approve the prompt, and People Search's lookup cards ask every time. Best Pick, SEO data, X, hotel search, the property, sanctions, and package lookups, and Scholar's journal-site search ask after 5 paid lookups in one answer, and Council of Experts after one council; see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
 
 > **Note — Admin controls**
-> In a managed organization, administrators switch these tools on or off under **Organizations** → organization name → **Policies** → policy name. Most live in the **Web & Research** group; **Council** is under **Collaboration**, and **File uploads** is under **Privacy & Security**. A control nobody has set follows the policy's default. Each section below names the controls its tool needs. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
+> In a managed organization, administrators switch these tools on or off under **Organizations** → organization name → **Policies** → policy name. Most live in the **Web & Research** group; **Council** is under **Collaboration**, and **File uploads** is under **Privacy & Security**. Hotel search, company filings and economic data, the property, sanctions, and package lookups, and the everyday lookups have no control of their own; they follow **Web**. A control nobody has set follows the policy's default. Each section below names the controls its tool needs. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
 
 > **Note — Zero Data Retention only and research tools**
@@ -2634,7 +2640,7 @@ Council of Experts sends one self-contained question to two to five AI models at
 
 **What you get:** each model's full answer in its own tab, and a synthesis that names consensus and disagreement. In most chats, a very long answer is also saved to the chat's **Files** as "_model_ answer.md".
 
-**Limits:** one council per answer; another asks **Start another model run?** first. A council needs at least two experts to finish. Each expert can take up to eight tool steps, and each answer is cut to 4,000 characters for the synthesis. The model list follows your plan and organization; with **Zero Data Retention only** on, it offers only zero-retention models. Experts can use Web Search, Read Site, Scholar, Search Docs, Read Doc, Scan Doc, and a YouTube video's transcript and saved claims check. They can't use Image Search, Deep Research, X, Maps, Weather, SEO data, Domain research, People Search, Best Pick, or connectors. Search Docs isn't available in end-to-end encrypted chats.
+**Limits:** one council per answer; another asks **Start another model run?** first. A council needs at least two experts to finish. Each expert can take up to eight tool steps, and each answer is cut to 4,000 characters for the synthesis. The model list follows your plan and organization; with **Zero Data Retention only** on, it offers only zero-retention models. Experts can use Web Search, Read Site, Scholar, Search Docs, Read Doc, Scan Doc, and a YouTube video's transcript and saved claims check. They can't use Image Search, Deep Research, X, Maps, Weather, SEO data, Domain research, People Search, Best Pick, hotel search, company filings and economic data, the property, sanctions, and package lookups, the everyday lookups, or connectors. Search Docs isn't available in end-to-end encrypted chats.
 
 **Runs in:** every app platform. Routines: no.
 
@@ -2776,9 +2782,9 @@ Domain research suggests domain names and checks whether a specific domain is av
 
 ## Maps
 
-Maps searches places, reads place details and reviews, and plans routes with travel times.
+Maps searches places, reads place details and reviews, plans routes with travel times, and reports gas prices and EV charger availability.
 
-**Use it when:** you're looking for somewhere nearby, comparing places by their reviews, planning a route with stops, or comparing travel times from several starting points.
+**Use it when:** you're looking for somewhere nearby, comparing places by their reviews, planning a route with stops, comparing travel times from several starting points, or finding cheaper gas or a free charger nearby or on the way.
 
 **You need:** any plan. Admin control: **Maps**. For "near me", location permission on your device.
 
@@ -2794,11 +2800,17 @@ Maps searches places, reads place details and reviews, and plans routes with tra
 
 3. Ask follow-ups that build on the result — "Read the reviews for the second one", "How long by transit if I leave at 8:30?", or "Find a pharmacy along that route."
 
+4. For fuel or charging, ask about prices or chargers — Bearly adds the latest pump prices or charger availability to the gas stations and chargers it finds, near a place or along a route.
+
+   ```text
+   Find the cheapest regular gas within 3 miles of Union Square, San Francisco, and say when each price was last updated.
+   ```
 
 
-**What you get:** a map or route card for the final answer; intermediate lookups stay in the background. When the embedded map isn't available, a route card draws the route line instead.
 
-**Limits:** place searches return up to 20 results and reach up to 50 km from the point you give. Routes cover driving (traffic-aware, the default), walking, bicycling, and transit, with up to three stops in between; transit routes use either an arrival or a departure time. A travel-time matrix covers up to 10 origins by 10 destinations, and a search along a route returns up to 10 places. Review reading covers up to 450 reviews across relevant, newest, and lowest-rated. A place you name wins over your location; otherwise Bearly uses your device's location, then an approximate location from your network, and says when it does.
+**What you get:** a map or route card for the final answer; intermediate lookups stay in the background. When the embedded map isn't available, a route card draws the route line instead. Gas prices and charger availability are in the answer, not on the card: each pump price with its fuel type and when it was last updated, and for chargers the connector types, top charging speed, number of plugs, and how many are free or out of service.
+
+**Limits:** place searches return up to 20 results and reach up to 50 km from the point you give. Routes cover driving (traffic-aware, the default), walking, bicycling, and transit, with up to three stops in between; transit routes use either an arrival or a departure time. A travel-time matrix covers up to 10 origins by 10 destinations, and a search along a route returns up to 10 places. Review reading covers up to 450 reviews across relevant, newest, and lowest-rated. A place you name wins over your location; otherwise Bearly uses your device's location, then an approximate location from your network, and says when it does. Gas prices and charger counts are the latest reports for each place, not live readings, and Bearly says when each was updated. Free-plug counts appear only for charging networks that report them; a missing count means unknown, not zero. Charging prices aren't available.
 
 **Runs in:** every app platform. Routines: no. Council experts: no.
 
@@ -2830,6 +2842,176 @@ Weather reads current conditions, forecasts, official alerts, past weather, air 
 
 **Runs in:** every app platform. Routines: no. Council experts: no.
 
+## Hotel search
+
+Hotel search finds hotels in a destination with nightly prices for your dates, star class, guest ratings, and a link for each. It doesn't book or hold anything.
+
+**Use it when:** you're comparing places to stay for a trip, checking what a city costs on certain nights, or building a shortlist before you book.
+
+**You need:** any plan. Admin control: **Web**.
+
+
+
+1. Name the city and country, your check-in and check-out dates, and how many adults — Bearly searches current prices for that stay.
+
+   ```text
+   Find hotels in Lisbon, Portugal for 2 adults, checking in March 12 and out March 15. Show the best rated under 200 euros a night.
+   ```
+
+2. Narrow the list in follow-ups — Bearly works from the hotels it found, or searches again for new dates or another area.
+
+
+
+**What you get:** a list in the reply with each hotel's name, star class, guest rating and review count, nightly price, and a link to its listing. Some hotels come back without a street address.
+
+**Limits:** up to 20 hotels per search. A stay is 1 to 30 nights for 1 to 6 adults; give both dates or neither, since a search without dates uses a default one-night stay. Prices are in US dollars unless you name another currency, and they're a snapshot: the booking site's checkout price applies. Each search is a paid lookup; past 5 in one answer, Bearly asks first. A search stops after 45 seconds, and a failed search isn't repeated automatically.
+
+**Runs in:** every app platform. Routines: yes. Council experts: no.
+
+**Combines with:** [Maps](#maps) to see where the hotels are and time the trip from each to where you're going, and [Weather](#weather) for your dates.
+
+## Company filings and economic data
+
+Bearly reads primary sources for markets and the economy: a US-listed company's SEC filings and the financials it reported in them, US economic series such as inflation, jobs, interest rates, and GDP, and official reference exchange rates. Each figure names the filing or series it came from. The lookups themselves are free; the reply uses your plan allowance like any other.
+
+**Use it when:** you want a company's revenue, profit, or cash flow over several years from its 10-K and 10-Q filings, its recent 8-K events or insider trades, which companies mention a topic in their filings, CPI or unemployment over time, or an amount converted at an official rate.
+
+**You need:** any plan. Admin control: **Web**.
+
+
+
+1. Ask for the figures and the period — Bearly reads the company's reported financials and cites the filing behind each one.
+
+   ```text
+   Show Apple's revenue, net income, and free cash flow for the last five fiscal years from its 10-K filings, with a link to each filing.
+   ```
+
+2. Ask for the filings themselves — Bearly lists recent filings by form, such as 10-Ks, 8-Ks, or Form 4 insider trades, each with a link to the document.
+
+   ```text
+   List Nvidia's 8-K filings since July and the events each one reports.
+   ```
+
+3. Search filing text across companies — put an exact phrase in quotes.
+
+   ```text
+   Which companies mentioned "tariff surcharge" in a 10-Q filed this year?
+   ```
+
+4. Ask for economic data or a conversion — Bearly finds the series, reads its values, and can show the change from a year earlier.
+
+   ```text
+   Show US CPI inflation year over year for each month of 2026, and convert 2,500 euros to yen at today's reference rate.
+   ```
+
+
+
+**What you get:** figures in the reply, each with its fiscal year or date and the filing or series it came from. Bearly computes free cash flow as operating cash flow minus capital spending and says so when it uses it.
+
+**Limits:**
+
+- **Companies:** US-listed companies that file with the SEC. Many non-US companies don't, and companies that report under international accounting standards often have no standard figures, so Bearly lists their filings instead. Figures are as filed, including restatements, and a figure the company didn't report isn't estimated. Financials cover up to 15 fiscal years (5 by default) plus the latest quarter.
+- **Filings:** a list returns up to 100 of the company's recent filings, newest first, and says which dates it covers. Full-text search covers every filing since 2001 and returns up to 50 hits.
+- **Economic series:** at most the latest 120 values per request, so ask for a monthly or yearly view of a long range.
+- **Exchange rates:** about 30 major currencies, up to 10 at a time, latest, on a date, or as a daily history. Rates are published once each working day, so a weekend or holiday date gives the previous working day's rates.
+- There are no stock prices or quotes.
+
+**Runs in:** every app platform. Routines: no. Council experts: no.
+
+**Combines with:** [Run Python and charts](https://bearly.ai/docs/manual/capabilities/data-and-code.md) to plot a company's figures or an economic series, and [Web Search](#web-search) for news and analysis around the numbers.
+
+## Property, sanctions, and package lookups
+
+Three kinds of paid lookups: US property records, value and rent estimates, and listings; sanctions and watch-list screening of a person or company; and package tracking.
+
+| Lookup | Ask with | You get |
+| --- | --- | --- |
+| Property records | A US street address with city, state, and ZIP | Type, beds, baths, size, lot, year built, last sale, latest tax assessment and property tax, owner names, and HOA fee, from county records |
+| Value or rent estimate | A US address; optionally the type, beds, baths, and size | An estimated market value or monthly long-term rent, with a low–high range and the 5 to 25 comparable properties it used (10 by default) |
+| Listings | A US city and state, or a ZIP code; for sale or for rent; optionally type, beds, and baths | Up to 20 homes listed for sale or long-term rent, with price, beds, baths, size, days on market, and listing date; or recently removed listings |
+| Sanctions screening | A person's or company's name and up to 4 other spellings; for a person, a country and birth year; for a company, its country of registration | Up to 10 possible matches (5 by default) from more than 300 sanctions, politically exposed person, debarment, and enforcement lists, each with a match score, the lists it's on, and source links |
+| Package tracking | A tracking number, and the carrier if you know it | Current status, estimated delivery, who signed, and up to 30 recent scan events with places (10 by default), across USPS, UPS, FedEx, DHL, and more than 100 other carriers |
+
+**Use it when:** you're sizing up a home before an offer or a rental before you sign, checking a new client, supplier, or counterparty before doing business, or finding out where a delivery is.
+
+**You need:** any plan; each lookup uses your plan allowance. Admin control: **Web**.
+
+
+
+1. Ask with the details the lookup needs — a full US address, a name with its country, or the tracking number.
+
+   ```text
+   What is 5500 Grand Lake Dr, San Antonio, TX 78244 worth, and what would it rent for? Show the comparables.
+   ```
+
+   ```text
+   Screen the company "Acme Trading LLC", registered in the United Arab Emirates, against sanctions lists.
+   ```
+
+   ```text
+   Where is my package? The tracking number is 1Z999AA10123456784.
+   ```
+
+2. Past 5 paid lookups in one answer, approve **Run more paid lookups?** to continue — see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
+
+
+
+**What you get:** results in the reply. Estimates are labeled as automated estimates from comparables, not appraisals, and screening results as possible matches to check against the cited sources.
+
+**Limits:** property lookups cover the US only, and county records can be out of date. An estimate is less reliable when comparables are few or far away, and Bearly says so. Screening isn't a compliance decision: a high score means a possible match, and no match isn't a clearance. Adding a person's country and birth year, or a company's country, cuts false matches. Tracking is one lookup at a time, and nothing keeps watching the package, so ask again for an update; a number the carrier hasn't scanned yet comes back without a status. A lookup that fails or times out isn't repeated automatically.
+
+**Runs in:** every app platform. Routines: yes. Council experts: no.
+
+**Combines with:** [Maps](#maps) for what's around a property, [Web Search](#web-search) to check a screening match against news, and [People Search](#people-search) for a full brief on a person.
+
+## Everyday lookups
+
+Free lookups in public reference data: events and tickets, packaged food, medicines, vehicles, and podcasts. Each item comes with its source link. The lookups themselves are free; the reply uses your plan allowance like any other.
+
+| Lookup | Ask with | You get |
+| --- | --- | --- |
+| Events | An artist, team, show, or keyword, and a city or area and dates | Upcoming concerts, sports, theater, comedy, and family events with date, venue, status, a price range when one is published, and a link to the ticket page; up to 50 per search. Ask about one event for its lineup, on-sale dates, age limit, venue address, parking, and accessible seating |
+| Packaged food | The digits under a barcode, or a product name or brand | Name, brand, nutrition per 100 g and per serving, ingredients, allergens, Nutri-Score, and how processed it is; a name search finds up to 24 products worldwide |
+| Medicines | A brand or generic name, even misspelled | The active ingredient, brands, strengths, and drug class; the FDA-approved label, such as uses, dosing, warnings, side effects, and interactions; how many side-effect reports the FDA has received and the most-reported reactions; and FDA recalls since 2004 |
+| Vehicles | A VIN, or a make, model, and year | Make, model, year, trim, body, engine, fuel, drive, transmission, where it was built, and safety equipment; a make's models for a year; and US safety recalls with the risk and the free fix |
+| Podcasts | A topic, show title, or host | Matching shows with description, language, categories, and links; a show's latest episodes; and what's trending, optionally by language and category |
+
+**Use it when:** you're planning a night out, checking what's in a snack or whether it has an allergen, reading a medicine's label, checking a used car's VIN and recalls before you buy, or looking for a podcast on a topic.
+
+**You need:** any plan. Admin control: **Web**.
+
+
+
+1. Ask in plain words, with the place and dates, the barcode, the name, or the VIN — Bearly picks the lookup.
+
+   ```text
+   What concerts are on in Austin, TX this weekend? Link the ticket pages.
+   ```
+
+   ```text
+   Decode VIN 1HGCM82633A004352 and list the safety recalls for that model and year.
+   ```
+
+   ```text
+   What does the label for Lexapro say about interactions and side effects?
+   ```
+
+
+
+**What you get:** results in the reply, with a source link for each item.
+
+**Limits:**
+
+- **Events:** only events sold through one large ticket seller, in the US, Canada, Europe, Australia, and more. Venues that sell elsewhere won't appear; Bearly says so and can search the web instead. Prices are often shown only on the event's page.
+- **Food:** a barcode that isn't in the database comes back as not found. Name searches are limited to a few a minute.
+- **Medicines:** US reference data, not medical advice. Bearly quotes the label rather than adding its own dosing and points you to a doctor or pharmacist for decisions about your care. Side-effect reports show what people reported, not how likely a side effect is. For interactions, Bearly reads each drug's label; that's the label's list, not a complete interaction check.
+- **Vehicles:** vehicles sold in the US. A VIN is 17 characters without I, O, or Q; a partial VIN of at least 11 characters decodes the model. No ownership, accident, or title history.
+- **Podcasts:** up to 40 shows per search and 50 episodes per show.
+
+**Runs in:** every app platform. Routines: no. Council experts: no.
+
+**Combines with:** [Maps](#maps) to plan the trip to a venue, [Weather](#weather) for an outdoor event, and [email](https://bearly.ai/docs/manual/capabilities/email-and-text.md) to send yourself the list.
+
 ## X
 
 Bearly reads public X data: it searches posts from roughly the last seven days, reads a post with its thread and quote posts, watches a video attached to a post, and reads a public profile. It's read-only; Bearly can't post, like, follow, or read DMs.
@@ -2853,7 +3035,8 @@ Scheduled [Routines](https://bearly.ai/docs/manual/capabilities/routines.md) run
 | X (search and read) | Yes | No |
 | Search Docs, Read Doc, Scan Doc | Yes | Yes |
 | YouTube | No | Transcript lookup and a saved claims check only |
-| Council of Experts, Best Pick, People Search and its list tools, SEO data, Domain research, Maps, Weather, Get Video | No | No |
+| Hotel search; property, sanctions, and package lookups | Yes | No |
+| Council of Experts, Best Pick, People Search and its list tools, SEO data, Domain research, Maps, Weather, company filings and economic data, everyday lookups, Get Video | No | No |
 
 Creating routines needs the **Pro** plan and the **Routines** admin control.
 
@@ -3398,7 +3581,7 @@ You get the post's context, what its video shows, and whether news sources back 
 
 ---
 title: "Work with files and documents"
-description: "How Bearly opens, previews, searches, cites, summarizes, edits, converts, and proofreads files in a chat or project, including supported file types, size limits, password-protected PDFs, Always search documents, the Document editor, and what changes in end-to-end encrypted chats."
+description: "How Bearly opens, previews, searches, cites, summarizes, edits, converts, translates, and proofreads files in a chat or project, including supported file types, size limits, password-protected PDFs, Always search documents, the Document editor, and what changes in end-to-end encrypted chats."
 canonical: "https://bearly.ai/docs/manual/capabilities/documents/"
 markdown: "https://bearly.ai/docs/manual/capabilities/documents.md"
 ---
@@ -3407,11 +3590,11 @@ markdown: "https://bearly.ai/docs/manual/capabilities/documents.md"
 
 HTML: [https://bearly.ai/docs/manual/capabilities/documents/](https://bearly.ai/docs/manual/capabilities/documents/)
 
-> How Bearly opens, previews, searches, cites, summarizes, edits, converts, and proofreads files in a chat or project, including supported file types, size limits, password-protected PDFs, Always search documents, the Document editor, and what changes in end-to-end encrypted chats.
+> How Bearly opens, previews, searches, cites, summarizes, edits, converts, translates, and proofreads files in a chat or project, including supported file types, size limits, password-protected PDFs, Always search documents, the Document editor, and what changes in end-to-end encrypted chats.
 
 These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
 
-Attach a file and Bearly can show it, read it, search it, quote it with page citations, summarize it, or hand back a new edited copy. This page covers every file and document tool in a chat: adding files, what each file type looks like, finding files again, the document research tools, the Document editor, and Fix Grammar.
+Attach a file and Bearly can show it, read it, search it, quote it with page citations, summarize it, or hand back a new edited copy. This page covers every file and document tool in a chat: adding files, what each file type looks like, finding files again, the document research tools, the Document editor, Translate Document, and Fix Grammar.
 
 ## Add files to a chat
 
@@ -3637,6 +3820,36 @@ What it can do, by format:
 **Limits:** up to five new files per run. Each run stops after 60 seconds, so split a big batch into a few named requests. Check the downloaded file in the app where it will be used before you send or sign it; conversion can shift layout, fonts, or page breaks.
 
 **Combines with:** the [document research tools](#research-your-documents-search-docs-read-doc-scan-doc) to gather facts first, [Share file](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md#share-and-publish-a-page) to give the result a Page and link, and [Run Python](https://bearly.ai/docs/manual/capabilities/data-and-code.md) for analysis that doesn't need a polished file.
+
+## Translate Document
+
+Translate Document translates a Word (.docx) file into another language and returns a new Word file with the same layout: paragraphs, formatting, tables, headers and footers, footnotes, endnotes, and comments. Your original stays unchanged.
+
+**Use it when:** you need a contract, report, or handout in another language and want it to look like the original, not like pasted text.
+
+**You need:** any plan; each translation uses your plan allowance. It has no admin control of its own; attaching files needs **File uploads**. A chat you can edit.
+
+
+
+1. Attach the .docx, or type `@` and pick it under **Assets**, then name the language — Bearly detects the source language unless you name it.
+
+   ```text
+   Translate the attached employee handbook into Spanish and keep the formatting.
+   ```
+
+2. Wait for the file card — a long document can take several minutes.
+
+3. Open the new file and select **Download**.
+
+
+
+**What you get:** a new Word file named after the original with the language added, shown as a file card in the chat.
+
+**Limits:** Word .docx files only; PDFs and other formats aren't translated. Up to 50 MB and 200,000 characters of text. Translated text can wrap differently, so line breaks and page breaks may move. A read-only chat can't save the translation. A translation that fails or that the model declines saves no file, isn't charged, and isn't retried automatically. Each translation counts toward the 5 paid lookups one answer makes before it asks; see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
+
+**Runs in:** every app platform. Routines: yes, on a Word file in the routine's chat. Council experts: no.
+
+**Combines with:** the [Document editor](#document-editor) to edit the translation with tracked changes, and [email](https://bearly.ai/docs/manual/capabilities/email-and-text.md) to send the translated file as an attachment.
 
 ## Fix Grammar
 
@@ -4310,7 +4523,7 @@ You get a clean Page with just the findings, and a link that lets readers ask th
 
 ---
 title: "Make images, video, and audio"
-description: "How to generate and edit images, make and edit short videos, turn text into speech with Read aloud and Voice Studio, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls."
+description: "How to generate and edit images, upscale a photo, remove a photo's background, make and edit short videos, turn text into speech with Read aloud and Voice Studio, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls."
 canonical: "https://bearly.ai/docs/manual/capabilities/images-video-audio/"
 markdown: "https://bearly.ai/docs/manual/capabilities/images-video-audio.md"
 ---
@@ -4319,7 +4532,7 @@ markdown: "https://bearly.ai/docs/manual/capabilities/images-video-audio.md"
 
 HTML: [https://bearly.ai/docs/manual/capabilities/images-video-audio/](https://bearly.ai/docs/manual/capabilities/images-video-audio/)
 
-> How to generate and edit images, make and edit short videos, turn text into speech with Read aloud and Voice Studio, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls.
+> How to generate and edit images, upscale a photo, remove a photo's background, make and edit short videos, turn text into speech with Read aloud and Voice Studio, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls.
 
 These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
 
@@ -4331,6 +4544,8 @@ To point a tool at a file that's already in the chat, type `@` and pick the file
 | --- | --- | --- |
 | A new image from a description | [Imagine](#imagine) | `/image` |
 | A change to an image, an edited area, wider edges, or a combined image | [The image editor](#the-image-editor) and Touch Up | `/edit-image` |
+| A larger, sharper copy of a photo | [Upscale](#upscale) | Ask in words |
+| A photo's subject on a transparent background | [Remove background](#remove-background) | Ask in words |
 | A short video from text or an image | [Make Video](#make-video) | `/video` |
 | A change to a short clip | [Edit Video](#edit-video) | `/edit-video` |
 | Spoken audio from text | [Text to speech](#text-to-speech) | `/say` |
@@ -4401,13 +4616,73 @@ To edit from the chat instead, type `/edit-image` (**Touch Up**) and describe th
 /edit-image Make the background of the bottle photo a warm sunset and keep the bottle exactly as it is.
 ```
 
-To cut an object out, ask Touch Up to remove the background. You get a PNG with a transparent background, made by a model that can do it, as with [Imagine](#imagine). Editing an image that already has a transparent background keeps it, unless you ask for a solid one. If you named a model that can't keep it, or none that can is available, you get an opaque image and the reply says so.
+To cut the subject out of a photo you have, ask to remove its background without `/edit-image`; Bearly uses [Remove background](#remove-background). To get a transparent background as part of an edit, ask for it in the edit: you get a PNG made by a model that can do it, as with [Imagine](#imagine). Editing an image that already has a transparent background keeps it, unless you ask for a solid one. If you named a model that can't keep it, or none that can is available, you get an opaque image and the reply says so.
 
 ```text
-/edit-image Remove the background from the bottle photo and keep the bottle exactly as it is.
+/edit-image Turn the logo into a flat white version and keep the background transparent.
 ```
 
 **Combines with:** [Make Video](#make-video), which can use any image in the chat as its first or last frame, and [Pages](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) for a gallery.
+
+## Upscale
+
+Upscale makes a larger, sharper copy of an image in the chat: 2K by default, or 4K when you ask. It generates the fine detail it adds, so faces come out plausible rather than exact.
+
+**Use it when:** a photo is too small or soft for print, a slide, or a product page, or you want a sharper version of an image Bearly made.
+
+**You need:** any plan; each upscale counts as image usage. Admin control: **Images**.
+
+
+
+1. Attach the image, or type `@` and pick it under **Assets**, then ask to upscale it — Bearly saves a new copy at 2K and leaves the original as it is.
+
+   ```text
+   Upscale the storefront photo so it's sharp enough to print.
+   ```
+
+2. For 4K, say so.
+
+   ```text
+   Upscale the storefront photo to 4K.
+   ```
+
+
+
+**What you get:** a new image in the chat, shown like an edit, with **Copy image**, **Download**, and **View full size**.
+
+**Limits:** 2K or 4K only. Bearly keeps the content, colors, and composition and adds detail, so check faces and small text before you rely on them. If the image model fails, Bearly doesn't switch to another one. Upscaling an image with a transparent background makes it opaque, so upscale first and remove the background afterwards. Each upscale counts toward the 4 images or speech clips one answer makes before it asks; see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
+
+**Combines with:** [Remove background](#remove-background) after upscaling, and [Make Video](#make-video) with the sharper image as a start frame.
+
+## Remove background
+
+Remove background cuts the subject out of a photo and saves it as a PNG with a transparent background, at the photo's original size. The subject keeps the photo's own pixels; only the background goes.
+
+**Use it when:** you need a product on a clear background for a store listing or a slide, a person or pet cut out for a design, or a sticker made from a photo.
+
+**You need:** any plan; each cutout counts as image usage. Admin control: **Images**. If your organization's model policy doesn't allow the image model that background removal uses, Bearly says so.
+
+
+
+1. Attach the photo, or type `@` and pick it under **Assets**, then ask to remove the background — Bearly keeps the main subject.
+
+   ```text
+   Remove the background from the bottle photo.
+   ```
+
+2. To keep only part of the picture, say what to keep.
+
+   ```text
+   Remove the background from the park photo and keep just the dog.
+   ```
+
+
+
+**What you get:** a new PNG named after the original with `-cutout` at the end, shown in the chat like an edited image. The original stays as it is.
+
+**Limits:** JPEG, PNG, and GIF photos up to 20 MB; Bearly first converts other formats your browser can open, such as WebP. Fine hair and glass edges are approximations. An image that's already transparent is refused before anything runs, and isn't charged. When the model declines a photo or can't separate the subject cleanly, no cutout is saved, nothing is charged, and Bearly doesn't retry on its own. Each cutout counts toward the 4 images or speech clips one answer makes before it asks.
+
+**Combines with:** [Upscale](#upscale) before the cutout, and the [image editor](#the-image-editor)'s **Combine images** to place the cutout in a new scene.
 
 ## Make Video
 
@@ -5580,14 +5855,14 @@ A run works with nobody watching, so it gets a fixed, smaller set of tools than 
 
 | Always available in runs | Only when you turn it on for the routine |
 |---|---|
-| Web search, image search, and reading web pages | Connectors you select |
+| Web search, image search, reading web pages, hotel search, and the property, sanctions, and package lookups | Connectors you select |
 | Reading public posts on X | Skills you select; their scripts only with **Allow scripts** or unattended local access |
 | Scholar paper search | Deep Research, through the plugin |
-| Reading and searching the routine chat's files | Local files and commands, with **Unattended local access** |
+| Reading, searching, and translating the routine chat's files | Local files and commands, with **Unattended local access** |
 | Writing files, including CSV files and HTML Pages | Bearly Browser on listed sites, with **Browser access** |
 | Sending you email and texts | |
 
-Never available in runs: Computer Use, Chrome, Run Python (the cloud interpreter) and the document editor that uses it, image generation, video generation, transcription, text to speech, voice, Council, watching and cutting videos, Best Pick, People Search, maps, weather, SEO data, domain research, chart authoring, canvas, prompt templates, memory recall, chat management, video downloads, grammar fixes, Browse Files, and remote modules.
+Never available in runs: Computer Use, Chrome, Run Python (the cloud interpreter) and the document editor that uses it, image generation and editing (including upscaling and background removal), video generation, transcription, text to speech, voice, Council, watching and cutting videos, Best Pick, People Search, maps, weather, company filings and economic data, everyday lookups (events, food, medicines, vehicles, podcasts), SEO data, domain research, chart authoring, canvas, prompt templates, memory recall, chat management, video downloads, grammar fixes, Browse Files, and remote modules.
 
 To get numbers, tables, or visuals from a routine, ask it to write a CSV file or an HTML Page, then open the routine's chat and keep going there: it's an ordinary chat with every tool you normally have. With unattended local access, a run can also compute with commands on your computer.
 
@@ -6047,10 +6322,10 @@ In one reply, Bearly sends a few messages and makes a few paid items without ask
 | Limit in one reply | What counts | Card |
 |---|---|---|
 | 3 messages | [Send Email and Send SMS](https://bearly.ai/docs/manual/capabilities/email-and-text.md), together | **Send more messages?** |
-| 4 images or speech clips | [Imagine](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#imagine), Touch Up, and [Read aloud](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#read-aloud), together | **Make more images or speech?** |
+| 4 images or speech clips | [Imagine](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#imagine), Touch Up, [Upscale](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#upscale), [Remove background](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#remove-background), and [Read aloud](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#read-aloud), together | **Make more images or speech?** |
 | 1 video | [Make Video and Edit Video](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#make-video) | **Make another video?** |
 | 1 model run | [Council of Experts](https://bearly.ai/docs/manual/capabilities/research.md#council-of-experts) and [Computer Use](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md#computer-use) tasks, together | **Start another model run?** |
-| 5 paid lookups | [Best Pick](https://bearly.ai/docs/manual/capabilities/research.md#best-pick), [SEO data](https://bearly.ai/docs/manual/capabilities/research.md#seo-data), [X](https://bearly.ai/docs/manual/capabilities/videos-and-posts.md#x), and Scholar's journal-site search | **Run more paid lookups?** |
+| 5 paid lookups | [Best Pick](https://bearly.ai/docs/manual/capabilities/research.md#best-pick), [SEO data](https://bearly.ai/docs/manual/capabilities/research.md#seo-data), [X](https://bearly.ai/docs/manual/capabilities/videos-and-posts.md#x), [hotel search](https://bearly.ai/docs/manual/capabilities/research.md#hotel-search), the [property, sanctions, and package lookups](https://bearly.ai/docs/manual/capabilities/research.md#property-sanctions-and-package-lookups), [Translate Document](https://bearly.ai/docs/manual/capabilities/documents.md#translate-document), and Scholar's journal-site search | **Run more paid lookups?** |
 
 The card says what the reply has done so far, such as "This reply has made 4 images or speech clips. More count against your plan." **Once** allows one more. **This chat** or **Always** for **Send messages** or **Spend from your plan** stops these cards for that kind. **Deny** refuses the rest of that reply's calls past the same limit, such as more images, without another card.
 
@@ -6301,10 +6576,14 @@ Details: [Research](https://bearly.ai/docs/manual/capabilities/research.md).
 | **Best Pick** `/bestpick` | A shopping question, such as the best stick vacuum for pet hair under a price | A card with one product to buy, a store link, the evidence, and follow-up chips | Pro | All | No | No |
 | **People Search** `/people-search`, `/find-people`, `/work-emails`, `/lead-enrichment` | A named person plus one detail, a description of the people you want, names with a company domain, or known profiles | A candidate card, then a cited brief; lists and email lookups as tables in the reply | Analyst | All | No | No |
 | **Recall** `/recall` | A mention of earlier work or a past decision | Matching excerpts from your past chats | Any | All | No | No |
-| **Maps** `/maps` | Places, an area, or a route | A place or route card on the final answer | Any | All | No | No |
+| **Maps** `/maps` | Places, an area, or a route | A place or route card on the final answer; gas prices and EV charger availability in the reply when you ask | Any | All | No | No |
 | **Weather** `/weather`, `/air-quality`, `/pollen` | A place and a time range | A weather card; past weather as text | Any | All | No | No |
 | **SEO data** `/seo` | Keywords, sites, or a page to audit | Search data in the reply | Any | All | No | No |
 | **Domain research** `/domains` | A naming brief or one domain | Name ideas, and whether a domain is available to register | Any | All | No | No |
+| **Hotel search** (ask in words) | A city and country, dates of 1 to 30 nights, and up to 6 adults | Up to 20 hotels with star class, guest rating, nightly price, and a link, in the reply | Any | All | Yes | No |
+| **Company filings and economic data** (ask in words) | A US-listed company, a phrase to find in filings, an economic series such as CPI, or currencies to convert | Reported financials, filing lists and links, full-text filing hits, series values, or exchange rates, each with its source, in the reply | Any | All | No | No |
+| **Property, sanctions, and package lookups** (ask in words) | A US address or area, a person's or company's name with its country, or a tracking number | Property records, a value or rent estimate with comparables, listings, possible sanctions-list matches, or a package's status and scans, in the reply | Any | All | Yes | No |
+| **Everyday lookups** (ask in words) | A place and dates, a barcode or product name, a medicine name, a VIN, or a podcast topic | Events with ticket links, packaged-food nutrition and allergens, medicine label sections, side-effect reports and recalls, vehicle details and recalls, or podcasts and episodes, in the reply | Any | All | No | No |
 
 ### Video and social
 
@@ -6328,6 +6607,7 @@ Details: [Documents](https://bearly.ai/docs/manual/capabilities/documents.md).
 | **Read Doc** `/read-document` and **Scan Doc** `/find-in-document` | A document and the pages to read, or exact text to find in up to 20 documents | Page text, or each match with its page, line, and surrounding text, grouped by file | Any | All | Yes | Yes |
 | **Summarize Doc** `/summarize` | A long document | A **Deep Summary** in the reply | Any | All | Yes | No |
 | **Document editor** `/document` | A document task, plus any PDF, Word, PowerPoint, or Excel files in the chat to work on | New or edited files: filled PDF forms, .docx files with tracked changes, decks, spreadsheets with formulas | Any | All | No | No |
+| **Translate Document** (ask in words) | A Word .docx file in the chat, up to 50 MB and 200,000 characters, and a target language | A new translated .docx with the same layout; the original stays as it was | Any | All | Yes | No |
 | **Fix Grammar** `/grammar` | A passage of text | An editor card with suggested fixes you accept one at a time or all at once | Any | All | No | No |
 | **Chat files** `/create-file`, `/edit-file`, `/read-file`, `/rename-file`, `/files` | Content the AI writes, or a file already in the chat | Pages (HTML), Markdown, plain text, CSV, and JSON files, with a new version on every edit; editing an uploaded text file saves an edited copy; or an existing file's card shown again, with no new version | Any | All | Yes | No |
 
@@ -6358,7 +6638,9 @@ Details: [Images, video, and audio](https://bearly.ai/docs/manual/capabilities/i
 | Block | Takes | Produces | Plan | Where | In Routines | Council experts |
 |---|---|---|---|---|---|---|
 | **Imagine** `/image` | A description, and optional reference images | Images in the inline image editor, ready to download; a PNG with a transparent background when you ask for one in the chat | Any | All | No | No |
-| **Touch Up** `/edit-image` | One or more images in the chat, and optionally an area to change | Edited, extended, or combined images; a transparent-background PNG when you ask to remove the background or edit an image that has one | Any | All | No | No |
+| **Touch Up** `/edit-image` | One or more images in the chat, and optionally an area to change | Edited, extended, or combined images; a transparent-background PNG when you ask for one in an edit or edit an image that has one | Any | All | No | No |
+| **Upscale** (ask in words) | One image in the chat | A new 2K copy, or 4K when you ask; a transparent background becomes opaque | Any | All | No | No |
+| **Remove background** (ask in words) | One JPEG, PNG, or GIF photo in the chat, up to 20 MB, and optionally what to keep | A new PNG of the subject on a transparent background, at the photo's original size, named with `-cutout` | Any | All | No | No |
 | **Make Video** `/video` | A description, and optionally an image as the start frame (at most 2.5 times as wide as tall, or as tall as wide) plus an end frame | A 4 to 15-second MP4 with generated sound, saved in the chat | Any | All | No | No |
 | **Edit Video** `/edit-video` | A clip of 3 to 10 seconds, 720 to 2160 pixels on each side, under 50 MB | A separate edited clip; the original stays as it was | Any | All | No | No |
 | **Read Aloud** `/say`, and Voice Studio | Text: a reply, your message, or a script, up to about 22,500 characters of English (about 7,500 in Chinese, Japanese or Korean) | Spoken audio saved as a chat file; Voice Studio for voices, delivery, and takes | Any | All | No | No |
@@ -6425,7 +6707,9 @@ Each rule names an output type and the blocks that can take it next. These conne
 - **A spreadsheet or raw data file** → **Run Python** reads it and writes a chart-ready CSV → **Create chart**. Charts read data only from a CSV file in the chat: up to 10 columns and 2 MB, one row for a KPI, up to 100 rows for a bar chart, and up to 2,000 rows for a line chart. They never sample or cut rows to fit.
 - **A CSV that's already chart-ready** → **Create chart** directly, with no Python step.
 - **Run Python output** (up to 5 files per run) → files in the chat → **Create chart**, a **Page** with the results baked in, or **Send Email** attachments. Each run starts fresh, so name the files a later run should use.
-- **Any image in the chat**, whether uploaded, generated, or saved by Read Site → **Touch Up** as a source, or **Make Video** as the start or end frame.
+- **Any image in the chat**, whether uploaded, generated, or saved by Read Site → **Touch Up** as a source, **Upscale**, **Remove background**, or **Make Video** as the start or end frame.
+- **An upscaled image** → **Remove background** for a sharp cutout. Do it in that order: upscaling a transparent PNG makes its background opaque.
+- **A Word .docx file**, uploaded or made by the **Document editor** → **Translate Document** → a new .docx in the chat → **Send Email** as an attachment.
 - **A generated video** → **View Media** watches it → **Edit Video** changes it, if the clip is 3 to 10 seconds, 720 to 2160 pixels on each side, and under 50 MB. A 16:9 clip at 2K is too large, so make clips to edit at standard resolution.
 - **Audio or video files**, whether uploaded, saved by **Get Video**, or a post's video from **X** → **Transcribe**. Video files also → **View Media**, which looks at images and video but not audio-only files.
 - **A transcript** → **Transcribe** also saves it in the chat as an `.srt` file named after the original → later turns read it, summarize it, or hand the summary to **Read Aloud**.
@@ -6482,7 +6766,7 @@ Some chat models also need Pro or Analyst; the model picker opens **Billing** if
 
 In an organization, an admin's policy can turn off any block. The `/` label then disappears, and a reference can't bring it back. Some controls switch off several blocks at once:
 
-- **Web** off removes Web Search, Image Search, Read Site, Deep Research, Scholar, YouTube, and Best Pick.
+- **Web** off removes Web Search, Image Search, Read Site, Deep Research, Scholar, YouTube, Best Pick, hotel search, company filings and economic data, the property, sanctions, and package lookups, and the everyday lookups.
 - **Chat web search** off removes Image Search, Deep Research, Best Pick, Scholar's search of journal sites, and YouTube's **Find** and **Check claims**.
 - **File uploads** off removes attaching files, screen sharing, Get Video, viewing X videos, and the files YouTube saves; it also blocks uploads to a project's **Files** tab and **Sync a folder**.
 - **Run Python** off removes both `/python` and `/document`. Charts then work only on a CSV that's already prepared, or one made with **Work locally** in the desktop app.
@@ -6499,9 +6783,9 @@ These need the desktop app: Work locally, Computer Use, Bearly Browser, Chrome c
 
 A scheduled run is a chat with nobody watching, so it gets a fixed set of tools:
 
-- **Can use:** Web Search, Image Search, Read Site, X (but not importing a post's video), Scholar, the document tools (Search Docs, Read Doc, Scan Doc, and Summarize Doc), View Media, creating, reading, editing, and renaming chat files (including Pages), Send Email, Send SMS, the connectors and skills you add to the routine, and Deep Research through the routine's **Deep Research** plugin.
+- **Can use:** Web Search, Image Search, Read Site, X (but not importing a post's video), Scholar, hotel search, the property, sanctions, and package lookups, the document tools (Search Docs, Read Doc, Scan Doc, and Summarize Doc), Translate Document, View Media, creating, reading, editing, and renaming chat files (including Pages), Send Email, Send SMS, the connectors and skills you add to the routine, and Deep Research through the routine's **Deep Research** plugin.
 - **Only with an explicit routine setting:** Work locally (**Unattended local access**), a skill's scripts (that skill's **Allow scripts**), and Bearly Browser (**Browser access**, on the sites you list).
-- **Can't use:** Run Python, the Document editor, Fix Grammar, images, video, transcription, text to speech, voice, Canvas, charts, Visualize, Share, Council of Experts, YouTube, Best Pick, Get Video, People Search, Maps, Weather, SEO data, Domain research, Chat management, Recall, prompt templates, remote modules, Computer Use, and Chrome.
+- **Can't use:** Run Python, the Document editor, Fix Grammar, images, video, transcription, text to speech, voice, Canvas, charts, Visualize, Share, Council of Experts, YouTube, Best Pick, Get Video, People Search, Maps, Weather, company filings and economic data, the everyday lookups, SEO data, Domain research, Chat management, Recall, prompt templates, remote modules, Computer Use, and Chrome.
 
 A routine runs only in the desktop app, on the device it's installed on, while the app is open, and each run stops after 25 minutes. To get numbers or charts from a schedule, have the routine write a CSV or an HTML Page, or continue in the routine's chat afterwards.
 
@@ -9071,7 +9355,7 @@ Model access, spending limits, and **Developer API access** are enforced by Bear
 
 | Control | Description in the editor | What it changes | Needs | Starts |
 | --- | --- | --- | --- | --- |
-| **Web** | Allow members to use web tools in chat. | Web search, image search, reading web pages, Deep Research, Scholar, YouTube, and Best Pick | — | Follows default |
+| **Web** | Allow members to use web tools in chat. | Web search, image search, reading web pages, Deep Research, Scholar, YouTube, Best Pick, hotel search, company filings and economic data, property, sanctions, and package lookups, and everyday lookups | — | Follows default |
 | **Chat web search** | Allow web search inside chats. | Image search, Deep Research, Best Pick, Scholar's academic web search, and YouTube's Find and Check claims depend on it | — | Follows default |
 | **Image search** | Allow chats to find and display images from the public web. | Image results in chat | Web, Chat web search | Follows default |
 | **Deep Research** | Allow members to run Deep Research. | Long-form research reports (also needs the Analyst plan) | Web, Chat web search | Follows default |
@@ -10127,9 +10411,11 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 
 | You see | Why | What to do |
 |---|---|---|
-| "You've used this month's free allowance. It resets on _date_. Upgrade to Pro to keep going now." | The Free plan's monthly allowance is used up | Wait for the date shown, or select **Go Pro** |
-| "You're out of credits. Please upgrade your plan to continue. Credits will reset tomorrow." | The Free plan's daily allowance is used up. Daily allowances reset at 04:00 UTC | Wait for the reset, or select **Go Pro** |
-| "This request tripped our free-plan checks. Go Pro to continue, or email support@bearly.ai if we've misread it." | A Free-plan safety check flagged the request | Email support@bearly.ai if it's a mistake, or select **Go Pro** |
+| "You've used this month's free allowance. It resets on _date_. Go Pro to keep going now." | The Free plan's monthly allowance is used up | Wait for the date shown, or select **Go Pro** |
+| "You've used today's free allowance. It resets tomorrow. Go Pro to keep going now." | The Free plan's daily allowance is used up. Daily allowances reset at 04:00 UTC | Wait for the reset, or select **Go Pro** |
+| "Free AI works with personal email addresses like Gmail, iCloud, Outlook and Proton. Go Pro for $20 a month to use Bearly with this address." | Free covers personal email providers and school addresses, and this account's address is neither | Select **Go Pro**, or use Free from an account with a personal or school address |
+| "Free AI doesn't work over a VPN or cloud network. Turn off your VPN to keep going free, or go Pro to use Bearly from any network." | Free requests can't come from a VPN or a cloud provider's network | Turn off the VPN and send the request again, or select **Go Pro** |
+| "This request tripped our free-plan checks. Go Pro to continue, or email support@bearly.ai if we've misread it." | Another Free-plan safety check flagged the request | Email support@bearly.ai if it's a mistake, or select **Go Pro** |
 | "You've used your plan credits. Buy a boost to keep going, or upgrade your plan." | Your paid plan's credits are used up | Choose a Credit Boost amount in the message, or **Upgrade Plan** |
 | "You've used your plan credits. Open billing to see your options." | Your credits are used up and a boost isn't offered here | Select **View Billing** |
 | "You're out of credits. Chat continues with Bearly Fast or Bearly Pro. Features like transcription need credits." | Your paid credits ran out. Chat keeps working on those two models; paid tools need credits | Keep chatting, or add a Credit Boost or upgrade for tools like transcription |

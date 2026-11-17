@@ -63,9 +63,11 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 
 | You see | Why | What to do |
 |---|---|---|
-| "You've used this month's free allowance. It resets on _date_. Upgrade to Pro to keep going now." | The Free plan's monthly allowance is used up | Wait for the date shown, or select **Go Pro** |
-| "You're out of credits. Please upgrade your plan to continue. Credits will reset tomorrow." | The Free plan's daily allowance is used up. Daily allowances reset at 04:00 UTC | Wait for the reset, or select **Go Pro** |
-| "This request tripped our free-plan checks. Go Pro to continue, or email support@bearly.ai if we've misread it." | A Free-plan safety check flagged the request | Email support@bearly.ai if it's a mistake, or select **Go Pro** |
+| "You've used this month's free allowance. It resets on _date_. Go Pro to keep going now." | The Free plan's monthly allowance is used up | Wait for the date shown, or select **Go Pro** |
+| "You've used today's free allowance. It resets tomorrow. Go Pro to keep going now." | The Free plan's daily allowance is used up. Daily allowances reset at 04:00 UTC | Wait for the reset, or select **Go Pro** |
+| "Free AI works with personal email addresses like Gmail, iCloud, Outlook and Proton. Go Pro for $20 a month to use Bearly with this address." | Free covers personal email providers and school addresses, and this account's address is neither | Select **Go Pro**, or use Free from an account with a personal or school address |
+| "Free AI doesn't work over a VPN or cloud network. Turn off your VPN to keep going free, or go Pro to use Bearly from any network." | Free requests can't come from a VPN or a cloud provider's network | Turn off the VPN and send the request again, or select **Go Pro** |
+| "This request tripped our free-plan checks. Go Pro to continue, or email support@bearly.ai if we've misread it." | Another Free-plan safety check flagged the request | Email support@bearly.ai if it's a mistake, or select **Go Pro** |
 | "You've used your plan credits. Buy a boost to keep going, or upgrade your plan." | Your paid plan's credits are used up | Choose a Credit Boost amount in the message, or **Upgrade Plan** |
 | "You've used your plan credits. Open billing to see your options." | Your credits are used up and a boost isn't offered here | Select **View Billing** |
 | "You're out of credits. Chat continues with Bearly Fast or Bearly Pro. Features like transcription need credits." | Your paid credits ran out. Chat keeps working on those two models; paid tools need credits | Keep chatting, or add a Credit Boost or upgrade for tools like transcription |

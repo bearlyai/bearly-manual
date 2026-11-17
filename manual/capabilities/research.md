@@ -1,6 +1,6 @@
 ---
 title: "Research the web, papers, people, products, and places"
-description: "Which Bearly research tool fits a job, and how to start, steer, and limit Web Search, Read Site, Image Search, Deep Research, Scholar, Council of Experts, Best Pick, People Search, SEO data, Domain research, Maps, Weather, and X, with plans, admin controls, Routines support, and tested combinations."
+description: "Which Bearly research tool fits a job, and how to start, steer, and limit Web Search, Read Site, Image Search, Deep Research, Scholar, Council of Experts, Best Pick, People Search, SEO data, Domain research, Maps (including gas prices and EV chargers), Weather, hotel search, company filings and economic data, property, sanctions, and package lookups, everyday lookups (events, food, medicines, vehicles, podcasts), and X, with plans, admin controls, Routines support, and tested combinations."
 canonical: "https://bearly.ai/docs/manual/capabilities/research/"
 markdown: "https://bearly.ai/docs/manual/capabilities/research.md"
 ---
@@ -9,11 +9,11 @@ markdown: "https://bearly.ai/docs/manual/capabilities/research.md"
 
 HTML: [https://bearly.ai/docs/manual/capabilities/research/](https://bearly.ai/docs/manual/capabilities/research/)
 
-> Which Bearly research tool fits a job, and how to start, steer, and limit Web Search, Read Site, Image Search, Deep Research, Scholar, Council of Experts, Best Pick, People Search, SEO data, Domain research, Maps, Weather, and X, with plans, admin controls, Routines support, and tested combinations.
+> Which Bearly research tool fits a job, and how to start, steer, and limit Web Search, Read Site, Image Search, Deep Research, Scholar, Council of Experts, Best Pick, People Search, SEO data, Domain research, Maps (including gas prices and EV chargers), Weather, hotel search, company filings and economic data, property, sanctions, and package lookups, everyday lookups (events, food, medicines, vehicles, podcasts), and X, with plans, admin controls, Routines support, and tested combinations.
 
 These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
 
-Bearly can search the web, read a page or file at a link, run a long investigation that ends in a cited report, read academic papers, put one question to several AI models, pick a product to buy, research a person, pull search-engine data, check domain names, plan routes, and read the weather. Most of these start from an ordinary request. This page says which tool fits which job, how to start each one on purpose, and what each one needs.
+Bearly can search the web, read a page or file at a link, run a long investigation that ends in a cited report, read academic papers, put one question to several AI models, pick a product to buy, research a person, pull search-engine data, check domain names, plan routes, find gas prices and EV chargers, read the weather, price hotels for your dates, read company filings and economic data, look up property values, sanctions lists, and packages, and answer everyday questions about events, food, medicines, cars, and podcasts. Most of these start from an ordinary request. This page says which tool fits which job, how to start each one on purpose, and what each one needs.
 
 ## Which research tool for which job
 
@@ -30,8 +30,12 @@ Bearly can search the web, read a page or file at a link, run a long investigati
 | A list of people who fit a description, their work emails, or profiles for leads you already have | [Find people, work emails, and lead enrichment](#find-people-work-emails-and-lead-enrichment) | `/find-people`, `/work-emails`, `/lead-enrichment` | Analyst |
 | Keyword demand, search rankings, competitors, backlinks, or a page audit | [SEO data](#seo-data) | Ask, or `/seo` | Every plan |
 | Name ideas and whether a domain is free to register | [Domain research](#domain-research) | Ask, or `/domains` | Every plan |
-| Places, reviews, routes, and travel times | [Maps](#maps) | Ask, or `/maps` | Every plan |
+| Places, reviews, routes, travel times, gas prices, and EV chargers | [Maps](#maps) | Ask, or `/maps` | Every plan |
 | Forecasts, alerts, past weather, air quality, or pollen | [Weather](#weather) | Ask, or `/weather` | Every plan |
+| Hotels with nightly prices for your dates | [Hotel search](#hotel-search) | Ask | Every plan |
+| A US-listed company's filings and reported financials, US economic data, or exchange rates | [Company filings and economic data](#company-filings-and-economic-data) | Ask | Every plan |
+| A US property's value or rent, a sanctions check on a person or company, or where a package is | [Property, sanctions, and package lookups](#property-sanctions-and-package-lookups) | Ask | Every plan |
+| Events near a place, a food by barcode, a medicine's label, a car's VIN, or a podcast | [Everyday lookups](#everyday-lookups) | Ask | Every plan |
 | What people are posting on X, or one post, thread, or profile | [X](#x) | Paste a post link, or `/search-x`, `/read-x`, `/x-profile` | Every plan |
 
 "Every plan" tools use your plan allowance like any other reply. Plans are compared in [Plans and credits](https://bearly.ai/docs/manual/plans-and-credits.md). On a plan below a tool's minimum, the chat shows an upgrade card instead of running it.
@@ -40,13 +44,13 @@ These tools run in Bearly chats in the web app, phone browsers, the desktop app,
 
 ## How research tools start
 
-- **Ask in plain words.** Bearly picks the tool that fits. Web Search, Read Site, Image Search, Scholar, Best Pick, SEO data, Domain research, Maps, Weather, and X all start from an ordinary request. People Search starts when you explicitly ask to look up or vet a named person. Deep Research prepares its setup card when you ask for an in-depth research run. Council of Experts runs only from `/council`.
+- **Ask in plain words.** Bearly picks the tool that fits. Web Search, Read Site, Image Search, Scholar, Best Pick, SEO data, Domain research, Maps, Weather, X, hotel search, company filings and economic data, the property, sanctions, and package lookups, and the everyday lookups all start from an ordinary request; the last four have no `/` label, so you ask in words. People Search starts when you explicitly ask to look up or vet a named person. Deep Research prepares its setup card when you ask for an in-depth research run. Council of Experts runs only from `/council`.
 - **Type a label to choose the tool.** Type `/` at the very start of a message, or `@` anywhere in it, then a label such as `deep-research`. The menu lists research tools under **Research**. Only one `/` label counts per message, but you can add several `@` labels. A label chooses a tool that is already available to you; it can't switch on a tool your plan or organization has turned off. More in [Compose messages](https://bearly.ai/docs/manual/chat/compose.md).
 - **Switch web and paper search for one chat.** The sliders button in the composer opens a **Search** section with **Web** (**Off** or **Auto**) and **Scholar** (**Off** or **Auto**). Both start on **Auto**. **Auto** makes the tools available; it doesn't force a search on every message.
-- **Approve paid work on cards.** Deep Research and People Search show cards and prompts. Nothing paid starts until you select the button or approve the prompt, and People Search's lookup cards ask every time. Best Pick, SEO data, X, and Scholar's journal-site search ask after 5 paid lookups in one answer, and Council of Experts after one council; see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
+- **Approve paid work on cards.** Deep Research and People Search show cards and prompts. Nothing paid starts until you select the button or approve the prompt, and People Search's lookup cards ask every time. Best Pick, SEO data, X, hotel search, the property, sanctions, and package lookups, and Scholar's journal-site search ask after 5 paid lookups in one answer, and Council of Experts after one council; see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
 
 > **Note — Admin controls**
-> In a managed organization, administrators switch these tools on or off under **Organizations** → organization name → **Policies** → policy name. Most live in the **Web & Research** group; **Council** is under **Collaboration**, and **File uploads** is under **Privacy & Security**. A control nobody has set follows the policy's default. Each section below names the controls its tool needs. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
+> In a managed organization, administrators switch these tools on or off under **Organizations** → organization name → **Policies** → policy name. Most live in the **Web & Research** group; **Council** is under **Collaboration**, and **File uploads** is under **Privacy & Security**. Hotel search, company filings and economic data, the property, sanctions, and package lookups, and the everyday lookups have no control of their own; they follow **Web**. A control nobody has set follows the policy's default. Each section below names the controls its tool needs. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
 
 > **Note — Zero Data Retention only and research tools**
@@ -249,7 +253,7 @@ Council of Experts sends one self-contained question to two to five AI models at
 
 **What you get:** each model's full answer in its own tab, and a synthesis that names consensus and disagreement. In most chats, a very long answer is also saved to the chat's **Files** as "_model_ answer.md".
 
-**Limits:** one council per answer; another asks **Start another model run?** first. A council needs at least two experts to finish. Each expert can take up to eight tool steps, and each answer is cut to 4,000 characters for the synthesis. The model list follows your plan and organization; with **Zero Data Retention only** on, it offers only zero-retention models. Experts can use Web Search, Read Site, Scholar, Search Docs, Read Doc, Scan Doc, and a YouTube video's transcript and saved claims check. They can't use Image Search, Deep Research, X, Maps, Weather, SEO data, Domain research, People Search, Best Pick, or connectors. Search Docs isn't available in end-to-end encrypted chats.
+**Limits:** one council per answer; another asks **Start another model run?** first. A council needs at least two experts to finish. Each expert can take up to eight tool steps, and each answer is cut to 4,000 characters for the synthesis. The model list follows your plan and organization; with **Zero Data Retention only** on, it offers only zero-retention models. Experts can use Web Search, Read Site, Scholar, Search Docs, Read Doc, Scan Doc, and a YouTube video's transcript and saved claims check. They can't use Image Search, Deep Research, X, Maps, Weather, SEO data, Domain research, People Search, Best Pick, hotel search, company filings and economic data, the property, sanctions, and package lookups, the everyday lookups, or connectors. Search Docs isn't available in end-to-end encrypted chats.
 
 **Runs in:** every app platform. Routines: no.
 
@@ -391,9 +395,9 @@ Domain research suggests domain names and checks whether a specific domain is av
 
 ## Maps
 
-Maps searches places, reads place details and reviews, and plans routes with travel times.
+Maps searches places, reads place details and reviews, plans routes with travel times, and reports gas prices and EV charger availability.
 
-**Use it when:** you're looking for somewhere nearby, comparing places by their reviews, planning a route with stops, or comparing travel times from several starting points.
+**Use it when:** you're looking for somewhere nearby, comparing places by their reviews, planning a route with stops, comparing travel times from several starting points, or finding cheaper gas or a free charger nearby or on the way.
 
 **You need:** any plan. Admin control: **Maps**. For "near me", location permission on your device.
 
@@ -409,11 +413,17 @@ Maps searches places, reads place details and reviews, and plans routes with tra
 
 3. Ask follow-ups that build on the result — "Read the reviews for the second one", "How long by transit if I leave at 8:30?", or "Find a pharmacy along that route."
 
+4. For fuel or charging, ask about prices or chargers — Bearly adds the latest pump prices or charger availability to the gas stations and chargers it finds, near a place or along a route.
+
+   ```text
+   Find the cheapest regular gas within 3 miles of Union Square, San Francisco, and say when each price was last updated.
+   ```
 
 
-**What you get:** a map or route card for the final answer; intermediate lookups stay in the background. When the embedded map isn't available, a route card draws the route line instead.
 
-**Limits:** place searches return up to 20 results and reach up to 50 km from the point you give. Routes cover driving (traffic-aware, the default), walking, bicycling, and transit, with up to three stops in between; transit routes use either an arrival or a departure time. A travel-time matrix covers up to 10 origins by 10 destinations, and a search along a route returns up to 10 places. Review reading covers up to 450 reviews across relevant, newest, and lowest-rated. A place you name wins over your location; otherwise Bearly uses your device's location, then an approximate location from your network, and says when it does.
+**What you get:** a map or route card for the final answer; intermediate lookups stay in the background. When the embedded map isn't available, a route card draws the route line instead. Gas prices and charger availability are in the answer, not on the card: each pump price with its fuel type and when it was last updated, and for chargers the connector types, top charging speed, number of plugs, and how many are free or out of service.
+
+**Limits:** place searches return up to 20 results and reach up to 50 km from the point you give. Routes cover driving (traffic-aware, the default), walking, bicycling, and transit, with up to three stops in between; transit routes use either an arrival or a departure time. A travel-time matrix covers up to 10 origins by 10 destinations, and a search along a route returns up to 10 places. Review reading covers up to 450 reviews across relevant, newest, and lowest-rated. A place you name wins over your location; otherwise Bearly uses your device's location, then an approximate location from your network, and says when it does. Gas prices and charger counts are the latest reports for each place, not live readings, and Bearly says when each was updated. Free-plug counts appear only for charging networks that report them; a missing count means unknown, not zero. Charging prices aren't available.
 
 **Runs in:** every app platform. Routines: no. Council experts: no.
 
@@ -445,6 +455,176 @@ Weather reads current conditions, forecasts, official alerts, past weather, air 
 
 **Runs in:** every app platform. Routines: no. Council experts: no.
 
+## Hotel search
+
+Hotel search finds hotels in a destination with nightly prices for your dates, star class, guest ratings, and a link for each. It doesn't book or hold anything.
+
+**Use it when:** you're comparing places to stay for a trip, checking what a city costs on certain nights, or building a shortlist before you book.
+
+**You need:** any plan. Admin control: **Web**.
+
+
+
+1. Name the city and country, your check-in and check-out dates, and how many adults — Bearly searches current prices for that stay.
+
+   ```text
+   Find hotels in Lisbon, Portugal for 2 adults, checking in March 12 and out March 15. Show the best rated under 200 euros a night.
+   ```
+
+2. Narrow the list in follow-ups — Bearly works from the hotels it found, or searches again for new dates or another area.
+
+
+
+**What you get:** a list in the reply with each hotel's name, star class, guest rating and review count, nightly price, and a link to its listing. Some hotels come back without a street address.
+
+**Limits:** up to 20 hotels per search. A stay is 1 to 30 nights for 1 to 6 adults; give both dates or neither, since a search without dates uses a default one-night stay. Prices are in US dollars unless you name another currency, and they're a snapshot: the booking site's checkout price applies. Each search is a paid lookup; past 5 in one answer, Bearly asks first. A search stops after 45 seconds, and a failed search isn't repeated automatically.
+
+**Runs in:** every app platform. Routines: yes. Council experts: no.
+
+**Combines with:** [Maps](#maps) to see where the hotels are and time the trip from each to where you're going, and [Weather](#weather) for your dates.
+
+## Company filings and economic data
+
+Bearly reads primary sources for markets and the economy: a US-listed company's SEC filings and the financials it reported in them, US economic series such as inflation, jobs, interest rates, and GDP, and official reference exchange rates. Each figure names the filing or series it came from. The lookups themselves are free; the reply uses your plan allowance like any other.
+
+**Use it when:** you want a company's revenue, profit, or cash flow over several years from its 10-K and 10-Q filings, its recent 8-K events or insider trades, which companies mention a topic in their filings, CPI or unemployment over time, or an amount converted at an official rate.
+
+**You need:** any plan. Admin control: **Web**.
+
+
+
+1. Ask for the figures and the period — Bearly reads the company's reported financials and cites the filing behind each one.
+
+   ```text
+   Show Apple's revenue, net income, and free cash flow for the last five fiscal years from its 10-K filings, with a link to each filing.
+   ```
+
+2. Ask for the filings themselves — Bearly lists recent filings by form, such as 10-Ks, 8-Ks, or Form 4 insider trades, each with a link to the document.
+
+   ```text
+   List Nvidia's 8-K filings since July and the events each one reports.
+   ```
+
+3. Search filing text across companies — put an exact phrase in quotes.
+
+   ```text
+   Which companies mentioned "tariff surcharge" in a 10-Q filed this year?
+   ```
+
+4. Ask for economic data or a conversion — Bearly finds the series, reads its values, and can show the change from a year earlier.
+
+   ```text
+   Show US CPI inflation year over year for each month of 2026, and convert 2,500 euros to yen at today's reference rate.
+   ```
+
+
+
+**What you get:** figures in the reply, each with its fiscal year or date and the filing or series it came from. Bearly computes free cash flow as operating cash flow minus capital spending and says so when it uses it.
+
+**Limits:**
+
+- **Companies:** US-listed companies that file with the SEC. Many non-US companies don't, and companies that report under international accounting standards often have no standard figures, so Bearly lists their filings instead. Figures are as filed, including restatements, and a figure the company didn't report isn't estimated. Financials cover up to 15 fiscal years (5 by default) plus the latest quarter.
+- **Filings:** a list returns up to 100 of the company's recent filings, newest first, and says which dates it covers. Full-text search covers every filing since 2001 and returns up to 50 hits.
+- **Economic series:** at most the latest 120 values per request, so ask for a monthly or yearly view of a long range.
+- **Exchange rates:** about 30 major currencies, up to 10 at a time, latest, on a date, or as a daily history. Rates are published once each working day, so a weekend or holiday date gives the previous working day's rates.
+- There are no stock prices or quotes.
+
+**Runs in:** every app platform. Routines: no. Council experts: no.
+
+**Combines with:** [Run Python and charts](https://bearly.ai/docs/manual/capabilities/data-and-code.md) to plot a company's figures or an economic series, and [Web Search](#web-search) for news and analysis around the numbers.
+
+## Property, sanctions, and package lookups
+
+Three kinds of paid lookups: US property records, value and rent estimates, and listings; sanctions and watch-list screening of a person or company; and package tracking.
+
+| Lookup | Ask with | You get |
+| --- | --- | --- |
+| Property records | A US street address with city, state, and ZIP | Type, beds, baths, size, lot, year built, last sale, latest tax assessment and property tax, owner names, and HOA fee, from county records |
+| Value or rent estimate | A US address; optionally the type, beds, baths, and size | An estimated market value or monthly long-term rent, with a low–high range and the 5 to 25 comparable properties it used (10 by default) |
+| Listings | A US city and state, or a ZIP code; for sale or for rent; optionally type, beds, and baths | Up to 20 homes listed for sale or long-term rent, with price, beds, baths, size, days on market, and listing date; or recently removed listings |
+| Sanctions screening | A person's or company's name and up to 4 other spellings; for a person, a country and birth year; for a company, its country of registration | Up to 10 possible matches (5 by default) from more than 300 sanctions, politically exposed person, debarment, and enforcement lists, each with a match score, the lists it's on, and source links |
+| Package tracking | A tracking number, and the carrier if you know it | Current status, estimated delivery, who signed, and up to 30 recent scan events with places (10 by default), across USPS, UPS, FedEx, DHL, and more than 100 other carriers |
+
+**Use it when:** you're sizing up a home before an offer or a rental before you sign, checking a new client, supplier, or counterparty before doing business, or finding out where a delivery is.
+
+**You need:** any plan; each lookup uses your plan allowance. Admin control: **Web**.
+
+
+
+1. Ask with the details the lookup needs — a full US address, a name with its country, or the tracking number.
+
+   ```text
+   What is 5500 Grand Lake Dr, San Antonio, TX 78244 worth, and what would it rent for? Show the comparables.
+   ```
+
+   ```text
+   Screen the company "Acme Trading LLC", registered in the United Arab Emirates, against sanctions lists.
+   ```
+
+   ```text
+   Where is my package? The tracking number is 1Z999AA10123456784.
+   ```
+
+2. Past 5 paid lookups in one answer, approve **Run more paid lookups?** to continue — see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
+
+
+
+**What you get:** results in the reply. Estimates are labeled as automated estimates from comparables, not appraisals, and screening results as possible matches to check against the cited sources.
+
+**Limits:** property lookups cover the US only, and county records can be out of date. An estimate is less reliable when comparables are few or far away, and Bearly says so. Screening isn't a compliance decision: a high score means a possible match, and no match isn't a clearance. Adding a person's country and birth year, or a company's country, cuts false matches. Tracking is one lookup at a time, and nothing keeps watching the package, so ask again for an update; a number the carrier hasn't scanned yet comes back without a status. A lookup that fails or times out isn't repeated automatically.
+
+**Runs in:** every app platform. Routines: yes. Council experts: no.
+
+**Combines with:** [Maps](#maps) for what's around a property, [Web Search](#web-search) to check a screening match against news, and [People Search](#people-search) for a full brief on a person.
+
+## Everyday lookups
+
+Free lookups in public reference data: events and tickets, packaged food, medicines, vehicles, and podcasts. Each item comes with its source link. The lookups themselves are free; the reply uses your plan allowance like any other.
+
+| Lookup | Ask with | You get |
+| --- | --- | --- |
+| Events | An artist, team, show, or keyword, and a city or area and dates | Upcoming concerts, sports, theater, comedy, and family events with date, venue, status, a price range when one is published, and a link to the ticket page; up to 50 per search. Ask about one event for its lineup, on-sale dates, age limit, venue address, parking, and accessible seating |
+| Packaged food | The digits under a barcode, or a product name or brand | Name, brand, nutrition per 100 g and per serving, ingredients, allergens, Nutri-Score, and how processed it is; a name search finds up to 24 products worldwide |
+| Medicines | A brand or generic name, even misspelled | The active ingredient, brands, strengths, and drug class; the FDA-approved label, such as uses, dosing, warnings, side effects, and interactions; how many side-effect reports the FDA has received and the most-reported reactions; and FDA recalls since 2004 |
+| Vehicles | A VIN, or a make, model, and year | Make, model, year, trim, body, engine, fuel, drive, transmission, where it was built, and safety equipment; a make's models for a year; and US safety recalls with the risk and the free fix |
+| Podcasts | A topic, show title, or host | Matching shows with description, language, categories, and links; a show's latest episodes; and what's trending, optionally by language and category |
+
+**Use it when:** you're planning a night out, checking what's in a snack or whether it has an allergen, reading a medicine's label, checking a used car's VIN and recalls before you buy, or looking for a podcast on a topic.
+
+**You need:** any plan. Admin control: **Web**.
+
+
+
+1. Ask in plain words, with the place and dates, the barcode, the name, or the VIN — Bearly picks the lookup.
+
+   ```text
+   What concerts are on in Austin, TX this weekend? Link the ticket pages.
+   ```
+
+   ```text
+   Decode VIN 1HGCM82633A004352 and list the safety recalls for that model and year.
+   ```
+
+   ```text
+   What does the label for Lexapro say about interactions and side effects?
+   ```
+
+
+
+**What you get:** results in the reply, with a source link for each item.
+
+**Limits:**
+
+- **Events:** only events sold through one large ticket seller, in the US, Canada, Europe, Australia, and more. Venues that sell elsewhere won't appear; Bearly says so and can search the web instead. Prices are often shown only on the event's page.
+- **Food:** a barcode that isn't in the database comes back as not found. Name searches are limited to a few a minute.
+- **Medicines:** US reference data, not medical advice. Bearly quotes the label rather than adding its own dosing and points you to a doctor or pharmacist for decisions about your care. Side-effect reports show what people reported, not how likely a side effect is. For interactions, Bearly reads each drug's label; that's the label's list, not a complete interaction check.
+- **Vehicles:** vehicles sold in the US. A VIN is 17 characters without I, O, or Q; a partial VIN of at least 11 characters decodes the model. No ownership, accident, or title history.
+- **Podcasts:** up to 40 shows per search and 50 episodes per show.
+
+**Runs in:** every app platform. Routines: no. Council experts: no.
+
+**Combines with:** [Maps](#maps) to plan the trip to a venue, [Weather](#weather) for an outdoor event, and [email](https://bearly.ai/docs/manual/capabilities/email-and-text.md) to send yourself the list.
+
 ## X
 
 Bearly reads public X data: it searches posts from roughly the last seven days, reads a post with its thread and quote posts, watches a video attached to a post, and reads a public profile. It's read-only; Bearly can't post, like, follow, or read DMs.
@@ -468,7 +648,8 @@ Scheduled [Routines](https://bearly.ai/docs/manual/capabilities/routines.md) run
 | X (search and read) | Yes | No |
 | Search Docs, Read Doc, Scan Doc | Yes | Yes |
 | YouTube | No | Transcript lookup and a saved claims check only |
-| Council of Experts, Best Pick, People Search and its list tools, SEO data, Domain research, Maps, Weather, Get Video | No | No |
+| Hotel search; property, sanctions, and package lookups | Yes | No |
+| Council of Experts, Best Pick, People Search and its list tools, SEO data, Domain research, Maps, Weather, company filings and economic data, everyday lookups, Get Video | No | No |
 
 Creating routines needs the **Pro** plan and the **Routines** admin control.
 
