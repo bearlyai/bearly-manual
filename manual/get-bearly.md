@@ -192,7 +192,7 @@ Bearly has no passwords. On the sign-in screen, enter your **Email** and select 
 | Work locally | No | No | Yes | No | No |
 | Bearly Browser | No | No | Yes | No | No |
 | Control Chrome | No | No | Yes, with Chrome and the extension | No | Needed for it |
-| Computer Use | No | No | Yes | No | No |
+| Computer Use | No | No | Yes; on a Mac, macOS 13 or later | No | No |
 | Full access | Connectors only | Connectors only | All enabled tools | Connectors only | No |
 | Send email and texts from a chat | Yes | Yes | Yes | Yes | No |
 | Summarize or ask about the page you're on | No | No | No | No | Yes |

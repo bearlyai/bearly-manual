@@ -51,6 +51,7 @@ Open **Settings** → **Dictation** (in the **Chats** section). Settings sync ac
 | Setting | What it does | Default |
 | --- | --- | --- |
 | Switch at the top of the pane | Turns dictation on | Off |
+| **Language** | The language you speak. **Auto-detect** lets Bearly work it out; pick a language if your words come back in the wrong one. Settings says so if the language you pick or your system language isn't supported | **Auto-detect** |
 | **Keyboard shortcut** ("Hold while Bearly is focused.") | The push-to-talk keys. Select the shortcut, then at "Press your shortcut" hold the keys you want (1 to 6 keys) and let go. The switch beside it turns push-to-talk off | <kbd>Right Shift</kbd> |
 | **After dictation** | **Fill the composer** puts the text in the message box. **Send immediately** sends it as a normal message, with all the chat's tools | **Fill the composer** |
 | **Transcript cleanup** ("Fix punctuation and phrasing with a fast, low-reasoning model.") | Tidies the transcript before it reaches the message box. **Model** picks the cleanup model from those your plan and organization allow. **Instructions** ("Applied after transcription. The original audio is not sent.") tells it how | Off |

@@ -172,7 +172,7 @@ Bearly reads every invoice in a folder on your computer, builds an Excel workboo
 Bearly reads values from an app window on your screen, charts them, and points out the outliers.
 
 **Why it works:** Computer Use runs a focused agent that looks at screenshots and accessibility text of the apps on screen, and clicks, scrolls, and types. Computer use runs on your device; the screenshots you approve go to the model you picked. The agent reports what it read back to the chat, where Run Python and **Create chart** take over; the Computer Use agent itself can't run Python.
-**You need:** Any plan. Desktop app on Mac, Windows, or Linux. Organization controls: **Computer Use** (with a model policy that allows a model Computer Use supports), plus **Run Python** and **Charts** for the chart. On a Mac, Bearly needs Accessibility and Screen Recording permission (System Settings → Privacy & Security).
+**You need:** Any plan. Desktop app on Windows, Linux, or a Mac with macOS 13 or later. Organization controls: **Computer Use** (with a model policy that allows a model Computer Use supports), plus **Run Python** and **Charts** for the chart. On a Mac, Bearly needs Accessibility and Screen Recording permission (System Settings → Privacy & Security).
 
 
 

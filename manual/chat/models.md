@@ -35,7 +35,7 @@ The picker opens on a short list and expands on request:
 - **Featured** — a short list Bearly recommends, leaving out models already under **Favorites** or **Recently Used**.
 - **Show all models** — expands to every available model, grouped by the company that makes it. **Show featured models** goes back. The picker always reopens on the featured view.
 
-Each row shows the model's name, a one-line description, and a retention badge: **ZDR** (zero data retention) or **Standard**. Hover the badge for what it means for that model. Some rows carry a tag: **Featured**, **Recent**, or **Unavailable**. A double check mark shows the model the chat is using now.
+Each row shows the model's name, a one-line description, and a retention badge: **ZDR** (zero data retention) or **Standard**. Hover the badge for what it means for that model. Some rows carry a tag: **Featured**, **Recent**, or **Unavailable**. A model your plan doesn't include also shows a lock tag with the plan it needs, such as **Pro** or **Analyst**. A double check mark shows the model the chat is using now.
 
 Favorites and recent models are saved to your account, so they follow you to every device.
 
@@ -78,12 +78,12 @@ A model you pick in the composer applies to the open chat only, and it's saved w
 
 ## Models that need a higher plan
 
-Some models need **Pro** or **Analyst**. They still appear in the picker. Choosing one closes the picker and opens **Settings** → **Billing** with a message that names the model and the plan it needs, ending "Upgrade to use this model and unlock the rest of its tier." The **Rerun** menu does the same.
+Some models need **Pro** or **Analyst**: Bearly Ultra and GPT 6.2 Sol need Pro, for example. They still appear in the picker, tagged with the plan they need. Choosing one closes the picker and opens **Settings** → **Billing** with a message that names the model and the plan it needs, ending "Upgrade to use this model and unlock the rest of its tier." The **Rerun** menu does the same.
 
 **Use it when:** deciding whether a plan change is worth it for a specific model.
 **You need:** To upgrade, the plan the message names. Personal plans run Free, Pro, Analyst, and Research; see [Plans and credits](https://bearly.ai/docs/manual/plans-and-credits.md).
 
-**What you get:** Your chat stays on its current model until you upgrade and choose again.
+**What you get:** Your chat stays on its current model until you upgrade and choose again. A chat or routine still set to a model your plan doesn't include, such as one chosen before a downgrade, answers with your plan's default model, and the model button and the reply's label name that model. The chat keeps its choice, so it comes back when you upgrade.
 
 ## When models are hidden or locked
 

@@ -31,7 +31,7 @@ Index: [https://bearly.ai/docs/manual.md](https://bearly.ai/docs/manual.md)
 - [Work with files and documents](https://bearly.ai/docs/manual/capabilities/documents.md): How Bearly opens, previews, searches, cites, summarizes, edits, converts, translates, and proofreads files in a chat or project, including supported file types, size limits, password-protected PDFs, Always search documents, the Document editor, and what changes in end-to-end encrypted chats.
 - [Analyze data and run code](https://bearly.ai/docs/manual/capabilities/data-and-code.md): How to analyze spreadsheets and files with Run Python, draw KPI, bar, and line charts with Charts, and pick the right visual with Visualize in Bearly, including what the Python sandbox includes, file inputs and outputs, chart limits, and how these combine with documents and Pages.
 - [Make Pages and edit in Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md): How to build interactive Pages in Bearly, refine them through versions, prepare and publish them to a stable bearly.sh link with the right audience, share a conversation's key takeaways, and edit an answer as a document in Canvas, with every limit that applies.
-- [Make images, video, and audio](https://bearly.ai/docs/manual/capabilities/images-video-audio.md): How to generate and edit images, upscale a photo, remove a photo's background, make and edit short videos, turn text into speech with Read aloud and Voice Studio, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls.
+- [Make images, video, and audio](https://bearly.ai/docs/manual/capabilities/images-video-audio.md): How to generate and edit images, upscale a photo, remove a photo's background, make and edit short videos, turn text into speech with Read aloud and Voice Studio, make sound effects, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls.
 - [Record and use meetings](https://bearly.ai/docs/manual/capabilities/meetings.md): How to record online meetings, in-person conversations, and voice notes in Bearly's Meetings page, follow the live transcript, get the final transcript and speaker names, summarize, export, and hand a transcript to a chat or project to draft follow-ups.
 - [Let Bearly use a browser, your files, and your computer](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md): How a Bearly desktop chat browses sites in Bearly Browser, works in your signed-in Chrome tabs, offers to install the Chrome extension in chat, reads and edits files and runs commands with Work locally, and operates apps with Computer Use, including the approvals each asks for and how to choose between them.
 - [Connect apps and add skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md): How to connect services and your own MCP servers to Bearly, turn a connector on for a chat or a routine, sign in on each device, and install and run skills, including the built-in Visualize and Bearly AI Models skills, with platform limits and approvals.
@@ -412,7 +412,7 @@ Bearly has no passwords. On the sign-in screen, enter your **Email** and select 
 | Work locally | No | No | Yes | No | No |
 | Bearly Browser | No | No | Yes | No | No |
 | Control Chrome | No | No | Yes, with Chrome and the extension | No | Needed for it |
-| Computer Use | No | No | Yes | No | No |
+| Computer Use | No | No | Yes; on a Mac, macOS 13 or later | No | No |
 | Full access | Connectors only | Connectors only | All enabled tools | Connectors only | No |
 | Send email and texts from a chat | Yes | Yes | Yes | Yes | No |
 | Summarize or ask about the page you're on | No | No | No | No | Yes |
@@ -1179,7 +1179,7 @@ The picker opens on a short list and expands on request:
 - **Featured** — a short list Bearly recommends, leaving out models already under **Favorites** or **Recently Used**.
 - **Show all models** — expands to every available model, grouped by the company that makes it. **Show featured models** goes back. The picker always reopens on the featured view.
 
-Each row shows the model's name, a one-line description, and a retention badge: **ZDR** (zero data retention) or **Standard**. Hover the badge for what it means for that model. Some rows carry a tag: **Featured**, **Recent**, or **Unavailable**. A double check mark shows the model the chat is using now.
+Each row shows the model's name, a one-line description, and a retention badge: **ZDR** (zero data retention) or **Standard**. Hover the badge for what it means for that model. Some rows carry a tag: **Featured**, **Recent**, or **Unavailable**. A model your plan doesn't include also shows a lock tag with the plan it needs, such as **Pro** or **Analyst**. A double check mark shows the model the chat is using now.
 
 Favorites and recent models are saved to your account, so they follow you to every device.
 
@@ -1222,12 +1222,12 @@ A model you pick in the composer applies to the open chat only, and it's saved w
 
 ## Models that need a higher plan
 
-Some models need **Pro** or **Analyst**. They still appear in the picker. Choosing one closes the picker and opens **Settings** → **Billing** with a message that names the model and the plan it needs, ending "Upgrade to use this model and unlock the rest of its tier." The **Rerun** menu does the same.
+Some models need **Pro** or **Analyst**: Bearly Ultra and GPT 6.2 Sol need Pro, for example. They still appear in the picker, tagged with the plan they need. Choosing one closes the picker and opens **Settings** → **Billing** with a message that names the model and the plan it needs, ending "Upgrade to use this model and unlock the rest of its tier." The **Rerun** menu does the same.
 
 **Use it when:** deciding whether a plan change is worth it for a specific model.
 **You need:** To upgrade, the plan the message names. Personal plans run Free, Pro, Analyst, and Research; see [Plans and credits](https://bearly.ai/docs/manual/plans-and-credits.md).
 
-**What you get:** Your chat stays on its current model until you upgrade and choose again.
+**What you get:** Your chat stays on its current model until you upgrade and choose again. A chat or routine still set to a model your plan doesn't include, such as one chosen before a downgrade, answers with your plan's default model, and the model button and the reply's label name that model. The chat keeps its choice, so it comes back when you upgrade.
 
 ## When models are hidden or locked
 
@@ -1464,7 +1464,7 @@ Details for each are on [Research](https://bearly.ai/docs/manual/capabilities/re
 
 ## When an answer fails
 
-A failed answer shows its error, or "An error occurred. Please wait and try again." when there's no specific message. **Get help** next to it opens a support dialog. A message that can't be displayed shows "Unable to load message."
+A failed answer shows its error, or "An error occurred. Please wait and try again." when there's no specific message. **Get help** next to it opens a support dialog. If an answer stopped because the page closed or reloaded, or because it reached its step limit, the latest answer also shows **Continue**, which picks up where it stopped, and **Retry**, which asks the question again. A message that can't be displayed shows "Unable to load message."
 
 In most chats, if the chat itself can't open, the bar at the bottom of the message box says "Couldn't open this chat." or "Waiting for this chat to sync.", with **Retry**; a chat that's waiting to sync opens on its own once it catches up. "This chat has changes from a newer version of Bearly. Update Bearly to keep using it." means this copy of the app is out of date.
 
@@ -2122,6 +2122,7 @@ Open **Settings** → **Dictation** (in the **Chats** section). Settings sync ac
 | Setting | What it does | Default |
 | --- | --- | --- |
 | Switch at the top of the pane | Turns dictation on | Off |
+| **Language** | The language you speak. **Auto-detect** lets Bearly work it out; pick a language if your words come back in the wrong one. Settings says so if the language you pick or your system language isn't supported | **Auto-detect** |
 | **Keyboard shortcut** ("Hold while Bearly is focused.") | The push-to-talk keys. Select the shortcut, then at "Press your shortcut" hold the keys you want (1 to 6 keys) and let go. The switch beside it turns push-to-talk off | <kbd>Right Shift</kbd> |
 | **After dictation** | **Fill the composer** puts the text in the message box. **Send immediately** sends it as a normal message, with all the chat's tools | **Fill the composer** |
 | **Transcript cleanup** ("Fix punctuation and phrasing with a fast, low-reasoning model.") | Tidies the transcript before it reaches the message box. **Model** picks the cleanup model from those your plan and organization allow. **Instructions** ("Applied after transcription. The original audio is not sent.") tells it how | Off |
@@ -2422,7 +2423,7 @@ Bearly can search the web, read a page or file at a link, run a long investigati
 | Hotels with nightly prices for your dates | [Hotel search](#hotel-search) | Ask | Every plan |
 | A US-listed company's filings and reported financials, US economic data, or exchange rates | [Company filings and economic data](#company-filings-and-economic-data) | Ask | Every plan |
 | A US property's value or rent, a sanctions check on a person or company, or where a package is | [Property, sanctions, and package lookups](#property-sanctions-and-package-lookups) | Ask | Every plan |
-| Events near a place, a food by barcode, a medicine's label, a car's VIN, or a podcast | [Everyday lookups](#everyday-lookups) | Ask | Every plan |
+| Events near a place, a food by barcode or its nutrition, a medicine's label, a car's VIN, or a podcast | [Everyday lookups](#everyday-lookups) | Ask | Every plan |
 | What people are posting on X, or one post, thread, or profile | [X](#x) | Paste a post link, or `/search-x`, `/read-x`, `/x-profile` | Every plan |
 
 "Every plan" tools use your plan allowance like any other reply. Plans are compared in [Plans and credits](https://bearly.ai/docs/manual/plans-and-credits.md). On a plan below a tool's minimum, the chat shows an upgrade card instead of running it.
@@ -2844,27 +2845,27 @@ Weather reads current conditions, forecasts, official alerts, past weather, air 
 
 ## Hotel search
 
-Hotel search finds hotels in a destination with nightly prices for your dates, star class, guest ratings, and a link for each. It doesn't book or hold anything.
+Hotel search finds hotels, or vacation rentals, for your dates, with the nightly price, star class, guest rating, and a link for each. It doesn't book or hold anything.
 
-**Use it when:** you're comparing places to stay for a trip, checking what a city costs on certain nights, or building a shortlist before you book.
+**Use it when:** you're comparing places to stay for a trip, checking what an area costs on certain nights, or building a shortlist before you book.
 
 **You need:** any plan. Admin control: **Web**.
 
 
 
-1. Name the city and country, your check-in and check-out dates, and how many adults — Bearly searches current prices for that stay.
+1. Say where you want to stay, your check-in and check-out dates, and who's sharing the room. A city, a neighbourhood, or a resort area works, and so does a landmark to stay near. Give children's ages. Bearly searches current prices for that stay.
 
    ```text
-   Find hotels in Lisbon, Portugal for 2 adults, checking in March 12 and out March 15. Show the best rated under 200 euros a night.
+   Family of 4, kids are 7 and 10. Find a 4-star or better hotel in Punta Cana, January 10 to 17, with free cancellation, under $400 a night.
    ```
 
-2. Narrow the list in follow-ups — Bearly works from the hotels it found, or searches again for new dates or another area.
+2. Narrow the list in follow-ups. Bearly works from the hotels it found, or searches again with new dates, another area, or different filters: price range, star class, minimum guest rating, free cancellation, or sorted by price, rating, or number of reviews. Ask for vacation rentals to see homes and apartments.
 
 
 
-**What you get:** a list in the reply with each hotel's name, star class, guest rating and review count, nightly price, and a link to its listing. Some hotels come back without a street address.
+**What you get:** a list in the reply with each hotel's name, star class, guest rating and review count, nightly price per room, and a link to its listing. A hotel with no price for your dates shows none. Some hotels come back without a street address.
 
-**Limits:** up to 20 hotels per search. A stay is 1 to 30 nights for 1 to 6 adults; give both dates or neither, since a search without dates uses a default one-night stay. Prices are in US dollars unless you name another currency, and they're a snapshot: the booking site's checkout price applies. Each search is a paid lookup; past 5 in one answer, Bearly asks first. A search stops after 45 seconds, and a failed search isn't repeated automatically.
+**Limits:** up to 20 hotels per search. A stay is 1 to 30 nights, starting today or later; give both dates or neither, since a search without dates uses a default one-night stay. One search covers one room of up to 6 guests (1 to 6 adults, plus up to 5 children); for a group in several rooms, say how many share each room. Prices are in US dollars unless you name another currency, and they're a snapshot: the booking site's checkout price applies. Each search is a paid lookup; past 5 in one answer, Bearly asks first. A search stops after 45 seconds, and a failed search isn't repeated automatically.
 
 **Runs in:** every app platform. Routines: yes. Council experts: no.
 
@@ -2913,7 +2914,7 @@ Bearly reads primary sources for markets and the economy: a US-listed company's 
 - **Companies:** US-listed companies that file with the SEC. Many non-US companies don't, and companies that report under international accounting standards often have no standard figures, so Bearly lists their filings instead. Figures are as filed, including restatements, and a figure the company didn't report isn't estimated. Financials cover up to 15 fiscal years (5 by default) plus the latest quarter.
 - **Filings:** a list returns up to 100 of the company's recent filings, newest first, and says which dates it covers. Full-text search covers every filing since 2001 and returns up to 50 hits.
 - **Economic series:** at most the latest 120 values per request, so ask for a monthly or yearly view of a long range.
-- **Exchange rates:** about 30 major currencies, up to 10 at a time, latest, on a date, or as a daily history. Rates are published once each working day, so a weekend or holiday date gives the previous working day's rates.
+- **Exchange rates:** about 30 major currencies, up to 10 at a time, latest, on a date, or as a daily history. Rates are published once each working day, so a weekend or holiday date gives the previous working day's rates. For any other currency, Bearly looks the rate up with [Web Search](#web-search) and names the source and date.
 - There are no stock prices or quotes.
 
 **Runs in:** every app platform. Routines: no. Council experts: no.
@@ -2966,17 +2967,17 @@ Three kinds of paid lookups: US property records, value and rent estimates, and 
 
 ## Everyday lookups
 
-Free lookups in public reference data: events and tickets, packaged food, medicines, vehicles, and podcasts. Each item comes with its source link. The lookups themselves are free; the reply uses your plan allowance like any other.
+Free lookups in public reference data: events and tickets, food and nutrition, medicines, vehicles, and podcasts. Each item comes with its source link. The lookups themselves are free; the reply uses your plan allowance like any other.
 
 | Lookup | Ask with | You get |
 | --- | --- | --- |
 | Events | An artist, team, show, or keyword, and a city or area and dates | Upcoming concerts, sports, theater, comedy, and family events with date, venue, status, a price range when one is published, and a link to the ticket page; up to 50 per search. Ask about one event for its lineup, on-sale dates, age limit, venue address, parking, and accessible seating |
-| Packaged food | The digits under a barcode, or a product name or brand | Name, brand, nutrition per 100 g and per serving, ingredients, allergens, Nutri-Score, and how processed it is; a name search finds up to 24 products worldwide |
+| Food | The digits under a barcode, a product name or brand, or a plain food such as a raw apple or cooked rice | For packaged food: name, brand, nutrition per 100 g and per serving, ingredients, allergens, Nutri-Score, and how processed it is; a name search finds up to 24 products worldwide. For plain and branded US foods: calories, macronutrients, vitamins, and minerals per 100 g and per serving from the USDA's FoodData Central |
 | Medicines | A brand or generic name, even misspelled | The active ingredient, brands, strengths, and drug class; the FDA-approved label, such as uses, dosing, warnings, side effects, and interactions; how many side-effect reports the FDA has received and the most-reported reactions; and FDA recalls since 2004 |
 | Vehicles | A VIN, or a make, model, and year | Make, model, year, trim, body, engine, fuel, drive, transmission, where it was built, and safety equipment; a make's models for a year; and US safety recalls with the risk and the free fix |
 | Podcasts | A topic, show title, or host | Matching shows with description, language, categories, and links; a show's latest episodes; and what's trending, optionally by language and category |
 
-**Use it when:** you're planning a night out, checking what's in a snack or whether it has an allergen, reading a medicine's label, checking a used car's VIN and recalls before you buy, or looking for a podcast on a topic.
+**Use it when:** you're planning a night out, checking what's in a snack or whether it has an allergen, counting the calories or fiber in a food, reading a medicine's label, checking a used car's VIN and recalls before you buy, or looking for a podcast on a topic.
 
 **You need:** any plan. Admin control: **Web**.
 
@@ -3003,7 +3004,7 @@ Free lookups in public reference data: events and tickets, packaged food, medici
 **Limits:**
 
 - **Events:** only events sold through one large ticket seller, in the US, Canada, Europe, Australia, and more. Venues that sell elsewhere won't appear; Bearly says so and can search the web instead. Prices are often shown only on the event's page.
-- **Food:** a barcode that isn't in the database comes back as not found. Name searches are limited to a few a minute.
+- **Food:** a barcode that isn't in the database comes back as not found. Packaged-food name searches are limited to a few a minute. Nutrition for plain foods is US reference data.
 - **Medicines:** US reference data, not medical advice. Bearly quotes the label rather than adding its own dosing and points you to a doctor or pharmacist for decisions about your care. Side-effect reports show what people reported, not how likely a side effect is. For interactions, Bearly reads each drug's label; that's the label's list, not a complete interaction check.
 - **Vehicles:** vehicles sold in the US. A VIN is 17 characters without I, O, or Q; a partial VIN of at least 11 characters decodes the model. No ownership, accident, or title history.
 - **Podcasts:** up to 40 shows per search and 50 episodes per show.
@@ -4523,7 +4524,7 @@ You get a clean Page with just the findings, and a link that lets readers ask th
 
 ---
 title: "Make images, video, and audio"
-description: "How to generate and edit images, upscale a photo, remove a photo's background, make and edit short videos, turn text into speech with Read aloud and Voice Studio, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls."
+description: "How to generate and edit images, upscale a photo, remove a photo's background, make and edit short videos, turn text into speech with Read aloud and Voice Studio, make sound effects, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls."
 canonical: "https://bearly.ai/docs/manual/capabilities/images-video-audio/"
 markdown: "https://bearly.ai/docs/manual/capabilities/images-video-audio.md"
 ---
@@ -4532,7 +4533,7 @@ markdown: "https://bearly.ai/docs/manual/capabilities/images-video-audio.md"
 
 HTML: [https://bearly.ai/docs/manual/capabilities/images-video-audio/](https://bearly.ai/docs/manual/capabilities/images-video-audio/)
 
-> How to generate and edit images, upscale a photo, remove a photo's background, make and edit short videos, turn text into speech with Read aloud and Voice Studio, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls.
+> How to generate and edit images, upscale a photo, remove a photo's background, make and edit short videos, turn text into speech with Read aloud and Voice Studio, make sound effects, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls.
 
 These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
 
@@ -4549,6 +4550,7 @@ To point a tool at a file that's already in the chat, type `@` and pick the file
 | A short video from text or an image | [Make Video](#make-video) | `/video` |
 | A change to a short clip | [Edit Video](#edit-video) | `/edit-video` |
 | Spoken audio from text | [Text to speech](#text-to-speech) | `/say` |
+| A short sound effect or ambience | [Sound effects](#sound-effects) | Ask in words |
 | Text from speech in a recording | [Transcribe](#transcribe) | `/transcribe` |
 | Bearly to look at an image, watch a video, or see PDF pages | [View Media](#view-media) | `/analyze-media` |
 
@@ -4788,6 +4790,34 @@ Rarely, a reading comes out too large for one file. It's then saved as numbered 
 **Limits:** a recording can be up to about 22,500 characters of English (about 7,500 in Chinese, Japanese or Korean), roughly 30 minutes of audio. Longer text is refused before anything is recorded or charged, with "Text this long would make more than about 30 minutes of audio. Split it into shorter parts." If the voice service fails partway through a long reading, the part already read is kept and the studio says "Only the first N of M characters were read aloud. Shorten the text or split it into parts."; when you asked in the chat, Bearly tells you the audio stops early and can read the rest. Voice Studio appears on the latest text-to-speech result in the chat; earlier results show a plain player. The word highlighting uses estimated timing. A failed recording isn't retried automatically; when a recording you asked for in the chat fails, you'll see "The audio could not be created." In read-only chats you get plain players only. The studio's model switch picks the voice engine: **Fast**, **Studio**, or **OpenAI**.
 
 When your organization's model policy doesn't allow the engine you picked, **Generate** shows "Your organization's model policy doesn't allow _engine_. Choose another speech model." With **Zero Data Retention only** on, **Fast** and **Studio** show "_Engine_ doesn't meet your Zero Data Retention only setting. Choose another speech model." When no engine is allowed at all, the studio shows "Your organization's model policy doesn't allow any speech model, so audio can't be created." or, with Zero Data Retention only on, "No speech model that meets your Zero Data Retention only setting is available, so audio can't be created." Speech you ask for in the chat, and an unedited studio, use the first allowed engine instead of the default when the default isn't allowed.
+
+## Sound effects
+
+Sound effects makes a short sound or ambience from a description: a door creaking, rain on a tin roof, a crowd cheering in a stadium. Each take is an MP3 saved in the chat.
+
+**Use it when:** you need a sound for a video, a game, a slide, or a podcast, or room tone and ambience under a voiceover.
+
+**You need:** any plan; each sound counts as usage. Admin control: **Text to speech** (under **Media & Creativity**).
+
+**How to use it:**
+
+1. Describe the sound in the chat: the source, the action, and the setting.
+
+   ```text
+   Make a 6-second sound of a heavy wooden door creaking open in a stone hall, then a crow caws outside.
+   ```
+
+2. Ask for variations to get up to 3 takes of the same description at once, or select **Make variations** on the card.
+
+   ```text
+   Make 3 versions of rain on a tin roof, 10 seconds each.
+   ```
+
+**What you get:** a **Sound effect** card with your description, a player for each take with a waveform, and **Download**. **Make variations** (or **More versions**) asks for 3 more takes; **Edit prompt** puts the description in the message box so you can change it. When every take is in the chat's files, the card says **Saved to Files**; a take you delete shows "This take is no longer in Files."
+
+**Limits:** 1 to 30 seconds per take (6 by default), up to 3 takes per request, and descriptions up to 400 characters. Sound effects and ambience only: not music, songs, or speech; use [Text to speech](#text-to-speech) for a voice. The first sound after a quiet spell can take about 2 minutes while the sound model starts, and the reply shows "Warming up the sound model, about 2 minutes"; the wait itself isn't charged. A failed sound isn't retried automatically.
+
+**Combines with:** [Make Video](#make-video) and [Edit Video](#edit-video) for a clip's soundtrack, and [Text to speech](#text-to-speech) for a voiceover with ambience underneath.
 
 ## Transcribe
 
@@ -5382,7 +5412,7 @@ The chip's menu also has **Clear folder** (go back to a private folder for this 
 Computer Use lets Bearly complete a task in the apps on your screen. It takes screenshots, reads the apps' accessibility text, and clicks, types, scrolls, drags, and uses keyboard shortcuts. Computer use runs on your device; the screenshots it takes while working go to the model named on the **Use your computer** card.
 
 **Use it when:** the task lives in a desktop app with no file or web route, such as reading figures from an open report window, changing a setting in an app, or moving data between two apps.
-**You need:** the desktop app on Mac, Windows, or Linux; your organization allows **Computer Use** and at least one of the models Computer Use supports. On a Mac, Bearly needs **Accessibility** and **Screen Recording** permission in **System Settings** → **Privacy & Security**.
+**You need:** the desktop app on Windows, Linux, or a Mac with macOS 13 or later; your organization allows **Computer Use** and at least one of the models Computer Use supports. On a Mac, Bearly needs **Accessibility** and **Screen Recording** permission in **System Settings** → **Privacy & Security**.
 
 
 
@@ -6580,7 +6610,7 @@ Details: [Research](https://bearly.ai/docs/manual/capabilities/research.md).
 | **Weather** `/weather`, `/air-quality`, `/pollen` | A place and a time range | A weather card; past weather as text | Any | All | No | No |
 | **SEO data** `/seo` | Keywords, sites, or a page to audit | Search data in the reply | Any | All | No | No |
 | **Domain research** `/domains` | A naming brief or one domain | Name ideas, and whether a domain is available to register | Any | All | No | No |
-| **Hotel search** (ask in words) | A city and country, dates of 1 to 30 nights, and up to 6 adults | Up to 20 hotels with star class, guest rating, nightly price, and a link, in the reply | Any | All | Yes | No |
+| **Hotel search** (ask in words) | A place or a landmark to stay near, dates of 1 to 30 nights, and up to 6 guests per room (children by age), with optional price, star, rating, and free-cancellation filters | Up to 20 hotels or vacation rentals with star class, guest rating, nightly price per room, and a link, in the reply | Any | All | Yes | No |
 | **Company filings and economic data** (ask in words) | A US-listed company, a phrase to find in filings, an economic series such as CPI, or currencies to convert | Reported financials, filing lists and links, full-text filing hits, series values, or exchange rates, each with its source, in the reply | Any | All | No | No |
 | **Property, sanctions, and package lookups** (ask in words) | A US address or area, a person's or company's name with its country, or a tracking number | Property records, a value or rent estimate with comparables, listings, possible sanctions-list matches, or a package's status and scans, in the reply | Any | All | Yes | No |
 | **Everyday lookups** (ask in words) | A place and dates, a barcode or product name, a medicine name, a VIN, or a podcast topic | Events with ticket links, packaged-food nutrition and allergens, medicine label sections, side-effect reports and recalls, vehicle details and recalls, or podcasts and episodes, in the reply | Any | All | No | No |
@@ -6668,7 +6698,7 @@ Details: [Routines](https://bearly.ai/docs/manual/capabilities/routines.md), [Co
 | **Skills** (`/skill-<name>`; built-ins **Visualize** and **Bearly AI Models**) | A skill's instructions, files, and scripts | Whatever the skill makes; its scripts run on your computer | Any | Installed skills: Desktop; built-ins: All | Yes, the ones you add to the routine | No |
 | **Bearly Browser** | Sites you approve | Page text, screenshots, clicks, typing, form submissions, and downloads saved to the chat (one file up to 50 MiB) | Any | Desktop | Only with the routine's **Browser access**, on the sites you list | No |
 | **Chrome control** | Your open Chrome tabs | Page text, screenshots, clicks, typing and form fills, console and network detail | Any | Desktop app, with Chrome and the Bearly extension | No | No |
-| **Computer Use** `/computer` | A task in an app that's open on screen | The task done by clicking and typing, and a **Computer Use** step listing the actions | Any | Desktop | No | No |
+| **Computer Use** `/computer` | A task in an app that's open on screen | The task done by clicking and typing, and a **Computer Use** step listing the actions | Any | Desktop; a Mac needs macOS 13 or later | No | No |
 | **Chat management** (ask in any chat) | A request to list, read, create, rename, move, or delete chats, to create a project, or to check your plan and models | Your chat list, an earlier chat's contents, the change, or your plan and the models this chat can use; listing, reading, and deleting ask you first | Any | All | No | No |
 | **Prompt templates** (sidebar **Prompt templates**; run from `/` → **Skills**) | Values for the template's fields, and optional files | A filled form in the chat that runs as a prompt and can run again with new values | Any | All | No | No |
 | **Code Mode** (sliders menu → **Execution Mode**) | A task that needs many tool calls, such as reading many chats, pages, or files, then counting, matching, or totaling what they say | The same results as the tools it calls, worked through together in one step; in **Steps**, one row per step with its call count | Any | All; on a device that can't run the code, such as an iPhone in Lockdown Mode, tools are looked up and called one at a time | No; routines use Classic | No |
@@ -8058,7 +8088,7 @@ Bearly reads every invoice in a folder on your computer, builds an Excel workboo
 Bearly reads values from an app window on your screen, charts them, and points out the outliers.
 
 **Why it works:** Computer Use runs a focused agent that looks at screenshots and accessibility text of the apps on screen, and clicks, scrolls, and types. Computer use runs on your device; the screenshots you approve go to the model you picked. The agent reports what it read back to the chat, where Run Python and **Create chart** take over; the Computer Use agent itself can't run Python.
-**You need:** Any plan. Desktop app on Mac, Windows, or Linux. Organization controls: **Computer Use** (with a model policy that allows a model Computer Use supports), plus **Run Python** and **Charts** for the chart. On a Mac, Bearly needs Accessibility and Screen Recording permission (System Settings → Privacy & Security).
+**You need:** Any plan. Desktop app on Windows, Linux, or a Mac with macOS 13 or later. Organization controls: **Computer Use** (with a model policy that allows a model Computer Use supports), plus **Run Python** and **Charts** for the chart. On a Mac, Bearly needs Accessibility and Screen Recording permission (System Settings → Privacy & Security).
 
 
 

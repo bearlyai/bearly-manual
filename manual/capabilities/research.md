@@ -35,7 +35,7 @@ Bearly can search the web, read a page or file at a link, run a long investigati
 | Hotels with nightly prices for your dates | [Hotel search](#hotel-search) | Ask | Every plan |
 | A US-listed company's filings and reported financials, US economic data, or exchange rates | [Company filings and economic data](#company-filings-and-economic-data) | Ask | Every plan |
 | A US property's value or rent, a sanctions check on a person or company, or where a package is | [Property, sanctions, and package lookups](#property-sanctions-and-package-lookups) | Ask | Every plan |
-| Events near a place, a food by barcode, a medicine's label, a car's VIN, or a podcast | [Everyday lookups](#everyday-lookups) | Ask | Every plan |
+| Events near a place, a food by barcode or its nutrition, a medicine's label, a car's VIN, or a podcast | [Everyday lookups](#everyday-lookups) | Ask | Every plan |
 | What people are posting on X, or one post, thread, or profile | [X](#x) | Paste a post link, or `/search-x`, `/read-x`, `/x-profile` | Every plan |
 
 "Every plan" tools use your plan allowance like any other reply. Plans are compared in [Plans and credits](https://bearly.ai/docs/manual/plans-and-credits.md). On a plan below a tool's minimum, the chat shows an upgrade card instead of running it.
@@ -457,27 +457,27 @@ Weather reads current conditions, forecasts, official alerts, past weather, air 
 
 ## Hotel search
 
-Hotel search finds hotels in a destination with nightly prices for your dates, star class, guest ratings, and a link for each. It doesn't book or hold anything.
+Hotel search finds hotels, or vacation rentals, for your dates, with the nightly price, star class, guest rating, and a link for each. It doesn't book or hold anything.
 
-**Use it when:** you're comparing places to stay for a trip, checking what a city costs on certain nights, or building a shortlist before you book.
+**Use it when:** you're comparing places to stay for a trip, checking what an area costs on certain nights, or building a shortlist before you book.
 
 **You need:** any plan. Admin control: **Web**.
 
 
 
-1. Name the city and country, your check-in and check-out dates, and how many adults — Bearly searches current prices for that stay.
+1. Say where you want to stay, your check-in and check-out dates, and who's sharing the room. A city, a neighbourhood, or a resort area works, and so does a landmark to stay near. Give children's ages. Bearly searches current prices for that stay.
 
    ```text
-   Find hotels in Lisbon, Portugal for 2 adults, checking in March 12 and out March 15. Show the best rated under 200 euros a night.
+   Family of 4, kids are 7 and 10. Find a 4-star or better hotel in Punta Cana, January 10 to 17, with free cancellation, under $400 a night.
    ```
 
-2. Narrow the list in follow-ups — Bearly works from the hotels it found, or searches again for new dates or another area.
+2. Narrow the list in follow-ups. Bearly works from the hotels it found, or searches again with new dates, another area, or different filters: price range, star class, minimum guest rating, free cancellation, or sorted by price, rating, or number of reviews. Ask for vacation rentals to see homes and apartments.
 
 
 
-**What you get:** a list in the reply with each hotel's name, star class, guest rating and review count, nightly price, and a link to its listing. Some hotels come back without a street address.
+**What you get:** a list in the reply with each hotel's name, star class, guest rating and review count, nightly price per room, and a link to its listing. A hotel with no price for your dates shows none. Some hotels come back without a street address.
 
-**Limits:** up to 20 hotels per search. A stay is 1 to 30 nights for 1 to 6 adults; give both dates or neither, since a search without dates uses a default one-night stay. Prices are in US dollars unless you name another currency, and they're a snapshot: the booking site's checkout price applies. Each search is a paid lookup; past 5 in one answer, Bearly asks first. A search stops after 45 seconds, and a failed search isn't repeated automatically.
+**Limits:** up to 20 hotels per search. A stay is 1 to 30 nights, starting today or later; give both dates or neither, since a search without dates uses a default one-night stay. One search covers one room of up to 6 guests (1 to 6 adults, plus up to 5 children); for a group in several rooms, say how many share each room. Prices are in US dollars unless you name another currency, and they're a snapshot: the booking site's checkout price applies. Each search is a paid lookup; past 5 in one answer, Bearly asks first. A search stops after 45 seconds, and a failed search isn't repeated automatically.
 
 **Runs in:** every app platform. Routines: yes. Council experts: no.
 
@@ -526,7 +526,7 @@ Bearly reads primary sources for markets and the economy: a US-listed company's 
 - **Companies:** US-listed companies that file with the SEC. Many non-US companies don't, and companies that report under international accounting standards often have no standard figures, so Bearly lists their filings instead. Figures are as filed, including restatements, and a figure the company didn't report isn't estimated. Financials cover up to 15 fiscal years (5 by default) plus the latest quarter.
 - **Filings:** a list returns up to 100 of the company's recent filings, newest first, and says which dates it covers. Full-text search covers every filing since 2001 and returns up to 50 hits.
 - **Economic series:** at most the latest 120 values per request, so ask for a monthly or yearly view of a long range.
-- **Exchange rates:** about 30 major currencies, up to 10 at a time, latest, on a date, or as a daily history. Rates are published once each working day, so a weekend or holiday date gives the previous working day's rates.
+- **Exchange rates:** about 30 major currencies, up to 10 at a time, latest, on a date, or as a daily history. Rates are published once each working day, so a weekend or holiday date gives the previous working day's rates. For any other currency, Bearly looks the rate up with [Web Search](#web-search) and names the source and date.
 - There are no stock prices or quotes.
 
 **Runs in:** every app platform. Routines: no. Council experts: no.
@@ -579,17 +579,17 @@ Three kinds of paid lookups: US property records, value and rent estimates, and 
 
 ## Everyday lookups
 
-Free lookups in public reference data: events and tickets, packaged food, medicines, vehicles, and podcasts. Each item comes with its source link. The lookups themselves are free; the reply uses your plan allowance like any other.
+Free lookups in public reference data: events and tickets, food and nutrition, medicines, vehicles, and podcasts. Each item comes with its source link. The lookups themselves are free; the reply uses your plan allowance like any other.
 
 | Lookup | Ask with | You get |
 | --- | --- | --- |
 | Events | An artist, team, show, or keyword, and a city or area and dates | Upcoming concerts, sports, theater, comedy, and family events with date, venue, status, a price range when one is published, and a link to the ticket page; up to 50 per search. Ask about one event for its lineup, on-sale dates, age limit, venue address, parking, and accessible seating |
-| Packaged food | The digits under a barcode, or a product name or brand | Name, brand, nutrition per 100 g and per serving, ingredients, allergens, Nutri-Score, and how processed it is; a name search finds up to 24 products worldwide |
+| Food | The digits under a barcode, a product name or brand, or a plain food such as a raw apple or cooked rice | For packaged food: name, brand, nutrition per 100 g and per serving, ingredients, allergens, Nutri-Score, and how processed it is; a name search finds up to 24 products worldwide. For plain and branded US foods: calories, macronutrients, vitamins, and minerals per 100 g and per serving from the USDA's FoodData Central |
 | Medicines | A brand or generic name, even misspelled | The active ingredient, brands, strengths, and drug class; the FDA-approved label, such as uses, dosing, warnings, side effects, and interactions; how many side-effect reports the FDA has received and the most-reported reactions; and FDA recalls since 2004 |
 | Vehicles | A VIN, or a make, model, and year | Make, model, year, trim, body, engine, fuel, drive, transmission, where it was built, and safety equipment; a make's models for a year; and US safety recalls with the risk and the free fix |
 | Podcasts | A topic, show title, or host | Matching shows with description, language, categories, and links; a show's latest episodes; and what's trending, optionally by language and category |
 
-**Use it when:** you're planning a night out, checking what's in a snack or whether it has an allergen, reading a medicine's label, checking a used car's VIN and recalls before you buy, or looking for a podcast on a topic.
+**Use it when:** you're planning a night out, checking what's in a snack or whether it has an allergen, counting the calories or fiber in a food, reading a medicine's label, checking a used car's VIN and recalls before you buy, or looking for a podcast on a topic.
 
 **You need:** any plan. Admin control: **Web**.
 
@@ -616,7 +616,7 @@ Free lookups in public reference data: events and tickets, packaged food, medici
 **Limits:**
 
 - **Events:** only events sold through one large ticket seller, in the US, Canada, Europe, Australia, and more. Venues that sell elsewhere won't appear; Bearly says so and can search the web instead. Prices are often shown only on the event's page.
-- **Food:** a barcode that isn't in the database comes back as not found. Name searches are limited to a few a minute.
+- **Food:** a barcode that isn't in the database comes back as not found. Packaged-food name searches are limited to a few a minute. Nutrition for plain foods is US reference data.
 - **Medicines:** US reference data, not medical advice. Bearly quotes the label rather than adding its own dosing and points you to a doctor or pharmacist for decisions about your care. Side-effect reports show what people reported, not how likely a side effect is. For interactions, Bearly reads each drug's label; that's the label's list, not a complete interaction check.
 - **Vehicles:** vehicles sold in the US. A VIN is 17 characters without I, O, or Q; a partial VIN of at least 11 characters decodes the model. No ownership, accident, or title history.
 - **Podcasts:** up to 40 shows per search and 50 episodes per show.

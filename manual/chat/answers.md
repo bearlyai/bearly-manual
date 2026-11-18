@@ -139,7 +139,7 @@ Details for each are on [Research](https://bearly.ai/docs/manual/capabilities/re
 
 ## When an answer fails
 
-A failed answer shows its error, or "An error occurred. Please wait and try again." when there's no specific message. **Get help** next to it opens a support dialog. A message that can't be displayed shows "Unable to load message."
+A failed answer shows its error, or "An error occurred. Please wait and try again." when there's no specific message. **Get help** next to it opens a support dialog. If an answer stopped because the page closed or reloaded, or because it reached its step limit, the latest answer also shows **Continue**, which picks up where it stopped, and **Retry**, which asks the question again. A message that can't be displayed shows "Unable to load message."
 
 In most chats, if the chat itself can't open, the bar at the bottom of the message box says "Couldn't open this chat." or "Waiting for this chat to sync.", with **Retry**; a chat that's waiting to sync opens on its own once it catches up. "This chat has changes from a newer version of Bearly. Update Bearly to keep using it." means this copy of the app is out of date.
 

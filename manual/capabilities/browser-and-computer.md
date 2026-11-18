@@ -160,7 +160,7 @@ The chip's menu also has **Clear folder** (go back to a private folder for this 
 Computer Use lets Bearly complete a task in the apps on your screen. It takes screenshots, reads the apps' accessibility text, and clicks, types, scrolls, drags, and uses keyboard shortcuts. Computer use runs on your device; the screenshots it takes while working go to the model named on the **Use your computer** card.
 
 **Use it when:** the task lives in a desktop app with no file or web route, such as reading figures from an open report window, changing a setting in an app, or moving data between two apps.
-**You need:** the desktop app on Mac, Windows, or Linux; your organization allows **Computer Use** and at least one of the models Computer Use supports. On a Mac, Bearly needs **Accessibility** and **Screen Recording** permission in **System Settings** → **Privacy & Security**.
+**You need:** the desktop app on Windows, Linux, or a Mac with macOS 13 or later; your organization allows **Computer Use** and at least one of the models Computer Use supports. On a Mac, Bearly needs **Accessibility** and **Screen Recording** permission in **System Settings** → **Privacy & Security**.
 
 
 

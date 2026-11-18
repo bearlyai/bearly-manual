@@ -1,6 +1,6 @@
 ---
 title: "Make images, video, and audio"
-description: "How to generate and edit images, upscale a photo, remove a photo's background, make and edit short videos, turn text into speech with Read aloud and Voice Studio, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls."
+description: "How to generate and edit images, upscale a photo, remove a photo's background, make and edit short videos, turn text into speech with Read aloud and Voice Studio, make sound effects, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls."
 canonical: "https://bearly.ai/docs/manual/capabilities/images-video-audio/"
 markdown: "https://bearly.ai/docs/manual/capabilities/images-video-audio.md"
 ---
@@ -9,7 +9,7 @@ markdown: "https://bearly.ai/docs/manual/capabilities/images-video-audio.md"
 
 HTML: [https://bearly.ai/docs/manual/capabilities/images-video-audio/](https://bearly.ai/docs/manual/capabilities/images-video-audio/)
 
-> How to generate and edit images, upscale a photo, remove a photo's background, make and edit short videos, turn text into speech with Read aloud and Voice Studio, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls.
+> How to generate and edit images, upscale a photo, remove a photo's background, make and edit short videos, turn text into speech with Read aloud and Voice Studio, make sound effects, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls.
 
 These instructions cover Bearly on the web and desktop, including the web app in a phone browser.
 
@@ -26,6 +26,7 @@ To point a tool at a file that's already in the chat, type `@` and pick the file
 | A short video from text or an image | [Make Video](#make-video) | `/video` |
 | A change to a short clip | [Edit Video](#edit-video) | `/edit-video` |
 | Spoken audio from text | [Text to speech](#text-to-speech) | `/say` |
+| A short sound effect or ambience | [Sound effects](#sound-effects) | Ask in words |
 | Text from speech in a recording | [Transcribe](#transcribe) | `/transcribe` |
 | Bearly to look at an image, watch a video, or see PDF pages | [View Media](#view-media) | `/analyze-media` |
 
@@ -265,6 +266,34 @@ Rarely, a reading comes out too large for one file. It's then saved as numbered 
 **Limits:** a recording can be up to about 22,500 characters of English (about 7,500 in Chinese, Japanese or Korean), roughly 30 minutes of audio. Longer text is refused before anything is recorded or charged, with "Text this long would make more than about 30 minutes of audio. Split it into shorter parts." If the voice service fails partway through a long reading, the part already read is kept and the studio says "Only the first N of M characters were read aloud. Shorten the text or split it into parts."; when you asked in the chat, Bearly tells you the audio stops early and can read the rest. Voice Studio appears on the latest text-to-speech result in the chat; earlier results show a plain player. The word highlighting uses estimated timing. A failed recording isn't retried automatically; when a recording you asked for in the chat fails, you'll see "The audio could not be created." In read-only chats you get plain players only. The studio's model switch picks the voice engine: **Fast**, **Studio**, or **OpenAI**.
 
 When your organization's model policy doesn't allow the engine you picked, **Generate** shows "Your organization's model policy doesn't allow _engine_. Choose another speech model." With **Zero Data Retention only** on, **Fast** and **Studio** show "_Engine_ doesn't meet your Zero Data Retention only setting. Choose another speech model." When no engine is allowed at all, the studio shows "Your organization's model policy doesn't allow any speech model, so audio can't be created." or, with Zero Data Retention only on, "No speech model that meets your Zero Data Retention only setting is available, so audio can't be created." Speech you ask for in the chat, and an unedited studio, use the first allowed engine instead of the default when the default isn't allowed.
+
+## Sound effects
+
+Sound effects makes a short sound or ambience from a description: a door creaking, rain on a tin roof, a crowd cheering in a stadium. Each take is an MP3 saved in the chat.
+
+**Use it when:** you need a sound for a video, a game, a slide, or a podcast, or room tone and ambience under a voiceover.
+
+**You need:** any plan; each sound counts as usage. Admin control: **Text to speech** (under **Media & Creativity**).
+
+**How to use it:**
+
+1. Describe the sound in the chat: the source, the action, and the setting.
+
+   ```text
+   Make a 6-second sound of a heavy wooden door creaking open in a stone hall, then a crow caws outside.
+   ```
+
+2. Ask for variations to get up to 3 takes of the same description at once, or select **Make variations** on the card.
+
+   ```text
+   Make 3 versions of rain on a tin roof, 10 seconds each.
+   ```
+
+**What you get:** a **Sound effect** card with your description, a player for each take with a waveform, and **Download**. **Make variations** (or **More versions**) asks for 3 more takes; **Edit prompt** puts the description in the message box so you can change it. When every take is in the chat's files, the card says **Saved to Files**; a take you delete shows "This take is no longer in Files."
+
+**Limits:** 1 to 30 seconds per take (6 by default), up to 3 takes per request, and descriptions up to 400 characters. Sound effects and ambience only: not music, songs, or speech; use [Text to speech](#text-to-speech) for a voice. The first sound after a quiet spell can take about 2 minutes while the sound model starts, and the reply shows "Warming up the sound model, about 2 minutes"; the wait itself isn't charged. A failed sound isn't retried automatically.
+
+**Combines with:** [Make Video](#make-video) and [Edit Video](#edit-video) for a clip's soundtrack, and [Text to speech](#text-to-speech) for a voiceover with ambience underneath.
 
 ## Transcribe
 
