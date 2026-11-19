@@ -79,7 +79,7 @@ Projects have no public link. Only people you share with can open them.
 **Files** holds the project's files. Every chat in the project can search and read them without attaching them again.
 
 - **Upload** with the button, or drop files anywhere on the page ("Drop files here"). An empty project shows **Add files to this project** with **Upload**.
-- Each upload shows **Waiting…**, "Uploading" with a percentage, then **Added**. You can cancel one in progress or dismiss a failed one. After upload, Bearly reads the file so chats can search it: the file shows **Reading…**, or **Couldn't read** with **Retry**. A file Bearly couldn't read stays saved, but chats may not be able to search it.
+- Each upload shows **Waiting…**, "Uploading" with a percentage, then **Added**. You can cancel one in progress or dismiss a failed one. After upload, Bearly reads the file so chats can search it: the file shows **Reading…**, or **Couldn't read** with **Retry**. A file Bearly couldn't read stays saved, but chats may not be able to search it. A file over 200 MB shows **Too large to read (over 200 MB)**, and a type Bearly doesn't read shows **This file type can't be read**; neither offers **Retry**, since trying again can't change it. Images, audio, and video aren't read as text and show no status.
 - **Search files** filters by name.
 - To work on several files, hover a file and tick its checkbox, or use <kbd>⌘</kbd>-click or <kbd>Shift</kbd>-click (<kbd>Ctrl</kbd>-click on Windows and Linux). A bar shows how many are selected, with **Select all**, **Clear**, and **Delete**.
 - Each file's **…** offers **Details**, **Download**, **Rename**, **Select**, and **Delete…**. **Details** opens a panel beside the list (a sheet on phones) with the file's size, type, and when it was added; **About this file** (topics, people, dates, and its text); its reading status, with **Get help** if a step failed; where it was synced from; **Download**; and delete.
@@ -236,7 +236,7 @@ Every answer in the project checks the project's files first and points to the p
 
 
 **Swap in:** use **Sync a folder** on the **Files** tab in the desktop app so new files in a folder join the knowledge base automatically. Set **Response Style** to **Concise** for short answers.
-**If it stalls:** a file showing **Couldn't read** can't be searched; select **Retry** on it, or open **Details** to see why. If replies ignore the files, confirm **Use project defaults** is on.
+**If it stalls:** a file showing **Couldn't read** can't be searched; select **Retry** on it, or open **Details** to see why. A file over 200 MB can't be read; split it into smaller files. If replies ignore the files, confirm **Use project defaults** is on.
 
 ### A shared project where each person picks their own model
 

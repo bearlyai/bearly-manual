@@ -268,7 +268,7 @@ On a phone or a narrow window, the sidebar becomes a drawer: select **Show sideb
 The desktop app is Bearly in its own window, plus the tools that work on your computer. It loads Bearly from the internet, so it needs a connection. If it can't connect, it shows "We can't reach Bearly." and keeps retrying.
 
 **Use it when:** you want Bearly to work with files on your computer, browse sites for you, control apps, run routines on a schedule, or record online meetings with computer audio.
-**You need:** a Mac (one download works on every Mac processor type), a Windows x64 PC, or a Linux x64 computer.
+**You need:** a Mac (one download works on every Mac processor type; upcoming versions need macOS 13 or later), a Windows x64 PC, or a Linux x64 computer.
 
 
 **Mac**
@@ -336,6 +336,8 @@ The app also puts an icon in the menu bar (Mac) or system tray (Windows and Linu
 ### Updates
 
 The desktop app downloads updates in the background. When one is ready, an **Update** button appears at the top of the window, under the chat's title or, on pages without one, beside the sidebar button. Select it to restart into the new version. Most improvements arrive without a new download, because the app loads the current Bearly from the web. A feature that needs a newer app shows **Update Bearly**.
+
+Bearly will soon need macOS 13 or later. On a Mac with macOS 12 or older, a note at the top of the page says so: update macOS in **System Preferences** to keep getting Bearly updates and security fixes. **How to update** opens Apple's steps in your browser. Close the note to hide it; it shows once more after each app update.
 
 ## iOS app
 
@@ -1035,8 +1037,8 @@ A prompt template is a prompt you reuse, with fill-in fields. Each `{{ name }}` 
 
 You don't have to wait for an answer to finish. While Bearly works, type your next message and choose what happens to it:
 
-- **Send** adds it to the answer that's running. Bearly reads it as soon as any tool it's running finishes, then carries on with your message in mind. Use it to correct course or add a detail mid-answer.
-- **Queue** holds it under **Up next** above the composer. Queued messages go out automatically, in order, as each answer finishes. Use it for the next step, such as "now make a table".
+- **Send** adds it to the answer that's running. Bearly reads it as soon as any tool it's running finishes, then carries on with your message in mind. Everything you send this way goes into the same answer, so three quick messages get one answer, not three. Use it to correct course or add a detail mid-answer.
+- **Queue** holds it under **Up next** above the composer. Queued messages go out one at a time, in order, each after the answer before it finishes, and each gets its own answer. Use it for the next step, such as "now make a table".
 
 Some chats can't take a new message while an answer runs: end-to-end encrypted chats, a routine's chat, chats whose history Bearly has compacted, and chats with very large files. There you see only **Stop** and **Send**, and **Send** waits for the answer to finish (its tooltip reads "Send after this reply").
 
@@ -1046,9 +1048,9 @@ Some chats can't take a new message while an answer runs: end-to-end encrypted c
 
 
 1. While Bearly is answering, type your next message — **Stop**, **Queue**, and **Send** appear at the right of the composer.
-2. Press <kbd>Enter</kbd> or select **Send** to add the message to the running answer — it shows as **Sending…** above the composer until Bearly reads it. Select the **×** beside it (**Cancel sending**) to move it back into the queue before it's read.
-3. Or select **Queue** — the message waits under **Up next**. Hover the header to see "Queued messages send automatically, in order, when the current response finishes."
-4. Manage a waiting message with its buttons: **Edit queued message** brings it back into the composer (clear the composer first), **Send now** adds it to the running answer right away, and **Remove from queue** deletes it.
+2. Press <kbd>Enter</kbd> or select **Send** to add the message to the running answer — it shows under **Adding to this answer** above the composer until Bearly reads it. Select **Undo** beside it to take it back before it's read: it shows **Undoing…**, then moves to the top of **Up next**. Once Bearly has read it, **Undo** is grayed out ("Already part of this answer").
+3. Or select **Queue** — the message waits under **Up next**. Hover the header to see "Queued messages send after this answer finishes, one at a time, in order."
+4. Manage a message under **Up next** with its buttons: **Edit queued message** brings it back into the composer (clear the composer first), **Send now** moves it to **Adding to this answer**, and **Remove from queue** deletes it.
 5. To pull back the newest waiting message, press <kbd>↑</kbd> in an empty composer.
 
 
@@ -5677,7 +5679,7 @@ A skill is a folder with an instruction file and, often, supporting files and sc
 
 
 
-To install from somewhere else, use **Install from source**: **Git** with **Add Repository**, an HTTPS **URL ZIP** with its **SHA-256** and **Install**, or a **Folder** with **Import Folder** (copies it) or **Link Folder** (uses it in place). Under **Installed**, **Pause** hides a skill from chats, **Enable** brings it back, **Uninstall** removes a copied skill, and **Unlink** disconnects a linked folder without deleting it.
+To install from somewhere else, use **Install from source**: **Git** with **Add** (paste a link to a skill's folder to install it, or a repository link to list it under **Skill repositories**; **Folder** and **Branch** are optional), an HTTPS **URL ZIP** with its **SHA-256** and **Install**, or a **Folder** with **Import Folder** (copies it) or **Link Folder** (uses it in place). Under **Installed**, **Pause** hides a skill from chats, **Enable** brings it back, **Uninstall** removes a copied skill, and **Unlink** disconnects a linked folder without deleting it.
 
 If your organization limits who adds skills, the pane says "Admins can add and remove Skills. You can browse repositories and pause Skills already available here."
 
@@ -8924,7 +8926,7 @@ Projects have no public link. Only people you share with can open them.
 **Files** holds the project's files. Every chat in the project can search and read them without attaching them again.
 
 - **Upload** with the button, or drop files anywhere on the page ("Drop files here"). An empty project shows **Add files to this project** with **Upload**.
-- Each upload shows **Waiting…**, "Uploading" with a percentage, then **Added**. You can cancel one in progress or dismiss a failed one. After upload, Bearly reads the file so chats can search it: the file shows **Reading…**, or **Couldn't read** with **Retry**. A file Bearly couldn't read stays saved, but chats may not be able to search it.
+- Each upload shows **Waiting…**, "Uploading" with a percentage, then **Added**. You can cancel one in progress or dismiss a failed one. After upload, Bearly reads the file so chats can search it: the file shows **Reading…**, or **Couldn't read** with **Retry**. A file Bearly couldn't read stays saved, but chats may not be able to search it. A file over 200 MB shows **Too large to read (over 200 MB)**, and a type Bearly doesn't read shows **This file type can't be read**; neither offers **Retry**, since trying again can't change it. Images, audio, and video aren't read as text and show no status.
 - **Search files** filters by name.
 - To work on several files, hover a file and tick its checkbox, or use <kbd>⌘</kbd>-click or <kbd>Shift</kbd>-click (<kbd>Ctrl</kbd>-click on Windows and Linux). A bar shows how many are selected, with **Select all**, **Clear**, and **Delete**.
 - Each file's **…** offers **Details**, **Download**, **Rename**, **Select**, and **Delete…**. **Details** opens a panel beside the list (a sheet on phones) with the file's size, type, and when it was added; **About this file** (topics, people, dates, and its text); its reading status, with **Get help** if a step failed; where it was synced from; **Download**; and delete.
@@ -9081,7 +9083,7 @@ Every answer in the project checks the project's files first and points to the p
 
 
 **Swap in:** use **Sync a folder** on the **Files** tab in the desktop app so new files in a folder join the knowledge base automatically. Set **Response Style** to **Concise** for short answers.
-**If it stalls:** a file showing **Couldn't read** can't be searched; select **Retry** on it, or open **Details** to see why. If replies ignore the files, confirm **Use project defaults** is on.
+**If it stalls:** a file showing **Couldn't read** can't be searched; select **Retry** on it, or open **Details** to see why. A file over 200 MB can't be read; split it into smaller files. If replies ignore the files, confirm **Use project defaults** is on.
 
 ### A shared project where each person picks their own model
 
@@ -10423,7 +10425,8 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 | "Queue full — send, edit, or remove a waiting message first" and **Queue is full** | The queue holds up to 4 waiting messages | Use **Send now**, **Edit queued message**, or **Remove from queue** on one |
 | "Clear the composer to edit this message" | You can only pull a queued message back into an empty composer | Clear the composer, then select **Edit queued message** |
 | Only **Stop** and **Send** while Bearly works, and **Send** reads "Send after this reply" | This chat can't take a new message while an answer runs, such as an end-to-end encrypted chat, so **Send** waits for the answer to finish | Let it finish, or select **Stop** and then send |
-| A message you sent shows **Sending…** above the composer | Bearly reads a message added to a running answer once its current tool finishes | Wait, or select **Cancel sending** to move it back into the queue |
+| A message you sent shows under **Adding to this answer** above the composer | Bearly reads a message added to a running answer once its current tool finishes | Wait, or select **Undo** to move it to **Up next** |
+| Several messages sent while Bearly was answering got one answer | **Send** adds each message to the answer that's running | To get a separate answer for each, select **Queue** instead |
 | **Running on another device** above the composer | An answer running on another device hasn't updated for 2 minutes; that device may be closed or offline | Open the chat on that device, or select **Stop** here and send again |
 | **Stopped responding** above the composer | An answer running in this window, or in another tab or window on this computer, hasn't updated for 2 minutes, often after the computer slept | Select **Stop**, then send again |
 | "Couldn't open this chat." with **Retry** | The chat couldn't load | Check your connection and select **Retry** |
@@ -10747,6 +10750,7 @@ See [Projects](https://bearly.ai/docs/manual/projects.md).
 | "Too many sign-in attempts. Wait a few minutes and try again." | Too many wrong codes were entered in a short time | Wait a few minutes, then enter the code again |
 | No code email after a few minutes | Some school and work email systems hold messages for several minutes | Check spam, or wait: the code still works when it arrives within 30 minutes. A minute after the **Check your email** screen opens, **Send another code** emails a new one. If the screen then says "Either code works", use whichever email arrives first; otherwise use the newest. You can also sign in with Microsoft or Google instead |
 | "Desktop sign-in didn't finish. Make sure Bearly is open. If your browser blocks local network access, allow it for this site, then try again." | The browser couldn't hand the sign-in to the desktop app | Keep the desktop app open, allow local network access if asked, and select **Retry desktop sign-in** |
+| "Bearly will soon need macOS 13 or later. Update macOS in System Preferences to keep getting Bearly updates and security fixes." | The desktop app is on a Mac with macOS 12 or older, and upcoming versions need macOS 13 | Update macOS; **How to update** opens Apple's steps. Bearly still works on macOS 12 for now, and you can close the note |
 | A device you don't recognize in **Settings** → **Devices** | Your account is signed in there | Select **Sign out** on it, or **Sign out all other devices** |
 | The browser extension asks you to connect again | It was disconnected, or its key was removed under **Settings** → **Devices** → **Browser extension and API keys** | Open the extension and select **Sign in with Bearly** |
 

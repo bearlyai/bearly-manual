@@ -172,8 +172,8 @@ A prompt template is a prompt you reuse, with fill-in fields. Each `{{ name }}` 
 
 You don't have to wait for an answer to finish. While Bearly works, type your next message and choose what happens to it:
 
-- **Send** adds it to the answer that's running. Bearly reads it as soon as any tool it's running finishes, then carries on with your message in mind. Use it to correct course or add a detail mid-answer.
-- **Queue** holds it under **Up next** above the composer. Queued messages go out automatically, in order, as each answer finishes. Use it for the next step, such as "now make a table".
+- **Send** adds it to the answer that's running. Bearly reads it as soon as any tool it's running finishes, then carries on with your message in mind. Everything you send this way goes into the same answer, so three quick messages get one answer, not three. Use it to correct course or add a detail mid-answer.
+- **Queue** holds it under **Up next** above the composer. Queued messages go out one at a time, in order, each after the answer before it finishes, and each gets its own answer. Use it for the next step, such as "now make a table".
 
 Some chats can't take a new message while an answer runs: end-to-end encrypted chats, a routine's chat, chats whose history Bearly has compacted, and chats with very large files. There you see only **Stop** and **Send**, and **Send** waits for the answer to finish (its tooltip reads "Send after this reply").
 
@@ -183,9 +183,9 @@ Some chats can't take a new message while an answer runs: end-to-end encrypted c
 
 
 1. While Bearly is answering, type your next message — **Stop**, **Queue**, and **Send** appear at the right of the composer.
-2. Press <kbd>Enter</kbd> or select **Send** to add the message to the running answer — it shows as **Sending…** above the composer until Bearly reads it. Select the **×** beside it (**Cancel sending**) to move it back into the queue before it's read.
-3. Or select **Queue** — the message waits under **Up next**. Hover the header to see "Queued messages send automatically, in order, when the current response finishes."
-4. Manage a waiting message with its buttons: **Edit queued message** brings it back into the composer (clear the composer first), **Send now** adds it to the running answer right away, and **Remove from queue** deletes it.
+2. Press <kbd>Enter</kbd> or select **Send** to add the message to the running answer — it shows under **Adding to this answer** above the composer until Bearly reads it. Select **Undo** beside it to take it back before it's read: it shows **Undoing…**, then moves to the top of **Up next**. Once Bearly has read it, **Undo** is grayed out ("Already part of this answer").
+3. Or select **Queue** — the message waits under **Up next**. Hover the header to see "Queued messages send after this answer finishes, one at a time, in order."
+4. Manage a message under **Up next** with its buttons: **Edit queued message** brings it back into the composer (clear the composer first), **Send now** moves it to **Adding to this answer**, and **Remove from queue** deletes it.
 5. To pull back the newest waiting message, press <kbd>↑</kbd> in an empty composer.
 
 

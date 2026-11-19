@@ -122,7 +122,7 @@ A skill is a folder with an instruction file and, often, supporting files and sc
 
 
 
-To install from somewhere else, use **Install from source**: **Git** with **Add Repository**, an HTTPS **URL ZIP** with its **SHA-256** and **Install**, or a **Folder** with **Import Folder** (copies it) or **Link Folder** (uses it in place). Under **Installed**, **Pause** hides a skill from chats, **Enable** brings it back, **Uninstall** removes a copied skill, and **Unlink** disconnects a linked folder without deleting it.
+To install from somewhere else, use **Install from source**: **Git** with **Add** (paste a link to a skill's folder to install it, or a repository link to list it under **Skill repositories**; **Folder** and **Branch** are optional), an HTTPS **URL ZIP** with its **SHA-256** and **Install**, or a **Folder** with **Import Folder** (copies it) or **Link Folder** (uses it in place). Under **Installed**, **Pause** hides a skill from chats, **Enable** brings it back, **Uninstall** removes a copied skill, and **Unlink** disconnects a linked folder without deleting it.
 
 If your organization limits who adds skills, the pane says "Admins can add and remove Skills. You can browse repositories and pause Skills already available here."
 

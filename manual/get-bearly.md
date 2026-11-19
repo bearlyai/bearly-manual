@@ -48,7 +48,7 @@ On a phone or a narrow window, the sidebar becomes a drawer: select **Show sideb
 The desktop app is Bearly in its own window, plus the tools that work on your computer. It loads Bearly from the internet, so it needs a connection. If it can't connect, it shows "We can't reach Bearly." and keeps retrying.
 
 **Use it when:** you want Bearly to work with files on your computer, browse sites for you, control apps, run routines on a schedule, or record online meetings with computer audio.
-**You need:** a Mac (one download works on every Mac processor type), a Windows x64 PC, or a Linux x64 computer.
+**You need:** a Mac (one download works on every Mac processor type; upcoming versions need macOS 13 or later), a Windows x64 PC, or a Linux x64 computer.
 
 
 **Mac**
@@ -116,6 +116,8 @@ The app also puts an icon in the menu bar (Mac) or system tray (Windows and Linu
 ### Updates
 
 The desktop app downloads updates in the background. When one is ready, an **Update** button appears at the top of the window, under the chat's title or, on pages without one, beside the sidebar button. Select it to restart into the new version. Most improvements arrive without a new download, because the app loads the current Bearly from the web. A feature that needs a newer app shows **Update Bearly**.
+
+Bearly will soon need macOS 13 or later. On a Mac with macOS 12 or older, a note at the top of the page says so: update macOS in **System Preferences** to keep getting Bearly updates and security fixes. **How to update** opens Apple's steps in your browser. Close the note to hide it; it shows once more after each app update.
 
 ## iOS app
 
