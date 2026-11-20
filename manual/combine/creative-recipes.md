@@ -61,6 +61,7 @@ You get a generated product image, a short video animated from it, a recorded vo
 **Swap in:**
 - **Your own photo for Imagine:** attach a product photo and start at step 2 with "Animate the attached photo…".
 - **An end frame:** name a second image as the last frame. Make Video then animates from the first image to the second.
+- **Reference images:** to keep the same bottle across several shots, ask for Gemini Omni and name the product images as references instead of a start frame. It follows up to 10 of them, in 16:9 or 9:16.
 - **Subtitles:** send `/transcribe` on the merged clip, then select **Download subtitles** in the transcript viewer for an `.srt` file to upload with the clip.
 - **A fix pass:** ask "Watch the clip and list anything inconsistent." Bearly views the video, and `/edit-video` can change a clip of 3 to 10 seconds, 720 to 2160 pixels on each side, and under 50 MB, which a standard-resolution clip fits.
 
@@ -150,7 +151,7 @@ From one audio or video file you get a speaker-labeled transcript, show notes wi
 
 
 **Swap in:**
-- **A meeting recording for the episode:** record in **Meetings**, select **Add to chat**, and start at step 2 with the transcript file attached (needs **Meetings**).
+- **A meeting recording for the episode:** record in **Meetings**, select **More actions** → **Add to chat…**, and start at step 2 with the meeting file attached (needs **Meetings** and **File uploads**).
 - **An article:** ask for a 600-word article from the transcript, then send it through `/grammar` to proofread it.
 - **A video from a link:** send `/download-video` with a public video's link to save it in the chat, then transcribe it. YouTube downloads need the desktop app.
 

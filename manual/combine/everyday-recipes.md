@@ -155,7 +155,7 @@ You get a timed walking plan with places chosen from recent reviews, rearranged 
 
 
 **Swap in:**
-- **A published link for the email:** in the open Page, select **Share file** → **Prepare share**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header, choose the **Audience**, select **Publish** again, then **Copy link**. Open the link on your phone or send it to the people you're traveling with.
+- **A published link for the email:** in the open Page, select **Share file**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header, choose the **Audience**, then select **Publish and copy link**. Open the link on your phone or send it to the people you're traveling with.
 - **Air quality or pollen for the forecast:** ask for them in step 3.
 - **Best Pick for a purchase on the trip** (Pro): "What's the best compact travel umbrella I can buy before Saturday?"
 
@@ -210,7 +210,7 @@ You get a step-by-step explanation of a YouTube lecture, a quiz Page with instan
 
 You get what systematic reviews and trials say about a health question, in plain language with citations, and a list of questions to take to your doctor.
 
-**Why it works:** Scholar searches biomedical and preprint literature, prefers systematic reviews for medical questions, flags retractions and conflicting results, and says when the evidence is thin. The paper-results card under each search stays in the chat, so you can open the papers behind the plain-language summary.
+**Why it works:** Scholar searches biomedical and preprint literature, prefers systematic reviews for medical questions, flags retractions and conflicting results, and says when the evidence is thin. Each citation opens its paper, and **Steps** lists every paper each search found, so you can check the papers behind the plain-language summary.
 **You need:** Any plan. Any platform. Organization controls: **Scholar** and **Web**.
 
 > **Caution — Information, not medical advice**

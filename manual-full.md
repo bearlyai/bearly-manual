@@ -22,7 +22,7 @@ Index: [https://bearly.ai/docs/manual.md](https://bearly.ai/docs/manual.md)
 - [Organize, find, share, and export chats](https://bearly.ai/docs/manual/chat/organize.md): How to start, rename, pin, archive, delete, select, and move chats into projects in Bearly, read the sidebar and its Needs attention section, pin chats and projects, group projects into folders, search chats and files, use the command menu, download a chat as Markdown, share a chat as a Page, ask Bearly to manage chats for you, and open What's New.
 - [Tune a chat: settings, style, reasoning, and memory](https://bearly.ai/docs/manual/chat/settings.md): Every Bearly chat setting explained, including This chat versus New chats, which setting wins when projects and organizations set their own, Response Style, Reasoning Effort, Execution Mode (Classic or Code Mode), Temperature, Instructions, Language, Web Search, how long conversations are kept, Memories, Personalization, and how Bearly tells the AI today's date.
 - [Talk to Bearly: dictation and voice calls](https://bearly.ai/docs/manual/chat/voice.md): How to speak to Bearly instead of typing, with push-to-talk dictation into the message box and live voice calls that can run actions, plus Read aloud, every Dictation and Voice setting, plan and platform requirements, and limits.
-- [Keyboard shortcuts](https://bearly.ai/docs/manual/chat/shortcuts.md): Every Bearly keyboard shortcut for macOS and for Windows and Linux, covering sending, new lines, the / and @ picker, the command menu, search, the sidebar, new and deleted chats, jumping between prompts, Settings, dialogs, dictation, and the desktop app's global shortcut.
+- [Keyboard shortcuts](https://bearly.ai/docs/manual/chat/shortcuts.md): Every Bearly keyboard shortcut for macOS and for Windows and Linux, covering sending, new lines, the / and @ picker, the command menu, search, the sidebar, new and deleted chats, jumping between prompts, Settings, meeting mode, dialogs, dictation, and the desktop app's global shortcut.
 
 ### Capabilities
 
@@ -32,7 +32,7 @@ Index: [https://bearly.ai/docs/manual.md](https://bearly.ai/docs/manual.md)
 - [Analyze data and run code](https://bearly.ai/docs/manual/capabilities/data-and-code.md): How to analyze spreadsheets and files with Run Python, draw KPI, bar, and line charts with Charts, and pick the right visual with Visualize in Bearly, including what the Python sandbox includes, file inputs and outputs, chart limits, and how these combine with documents and Pages.
 - [Make Pages and edit in Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md): How to build interactive Pages in Bearly, refine them through versions, prepare and publish them to a stable bearly.sh link with the right audience, share a conversation's key takeaways, and edit an answer as a document in Canvas, with every limit that applies.
 - [Make images, video, and audio](https://bearly.ai/docs/manual/capabilities/images-video-audio.md): How to generate and edit images, upscale a photo, remove a photo's background, make and edit short videos, turn text into speech with Read aloud and Voice Studio, make sound effects, transcribe audio and video, and have Bearly look at images and video, with each tool's options, limits, and admin controls.
-- [Record and use meetings](https://bearly.ai/docs/manual/capabilities/meetings.md): How to record online meetings, in-person conversations, and voice notes in Bearly's Meetings page, follow the live transcript, get the final transcript and speaker names, summarize, export, and hand a transcript to a chat or project to draft follow-ups.
+- [Record and use meetings](https://bearly.ai/docs/manual/capabilities/meetings.md): How to record calls, in-person meetings, and voice notes in Bearly's Meetings page, take notes while you record, get an automatic summary and speaker names, ask about a meeting, copy or download it, hand it to a chat or project, and hide chat names on a call with meeting mode.
 - [Let Bearly use a browser, your files, and your computer](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md): How a Bearly desktop chat browses sites in Bearly Browser, works in your signed-in Chrome tabs, offers to install the Chrome extension in chat, reads and edits files and runs commands with Work locally, and operates apps with Computer Use, including the approvals each asks for and how to choose between them.
 - [Connect apps and add skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md): How to connect services and your own MCP servers to Bearly, turn a connector on for a chat or a routine, sign in on each device, and install and run skills, including the built-in Visualize and Bearly AI Models skills, with platform limits and approvals.
 - [Automate with Routines](https://bearly.ai/docs/manual/capabilities/routines.md): How to create, schedule, equip, and deliver Bearly routines, including the Pro requirement, where routines run, exactly which tools a scheduled run can use, connectors, skills, Deep Research, permission mode, unattended local access, browser access, the notification filter, email and text delivery, and run history.
@@ -162,7 +162,7 @@ People use Bearly for real work: editors, founders, engineers, researchers, anal
 | Data and code | Run Python on your files, and turn prepared data into charts. | [Data and code](https://bearly.ai/docs/manual/capabilities/data-and-code.md) |
 | Publishing | Build Pages (documents, dashboards, small interactive tools) and publish them at a stable link. | [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) |
 | Media | Generate and edit images, upscale photos, cut out a photo's subject on a transparent background, make short videos with sound, turn text into speech, and transcribe audio and video. | [Images, video, and audio](https://bearly.ai/docs/manual/capabilities/images-video-audio.md) |
-| Voice and meetings | Dictate into the composer, talk with Bearly on a voice call, and record meetings with transcripts. | [Talk to Bearly](https://bearly.ai/docs/manual/chat/voice.md), [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md) |
+| Voice and meetings | Dictate into the composer, talk with Bearly on a voice call, and record meetings with your notes, transcripts, and summaries. | [Talk to Bearly](https://bearly.ai/docs/manual/chat/voice.md), [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md) |
 | Agents | In the desktop app, Bearly can work in a browser, in a folder you choose, and on your screen, with your approval. | [Browser and computer](https://bearly.ai/docs/manual/capabilities/browser-and-computer.md) |
 | Your other apps | Connect services such as Notion, Linear, and GitHub, or your own servers, and add skills. | [Connectors and skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md) |
 | Automation | Routines run a saved prompt on a schedule in the desktop app and can email or text you the result. | [Routines](https://bearly.ai/docs/manual/capabilities/routines.md) |
@@ -314,7 +314,7 @@ The desktop app is Bearly in its own window, plus the tools that work on your co
 - **Computer Use** — Bearly clicks and types in the apps on your screen after you approve the task. Same page.
 - **Installed skills and skill scripts**, and **npm MCP servers**. See [Connect apps and add skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md).
 - **Running routines.** You can create routines anywhere, but they run only in the desktop app, on the device they're installed on, while it's open. See [Automate with Routines](https://bearly.ai/docs/manual/capabilities/routines.md).
-- **Online meeting** recording with computer audio and your microphone, on Windows and on macOS 13 or later. Linux records your microphone only. See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
+- **Call + microphone** meeting recording, which records the call's computer audio and your microphone together, on Windows and on macOS 13 or later. Linux records your microphone only. See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
 - **Sync a folder** for projects, and saving videos and transcripts over your own connection. See [Projects](https://bearly.ai/docs/manual/projects.md) and [Videos and posts](https://bearly.ai/docs/manual/capabilities/videos-and-posts.md).
 - **Runtime** settings, where Bearly installs and checks the tools local work uses and keeps environment variables for local commands and skills.
 - Full access for all of these tools. On other platforms it covers connectors only. See [Approvals, permissions, and Full access](https://bearly.ai/docs/manual/capabilities/permissions.md).
@@ -400,7 +400,7 @@ Bearly has no passwords. On the sign-in screen, enter your **Email** and select 
 | Voice calls | Yes, not in Firefox | Where the browser supports it | Yes | Yes | No |
 | Dictation | Yes | Yes | Yes | Yes | No |
 | Meeting recording with the microphone | Yes | Yes | Yes | Yes | No |
-| Online meeting with computer audio | No | No | Windows and macOS 13 or later | No | No |
+| Meeting recording with the call's computer audio (**Call + microphone**) | No | No | Windows and macOS 13 or later | No | No |
 | Projects | Yes | Yes | Yes | Yes | No |
 | Project **Sync a folder** | No | No | Yes | No | No |
 | End-to-end encrypted chats | Yes | Yes | Yes | Yes | No |
@@ -648,6 +648,7 @@ From top to bottom:
 | Area | What it does | More |
 |---|---|---|
 | Top row | **Hide sidebar**, then a magnifier (**Search chats**, which opens **Search chats and files**, with **Chats** and **Files** tabs) and **New chat**, which opens the New Chat launcher outside any project. On a project's page and on **Routines**, **Prompt templates**, and **Meetings**, <kbd>⌘</kbd> <kbd>F</kbd> (<kbd>Ctrl</kbd> <kbd>F</kbd> on Windows and Linux) opens search too | [Organize chats](https://bearly.ai/docs/manual/chat/organize.md) |
+| **Meeting mode** | Appears below the top row while meeting mode is on, with chat and project names shown as blank bars. Select it to turn meeting mode off | [Meeting mode](https://bearly.ai/docs/manual/capabilities/meetings.md#hide-chat-names-on-a-call-meeting-mode) |
 | **Encrypted chats locked** | Appears when this device can't open your end-to-end encrypted chats yet. **Approve** starts device approval | [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md) |
 | **Chat** | Opens the New Chat launcher, as **New chat** in the top row does | [The New Chat launcher](#the-new-chat-launcher) |
 | **Prompt templates** | Saved prompts with fill-in fields that run as a form in any chat | [Make a prompt template](https://bearly.ai/docs/manual/chat/compose.md#make-a-prompt-template) |
@@ -671,6 +672,7 @@ From top to bottom:
 Select the bottom row of the sidebar. The row shows your email, your plan, and how much of this month's plan you've used, plus "+boost" while a Credit Boost is active. The percentage turns red from 90%.
 
 - **Settings** opens the Settings window where you left it (on a phone, at the list of panes).
+- **Turn on meeting mode** hides your chat and project names while you're on a call or sharing your screen, and becomes **Turn off meeting mode** while it's on. See [Meeting mode](https://bearly.ai/docs/manual/capabilities/meetings.md#hide-chat-names-on-a-call-meeting-mode).
 - **Billing** opens **Settings** → **Billing**.
 - **Developers** opens **Settings** → **API keys**. It appears when API keys or personal remote modules are allowed for your account.
 - **Organizations** opens your organizations' pages. Your organizations are also listed in Settings, under **Organizations**.
@@ -758,8 +760,8 @@ While you edit an earlier message, the strip shows **Editing message** with **Ca
 
 Press <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux) or select the chat's title → **All commands**. It shows the chat's title, a **Search...** box, and two groups:
 
-- **Actions:** **New**, **Delete & New**, **Delete**, **Rename** (opens the chat's title for editing), **Refresh Chat**, **Generate New Name**, **Download as Markdown**, **New Routine** (Pro and higher), and **Show all...**, which adds **Show Release Notes**.
-- **Switch Chats:** every chat, including project chats.
+- **Actions:** **New**, **Delete & New**, **Delete**, **Rename** (opens the chat's title for editing), **Refresh Chat**, **Generate New Name**, **Download as Markdown**, **New Routine** (Pro and higher), **Turn on meeting mode** (or **Turn off meeting mode**), and **Show all...**, which adds **Show Release Notes**.
+- **Switch Chats:** every chat, including project chats. In meeting mode, chats appear only once you type a search.
 
 See [Keyboard shortcuts](https://bearly.ai/docs/manual/chat/shortcuts.md).
 
@@ -808,7 +810,7 @@ Every page keeps the same sidebar.
 
 - **Prompt templates.** Your templates, with **New template**. With none yet, the page opens on **New template**: describe a prompt you reuse and select **Draft template**, pick one of the **Examples**, or **start from scratch**. Each template has its own page with **Basic information**, **Template design**, and **Field configuration**; changes save automatically. See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md#make-a-prompt-template).
 - **Routines.** Your routines, with **New routine**. With none yet, the page opens on **New routine**. Each routine has its own page with its next run, a run timeline, **Run now**, **Pause**, and past runs. See [Routines](https://bearly.ai/docs/manual/capabilities/routines.md).
-- **Meetings and recordings.** A recorder with **Online meeting** (desktop app) and **In person or voice note**, **Start recording**, and your recordings with their transcripts. See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
+- **Meetings and recordings.** A recorder with **Start recording** (in the desktop app, a menu next to it picks **Call + microphone** or **Microphone only**), and your recordings, each with **Your notes**, its **Summary**, **Ask about this meeting**, and the transcript. See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
 - **A project's page.** Select a project in the sidebar. Its tabs are **Chats** (with **Ask in this project**), **Files**, **Sharing**, and **Settings**. See [Projects](https://bearly.ai/docs/manual/projects.md).
 - **Organizations.** The account menu → **Organizations**, or an organization's row in Settings. Everyone sees **Overview**, **Members**, and **Groups**. Admins also see **Policies**, **Projects**, and **Activity**, plus **Billing** and **Usage** where they apply. The settings list stays on the left, with a back arrow to your chats. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
@@ -844,7 +846,7 @@ There's no Android app; on Android, use Bearly in your phone's browser. Bearly r
 | Connectors that need a service sign-in | Work in a normal phone browser, but not in an Android app's built-in browser | Show **Web browser required**; set them up in a browser |
 | Desktop-only features | A prompt to use Bearly on a computer | Same |
 | Routines | Create and manage; they run in the desktop app ("Runs in the desktop app. **Get it**") | Same |
-| Meetings | **In person or voice note** only | Same |
+| Meetings | Records the microphone only | Same |
 | Voice calls | Where the browser supports them; the screen can lock mid-call | The screen stays on during a call; keep the app in front |
 | PDFs | Preview in the app | Tapping a PDF opens it outside the app |
 | Downloads | A normal browser download | The iOS share sheet |
@@ -1768,9 +1770,8 @@ Sharing doesn't hand out your conversation. Bearly turns the substance of the ch
 
 
 
-1. Select **Share** in the top-right corner of the chat — the **Share conversation** panel opens.
-2. Select **Prepare share** — Bearly writes the Page. The panel notes "Your full conversation isn't shared. You review the Page before publishing."
-3. When it's ready, the Page opens on its own, marked "Ready to share" — check it, then select **Publish** in its header to choose who can open it. If you closed it, select **Share** again and choose **Review and publish**, or **Create another** for a different take.
+1. Select **Share** in the top-right corner of the chat — Bearly starts writing the Page right away. The screen notes "Only this Page is shared, not your chat. Nothing goes live until you publish."
+2. When it's ready, the Page opens on its own, marked "Ready to share" — check it, then select **Publish** in its header, choose who can open it, and select **Publish and copy link**. If you closed it, select **Share** again and choose **Review and publish**, or **Make a new one** for a different take.
 
 
 
@@ -2289,7 +2290,7 @@ You hear your own draft read back, which makes clumsy sentences easier to catch.
 
 ---
 title: "Keyboard shortcuts"
-description: "Every Bearly keyboard shortcut for macOS and for Windows and Linux, covering sending, new lines, the / and @ picker, the command menu, search, the sidebar, new and deleted chats, jumping between prompts, Settings, dialogs, dictation, and the desktop app's global shortcut."
+description: "Every Bearly keyboard shortcut for macOS and for Windows and Linux, covering sending, new lines, the / and @ picker, the command menu, search, the sidebar, new and deleted chats, jumping between prompts, Settings, meeting mode, dialogs, dictation, and the desktop app's global shortcut."
 canonical: "https://bearly.ai/docs/manual/chat/shortcuts/"
 markdown: "https://bearly.ai/docs/manual/chat/shortcuts.md"
 ---
@@ -2298,7 +2299,7 @@ markdown: "https://bearly.ai/docs/manual/chat/shortcuts.md"
 
 HTML: [https://bearly.ai/docs/manual/chat/shortcuts/](https://bearly.ai/docs/manual/chat/shortcuts/)
 
-> Every Bearly keyboard shortcut for macOS and for Windows and Linux, covering sending, new lines, the / and @ picker, the command menu, search, the sidebar, new and deleted chats, jumping between prompts, Settings, dialogs, dictation, and the desktop app's global shortcut.
+> Every Bearly keyboard shortcut for macOS and for Windows and Linux, covering sending, new lines, the / and @ picker, the command menu, search, the sidebar, new and deleted chats, jumping between prompts, Settings, meeting mode, dialogs, dictation, and the desktop app's global shortcut.
 
 These shortcuts work in the web app on a computer and in the desktop app. On macOS, ⌘ is the Command key; on Windows and Linux, the same shortcuts use Ctrl. On phones and tablets, <kbd>Enter</kbd> doesn't send a message: tap the send button.
 
@@ -2341,11 +2342,12 @@ Typing an item's exact label followed by a space or punctuation, such as `@web-s
 | Jump to the previous prompt | <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>↑</kbd> | <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>↑</kbd> |
 | Jump to the next prompt | <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>↓</kbd> | <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>↓</kbd> |
 | Open Settings | <kbd>⌘</kbd> <kbd>,</kbd> | <kbd>Ctrl</kbd> <kbd>,</kbd> |
+| Turn meeting mode on or off, from any page and even while typing | <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>M</kbd> | <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>M</kbd> |
 | Dictate while you hold the key, with Bearly focused (push to talk) | Right <kbd>Shift</kbd> | Right <kbd>Shift</kbd> |
 
-To search your chats and files, select **Search chats** (the magnifier at the top of the sidebar); on a project's page and on **Routines**, **Prompt templates**, and **Meetings**, <kbd>⌘</kbd> <kbd>F</kbd> (<kbd>Ctrl</kbd> <kbd>F</kbd>) opens it too. Pressing the new-chat shortcut while you're already on a new chat puts the cursor in the composer and shows "You're already in a new chat". Right Shift is the default dictation key; change it in **Settings** → **Dictation** → **Keyboard shortcut**. See [Voice](https://bearly.ai/docs/manual/chat/voice.md).
+To search your chats and files, select **Search chats** (the magnifier at the top of the sidebar); on a project's page and on **Routines**, **Prompt templates**, and **Meetings**, <kbd>⌘</kbd> <kbd>F</kbd> (<kbd>Ctrl</kbd> <kbd>F</kbd>) opens it too. Pressing the new-chat shortcut while you're already on a new chat puts the cursor in the composer and shows "You're already in a new chat". Right Shift is the default dictation key; change it in **Settings** → **Dictation** → **Keyboard shortcut**. See [Voice](https://bearly.ai/docs/manual/chat/voice.md). Meeting mode hides your chat and project names while you're on a call or sharing your screen; the command menu and the account menu turn it on and off too. See [Meeting mode](https://bearly.ai/docs/manual/capabilities/meetings.md#hide-chat-names-on-a-call-meeting-mode).
 
-Web browsers keep some key combinations for themselves. If a shortcut does something in your browser instead of in Bearly, use the matching button or the command menu, or use the desktop app.
+Web browsers keep some key combinations for themselves, and some browsers use <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>M</kbd> for their own command. If a shortcut does something in your browser instead of in Bearly, use the matching button or the command menu, or use the desktop app.
 
 ## In menus and dialogs
 
@@ -2609,7 +2611,7 @@ Scholar searches an index of academic papers from preprint servers and the biome
 
 
 
-**What you get:** superscript citations; hover one to see the paper, and select it to open the paper. A card for each search starts folded to one line with the query and the number of papers found; open it to see the first four papers, with each paper's source and link, and **Show all** for the rest. When Bearly reads a paper, the results card quotes a passage it read, when available; a paper that isn't on a results card gets its own **Paper read** card.
+**What you get:** superscript citations; hover one to see the paper, and select it to open the paper. Each search and read shows as a step: select the line under the reply to open **Steps**, and select a search to see every paper it found.
 
 **Limits:** a search returns 8 papers by default and up to 10, and can be narrowed by date range, up to five subject categories, and up to five author surnames. A read returns up to five passages per paper; a related-papers lookup returns up to 10. When the index returns fewer than three papers, or you ask for journal articles only or the newest work, Scholar also searches 20 journal and repository sites. Many biomedical papers are indexed by abstract only, shown as "abstract only". Scholar doesn't report citation counts. Bearly prefers peer-reviewed work over preprints, flags retractions and contradictions, and says when the literature is thin.
 
@@ -3075,7 +3077,7 @@ You get a cited report, a chart of its key numbers, and a Page you can send to p
    Chart those estimates as a line chart, one line per source.
    ```
 
-4. Type `/share`, or select **Share** in the top-right corner of the chat and then **Prepare share** — Bearly turns the substance of the chat into a Page and opens it, marked **Ready to share**. Review it, then select **Publish** in its header, choose the **Audience**, and select **Publish**.
+4. Type `/share`, or select **Share** in the top-right corner of the chat — Bearly turns the substance of the chat into a Page and opens it, marked **Ready to share**. Review it, then select **Publish** in its header, choose the **Audience**, and select **Publish and copy link**.
 
 
 
@@ -3093,7 +3095,7 @@ You get the strongest study on a question, read in full, with its exact methods 
 
 
 
-1. Ask Scholar for the evidence — Bearly searches papers, reads the key passages, and lists the papers on a card under the search.
+1. Ask Scholar for the evidence — Bearly searches papers, reads the key passages, and cites them; the papers each search found are in **Steps**.
 
    ```text
    /scholar What do randomized trials say about creatine supplementation and cognition in older adults?
@@ -4187,7 +4189,7 @@ You get a summary table, a chart, and an interactive dashboard Page at a link yo
    Build an interactive dashboard Page from that summary with filters for region and quarter, the grouped bar chart, and the three biggest changes called out at the top.
    ```
 
-4. Open the Page and select **Share file**, then **Prepare share** — when it's ready, the prepared Page opens marked **Ready to share**. Select **Publish** in its header, choose the **Audience**, and select **Publish**.
+4. Open the Page and select **Share file** — when it's ready, the prepared Page opens marked **Ready to share**. Select **Publish** in its header, choose the **Audience**, and select **Publish and copy link**.
 
 
 
@@ -4353,17 +4355,16 @@ Publishing gives a Page its own link on bearly.sh. It happens in two stages: **p
 
 
 
-1. Open the Page and select **Share file** — the popover reads "Share this file" ("Give your file a Page of its own, with artwork and a link preview.").
-2. Select **Prepare share** — a progress screen shows "Writing the Page", "Reading the source", "Content ready", "Saving the artwork", and "Saving the Page".
-3. Wait for it to finish — the prepared Page opens in the side panel, marked **Ready to share**.
-4. Select **Publish** in the side panel header — the popover reads **Ready to share** ("Publish this Page to a link people can open.") and previews the link card: artwork, title, description, and bearly.sh.
-5. Choose the **Audience** — **Anyone with the link** or **People and teams**. Only the audiences your organization allows are listed.
-6. Select **Publish** — the popover changes to **Share** ("This Page is available at a stable link."). Use **Copy link**, or **Share…** for your device's share sheet where available.
-7. For a **People and teams** link, select **Manage viewers** to search teammates by name or email (type at least 2 characters) and pick teams.
+1. Open the Page and select **Share file** — Bearly starts preparing right away, and a progress screen shows "Writing the Page", "Reading the source", "Content ready", "Saving the artwork", and "Saving the Page".
+2. Wait for it to finish — the prepared Page opens in the side panel, marked **Ready to share**.
+3. Select **Publish** in the side panel header — the popover reads **Ready to share** ("Publish this Page to a link people can open.") and previews the link card: artwork, title, description, and bearly.sh.
+4. Choose the **Audience** — **Anyone with the link** or **People and teams**. Only the audiences your organization allows are listed.
+5. Select **Publish and copy link** — the Page goes live, its link is copied, and the popover changes to **Share** ("This Page is available at a stable link."). If publishing fails, nothing is copied. **Copy link** copies it again, and **Share…** opens your device's share sheet where available.
+6. For a **People and teams** link, select **Manage viewers** to search teammates by name or email (type at least 2 characters) and pick teams.
 
 
 
-To share the whole conversation instead of one file, select **Share** in the top-right corner of the chat. The popover reads "Share conversation" ("Turn the substance of this conversation into a Page, with artwork and a link preview.") with **Prepare share**. Your full conversation isn't shared: Bearly writes a Page with the substance itself, such as the answer, plan, findings, or the finished version of a creative piece, and you review it before publishing. If you close the prepared Page, select the **Share** icon again: **Review and publish** reopens it, and **Create another** prepares a fresh version.
+To share the whole conversation instead of one file, select **Share** in the top-right corner of the chat; preparation starts right away. Your full conversation isn't shared: Bearly writes a Page with the substance itself, such as the answer, plan, findings, or the finished version of a creative piece, and you review it before publishing. If you close the prepared Page, select the **Share** icon again: **Review and publish** reopens it, and **Make a new one** prepares a fresh version.
 
 **While it prepares:** **Stop building** cancels ("Building stopped. Nothing was published."). Closing the screen with its **×** returns you to the chat without cancelling. If the artwork can't be made, the popover says "The image model could not make artwork. Review the simple preview before publishing."
 
@@ -4457,7 +4458,7 @@ You get a polished document and a published, printable Page with the same text.
    Turn the final Canvas into a styled, printable one-page Page with a clear heading hierarchy and a checklist for the first week.
    ```
 
-4. Open the Page and select **Share file** → **Prepare share**. When the prepared Page opens, select **Publish**, choose the **Audience**, and select **Publish**.
+4. Open the Page and select **Share file**. When the prepared Page opens, select **Publish**, choose the **Audience**, and select **Publish and copy link**.
 
 
 
@@ -4507,13 +4508,13 @@ You get a clean Page with just the findings, and a link that lets readers ask th
    /share Lead with the recommendation, then the three reasons, then the sources.
    ```
 
-3. When the prepared Page opens, check it, then select **Publish**, set **Audience** to **Anyone with the link**, select **Publish**, and use **Copy link**.
+3. When the prepared Page opens, check it, then select **Publish**, set **Audience** to **Anyone with the link**, and select **Publish and copy link**.
 
 
 
 **Swap in:** **People and teams** for internal findings; a single file's **Share file** instead of the whole chat.
 
-**If it stalls:** if the Page isn't what you wanted, select **Share** again and choose **Create another**, or add direction in a new `/share` message.
+**If it stalls:** if the Page isn't what you wanted, select **Share** again and choose **Make a new one**, or add direction in a new `/share` message.
 
 ## Related
 
@@ -4714,19 +4715,25 @@ Make Video generates a short video with sound, from a description alone or by an
 
 
 
+Ask for Gemini Omni by name to use it instead of the default model. It takes up to 10 reference images or a reference video (people, objects, places, a style) for the clip to follow, and Bearly picks it on its own when you give either. It makes 720p or 1080p clips of 4 to 15 seconds (up to 10 with a first and last frame) in 16:9 or 9:16. Reference media and a start frame can't go in the same clip.
+
+```text
+/video Use Gemini Omni: the woman in the first photo walks through the market in the second photo at dusk. 9:16, 8 seconds.
+```
+
 **What you get:** a video card with your prompt in italics, followed by the model name, length, resolution, and **Audio**. The player has **Play video** / **Pause video**, **Mute video** / **Unmute video**, and **Download video**, which saves an MP4.
 
 **Options:**
 
 - **Length:** 4 to 15 seconds. The default is 5.
-- **Resolution:** standard 768p by default, or 2K, which costs more. A 16:9 clip at 2K is 2560 × 1440, too large for Edit Video, so make a clip you plan to edit at standard resolution.
-- **Shape:** 16:9 by default, 9:16, or 1:1. With a start image, the video keeps the image's shape.
+- **Resolution:** standard 768p by default, or 2K, which costs more; with Gemini Omni, 720p or 1080p. A 16:9 clip at 2K is 2560 × 1440, too large for Edit Video, so make a clip you plan to edit at standard resolution.
+- **Shape:** 16:9 by default, 9:16, or 1:1. With a start image, the default model keeps the image's shape. Gemini Omni makes 16:9 or 9:16 only, and picks one from your description when you don't say.
 - **Sound:** every video includes generated sound.
 
 **Limits:**
 
 - One video per answer; a second asks **Make another video?** first. See [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
-- A start image can be at most 2.5 times as wide as it is tall, or 2.5 times as tall as it is wide. Bearly refuses a wider or taller image before it starts, so crop or pad it first.
+- With the default model, a start image can be at most 2.5 times as wide as it is tall, or 2.5 times as tall as it is wide. Bearly refuses a wider or taller image before it starts, so crop or pad it first.
 - A failed attempt isn't retried on another model. On failure you'll see "The video model could not finish this request. Try again later."
 
 ## Edit Video
@@ -4971,7 +4978,7 @@ You get a short summary of the episode's main points, recorded in a voice you ch
 
 
 
-**Swap in:** a meeting from [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md), where **Add to chat** brings its transcript into the chat so you can skip transcribing; [email](https://bearly.ai/docs/manual/capabilities/email-and-text.md) the audio to yourself.
+**Swap in:** a meeting from [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md), where **More actions** → **Add to chat…** brings its transcript into the chat so you can skip transcribing; [email](https://bearly.ai/docs/manual/capabilities/email-and-text.md) the audio to yourself.
 
 **If it stalls:** attached files can be up to 1000 MB; transcription has separate processing limits; for a longer episode, export a smaller audio-only copy first.
 
@@ -5017,7 +5024,7 @@ You get a corrected clip after Bearly reviews its own video.
 
 ---
 title: "Record and use meetings"
-description: "How to record online meetings, in-person conversations, and voice notes in Bearly's Meetings page, follow the live transcript, get the final transcript and speaker names, summarize, export, and hand a transcript to a chat or project to draft follow-ups."
+description: "How to record calls, in-person meetings, and voice notes in Bearly's Meetings page, take notes while you record, get an automatic summary and speaker names, ask about a meeting, copy or download it, hand it to a chat or project, and hide chat names on a call with meeting mode."
 canonical: "https://bearly.ai/docs/manual/capabilities/meetings/"
 markdown: "https://bearly.ai/docs/manual/capabilities/meetings.md"
 ---
@@ -5026,22 +5033,25 @@ markdown: "https://bearly.ai/docs/manual/capabilities/meetings.md"
 
 HTML: [https://bearly.ai/docs/manual/capabilities/meetings/](https://bearly.ai/docs/manual/capabilities/meetings/)
 
-> How to record online meetings, in-person conversations, and voice notes in Bearly's Meetings page, follow the live transcript, get the final transcript and speaker names, summarize, export, and hand a transcript to a chat or project to draft follow-ups.
+> How to record calls, in-person meetings, and voice notes in Bearly's Meetings page, take notes while you record, get an automatic summary and speaker names, ask about a meeting, copy or download it, hand it to a chat or project, and hide chat names on a call with meeting mode.
 
-**Meetings** records a call, a meeting in the room, or a voice note and transcribes it while people speak. When you stop, the audio and transcript are saved to your account, and you can name speakers, summarize, export, or hand the transcript to a chat to draft follow-ups.
+**Meetings** records a call, a meeting in the room, or a voice note and transcribes it while people speak. You can type your own notes as it runs. When you stop, the audio and transcript are saved to your account, Bearly writes a summary that follows your notes, and you can rename speakers, ask about the meeting, or hand it to a chat or project.
 
-**You need:** any plan; live transcription uses your plan allowance. Admin control: **Meetings** (under **Collaboration**).
+**You need:** any plan; live transcription uses your plan allowance. Admin control: **Meetings** (under **Collaboration**). Asking about a meeting and adding it to a chat or project also need **File uploads**.
 
-## Choose what to record
+## Start a recording
 
-Select **Meetings** in the sidebar — the page is titled **Meetings and recordings** — then pick a source under **New recording**:
+Select **Meetings** in the sidebar. The page is titled **Meetings and recordings**, with the recorder under **New recording** and your past recordings under **Recordings**.
 
-| Option | What it records | Where it works |
+- **On the web, phone browsers, and the iOS app**, there's one button, **Start recording**, and it records your microphone. The line under it reads "Records your microphone. To record Zoom, Meet or Teams calls, get the desktop app." The **get the desktop app** link opens **Settings** → **Get desktop app**.
+- **In the desktop app**, a menu next to **Start recording** picks what to record. Your choice shows on the menu button:
+
+| Choice | What it records | Where it works |
 | --- | --- | --- |
-| **Online meeting** | The call's audio from your computer and your microphone together, for video calls in any app | The desktop app on Windows, or on a Mac with macOS 13 or later; on Linux and older macOS versions the desktop app records your microphone only. On the web app, phone browsers, and the iOS app, choosing it opens **Settings** → **Get desktop app** ("Get Bearly Desktop to record the call and your voice together.") |
-| **In person or voice note** | What this device's microphone hears ("Record what your microphone hears.") | Every platform |
+| **Call + microphone** (the default) | The call's audio from your computer and your microphone together, for calls in any app ("Zoom, Meet, Teams and other calls, with your voice") | Windows, and macOS 13 or later. On Linux and older macOS versions, Bearly says "Computer audio is not supported on this device. Bearly will record your microphone only." and records the microphone |
+| **Microphone only** | What this computer's microphone hears ("In person, or a voice note") | Every desktop |
 
-On a Mac, recording computer audio uses the system's Screen Recording permission. If that access is off, Bearly records your microphone only and shows **Open Screen Recording settings**; if the microphone is blocked in the desktop app, you'll see **Open microphone settings**.
+On a Mac, recording computer audio uses the system's Screen Recording permission. If that access is off, Bearly records your microphone only and shows **Open Screen Recording settings**.
 
 ## Record
 
@@ -5049,16 +5059,14 @@ On a Mac, recording computer audio uses the system's Screen Recording permission
 
 
 
-1. Choose **Online meeting** or **In person or voice note** — allow microphone access if your device asks.
-2. Select **Start recording** — the live, speaker-labelled transcript appears as people talk.
-3. Pause if you need to — **Pause** stops both the audio and the live transcript ("Nothing is recorded while paused."), and **Resume** picks up again. Pausing appears where your device supports it.
-4. Select **Stop recording** — the recording uploads, and Bearly starts the final transcript. The recorder shows the elapsed time while you record.
+1. Select **Start recording**. The first time, your browser or phone asks to use the microphone; choose **Allow**. Before it has asked, the recorder says "Your browser will ask to use your microphone. Choose Allow." ("Your phone will ask…" in the iOS app).
+2. Type in **Your notes** if you like. The notepad opens with the cursor in it ("Jot down anything. Bearly adds the rest when you stop."), and the **Live transcript** below it fills in as people talk, with speaker labels.
+3. Pause if you need to. **Pause** stops both the audio and the live transcript ("Nothing is recorded while paused."), and **Resume** picks up again. Pausing appears where your device supports it.
+4. Select **Stop recording**. The recording uploads, and Bearly starts the final transcript and then the summary.
 
 
 
-While you record, you can keep working anywhere in Bearly. With the sidebar open, a compact recording card shows **Pause**, **Resume**, and **Stop**; with it closed, a floating bar shows the same controls on every page. Bearly suggests a title at 30 seconds and again at 3 minutes, unless you've typed your own.
-
-The line beside **Start recording** sums up how it works: "Up to 1 hr 15 min. Saved on this device and uploaded when you stop. Only record people with their permission."
+While you record, the recorder shows the elapsed time and an editable title, and you can keep working anywhere in Bearly. With the sidebar open, a compact recording card shows **Pause**, **Resume**, and **Stop**; with it closed, a floating bar shows the same controls on every page. Bearly suggests a title at 30 seconds and again at 3 minutes, unless you've typed your own.
 
 **Limits:**
 
@@ -5071,46 +5079,96 @@ The line beside **Start recording** sums up how it works: "Up to 1 hr 15 min. Sa
 > Only record people with their permission. Recording laws vary by place, and getting consent is your responsibility.
 
 
+### If the microphone is blocked
+
+When a recording can't start because of the microphone, the recorder says why and offers **Try again** once you've fixed it:
+
+| You see | What to do |
+| --- | --- |
+| "You closed the microphone prompt. Try again and choose Allow." | Select **Try again** and choose **Allow** |
+| "Microphone is blocked for this site. Click the icon left of the address bar, allow Microphone, then try again." (Chrome, Edge, and other Chromium browsers) | Allow the microphone for bearly.ai in the browser, then **Try again** |
+| "Microphone is blocked for this site. In the Safari menu, open Settings for this website, set Microphone to Allow, then try again." | Same, in Safari |
+| "Microphone is blocked for this site. Click the microphone icon in the address bar, remove the block, then try again." | Same, in Firefox |
+| "Microphone is blocked for this site. Allow it in your browser’s site settings, then try again." | Same, in other browsers, including every browser on an iPhone or iPad |
+| "Microphone is off for Bearly. Turn it on in your phone’s Settings, under Bearly, then try again." | In the iOS app: turn on **Microphone** in iOS **Settings** → **Bearly** |
+| "Microphone access is required to start recording." with **Open microphone settings** | In the desktop app: select the button, allow Bearly in your computer's microphone settings, then start again |
+| "Your microphone couldn’t start. Check it isn’t in use by another app, or pick another input in your system settings." | Close the other app using it, or choose another input |
+| "Bearly couldn’t find a microphone. Connect one, then try again." | Connect a microphone |
+
+## Your notes
+
+**Your notes** is a notepad on every recording: during the recording, and on the finished recording afterward ("Add what the transcript missed: context, decisions, what to do next."). Notes save on their own as you type and show on your other devices. They hold up to 20,000 characters; a counter appears near the limit. If a save fails, the page says "Couldn’t save your notes. They’re still here; try again." and the next change saves them.
+
+Your notes steer the summary. Bearly treats them as your priorities: it covers every point you wrote, uses your wording where it fits, and fills in the rest from the transcript. When a note and the transcript disagree, the summary says so under **Open questions** instead of picking one.
+
+## The summary
+
+When the final transcript is ready, Bearly writes the summary on its own and shows it under **Summary**: "Writing notes from the transcript and your notes…" while it works. The automatic summary is written by the device that made the recording.
+
+- The summary has Overview, Key points, Decisions, Action items, and Open questions. Owners and due dates appear only if someone said them. Decisions, Action items, or Open questions with nothing to report say "None captured."
+- A recording without a summary, such as one made before automatic summaries, shows **Create summary**. If writing a summary fails, you'll see "The summary couldn’t be written. Your transcript is unchanged." with **Try again**.
+- To write the summary again, for example after you add notes or name speakers, open **More actions** (**…**) → **Rewrite summary**. It replaces the current summary and uses your saved notes and speaker names.
+
 ## The final transcript and speakers
 
-After the upload is checked, Bearly transcribes the whole recording again with speaker separation and replaces the live transcript. You'll see "Improving speaker labels…" and then "Speaker labels improved". Older recordings that never had this pass offer **Improve speaker labels** under **More actions**.
+After the upload is checked, Bearly transcribes the whole recording again with speaker separation and replaces the live transcript. Until then the recording shows **Transcribing** and the live transcript ("Transcribing. You can leave this page; the transcript appears here when it’s ready."). Then you'll see "Improving speaker labels…" and "Speaker labels improved". Older recordings that never had this pass offer **Improve speaker labels** under **More actions**.
 
-- The transcript header shows how many speakers were identified, or "Voice memo" for a single voice.
-- To name speakers, type each name once under **Speakers** ("Name each speaker once. Every matching turn updates."). Names carry through to exports and to what you add to a chat.
-- If the final transcript fails, the recording shows **Needs attention** and "The final transcript could not be completed. Your recording is still saved." with **Retry**. The audio stays saved.
+The **Transcript** header shows how many speakers were identified, or "Voice memo" for a single voice. The audio player above it plays the original at 0.75× to 2× speed.
 
-## Summarize, copy, and download
+**Rename a speaker** by clicking or tapping their name in the transcript, during the recording or after it. Type the name in **Name this speaker** and select **Save** or press <kbd>Enter</kbd>; every turn by that speaker updates. Names you give during the recording carry over to the final transcript. Save an empty name to go back to the original label. Names carry through to copies, downloads, and what you hand to a chat, and **Rewrite summary** uses them.
 
-Select a recording under **Recordings** to open it. Its header has **Add to chat**, **Add to project**, **Copy**, and **More actions**, which holds **Download audio**, **Improve speaker labels** where it applies, and **Delete recording**.
+If the final transcript fails, the recording shows **Needs attention** and "The final transcript could not be completed. Your recording is still saved." with **Retry**. The audio stays saved.
 
-- Under **Summary**, **Create summary** writes a summary with Overview, Key points, Decisions, Action items, and Open questions. Owners and due dates appear only if someone said them. **Copy** copies it and **Refresh** rewrites it. Decisions, Action items, or Open questions with nothing to report say "None captured."
-- **Copy** in the header opens **Copy transcript**: **Text only**, **Speaker names**, or **Names and timestamps** (a voice memo offers **Text only** or **Timestamps**). Then **Copy**, or **Download .txt**.
-- The audio player plays the original at 0.75× to 2× speed. **More actions** → **Download audio** saves the original audio file (`.m4a` or `.webm`).
-- **More actions** → **Delete recording** asks "Delete this recording?" and then permanently deletes the audio, transcript, speaker names, and summary.
+## Copy, download, and the … menu
 
-Completed recordings and transcripts are saved to your account, so they're on your other devices when you sign in.
+Select a recording under **Recordings** to open it. Its header has an editable title, **Copy**, and **More actions** (**…**).
 
-## Hand the transcript to a chat or project
+**Copy** copies the title, the summary, and your notes as Markdown once there's a summary; before that, it copies the transcript with speaker names and times. The button reads **Copied** for a moment.
 
-This is where a recording turns into work. The transcript becomes a file that Bearly can read, quote, and build on.
+**More actions** holds:
+
+- **Copy transcript**: the transcript as text, with speaker names and times.
+- **Download transcript**: a Markdown file with the title, date, length, your notes, the summary, and the transcript, as far as each exists.
+- **Download audio**: the original audio file (`.m4a` or `.webm`), with its size.
+- **Add to chat…** and **Add to project**: see [Hand the meeting to a chat or project](#hand-the-meeting-to-a-chat-or-project).
+- **Improve speaker labels**, on older recordings, and **Rewrite summary**, once there's a summary.
+- **Delete recording**: asks "Delete this recording?" and then permanently deletes the audio, transcript, speaker names, notes, and summary.
+
+Completed recordings, notes, and transcripts are saved to your account, so they're on your other devices when you sign in.
+
+## Ask about this meeting
+
+Under your notes, **Ask about this meeting** takes a question or a request ("Ask about this meeting or draft something from it"). Press <kbd>Enter</kbd> or select **Ask in a new chat**, or pick a suggestion:
+
+- **Draft follow-up email**: a short follow-up to the people in the meeting, with decisions, action items (owners only where stated), and next steps.
+- **List action items**: each action item, with an owner and due date only where the meeting states them.
+- **What did I miss?**: the short version of what was decided, what changed, and what you need to act on.
+
+Asking opens a new chat with the meeting attached and sends your question as its first message, so the answer starts right away. Nothing goes to anyone else. Keep going in that chat: send the draft by [email](https://bearly.ai/docs/manual/capabilities/email-and-text.md), turn it into a [Page](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md), or ask follow-ups.
+
+Ask and **Add to chat…** become available once the final transcript is ready; until then they show "Available once the transcript is ready."
+
+## Hand the meeting to a chat or project
+
+The meeting goes over as one Markdown file with the title, when it was recorded, its length, your notes, the summary, and every turn with its timestamp, plus the speaker's name when more than one person spoke. Bearly reads it with its [document tools](https://bearly.ai/docs/manual/capabilities/documents.md#research-your-documents-search-docs-read-doc-scan-doc), so it can cite and quote specific turns.
+
+**Add to chat…** puts the file in a chat's draft without sending anything:
 
 
 
-1. Open the recording and select **Add to chat**, its main button — choose **New chat** ("Attach the transcript to a new draft"), or search with "Find a chat..." and pick an existing one.
-2. Bearly attaches the transcript as a Markdown file and focuses the message box — nothing is sent until you send it.
-3. Type what you want done with it and send.
+1. Open the recording, then **More actions** → **Add to chat…**.
+2. Choose **New chat** ("Attach the transcript to a new draft"), or pick an existing chat. With many chats, the picker shows **Recent** and **More chats**, and a "Find a chat..." search box.
+3. Bearly attaches the file and focuses the message box. Type what you want done with it and send.
 
 
 
-The file has the title, when it was recorded, its length, and every turn with its timestamp, plus the speaker's name when more than one person spoke. The summary isn't included; ask Bearly for one in the chat if you want it there.
+**Add to project** uploads the same file to a project's **Files** tab ("Transcript added"), so every chat in that project can search it. Pick the project from its submenu. It works as soon as there's a transcript, live or final. It needs write access to the project. If you have no projects yet, it reads "Create a Project first".
 
-**Add to project** uploads the same file to a project's **Files** tab ("Transcript added"), so every chat in that project can search it. At phone width it's in the **…** menu. It needs write access to the project and the **File uploads** and **Project documents and data** controls. If you have no projects yet, the button is unavailable and its tooltip says "Create a Project before adding this transcript".
+If your organization turns off **File uploads**, Ask, **Add to chat…**, and **Add to project** are unavailable and read "File uploads are turned off by your organization". With **Project documents and data** off, only **Add to project** is unavailable ("Project file uploads are turned off by your organization").
 
-### What you can ask once the transcript is in a chat
+### What you can ask
 
-```text
-List every action item with its owner and due date, only where someone said them. Then draft a follow-up email to the attendees.
-```
+Type these in **Ask about this meeting**, or after **Add to chat…**:
 
 ```text
 Quote the three moments where the client pushed back on pricing, with timestamps.
@@ -5124,14 +5182,29 @@ Turn this interview into a 600-word profile in the third person. Keep every dire
 What did we decide, what's still open, and who needs to hear about each decision?
 ```
 
-Bearly reads the attached transcript with its [document tools](https://bearly.ai/docs/manual/capabilities/documents.md#research-your-documents-search-docs-read-doc-scan-doc), so it can cite and quote specific turns.
-
 ## Recovery
 
-- If an upload can't finish, the recording stays on the device that made it, marked **Saved on device**, with **Retry upload**, and **Discard recording** in its **…** menu. Discarding asks "Discard this saved recording?" and then permanently removes the audio and transcript stored on that device.
+- If an upload can't finish, the recording stays on the device that made it, marked **Saved on device** ("The recording is safe on this device and ready to retry."), with **Retry upload**, and **Discard recording** in its **…** menu. Discarding asks "Discard this saved recording?" and then permanently removes the audio and transcript stored on that device. Your notes show on it, read-only, until it uploads.
 - Bearly deletes the local copy only after it confirms the uploaded file is complete.
 
 For an audio or video file you already have, use [Transcribe](https://bearly.ai/docs/manual/capabilities/images-video-audio.md#transcribe) in a chat instead.
+
+## Hide chat names on a call: meeting mode
+
+Meeting mode hides your chat and project names while you're on a call or sharing your screen. It works anywhere in Bearly, not only on the Meetings page.
+
+**Turn it on or off** with <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>M</kbd> (<kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>M</kbd> on Windows and Linux), **Turn on meeting mode** in the command menu, or the account menu → **Turn on meeting mode**. While it's on, a **Meeting mode** pill sits at the top of the sidebar; select it to turn the mode off. The menus then read **Turn off meeting mode**. In some browsers the browser's own <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>M</kbd> command runs instead; use the command menu or the account menu there. On a phone, use the account menu.
+
+**What it does:**
+
+- Chat and project names become blank bars in the sidebar, on project pages, and in an organization's project lists. Your email and initials in the account row are hidden too. Icons, unread dots, and other signs stay.
+- The browser tab or window title reads just **Bearly**.
+- Reply notifications inside Bearly read "New reply in Bearly" without the chat's name or message.
+- The command menu shows no chats until you type a search; a typed search shows matching names.
+- End-to-end encrypted chats lock. Nothing is deleted; unlock them as usual.
+- Bearly opens a blank New Chat launcher. Text you hadn't sent is set aside, and turning the mode off brings it back along with the page you were on. A draft with files attached stays in place, with names hidden.
+
+**Limits:** meeting mode hides names, not content. A chat you open still shows its messages and files, and renaming, sharing, or deleting something shows its name. Recording titles on the Meetings page, routines, and file names aren't hidden. The setting is saved on this device only and stays on until you turn it off.
 
 ## Try this
 
@@ -5139,22 +5212,16 @@ Each recipe starts from a finished recording.
 
 ### Turn a meeting into action items and a follow-up email
 
-You get a list of action items with stated owners, a drafted follow-up, and the email sent.
+You get a follow-up draft with decisions and stated owners, and the email sent.
 
-**Why it works:** **Add to chat** puts the full transcript in the chat as a file, so Bearly can pull out what each person agreed to. Send Email can then send the draft to you, or to teammates Bearly can find on your team, from the same chat.
+**Why it works:** **Draft follow-up email** opens a new chat with the whole meeting attached and asks for the draft, so Bearly works from your notes, the summary, and the transcript. Send Email can then send the draft to you, or to teammates Bearly can find on your team, from the same chat.
 
-**You need:** any plan. Admin controls **Meetings** and **Email notifications**.
+**You need:** any plan. Admin controls **Meetings**, **File uploads**, and **Email notifications**.
 
 
 
-1. Open the recording, select **Add to chat** → **New chat**.
-2. Ask for the actions and the draft — check names and dates against the transcript.
-
-   ```text
-   List every action item with its owner and due date, only where someone said them. Then draft a short follow-up email that thanks the group and lists the actions.
-   ```
-
-3. Send it.
+1. Open the recording and select **Draft follow-up email** under **Ask about this meeting**. A new chat opens and Bearly drafts the follow-up. Check names and dates against the transcript.
+2. Send it.
 
    ```text
    Email that follow-up to me with the action list.
@@ -5162,28 +5229,27 @@ You get a list of action items with stated owners, a drafted follow-up, and the 
 
 
 
-**Swap in:** a text message to yourself instead of email; a [Page](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) instead of an email for a longer recap; [Fix Grammar](https://bearly.ai/docs/manual/capabilities/documents.md#fix-grammar) on the draft before sending. See [Email and text](https://bearly.ai/docs/manual/capabilities/email-and-text.md) for recipients and limits.
+**Swap in:** **List action items** first for a checklist; a text message to yourself instead of email; a [Page](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) instead of an email for a longer recap; [Fix Grammar](https://bearly.ai/docs/manual/capabilities/documents.md#fix-grammar) on the draft before sending. See [Email and text](https://bearly.ai/docs/manual/capabilities/email-and-text.md) for recipients and limits.
 
-**If it stalls:** if the transcript shows generic speaker labels instead of names, name the speakers on the recording first, then add it to the chat again.
+**If it stalls:** if the suggestions are greyed out, the final transcript isn't ready yet. If the draft shows generic speaker labels instead of names, rename the speakers on the recording first, then ask again.
 
 ### Publish the decisions to your team as a restricted Page
 
 You get a one-page summary of decisions at a link only named colleagues can open.
 
-**Why it works:** the transcript in the chat feeds a Page, and a **People and teams** audience limits the published link to the people and teams you choose.
+**Why it works:** asking about the meeting puts it in a new chat, the chat builds a Page from it, and a **People and teams** audience limits the published link to the people and teams you choose.
 
-**You need:** any plan. Admin controls **Meetings**, **Sharing**, and **Share with people and teams**.
+**You need:** any plan. Admin controls **Meetings**, **File uploads**, **Sharing**, and **Share with people and teams**.
 
 
 
-1. Select **Add to chat** → **New chat** on the recording.
-2. Build the Page.
+1. Open the recording and type this in **Ask about this meeting**, then press <kbd>Enter</kbd>.
 
    ```text
    Turn the decisions from this meeting into a one-page Page: decision, reason, owner, and date, with open questions at the end.
    ```
 
-3. Open the Page and select **Share file** → **Prepare share**. When the prepared Page opens, select **Publish**, set **Audience** to **People and teams**, and select **Publish**. Then use **Manage viewers** to add the people and teams who can open it.
+2. Open the Page and select **Share file**. When the prepared Page opens, select **Publish**, set **Audience** to **People and teams**, and select **Publish and copy link**. Then use **Manage viewers** to add the people and teams who can open it.
 
 
 
@@ -5195,14 +5261,14 @@ You get a one-page summary of decisions at a link only named colleagues can open
 
 You get a project where you can ask questions across every meeting you've added, with citations.
 
-**Why it works:** **Add to project** saves each transcript to the project's files, and with **Always search documents** on, every chat in the project searches those files before answering.
+**Why it works:** **Add to project** saves each meeting, with your notes and its summary, to the project's files, and with **Always search documents** on, every chat in the project searches those files before answering.
 
 **You need:** any plan. Admin controls **Meetings**, **File uploads**, and **Project documents and data**. Write access to the project.
 
 
 
-1. After each meeting, open the recording and select **Add to project**, then pick the project.
-2. On the project's **Settings** tab, turn on **Use project defaults** and **Always search documents** — see [Work with files and documents](https://bearly.ai/docs/manual/capabilities/documents.md#always-search-documents-projects).
+1. After each meeting, open the recording and select **More actions** → **Add to project**, then pick the project.
+2. On the project's **Settings** tab, turn on **Use project defaults** and **Always search documents**. See [Work with files and documents](https://bearly.ai/docs/manual/capabilities/documents.md#always-search-documents-projects).
 3. Ask across meetings in any chat in the project.
 
    ```text
@@ -5219,14 +5285,14 @@ You get a project where you can ask questions across every meeting you've added,
 
 You get a structured draft from a spoken idea, ready to polish.
 
-**Why it works:** **In person or voice note** works on any device, the transcript goes to a chat as a file, and Canvas lets you revise the draft section by section.
+**Why it works:** microphone recording works on any device, asking about the recording sends it to a new chat, and Canvas lets you revise the draft section by section.
 
-**You need:** any plan. Admin control **Meetings**.
+**You need:** any plan. Admin controls **Meetings** and **File uploads**.
 
 
 
-1. Record with **In person or voice note** while you talk the idea through, then **Stop recording**.
-2. Select **Add to chat** → **New chat** and ask for the draft.
+1. Select **Start recording** (in the desktop app, pick **Microphone only** first) and talk the idea through, then **Stop recording**.
+2. When the transcript is ready, type this in **Ask about this meeting** and press <kbd>Enter</kbd>.
 
    ```text
    Turn this voice note into a blog post outline and a first draft. Keep my examples and phrasing where they're strong.
@@ -5247,6 +5313,7 @@ You get a structured draft from a spoken idea, ready to polish.
 
 - [Make images, video, and audio](https://bearly.ai/docs/manual/capabilities/images-video-audio.md)
 - [Talk to Bearly: dictation and voice calls](https://bearly.ai/docs/manual/chat/voice.md)
+- [Keyboard shortcuts](https://bearly.ai/docs/manual/chat/shortcuts.md)
 - [Projects](https://bearly.ai/docs/manual/projects.md)
 - [Email and text](https://bearly.ai/docs/manual/capabilities/email-and-text.md)
 
@@ -6139,7 +6206,7 @@ Asking is the go-ahead: up to 3 emails and texts in one answer go without an app
 
 **What you get:** an email with Markdown formatting (headings, lists, tables, links) and up to 10 attachments from the chat. It comes from "User message via Bearly", and the subject starts with "[User message via Bearly from" followed by your name. Replies go to your address.
 **Limits:** each attachment and all attachments together can total at most 20 MB. Up to 25 recipients per email, and up to 20 emails an hour from your account. If every attachment fails to prepare, nothing is sent.
-**Combines with:** [Pages](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) and data files to attach; [Routines](https://bearly.ai/docs/manual/capabilities/routines.md#results-and-delivery) with **Email each result**; [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md) for follow-ups.
+**Combines with:** [Pages](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) and data files to attach; [Routines](https://bearly.ai/docs/manual/capabilities/routines.md#results-and-delivery) with **Email each result**; [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md) for follow-ups, starting from a recording's **Draft follow-up email**.
 
 ### Who can receive your email
 
@@ -6237,7 +6304,7 @@ Separate, short emails to each person with only their tasks from a meeting.
 
 
 
-1. Open the chat with the meeting notes or transcript (see [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md)).
+1. Get the meeting into a chat: on the recording in **Meetings**, select **List action items** under **Ask about this meeting**, which opens a new chat with the meeting attached. Or open a chat that already has the meeting notes or transcript. See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md#ask-about-this-meeting).
 2. Ask:
 
    ```text
@@ -6673,7 +6740,7 @@ Details: [Images, video, and audio](https://bearly.ai/docs/manual/capabilities/i
 | **Touch Up** `/edit-image` | One or more images in the chat, and optionally an area to change | Edited, extended, or combined images; a transparent-background PNG when you ask for one in an edit or edit an image that has one | Any | All | No | No |
 | **Upscale** (ask in words) | One image in the chat | A new 2K copy, or 4K when you ask; a transparent background becomes opaque | Any | All | No | No |
 | **Remove background** (ask in words) | One JPEG, PNG, or GIF photo in the chat, up to 20 MB, and optionally what to keep | A new PNG of the subject on a transparent background, at the photo's original size, named with `-cutout` | Any | All | No | No |
-| **Make Video** `/video` | A description, and optionally an image as the start frame (at most 2.5 times as wide as tall, or as tall as wide) plus an end frame | A 4 to 15-second MP4 with generated sound, saved in the chat | Any | All | No | No |
+| **Make Video** `/video` | A description, and optionally an image as the start frame (with the default model, at most 2.5 times as wide as tall, or as tall as wide) plus an end frame; with Gemini Omni, up to 10 reference images or a reference video instead | A 4 to 15-second MP4 with generated sound, saved in the chat | Any | All | No | No |
 | **Edit Video** `/edit-video` | A clip of 3 to 10 seconds, 720 to 2160 pixels on each side, under 50 MB | A separate edited clip; the original stays as it was | Any | All | No | No |
 | **Read Aloud** `/say`, and Voice Studio | Text: a reply, your message, or a script, up to about 22,500 characters of English (about 7,500 in Chinese, Japanese or Korean) | Spoken audio saved as a chat file; Voice Studio for voices, delivery, and takes | Any | All | No | No |
 | **Transcribe** `/transcribe` | Audio or video files in the chat; attachment limit 1000 MB, with separate transcription processing limits | A transcript with speaker names and timestamps, plus a `.srt` transcript file in the chat | Any | All | No | No |
@@ -6687,7 +6754,7 @@ Details: [Voice](https://bearly.ai/docs/manual/chat/voice.md) and [Meetings](htt
 |---|---|---|---|---|---|---|
 | **Voice call** (**Start voice call**) | Your voice; the call can use the chat's tools | Spoken answers, and a call card in the chat with the transcript (audio isn't saved) | Any; choosing the voice model needs Pro | All, except Firefox | No | — |
 | **Dictation** (microphone in the composer) | Your voice | Text in the composer, or a message sent right away | Any | All | — | — |
-| **Meetings** (sidebar **Meetings**) | Your microphone; in the desktop app, also the call's computer audio | Live and final transcripts with speaker names, a summary when you ask, and the audio file | Any | All; computer audio needs the desktop app on Windows or macOS 13 or later | — | — |
+| **Meetings** (sidebar **Meetings**) | Your microphone; in the desktop app, also the call's computer audio (**Call + microphone**); notes you type in **Your notes** | Live and final transcripts with speaker names, an automatic summary that follows your notes, a Markdown download, and the audio file | Any | All; computer audio needs the desktop app on Windows or macOS 13 or later | — | — |
 
 ### Agents and automation
 
@@ -6775,7 +6842,7 @@ Each rule names an output type and the blocks that can take it next. These conne
 
 ### Across chats and over time
 
-- **A meeting transcript** → **Add to chat** attaches it as a Markdown file to a new or existing chat's draft, without sending → summaries, action items, a follow-up email, or a Page. **Add to project** puts the same file in a project's files → every chat in that project. The meeting's **Summary** isn't included in the file.
+- **A meeting** → **Ask about this meeting** (or a suggestion such as **Draft follow-up email**) opens a new chat with the meeting attached as a Markdown file and sends the question; **More actions** → **Add to chat…** attaches the same file to a new or existing chat's draft without sending → action items, a follow-up email, or a Page. The file holds your notes, the summary, and the transcript. Both wait for the final transcript. **Add to project** puts the same file in a project's files → every chat in that project. All three need **File uploads**.
 - **Project files** → every chat in the project, through `@` and the document tools; **Always search documents** makes every answer search them first.
 - **A routine run** → lands in the routine's chat → with **Build on previous runs** on, the next run sees earlier ones. Files a run writes, such as a Page or a CSV, can go out with **Email each result**.
 - **A chat that did the job once** → ask it to repeat on a schedule, for example "Do this every weekday at 8 and email me the result." Bearly sets up a routine from that chat.
@@ -6978,7 +7045,7 @@ You end up with a cited report and its PDF in your inbox, a chart of its numbers
 
    — A live preview of the Page appears in the chat. Select **Open** to see it full size. Ask for changes in the chat; each edit saves a new version.
 
-5. In the open Page, select **Share file** → **Prepare share**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header, choose the **Audience**, select **Publish**, then **Copy link**. — Bearly adds artwork and a link preview and publishes the Page at a bearly.sh link that stays the same when you publish updates.
+5. In the open Page, select **Share file**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header, choose the **Audience**, then select **Publish and copy link**. — Bearly adds artwork and a link preview and publishes the Page at a bearly.sh link that stays the same when you publish updates.
 
 6. Paste the link into one more message:
 
@@ -7017,7 +7084,7 @@ You get a list of papers on a question, the best open-access one saved in the ch
    /scholar What do recent papers say about retrieval-augmented generation reducing hallucinations in question answering? Prefer peer-reviewed work and say where results conflict.
    ```
 
-   — Bearly searches papers and answers with superscript citations. Each search shows a paper-results card listing the papers it found, with links. When Bearly reads a paper, the results card quotes a passage it read, when available.
+   — Bearly searches papers and answers with superscript citations. Hover a citation to see its paper, and open **Steps** from the line under the reply to see every paper each search found.
 
 2. Open one in full:
 
@@ -7362,6 +7429,7 @@ You get a generated product image, a short video animated from it, a recorded vo
 **Swap in:**
 - **Your own photo for Imagine:** attach a product photo and start at step 2 with "Animate the attached photo…".
 - **An end frame:** name a second image as the last frame. Make Video then animates from the first image to the second.
+- **Reference images:** to keep the same bottle across several shots, ask for Gemini Omni and name the product images as references instead of a start frame. It follows up to 10 of them, in 16:9 or 9:16.
 - **Subtitles:** send `/transcribe` on the merged clip, then select **Download subtitles** in the transcript viewer for an `.srt` file to upload with the clip.
 - **A fix pass:** ask "Watch the clip and list anything inconsistent." Bearly views the video, and `/edit-video` can change a clip of 3 to 10 seconds, 720 to 2160 pixels on each side, and under 50 MB, which a standard-resolution clip fits.
 
@@ -7451,7 +7519,7 @@ From one audio or video file you get a speaker-labeled transcript, show notes wi
 
 
 **Swap in:**
-- **A meeting recording for the episode:** record in **Meetings**, select **Add to chat**, and start at step 2 with the transcript file attached (needs **Meetings**).
+- **A meeting recording for the episode:** record in **Meetings**, select **More actions** → **Add to chat…**, and start at step 2 with the meeting file attached (needs **Meetings** and **File uploads**).
 - **An article:** ask for a 600-word article from the transcript, then send it through `/grammar` to proofread it.
 - **A video from a link:** send `/download-video` with a public video's link to save it in the chat, then transcribe it. YouTube downloads need the desktop app.
 
@@ -7836,7 +7904,7 @@ Your spreadsheet becomes a chart, an interactive dashboard Page with filters, an
 
    — A live Page preview appears. **Open** it and try the filters.
 
-4. In the open Page, select **Share file** → **Prepare share**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header, choose **Anyone with the link** under **Audience**, select **Publish** again, then **Copy link**. — The Page is live at a bearly.sh link.
+4. In the open Page, select **Share file**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header, choose **Anyone with the link** under **Audience**, then select **Publish and copy link**. — The Page is live at a bearly.sh link, and the link is copied.
 
 
 
@@ -7844,7 +7912,7 @@ Your spreadsheet becomes a chart, an interactive dashboard Page with filters, an
 - **People and teams for Anyone with the link:** choose **People and teams** in step 4 and publish, then add people or teams with **Manage viewers**, which appears once the Page is published to that audience. Viewers sign in to open it.
 - **A KPI with a goal:** ask "Show this quarter's revenue as a KPI chart against a 2 million dollar goal." A KPI chart shows one value with progress toward the goal.
 - **A folder for an attachment** (desktop app): select **Work locally** → **Choose folder…**, pick the folder, and ask Bearly to attach the spreadsheet from there (up to 50 MB). Step 1 then works on that copy.
-- **Next quarter's numbers:** attach the new file in the same chat and ask "Update the dashboard with this file." The Page saves a new version. Open it and select **Publish** → **Publish update**, and the link stays the same. If the popover asks you to use Share first, select **Share file** → **Prepare share** again.
+- **Next quarter's numbers:** attach the new file in the same chat and ask "Update the dashboard with this file." The Page saves a new version. Open it and select **Publish** → **Publish update**, and the link stays the same. If the popover asks you to use Share first, select **Share file** again.
 
 **If it stalls:** A Page you share must be under 9 MB. If your organization allows neither audience, the popover says "Your team policy does not allow a publishing audience." Charts read up to 10 columns, so ask for a narrower summary if the table is wider.
 
@@ -8407,7 +8475,7 @@ You get a timed walking plan with places chosen from recent reviews, rearranged 
 
 
 **Swap in:**
-- **A published link for the email:** in the open Page, select **Share file** → **Prepare share**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header, choose the **Audience**, select **Publish** again, then **Copy link**. Open the link on your phone or send it to the people you're traveling with.
+- **A published link for the email:** in the open Page, select **Share file**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header, choose the **Audience**, then select **Publish and copy link**. Open the link on your phone or send it to the people you're traveling with.
 - **Air quality or pollen for the forecast:** ask for them in step 3.
 - **Best Pick for a purchase on the trip** (Pro): "What's the best compact travel umbrella I can buy before Saturday?"
 
@@ -8462,7 +8530,7 @@ You get a step-by-step explanation of a YouTube lecture, a quiz Page with instan
 
 You get what systematic reviews and trials say about a health question, in plain language with citations, and a list of questions to take to your doctor.
 
-**Why it works:** Scholar searches biomedical and preprint literature, prefers systematic reviews for medical questions, flags retractions and conflicting results, and says when the evidence is thin. The paper-results card under each search stays in the chat, so you can open the papers behind the plain-language summary.
+**Why it works:** Scholar searches biomedical and preprint literature, prefers systematic reviews for medical questions, flags retractions and conflicting results, and says when the evidence is thin. Each citation opens its paper, and **Steps** lists every paper each search found, so you can check the papers behind the plain-language summary.
 **You need:** Any plan. Any platform. Organization controls: **Scholar** and **Web**.
 
 > **Caution — Information, not medical advice**
@@ -8611,8 +8679,8 @@ These recipes use projects, meetings, sharing, and organization policies to make
 
 Every call you record goes into one project, and any chat in that project answers from the transcripts first, with quotes.
 
-**Why it works:** **Add to project** uploads a meeting's transcript to a project's files as a document. **Always search documents** in the project's chat settings makes every chat in the project search the project's files before it answers, so a question gets quotes from the calls without anyone naming a file.
-**You need:** Any plan. Recording works on every platform with a microphone; recording an online meeting's audio needs the desktop app on Windows or macOS 13 or later. Organization controls: **Meetings**, **File uploads**, **Project documents and data**, and **Create projects**. Writer access to the project. Chats that aren't end-to-end encrypted.
+**Why it works:** **Add to project** uploads a meeting, with your notes, its summary, and the transcript, to a project's files as a document. **Always search documents** in the project's chat settings makes every chat in the project search the project's files before it answers, so a question gets quotes from the calls without anyone naming a file.
+**You need:** Any plan. Recording works on every platform with a microphone; recording a call's computer audio (**Call + microphone**) needs the desktop app on Windows or macOS 13 or later. Organization controls: **Meetings**, **File uploads**, **Project documents and data**, and **Create projects**. Writer access to the project. Chats that aren't end-to-end encrypted.
 
 
 
@@ -8626,9 +8694,9 @@ Every call you record goes into one project, and any chat in that project answer
 
    — Every chat in the project now follows these instructions and searches its files first.
 
-3. Open **Meetings** in the sidebar. Choose **Online meeting** (desktop app) or **In person or voice note**, then **Start recording**, and **Stop recording** when the call ends. — After the upload, Bearly transcribes the whole recording again with better speaker labels. Name each speaker once and every matching turn updates.
+3. Open **Meetings** in the sidebar and select **Start recording**; in the desktop app, keep **Call + microphone** for a call. Type anything you want remembered in **Your notes**, and select **Stop recording** when the call ends. — After the upload, Bearly transcribes the whole recording again with better speaker labels and writes a summary. Click a speaker's name to rename them; every turn by that speaker updates.
 
-4. Select **Add to project** and choose Customer calls. — "Transcript added" confirms it. Repeat steps 3 and 4 after each call.
+4. Select **More actions** (**…**) → **Add to project** and choose Customer calls. — "Transcript added" confirms it. Repeat steps 3 and 4 after each call.
 
 5. On the project's **Chats** tab, type in **Ask in this project**:
 
@@ -8691,20 +8759,20 @@ Your team works in one project where every chat uses the same model, style, inst
 
 You turn a recorded meeting into decisions and action items, email the follow-up to the people involved, and publish the decisions as a Page only your team can open.
 
-**Why it works:** **Add to chat** attaches the meeting's transcript to a new draft as a file and sends nothing. The chat reads the transcript for every later step. Send Email finds teammates in your organization's contacts, and a Page published to **People and teams** opens only for the people and teams you add.
-**You need:** Any plan. Any platform; recording an online meeting's audio needs the desktop app. Organization controls: **Meetings**, **Email notifications**, **Sharing**, and **Share with people and teams**. Emailing teammates needs a managed organization.
+**Why it works:** **Ask about this meeting** opens a new chat with the meeting (your notes, the summary, and the transcript) attached as a file and sends your request. The chat reads that file for every later step. Send Email finds teammates in your organization's contacts, and a Page published to **People and teams** opens only for the people and teams you add.
+**You need:** Any plan. Any platform; recording a call's computer audio needs the desktop app. Organization controls: **Meetings**, **File uploads**, **Email notifications**, **Sharing**, and **Share with people and teams**. Emailing teammates needs a managed organization.
 
 
 
-1. After you stop a recording in **Meetings**, select **Add to chat** → **New chat**. — The transcript is attached to a new draft. Nothing is sent until you send it.
+1. After you stop a recording in **Meetings**, wait for the final transcript. — **Ask about this meeting** reads "Available once the transcript is ready." until then.
 
-2. Type in that draft and send:
+2. Type this in **Ask about this meeting** and press <kbd>Enter</kbd>:
 
    ```text
    List the decisions and action items from this meeting. Give an owner and a due date only where someone said one. Then draft a short follow-up email.
    ```
 
-   — Bearly reads the transcript and answers.
+   — A new chat opens with the meeting attached, and Bearly answers.
 
 3. Send the follow-up:
 
@@ -8722,13 +8790,14 @@ You turn a recorded meeting into decisions and action items, email the follow-up
 
    — A Page preview appears.
 
-5. In the open Page, select **Share file** → **Prepare share**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header. Set **Audience** to **People and teams** and select **Publish**. Then select **Manage viewers**, add the teammates or the organization that should see it, and select **Copy link**. — Only the people and organizations you added can open the link, after signing in.
+5. In the open Page, select **Share file**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header. Set **Audience** to **People and teams** and select **Publish and copy link**. Then select **Manage viewers** and add the teammates or the organization that should see it; the link is already copied. — Only the people and organizations you added can open the link, after signing in.
 
 
 
 **Swap in:**
-- **Add to project for Add to chat:** keep every recap in one project with **Always search documents** on. See [Build a searchable library of customer calls](#build-a-searchable-library-of-customer-calls).
-- **The meeting's summary for your own list:** select **Create summary** on the recording for a quick summary with decisions and action items before step 1.
+- **Add to project for Ask:** keep every recap in one project with **Always search documents** on. See [Build a searchable library of customer calls](#build-a-searchable-library-of-customer-calls).
+- **The meeting's summary for your own list:** the recording's **Summary** already lists decisions and action items; select **Copy** to take it with your notes. Use **Create summary** if a recording doesn't have one.
+- **Add to chat for Ask:** **More actions** → **Add to chat…** puts the same file in a new or existing chat's draft without sending, so you can write the request there.
 - **Anyone with the link for People and teams:** for a recap you can share outside the organization.
 - **A Prompt Template for the format:** save your recap format as a Prompt Template and run it in step 2. See [Turn a team form into a published Page](#turn-a-team-form-into-a-published-page).
 
@@ -8825,7 +8894,7 @@ A saved Prompt Template turns a few filled-in fields into a full write-up, such 
 
 2. In any chat, type `/`, pick the template under **Skills**, fill in the fields, and select **Submit** (or press <kbd>Shift</kbd> <kbd>Enter</kbd>). — The postmortem appears. The filled form stays in the chat; change a value and **Submit** again for a new version. Blank fields are sent as "N/A".
 
-3. Select **Share** in the top-right corner of the chat → **Prepare share**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header. Set **Audience** to **People and teams** and select **Publish**. Then select **Manage viewers**, add your teammates or your organization, and select **Copy link**. — The Page holds the postmortem itself, not the whole chat.
+3. Select **Share** in the top-right corner of the chat. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header. Set **Audience** to **People and teams** and select **Publish and copy link**. Then select **Manage viewers** and add your teammates or your organization; the link is already copied. — The Page holds the postmortem itself, not the whole chat.
 
 
 
@@ -9304,7 +9373,7 @@ Admins add members directly. There's no invitation for the person to accept. If 
 
 ### Bulk add members
 
-Select **Bulk add members**, then **Select CSV File** under **Upload CSV File**. The file needs two columns, name and email, in either order, and a header row is detected automatically. **Ready to Add Members** shows who will be added, who already exists, and the current count.
+Select **Bulk add members**, then **Select CSV File** under **Upload CSV File**. The file needs two columns, name and email, in either order, and a header row is detected automatically. **Ready to Add Members** shows who will be added, who already exists, and the current count. On a managed organization, pick a **Policy** for everyone in the file (the default policy is preselected). It's saved on each new member, so changing the default policy later doesn't change them; **No Policy** leaves them on the organization's default.
 
 **Sync Mode** ("Remove members not in CSV") treats the file as the full roster and lists members who will be removed. The button changes to **Add _N_ Members**, **Add _N_ & Remove _N_**, or **Remove _N_ Members**. Results show Added, Removed, Skipped, and Errors. On a managed organization, every email must use the managed domain.
 
@@ -9454,7 +9523,7 @@ Model access, spending limits, and **Developer API access** are enforced by Bear
 | **End-to-end encryption** | Members can create chats that only their approved devices can read. Team admins and Bearly can't read or recover these chats, even after a member leaves. | Lets members set up [end-to-end encryption](https://bearly.ai/docs/manual/privacy-and-security.md). Hidden while **Require local encryption** is on. Enforced by Bearly's servers. | — | Off, in either mode |
 | **Require local encryption** | Require new chats to use device-only encryption. | New chats can be opened only on the device that created them. Blocks end-to-end encryption. | — | Off |
 | **Lock existing chats** | Lock existing chats to local access. The keys are unrecoverable. | Converts members' existing chats to device-only. Asks you to confirm **Lock All Existing Users Chats** and can't be undone. | Require local encryption | Off |
-| **File uploads** | Allow members to upload and attach files. | Attachments, project file uploads (the **Files** tab), and desktop folder sync | — | Follows default |
+| **File uploads** | Allow members to upload and attach files. | Attachments, project file uploads (the **Files** tab), desktop folder sync, and a meeting's **Ask about this meeting**, **Add to chat…**, and **Add to project** | — | Follows default |
 
 
 Turning on **Lock existing chats** asks "This will lock all existing chats to local access only. Keys are unrecoverable. This action cannot be undone." Members' chats then open only on the device that holds the key. Turning off **Require local encryption** also turns this switch off, but chats already locked stay locked.
@@ -10070,7 +10139,7 @@ Bearly may also offer an [install card in a desktop chat](https://bearly.ai/docs
 
 ### Get desktop app
 
-**Get Bearly for desktop**, with **Download for macOS**, **Windows**, or **Linux** for the computer you're on and **Other platforms**. On a phone or the iOS app it lists the computers to choose from. Downloads open in your browser. This pane doesn't appear inside the desktop app. See [Get Bearly](https://bearly.ai/docs/manual/get-bearly.md).
+**Get Bearly for desktop**, with **Download for macOS**, **Windows**, or **Linux** for the computer you're on and **Other platforms**. On a phone or the iOS app it lists the computers to choose from. Downloads open in your browser. Under **Links**, **Open Bearly links in the desktop app** sends your organization's Bearly sign-in link, such as its Microsoft tile, to the desktop app on this computer instead of this browser. The desktop app must be version 5.2.13 or later to open the link. The setting turns on by itself after you sign in to the desktop app through this browser, and choosing **Always use the browser** on the opening page turns it off. This pane doesn't appear inside the desktop app. See [Get Bearly](https://bearly.ai/docs/manual/get-bearly.md).
 
 ## Developer
 
@@ -10312,7 +10381,8 @@ Remote modules let a developer add custom tools to Bearly chats from their own s
 
 If you're an AI agent using Bearly's interface for a person, these labels are stable places to start:
 
-- **Sidebar:** **Hide sidebar**, **Search chats**, and **New chat** in the top row; **Chat**, **Prompt templates**, **Routines**, **Meetings**, the **Projects** list (each project opens a page with **Chats**, **Files**, **Sharing**, and **Settings** tabs), and the account menu at the bottom with **Settings**, **Billing**, **Developers**, and **Organizations**.
+- **Sidebar:** **Hide sidebar**, **Search chats**, and **New chat** in the top row; **Chat**, **Prompt templates**, **Routines**, **Meetings**, the **Projects** list (each project opens a page with **Chats**, **Files**, **Sharing**, and **Settings** tabs), and the account menu at the bottom with **Settings**, **Turn on meeting mode**, **Billing**, **Developers**, and **Organizations**.
+- **Meetings:** **Start recording** (in the desktop app, with a menu for **Call + microphone** or **Microphone only**), **Stop recording**, **Your notes**, **Summary** with **Create summary**, **Ask about this meeting** with its suggestions, **Copy**, and **More actions** with **Add to chat…** and **Add to project**.
 - **Composer:** the message box, the model picker, the **Send**, **Queue**, and **Stop** buttons, and the chips at the foot of the box: **Permissions** (or **Full access**), **Connectors**, and **Work locally** in the desktop app. Typing `/` opens commands such as `/email`, `/sms`, `/skill`, and `/visualize`.
 - **Command menu:** <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux), with **New**, **New Routine**, and **Switch Chats**.
 - **Settings:** a window titled **Settings** over the current page, with groups **Account**, **Organizations**, **Chats** (when opened from a chat), **Preferences**, **Privacy**, **Connections**, **Desktop app**, and **Developer**. See [Settings reference](https://bearly.ai/docs/manual/settings-reference.md).
@@ -10523,7 +10593,7 @@ Other chats that look broken:
 | "npm MCP servers require the Bearly desktop app." or **Desktop required** | npm connector servers run on your computer | Add the server in the desktop app |
 | "Use Skills in the desktop app" | Installed skills run local files | Install and use them in the desktop app |
 | No `/computer` in the `/` menu | Computer Use controls apps on your computer, so it's offered only in the desktop app | Ask from a chat in the desktop app |
-| **Get desktop app** on the **Online meeting** card | Recording a call's computer audio needs the desktop app | Use the desktop app on Windows or macOS 13 or later, or record with **In person or voice note** |
+| "Records your microphone. To record Zoom, Meet or Teams calls, get the desktop app." under **Start recording** | Recording a call's computer audio needs the desktop app | Use **Call + microphone** in the desktop app on Windows or macOS 13 or later, or record your microphone where you are |
 | "_Feature_ needs a newer Bearly desktop app." or **Update Bearly** | Your desktop app is too old for the feature | Select **Update** at the top of the window if it shows, or install the latest version from bearly.ai |
 | "This version of the Bearly desktop app does not support Browser." | Same, for Bearly Browser | Update the desktop app |
 | "Update Bearly to continue" — "This copy of Bearly is older than one already used on this computer." | An older copy opened after a newer one | Install the latest version from bearly.ai and open it. Until then, you can start new chats in your browser at bearly.ai/dashboard |
@@ -10707,12 +10777,20 @@ See [Voice](https://bearly.ai/docs/manual/chat/voice.md).
 |---|---|---|
 | "Computer audio is not supported on this device. Bearly will record your microphone only." | Computer audio needs Windows, or macOS 13 or later | Record with the microphone, or use a supported computer |
 | "Screen Recording access is off, so Bearly will record your microphone only." | macOS needs Screen Recording to capture computer audio | Turn on Screen Recording for Bearly in macOS settings |
-| "Microphone access is required to start recording." | The microphone is blocked | Allow the microphone for Bearly, then start again |
+| "Microphone access is required to start recording." with **Open microphone settings** | The desktop app can't use the microphone | Select **Open microphone settings**, allow Bearly, then start again |
+| "You closed the microphone prompt. Try again and choose Allow." | The browser's microphone prompt was closed without an answer | Select **Try again** and choose **Allow** |
+| "Microphone is blocked for this site." with steps for your browser | The browser blocked the microphone for Bearly | Follow the steps in the message to allow the microphone, then select **Try again**. The steps for each browser are in [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md#if-the-microphone-is-blocked) |
+| "Microphone is off for Bearly. Turn it on in your phone’s Settings, under Bearly, then try again." | The iOS app doesn't have microphone access | Turn on **Microphone** in iOS **Settings** → **Bearly**, then select **Try again** |
+| "Your microphone couldn’t start." or "Bearly couldn’t find a microphone." | Another app is using the microphone, or none is connected | Close the other app or pick another input in your system settings, or connect a microphone, then select **Try again** |
 | "Recording stopped at the 1 hr 15 min limit." | Recordings are capped at 75 minutes; everything recorded is kept | Start a new recording to continue |
 | "This device needs at least 250 MB free before starting a recording." | Recording needs at least 250 MB free on the device | Free up space, then start again |
 | "Live transcript paused at the account limit. Audio recording continues." | Your allowance ran out | Keep recording; the audio is saved. Add credits or wait for the reset before the next recording |
 | **Retry upload** on a recording | The upload didn't finish; the audio is still on this device | Select **Retry upload** |
 | A browser refresh stopped the recording | Refreshing stops capture in a browser; what was saved stays | Avoid refreshing while recording, or use the desktop app, which keeps recording across reloads |
+| "The summary couldn’t be written. Your transcript is unchanged." | Writing the summary failed | Select **Try again** |
+| A recording has **Create summary** instead of a summary | Automatic summaries come from the device that made the recording, once its final transcript is ready; older recordings don't have one | Select **Create summary** |
+| **Ask about this meeting** and **Add to chat…** say "Available once the transcript is ready." | They wait for the final transcript | Wait for **Transcribing** to finish |
+| "File uploads are turned off by your organization" on a meeting | Your organization turned off **File uploads**, which Ask, **Add to chat…**, and **Add to project** need | Use **Copy** or **Download transcript**, or ask an admin |
 
 See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
 
@@ -10720,10 +10798,11 @@ See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
 
 | You see | Why | What to do |
 |---|---|---|
-| **Publish** is greyed out: "Use Share to add a preview image and conversation brief before publishing an update." | A Page must be prepared before it's published | Select **Share file** on the Page or **Share** in the chat's top-right corner, then **Prepare share** |
+| **Publish** is greyed out: "Use Share to add a preview image and conversation brief before publishing an update." | A Page must be prepared before it's published | Select **Share file** on the Page or **Share** in the chat's top-right corner; preparation starts right away |
 | "Choose a Page under 9 MB or a file under 300 MB." | The item is too large to share | Share a smaller version |
 | "Using simple artwork; review it before publishing" | Artwork couldn't be generated | Check the preview, then publish or **Prepare again** |
 | "Building stopped. Nothing was published." | You selected **Stop building** | Select **Prepare again** |
+| "Your plan can't make a Page right now. The chat shows why and what to do next." | Your plan doesn't cover preparing a Page | Select **Back to chat** and follow the message there |
 | No **Share** button | The chat is read-only, or your organization turned off **Sharing** | Ask the project owner or your admin |
 
 See [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md).
@@ -10781,7 +10860,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 ## A
 
-**Account menu**: The row at the bottom of the sidebar showing your email, your plan, and the percentage of your allowance you've used. It opens **Settings**, **Billing**, **Developers** (when allowed), **Organizations**, **Follow us on X**, **Give feedback**, and **Log out**. See [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md#the-account-menu).
+**Account menu**: The row at the bottom of the sidebar showing your email, your plan, and the percentage of your allowance you've used. It opens **Settings**, **Turn on meeting mode**, **Billing**, **Developers** (when allowed), **Organizations**, **Follow us on X**, **Give feedback**, and **Log out**. See [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md#the-account-menu).
 
 **Agent access**: A managed organization's admin setting that decides which members may turn on **Full access**. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
@@ -10913,7 +10992,9 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **MCP server**: A server that offers tools to AI apps. Add your own as a custom connector, over HTTPS or, in the desktop app, as an npm package. See [Connectors and skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md).
 
-**Meetings**: The sidebar page, titled **Meetings and recordings**, for recording a meeting or voice note, with live and final transcripts, speaker names, and summaries on request. See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
+**Meeting mode**: Hides your chat and project names, your email, and the window title while you're on a call or sharing your screen. Turn it on or off with <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>M</kbd> (<kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>M</kbd> on Windows and Linux), the command menu, or the account menu; a **Meeting mode** pill shows in the sidebar while it's on. Chats you open still show their messages. It's saved on this device only. See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md#hide-chat-names-on-a-call-meeting-mode).
+
+**Meetings**: The sidebar page, titled **Meetings and recordings**, for recording a meeting or voice note, with your own notes, live and final transcripts, speaker names, an automatic summary, and **Ask about this meeting**. See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
 
 **Memories**: A chat setting that lets the AI search your past chats with **Recall** when you refer to earlier work. In a project chat you can limit it to **Project Only**. It isn't available in end-to-end encrypted chats. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#memories).
 

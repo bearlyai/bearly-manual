@@ -50,7 +50,7 @@ You end up with a cited report and its PDF in your inbox, a chart of its numbers
 
    — A live preview of the Page appears in the chat. Select **Open** to see it full size. Ask for changes in the chat; each edit saves a new version.
 
-5. In the open Page, select **Share file** → **Prepare share**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header, choose the **Audience**, select **Publish**, then **Copy link**. — Bearly adds artwork and a link preview and publishes the Page at a bearly.sh link that stays the same when you publish updates.
+5. In the open Page, select **Share file**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header, choose the **Audience**, then select **Publish and copy link**. — Bearly adds artwork and a link preview and publishes the Page at a bearly.sh link that stays the same when you publish updates.
 
 6. Paste the link into one more message:
 
@@ -89,7 +89,7 @@ You get a list of papers on a question, the best open-access one saved in the ch
    /scholar What do recent papers say about retrieval-augmented generation reducing hallucinations in question answering? Prefer peer-reviewed work and say where results conflict.
    ```
 
-   — Bearly searches papers and answers with superscript citations. Each search shows a paper-results card listing the papers it found, with links. When Bearly reads a paper, the results card quotes a passage it read, when available.
+   — Bearly searches papers and answers with superscript citations. Hover a citation to see its paper, and open **Steps** from the line under the reply to see every paper each search found.
 
 2. Open one in full:
 

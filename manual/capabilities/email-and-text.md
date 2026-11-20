@@ -40,7 +40,7 @@ Asking is the go-ahead: up to 3 emails and texts in one answer go without an app
 
 **What you get:** an email with Markdown formatting (headings, lists, tables, links) and up to 10 attachments from the chat. It comes from "User message via Bearly", and the subject starts with "[User message via Bearly from" followed by your name. Replies go to your address.
 **Limits:** each attachment and all attachments together can total at most 20 MB. Up to 25 recipients per email, and up to 20 emails an hour from your account. If every attachment fails to prepare, nothing is sent.
-**Combines with:** [Pages](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) and data files to attach; [Routines](https://bearly.ai/docs/manual/capabilities/routines.md#results-and-delivery) with **Email each result**; [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md) for follow-ups.
+**Combines with:** [Pages](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) and data files to attach; [Routines](https://bearly.ai/docs/manual/capabilities/routines.md#results-and-delivery) with **Email each result**; [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md) for follow-ups, starting from a recording's **Draft follow-up email**.
 
 ### Who can receive your email
 
@@ -138,7 +138,7 @@ Separate, short emails to each person with only their tasks from a meeting.
 
 
 
-1. Open the chat with the meeting notes or transcript (see [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md)).
+1. Get the meeting into a chat: on the recording in **Meetings**, select **List action items** under **Ask about this meeting**, which opens a new chat with the meeting attached. Or open a chat that already has the meeting notes or transcript. See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md#ask-about-this-meeting).
 2. Ask:
 
    ```text

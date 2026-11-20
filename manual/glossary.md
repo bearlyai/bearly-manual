@@ -21,7 +21,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 ## A
 
-**Account menu**: The row at the bottom of the sidebar showing your email, your plan, and the percentage of your allowance you've used. It opens **Settings**, **Billing**, **Developers** (when allowed), **Organizations**, **Follow us on X**, **Give feedback**, and **Log out**. See [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md#the-account-menu).
+**Account menu**: The row at the bottom of the sidebar showing your email, your plan, and the percentage of your allowance you've used. It opens **Settings**, **Turn on meeting mode**, **Billing**, **Developers** (when allowed), **Organizations**, **Follow us on X**, **Give feedback**, and **Log out**. See [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md#the-account-menu).
 
 **Agent access**: A managed organization's admin setting that decides which members may turn on **Full access**. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
@@ -153,7 +153,9 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **MCP server**: A server that offers tools to AI apps. Add your own as a custom connector, over HTTPS or, in the desktop app, as an npm package. See [Connectors and skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md).
 
-**Meetings**: The sidebar page, titled **Meetings and recordings**, for recording a meeting or voice note, with live and final transcripts, speaker names, and summaries on request. See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
+**Meeting mode**: Hides your chat and project names, your email, and the window title while you're on a call or sharing your screen. Turn it on or off with <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>M</kbd> (<kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>M</kbd> on Windows and Linux), the command menu, or the account menu; a **Meeting mode** pill shows in the sidebar while it's on. Chats you open still show their messages. It's saved on this device only. See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md#hide-chat-names-on-a-call-meeting-mode).
+
+**Meetings**: The sidebar page, titled **Meetings and recordings**, for recording a meeting or voice note, with your own notes, live and final transcripts, speaker names, an automatic summary, and **Ask about this meeting**. See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
 
 **Memories**: A chat setting that lets the AI search your past chats with **Recall** when you refer to earlier work. In a project chat you can limit it to **Project Only**. It isn't available in end-to-end encrypted chats. See [Tune a chat](https://bearly.ai/docs/manual/chat/settings.md#memories).
 

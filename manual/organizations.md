@@ -165,7 +165,7 @@ Admins add members directly. There's no invitation for the person to accept. If 
 
 ### Bulk add members
 
-Select **Bulk add members**, then **Select CSV File** under **Upload CSV File**. The file needs two columns, name and email, in either order, and a header row is detected automatically. **Ready to Add Members** shows who will be added, who already exists, and the current count.
+Select **Bulk add members**, then **Select CSV File** under **Upload CSV File**. The file needs two columns, name and email, in either order, and a header row is detected automatically. **Ready to Add Members** shows who will be added, who already exists, and the current count. On a managed organization, pick a **Policy** for everyone in the file (the default policy is preselected). It's saved on each new member, so changing the default policy later doesn't change them; **No Policy** leaves them on the organization's default.
 
 **Sync Mode** ("Remove members not in CSV") treats the file as the full roster and lists members who will be removed. The button changes to **Add _N_ Members**, **Add _N_ & Remove _N_**, or **Remove _N_ Members**. Results show Added, Removed, Skipped, and Errors. On a managed organization, every email must use the managed domain.
 
@@ -315,7 +315,7 @@ Model access, spending limits, and **Developer API access** are enforced by Bear
 | **End-to-end encryption** | Members can create chats that only their approved devices can read. Team admins and Bearly can't read or recover these chats, even after a member leaves. | Lets members set up [end-to-end encryption](https://bearly.ai/docs/manual/privacy-and-security.md). Hidden while **Require local encryption** is on. Enforced by Bearly's servers. | — | Off, in either mode |
 | **Require local encryption** | Require new chats to use device-only encryption. | New chats can be opened only on the device that created them. Blocks end-to-end encryption. | — | Off |
 | **Lock existing chats** | Lock existing chats to local access. The keys are unrecoverable. | Converts members' existing chats to device-only. Asks you to confirm **Lock All Existing Users Chats** and can't be undone. | Require local encryption | Off |
-| **File uploads** | Allow members to upload and attach files. | Attachments, project file uploads (the **Files** tab), and desktop folder sync | — | Follows default |
+| **File uploads** | Allow members to upload and attach files. | Attachments, project file uploads (the **Files** tab), desktop folder sync, and a meeting's **Ask about this meeting**, **Add to chat…**, and **Add to project** | — | Follows default |
 
 
 Turning on **Lock existing chats** asks "This will lock all existing chats to local access only. Keys are unrecoverable. This action cannot be undone." Members' chats then open only on the device that holds the key. Turning off **Require local encryption** also turns this switch off, but chats already locked stay locked.

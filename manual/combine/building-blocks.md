@@ -126,7 +126,7 @@ Details: [Images, video, and audio](https://bearly.ai/docs/manual/capabilities/i
 | **Touch Up** `/edit-image` | One or more images in the chat, and optionally an area to change | Edited, extended, or combined images; a transparent-background PNG when you ask for one in an edit or edit an image that has one | Any | All | No | No |
 | **Upscale** (ask in words) | One image in the chat | A new 2K copy, or 4K when you ask; a transparent background becomes opaque | Any | All | No | No |
 | **Remove background** (ask in words) | One JPEG, PNG, or GIF photo in the chat, up to 20 MB, and optionally what to keep | A new PNG of the subject on a transparent background, at the photo's original size, named with `-cutout` | Any | All | No | No |
-| **Make Video** `/video` | A description, and optionally an image as the start frame (at most 2.5 times as wide as tall, or as tall as wide) plus an end frame | A 4 to 15-second MP4 with generated sound, saved in the chat | Any | All | No | No |
+| **Make Video** `/video` | A description, and optionally an image as the start frame (with the default model, at most 2.5 times as wide as tall, or as tall as wide) plus an end frame; with Gemini Omni, up to 10 reference images or a reference video instead | A 4 to 15-second MP4 with generated sound, saved in the chat | Any | All | No | No |
 | **Edit Video** `/edit-video` | A clip of 3 to 10 seconds, 720 to 2160 pixels on each side, under 50 MB | A separate edited clip; the original stays as it was | Any | All | No | No |
 | **Read Aloud** `/say`, and Voice Studio | Text: a reply, your message, or a script, up to about 22,500 characters of English (about 7,500 in Chinese, Japanese or Korean) | Spoken audio saved as a chat file; Voice Studio for voices, delivery, and takes | Any | All | No | No |
 | **Transcribe** `/transcribe` | Audio or video files in the chat; attachment limit 1000 MB, with separate transcription processing limits | A transcript with speaker names and timestamps, plus a `.srt` transcript file in the chat | Any | All | No | No |
@@ -140,7 +140,7 @@ Details: [Voice](https://bearly.ai/docs/manual/chat/voice.md) and [Meetings](htt
 |---|---|---|---|---|---|---|
 | **Voice call** (**Start voice call**) | Your voice; the call can use the chat's tools | Spoken answers, and a call card in the chat with the transcript (audio isn't saved) | Any; choosing the voice model needs Pro | All, except Firefox | No | — |
 | **Dictation** (microphone in the composer) | Your voice | Text in the composer, or a message sent right away | Any | All | — | — |
-| **Meetings** (sidebar **Meetings**) | Your microphone; in the desktop app, also the call's computer audio | Live and final transcripts with speaker names, a summary when you ask, and the audio file | Any | All; computer audio needs the desktop app on Windows or macOS 13 or later | — | — |
+| **Meetings** (sidebar **Meetings**) | Your microphone; in the desktop app, also the call's computer audio (**Call + microphone**); notes you type in **Your notes** | Live and final transcripts with speaker names, an automatic summary that follows your notes, a Markdown download, and the audio file | Any | All; computer audio needs the desktop app on Windows or macOS 13 or later | — | — |
 
 ### Agents and automation
 
@@ -228,7 +228,7 @@ Each rule names an output type and the blocks that can take it next. These conne
 
 ### Across chats and over time
 
-- **A meeting transcript** → **Add to chat** attaches it as a Markdown file to a new or existing chat's draft, without sending → summaries, action items, a follow-up email, or a Page. **Add to project** puts the same file in a project's files → every chat in that project. The meeting's **Summary** isn't included in the file.
+- **A meeting** → **Ask about this meeting** (or a suggestion such as **Draft follow-up email**) opens a new chat with the meeting attached as a Markdown file and sends the question; **More actions** → **Add to chat…** attaches the same file to a new or existing chat's draft without sending → action items, a follow-up email, or a Page. The file holds your notes, the summary, and the transcript. Both wait for the final transcript. **Add to project** puts the same file in a project's files → every chat in that project. All three need **File uploads**.
 - **Project files** → every chat in the project, through `@` and the document tools; **Always search documents** makes every answer search them first.
 - **A routine run** → lands in the routine's chat → with **Build on previous runs** on, the next run sees earlier ones. Files a run writes, such as a Page or a CSV, can go out with **Email each result**.
 - **A chat that did the job once** → ask it to repeat on a schedule, for example "Do this every weekday at 8 and email me the result." Bearly sets up a routine from that chat.

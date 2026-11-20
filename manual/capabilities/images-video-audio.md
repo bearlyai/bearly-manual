@@ -188,19 +188,25 @@ Make Video generates a short video with sound, from a description alone or by an
 
 
 
+Ask for Gemini Omni by name to use it instead of the default model. It takes up to 10 reference images or a reference video (people, objects, places, a style) for the clip to follow, and Bearly picks it on its own when you give either. It makes 720p or 1080p clips of 4 to 15 seconds (up to 10 with a first and last frame) in 16:9 or 9:16. Reference media and a start frame can't go in the same clip.
+
+```text
+/video Use Gemini Omni: the woman in the first photo walks through the market in the second photo at dusk. 9:16, 8 seconds.
+```
+
 **What you get:** a video card with your prompt in italics, followed by the model name, length, resolution, and **Audio**. The player has **Play video** / **Pause video**, **Mute video** / **Unmute video**, and **Download video**, which saves an MP4.
 
 **Options:**
 
 - **Length:** 4 to 15 seconds. The default is 5.
-- **Resolution:** standard 768p by default, or 2K, which costs more. A 16:9 clip at 2K is 2560 × 1440, too large for Edit Video, so make a clip you plan to edit at standard resolution.
-- **Shape:** 16:9 by default, 9:16, or 1:1. With a start image, the video keeps the image's shape.
+- **Resolution:** standard 768p by default, or 2K, which costs more; with Gemini Omni, 720p or 1080p. A 16:9 clip at 2K is 2560 × 1440, too large for Edit Video, so make a clip you plan to edit at standard resolution.
+- **Shape:** 16:9 by default, 9:16, or 1:1. With a start image, the default model keeps the image's shape. Gemini Omni makes 16:9 or 9:16 only, and picks one from your description when you don't say.
 - **Sound:** every video includes generated sound.
 
 **Limits:**
 
 - One video per answer; a second asks **Make another video?** first. See [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
-- A start image can be at most 2.5 times as wide as it is tall, or 2.5 times as tall as it is wide. Bearly refuses a wider or taller image before it starts, so crop or pad it first.
+- With the default model, a start image can be at most 2.5 times as wide as it is tall, or 2.5 times as tall as it is wide. Bearly refuses a wider or taller image before it starts, so crop or pad it first.
 - A failed attempt isn't retried on another model. On failure you'll see "The video model could not finish this request. Try again later."
 
 ## Edit Video
@@ -445,7 +451,7 @@ You get a short summary of the episode's main points, recorded in a voice you ch
 
 
 
-**Swap in:** a meeting from [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md), where **Add to chat** brings its transcript into the chat so you can skip transcribing; [email](https://bearly.ai/docs/manual/capabilities/email-and-text.md) the audio to yourself.
+**Swap in:** a meeting from [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md), where **More actions** → **Add to chat…** brings its transcript into the chat so you can skip transcribing; [email](https://bearly.ai/docs/manual/capabilities/email-and-text.md) the audio to yourself.
 
 **If it stalls:** attached files can be up to 1000 MB; transcription has separate processing limits; for a longer episode, export a smaller audio-only copy first.
 

@@ -219,7 +219,7 @@ Scholar searches an index of academic papers from preprint servers and the biome
 
 
 
-**What you get:** superscript citations; hover one to see the paper, and select it to open the paper. A card for each search starts folded to one line with the query and the number of papers found; open it to see the first four papers, with each paper's source and link, and **Show all** for the rest. When Bearly reads a paper, the results card quotes a passage it read, when available; a paper that isn't on a results card gets its own **Paper read** card.
+**What you get:** superscript citations; hover one to see the paper, and select it to open the paper. Each search and read shows as a step: select the line under the reply to open **Steps**, and select a search to see every paper it found.
 
 **Limits:** a search returns 8 papers by default and up to 10, and can be narrowed by date range, up to five subject categories, and up to five author surnames. A read returns up to five passages per paper; a related-papers lookup returns up to 10. When the index returns fewer than three papers, or you ask for journal articles only or the newest work, Scholar also searches 20 journal and repository sites. Many biomedical papers are indexed by abstract only, shown as "abstract only". Scholar doesn't report citation counts. Bearly prefers peer-reviewed work over preprints, flags retractions and contradictions, and says when the literature is thin.
 
@@ -685,7 +685,7 @@ You get a cited report, a chart of its key numbers, and a Page you can send to p
    Chart those estimates as a line chart, one line per source.
    ```
 
-4. Type `/share`, or select **Share** in the top-right corner of the chat and then **Prepare share** — Bearly turns the substance of the chat into a Page and opens it, marked **Ready to share**. Review it, then select **Publish** in its header, choose the **Audience**, and select **Publish**.
+4. Type `/share`, or select **Share** in the top-right corner of the chat — Bearly turns the substance of the chat into a Page and opens it, marked **Ready to share**. Review it, then select **Publish** in its header, choose the **Audience**, and select **Publish and copy link**.
 
 
 
@@ -703,7 +703,7 @@ You get the strongest study on a question, read in full, with its exact methods 
 
 
 
-1. Ask Scholar for the evidence — Bearly searches papers, reads the key passages, and lists the papers on a card under the search.
+1. Ask Scholar for the evidence — Bearly searches papers, reads the key passages, and cites them; the papers each search found are in **Steps**.
 
    ```text
    /scholar What do randomized trials say about creatine supplementation and cognition in older adults?

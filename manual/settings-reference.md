@@ -268,7 +268,7 @@ Bearly may also offer an [install card in a desktop chat](https://bearly.ai/docs
 
 ### Get desktop app
 
-**Get Bearly for desktop**, with **Download for macOS**, **Windows**, or **Linux** for the computer you're on and **Other platforms**. On a phone or the iOS app it lists the computers to choose from. Downloads open in your browser. This pane doesn't appear inside the desktop app. See [Get Bearly](https://bearly.ai/docs/manual/get-bearly.md).
+**Get Bearly for desktop**, with **Download for macOS**, **Windows**, or **Linux** for the computer you're on and **Other platforms**. On a phone or the iOS app it lists the computers to choose from. Downloads open in your browser. Under **Links**, **Open Bearly links in the desktop app** sends your organization's Bearly sign-in link, such as its Microsoft tile, to the desktop app on this computer instead of this browser. The desktop app must be version 5.2.13 or later to open the link. The setting turns on by itself after you sign in to the desktop app through this browser, and choosing **Always use the browser** on the opening page turns it off. This pane doesn't appear inside the desktop app. See [Get Bearly](https://bearly.ai/docs/manual/get-bearly.md).
 
 ## Developer
 

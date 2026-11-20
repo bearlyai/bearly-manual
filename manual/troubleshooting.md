@@ -143,7 +143,7 @@ Other chats that look broken:
 | "npm MCP servers require the Bearly desktop app." or **Desktop required** | npm connector servers run on your computer | Add the server in the desktop app |
 | "Use Skills in the desktop app" | Installed skills run local files | Install and use them in the desktop app |
 | No `/computer` in the `/` menu | Computer Use controls apps on your computer, so it's offered only in the desktop app | Ask from a chat in the desktop app |
-| **Get desktop app** on the **Online meeting** card | Recording a call's computer audio needs the desktop app | Use the desktop app on Windows or macOS 13 or later, or record with **In person or voice note** |
+| "Records your microphone. To record Zoom, Meet or Teams calls, get the desktop app." under **Start recording** | Recording a call's computer audio needs the desktop app | Use **Call + microphone** in the desktop app on Windows or macOS 13 or later, or record your microphone where you are |
 | "_Feature_ needs a newer Bearly desktop app." or **Update Bearly** | Your desktop app is too old for the feature | Select **Update** at the top of the window if it shows, or install the latest version from bearly.ai |
 | "This version of the Bearly desktop app does not support Browser." | Same, for Bearly Browser | Update the desktop app |
 | "Update Bearly to continue" — "This copy of Bearly is older than one already used on this computer." | An older copy opened after a newer one | Install the latest version from bearly.ai and open it. Until then, you can start new chats in your browser at bearly.ai/dashboard |
@@ -327,12 +327,20 @@ See [Voice](https://bearly.ai/docs/manual/chat/voice.md).
 |---|---|---|
 | "Computer audio is not supported on this device. Bearly will record your microphone only." | Computer audio needs Windows, or macOS 13 or later | Record with the microphone, or use a supported computer |
 | "Screen Recording access is off, so Bearly will record your microphone only." | macOS needs Screen Recording to capture computer audio | Turn on Screen Recording for Bearly in macOS settings |
-| "Microphone access is required to start recording." | The microphone is blocked | Allow the microphone for Bearly, then start again |
+| "Microphone access is required to start recording." with **Open microphone settings** | The desktop app can't use the microphone | Select **Open microphone settings**, allow Bearly, then start again |
+| "You closed the microphone prompt. Try again and choose Allow." | The browser's microphone prompt was closed without an answer | Select **Try again** and choose **Allow** |
+| "Microphone is blocked for this site." with steps for your browser | The browser blocked the microphone for Bearly | Follow the steps in the message to allow the microphone, then select **Try again**. The steps for each browser are in [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md#if-the-microphone-is-blocked) |
+| "Microphone is off for Bearly. Turn it on in your phone’s Settings, under Bearly, then try again." | The iOS app doesn't have microphone access | Turn on **Microphone** in iOS **Settings** → **Bearly**, then select **Try again** |
+| "Your microphone couldn’t start." or "Bearly couldn’t find a microphone." | Another app is using the microphone, or none is connected | Close the other app or pick another input in your system settings, or connect a microphone, then select **Try again** |
 | "Recording stopped at the 1 hr 15 min limit." | Recordings are capped at 75 minutes; everything recorded is kept | Start a new recording to continue |
 | "This device needs at least 250 MB free before starting a recording." | Recording needs at least 250 MB free on the device | Free up space, then start again |
 | "Live transcript paused at the account limit. Audio recording continues." | Your allowance ran out | Keep recording; the audio is saved. Add credits or wait for the reset before the next recording |
 | **Retry upload** on a recording | The upload didn't finish; the audio is still on this device | Select **Retry upload** |
 | A browser refresh stopped the recording | Refreshing stops capture in a browser; what was saved stays | Avoid refreshing while recording, or use the desktop app, which keeps recording across reloads |
+| "The summary couldn’t be written. Your transcript is unchanged." | Writing the summary failed | Select **Try again** |
+| A recording has **Create summary** instead of a summary | Automatic summaries come from the device that made the recording, once its final transcript is ready; older recordings don't have one | Select **Create summary** |
+| **Ask about this meeting** and **Add to chat…** say "Available once the transcript is ready." | They wait for the final transcript | Wait for **Transcribing** to finish |
+| "File uploads are turned off by your organization" on a meeting | Your organization turned off **File uploads**, which Ask, **Add to chat…**, and **Add to project** need | Use **Copy** or **Download transcript**, or ask an admin |
 
 See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
 
@@ -340,10 +348,11 @@ See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
 
 | You see | Why | What to do |
 |---|---|---|
-| **Publish** is greyed out: "Use Share to add a preview image and conversation brief before publishing an update." | A Page must be prepared before it's published | Select **Share file** on the Page or **Share** in the chat's top-right corner, then **Prepare share** |
+| **Publish** is greyed out: "Use Share to add a preview image and conversation brief before publishing an update." | A Page must be prepared before it's published | Select **Share file** on the Page or **Share** in the chat's top-right corner; preparation starts right away |
 | "Choose a Page under 9 MB or a file under 300 MB." | The item is too large to share | Share a smaller version |
 | "Using simple artwork; review it before publishing" | Artwork couldn't be generated | Check the preview, then publish or **Prepare again** |
 | "Building stopped. Nothing was published." | You selected **Stop building** | Select **Prepare again** |
+| "Your plan can't make a Page right now. The chat shows why and what to do next." | Your plan doesn't cover preparing a Page | Select **Back to chat** and follow the message there |
 | No **Share** button | The chat is read-only, or your organization turned off **Sharing** | Ask the project owner or your admin |
 
 See [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md).

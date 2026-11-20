@@ -1,6 +1,6 @@
 ---
 title: "Keyboard shortcuts"
-description: "Every Bearly keyboard shortcut for macOS and for Windows and Linux, covering sending, new lines, the / and @ picker, the command menu, search, the sidebar, new and deleted chats, jumping between prompts, Settings, dialogs, dictation, and the desktop app's global shortcut."
+description: "Every Bearly keyboard shortcut for macOS and for Windows and Linux, covering sending, new lines, the / and @ picker, the command menu, search, the sidebar, new and deleted chats, jumping between prompts, Settings, meeting mode, dialogs, dictation, and the desktop app's global shortcut."
 canonical: "https://bearly.ai/docs/manual/chat/shortcuts/"
 markdown: "https://bearly.ai/docs/manual/chat/shortcuts.md"
 ---
@@ -9,7 +9,7 @@ markdown: "https://bearly.ai/docs/manual/chat/shortcuts.md"
 
 HTML: [https://bearly.ai/docs/manual/chat/shortcuts/](https://bearly.ai/docs/manual/chat/shortcuts/)
 
-> Every Bearly keyboard shortcut for macOS and for Windows and Linux, covering sending, new lines, the / and @ picker, the command menu, search, the sidebar, new and deleted chats, jumping between prompts, Settings, dialogs, dictation, and the desktop app's global shortcut.
+> Every Bearly keyboard shortcut for macOS and for Windows and Linux, covering sending, new lines, the / and @ picker, the command menu, search, the sidebar, new and deleted chats, jumping between prompts, Settings, meeting mode, dialogs, dictation, and the desktop app's global shortcut.
 
 These shortcuts work in the web app on a computer and in the desktop app. On macOS, ⌘ is the Command key; on Windows and Linux, the same shortcuts use Ctrl. On phones and tablets, <kbd>Enter</kbd> doesn't send a message: tap the send button.
 
@@ -52,11 +52,12 @@ Typing an item's exact label followed by a space or punctuation, such as `@web-s
 | Jump to the previous prompt | <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>↑</kbd> | <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>↑</kbd> |
 | Jump to the next prompt | <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>↓</kbd> | <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>↓</kbd> |
 | Open Settings | <kbd>⌘</kbd> <kbd>,</kbd> | <kbd>Ctrl</kbd> <kbd>,</kbd> |
+| Turn meeting mode on or off, from any page and even while typing | <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>M</kbd> | <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>M</kbd> |
 | Dictate while you hold the key, with Bearly focused (push to talk) | Right <kbd>Shift</kbd> | Right <kbd>Shift</kbd> |
 
-To search your chats and files, select **Search chats** (the magnifier at the top of the sidebar); on a project's page and on **Routines**, **Prompt templates**, and **Meetings**, <kbd>⌘</kbd> <kbd>F</kbd> (<kbd>Ctrl</kbd> <kbd>F</kbd>) opens it too. Pressing the new-chat shortcut while you're already on a new chat puts the cursor in the composer and shows "You're already in a new chat". Right Shift is the default dictation key; change it in **Settings** → **Dictation** → **Keyboard shortcut**. See [Voice](https://bearly.ai/docs/manual/chat/voice.md).
+To search your chats and files, select **Search chats** (the magnifier at the top of the sidebar); on a project's page and on **Routines**, **Prompt templates**, and **Meetings**, <kbd>⌘</kbd> <kbd>F</kbd> (<kbd>Ctrl</kbd> <kbd>F</kbd>) opens it too. Pressing the new-chat shortcut while you're already on a new chat puts the cursor in the composer and shows "You're already in a new chat". Right Shift is the default dictation key; change it in **Settings** → **Dictation** → **Keyboard shortcut**. See [Voice](https://bearly.ai/docs/manual/chat/voice.md). Meeting mode hides your chat and project names while you're on a call or sharing your screen; the command menu and the account menu turn it on and off too. See [Meeting mode](https://bearly.ai/docs/manual/capabilities/meetings.md#hide-chat-names-on-a-call-meeting-mode).
 
-Web browsers keep some key combinations for themselves. If a shortcut does something in your browser instead of in Bearly, use the matching button or the command menu, or use the desktop app.
+Web browsers keep some key combinations for themselves, and some browsers use <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>M</kbd> for their own command. If a shortcut does something in your browser instead of in Bearly, use the matching button or the command menu, or use the desktop app.
 
 ## In menus and dialogs
 
@@ -104,6 +105,6 @@ With **Auto-hide** on in the same pane, Bearly hides when it loses focus, and th
 - [Previous: Talk to Bearly: dictation and voice calls](https://bearly.ai/docs/manual/chat/voice.md)
 - [Next: Research the web, papers, people, products, and places](https://bearly.ai/docs/manual/capabilities/research.md)
 - [Related: Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md)
+- [Related: Record and use meetings](https://bearly.ai/docs/manual/capabilities/meetings.md)
 - [Related: Work with answers](https://bearly.ai/docs/manual/chat/answers.md)
 - [Related: Organize, find, share, and export chats](https://bearly.ai/docs/manual/chat/organize.md)
-- [Related: Get Bearly on every device](https://bearly.ai/docs/manual/get-bearly.md)

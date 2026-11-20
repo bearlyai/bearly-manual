@@ -17,8 +17,8 @@ These recipes use projects, meetings, sharing, and organization policies to make
 
 Every call you record goes into one project, and any chat in that project answers from the transcripts first, with quotes.
 
-**Why it works:** **Add to project** uploads a meeting's transcript to a project's files as a document. **Always search documents** in the project's chat settings makes every chat in the project search the project's files before it answers, so a question gets quotes from the calls without anyone naming a file.
-**You need:** Any plan. Recording works on every platform with a microphone; recording an online meeting's audio needs the desktop app on Windows or macOS 13 or later. Organization controls: **Meetings**, **File uploads**, **Project documents and data**, and **Create projects**. Writer access to the project. Chats that aren't end-to-end encrypted.
+**Why it works:** **Add to project** uploads a meeting, with your notes, its summary, and the transcript, to a project's files as a document. **Always search documents** in the project's chat settings makes every chat in the project search the project's files before it answers, so a question gets quotes from the calls without anyone naming a file.
+**You need:** Any plan. Recording works on every platform with a microphone; recording a call's computer audio (**Call + microphone**) needs the desktop app on Windows or macOS 13 or later. Organization controls: **Meetings**, **File uploads**, **Project documents and data**, and **Create projects**. Writer access to the project. Chats that aren't end-to-end encrypted.
 
 
 
@@ -32,9 +32,9 @@ Every call you record goes into one project, and any chat in that project answer
 
    — Every chat in the project now follows these instructions and searches its files first.
 
-3. Open **Meetings** in the sidebar. Choose **Online meeting** (desktop app) or **In person or voice note**, then **Start recording**, and **Stop recording** when the call ends. — After the upload, Bearly transcribes the whole recording again with better speaker labels. Name each speaker once and every matching turn updates.
+3. Open **Meetings** in the sidebar and select **Start recording**; in the desktop app, keep **Call + microphone** for a call. Type anything you want remembered in **Your notes**, and select **Stop recording** when the call ends. — After the upload, Bearly transcribes the whole recording again with better speaker labels and writes a summary. Click a speaker's name to rename them; every turn by that speaker updates.
 
-4. Select **Add to project** and choose Customer calls. — "Transcript added" confirms it. Repeat steps 3 and 4 after each call.
+4. Select **More actions** (**…**) → **Add to project** and choose Customer calls. — "Transcript added" confirms it. Repeat steps 3 and 4 after each call.
 
 5. On the project's **Chats** tab, type in **Ask in this project**:
 
@@ -97,20 +97,20 @@ Your team works in one project where every chat uses the same model, style, inst
 
 You turn a recorded meeting into decisions and action items, email the follow-up to the people involved, and publish the decisions as a Page only your team can open.
 
-**Why it works:** **Add to chat** attaches the meeting's transcript to a new draft as a file and sends nothing. The chat reads the transcript for every later step. Send Email finds teammates in your organization's contacts, and a Page published to **People and teams** opens only for the people and teams you add.
-**You need:** Any plan. Any platform; recording an online meeting's audio needs the desktop app. Organization controls: **Meetings**, **Email notifications**, **Sharing**, and **Share with people and teams**. Emailing teammates needs a managed organization.
+**Why it works:** **Ask about this meeting** opens a new chat with the meeting (your notes, the summary, and the transcript) attached as a file and sends your request. The chat reads that file for every later step. Send Email finds teammates in your organization's contacts, and a Page published to **People and teams** opens only for the people and teams you add.
+**You need:** Any plan. Any platform; recording a call's computer audio needs the desktop app. Organization controls: **Meetings**, **File uploads**, **Email notifications**, **Sharing**, and **Share with people and teams**. Emailing teammates needs a managed organization.
 
 
 
-1. After you stop a recording in **Meetings**, select **Add to chat** → **New chat**. — The transcript is attached to a new draft. Nothing is sent until you send it.
+1. After you stop a recording in **Meetings**, wait for the final transcript. — **Ask about this meeting** reads "Available once the transcript is ready." until then.
 
-2. Type in that draft and send:
+2. Type this in **Ask about this meeting** and press <kbd>Enter</kbd>:
 
    ```text
    List the decisions and action items from this meeting. Give an owner and a due date only where someone said one. Then draft a short follow-up email.
    ```
 
-   — Bearly reads the transcript and answers.
+   — A new chat opens with the meeting attached, and Bearly answers.
 
 3. Send the follow-up:
 
@@ -128,13 +128,14 @@ You turn a recorded meeting into decisions and action items, email the follow-up
 
    — A Page preview appears.
 
-5. In the open Page, select **Share file** → **Prepare share**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header. Set **Audience** to **People and teams** and select **Publish**. Then select **Manage viewers**, add the teammates or the organization that should see it, and select **Copy link**. — Only the people and organizations you added can open the link, after signing in.
+5. In the open Page, select **Share file**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header. Set **Audience** to **People and teams** and select **Publish and copy link**. Then select **Manage viewers** and add the teammates or the organization that should see it; the link is already copied. — Only the people and organizations you added can open the link, after signing in.
 
 
 
 **Swap in:**
-- **Add to project for Add to chat:** keep every recap in one project with **Always search documents** on. See [Build a searchable library of customer calls](#build-a-searchable-library-of-customer-calls).
-- **The meeting's summary for your own list:** select **Create summary** on the recording for a quick summary with decisions and action items before step 1.
+- **Add to project for Ask:** keep every recap in one project with **Always search documents** on. See [Build a searchable library of customer calls](#build-a-searchable-library-of-customer-calls).
+- **The meeting's summary for your own list:** the recording's **Summary** already lists decisions and action items; select **Copy** to take it with your notes. Use **Create summary** if a recording doesn't have one.
+- **Add to chat for Ask:** **More actions** → **Add to chat…** puts the same file in a new or existing chat's draft without sending, so you can write the request there.
 - **Anyone with the link for People and teams:** for a recap you can share outside the organization.
 - **A Prompt Template for the format:** save your recap format as a Prompt Template and run it in step 2. See [Turn a team form into a published Page](#turn-a-team-form-into-a-published-page).
 
@@ -231,7 +232,7 @@ A saved Prompt Template turns a few filled-in fields into a full write-up, such 
 
 2. In any chat, type `/`, pick the template under **Skills**, fill in the fields, and select **Submit** (or press <kbd>Shift</kbd> <kbd>Enter</kbd>). — The postmortem appears. The filled form stays in the chat; change a value and **Submit** again for a new version. Blank fields are sent as "N/A".
 
-3. Select **Share** in the top-right corner of the chat → **Prepare share**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header. Set **Audience** to **People and teams** and select **Publish**. Then select **Manage viewers**, add your teammates or your organization, and select **Copy link**. — The Page holds the postmortem itself, not the whole chat.
+3. Select **Share** in the top-right corner of the chat. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header. Set **Audience** to **People and teams** and select **Publish and copy link**. Then select **Manage viewers** and add your teammates or your organization; the link is already copied. — The Page holds the postmortem itself, not the whole chat.
 
 
 

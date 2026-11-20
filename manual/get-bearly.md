@@ -94,7 +94,7 @@ The desktop app is Bearly in its own window, plus the tools that work on your co
 - **Computer Use** — Bearly clicks and types in the apps on your screen after you approve the task. Same page.
 - **Installed skills and skill scripts**, and **npm MCP servers**. See [Connect apps and add skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md).
 - **Running routines.** You can create routines anywhere, but they run only in the desktop app, on the device they're installed on, while it's open. See [Automate with Routines](https://bearly.ai/docs/manual/capabilities/routines.md).
-- **Online meeting** recording with computer audio and your microphone, on Windows and on macOS 13 or later. Linux records your microphone only. See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
+- **Call + microphone** meeting recording, which records the call's computer audio and your microphone together, on Windows and on macOS 13 or later. Linux records your microphone only. See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
 - **Sync a folder** for projects, and saving videos and transcripts over your own connection. See [Projects](https://bearly.ai/docs/manual/projects.md) and [Videos and posts](https://bearly.ai/docs/manual/capabilities/videos-and-posts.md).
 - **Runtime** settings, where Bearly installs and checks the tools local work uses and keeps environment variables for local commands and skills.
 - Full access for all of these tools. On other platforms it covers connectors only. See [Approvals, permissions, and Full access](https://bearly.ai/docs/manual/capabilities/permissions.md).
@@ -180,7 +180,7 @@ Bearly has no passwords. On the sign-in screen, enter your **Email** and select 
 | Voice calls | Yes, not in Firefox | Where the browser supports it | Yes | Yes | No |
 | Dictation | Yes | Yes | Yes | Yes | No |
 | Meeting recording with the microphone | Yes | Yes | Yes | Yes | No |
-| Online meeting with computer audio | No | No | Windows and macOS 13 or later | No | No |
+| Meeting recording with the call's computer audio (**Call + microphone**) | No | No | Windows and macOS 13 or later | No | No |
 | Projects | Yes | Yes | Yes | Yes | No |
 | Project **Sync a folder** | No | No | Yes | No | No |
 | End-to-end encrypted chats | Yes | Yes | Yes | Yes | No |

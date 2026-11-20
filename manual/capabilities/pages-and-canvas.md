@@ -88,17 +88,16 @@ Publishing gives a Page its own link on bearly.sh. It happens in two stages: **p
 
 
 
-1. Open the Page and select **Share file** — the popover reads "Share this file" ("Give your file a Page of its own, with artwork and a link preview.").
-2. Select **Prepare share** — a progress screen shows "Writing the Page", "Reading the source", "Content ready", "Saving the artwork", and "Saving the Page".
-3. Wait for it to finish — the prepared Page opens in the side panel, marked **Ready to share**.
-4. Select **Publish** in the side panel header — the popover reads **Ready to share** ("Publish this Page to a link people can open.") and previews the link card: artwork, title, description, and bearly.sh.
-5. Choose the **Audience** — **Anyone with the link** or **People and teams**. Only the audiences your organization allows are listed.
-6. Select **Publish** — the popover changes to **Share** ("This Page is available at a stable link."). Use **Copy link**, or **Share…** for your device's share sheet where available.
-7. For a **People and teams** link, select **Manage viewers** to search teammates by name or email (type at least 2 characters) and pick teams.
+1. Open the Page and select **Share file** — Bearly starts preparing right away, and a progress screen shows "Writing the Page", "Reading the source", "Content ready", "Saving the artwork", and "Saving the Page".
+2. Wait for it to finish — the prepared Page opens in the side panel, marked **Ready to share**.
+3. Select **Publish** in the side panel header — the popover reads **Ready to share** ("Publish this Page to a link people can open.") and previews the link card: artwork, title, description, and bearly.sh.
+4. Choose the **Audience** — **Anyone with the link** or **People and teams**. Only the audiences your organization allows are listed.
+5. Select **Publish and copy link** — the Page goes live, its link is copied, and the popover changes to **Share** ("This Page is available at a stable link."). If publishing fails, nothing is copied. **Copy link** copies it again, and **Share…** opens your device's share sheet where available.
+6. For a **People and teams** link, select **Manage viewers** to search teammates by name or email (type at least 2 characters) and pick teams.
 
 
 
-To share the whole conversation instead of one file, select **Share** in the top-right corner of the chat. The popover reads "Share conversation" ("Turn the substance of this conversation into a Page, with artwork and a link preview.") with **Prepare share**. Your full conversation isn't shared: Bearly writes a Page with the substance itself, such as the answer, plan, findings, or the finished version of a creative piece, and you review it before publishing. If you close the prepared Page, select the **Share** icon again: **Review and publish** reopens it, and **Create another** prepares a fresh version.
+To share the whole conversation instead of one file, select **Share** in the top-right corner of the chat; preparation starts right away. Your full conversation isn't shared: Bearly writes a Page with the substance itself, such as the answer, plan, findings, or the finished version of a creative piece, and you review it before publishing. If you close the prepared Page, select the **Share** icon again: **Review and publish** reopens it, and **Make a new one** prepares a fresh version.
 
 **While it prepares:** **Stop building** cancels ("Building stopped. Nothing was published."). Closing the screen with its **×** returns you to the chat without cancelling. If the artwork can't be made, the popover says "The image model could not make artwork. Review the simple preview before publishing."
 
@@ -192,7 +191,7 @@ You get a polished document and a published, printable Page with the same text.
    Turn the final Canvas into a styled, printable one-page Page with a clear heading hierarchy and a checklist for the first week.
    ```
 
-4. Open the Page and select **Share file** → **Prepare share**. When the prepared Page opens, select **Publish**, choose the **Audience**, and select **Publish**.
+4. Open the Page and select **Share file**. When the prepared Page opens, select **Publish**, choose the **Audience**, and select **Publish and copy link**.
 
 
 
@@ -242,13 +241,13 @@ You get a clean Page with just the findings, and a link that lets readers ask th
    /share Lead with the recommendation, then the three reasons, then the sources.
    ```
 
-3. When the prepared Page opens, check it, then select **Publish**, set **Audience** to **Anyone with the link**, select **Publish**, and use **Copy link**.
+3. When the prepared Page opens, check it, then select **Publish**, set **Audience** to **Anyone with the link**, and select **Publish and copy link**.
 
 
 
 **Swap in:** **People and teams** for internal findings; a single file's **Share file** instead of the whole chat.
 
-**If it stalls:** if the Page isn't what you wanted, select **Share** again and choose **Create another**, or add direction in a new `/share` message.
+**If it stalls:** if the Page isn't what you wanted, select **Share** again and choose **Make a new one**, or add direction in a new `/share` message.
 
 ## Related
 

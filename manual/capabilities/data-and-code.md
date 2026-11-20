@@ -195,7 +195,7 @@ You get a summary table, a chart, and an interactive dashboard Page at a link yo
    Build an interactive dashboard Page from that summary with filters for region and quarter, the grouped bar chart, and the three biggest changes called out at the top.
    ```
 
-4. Open the Page and select **Share file**, then **Prepare share** — when it's ready, the prepared Page opens marked **Ready to share**. Select **Publish** in its header, choose the **Audience**, and select **Publish**.
+4. Open the Page and select **Share file** — when it's ready, the prepared Page opens marked **Ready to share**. Select **Publish** in its header, choose the **Audience**, and select **Publish and copy link**.
 
 
 

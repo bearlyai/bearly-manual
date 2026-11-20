@@ -244,7 +244,7 @@ Your spreadsheet becomes a chart, an interactive dashboard Page with filters, an
 
    — A live Page preview appears. **Open** it and try the filters.
 
-4. In the open Page, select **Share file** → **Prepare share**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header, choose **Anyone with the link** under **Audience**, select **Publish** again, then **Copy link**. — The Page is live at a bearly.sh link.
+4. In the open Page, select **Share file**. When it's ready, the prepared Page opens on its own, marked "Ready to share"; select **Publish** in its header, choose **Anyone with the link** under **Audience**, then select **Publish and copy link**. — The Page is live at a bearly.sh link, and the link is copied.
 
 
 
@@ -252,7 +252,7 @@ Your spreadsheet becomes a chart, an interactive dashboard Page with filters, an
 - **People and teams for Anyone with the link:** choose **People and teams** in step 4 and publish, then add people or teams with **Manage viewers**, which appears once the Page is published to that audience. Viewers sign in to open it.
 - **A KPI with a goal:** ask "Show this quarter's revenue as a KPI chart against a 2 million dollar goal." A KPI chart shows one value with progress toward the goal.
 - **A folder for an attachment** (desktop app): select **Work locally** → **Choose folder…**, pick the folder, and ask Bearly to attach the spreadsheet from there (up to 50 MB). Step 1 then works on that copy.
-- **Next quarter's numbers:** attach the new file in the same chat and ask "Update the dashboard with this file." The Page saves a new version. Open it and select **Publish** → **Publish update**, and the link stays the same. If the popover asks you to use Share first, select **Share file** → **Prepare share** again.
+- **Next quarter's numbers:** attach the new file in the same chat and ask "Update the dashboard with this file." The Page saves a new version. Open it and select **Publish** → **Publish update**, and the link stays the same. If the popover asks you to use Share first, select **Share file** again.
 
 **If it stalls:** A Page you share must be under 9 MB. If your organization allows neither audience, the popover says "Your team policy does not allow a publishing audience." Charts read up to 10 columns, so ask for a narrower summary if the table is wider.
 

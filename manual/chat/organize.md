@@ -252,9 +252,8 @@ Sharing doesn't hand out your conversation. Bearly turns the substance of the ch
 
 
 
-1. Select **Share** in the top-right corner of the chat — the **Share conversation** panel opens.
-2. Select **Prepare share** — Bearly writes the Page. The panel notes "Your full conversation isn't shared. You review the Page before publishing."
-3. When it's ready, the Page opens on its own, marked "Ready to share" — check it, then select **Publish** in its header to choose who can open it. If you closed it, select **Share** again and choose **Review and publish**, or **Create another** for a different take.
+1. Select **Share** in the top-right corner of the chat — Bearly starts writing the Page right away. The screen notes "Only this Page is shared, not your chat. Nothing goes live until you publish."
+2. When it's ready, the Page opens on its own, marked "Ready to share" — check it, then select **Publish** in its header, choose who can open it, and select **Publish and copy link**. If you closed it, select **Share** again and choose **Review and publish**, or **Make a new one** for a different take.
 
 
 

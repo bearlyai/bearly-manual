@@ -22,6 +22,7 @@ From top to bottom:
 | Area | What it does | More |
 |---|---|---|
 | Top row | **Hide sidebar**, then a magnifier (**Search chats**, which opens **Search chats and files**, with **Chats** and **Files** tabs) and **New chat**, which opens the New Chat launcher outside any project. On a project's page and on **Routines**, **Prompt templates**, and **Meetings**, <kbd>⌘</kbd> <kbd>F</kbd> (<kbd>Ctrl</kbd> <kbd>F</kbd> on Windows and Linux) opens search too | [Organize chats](https://bearly.ai/docs/manual/chat/organize.md) |
+| **Meeting mode** | Appears below the top row while meeting mode is on, with chat and project names shown as blank bars. Select it to turn meeting mode off | [Meeting mode](https://bearly.ai/docs/manual/capabilities/meetings.md#hide-chat-names-on-a-call-meeting-mode) |
 | **Encrypted chats locked** | Appears when this device can't open your end-to-end encrypted chats yet. **Approve** starts device approval | [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md) |
 | **Chat** | Opens the New Chat launcher, as **New chat** in the top row does | [The New Chat launcher](#the-new-chat-launcher) |
 | **Prompt templates** | Saved prompts with fill-in fields that run as a form in any chat | [Make a prompt template](https://bearly.ai/docs/manual/chat/compose.md#make-a-prompt-template) |
@@ -45,6 +46,7 @@ From top to bottom:
 Select the bottom row of the sidebar. The row shows your email, your plan, and how much of this month's plan you've used, plus "+boost" while a Credit Boost is active. The percentage turns red from 90%.
 
 - **Settings** opens the Settings window where you left it (on a phone, at the list of panes).
+- **Turn on meeting mode** hides your chat and project names while you're on a call or sharing your screen, and becomes **Turn off meeting mode** while it's on. See [Meeting mode](https://bearly.ai/docs/manual/capabilities/meetings.md#hide-chat-names-on-a-call-meeting-mode).
 - **Billing** opens **Settings** → **Billing**.
 - **Developers** opens **Settings** → **API keys**. It appears when API keys or personal remote modules are allowed for your account.
 - **Organizations** opens your organizations' pages. Your organizations are also listed in Settings, under **Organizations**.
@@ -132,8 +134,8 @@ While you edit an earlier message, the strip shows **Editing message** with **Ca
 
 Press <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd> on Windows and Linux) or select the chat's title → **All commands**. It shows the chat's title, a **Search...** box, and two groups:
 
-- **Actions:** **New**, **Delete & New**, **Delete**, **Rename** (opens the chat's title for editing), **Refresh Chat**, **Generate New Name**, **Download as Markdown**, **New Routine** (Pro and higher), and **Show all...**, which adds **Show Release Notes**.
-- **Switch Chats:** every chat, including project chats.
+- **Actions:** **New**, **Delete & New**, **Delete**, **Rename** (opens the chat's title for editing), **Refresh Chat**, **Generate New Name**, **Download as Markdown**, **New Routine** (Pro and higher), **Turn on meeting mode** (or **Turn off meeting mode**), and **Show all...**, which adds **Show Release Notes**.
+- **Switch Chats:** every chat, including project chats. In meeting mode, chats appear only once you type a search.
 
 See [Keyboard shortcuts](https://bearly.ai/docs/manual/chat/shortcuts.md).
 
@@ -182,7 +184,7 @@ Every page keeps the same sidebar.
 
 - **Prompt templates.** Your templates, with **New template**. With none yet, the page opens on **New template**: describe a prompt you reuse and select **Draft template**, pick one of the **Examples**, or **start from scratch**. Each template has its own page with **Basic information**, **Template design**, and **Field configuration**; changes save automatically. See [Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md#make-a-prompt-template).
 - **Routines.** Your routines, with **New routine**. With none yet, the page opens on **New routine**. Each routine has its own page with its next run, a run timeline, **Run now**, **Pause**, and past runs. See [Routines](https://bearly.ai/docs/manual/capabilities/routines.md).
-- **Meetings and recordings.** A recorder with **Online meeting** (desktop app) and **In person or voice note**, **Start recording**, and your recordings with their transcripts. See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
+- **Meetings and recordings.** A recorder with **Start recording** (in the desktop app, a menu next to it picks **Call + microphone** or **Microphone only**), and your recordings, each with **Your notes**, its **Summary**, **Ask about this meeting**, and the transcript. See [Meetings](https://bearly.ai/docs/manual/capabilities/meetings.md).
 - **A project's page.** Select a project in the sidebar. Its tabs are **Chats** (with **Ask in this project**), **Files**, **Sharing**, and **Settings**. See [Projects](https://bearly.ai/docs/manual/projects.md).
 - **Organizations.** The account menu → **Organizations**, or an organization's row in Settings. Everyone sees **Overview**, **Members**, and **Groups**. Admins also see **Policies**, **Projects**, and **Activity**, plus **Billing** and **Usage** where they apply. The settings list stays on the left, with a back arrow to your chats. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
@@ -218,7 +220,7 @@ There's no Android app; on Android, use Bearly in your phone's browser. Bearly r
 | Connectors that need a service sign-in | Work in a normal phone browser, but not in an Android app's built-in browser | Show **Web browser required**; set them up in a browser |
 | Desktop-only features | A prompt to use Bearly on a computer | Same |
 | Routines | Create and manage; they run in the desktop app ("Runs in the desktop app. **Get it**") | Same |
-| Meetings | **In person or voice note** only | Same |
+| Meetings | Records the microphone only | Same |
 | Voice calls | Where the browser supports them; the screen can lock mid-call | The screen stays on during a call; keep the app in front |
 | PDFs | Preview in the app | Tapping a PDF opens it outside the app |
 | Downloads | A normal browser download | The iOS share sheet |
@@ -243,5 +245,5 @@ The iOS app has no share extension, widgets, or push notifications. Most Bearly 
 - [Next: Write, attach, and send](https://bearly.ai/docs/manual/chat/compose.md)
 - [Related: Get Bearly on every device](https://bearly.ai/docs/manual/get-bearly.md)
 - [Related: Organize, find, share, and export chats](https://bearly.ai/docs/manual/chat/organize.md)
+- [Related: Record and use meetings](https://bearly.ai/docs/manual/capabilities/meetings.md)
 - [Related: Privacy and security controls](https://bearly.ai/docs/manual/privacy-and-security.md)
-- [Related: Automate with Routines](https://bearly.ai/docs/manual/capabilities/routines.md)
