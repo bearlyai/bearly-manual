@@ -191,7 +191,7 @@ Two to five models review a clause against your contract and public sources, Bea
    /document Redline clause 7 in contract.docx with tracked changes that make the edits most experts agreed on. Add a comment on each change explaining why. Keep everything else unchanged.
    ```
 
-   — A **Run Python** step edits the document and saves a new Word file in the chat. The preview shows it as a PDF; download the **Original** to see the tracked changes in Word.
+   — A **Run Python** step edits the document and saves a new Word file in the chat. The preview shows it as a PDF; select **Download** → **Word (.docx)** to see the tracked changes in Word.
 
 3. Send it:
 

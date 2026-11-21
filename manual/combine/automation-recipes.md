@@ -147,7 +147,7 @@ Bearly reads every invoice in a folder on your computer, builds an Excel workboo
    /document Build an Excel workbook from these invoices: one row per invoice with vendor, invoice number, invoice date, due date, subtotal, tax, and total; a second sheet with totals by vendor using formulas; and flag any invoice that's past due as of today.
    ```
 
-   — A **Run Python** step builds the workbook and saves it as a file in the chat. The preview shows it as a PDF; download the **Original** to open it in Excel.
+   — A **Run Python** step builds the workbook and saves it as a file in the chat. The preview shows its sheets; select **Download** → **Excel (.xlsx)** to open it in Excel.
 
 4. Save it to the folder:
 

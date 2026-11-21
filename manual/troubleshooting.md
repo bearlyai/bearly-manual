@@ -37,6 +37,7 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 
 | You see | Why | What to do |
 |---|---|---|
+| **Tuning notes** in chat activity | Bearly is sending its team a note about a tool problem or a missing capability | Keep chatting; no action is needed |
 | "An error occurred. Please wait and try again." with **Get help** | The answer failed | Wait a moment, then select **Rerun with same model** under your message, or pick another model from the **Rerun** menu. **Get help** opens a support dialog |
 | "Unable to load message." | That message couldn't be shown | Open the command menu (<kbd>⌘</kbd> <kbd>K</kbd> or <kbd>Ctrl</kbd> <kbd>K</kbd>) and choose **Refresh Chat** |
 | "Queue paused — the last message failed." | Bearly stops the queue instead of sending into an error | Deal with the failed message, then select **Send now** on the next waiting one. The queue also restarts after a later answer finishes cleanly |

@@ -253,7 +253,7 @@ You get a clean workbook whose totals are live formulas, not pasted numbers.
    /document Clean the attached transactions.csv: fix dates, split the category column, and remove duplicates. Build an Excel workbook with a Data sheet and a Summary sheet whose monthly totals and growth rates are formulas. Format it like a financial model.
    ```
 
-2. Open the workbook and select **Download** → **Original** — the preview is a PDF, so download the original to check the formulas.
+2. Open the workbook and select **Download** → **Excel (.xlsx)** — the preview shows the cells, so open the workbook in Excel to check the formulas.
 3. Ask for changes by sheet and cell — Bearly writes a new file each time.
 
 

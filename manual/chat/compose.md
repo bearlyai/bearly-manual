@@ -175,7 +175,7 @@ You don't have to wait for an answer to finish. While Bearly works, type your ne
 - **Send** adds it to the answer that's running. Bearly reads it as soon as any tool it's running finishes, then carries on with your message in mind. Everything you send this way goes into the same answer, so three quick messages get one answer, not three. Use it to correct course or add a detail mid-answer.
 - **Queue** holds it under **Up next** above the composer. Queued messages go out one at a time, in order, each after the answer before it finishes, and each gets its own answer. Use it for the next step, such as "now make a table".
 
-Some chats can't take a new message while an answer runs: end-to-end encrypted chats, a routine's chat, chats whose history Bearly has compacted, and chats with very large files. There you see only **Stop** and **Send**, and **Send** waits for the answer to finish (its tooltip reads "Send after this reply").
+Some chats can't take a new message while an answer runs: end-to-end encrypted chats and a routine's chat. There you see only **Stop** and **Send**, and **Send** waits for the answer to finish (its tooltip reads "Send after this reply").
 
 **Use it when:** an answer needs a correction or a missing detail now, or you want to stack a chain such as "now make a table", then "now email it to me".
 **You need:** Nothing extra. Every plan, on every app platform.

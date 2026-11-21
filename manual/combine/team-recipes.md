@@ -174,7 +174,7 @@ As an organization admin, you give one group a policy that allows only chat mode
 
 **If it stalls:**
 - An empty allow-list can't be saved: "Add at least one model, provider, or model family to the allow-list, or switch model access off."
-- The allow-list covers chat models only; image, video, voice, transcription, and text-to-speech models aren't governed by it.
+- An allow-list that names only chat models leaves image, video, text-to-speech, and transcription models available. It limits one of those tools only when it names one of that tool's models. A deny-list applies to all of them.
 - Policies apply to members whose email is on your managed domain. If a member is in two groups with the same top **Priority**, their policy can't be resolved; give one group a higher priority.
 
 ## Find an old decision and file the chats where they belong

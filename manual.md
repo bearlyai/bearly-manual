@@ -13,7 +13,7 @@ HTML: [https://bearly.ai/docs/manual/](https://bearly.ai/docs/manual/)
 
 This manual explains how to do anything in Bearly, from your first chat to workflows that chain research, data, media, agents, and automation. Each capability says when to use it, what it needs, what it produces, and what it combines with, and each recipe says why its steps work together, so you can adapt it to your own work.
 
-New to Bearly? Read [What Bearly is](https://bearly.ai/docs/manual/what-is-bearly.md), then [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md).
+New to Bearly? Read [What Bearly is](https://bearly.ai/docs/manual/what-is-bearly.md), then [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md). To learn by doing, take [Getting started with Bearly](https://bearly.ai/docs/courses/getting-started.md), a short course with practice chats, or browse all [Courses](https://bearly.ai/docs/courses.md). [How AI works](https://bearly.ai/docs/learn/how-ai-works.md) explains when to check an answer.
 
 ## I want to…
 
@@ -129,6 +129,6 @@ The manual is written from the current app and updated as features ship. The sho
 - [Documentation index](https://bearly.ai/docs.md): Browse every Bearly guide.
 - [Next: What Bearly is](https://bearly.ai/docs/manual/what-is-bearly.md)
 - [Related: Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md)
-- [Related: Research the web, papers, people, products, and places](https://bearly.ai/docs/manual/capabilities/research.md)
-- [Related: Learn from YouTube, online video, and posts on X](https://bearly.ai/docs/manual/capabilities/videos-and-posts.md)
-- [Related: Work with files and documents](https://bearly.ai/docs/manual/capabilities/documents.md)
+- [Related: Getting started with Bearly](https://bearly.ai/docs/courses/getting-started.md)
+- [Related: Courses](https://bearly.ai/docs/courses.md)
+- [Related: How AI works](https://bearly.ai/docs/learn/how-ai-works.md)

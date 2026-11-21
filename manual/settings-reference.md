@@ -60,7 +60,7 @@ There's no notifications pane and no setting for the app's display language. Rep
 | --- | --- |
 | **Version** | Shows the build you're running and when it was built |
 | **Lock all data** | "Lock all password-protected notebooks. You'll need to re-enter passwords." **Lock**, then **Lock All**, relocks every password-protected project on this device. |
-| **Change email** | "Move your account to a different email. We confirm both addresses, then finish the change." |
+| **Change email** | "Move your account to a different email. We confirm both addresses, then finish the change." **Change** opens the request. See [Change your account email](https://bearly.ai/docs/manual/privacy-and-security.md#change-your-account-email). |
 | **Delete account** | "Review what is deleted and retained, then verify this request by email." **Delete** opens the deletion steps. |
 | **Log out** | "Sign out of your Bearly account." Bearly syncs your recent changes, then clears its data from this device. |
 

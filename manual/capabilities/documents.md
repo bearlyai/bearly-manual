@@ -57,7 +57,8 @@ Every file appears as a card in the chat. Select the card, or **Open** on it, to
 | File type | In the chat | In the side panel | What Bearly does with it |
 | --- | --- | --- | --- |
 | PDF | PDF preview | Full PDF viewer with page controls | Reads, searches, and cites it by page |
-| Word, Excel, PowerPoint, OpenDocument, `.pages`, `.numbers`, `.key`, `.epub` | Converted to PDF for the preview | PDF view; **Download** offers **PDF** or **Original** | Reads and searches the text; the Document editor edits Word, Excel, and PowerPoint files |
+| Excel workbooks (`.xlsx`, `.xlsm`) | Read in the app, not converted | A grid of the cells with a tab for each visible sheet; **Download** offers **Excel (.xlsx)** first, then **PDF** | Reads and searches the text; the Document editor edits the workbook |
+| Word, PowerPoint, older Excel (`.xls`), OpenDocument, `.pages`, `.numbers`, `.key`, `.epub` | Converted to PDF for the preview | PDF view; **Download** offers the original first, named by type, such as **Word (.docx)** or **PowerPoint (.pptx)** (other types read **Original** with the extension, such as **Original (.odt)**), then **PDF** | Reads and searches the text; the Document editor edits Word and PowerPoint files |
 | CSV, TSV, and pipe-separated (`.csv`, `.tsv`, `.tab`, `.psv`) | Spreadsheet grid showing rows × columns, with **Copy table** and **Open** | Editable grid | Searches it as text; Run Python can analyze it; Charts can draw from it |
 | Markdown | Rendered, with **Copy** and **Open** | Rendered | Reads and searches it |
 | Images | Image, or a stack of images with a count | Image viewer with arrows, thumbnails, zoom, copy, and download | Looks at it with View Media; Touch Up can edit it. Reads and searches an SVG's source as text |
@@ -114,7 +115,7 @@ Ask Bearly to delete a file it made in the chat and it asks first: **Delete "fil
 
 ## Preview, edit a table, and download
 
-Open any file in the side panel to get its controls: a version dropdown for files Bearly has edited, **Copy** where the content can be copied, **Share file** (when sharing is allowed and you can edit the chat), and **Download**. PDFs add page arrows and **Zoom in** and **Zoom out**. On a phone, **Copy**, **Share file**, and the versions are under **More** (**…**). Each file opens in its own tab; close it with the tab's close button, or close the panel with **Close panel** or <kbd>Esc</kbd>. For documents previewed as PDF, **Download** offers **PDF** or **Original**; choose **Original** for the editable file.
+Open any file in the side panel to get its controls: a version dropdown for files Bearly has edited, **Copy** where the content can be copied, **Share file** (when sharing is allowed and you can edit the chat), and **Download**. PDFs add page arrows and **Zoom in** and **Zoom out**. On a phone, **Copy**, **Share file**, and the versions are under **More** (**…**). Each file opens in its own tab; close it with the tab's close button, or close the panel with **Close panel** or <kbd>Esc</kbd>. For documents previewed as PDF, **Download** lists the original first, such as **Word (.docx)**, **Excel (.xlsx)**, **PowerPoint (.pptx)**, or **Original (.odt)**, then **PDF**; choose the first for the editable file.
 
 CSV files are editable in the side panel:
 
@@ -230,7 +231,7 @@ What it can do, by format:
    ```
 
 4. Watch the line under the answer while Python runs — select it to open **Steps**, then select the **Run Python** step to see **Input** and **Result**, which includes any error message.
-5. Open the new file and select **Download** — for Word, Excel, and PowerPoint files the preview is a PDF, so choose **Original** to get the editable file.
+5. Open the new file and select **Download** — choose the first option, such as **Word (.docx)** or **Excel (.xlsx)**, to get the editable file.
 
 
 
@@ -329,7 +330,7 @@ You get a cited comparison table and a Word file with your proposed changes as t
    /document Using the table above, edit @vendor-msa.docx so its liability cap and termination notice match our other agreements. Return a new DOCX with tracked changes and a comment explaining each change.
    ```
 
-3. Download **Original** and open it in your word processor — review each tracked change before you send it.
+3. Select **Download** → **Word (.docx)** and open it in your word processor — review each tracked change before you send it.
 
 
 
@@ -384,7 +385,7 @@ You get a corrected report as both an editable Word file and a PDF.
    /document Lay out this text as a two-page report with a title, headings, and page numbers. Return a DOCX and a PDF.
    ```
 
-3. Download both files — choose **Original** for the DOCX.
+3. Download both files — choose **Word (.docx)** for the DOCX.
 
 
 

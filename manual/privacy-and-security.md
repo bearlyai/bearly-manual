@@ -42,6 +42,7 @@ What you type, attach, or let a tool read still goes to the model handling your 
 | **Always** answers | **Settings** → **Permissions** | Set a kind of action back to **Ask**, on every device | Allow again |
 | **Devices** | **Settings** → **Devices** | Signs out other devices and removes extension or API keys | Sign in again |
 | **Log out** | **Settings** → **Profile**, or the account menu | Syncs, then clears Bearly's data from this device | Sign in |
+| **Change email** | **Settings** → **Profile** | Asks Bearly support to move your account to a new email after you confirm both addresses | **Cancel request** until support starts the change |
 | **Delete account** | **Settings** → **Profile** | Schedules permanent deletion after email verification | **Cancel scheduled deletion** before the final reminder |
 | Text messages | **Settings** → **Phone and SMS** | Stops texts or deletes your number | Set it up again |
 | Browser data | **Settings** → **Browser** (desktop app) | Resets tabs and approvals, deletes cookies and site data, blocks trackers | — |
@@ -202,6 +203,30 @@ Routines have their own Full access setting in the routine editor. On a managed 
 ## Log out
 
 **Settings** → **Profile** → **Log out**, or **Log out** in the account menu: "Bearly syncs your recent changes, then clears its data from this device. You'll need to sign in again." If some changes haven't synced, Bearly asks before discarding them. In most chats, a message you just sent counts too, until the chat has saved it. Logging out also ends the session on Bearly's side.
+
+## Change your account email
+
+Use this only when you're losing access to your current email, for example when you leave a job. Bearly support finishes the change, usually within one business day.
+
+**You need:** to make someone else a team admin, or close the team, if you administer one; to cancel an App Store subscription in your iPhone's Settings; and to cancel any pending account deletion. The dialog says which applies before you start. The new email can't already have a Bearly account or belong to an organization that manages its Bearly accounts.
+
+
+
+1. Open **Settings** → **Profile** and, beside **Change email**, select **Change**.
+2. Enter the **New email** and read what happens when the change is done, then check **I understand this can't be undone.** and select **Send codes**.
+3. Enter the six-digit code sent to each address, then select **Submit request**.
+4. Don't sign in with the new email until Bearly emails both addresses that the change is done.
+
+
+
+When the change is done:
+
+- Every device signs out.
+- A paid plan is canceled right away, with no refund for the rest of the billing period. Subscribe again from the new email to keep paid features.
+- Usage history, credits, and receipts stay with the old email.
+- You leave every team you're in and lose access to projects other people share with you. Projects you shared with other people stay with the old email; the dialog lists them. To keep one, ask a collaborator to share it with your new email afterward.
+
+To stop a request, open **Change email** again and select **Cancel request**. Once support has started the change, contact support instead.
 
 ## Delete your account
 

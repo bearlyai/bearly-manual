@@ -44,7 +44,7 @@ Favorites and recent models are saved to your account, so they follow you to eve
 
 ## Bearly Fast, Bearly Pro, and Bearly Ultra
 
-**Bearly Fast**, **Bearly Pro**, and **Bearly Ultra** are Bearly's own picks, each described in the picker as "Always kept up to date." Choose one when you'd rather not track which underlying model is best this month. Bearly Pro and Bearly Ultra are featured for everyone; Bearly Fast is featured on the Free plan.
+**Bearly Fast**, **Bearly Pro**, and **Bearly Ultra** are Bearly's own picks, each described in the picker as "Always kept up to date." Choose one when you'd rather not track which underlying model is best this month. All three are featured on every plan.
 
 **Use it when:** you want a strong choice without comparing models yourself. The picker describes Bearly Fast as a "Fast, well-priced frontier model", Bearly Pro as a "Smart daily-driver frontier model", and Bearly Ultra as a "Frontier model for the most demanding work."
 

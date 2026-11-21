@@ -80,7 +80,7 @@ HTML: [https://bearly.ai/docs/manual/](https://bearly.ai/docs/manual/)
 
 This manual explains how to do anything in Bearly, from your first chat to workflows that chain research, data, media, agents, and automation. Each capability says when to use it, what it needs, what it produces, and what it combines with, and each recipe says why its steps work together, so you can adapt it to your own work.
 
-New to Bearly? Read [What Bearly is](https://bearly.ai/docs/manual/what-is-bearly.md), then [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md).
+New to Bearly? Read [What Bearly is](https://bearly.ai/docs/manual/what-is-bearly.md), then [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md). To learn by doing, take [Getting started with Bearly](https://bearly.ai/docs/courses/getting-started.md), a short course with practice chats, or browse all [Courses](https://bearly.ai/docs/courses.md). [How AI works](https://bearly.ai/docs/learn/how-ai-works.md) explains when to check an answer.
 
 ## I want to…
 
@@ -1042,7 +1042,7 @@ You don't have to wait for an answer to finish. While Bearly works, type your ne
 - **Send** adds it to the answer that's running. Bearly reads it as soon as any tool it's running finishes, then carries on with your message in mind. Everything you send this way goes into the same answer, so three quick messages get one answer, not three. Use it to correct course or add a detail mid-answer.
 - **Queue** holds it under **Up next** above the composer. Queued messages go out one at a time, in order, each after the answer before it finishes, and each gets its own answer. Use it for the next step, such as "now make a table".
 
-Some chats can't take a new message while an answer runs: end-to-end encrypted chats, a routine's chat, chats whose history Bearly has compacted, and chats with very large files. There you see only **Stop** and **Send**, and **Send** waits for the answer to finish (its tooltip reads "Send after this reply").
+Some chats can't take a new message while an answer runs: end-to-end encrypted chats and a routine's chat. There you see only **Stop** and **Send**, and **Send** waits for the answer to finish (its tooltip reads "Send after this reply").
 
 **Use it when:** an answer needs a correction or a missing detail now, or you want to stack a chain such as "now make a table", then "now email it to me".
 **You need:** Nothing extra. Every plan, on every app platform.
@@ -1192,7 +1192,7 @@ Favorites and recent models are saved to your account, so they follow you to eve
 
 ## Bearly Fast, Bearly Pro, and Bearly Ultra
 
-**Bearly Fast**, **Bearly Pro**, and **Bearly Ultra** are Bearly's own picks, each described in the picker as "Always kept up to date." Choose one when you'd rather not track which underlying model is best this month. Bearly Pro and Bearly Ultra are featured for everyone; Bearly Fast is featured on the Free plan.
+**Bearly Fast**, **Bearly Pro**, and **Bearly Ultra** are Bearly's own picks, each described in the picker as "Always kept up to date." Choose one when you'd rather not track which underlying model is best this month. All three are featured on every plan.
 
 **Use it when:** you want a strong choice without comparing models yourself. The picker describes Bearly Fast as a "Fast, well-priced frontier model", Bearly Pro as a "Smart daily-driver frontier model", and Bearly Ultra as a "Frontier model for the most demanding work."
 
@@ -1739,6 +1739,7 @@ Press <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd>) or select the c
 | **Generate New Name** | Retitle the chat from the conversation |
 | **Download as Markdown** | Export the chat as a Markdown file |
 | **New Routine** | Open Routines to schedule a prompt. Pro and higher, when your organization allows Routines. |
+| **Turn on meeting mode** | Hide chat and project names. See [Meeting mode](https://bearly.ai/docs/manual/capabilities/meetings.md#hide-chat-names-on-a-call-meeting-mode) |
 | **Show all...** → **Show Release Notes** | Open What's New |
 
 The chat also refreshes itself when you come back to the window.
@@ -2675,7 +2676,7 @@ Best Pick reads expert reviews, store listings, and owner reviews, then recommen
 
 
 
-**What you get:** a card with the product photos, price, **View at** the store, when the price was checked (the store's checkout price applies), a short evidence summary from experts and owners, a price-versus-quality chart of everything it weighed, cheaper and pricier alternatives, **Why this one**, **What owners say**, and its sources. **Check current price** re-checks a stale price.
+**What you get:** a card with the product photos, price, **View at** the store, when the price was checked (the store's checkout price applies), a short evidence summary from experts and owners, a price-versus-quality chart of everything it weighed, cheaper and pricier alternatives, **Why this one**, **What owners say**, **How Bearly chose**, and its sources. **How Bearly chose** says how many products and expert reviews Bearly weighed, what each publication said about the pick, and why up to four alternatives lost. When owners rated the pick but Bearly couldn't read their reviews, **What owners say** reads "Couldn't read owner reviews." and links the store where most owners rated it. **Check current price** re-checks a stale price.
 
 **Limits:** a pick stops after 90 seconds. The country comes from what you say, then the chat's last pick, then your device's time zone, then the United States. Prices stay in that country's currency and are never converted; thin store data shows **Limited store coverage in** and the country. Best Pick doesn't pick medications, supplements, infant car seats, or firearms, and doesn't cover services, travel, cars, homes, or used items. It recommends; it doesn't buy.
 
@@ -3643,7 +3644,8 @@ Every file appears as a card in the chat. Select the card, or **Open** on it, to
 | File type | In the chat | In the side panel | What Bearly does with it |
 | --- | --- | --- | --- |
 | PDF | PDF preview | Full PDF viewer with page controls | Reads, searches, and cites it by page |
-| Word, Excel, PowerPoint, OpenDocument, `.pages`, `.numbers`, `.key`, `.epub` | Converted to PDF for the preview | PDF view; **Download** offers **PDF** or **Original** | Reads and searches the text; the Document editor edits Word, Excel, and PowerPoint files |
+| Excel workbooks (`.xlsx`, `.xlsm`) | Read in the app, not converted | A grid of the cells with a tab for each visible sheet; **Download** offers **Excel (.xlsx)** first, then **PDF** | Reads and searches the text; the Document editor edits the workbook |
+| Word, PowerPoint, older Excel (`.xls`), OpenDocument, `.pages`, `.numbers`, `.key`, `.epub` | Converted to PDF for the preview | PDF view; **Download** offers the original first, named by type, such as **Word (.docx)** or **PowerPoint (.pptx)** (other types read **Original** with the extension, such as **Original (.odt)**), then **PDF** | Reads and searches the text; the Document editor edits Word and PowerPoint files |
 | CSV, TSV, and pipe-separated (`.csv`, `.tsv`, `.tab`, `.psv`) | Spreadsheet grid showing rows × columns, with **Copy table** and **Open** | Editable grid | Searches it as text; Run Python can analyze it; Charts can draw from it |
 | Markdown | Rendered, with **Copy** and **Open** | Rendered | Reads and searches it |
 | Images | Image, or a stack of images with a count | Image viewer with arrows, thumbnails, zoom, copy, and download | Looks at it with View Media; Touch Up can edit it. Reads and searches an SVG's source as text |
@@ -3700,7 +3702,7 @@ Ask Bearly to delete a file it made in the chat and it asks first: **Delete "fil
 
 ## Preview, edit a table, and download
 
-Open any file in the side panel to get its controls: a version dropdown for files Bearly has edited, **Copy** where the content can be copied, **Share file** (when sharing is allowed and you can edit the chat), and **Download**. PDFs add page arrows and **Zoom in** and **Zoom out**. On a phone, **Copy**, **Share file**, and the versions are under **More** (**…**). Each file opens in its own tab; close it with the tab's close button, or close the panel with **Close panel** or <kbd>Esc</kbd>. For documents previewed as PDF, **Download** offers **PDF** or **Original**; choose **Original** for the editable file.
+Open any file in the side panel to get its controls: a version dropdown for files Bearly has edited, **Copy** where the content can be copied, **Share file** (when sharing is allowed and you can edit the chat), and **Download**. PDFs add page arrows and **Zoom in** and **Zoom out**. On a phone, **Copy**, **Share file**, and the versions are under **More** (**…**). Each file opens in its own tab; close it with the tab's close button, or close the panel with **Close panel** or <kbd>Esc</kbd>. For documents previewed as PDF, **Download** lists the original first, such as **Word (.docx)**, **Excel (.xlsx)**, **PowerPoint (.pptx)**, or **Original (.odt)**, then **PDF**; choose the first for the editable file.
 
 CSV files are editable in the side panel:
 
@@ -3816,7 +3818,7 @@ What it can do, by format:
    ```
 
 4. Watch the line under the answer while Python runs — select it to open **Steps**, then select the **Run Python** step to see **Input** and **Result**, which includes any error message.
-5. Open the new file and select **Download** — for Word, Excel, and PowerPoint files the preview is a PDF, so choose **Original** to get the editable file.
+5. Open the new file and select **Download** — choose the first option, such as **Word (.docx)** or **Excel (.xlsx)**, to get the editable file.
 
 
 
@@ -3915,7 +3917,7 @@ You get a cited comparison table and a Word file with your proposed changes as t
    /document Using the table above, edit @vendor-msa.docx so its liability cap and termination notice match our other agreements. Return a new DOCX with tracked changes and a comment explaining each change.
    ```
 
-3. Download **Original** and open it in your word processor — review each tracked change before you send it.
+3. Select **Download** → **Word (.docx)** and open it in your word processor — review each tracked change before you send it.
 
 
 
@@ -3970,7 +3972,7 @@ You get a corrected report as both an editable Word file and a PDF.
    /document Lay out this text as a two-page report with a title, headings, and page numbers. Return a DOCX and a PDF.
    ```
 
-3. Download both files — choose **Original** for the DOCX.
+3. Download both files — choose **Word (.docx)** for the DOCX.
 
 
 
@@ -4247,7 +4249,7 @@ You get a clean workbook whose totals are live formulas, not pasted numbers.
    /document Clean the attached transactions.csv: fix dates, split the category column, and remove duplicates. Build an Excel workbook with a Data sheet and a Summary sheet whose monthly totals and growth rates are formulas. Format it like a financial model.
    ```
 
-2. Open the workbook and select **Download** → **Original** — the preview is a PDF, so download the original to check the formulas.
+2. Open the workbook and select **Download** → **Excel (.xlsx)** — the preview shows the cells, so open the workbook in Excel to check the formulas.
 3. Ask for changes by sheet and cell — Bearly writes a new file each time.
 
 
@@ -5379,7 +5381,7 @@ Bearly Browser is a browser built into the desktop app. Chats work in their own 
 
 
 **What you get:** the answer in the chat, plus open tabs you can inspect. Bearly can open, read, screenshot, click, type, choose options, scroll, press keys, and save a download into the chat.
-**Limits:** up to eight tabs across your chats. In **Ask first**, these also ask first: **Confirm this Browser action** before a form submission or other consequential action, **Allow this visual Browser action?** for clicks on canvases and embedded frames, and **Save this website file to chat?** for downloads (one file up to 50 MiB, never opened or run). Passwords, payment details, file uploads, CAPTCHAs, and system permission prompts stay with you. Only you can decide on a certificate warning; neither an approval nor Full access can skip it. A page load Bearly started that takes more than 10 seconds is stopped.
+**Limits:** up to eight tabs across your chats. In **Ask first**, these also ask first: **Confirm this Browser action** before a form submission or other consequential action, **Allow this visual Browser action?** for clicks on canvases and embedded frames, and **Save this website file to chat?** for downloads (one file up to 50 MiB, never opened or run). Passwords, payment details, file uploads, CAPTCHAs, and system permission prompts stay with you. Only you can decide on a certificate warning; neither an approval nor Full access can skip it. A page load Bearly started that takes more than 10 seconds is stopped; if the page had begun to load, Bearly reads what had loaded.
 **Combines with:** [Routines](https://bearly.ai/docs/manual/capabilities/routines.md#browser-access) for scheduled site checks on exact sites; [Work locally](#work-locally) to fix a site you're building.
 
 To point at part of a page, select **Capture and annotate page**, click an element or drag over a region, answer **What should Bearly change or inspect?**, and select **Attach** (<kbd>⌘</kbd> <kbd>Enter</kbd> or <kbd>Ctrl</kbd> <kbd>Enter</kbd>). The capture goes into your message.
@@ -7851,7 +7853,7 @@ Two to five models review a clause against your contract and public sources, Bea
    /document Redline clause 7 in contract.docx with tracked changes that make the edits most experts agreed on. Add a comment on each change explaining why. Keep everything else unchanged.
    ```
 
-   — A **Run Python** step edits the document and saves a new Word file in the chat. The preview shows it as a PDF; download the **Original** to see the tracked changes in Word.
+   — A **Run Python** step edits the document and saves a new Word file in the chat. The preview shows it as a PDF; select **Download** → **Word (.docx)** to see the tracked changes in Word.
 
 3. Send it:
 
@@ -8133,7 +8135,7 @@ Bearly reads every invoice in a folder on your computer, builds an Excel workboo
    /document Build an Excel workbook from these invoices: one row per invoice with vendor, invoice number, invoice date, due date, subtotal, tax, and total; a second sheet with totals by vendor using formulas; and flag any invoice that's past due as of today.
    ```
 
-   — A **Run Python** step builds the workbook and saves it as a file in the chat. The preview shows it as a PDF; download the **Original** to open it in Excel.
+   — A **Run Python** step builds the workbook and saves it as a file in the chat. The preview shows its sheets; select **Download** → **Excel (.xlsx)** to open it in Excel.
 
 4. Save it to the folder:
 
@@ -8836,7 +8838,7 @@ As an organization admin, you give one group a policy that allows only chat mode
 
 **If it stalls:**
 - An empty allow-list can't be saved: "Add at least one model, provider, or model family to the allow-list, or switch model access off."
-- The allow-list covers chat models only; image, video, voice, transcription, and text-to-speech models aren't governed by it.
+- An allow-list that names only chat models leaves image, video, text-to-speech, and transcription models available. It limits one of those tools only when it names one of that tool's models. A deny-list applies to all of them.
 - Policies apply to members whose email is on your managed domain. If a member is in two groups with the same top **Priority**, their policy can't be resolved; give one group a higher priority.
 
 ## Find an old decision and file the chats where they belong
@@ -9642,6 +9644,7 @@ What you type, attach, or let a tool read still goes to the model handling your 
 | **Always** answers | **Settings** → **Permissions** | Set a kind of action back to **Ask**, on every device | Allow again |
 | **Devices** | **Settings** → **Devices** | Signs out other devices and removes extension or API keys | Sign in again |
 | **Log out** | **Settings** → **Profile**, or the account menu | Syncs, then clears Bearly's data from this device | Sign in |
+| **Change email** | **Settings** → **Profile** | Asks Bearly support to move your account to a new email after you confirm both addresses | **Cancel request** until support starts the change |
 | **Delete account** | **Settings** → **Profile** | Schedules permanent deletion after email verification | **Cancel scheduled deletion** before the final reminder |
 | Text messages | **Settings** → **Phone and SMS** | Stops texts or deletes your number | Set it up again |
 | Browser data | **Settings** → **Browser** (desktop app) | Resets tabs and approvals, deletes cookies and site data, blocks trackers | — |
@@ -9803,6 +9806,30 @@ Routines have their own Full access setting in the routine editor. On a managed 
 
 **Settings** → **Profile** → **Log out**, or **Log out** in the account menu: "Bearly syncs your recent changes, then clears its data from this device. You'll need to sign in again." If some changes haven't synced, Bearly asks before discarding them. In most chats, a message you just sent counts too, until the chat has saved it. Logging out also ends the session on Bearly's side.
 
+## Change your account email
+
+Use this only when you're losing access to your current email, for example when you leave a job. Bearly support finishes the change, usually within one business day.
+
+**You need:** to make someone else a team admin, or close the team, if you administer one; to cancel an App Store subscription in your iPhone's Settings; and to cancel any pending account deletion. The dialog says which applies before you start. The new email can't already have a Bearly account or belong to an organization that manages its Bearly accounts.
+
+
+
+1. Open **Settings** → **Profile** and, beside **Change email**, select **Change**.
+2. Enter the **New email** and read what happens when the change is done, then check **I understand this can't be undone.** and select **Send codes**.
+3. Enter the six-digit code sent to each address, then select **Submit request**.
+4. Don't sign in with the new email until Bearly emails both addresses that the change is done.
+
+
+
+When the change is done:
+
+- Every device signs out.
+- A paid plan is canceled right away, with no refund for the rest of the billing period. Subscribe again from the new email to keep paid features.
+- Usage history, credits, and receipts stay with the old email.
+- You leave every team you're in and lose access to projects other people share with you. Projects you shared with other people stay with the old email; the dialog lists them. To keep one, ask a collaborator to share it with your new email afterward.
+
+To stop a request, open **Change email** again and select **Cancel request**. Once support has started the change, contact support instead.
+
 ## Delete your account
 
 **You need:** to transfer or close any organizations you administer, and to transfer ownership or remove collaborators from shared work. Bearly blocks the request until you do.
@@ -9931,7 +9958,7 @@ There's no notifications pane and no setting for the app's display language. Rep
 | --- | --- |
 | **Version** | Shows the build you're running and when it was built |
 | **Lock all data** | "Lock all password-protected notebooks. You'll need to re-enter passwords." **Lock**, then **Lock All**, relocks every password-protected project on this device. |
-| **Change email** | "Move your account to a different email. We confirm both addresses, then finish the change." |
+| **Change email** | "Move your account to a different email. We confirm both addresses, then finish the change." **Change** opens the request. See [Change your account email](https://bearly.ai/docs/manual/privacy-and-security.md#change-your-account-email). |
 | **Delete account** | "Review what is deleted and retained, then verify this request by email." **Delete** opens the deletion steps. |
 | **Log out** | "Sign out of your Bearly account." Bearly syncs your recent changes, then clears its data from this device. |
 
@@ -10487,6 +10514,7 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 
 | You see | Why | What to do |
 |---|---|---|
+| **Tuning notes** in chat activity | Bearly is sending its team a note about a tool problem or a missing capability | Keep chatting; no action is needed |
 | "An error occurred. Please wait and try again." with **Get help** | The answer failed | Wait a moment, then select **Rerun with same model** under your message, or pick another model from the **Rerun** menu. **Get help** opens a support dialog |
 | "Unable to load message." | That message couldn't be shown | Open the command menu (<kbd>⌘</kbd> <kbd>K</kbd> or <kbd>Ctrl</kbd> <kbd>K</kbd>) and choose **Refresh Chat** |
 | "Queue paused — the last message failed." | Bearly stops the queue instead of sending into an error | Deal with the failed message, then select **Send now** on the next waiting one. The queue also restarts after a later answer finishes cleanly |

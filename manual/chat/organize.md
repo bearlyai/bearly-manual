@@ -221,6 +221,7 @@ Press <kbd>⌘</kbd> <kbd>K</kbd> (<kbd>Ctrl</kbd> <kbd>K</kbd>) or select the c
 | **Generate New Name** | Retitle the chat from the conversation |
 | **Download as Markdown** | Export the chat as a Markdown file |
 | **New Routine** | Open Routines to schedule a prompt. Pro and higher, when your organization allows Routines. |
+| **Turn on meeting mode** | Hide chat and project names. See [Meeting mode](https://bearly.ai/docs/manual/capabilities/meetings.md#hide-chat-names-on-a-call-meeting-mode) |
 | **Show all...** → **Show Release Notes** | Open What's New |
 
 The chat also refreshes itself when you come back to the window.
@@ -320,6 +321,6 @@ Find what we decided about pricing in this project, summarize it in five bullets
 - [Previous: Work with answers](https://bearly.ai/docs/manual/chat/answers.md)
 - [Next: Tune a chat: settings, style, reasoning, and memory](https://bearly.ai/docs/manual/chat/settings.md)
 - [Related: Projects: shared context, files, and settings](https://bearly.ai/docs/manual/projects.md)
+- [Related: Record and use meetings](https://bearly.ai/docs/manual/capabilities/meetings.md)
 - [Related: Make Pages and edit in Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md)
 - [Related: Approvals, permissions, and Full access](https://bearly.ai/docs/manual/capabilities/permissions.md)
-- [Related: Changelog](https://bearly.ai/docs/changelog.md)

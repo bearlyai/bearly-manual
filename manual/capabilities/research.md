@@ -283,7 +283,7 @@ Best Pick reads expert reviews, store listings, and owner reviews, then recommen
 
 
 
-**What you get:** a card with the product photos, price, **View at** the store, when the price was checked (the store's checkout price applies), a short evidence summary from experts and owners, a price-versus-quality chart of everything it weighed, cheaper and pricier alternatives, **Why this one**, **What owners say**, and its sources. **Check current price** re-checks a stale price.
+**What you get:** a card with the product photos, price, **View at** the store, when the price was checked (the store's checkout price applies), a short evidence summary from experts and owners, a price-versus-quality chart of everything it weighed, cheaper and pricier alternatives, **Why this one**, **What owners say**, **How Bearly chose**, and its sources. **How Bearly chose** says how many products and expert reviews Bearly weighed, what each publication said about the pick, and why up to four alternatives lost. When owners rated the pick but Bearly couldn't read their reviews, **What owners say** reads "Couldn't read owner reviews." and links the store where most owners rated it. **Check current price** re-checks a stale price.
 
 **Limits:** a pick stops after 90 seconds. The country comes from what you say, then the chat's last pick, then your device's time zone, then the United States. Prices stay in that country's currency and are never converted; thin store data shows **Limited store coverage in** and the country. Best Pick doesn't pick medications, supplements, infant car seats, or firearms, and doesn't cover services, travel, cars, homes, or used items. It recommends; it doesn't buy.
 
