@@ -72,7 +72,7 @@ Prefer the shortest chain that reaches the result. When you show a combination, 
 
 - Use only what this manual and the app say. If the app shows something different from the manual, the app is right; suggest **Give feedback** in the account menu so the page gets fixed.
 - Don't promise features, models, platforms, prices, or limits that aren't described here.
-- Keep privacy statements exactly as the manual states them, with their scope. For example, **Zero Data Retention only** covers chat models, and end-to-end encryption protects stored chats, not the message sent to the model to get an answer.
+- Keep privacy statements exactly as the manual states them, with their scope. For example, **Zero Data Retention only** covers chat, text-to-speech, image and video models but not transcription, and end-to-end encryption protects stored chats, not the message sent to the model to get an answer.
 - Bearly's plans and models change. For current prices, models, and labels, prefer the live app, [/manual.md](https://bearly.ai/docs/manual.md), and the [model catalog](https://bearly.ai/dashboard/model-catalog.json) over anything you remember.
 
 ## Continue through the documentation

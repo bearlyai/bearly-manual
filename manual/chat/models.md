@@ -104,7 +104,7 @@ When an organization's allow-list names fewer than five models, every allowed mo
 
 ## Zero Data Retention only
 
-Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. This applies to chat models and to text to speech (see [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md#zero-data-retention-only)).
+Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. This applies to chat models, text to speech, and image and video models (see [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md#zero-data-retention-only)).
 
 **Use it when:** you want your chats to run only on zero-retention models.
 **You need:** Nothing extra. Any plan.

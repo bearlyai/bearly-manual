@@ -59,6 +59,8 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Building block**: This manual's word for a capability seen as a step: what it takes in, and what it leaves in the chat for the next step. See [Building blocks](https://bearly.ai/docs/manual/combine/building-blocks.md).
 
+**Business**: The organization seat that includes everything in Pro, at $30 a seat a month or $300 a year. See [Organization seat prices](https://bearly.ai/docs/manual/plans-and-credits.md#organization-seat-prices).
+
 ## C
 
 **Canvas**: An editable document made from an answer with **Edit in Canvas**. Select text and ask the AI to change it, or edit the Markdown yourself. See [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md#canvas).
@@ -149,7 +151,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Managed organization**: An organization with an email domain Bearly has set up for it. It unlocks policies, usage reports, spending limits, and Agent access. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
-**Max**: The highest plan, sold only as organization seats. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
+**Max**: The highest plan, sold only as organization seats, at $200 a seat a month. See [Organization seat prices](https://bearly.ai/docs/manual/plans-and-credits.md#organization-seat-prices).
 
 **MCP server**: A server that offers tools to AI apps. Add your own as a custom connector, over HTTPS or, in the desktop app, as an npm package. See [Connectors and skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md).
 
@@ -193,7 +195,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Policy**: A managed organization admin's set of rules for members, covering which models and features they can use and how much they can spend. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
-**Pro**: The first paid plan. It adds Routines, Council of Experts, Best Pick, and the choice of voice-call model. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
+**Pro**: The first paid plan. It adds Routines, Council of Experts, Best Pick, and the choice of voice-call model. Organizations buy it as the Business seat. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
 
 **Project**: A space for chats that shares files, instructions, and default settings. Its page has **Chats**, **Files**, **Sharing**, and **Settings** tabs. You can share a project with people, groups, or a whole organization, and protect it with a password. See [Projects](https://bearly.ai/docs/manual/projects.md).
 

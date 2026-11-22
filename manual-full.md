@@ -456,11 +456,24 @@ Every Bearly plan comes with an allowance of AI credits. This page covers what e
 | **Pro** | $20/mo | $20 of AI credits each month | Routines, Best Pick, Council, your choice of voice model, and models that need Pro |
 | **Analyst** | $60/mo | $60 of AI credits each month | Everything in Pro, plus Deep Research, People Search, and models that need Analyst |
 | **Research** | $100/mo | $100 of AI credits each month | Everything in Analyst, plus the Ultra tier of Deep Research |
-| **Max** | Organization seats only | See your organization's billing | Everything in Research, for organizations that buy seats |
+| **Max** | Organization seats only | $200 of AI credits each month | Everything in Research, for organizations that buy seats |
 
 Yearly billing costs ten times the monthly price, so you pay for ten months and get twelve. The plan picker labels it **Yearly** **17% off**; organization billing calls it **Yearly · 2 months free**. Current prices are also on [bearly.ai/pricing](https://bearly.ai/pricing).
 
 Max is not sold to personal accounts. An organization admin buys it as a seat in the organization's **Billing** tab. See [Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md).
+
+### Organization seat prices
+
+Organizations buy plans as seats in the organization's **Billing** tab. Pro is sold to organizations as the **Business** seat.
+
+| Seat | Monthly | Yearly | AI credits |
+| --- | --- | --- | --- |
+| **Business** | $30/seat | $300/seat | $20 each month, with everything in Pro |
+| **Analyst** | $60/seat | $600/seat | $60 each month, with everything in Business |
+| **Research** | $100/seat | $1,000/seat | $100 each month, with everything in Analyst |
+| **Max** | $200/seat | $2,000/seat | $200 each month, with everything in Research |
+
+A seat bought at an earlier price keeps renewing at that price. Seats you add are charged at the current price.
 
 ## What each plan unlocks
 
@@ -582,7 +595,7 @@ If your card is declined when a plan bought on the web renews, the plan pauses a
 
 ### When you have a seat and a personal plan
 
-- A seat card reads "_Organization_ gives you a _Plan_ seat".
+- A seat card reads "_Organization_ gives you a _Plan_ seat". A Pro seat is named Business.
 - If both are paid, **You have two paid plans** appears with **End personal plan**. It ends the personal plan at the end of its own billing period. Nothing is canceled automatically.
 - If your personal plan is higher, **Your personal plan still provides more access** explains: "Bearly uses the higher plan and never adds the allowances together."
 - If the organization's payment is past due: "Team seat access is blocked until an admin fixes the payment. Every team admin has been notified."
@@ -1252,7 +1265,7 @@ When an organization's allow-list names fewer than five models, every allowed mo
 
 ## Zero Data Retention only
 
-Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. This applies to chat models and to text to speech (see [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md#zero-data-retention-only)).
+Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. This applies to chat models, text to speech, and image and video models (see [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md#zero-data-retention-only)).
 
 **Use it when:** you want your chats to run only on zero-retention models.
 **You need:** Nothing extra. Any plan.
@@ -4582,7 +4595,7 @@ Imagine generates an image from your description. The result opens in an image e
 
 **What you get:** an image in the chat with **Copy image**, **Download**, and **View full size**. Full view shows the chat's images with arrows and thumbnails, plus **Copy image** and **Download**. Zoom by double-clicking, scrolling, or pinching, or with <kbd>+</kbd> and <kbd>-</kbd>; <kbd>0</kbd> resets the zoom, the arrow keys move between images, and <kbd>Esc</kbd> closes it.
 
-**Transparent backgrounds:** ask for one in the chat, for a logo, icon, sticker, or cutout, and Bearly makes a PNG with a transparent background. Only some models can do this, so Bearly switches to one that can, and the reply names the model it used. If you named a model that can't, the reply says so. If no model that can is available, Bearly tells you and offers the image on a plain background instead. The image editor's model buttons run exactly the model you pick and don't add transparency.
+**Transparent backgrounds:** ask for one in the chat, for a logo, icon, sticker, or cutout, and Bearly makes a PNG with a transparent background. Only some models can do this, so Bearly switches to one that can, and the reply names the model it used. If you named a model that can't, the reply says so. If no model that can is available, Bearly tells you and offers the image on a plain background instead. With **Zero Data Retention only** on, that's always the case: only GPT Image makes transparent backgrounds, and it has no zero-retention route. The image editor's model buttons run exactly the model you pick and don't add transparency.
 
 **Limits:** there's no size or aspect-ratio setting; the output shape depends on the model. One answer makes up to 4 images or speech clips before it asks **Make more images or speech?**; see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits). When Bearly runs an image request from the chat and the model's service fails, it switches to a backup model.
 
@@ -9564,7 +9577,7 @@ Before the first purchase, **Give your organization Bearly** explains: "Every se
 
 
 
-1. Under **Choose a plan**, pick **Pro**, **Analyst**, **Research**, or **Max**, and **Monthly** or **Yearly · 2 months free**.
+1. Under **Choose a plan**, pick **Business**, **Analyst**, **Research**, or **Max**, and **Monthly** or **Yearly · 2 months free**. Business is $30 a seat a month or $300 a year, with everything in Pro; see [seat prices](https://bearly.ai/docs/manual/plans-and-credits.md#organization-seat-prices).
 2. Set the number of seats — the total appears before you continue.
 3. Select **Start checkout** and finish payment on the secure billing page — if you leave early, the tab shows "Billing setup didn't finish".
 4. Back in **Billing**, assign open seats to members.
@@ -9575,7 +9588,7 @@ Once active, the tab shows the **Subscription** (billed monthly or yearly, with 
 
 - **Move seat** — gives the seat to someone else. The previous holder loses access immediately.
 - **Unassign** — frees the seat for someone else.
-- **Change plan** — an upgrade applies now with a prorated charge, and a downgrade is scheduled for renewal.
+- **Change plan** — the prompt shows the new plan's price per seat. An upgrade applies now with a prorated charge, and a downgrade is scheduled for renewal.
 - **End at renewal** or **Reinstate**.
 
 Seats go only to active members. A person uses the higher of their personal plan and their seat, and the allowances never add together. If payment fails, **Payment is past due** appears with a fix action, and seat access is blocked until it's paid. Every billing change emails all admins and appears in **Activity**. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
@@ -9668,7 +9681,8 @@ Turn on **Zero Data Retention only** and Bearly shows only zero-retention models
 
 - It covers the language models that write and work in your chats, including the models Bearly uses inside chat tools such as Council's experts. Council can offer fewer experts when it's on.
 - It also covers text to speech: Read aloud and Voice Studio use only the **OpenAI** voice engine, which has zero data retention, and the other engines are refused. If your organization's policy doesn't allow that engine either, speech isn't made: "No speech model that meets your Zero Data Retention only setting is available, so audio can't be created."
-- It doesn't cover image and video generation, transcription, text extraction from files, voice calls, or other tool services. Deep Research, People Search, Scholar's academic web search, YouTube search, and reading web pages also reach their usual services.
+- It also covers image and video models. Image tools and the image editor use only zero-retention models: if you or Bearly name one that isn't, such as GPT Image, the image is made with a zero-retention model and the reply says why, and the image editor names the model: "GPT Image 2.6 Flare doesn't meet your Zero Data Retention only setting. Choose another model for this action." Only GPT Image makes a transparent background, so with the setting on Bearly says "No image model that meets your Zero Data Retention only setting can make a transparent background." and offers a plain background. Changing just part of an image (Change area, Extend edges, or a masked edit in the chat) also needs GPT Image, so with the setting on Bearly says no model that meets it can do that. Remove background still works.
+- It doesn't cover transcription, text extraction from files, voice calls, or other tool services. Deep Research, People Search, Scholar's academic web search, YouTube search, and reading web pages also reach their usual services.
 - If settings can't sync, Bearly keeps the rule on and the switch is unavailable: "Settings sync is unavailable. Zero Data Retention routes remain required until Bearly reconnects." The banner reads **ZDR on until settings sync**.
 - If your organization also limits models, you see only models allowed by both, and the banner notes **managed account**.
 
@@ -10272,7 +10286,7 @@ Prefer the shortest chain that reaches the result. When you show a combination, 
 
 - Use only what this manual and the app say. If the app shows something different from the manual, the app is right; suggest **Give feedback** in the account menu so the page gets fixed.
 - Don't promise features, models, platforms, prices, or limits that aren't described here.
-- Keep privacy statements exactly as the manual states them, with their scope. For example, **Zero Data Retention only** covers chat models, and end-to-end encryption protects stored chats, not the message sent to the model to get an answer.
+- Keep privacy statements exactly as the manual states them, with their scope. For example, **Zero Data Retention only** covers chat, text-to-speech, image and video models but not transcription, and end-to-end encryption protects stored chats, not the message sent to the model to get an answer.
 - Bearly's plans and models change. For current prices, models, and labels, prefer the live app, [/manual.md](https://bearly.ai/docs/manual.md), and the [model catalog](https://bearly.ai/dashboard/model-catalog.json) over anything you remember.
 
 ---
@@ -10926,6 +10940,8 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Building block**: This manual's word for a capability seen as a step: what it takes in, and what it leaves in the chat for the next step. See [Building blocks](https://bearly.ai/docs/manual/combine/building-blocks.md).
 
+**Business**: The organization seat that includes everything in Pro, at $30 a seat a month or $300 a year. See [Organization seat prices](https://bearly.ai/docs/manual/plans-and-credits.md#organization-seat-prices).
+
 ## C
 
 **Canvas**: An editable document made from an answer with **Edit in Canvas**. Select text and ask the AI to change it, or edit the Markdown yourself. See [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md#canvas).
@@ -11016,7 +11032,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Managed organization**: An organization with an email domain Bearly has set up for it. It unlocks policies, usage reports, spending limits, and Agent access. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
-**Max**: The highest plan, sold only as organization seats. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
+**Max**: The highest plan, sold only as organization seats, at $200 a seat a month. See [Organization seat prices](https://bearly.ai/docs/manual/plans-and-credits.md#organization-seat-prices).
 
 **MCP server**: A server that offers tools to AI apps. Add your own as a custom connector, over HTTPS or, in the desktop app, as an npm package. See [Connectors and skills](https://bearly.ai/docs/manual/capabilities/connectors-and-skills.md).
 
@@ -11060,7 +11076,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Policy**: A managed organization admin's set of rules for members, covering which models and features they can use and how much they can spend. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
-**Pro**: The first paid plan. It adds Routines, Council of Experts, Best Pick, and the choice of voice-call model. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
+**Pro**: The first paid plan. It adds Routines, Council of Experts, Best Pick, and the choice of voice-call model. Organizations buy it as the Business seat. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
 
 **Project**: A space for chats that shares files, instructions, and default settings. Its page has **Chats**, **Files**, **Sharing**, and **Settings** tabs. You can share a project with people, groups, or a whole organization, and protect it with a password. See [Projects](https://bearly.ai/docs/manual/projects.md).
 

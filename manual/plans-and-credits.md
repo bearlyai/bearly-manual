@@ -21,11 +21,24 @@ Every Bearly plan comes with an allowance of AI credits. This page covers what e
 | **Pro** | $20/mo | $20 of AI credits each month | Routines, Best Pick, Council, your choice of voice model, and models that need Pro |
 | **Analyst** | $60/mo | $60 of AI credits each month | Everything in Pro, plus Deep Research, People Search, and models that need Analyst |
 | **Research** | $100/mo | $100 of AI credits each month | Everything in Analyst, plus the Ultra tier of Deep Research |
-| **Max** | Organization seats only | See your organization's billing | Everything in Research, for organizations that buy seats |
+| **Max** | Organization seats only | $200 of AI credits each month | Everything in Research, for organizations that buy seats |
 
 Yearly billing costs ten times the monthly price, so you pay for ten months and get twelve. The plan picker labels it **Yearly** **17% off**; organization billing calls it **Yearly · 2 months free**. Current prices are also on [bearly.ai/pricing](https://bearly.ai/pricing).
 
 Max is not sold to personal accounts. An organization admin buys it as a seat in the organization's **Billing** tab. See [Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md).
+
+### Organization seat prices
+
+Organizations buy plans as seats in the organization's **Billing** tab. Pro is sold to organizations as the **Business** seat.
+
+| Seat | Monthly | Yearly | AI credits |
+| --- | --- | --- | --- |
+| **Business** | $30/seat | $300/seat | $20 each month, with everything in Pro |
+| **Analyst** | $60/seat | $600/seat | $60 each month, with everything in Business |
+| **Research** | $100/seat | $1,000/seat | $100 each month, with everything in Analyst |
+| **Max** | $200/seat | $2,000/seat | $200 each month, with everything in Research |
+
+A seat bought at an earlier price keeps renewing at that price. Seats you add are charged at the current price.
 
 ## What each plan unlocks
 
@@ -147,7 +160,7 @@ If your card is declined when a plan bought on the web renews, the plan pauses a
 
 ### When you have a seat and a personal plan
 
-- A seat card reads "_Organization_ gives you a _Plan_ seat".
+- A seat card reads "_Organization_ gives you a _Plan_ seat". A Pro seat is named Business.
 - If both are paid, **You have two paid plans** appears with **End personal plan**. It ends the personal plan at the end of its own billing period. Nothing is canceled automatically.
 - If your personal plan is higher, **Your personal plan still provides more access** explains: "Bearly uses the higher plan and never adds the allowances together."
 - If the organization's payment is past due: "Team seat access is blocked until an admin fixes the payment. Every team admin has been notified."

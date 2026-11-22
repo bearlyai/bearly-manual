@@ -354,7 +354,7 @@ Before the first purchase, **Give your organization Bearly** explains: "Every se
 
 
 
-1. Under **Choose a plan**, pick **Pro**, **Analyst**, **Research**, or **Max**, and **Monthly** or **Yearly · 2 months free**.
+1. Under **Choose a plan**, pick **Business**, **Analyst**, **Research**, or **Max**, and **Monthly** or **Yearly · 2 months free**. Business is $30 a seat a month or $300 a year, with everything in Pro; see [seat prices](https://bearly.ai/docs/manual/plans-and-credits.md#organization-seat-prices).
 2. Set the number of seats — the total appears before you continue.
 3. Select **Start checkout** and finish payment on the secure billing page — if you leave early, the tab shows "Billing setup didn't finish".
 4. Back in **Billing**, assign open seats to members.
@@ -365,7 +365,7 @@ Once active, the tab shows the **Subscription** (billed monthly or yearly, with 
 
 - **Move seat** — gives the seat to someone else. The previous holder loses access immediately.
 - **Unassign** — frees the seat for someone else.
-- **Change plan** — an upgrade applies now with a prorated charge, and a downgrade is scheduled for renewal.
+- **Change plan** — the prompt shows the new plan's price per seat. An upgrade applies now with a prorated charge, and a downgrade is scheduled for renewal.
 - **End at renewal** or **Reinstate**.
 
 Seats go only to active members. A person uses the higher of their personal plan and their seat, and the allowances never add together. If payment fails, **Payment is past due** appears with a fix action, and seat access is blocked until it's paid. Every billing change emails all admins and appears in **Activity**. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
