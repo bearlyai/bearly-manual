@@ -27,7 +27,7 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 | "Unable to unlock this PDF." | Bearly couldn't unlock the file | Remove it, save an unlocked copy from an app that opens the PDF, and attach that copy |
 | The send button does nothing while a file shows "Uploading" or "Analyzing." | Messages can't go out until every file is ready | Wait until the file finishes, then send |
 | No **Attach files** in the **+** menu, no **Take photo**, and dragging files does nothing | Your organization turned off **File uploads** | Ask your organization's admin |
-| "File uploads are disabled by your organization." or "Project files are disabled by your organization." | An organization setting blocks uploads or project files | Ask your organization's admin |
+| "Your team's policy turns off file uploads." or "Project files are disabled by your organization." | An organization setting blocks uploads or project files | Ask your organization's admin |
 | "You need writer access to add files to this Project." | Your role in the project can't add files | Ask the project's owner for writer access |
 | A recording is too large to transcribe | The recording exceeds an attachment or transcription processing limit | Split or compress the recording, then transcribe each part |
 | "Some assets could not be transcribed" | One or more files in the request failed | Ask Bearly to transcribe the files that failed again |
@@ -247,7 +247,7 @@ See [Email and text](https://bearly.ai/docs/manual/capabilities/email-and-text.m
 | You see | Why | What to do |
 |---|---|---|
 | "You can't start another Deep Research run right now. Wait for any run in progress to finish, or check your plan's usage." | You can run one Deep Research at a time, and runs count against your usage | Wait for the current run to finish, and check **Settings** → **Usage** |
-| **Run Research** opens an upgrade | Standard needs Analyst; **Ultra** needs Research | Upgrade, or turn **Ultra** off and run Standard if your plan allows it |
+| **Create Plan** or **Run Research** opens an upgrade | Standard needs Analyst, checked when you select **Create Plan**; **Ultra** needs Research, checked when you select **Run Research** | Upgrade, or turn **Ultra** off and run Standard if your plan allows it |
 | "Deep Research is handling too many requests right now. Wait a few minutes, then try again." or "Deep Research is temporarily unavailable on our side. Try again later." | A temporary problem on Bearly's side | Try again later |
 | "Deep Research stopped before it finished." or "Research failed." | The run didn't complete | Type `/deep-research` to start a new run |
 | "PDF email didn't send · _reason_" | The report finished but the email failed | Select **View PDF** in the chat |

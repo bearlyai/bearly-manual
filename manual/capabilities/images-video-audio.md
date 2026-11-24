@@ -79,12 +79,12 @@ Choose an action at the top of the editor:
 
 1. Pick an action and type in the prompt box — it reads "Describe the image you want to create…" or "What would you like to change?". For edits, say what changes and what stays.
 2. Optional: select **Refine** for a better-worded prompt, then **Use this** or **Dismiss** — Refine reads only your text, not the images.
-3. Add sources with **Upload** ("Upload images") in the thumbnail strip, or select a result in the strip to work on it.
+3. Add sources with **Add** ("Add images") in the thumbnail strip, or select a result in the strip to work on it.
 4. Run it — select a featured model (**Good**, **Fast**, or the third suggestion; **Fast** isn't offered for **Change area** or **Extend edges**), pick any model from **All models** ("Run with a model", "One image per click"), or reuse one under **Recent**.
 
 
 
-Each click starts its own run, so you can start several models at once and compare. Unfinished thumbnails show **Running**, **Pending**, **Failed**, or **Canceled**; select one for **Cancel run**, **Try again**, or **Dismiss**. **Re-run** repeats a result's original instructions and inputs. A click runs exactly the model you chose, with no automatic retry.
+Each click starts its own run, so you can start several models at once and compare. Unfinished thumbnails show **Running** or **Pending**, and a failed run shows **Try again**; select one to see the reason, with **Cancel run**, **Try again**, or **Remove**. When your plan's allowance doesn't cover the run, the reason reads "Your plan can’t make images." **Re-run** repeats a result's original instructions and inputs. A click runs exactly the model you chose, with no automatic retry.
 
 **Limits:** only some models support **Change area** and **Extend edges**, and the editor marks the others with "No area edits". Models are also marked "Edits only", "Create only", "One input image", or "Up to N input images" when they can't do the current action. For area edits, the model uses your selection as a guide; it isn't guaranteed to leave every other pixel untouched.
 
@@ -128,7 +128,7 @@ Upscale makes a larger, sharper copy of an image in the chat: 2K by default, or 
 
 **What you get:** a new image in the chat, shown like an edit, with **Copy image**, **Download**, and **View full size**.
 
-**Limits:** 2K or 4K only. Bearly keeps the content, colors, and composition and adds detail, so check faces and small text before you rely on them. If the image model fails, Bearly doesn't switch to another one. Upscaling an image with a transparent background makes it opaque, so upscale first and remove the background afterwards. Each upscale counts toward the 4 images or speech clips one answer makes before it asks; see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
+**Limits:** 2K or 4K only. Bearly keeps the content, colors, and composition and adds detail, so check faces and small text before you rely on them. If the image model fails, Bearly doesn't switch to another one. Upscaling an image with a transparent background keeps it transparent. When Bearly can't keep it, you get an opaque image and the reply says so. Each upscale counts toward the 4 images or speech clips one answer makes before it asks; see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
 
 **Combines with:** [Remove background](#remove-background) after upscaling, and [Make Video](#make-video) with the sharper image as a start frame.
 
@@ -354,7 +354,7 @@ View Media lets Bearly look at images, watch video files, and see the pages of a
 
 - Organization admins turn these tools on or off with **Images**, **Video**, **Text to speech**, and **Transcription** under **Media & Creativity**. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 - An organization's **Model access** policy covers the image, video, text-to-speech, and transcription models too. A deny-list applies to them, and a provider group in it covers the image, video, speech, and transcription models that provider serves. An allow-list limits one of these tools only when it names one of that tool's models; allow-lists that name only chat models leave all four available. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
-- **Zero Data Retention only** applies to text to speech as well as chat models: Read aloud and Voice Studio use only the **OpenAI** engine, which has zero data retention. It doesn't filter the image, video, or transcription models. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
+- **Zero Data Retention only** applies to text to speech as well as chat models: Read aloud and Voice Studio use only the **OpenAI** engine, which has zero data retention. It also covers image and video models: image tools and the image editor use only zero-retention models. It doesn't cover transcription. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
 - [Routines](https://bearly.ai/docs/manual/capabilities/routines.md) can't generate images or video, run text to speech, or transcribe.
 
 ## Try this

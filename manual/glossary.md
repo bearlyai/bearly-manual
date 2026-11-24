@@ -309,7 +309,7 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **ZDR**: Short for zero data retention. In the model picker, the **ZDR** badge marks zero-retention models. See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
 
-**Zero Data Retention only**: An account setting in **Settings** → **Privacy and security**. Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. It applies to chat models. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md#zero-data-retention-only).
+**Zero Data Retention only**: An account setting in **Settings** → **Privacy and security**. Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. It applies to chat models, text to speech, and image and video models. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md#zero-data-retention-only).
 
 ## Continue through the documentation
 

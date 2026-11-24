@@ -483,7 +483,7 @@ A seat bought at an earlier price keeps renewing at that price. Seats you add ar
 | [Best Pick](https://bearly.ai/docs/manual/capabilities/research.md) (product research) | Pro | An upgrade card appears in the chat |
 | [Council](https://bearly.ai/docs/manual/capabilities/research.md) (ask several models at once) | Pro | The chat shows "Council of Experts requires Pro or higher." with **Upgrade to Pro** |
 | Choosing a voice model for [voice calls](https://bearly.ai/docs/manual/chat/voice.md) | Pro | Free calls use GPT-Live 1, and the **Model** menu reads "Choosing a voice model needs a paid plan." |
-| [Deep Research](https://bearly.ai/docs/manual/capabilities/research.md), standard tier | Analyst | **Run Research** opens the upgrade flow |
+| [Deep Research](https://bearly.ai/docs/manual/capabilities/research.md), standard tier | Analyst | **Create Plan** opens the upgrade prompt: "Deep Research (Standard) needs the Analyst plan or higher. Upgrade to unlock it." |
 | Deep Research, **Ultra** tier | Research | **Run Research** opens the upgrade flow |
 | [People Search](https://bearly.ai/docs/manual/capabilities/research.md) | Analyst | An upgrade card appears in the chat |
 | Some chat models | Pro or Analyst, per model | Choosing the model opens an upgrade prompt instead of switching |
@@ -523,6 +523,8 @@ When a request can't run, the chat shows a message and a button.
 | Free daily allowance used up | "You've used today's free allowance. It resets tomorrow. Go Pro to keep going now." | **Go Pro** |
 | A Free account signed up with an email address Free doesn't cover, such as a work address | "Free AI works with personal email addresses like Gmail, iCloud, Outlook and Proton. Go Pro for $20 a month to use Bearly with this address." | **Go Pro** |
 | A Free request comes from a VPN or cloud network | "Free AI doesn't work over a VPN or cloud network. Turn off your VPN to keep going free, or go Pro to use Bearly from any network." | **Go Pro** |
+| A Free account's email address uses a "+" | "Free AI doesn't work with email addresses that use a "+". Sign in with your main address to keep going free, or go Pro to use this one." | **Go Pro** |
+| A Free account uses a temporary email address | "Free AI doesn't work with temporary email addresses. Sign in with a personal address like Gmail or iCloud to keep going free, or go Pro to use this one." | **Go Pro** |
 | A Free request trips another of Bearly's free-plan checks | "This request tripped our free-plan checks. Go Pro to continue, or email support@bearly.ai if we've misread it." | **Go Pro** |
 | Paid plan used up, boost available | "You've used your plan credits. Buy a boost to keep going, or upgrade your plan." The boost amounts appear as buttons. | **Upgrade Plan**, or **View Billing** if your plan can't be changed here |
 | Paid plan and boost both used up | "You've used all your credits, including your boost. Buy another boost to keep going, or upgrade your plan." | **Upgrade Plan** or **View Billing** |
@@ -730,7 +732,7 @@ The chat's title sits at the top center, and the thread scrolls up behind it. In
 ### Thread
 
 - **Messages.** Your messages and Bearly's answers. Controls sit under each one: they appear on hover with a mouse and stay visible on touch screens and in narrow windows. Under your messages: **Copy**, **Edit Query**, **Rerun with same model**, the **Rerun** model menu, a version switcher such as ‹ 2 / 3 ›, **Query info**, and **Delete Query**. Answers have most of the same, plus **Read aloud** on text-only answers and **Edit in Canvas**. While an answer is still running, its controls stay hidden. See [Work with answers](https://bearly.ai/docs/manual/chat/answers.md).
-- **Photos.** Several photos sent together show as one stack, the first on top with a count. Select it to open the image viewer, which fills the window: step through the chat's images with the arrows, keys, swipes, or the thumbnail strip, zoom, copy, download, or close.
+- **Photos.** Several photos sent together show as a filmstrip: one large photo with a strip of thumbnails under it. Swipe, scroll sideways, use the arrows or arrow keys, or select a thumbnail to move between them. Select the large photo to open it in the image viewer, which fills the window: step through the chat's images with the arrows, keys, swipes, or the thumbnail strip, zoom, copy, download, or close.
 - **What Bearly is doing.** While an answer runs, one line under it names the current step: "Thinking", what a tool is doing (such as "Checking current prices…"), or "Waiting for your approval". A timer appears once a step passes 10 seconds, and the line hides while the answer's text streams in. When the answer ends, the line becomes a summary such as "Worked 28s · 4 steps"; in most chats it also counts the sources Bearly read. Select either to open the answer's **Steps** tab in the side panel, where a running step has a square **Stop**.
 - **Approval cards.** When a tool needs your OK, a card shows what it wants to do and the kind of action, with **Deny**, **Once**, **This chat**, and **Always**. In most chats you can answer it from any of your devices; in a shared chat, only the person who sent the message can, and everyone else sees "Waiting for the person who sent this message". See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md).
 - **Result cards.** Interactive results such as a Deep Research report, a **Chart**, a YouTube video card, or the image editor. Research results such as sources start folded to one line; select them to expand.
@@ -1108,7 +1110,7 @@ In most chats, if a running answer stops updating for 2 minutes, a notice above 
 - **Running on another device** — "No updates for 2 minutes. If that device is closed, stop the response here."
 - **Stopped responding** — "No updates for 2 minutes." It reads **Stopped responding in another tab**, or **window** in the desktop app, when the answer runs in another one on this computer.
 
-**What you get:** Partial work kept, and the conversation moving in the direction you want.
+**What you get:** Partial work kept, and the conversation moving in the direction you want. In most chats, a stopped answer ends with the line "You stopped this reply.", after whatever it had written or on its own if it had written nothing.
 **Limits:** No keyboard shortcut stops an answer; use **Stop**. A step can only be stopped while it's running, from the tab or window where the answer is running. Pressing **Stop** twice within 2 seconds also pauses anything waiting under **Up next**.
 
 ## PII Blocker
@@ -2577,13 +2579,13 @@ Deep Research is a long research run that ends in a cited report. You review and
    /deep-research Assess the US market for community solar software. Focus on 2024–2026 adoption, buyers, regulation, and credible market-size estimates.
    ```
 
-2. Edit the **Query** until it says exactly what you want, then select **Create Plan** — the card notes that planning is free and that you review the plan before anything runs.
+2. Edit the **Query** until it says exactly what you want, then select **Create Plan** — the card notes that planning is free and that you review the plan before anything runs. On a plan below Analyst, **Create Plan** opens the upgrade prompt instead.
 
 3. Read the **Plan**. Edit it directly, or type guidance under **Notes** and select **Revise Plan** — edits in **Plan** are part of the run. **Revise Plan** works once you've added notes or changed the query.
 
 4. Leave the run on Standard, or turn on **Ultra** for a run about twice as deep — the line beside the button says whether your plan covers the tier you picked.
 
-5. Select **Run Research** — this is your confirmation. There is no cancel button once a run starts. If your plan doesn't include the tier, the button opens the upgrade instead. Saying "go ahead" in the chat before you've created the plan doesn't start anything; Bearly asks you to start it from the card: select **Create Plan**, then **Run Research**.
+5. Select **Run Research** — this is your confirmation. There is no cancel button once a run starts. If your plan doesn't include **Ultra**, the button opens the upgrade instead. Saying "go ahead" in the chat before you've created the plan doesn't start anything; Bearly asks you to start it from the card: select **Create Plan**, then **Run Research**.
 
 6. Read the report — numbered citations and figures, a **Sources** list that starts folded to one line with its count (open it for the first four and **Show all** for the rest), and **Show research steps** to see what it did. **View PDF** opens the PDF, and **Sent to your inbox** shows when the email went out.
 
@@ -2659,7 +2661,7 @@ Council of Experts sends one self-contained question to two to five AI models at
 
 **What you get:** each model's full answer in its own tab, and a synthesis that names consensus and disagreement. In most chats, a very long answer is also saved to the chat's **Files** as "_model_ answer.md".
 
-**Limits:** one council per answer; another asks **Start another model run?** first. A council needs at least two experts to finish. Each expert can take up to eight tool steps, and each answer is cut to 4,000 characters for the synthesis. The model list follows your plan and organization; with **Zero Data Retention only** on, it offers only zero-retention models. Experts can use Web Search, Read Site, Scholar, Search Docs, Read Doc, Scan Doc, and a YouTube video's transcript and saved claims check. They can't use Image Search, Deep Research, X, Maps, Weather, SEO data, Domain research, People Search, Best Pick, hotel search, company filings and economic data, the property, sanctions, and package lookups, the everyday lookups, or connectors. Search Docs isn't available in end-to-end encrypted chats.
+**Limits:** one council per answer; another asks **Start another model run?** first. A council needs at least two experts to finish. If a model you chose isn't available in the chat, for example because your organization blocks it, another allowed model takes its place for that council; your saved **Council models** don't change. Each expert can take up to eight tool steps, and each answer is cut to 4,000 characters for the synthesis. The model list follows your plan and organization; with **Zero Data Retention only** on, it offers only zero-retention models. Experts can use Web Search, Read Site, Scholar, Search Docs, Read Doc, Scan Doc, and a YouTube video's transcript and saved claims check. They can't use Image Search, Deep Research, X, Maps, Weather, SEO data, Domain research, People Search, Best Pick, hotel search, company filings and economic data, the property, sanctions, and package lookups, the everyday lookups, or connectors. Search Docs isn't available in end-to-end encrypted chats.
 
 **Runs in:** every app platform. Routines: no.
 
@@ -2929,7 +2931,7 @@ Bearly reads primary sources for markets and the economy: a US-listed company's 
 
 **Limits:**
 
-- **Companies:** US-listed companies that file with the SEC. Many non-US companies don't, and companies that report under international accounting standards often have no standard figures, so Bearly lists their filings instead. Figures are as filed, including restatements, and a figure the company didn't report isn't estimated. Financials cover up to 15 fiscal years (5 by default) plus the latest quarter.
+- **Companies:** US-listed companies that file with the SEC. Many non-US companies don't. A company that reports under international accounting standards is read in the currency it reports in, such as Australian dollars or yen, and nothing is converted. Figures are as filed, including restatements, and a figure the company didn't report isn't estimated. Financials cover up to 15 fiscal years (5 by default) plus the latest quarter.
 - **Filings:** a list returns up to 100 of the company's recent filings, newest first, and says which dates it covers. Full-text search covers every filing since 2001 and returns up to 50 hits.
 - **Economic series:** at most the latest 120 values per request, so ask for a monthly or yearly view of a long range.
 - **Exchange rates:** about 30 major currencies, up to 10 at a time, latest, on a date, or as a daily history. Rates are published once each working day, so a weekend or holiday date gives the previous working day's rates. For any other currency, Bearly looks the rate up with [Web Search](#web-search) and names the source and date.
@@ -3661,7 +3663,7 @@ Every file appears as a card in the chat. Select the card, or **Open** on it, to
 | Word, PowerPoint, older Excel (`.xls`), OpenDocument, `.pages`, `.numbers`, `.key`, `.epub` | Converted to PDF for the preview | PDF view; **Download** offers the original first, named by type, such as **Word (.docx)** or **PowerPoint (.pptx)** (other types read **Original** with the extension, such as **Original (.odt)**), then **PDF** | Reads and searches the text; the Document editor edits Word and PowerPoint files |
 | CSV, TSV, and pipe-separated (`.csv`, `.tsv`, `.tab`, `.psv`) | Spreadsheet grid showing rows × columns, with **Copy table** and **Open** | Editable grid | Searches it as text; Run Python can analyze it; Charts can draw from it |
 | Markdown | Rendered, with **Copy** and **Open** | Rendered | Reads and searches it |
-| Images | Image, or a stack of images with a count | Image viewer with arrows, thumbnails, zoom, copy, and download | Looks at it with View Media; Touch Up can edit it. Reads and searches an SVG's source as text |
+| Images | Image, or a filmstrip of several images with thumbnails | Image viewer with arrows, thumbnails, zoom, copy, and download | Looks at it with View Media; Touch Up can edit it. Reads and searches an SVG's source as text |
 | Audio | Compact player | Full player | Transcribe turns speech into text |
 | Video | Video player | Video player | View Media watches it; Transcribe turns speech into text |
 | HTML | Live [Page](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md) preview | The live Page | Reads it |
@@ -4621,12 +4623,12 @@ Choose an action at the top of the editor:
 
 1. Pick an action and type in the prompt box — it reads "Describe the image you want to create…" or "What would you like to change?". For edits, say what changes and what stays.
 2. Optional: select **Refine** for a better-worded prompt, then **Use this** or **Dismiss** — Refine reads only your text, not the images.
-3. Add sources with **Upload** ("Upload images") in the thumbnail strip, or select a result in the strip to work on it.
+3. Add sources with **Add** ("Add images") in the thumbnail strip, or select a result in the strip to work on it.
 4. Run it — select a featured model (**Good**, **Fast**, or the third suggestion; **Fast** isn't offered for **Change area** or **Extend edges**), pick any model from **All models** ("Run with a model", "One image per click"), or reuse one under **Recent**.
 
 
 
-Each click starts its own run, so you can start several models at once and compare. Unfinished thumbnails show **Running**, **Pending**, **Failed**, or **Canceled**; select one for **Cancel run**, **Try again**, or **Dismiss**. **Re-run** repeats a result's original instructions and inputs. A click runs exactly the model you chose, with no automatic retry.
+Each click starts its own run, so you can start several models at once and compare. Unfinished thumbnails show **Running** or **Pending**, and a failed run shows **Try again**; select one to see the reason, with **Cancel run**, **Try again**, or **Remove**. When your plan's allowance doesn't cover the run, the reason reads "Your plan can’t make images." **Re-run** repeats a result's original instructions and inputs. A click runs exactly the model you chose, with no automatic retry.
 
 **Limits:** only some models support **Change area** and **Extend edges**, and the editor marks the others with "No area edits". Models are also marked "Edits only", "Create only", "One input image", or "Up to N input images" when they can't do the current action. For area edits, the model uses your selection as a guide; it isn't guaranteed to leave every other pixel untouched.
 
@@ -4670,7 +4672,7 @@ Upscale makes a larger, sharper copy of an image in the chat: 2K by default, or 
 
 **What you get:** a new image in the chat, shown like an edit, with **Copy image**, **Download**, and **View full size**.
 
-**Limits:** 2K or 4K only. Bearly keeps the content, colors, and composition and adds detail, so check faces and small text before you rely on them. If the image model fails, Bearly doesn't switch to another one. Upscaling an image with a transparent background makes it opaque, so upscale first and remove the background afterwards. Each upscale counts toward the 4 images or speech clips one answer makes before it asks; see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
+**Limits:** 2K or 4K only. Bearly keeps the content, colors, and composition and adds detail, so check faces and small text before you rely on them. If the image model fails, Bearly doesn't switch to another one. Upscaling an image with a transparent background keeps it transparent. When Bearly can't keep it, you get an opaque image and the reply says so. Each upscale counts toward the 4 images or speech clips one answer makes before it asks; see [Per-reply limits](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).
 
 **Combines with:** [Remove background](#remove-background) after upscaling, and [Make Video](#make-video) with the sharper image as a start frame.
 
@@ -4896,7 +4898,7 @@ View Media lets Bearly look at images, watch video files, and see the pages of a
 
 - Organization admins turn these tools on or off with **Images**, **Video**, **Text to speech**, and **Transcription** under **Media & Creativity**. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 - An organization's **Model access** policy covers the image, video, text-to-speech, and transcription models too. A deny-list applies to them, and a provider group in it covers the image, video, speech, and transcription models that provider serves. An allow-list limits one of these tools only when it names one of that tool's models; allow-lists that name only chat models leave all four available. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
-- **Zero Data Retention only** applies to text to speech as well as chat models: Read aloud and Voice Studio use only the **OpenAI** engine, which has zero data retention. It doesn't filter the image, video, or transcription models. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
+- **Zero Data Retention only** applies to text to speech as well as chat models: Read aloud and Voice Studio use only the **OpenAI** engine, which has zero data retention. It also covers image and video models: image tools and the image editor use only zero-retention models. It doesn't cover transcription. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md).
 - [Routines](https://bearly.ai/docs/manual/capabilities/routines.md) can't generate images or video, run text to speech, or transcribe.
 
 ## Try this
@@ -6753,7 +6755,7 @@ Details: [Images, video, and audio](https://bearly.ai/docs/manual/capabilities/i
 |---|---|---|---|---|---|---|
 | **Imagine** `/image` | A description, and optional reference images | Images in the inline image editor, ready to download; a PNG with a transparent background when you ask for one in the chat | Any | All | No | No |
 | **Touch Up** `/edit-image` | One or more images in the chat, and optionally an area to change | Edited, extended, or combined images; a transparent-background PNG when you ask for one in an edit or edit an image that has one | Any | All | No | No |
-| **Upscale** (ask in words) | One image in the chat | A new 2K copy, or 4K when you ask; a transparent background becomes opaque | Any | All | No | No |
+| **Upscale** (ask in words) | One image in the chat | A new 2K copy, or 4K when you ask; a transparent background stays transparent | Any | All | No | No |
 | **Remove background** (ask in words) | One JPEG, PNG, or GIF photo in the chat, up to 20 MB, and optionally what to keep | A new PNG of the subject on a transparent background, at the photo's original size, named with `-cutout` | Any | All | No | No |
 | **Make Video** `/video` | A description, and optionally an image as the start frame (with the default model, at most 2.5 times as wide as tall, or as tall as wide) plus an end frame; with Gemini Omni, up to 10 reference images or a reference video instead | A 4 to 15-second MP4 with generated sound, saved in the chat | Any | All | No | No |
 | **Edit Video** `/edit-video` | A clip of 3 to 10 seconds, 720 to 2160 pixels on each side, under 50 MB | A separate edited clip; the original stays as it was | Any | All | No | No |
@@ -6822,7 +6824,7 @@ Each rule names an output type and the blocks that can take it next. These conne
 - **A CSV that's already chart-ready** → **Create chart** directly, with no Python step.
 - **Run Python output** (up to 5 files per run) → files in the chat → **Create chart**, a **Page** with the results baked in, or **Send Email** attachments. Each run starts fresh, so name the files a later run should use.
 - **Any image in the chat**, whether uploaded, generated, or saved by Read Site → **Touch Up** as a source, **Upscale**, **Remove background**, or **Make Video** as the start or end frame.
-- **An upscaled image** → **Remove background** for a sharp cutout. Do it in that order: upscaling a transparent PNG makes its background opaque.
+- **An upscaled image** → **Remove background** for a sharp cutout. Either order works: upscaling a cutout keeps its transparent background.
 - **A Word .docx file**, uploaded or made by the **Document editor** → **Translate Document** → a new .docx in the chat → **Send Email** as an attachment.
 - **A generated video** → **View Media** watches it → **Edit Video** changes it, if the clip is 3 to 10 seconds, 720 to 2160 pixels on each side, and under 50 MB. A 16:9 clip at 2K is too large, so make clips to edit at standard resolution.
 - **Audio or video files**, whether uploaded, saved by **Get Video**, or a post's video from **X** → **Transcribe**. Video files also → **View Media**, which looks at images and video but not audio-only files.
@@ -6882,7 +6884,7 @@ In an organization, an admin's policy can turn off any block. The `/` label then
 
 - **Web** off removes Web Search, Image Search, Read Site, Deep Research, Scholar, YouTube, Best Pick, hotel search, company filings and economic data, the property, sanctions, and package lookups, and the everyday lookups.
 - **Chat web search** off removes Image Search, Deep Research, Best Pick, Scholar's search of journal sites, and YouTube's **Find** and **Check claims**.
-- **File uploads** off removes attaching files, screen sharing, Get Video, viewing X videos, and the files YouTube saves; it also blocks uploads to a project's **Files** tab and **Sync a folder**.
+- **File uploads** off removes attaching files, screen sharing, Get Video, viewing X videos, the files YouTube saves, and adding images in the image editor (images already in the chat still work); it also blocks uploads to a project's **Files** tab and **Sync a folder**.
 - **Run Python** off removes both `/python` and `/document`. Charts then work only on a CSV that's already prepared, or one made with **Work locally** in the desktop app.
 - **Sharing** off removes Share. **Public links** and **Share with people and teams** decide who can open a published Page.
 - **Memory Recall** off turns off Recall and **Memories**.
@@ -6918,7 +6920,7 @@ See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md
 
 ### Zero Data Retention only
 
-Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. It governs chat models. Council of Experts uses only models you're allowed, so its lineup can get shorter. It doesn't govern image, video, transcription, or voice-call models, or research services such as Web Search, Deep Research, People Search, and Read Site. Web search sends the search provider your query, never your name, account, or IP address. Image search runs on a provider that keeps nothing after it answers. See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
+Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. It governs chat models, text to speech, and image and video models. Council of Experts uses only models you're allowed, so its lineup can get shorter. It doesn't govern transcription or voice-call models, or research services such as Web Search, Deep Research, People Search, and Read Site. Web search sends the search provider your query, never your name, account, or IP address. Image search runs on a provider that keeps nothing after it answers. See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
 
 ### Approvals and Full access
 
@@ -7583,7 +7585,7 @@ You place your product into a new scene, change one part of it, widen it for a b
 - **A better prompt:** select **Refine** in the editor for a suggested rewrite, then **Use this**.
 - **A different shape of video:** the clip follows the starting image, so to get a vertical clip, start from a vertical image.
 
-**If it stalls:** A failed run's thumbnail reads "Failed"; select it, then **Try again**. Editor runs use exactly the model you chose and don't switch to another. If a model can't take several images, it says "One input image" or "Up to N input images".
+**If it stalls:** A failed run's thumbnail reads **Try again**; select it, then **Try again**. Editor runs use exactly the model you chose and don't switch to another. If a model can't take several images, it says "One input image" or "Up to N input images".
 
 ## Go from a mood board to an original concept image
 
@@ -9019,7 +9021,7 @@ To keep a file from a chat in the project, ask in a chat that's in the project, 
 
 Deleting a project file is permanent; Bearly asks "Delete this file?" first.
 
-**Limits:** each file can be up to 1000 MB, and a project holds up to 2 GB of files on every plan. Writers and Owners add files; Readers can open and download them, and files sent to the project from elsewhere are refused with "You need writer access to add files to this Project." When your organization turns off file uploads or project files, **Upload** and **Sync a folder** don't appear, and files sent from elsewhere are refused with "File uploads are disabled by your organization." or "Project files are disabled by your organization." See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md) for what chats can do with files.
+**Limits:** each file can be up to 1000 MB, and a project holds up to 2 GB of files on every plan. Writers and Owners add files; Readers can open and download them, and files sent to the project from elsewhere are refused with "You need writer access to add files to this Project." When your organization turns off file uploads or project files, **Upload** and **Sync a folder** don't appear, and files sent from elsewhere are refused with "Your team's policy turns off file uploads." or "Project files are disabled by your organization." See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md) for what chats can do with files.
 
 ### Sync a folder
 
@@ -9320,6 +9322,8 @@ The access banner shows members a message they must accept before they can use B
 
 **Limits:** acceptance is remembered per device and per version of the banner, so each device asks separately, and saving a change asks everyone again.
 
+**Who accepted:** while a saved banner is on, its settings show **Who accepted version _N_** ("Counts this version only. Editing the banner starts a new version."): the members who accepted, with the time and device, and a **Not yet accepted** list. **Export CSV** downloads both lists. A person's first acceptance of each version also appears in **Activity**.
+
 ## Agent access
 
 **You need:** a managed organization and the admin role.
@@ -9416,7 +9420,7 @@ Rows show **Admin** and **Suspended** badges, the member's effective policy and 
 Groups split an organization into departments or teams, each with its own members, policy, and shared projects. **Groups** reads "Manage membership, policies, and shared projects for each group." Admins create one with **Add group**.
 
 - **Members**: "Membership grants access to projects shared with this group." Organization admins search "Find an organization member to add…". Group admins type an existing member's exact email. Each member's ⋯ menu has **Make group admin** or **Remove admin role** (organization admins only) and **Remove from group**. Members marked **Synced** can't be removed by hand.
-- **Policy and settings**: **Policy** (organization default or a policy from your list), **Priority**, and **Active** ("Inactive groups do not grant policy or project access."). A group admin can customize an assigned policy, which makes a copy for that group, but can't change its spending limit.
+- **Policy and settings**: **Policy** (organization default or a policy from your list), **Priority**, and **Active** ("Inactive groups do not grant policy or project access."). A group admin can customize an assigned policy, which makes a copy for that group, but can't change its spending limit. Group policies apply only on a managed organization; on an unmanaged one the policy controls are replaced by **Managed only**. Leaving the editor with unsaved changes asks "Discard unsaved policy changes?" with **Keep editing**.
 - **Usage** (managed): the same report as the organization's **Usage** tab, limited to the group. It isn't a bill.
 - **Shared projects**: "Projects shared with this group that you can access. Project owners manage sharing in project settings."
 
@@ -9601,7 +9605,7 @@ Seats go only to active members. A person uses the higher of their personal plan
 
 ## Activity
 
-**Activity** lists organization changes, newest first, with **Load more** for older entries. Categories cover the organization, settings, agent access, policies, members (added, edited, removed, suspended, resumed), billing, identity, groups, and projects (access removed or deleted). Entries show what changed, such as a spending limit or feature controls, with before and after values. History starts from when Activity was added, so older changes aren't listed. An empty log reads "No organization changes recorded yet."
+**Activity** ("Changes people made to this organization, newest first.") lists organization changes, with **Load more** for older entries. Narrow the list with **Date** (**All time**, **Last 7 days**, **Last 30 days**, **Last 90 days**, or **Custom…**), **Person**, **Category** (**All activity**, **Members**, **Groups**, **Policies and access**, **Settings**, **Projects**, **Access banner**, **Exports**), and **Search activity**. When nothing matches, the tab reads "No activity matches these filters." with **Clear filters**. **Export CSV** downloads the newest 10,000 entries that match the current filters; past that it says "Exported the newest 10,000 entries. Narrow the dates to export older ones." Each export is itself recorded in the log. Categories cover the organization, settings, agent access, policies, members (added, edited, removed, suspended, resumed), billing, identity, groups, projects (access removed or deleted), access banner acceptances, and Activity exports. Entries show what changed, such as a spending limit or feature controls, with before and after values. History starts from when Activity was added, so older changes aren't listed. An empty log reads "No organization changes recorded yet."
 
 ## Related
 
@@ -9818,7 +9822,7 @@ Routines have their own Full access setting in the routine editor. On a managed 
 
 ## Log out
 
-**Settings** → **Profile** → **Log out**, or **Log out** in the account menu: "Bearly syncs your recent changes, then clears its data from this device. You'll need to sign in again." If some changes haven't synced, Bearly asks before discarding them. In most chats, a message you just sent counts too, until the chat has saved it. Logging out also ends the session on Bearly's side.
+**Settings** → **Profile** → **Log out**, or **Log out** in the account menu: "Bearly syncs your recent changes, then clears its data from this device. You'll need to sign in again." If some changes haven't synced, Bearly asks before discarding them. In most chats, a message you just sent counts too, until the chat has saved it. Logging out also ends the session on Bearly's side. Other Bearly tabs and windows open in the same browser go to the sign-in page too.
 
 ## Change your account email
 
@@ -10097,7 +10101,7 @@ Saved on this device only. **Theme** shows each theme as a card; **Font** and **
 
 | Control | Options and default | What it does |
 | --- | --- | --- |
-| **Zero Data Retention only** | Switch, off by default. Saved to your account. | Bearly shows only zero-retention models, and automatic fallbacks stay on them too. Applies to chat models and text to speech. See [Zero Data Retention only](https://bearly.ai/docs/manual/chat/models.md#zero-data-retention-only). |
+| **Zero Data Retention only** | Switch, off by default. Saved to your account. | Bearly shows only zero-retention models, and automatic fallbacks stay on them too. Applies to chat models, text to speech, and image and video models. See [Zero Data Retention only](https://bearly.ai/docs/manual/chat/models.md#zero-data-retention-only). |
 | **Unitemized billing** | Not available yet; the switch doesn't appear. When it launches: off by default, paid plans, and on a managed organization only when its policy allows it. | "A more private way to be billed. Bearly keeps one rounded total per day instead of a record of each request's model, cost, and time." **How it works** opens the guide. Asks you to confirm first. See [Unitemized billing](https://bearly.ai/docs/unitemized-billing.md). |
 | **End-to-end encryption** (**Beta**) | **Set up end-to-end encryption**, or **Approve this device** on a new device | Encrypts new chats on your devices. After setup: **Encrypt all new chats with this key**, **Approved devices**, **Approve a device**, and **Recovery** (passkeys and **Replace recovery phrase**). |
 
@@ -10518,7 +10522,7 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 | "Unable to unlock this PDF." | Bearly couldn't unlock the file | Remove it, save an unlocked copy from an app that opens the PDF, and attach that copy |
 | The send button does nothing while a file shows "Uploading" or "Analyzing." | Messages can't go out until every file is ready | Wait until the file finishes, then send |
 | No **Attach files** in the **+** menu, no **Take photo**, and dragging files does nothing | Your organization turned off **File uploads** | Ask your organization's admin |
-| "File uploads are disabled by your organization." or "Project files are disabled by your organization." | An organization setting blocks uploads or project files | Ask your organization's admin |
+| "Your team's policy turns off file uploads." or "Project files are disabled by your organization." | An organization setting blocks uploads or project files | Ask your organization's admin |
 | "You need writer access to add files to this Project." | Your role in the project can't add files | Ask the project's owner for writer access |
 | A recording is too large to transcribe | The recording exceeds an attachment or transcription processing limit | Split or compress the recording, then transcribe each part |
 | "Some assets could not be transcribed" | One or more files in the request failed | Ask Bearly to transcribe the files that failed again |
@@ -10738,7 +10742,7 @@ See [Email and text](https://bearly.ai/docs/manual/capabilities/email-and-text.m
 | You see | Why | What to do |
 |---|---|---|
 | "You can't start another Deep Research run right now. Wait for any run in progress to finish, or check your plan's usage." | You can run one Deep Research at a time, and runs count against your usage | Wait for the current run to finish, and check **Settings** → **Usage** |
-| **Run Research** opens an upgrade | Standard needs Analyst; **Ultra** needs Research | Upgrade, or turn **Ultra** off and run Standard if your plan allows it |
+| **Create Plan** or **Run Research** opens an upgrade | Standard needs Analyst, checked when you select **Create Plan**; **Ultra** needs Research, checked when you select **Run Research** | Upgrade, or turn **Ultra** off and run Standard if your plan allows it |
 | "Deep Research is handling too many requests right now. Wait a few minutes, then try again." or "Deep Research is temporarily unavailable on our side. Try again later." | A temporary problem on Bearly's side | Try again later |
 | "Deep Research stopped before it finished." or "Research failed." | The run didn't complete | Type `/deep-research` to start a new run |
 | "PDF email didn't send · _reason_" | The report finished but the email failed | Select **View PDF** in the chat |
@@ -11190,6 +11194,6 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **ZDR**: Short for zero data retention. In the model picker, the **ZDR** badge marks zero-retention models. See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
 
-**Zero Data Retention only**: An account setting in **Settings** → **Privacy and security**. Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. It applies to chat models. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md#zero-data-retention-only).
+**Zero Data Retention only**: An account setting in **Settings** → **Privacy and security**. Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. It applies to chat models, text to speech, and image and video models. See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md#zero-data-retention-only).
 
 ---

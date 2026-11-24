@@ -48,7 +48,7 @@ A seat bought at an earlier price keeps renewing at that price. Seats you add ar
 | [Best Pick](https://bearly.ai/docs/manual/capabilities/research.md) (product research) | Pro | An upgrade card appears in the chat |
 | [Council](https://bearly.ai/docs/manual/capabilities/research.md) (ask several models at once) | Pro | The chat shows "Council of Experts requires Pro or higher." with **Upgrade to Pro** |
 | Choosing a voice model for [voice calls](https://bearly.ai/docs/manual/chat/voice.md) | Pro | Free calls use GPT-Live 1, and the **Model** menu reads "Choosing a voice model needs a paid plan." |
-| [Deep Research](https://bearly.ai/docs/manual/capabilities/research.md), standard tier | Analyst | **Run Research** opens the upgrade flow |
+| [Deep Research](https://bearly.ai/docs/manual/capabilities/research.md), standard tier | Analyst | **Create Plan** opens the upgrade prompt: "Deep Research (Standard) needs the Analyst plan or higher. Upgrade to unlock it." |
 | Deep Research, **Ultra** tier | Research | **Run Research** opens the upgrade flow |
 | [People Search](https://bearly.ai/docs/manual/capabilities/research.md) | Analyst | An upgrade card appears in the chat |
 | Some chat models | Pro or Analyst, per model | Choosing the model opens an upgrade prompt instead of switching |
@@ -88,6 +88,8 @@ When a request can't run, the chat shows a message and a button.
 | Free daily allowance used up | "You've used today's free allowance. It resets tomorrow. Go Pro to keep going now." | **Go Pro** |
 | A Free account signed up with an email address Free doesn't cover, such as a work address | "Free AI works with personal email addresses like Gmail, iCloud, Outlook and Proton. Go Pro for $20 a month to use Bearly with this address." | **Go Pro** |
 | A Free request comes from a VPN or cloud network | "Free AI doesn't work over a VPN or cloud network. Turn off your VPN to keep going free, or go Pro to use Bearly from any network." | **Go Pro** |
+| A Free account's email address uses a "+" | "Free AI doesn't work with email addresses that use a "+". Sign in with your main address to keep going free, or go Pro to use this one." | **Go Pro** |
+| A Free account uses a temporary email address | "Free AI doesn't work with temporary email addresses. Sign in with a personal address like Gmail or iCloud to keep going free, or go Pro to use this one." | **Go Pro** |
 | A Free request trips another of Bearly's free-plan checks | "This request tripped our free-plan checks. Go Pro to continue, or email support@bearly.ai if we've misread it." | **Go Pro** |
 | Paid plan used up, boost available | "You've used your plan credits. Buy a boost to keep going, or upgrade your plan." The boost amounts appear as buttons. | **Upgrade Plan**, or **View Billing** if your plan can't be changed here |
 | Paid plan and boost both used up | "You've used all your credits, including your boost. Buy another boost to keep going, or upgrade your plan." | **Upgrade Plan** or **View Billing** |

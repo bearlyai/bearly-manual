@@ -228,7 +228,7 @@ In most chats, if a running answer stops updating for 2 minutes, a notice above 
 - **Running on another device** — "No updates for 2 minutes. If that device is closed, stop the response here."
 - **Stopped responding** — "No updates for 2 minutes." It reads **Stopped responding in another tab**, or **window** in the desktop app, when the answer runs in another one on this computer.
 
-**What you get:** Partial work kept, and the conversation moving in the direction you want.
+**What you get:** Partial work kept, and the conversation moving in the direction you want. In most chats, a stopped answer ends with the line "You stopped this reply.", after whatever it had written or on its own if it had written nothing.
 **Limits:** No keyboard shortcut stops an answer; use **Stop**. A step can only be stopped while it's running, from the tab or window where the answer is running. Pressing **Stop** twice within 2 seconds also pauses anything waiting under **Up next**.
 
 ## PII Blocker

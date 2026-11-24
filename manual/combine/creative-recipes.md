@@ -200,7 +200,7 @@ You place your product into a new scene, change one part of it, widen it for a b
 - **A better prompt:** select **Refine** in the editor for a suggested rewrite, then **Use this**.
 - **A different shape of video:** the clip follows the starting image, so to get a vertical clip, start from a vertical image.
 
-**If it stalls:** A failed run's thumbnail reads "Failed"; select it, then **Try again**. Editor runs use exactly the model you chose and don't switch to another. If a model can't take several images, it says "One input image" or "Up to N input images".
+**If it stalls:** A failed run's thumbnail reads **Try again**; select it, then **Try again**. Editor runs use exactly the model you chose and don't switch to another. If a model can't take several images, it says "One input image" or "Up to N input images".
 
 ## Go from a mood board to an original concept image
 

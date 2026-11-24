@@ -97,6 +97,8 @@ The access banner shows members a message they must accept before they can use B
 
 **Limits:** acceptance is remembered per device and per version of the banner, so each device asks separately, and saving a change asks everyone again.
 
+**Who accepted:** while a saved banner is on, its settings show **Who accepted version _N_** ("Counts this version only. Editing the banner starts a new version."): the members who accepted, with the time and device, and a **Not yet accepted** list. **Export CSV** downloads both lists. A person's first acceptance of each version also appears in **Activity**.
+
 ## Agent access
 
 **You need:** a managed organization and the admin role.
@@ -193,7 +195,7 @@ Rows show **Admin** and **Suspended** badges, the member's effective policy and 
 Groups split an organization into departments or teams, each with its own members, policy, and shared projects. **Groups** reads "Manage membership, policies, and shared projects for each group." Admins create one with **Add group**.
 
 - **Members**: "Membership grants access to projects shared with this group." Organization admins search "Find an organization member to add…". Group admins type an existing member's exact email. Each member's ⋯ menu has **Make group admin** or **Remove admin role** (organization admins only) and **Remove from group**. Members marked **Synced** can't be removed by hand.
-- **Policy and settings**: **Policy** (organization default or a policy from your list), **Priority**, and **Active** ("Inactive groups do not grant policy or project access."). A group admin can customize an assigned policy, which makes a copy for that group, but can't change its spending limit.
+- **Policy and settings**: **Policy** (organization default or a policy from your list), **Priority**, and **Active** ("Inactive groups do not grant policy or project access."). A group admin can customize an assigned policy, which makes a copy for that group, but can't change its spending limit. Group policies apply only on a managed organization; on an unmanaged one the policy controls are replaced by **Managed only**. Leaving the editor with unsaved changes asks "Discard unsaved policy changes?" with **Keep editing**.
 - **Usage** (managed): the same report as the organization's **Usage** tab, limited to the group. It isn't a bill.
 - **Shared projects**: "Projects shared with this group that you can access. Project owners manage sharing in project settings."
 
@@ -378,7 +380,7 @@ Seats go only to active members. A person uses the higher of their personal plan
 
 ## Activity
 
-**Activity** lists organization changes, newest first, with **Load more** for older entries. Categories cover the organization, settings, agent access, policies, members (added, edited, removed, suspended, resumed), billing, identity, groups, and projects (access removed or deleted). Entries show what changed, such as a spending limit or feature controls, with before and after values. History starts from when Activity was added, so older changes aren't listed. An empty log reads "No organization changes recorded yet."
+**Activity** ("Changes people made to this organization, newest first.") lists organization changes, with **Load more** for older entries. Narrow the list with **Date** (**All time**, **Last 7 days**, **Last 30 days**, **Last 90 days**, or **Custom…**), **Person**, **Category** (**All activity**, **Members**, **Groups**, **Policies and access**, **Settings**, **Projects**, **Access banner**, **Exports**), and **Search activity**. When nothing matches, the tab reads "No activity matches these filters." with **Clear filters**. **Export CSV** downloads the newest 10,000 entries that match the current filters; past that it says "Exported the newest 10,000 entries. Narrow the dates to export older ones." Each export is itself recorded in the log. Categories cover the organization, settings, agent access, policies, members (added, edited, removed, suspended, resumed), billing, identity, groups, projects (access removed or deleted), access banner acceptances, and Activity exports. Entries show what changed, such as a spending limit or feature controls, with before and after values. History starts from when Activity was added, so older changes aren't listed. An empty log reads "No organization changes recorded yet."
 
 ## Related
 

@@ -124,7 +124,7 @@ Details: [Images, video, and audio](https://bearly.ai/docs/manual/capabilities/i
 |---|---|---|---|---|---|---|
 | **Imagine** `/image` | A description, and optional reference images | Images in the inline image editor, ready to download; a PNG with a transparent background when you ask for one in the chat | Any | All | No | No |
 | **Touch Up** `/edit-image` | One or more images in the chat, and optionally an area to change | Edited, extended, or combined images; a transparent-background PNG when you ask for one in an edit or edit an image that has one | Any | All | No | No |
-| **Upscale** (ask in words) | One image in the chat | A new 2K copy, or 4K when you ask; a transparent background becomes opaque | Any | All | No | No |
+| **Upscale** (ask in words) | One image in the chat | A new 2K copy, or 4K when you ask; a transparent background stays transparent | Any | All | No | No |
 | **Remove background** (ask in words) | One JPEG, PNG, or GIF photo in the chat, up to 20 MB, and optionally what to keep | A new PNG of the subject on a transparent background, at the photo's original size, named with `-cutout` | Any | All | No | No |
 | **Make Video** `/video` | A description, and optionally an image as the start frame (with the default model, at most 2.5 times as wide as tall, or as tall as wide) plus an end frame; with Gemini Omni, up to 10 reference images or a reference video instead | A 4 to 15-second MP4 with generated sound, saved in the chat | Any | All | No | No |
 | **Edit Video** `/edit-video` | A clip of 3 to 10 seconds, 720 to 2160 pixels on each side, under 50 MB | A separate edited clip; the original stays as it was | Any | All | No | No |
@@ -193,7 +193,7 @@ Each rule names an output type and the blocks that can take it next. These conne
 - **A CSV that's already chart-ready** → **Create chart** directly, with no Python step.
 - **Run Python output** (up to 5 files per run) → files in the chat → **Create chart**, a **Page** with the results baked in, or **Send Email** attachments. Each run starts fresh, so name the files a later run should use.
 - **Any image in the chat**, whether uploaded, generated, or saved by Read Site → **Touch Up** as a source, **Upscale**, **Remove background**, or **Make Video** as the start or end frame.
-- **An upscaled image** → **Remove background** for a sharp cutout. Do it in that order: upscaling a transparent PNG makes its background opaque.
+- **An upscaled image** → **Remove background** for a sharp cutout. Either order works: upscaling a cutout keeps its transparent background.
 - **A Word .docx file**, uploaded or made by the **Document editor** → **Translate Document** → a new .docx in the chat → **Send Email** as an attachment.
 - **A generated video** → **View Media** watches it → **Edit Video** changes it, if the clip is 3 to 10 seconds, 720 to 2160 pixels on each side, and under 50 MB. A 16:9 clip at 2K is too large, so make clips to edit at standard resolution.
 - **Audio or video files**, whether uploaded, saved by **Get Video**, or a post's video from **X** → **Transcribe**. Video files also → **View Media**, which looks at images and video but not audio-only files.
@@ -253,7 +253,7 @@ In an organization, an admin's policy can turn off any block. The `/` label then
 
 - **Web** off removes Web Search, Image Search, Read Site, Deep Research, Scholar, YouTube, Best Pick, hotel search, company filings and economic data, the property, sanctions, and package lookups, and the everyday lookups.
 - **Chat web search** off removes Image Search, Deep Research, Best Pick, Scholar's search of journal sites, and YouTube's **Find** and **Check claims**.
-- **File uploads** off removes attaching files, screen sharing, Get Video, viewing X videos, and the files YouTube saves; it also blocks uploads to a project's **Files** tab and **Sync a folder**.
+- **File uploads** off removes attaching files, screen sharing, Get Video, viewing X videos, the files YouTube saves, and adding images in the image editor (images already in the chat still work); it also blocks uploads to a project's **Files** tab and **Sync a folder**.
 - **Run Python** off removes both `/python` and `/document`. Charts then work only on a CSV that's already prepared, or one made with **Work locally** in the desktop app.
 - **Sharing** off removes Share. **Public links** and **Share with people and teams** decide who can open a published Page.
 - **Memory Recall** off turns off Recall and **Memories**.
@@ -289,7 +289,7 @@ See [Privacy and security](https://bearly.ai/docs/manual/privacy-and-security.md
 
 ### Zero Data Retention only
 
-Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. It governs chat models. Council of Experts uses only models you're allowed, so its lineup can get shorter. It doesn't govern image, video, transcription, or voice-call models, or research services such as Web Search, Deep Research, People Search, and Read Site. Web search sends the search provider your query, never your name, account, or IP address. Image search runs on a provider that keeps nothing after it answers. See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
+Turn on **Zero Data Retention only** and Bearly shows only zero-retention models, and automatic fallbacks stay on them too. It governs chat models, text to speech, and image and video models. Council of Experts uses only models you're allowed, so its lineup can get shorter. It doesn't govern transcription or voice-call models, or research services such as Web Search, Deep Research, People Search, and Read Site. Web search sends the search provider your query, never your name, account, or IP address. Image search runs on a provider that keeps nothing after it answers. See [Choose and compare models](https://bearly.ai/docs/manual/chat/models.md).
 
 ### Approvals and Full access
 

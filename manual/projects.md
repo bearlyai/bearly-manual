@@ -88,7 +88,7 @@ To keep a file from a chat in the project, ask in a chat that's in the project, 
 
 Deleting a project file is permanent; Bearly asks "Delete this file?" first.
 
-**Limits:** each file can be up to 1000 MB, and a project holds up to 2 GB of files on every plan. Writers and Owners add files; Readers can open and download them, and files sent to the project from elsewhere are refused with "You need writer access to add files to this Project." When your organization turns off file uploads or project files, **Upload** and **Sync a folder** don't appear, and files sent from elsewhere are refused with "File uploads are disabled by your organization." or "Project files are disabled by your organization." See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md) for what chats can do with files.
+**Limits:** each file can be up to 1000 MB, and a project holds up to 2 GB of files on every plan. Writers and Owners add files; Readers can open and download them, and files sent to the project from elsewhere are refused with "You need writer access to add files to this Project." When your organization turns off file uploads or project files, **Upload** and **Sync a folder** don't appear, and files sent from elsewhere are refused with "Your team's policy turns off file uploads." or "Project files are disabled by your organization." See [Documents](https://bearly.ai/docs/manual/capabilities/documents.md) for what chats can do with files.
 
 ### Sync a folder
 

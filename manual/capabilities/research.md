@@ -171,13 +171,13 @@ Deep Research is a long research run that ends in a cited report. You review and
    /deep-research Assess the US market for community solar software. Focus on 2024–2026 adoption, buyers, regulation, and credible market-size estimates.
    ```
 
-2. Edit the **Query** until it says exactly what you want, then select **Create Plan** — the card notes that planning is free and that you review the plan before anything runs.
+2. Edit the **Query** until it says exactly what you want, then select **Create Plan** — the card notes that planning is free and that you review the plan before anything runs. On a plan below Analyst, **Create Plan** opens the upgrade prompt instead.
 
 3. Read the **Plan**. Edit it directly, or type guidance under **Notes** and select **Revise Plan** — edits in **Plan** are part of the run. **Revise Plan** works once you've added notes or changed the query.
 
 4. Leave the run on Standard, or turn on **Ultra** for a run about twice as deep — the line beside the button says whether your plan covers the tier you picked.
 
-5. Select **Run Research** — this is your confirmation. There is no cancel button once a run starts. If your plan doesn't include the tier, the button opens the upgrade instead. Saying "go ahead" in the chat before you've created the plan doesn't start anything; Bearly asks you to start it from the card: select **Create Plan**, then **Run Research**.
+5. Select **Run Research** — this is your confirmation. There is no cancel button once a run starts. If your plan doesn't include **Ultra**, the button opens the upgrade instead. Saying "go ahead" in the chat before you've created the plan doesn't start anything; Bearly asks you to start it from the card: select **Create Plan**, then **Run Research**.
 
 6. Read the report — numbered citations and figures, a **Sources** list that starts folded to one line with its count (open it for the first four and **Show all** for the rest), and **Show research steps** to see what it did. **View PDF** opens the PDF, and **Sent to your inbox** shows when the email went out.
 
@@ -253,7 +253,7 @@ Council of Experts sends one self-contained question to two to five AI models at
 
 **What you get:** each model's full answer in its own tab, and a synthesis that names consensus and disagreement. In most chats, a very long answer is also saved to the chat's **Files** as "_model_ answer.md".
 
-**Limits:** one council per answer; another asks **Start another model run?** first. A council needs at least two experts to finish. Each expert can take up to eight tool steps, and each answer is cut to 4,000 characters for the synthesis. The model list follows your plan and organization; with **Zero Data Retention only** on, it offers only zero-retention models. Experts can use Web Search, Read Site, Scholar, Search Docs, Read Doc, Scan Doc, and a YouTube video's transcript and saved claims check. They can't use Image Search, Deep Research, X, Maps, Weather, SEO data, Domain research, People Search, Best Pick, hotel search, company filings and economic data, the property, sanctions, and package lookups, the everyday lookups, or connectors. Search Docs isn't available in end-to-end encrypted chats.
+**Limits:** one council per answer; another asks **Start another model run?** first. A council needs at least two experts to finish. If a model you chose isn't available in the chat, for example because your organization blocks it, another allowed model takes its place for that council; your saved **Council models** don't change. Each expert can take up to eight tool steps, and each answer is cut to 4,000 characters for the synthesis. The model list follows your plan and organization; with **Zero Data Retention only** on, it offers only zero-retention models. Experts can use Web Search, Read Site, Scholar, Search Docs, Read Doc, Scan Doc, and a YouTube video's transcript and saved claims check. They can't use Image Search, Deep Research, X, Maps, Weather, SEO data, Domain research, People Search, Best Pick, hotel search, company filings and economic data, the property, sanctions, and package lookups, the everyday lookups, or connectors. Search Docs isn't available in end-to-end encrypted chats.
 
 **Runs in:** every app platform. Routines: no.
 
@@ -523,7 +523,7 @@ Bearly reads primary sources for markets and the economy: a US-listed company's 
 
 **Limits:**
 
-- **Companies:** US-listed companies that file with the SEC. Many non-US companies don't, and companies that report under international accounting standards often have no standard figures, so Bearly lists their filings instead. Figures are as filed, including restatements, and a figure the company didn't report isn't estimated. Financials cover up to 15 fiscal years (5 by default) plus the latest quarter.
+- **Companies:** US-listed companies that file with the SEC. Many non-US companies don't. A company that reports under international accounting standards is read in the currency it reports in, such as Australian dollars or yen, and nothing is converted. Figures are as filed, including restatements, and a figure the company didn't report isn't estimated. Financials cover up to 15 fiscal years (5 by default) plus the latest quarter.
 - **Filings:** a list returns up to 100 of the company's recent filings, newest first, and says which dates it covers. Full-text search covers every filing since 2001 and returns up to 50 hits.
 - **Economic series:** at most the latest 120 values per request, so ask for a monthly or yearly view of a long range.
 - **Exchange rates:** about 30 major currencies, up to 10 at a time, latest, on a date, or as a daily history. Rates are published once each working day, so a weekend or holiday date gives the previous working day's rates. For any other currency, Bearly looks the rate up with [Web Search](#web-search) and names the source and date.
