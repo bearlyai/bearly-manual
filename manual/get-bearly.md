@@ -160,7 +160,7 @@ Settings live behind the gear in the panel: **Response language**, **Quick actio
 
 ## Sign in
 
-Bearly has no passwords. On the sign-in screen, enter your **Email** and select **Continue**; Bearly emails you a code made of three words. Type or paste it and select **Sign in**. Above the email field, the web and desktop apps also offer **Continue with** buttons for signing in with an existing account, including your organization's single sign-on where an administrator has set it up. The iOS app offers email sign-in only.
+Bearly has no passwords. On the sign-in screen, enter your **Email** and select **Continue**; Bearly emails you a code made of three words. Type or paste it and select **Sign in**. Below the email field, the web and desktop apps also offer **Continue with Google** and **Continue with Microsoft (work or school)**, for signing in with an existing account, including your organization's single sign-on where an administrator has set it up. Microsoft sign-in takes work and school accounts, not personal Microsoft accounts. Google doesn't allow sign-in inside the browser that Instagram, Facebook, TikTok, or LinkedIn opens when you tap a link, so there the sign-in screen shows "To sign in with Google, open this page in Safari or Chrome." instead of the Google button; email sign-in works there. The iOS app offers email sign-in only.
 
 - **Desktop app:** account-button sign-in opens your default browser. Finish there, and the browser hands you back to the app. If it doesn't, the browser page offers **Retry desktop sign-in**.
 - **Staying signed in:** you stay signed in until you sign out. **Settings** → **Devices** lists every device signed in to your account, with **Sign out** on each and **Sign out all other devices**.

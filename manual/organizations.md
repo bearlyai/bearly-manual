@@ -128,7 +128,7 @@ Only organization admins can change these. Group admins and policies can't grant
 
 
 
-You only provide the tenant ID, never an application secret. Microsoft sign-in works only for a verified email that exactly matches the managed domain. The card shows **Enabled** once it's set up. Members then sign in with **Continue with Microsoft** on the sign-in screen. The iOS app doesn't offer that button and signs in with an emailed code.
+You only provide the tenant ID, never an application secret. Microsoft sign-in works only for a verified email that exactly matches the managed domain. The card shows **Enabled** once it's set up. Members then sign in with **Continue with Microsoft (work or school)** on the sign-in screen. The iOS app doesn't offer that button and signs in with an emailed code.
 
 For one-click access from your intranet, SharePoint page, or Microsoft app tile, link to `https://bearly.ai/dashboard/sign-in/microsoft`. A member already signed in to Microsoft lands in Bearly without choosing an account, and someone already signed in to Bearly goes straight to the app. Microsoft doesn't let you change the address of the Bearly app it added to your tenant, so add a **Linked** app pointing at this link and hide the original; the [Microsoft Entra guide](https://bearly.ai/docs/teams/microsoft-entra.md#open-bearly-in-one-click-from-your-portal) has the steps.
 

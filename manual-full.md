@@ -380,7 +380,7 @@ Settings live behind the gear in the panel: **Response language**, **Quick actio
 
 ## Sign in
 
-Bearly has no passwords. On the sign-in screen, enter your **Email** and select **Continue**; Bearly emails you a code made of three words. Type or paste it and select **Sign in**. Above the email field, the web and desktop apps also offer **Continue with** buttons for signing in with an existing account, including your organization's single sign-on where an administrator has set it up. The iOS app offers email sign-in only.
+Bearly has no passwords. On the sign-in screen, enter your **Email** and select **Continue**; Bearly emails you a code made of three words. Type or paste it and select **Sign in**. Below the email field, the web and desktop apps also offer **Continue with Google** and **Continue with Microsoft (work or school)**, for signing in with an existing account, including your organization's single sign-on where an administrator has set it up. Microsoft sign-in takes work and school accounts, not personal Microsoft accounts. Google doesn't allow sign-in inside the browser that Instagram, Facebook, TikTok, or LinkedIn opens when you tap a link, so there the sign-in screen shows "To sign in with Google, open this page in Safari or Chrome." instead of the Google button; email sign-in works there. The iOS app offers email sign-in only.
 
 - **Desktop app:** account-button sign-in opens your default browser. Finish there, and the browser hands you back to the app. If it doesn't, the browser page offers **Retry desktop sign-in**.
 - **Staying signed in:** you stay signed in until you sign out. **Settings** → **Devices** lists every device signed in to your account, with **Sign out** on each and **Sign out all other devices**.
@@ -9353,7 +9353,7 @@ Only organization admins can change these. Group admins and policies can't grant
 
 
 
-You only provide the tenant ID, never an application secret. Microsoft sign-in works only for a verified email that exactly matches the managed domain. The card shows **Enabled** once it's set up. Members then sign in with **Continue with Microsoft** on the sign-in screen. The iOS app doesn't offer that button and signs in with an emailed code.
+You only provide the tenant ID, never an application secret. Microsoft sign-in works only for a verified email that exactly matches the managed domain. The card shows **Enabled** once it's set up. Members then sign in with **Continue with Microsoft (work or school)** on the sign-in screen. The iOS app doesn't offer that button and signs in with an emailed code.
 
 For one-click access from your intranet, SharePoint page, or Microsoft app tile, link to `https://bearly.ai/dashboard/sign-in/microsoft`. A member already signed in to Microsoft lands in Bearly without choosing an account, and someone already signed in to Bearly goes straight to the app. Microsoft doesn't let you change the address of the Bearly app it added to your tenant, so add a **Linked** app pointing at this link and hide the original; the [Microsoft Entra guide](https://bearly.ai/docs/teams/microsoft-entra.md#open-bearly-in-one-click-from-your-portal) has the steps.
 
