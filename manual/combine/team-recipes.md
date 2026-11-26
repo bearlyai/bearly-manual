@@ -213,6 +213,42 @@ You find what was decided in an earlier chat, then have Bearly rename and move t
 
 **If it stalls:** Recall doesn't work in end-to-end encrypted chats, and a regular chat can't list, read, rename, or move encrypted ones. Full access never approves listing or reading other chats for you; Bearly asks unless you answered **This chat** on that card earlier in the chat.
 
+## Total a figure across every chat in a project
+
+You get one table that pulls the same figure, such as the price agreed with each client, out of every chat in a project, with a total and a CSV file you can chart or share.
+
+**Why it works:** With **Chat management**, Bearly can list a project's chats and read each one after you allow it. With **Execution Mode** set to **Code Mode**, Bearly writes code that reads all of those chats in one step, and **Steps** shows the reading as a single row. Bearly then pulls the figure from each chat into one table, and the CSV file it saves stays in the chat for `/chart` or a Page.
+**You need:** Any plan. The web app, the desktop app, or the iOS app. Organization controls: **Chat management** and **Code Mode**, plus **Charts** for the chart (see [Charts](https://bearly.ai/docs/manual/capabilities/data-and-code.md#charts)). A project whose chats aren't end-to-end encrypted, because regular chats can't read encrypted ones.
+
+
+
+1. Start a new chat, open the sliders button, choose **Execution Mode**, and select **Code Mode**. — The choice applies from your next message.
+
+2. Ask for the table, naming the project and the figure:
+
+   ```text
+   Read every chat in my Clients project. From each one, pull the price we agreed and the date we agreed it. Make a table with the chat title, the date, and the price, add a total row, and save the table as a CSV file in this chat. List any chat with no agreed price separately.
+   ```
+
+   — Bearly asks **Look through your chats and projects?**; select **This chat**. When it asks to read the first chat, such as **Read "Acme renewal"?**, select **This chat** again, so it reads the rest without asking. The table appears in the answer, and the CSV file is on the chat's **Files** tab. In the answer's **Steps**, the reading shows as one row with how many calls it made; open it for a row per chat, and open a row to see which chat it read.
+
+3. Chart it:
+
+   ```text
+   /chart Make a bar chart of the price by chat from that CSV.
+   ```
+
+   — A chart appears in the answer, with **Download PNG**, **View data**, and **Download CSV**.
+
+
+
+**Swap in:**
+- **Another figure:** hours logged, a deadline, the person each chat was with, or every open question, one row per chat.
+- **Files for chats:** in a project with files, ask Bearly to read every file on its **Files** tab and pull the same figure from each.
+- **A Page for the CSV:** ask Bearly to turn the table into a Page, then **Publish** it for your team. See [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md).
+
+**If it stalls:** If Bearly asks before every chat, you answered **Allow** on the read card, which covers one read; answer **This chat** to cover the rest. Full access never answers these cards. If **Steps** shows a separate row for each chat, check that the chat's **Execution Mode** shows **Code Mode**; the table comes out the same either way.
+
 ## Turn a team form into a published Page
 
 A saved Prompt Template turns a few filled-in fields into a full write-up, such as an incident postmortem, which you publish for your team.
@@ -257,6 +293,6 @@ A saved Prompt Template turns a few filled-in fields into a full write-up, such 
 - [Previous: Recipes for everyday life](https://bearly.ai/docs/manual/combine/everyday-recipes.md)
 - [Next: Projects: shared context, files, and settings](https://bearly.ai/docs/manual/projects.md)
 - [Related: Building blocks: how Bearly's features connect](https://bearly.ai/docs/manual/combine/building-blocks.md)
-- [Related: Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md)
-- [Related: Record and use meetings](https://bearly.ai/docs/manual/capabilities/meetings.md)
+- [Related: Analyze data and run code](https://bearly.ai/docs/manual/capabilities/data-and-code.md)
 - [Related: Make Pages and edit in Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md)
+- [Related: Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md)

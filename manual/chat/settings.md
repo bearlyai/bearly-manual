@@ -106,7 +106,7 @@ While the model reasons, the line under the answer reads "Thinking", and the rea
 
 | Option | What it does |
 |---|---|
-| **Classic** (default) | "Bearly calls tools one at a time." After each call, the model reads the result and decides the next step. |
+| **Classic** (default) | "Bearly calls tools one at a time." The model asks for each call, sometimes several together, and reads every result before it decides the next step. |
 | **Code Mode** | "Bearly writes code that runs many tool calls at once." The code makes the calls, then counts, matches, or adds up their results, and only what it works out goes back to the model. |
 
 Code Mode makes a difference when a task needs many tool calls, such as reading 20 chats, pages, or files and then totaling, comparing, or listing what they say. Bearly finishes those tasks in far fewer model steps, so they take less time and use less of your plan. For a question that needs one or two tool calls, the two modes work about the same. How often Bearly writes code for a task also depends on the chat's model.
