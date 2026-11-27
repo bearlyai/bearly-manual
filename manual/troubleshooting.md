@@ -82,6 +82,10 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 | "No subscription found for this account" and "Sign in with the account that has the subscription, or choose a plan." after **Restore** | This account has no subscription | Sign in with the account that bought the plan |
 | "This account's billing is managed by a team admin. Contact support for billing assistance." | A team admin controls your billing | Ask your admin, or select **Contact Support** |
 | "Your _Plan_ payment didn't go through, so _Plan_ is paused." | Your card was declined when your plan renewed | Select **Update card** and pay with a new card. The plan comes back as soon as it's paid |
+| "Your plan is paused. Resume it in Settings → Billing, then change plans." | You tried to change plans while a pause is scheduled or running | In **Settings** → **Billing**, select **Don't pause** or **Resume now**, or wait for the pause to end, then change plans |
+| "Your card was declined. Update it in Manage billing, then try again." after **Resume and pay** | The charge to end your pause early didn't go through, so the plan stays paused | Select **Manage billing**, update your card, then select **Resume now** again |
+| "Pausing isn't available for your plan right now. Refresh the page to see your options." | Your plan changed after **Before you go** opened | Close it and select **Cancel** again to see the current options |
+| "Your pause changed while this page was open, so nothing was changed or charged. Your options are up to date now." | The pause started, or was taken off on another device, while **Billing** was open | Use the button the **Current Plan** card shows now |
 | "Team seat access is blocked until an admin fixes the payment. Every team admin has been notified." | Your organization's payment is past due | Ask an organization admin to fix the payment |
 | **You have two paid plans** | Your team seat already includes your personal plan's access | Select **End personal plan** if you don't need it; it ends at its own period end, and nothing is canceled automatically |
 
@@ -297,6 +301,7 @@ Bearly may also offer an [install card in a desktop chat](https://bearly.ai/docs
 | Bearly Browser isn't signed in to a site you use | Bearly Browser keeps its own sign-ins | Sign in inside Bearly Browser, or use **Import browser cookies** in **Settings** → **Browser** |
 | "Computer Use needs Accessibility and Screen Recording access. Open System Settings → Privacy & Security and enable Bearly in Accessibility and Screen Recording, then try again." The message can name only one of them | macOS hasn't granted Bearly those permissions | Turn on Bearly in each place the message names, then ask again |
 | "Computer Use is already working on another task." | One Computer Use task runs per chat | Wait, or select **Stop** on the **Computer** chip |
+| Bearly says Computer Use needs macOS 13 or later, and names the macOS version this Mac has | Computer Use doesn't run on macOS 12 or older | Update macOS, then ask again |
 | **Not installed** under **Settings** → **Runtime** → **Windows Computer Use helper** | The optional Windows helper isn't installed | Nothing to fix. Computer Use works without the helper |
 | A message that Computer Use's models are blocked by your workspace's model policy | Your organization allows none of the models Computer Use needs | Ask your admin |
 

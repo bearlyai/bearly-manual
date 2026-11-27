@@ -11,7 +11,7 @@ Index: [https://bearly.ai/docs/manual.md](https://bearly.ai/docs/manual.md)
 - [Bearly Manual](https://bearly.ai/docs/manual.md): The complete guide to using Bearly, covering every setting and capability, how features connect, and step-by-step recipes that combine them, for people, AI assistants, and agents.
 - [What Bearly is](https://bearly.ai/docs/manual/what-is-bearly.md): The facts about Bearly in one place, including what it does, who it's for, which models and platforms it covers, how plans and privacy work, and where to go next.
 - [Get Bearly on every device](https://bearly.ai/docs/manual/get-bearly.md): Where Bearly runs (web app, phone browsers, desktop app, iOS app, Chrome extension), how to install and sign in on each, what the desktop app adds, and a table of which capabilities work on which platform.
-- [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md): Bearly's plans and prices, which features each plan unlocks, how AI credits and the usage meter work, what you see at a limit, Credit Boost, and how to change, cancel, or restore a plan bought on the web, in the iOS app, or as an organization seat.
+- [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md): Bearly's plans and prices, which features each plan unlocks, how AI credits and the usage meter work, what you see at a limit, Credit Boost, and how to change, cancel, pause, or restore a plan bought on the web, in the iOS app, or as an organization seat.
 - [Tour the workspace](https://bearly.ai/docs/manual/workspace-tour.md): A map of Bearly's screens and where each control lives — the sidebar and account menu, the New Chat launcher, the chat's title menu and Share button, thread, side panel, composer, and context strip, the command menu, the Settings window, the other pages, and what changes in the desktop app, on phones, and in the iOS app.
 
 ### Chat
@@ -344,7 +344,7 @@ Bearly will soon need macOS 13 or later. On a Mac with macOS 12 or older, a note
 The iOS app is the same Bearly workspace for iPhone and iPad, with a few differences:
 
 - **Sign-in is by email only.** Enter your email, select **Continue**, and type the code Bearly emails you. The account buttons shown on other platforms are hidden in the app.
-- **Plans are bought through the App Store.** Plan cards read **Purchase** followed by the plan name. **Restore** checks the App Store for a subscription you already have. **Manage billing** and **Cancel** open the App Store's subscription settings. One-time Credit Boosts aren't sold in the app; buy them from the web or desktop app. If you subscribed through the App Store, other platforms show **Manage in iOS App**. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
+- **Plans are bought through the App Store.** Plan cards read **Purchase** followed by the plan name. **Restore** checks the App Store for a subscription you already have. **Manage billing** and **Cancel** open the App Store's subscription settings. If **Cancel** shows **Before you go** first, answer or skip the question and select **Continue**. One-time Credit Boosts aren't sold in the app; buy them from the web or desktop app. If you subscribed through the App Store, other platforms show **Manage in iOS App**. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
 - **Connectors that need a service sign-in** show **Web browser required**. Connect and use those in a regular browser. Custom servers that use a token, custom headers, or no sign-in work in the app.
 - **Desktop-only features** show a prompt to use Bearly on a computer. You can still create and edit routines in the app; they run in the desktop app.
 - **Downloads** open the iOS share sheet. Links Bearly opens go to Safari or the app that owns the link.
@@ -435,7 +435,7 @@ Your organization's policy can turn many of these features off, and some feature
 
 ---
 title: "Plans, credits, and limits"
-description: "Bearly's plans and prices, which features each plan unlocks, how AI credits and the usage meter work, what you see at a limit, Credit Boost, and how to change, cancel, or restore a plan bought on the web, in the iOS app, or as an organization seat."
+description: "Bearly's plans and prices, which features each plan unlocks, how AI credits and the usage meter work, what you see at a limit, Credit Boost, and how to change, cancel, pause, or restore a plan bought on the web, in the iOS app, or as an organization seat."
 canonical: "https://bearly.ai/docs/manual/plans-and-credits/"
 markdown: "https://bearly.ai/docs/manual/plans-and-credits.md"
 ---
@@ -444,9 +444,9 @@ markdown: "https://bearly.ai/docs/manual/plans-and-credits.md"
 
 HTML: [https://bearly.ai/docs/manual/plans-and-credits/](https://bearly.ai/docs/manual/plans-and-credits/)
 
-> Bearly's plans and prices, which features each plan unlocks, how AI credits and the usage meter work, what you see at a limit, Credit Boost, and how to change, cancel, or restore a plan bought on the web, in the iOS app, or as an organization seat.
+> Bearly's plans and prices, which features each plan unlocks, how AI credits and the usage meter work, what you see at a limit, Credit Boost, and how to change, cancel, pause, or restore a plan bought on the web, in the iOS app, or as an organization seat.
 
-Every Bearly plan comes with an allowance of AI credits. This page covers what each plan includes, how usage is counted, what happens when you reach a limit, and where to change or cancel a plan.
+Every Bearly plan comes with an allowance of AI credits. This page covers what each plan includes, how usage is counted, what happens when you reach a limit, and where to change, cancel, or pause a plan.
 
 ## Plans at a glance
 
@@ -569,22 +569,24 @@ Open it from the account menu with **Billing**, or from **Settings** → **Billi
 
 ### Current Plan
 
-The card shows your plan badge and, when a cancellation is scheduled, **Cancels on** with the date. It offers these buttons, and what each one does depends on where you bought the plan (see the table below):
+The card shows your plan badge and, when a cancellation is scheduled, **Cancels on** with the date. While a pause is scheduled it shows **Pauses on** with the start and end dates, and during the pause **Paused until** with the date your plan comes back (see [Pause for a month](#pause-for-a-month)). It offers these buttons, and what each one does depends on where you bought the plan (see the table below):
 
 - **Manage billing** — payment method, account details, and past invoices.
 - **Restore** — re-checks your subscription, for example after buying on another device.
-- **Cancel** — stops renewal. Shown on a paid plan with no cancellation scheduled.
+- **Cancel** — stops renewal. Shown on a paid plan with no cancellation scheduled, and during a pause.
 - **Reactivate** — undoes a scheduled cancellation. An organization seat shows **Reinstate** instead.
+- **Don't pause** — takes off a pause that hasn't started yet, with no charge.
+- **Resume now** — ends a pause early and charges for the plan today.
 
 ### The plan picker
 
-Choose **Monthly** or **Yearly**, then compare the cards for **Pro**, **Analyst**, and **Research**. A **Free** card appears when you're on a paid plan. Your plan is marked **CURRENT** and its button reads **Current Plan**. Other buttons read **Upgrade to _Plan_** (from Free), **Switch to _Plan_**, or **Purchase _Plan_** in the iOS app. Choosing **Free** on a plan you bought on the web cancels it.
+Choose **Monthly** or **Yearly**, then compare the cards for **Pro**, **Analyst**, and **Research**. A **Free** card appears when you're on a paid plan. Your plan is marked **CURRENT** and its button reads **Current Plan**. Other buttons read **Upgrade to _Plan_** (from Free), **Switch to _Plan_**, or **Purchase _Plan_** in the iOS app. Choosing **Free** on a plan you bought on the web cancels it. While a pause is scheduled or running, the plan picker is hidden.
 
 ### Actions by where you bought the plan
 
 | Bought through | Change plan | Cancel | Manage billing | Restore |
 | --- | --- | --- | --- | --- |
-| The web | Opens a secure billing page | **Cancel** opens the billing page's cancel flow. The plan stays until the end of the period. | Open the billing page | Refreshes your plan. If none is found: "No subscription found for this account". Sign in with the account that has the subscription. |
+| The web | Opens a secure billing page | **Cancel** opens the billing page's cancel flow, or **Before you go** if you see it. The plan stays until the end of the period. | Open the billing page | Refreshes your plan. If none is found: "No subscription found for this account". Sign in with the account that has the subscription. |
 | The iOS App Store | Purchase in the iOS app. Bearly shows "Setting up your pro account..." while it confirms. | In the iOS app, opens Apple's subscription management | In the iOS app, open Apple's subscription management | Checks Apple for your purchase |
 | An organization seat | Only an organization admin can change a seat, in the organization's **Billing** tab. An admin who holds a seat can also use these buttons in their own **Billing** pane. | For an admin: ends the seat at the end of its billing period, and **Reinstate** keeps it | For an admin: the organization's payment and invoice page | For an admin: reinstates an ending seat |
 | Billing managed by a team admin | Not available | Not available | Not available | Not available |
@@ -608,11 +610,35 @@ If your card is declined when a plan bought on the web renews, the plan pauses a
 
 
 1. Open **Settings** → **Billing** — the **Current Plan** card shows your options.
-2. Select **Cancel** — on the web this opens the billing page's cancel flow; in the iOS app it opens Apple's subscription management.
+2. Select **Cancel** — on the web this opens the billing page's cancel flow; in the iOS app it opens Apple's subscription management. If you see **Before you go** instead, finish there (below).
 3. Return to **Billing** — the card shows **Cancels on** and the end date. You keep the plan until then.
 4. To keep the plan after all, select **Reactivate** before that date.
 
 
+
+### If you see Before you go
+
+Selecting **Cancel** can open **Before you go** first. It asks **What's the main reason?** with six answers, and has a box for anything else you'd like to say. Both are optional. Then choose:
+
+- **Keep my plan** — closes it. Nothing changes.
+- **Cancel plan** — schedules the cancellation right there. It confirms "Cancelled. Your plan stays on until _date_." and **Billing** shows **Cancels on**.
+- **Pause for a month** — on plans that can pause (below), instead of cancelling.
+- **Continue** — replaces **Cancel plan** when you bought the plan in the App Store. It opens Apple's subscription settings, where you cancel.
+
+### Pause for a month
+
+**Pause for a month instead** appears in **Before you go** on a monthly Pro, Analyst, or Research plan bought on the web. It isn't offered on yearly plans, trials, App Store subscriptions, or organization seats, or when the plan is already set to cancel, a renewal payment is overdue, a plan change is scheduled, or you paused in the last 183 days, even if you then selected **Don't pause**.
+
+1. You keep your plan until the end of the month you've paid for.
+2. Then your account is on Free for one month, with no charge. Your chats and files stay as they are.
+3. On the date shown, your plan and its usual charge come back by themselves, and your plan renews monthly from there. Bearly emails you 3 days before, with the plan and the amount.
+
+After you pause, Bearly confirms "Paused. Your plan stays on until _date_, then you're on Free until _date_. We won't charge you again until _date_." On the **Current Plan** card:
+
+- **Before the pause starts**, **Pauses on** shows both dates. **Don't pause** takes the pause off with no charge, and your billing date stays the same.
+- **During the pause**, the badge reads **Free** and **Paused until** shows the date your plan comes back. **Resume now** asks "Resume _Plan_ now?" with the price: your plan comes back today, and today becomes your new billing date. **Resume and pay _price_** charges your card at once; **Stay paused** keeps the pause. If the card is declined, the plan stays paused.
+- **Plan changes wait** until the pause ends or you resume. **Manage billing** still updates your card and lists invoices.
+- **Cancel before the pause starts** and the pause comes off: the plan ends at the end of the month you paid for. **Cancel during the pause** and you stay on Free with no further charge: "Cancelled. You're on Free now, and we won't charge you again."
 
 If you subscribed in the iOS app, cancel from the iOS app. On other devices, Bearly says "You must be in the iOS app to manage your subscription." If a purchase doesn't show up, sign in with the Bearly account that bought it and select **Restore**.
 
@@ -1216,7 +1242,7 @@ Your default model depends on your plan and usage:
 | Your account | Default model |
 |---|---|
 | Free plan | **Bearly Fast** |
-| Any paid plan | **Bearly Pro**, with Medium reasoning |
+| Any paid plan | **Bearly Pro**, with Low reasoning |
 | Paid plan at 95% or more of its usage | **Bearly Fast**, while usage stays at or above 95% |
 
 The default applies when you haven't chosen a model yourself. A model you picked for a chat stays picked. An open chat on the default follows the switch to Bearly Fast as soon as you cross 95%. The percentage you've used shows on the account menu button at the bottom of the sidebar; see [Plans and credits](https://bearly.ai/docs/manual/plans-and-credits.md).
@@ -1943,7 +1969,7 @@ On a phone-sized screen, 480 pixels wide or less, Bearly also asks the AI to kee
 
 | Option | What it does |
 |---|---|
-| **Default** | Medium when the chat is on Bearly Pro as your plan's default model; otherwise the model's own default |
+| **Default** | Low when the chat is on Bearly Pro as your plan's default model; otherwise the model's own default |
 | **None**, **Low**, **Medium**, **High**, **Extra High** | Asks the model for that level of reasoning |
 
 While the model reasons, the line under the answer reads "Thinking", and the reasoning itself is in the answer's **Steps**; see [Work with answers](https://bearly.ai/docs/manual/chat/answers.md#thinking-steps).
@@ -9892,8 +9918,9 @@ To stop a request, open **Change email** again and select **Cancel request**. On
 
 1. Open **Settings** → **Profile** and, beside **Delete account**, select **Delete** — the dialog lists what's deleted and what's kept.
 2. Review the subscription note. A web subscription is canceled when the deletion runs, so cancel first if it could renew in the next 24 hours. An App Store subscription isn't canceled, and unused time and credits aren't refunded. **Manage subscription** helps you cancel.
-3. Select **Email verification code**, enter the six-digit **Verification code** and your full **Account email**, then select **Schedule account deletion**.
-4. Save the **Deletion receipt** and scheduled time — Bearly also emails the schedule to your account address.
+3. Select **Email verification code** — while the code is on its way, **Before you go** asks why you're deleting your account. Answering is optional: pick a reason or write a note and select **Continue**, or select **Skip**. Bearly stores only your answer, without your email or account, and it has no effect on the deletion. Anything you write in the note is kept as written.
+4. Enter the six-digit **Verification code** and your full **Account email**, then select **Schedule account deletion**.
+5. Save the **Deletion receipt** and scheduled time — Bearly also emails the schedule to your account address.
 
 
 
@@ -10020,7 +10047,7 @@ See [Delete your account](https://bearly.ai/docs/manual/privacy-and-security.md)
 
 ### Billing
 
-Your **Current Plan** card (**Manage billing**, **Restore**, **Cancel**, or **Reactivate**), **Credit Boost** on eligible plans, and the plan picker with **Monthly** and **Yearly** (**17% off**). Seat holders also see their organization seat. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
+Your **Current Plan** card (**Manage billing**, **Restore**, **Cancel**, or **Reactivate**, and **Don't pause** or **Resume now** while a monthly plan is paused), **Credit Boost** on eligible plans, and the plan picker with **Monthly** and **Yearly** (**17% off**), hidden during a pause. Seat holders also see their organization seat. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
 
 ### Usage
 
@@ -10613,6 +10640,10 @@ Find the message or symptom you see, then follow the fix. Text in quotes is exac
 | "No subscription found for this account" and "Sign in with the account that has the subscription, or choose a plan." after **Restore** | This account has no subscription | Sign in with the account that bought the plan |
 | "This account's billing is managed by a team admin. Contact support for billing assistance." | A team admin controls your billing | Ask your admin, or select **Contact Support** |
 | "Your _Plan_ payment didn't go through, so _Plan_ is paused." | Your card was declined when your plan renewed | Select **Update card** and pay with a new card. The plan comes back as soon as it's paid |
+| "Your plan is paused. Resume it in Settings → Billing, then change plans." | You tried to change plans while a pause is scheduled or running | In **Settings** → **Billing**, select **Don't pause** or **Resume now**, or wait for the pause to end, then change plans |
+| "Your card was declined. Update it in Manage billing, then try again." after **Resume and pay** | The charge to end your pause early didn't go through, so the plan stays paused | Select **Manage billing**, update your card, then select **Resume now** again |
+| "Pausing isn't available for your plan right now. Refresh the page to see your options." | Your plan changed after **Before you go** opened | Close it and select **Cancel** again to see the current options |
+| "Your pause changed while this page was open, so nothing was changed or charged. Your options are up to date now." | The pause started, or was taken off on another device, while **Billing** was open | Use the button the **Current Plan** card shows now |
 | "Team seat access is blocked until an admin fixes the payment. Every team admin has been notified." | Your organization's payment is past due | Ask an organization admin to fix the payment |
 | **You have two paid plans** | Your team seat already includes your personal plan's access | Select **End personal plan** if you don't need it; it ends at its own period end, and nothing is canceled automatically |
 
@@ -10828,6 +10859,7 @@ Bearly may also offer an [install card in a desktop chat](https://bearly.ai/docs
 | Bearly Browser isn't signed in to a site you use | Bearly Browser keeps its own sign-ins | Sign in inside Bearly Browser, or use **Import browser cookies** in **Settings** → **Browser** |
 | "Computer Use needs Accessibility and Screen Recording access. Open System Settings → Privacy & Security and enable Bearly in Accessibility and Screen Recording, then try again." The message can name only one of them | macOS hasn't granted Bearly those permissions | Turn on Bearly in each place the message names, then ask again |
 | "Computer Use is already working on another task." | One Computer Use task runs per chat | Wait, or select **Stop** on the **Computer** chip |
+| Bearly says Computer Use needs macOS 13 or later, and names the macOS version this Mac has | Computer Use doesn't run on macOS 12 or older | Update macOS, then ask again |
 | **Not installed** under **Settings** → **Runtime** → **Windows Computer Use helper** | The optional Windows helper isn't installed | Nothing to fix. Computer Use works without the helper |
 | A message that Computer Use's models are blocked by your workspace's model policy | Your organization allows none of the models Computer Use needs | Ask your admin |
 
@@ -11099,6 +11131,8 @@ Every term below is written the way the app shows it. Each definition links to t
 ## P
 
 **Page**: A single-file interactive app, such as a calculator, dashboard, game, or planner, that Bearly writes as a file and runs live in the chat. You can publish a Page to a stable bearly.sh link. See [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md#what-a-page-is).
+
+**Pause for a month**: An option **Before you go** can offer when you cancel a monthly Pro, Analyst, or Research plan bought on the web: you keep the plan through the month you paid for, then you're on Free for a month with no charge, and the plan and its charge come back by themselves. **Resume now** ends it early. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md#pause-for-a-month).
 
 **People Search**: Identifies one named person after you confirm the right candidate, then builds a cited brief. It also finds people from a description and looks up work emails. Analyst and higher. See [Research](https://bearly.ai/docs/manual/capabilities/research.md#people-search).
 

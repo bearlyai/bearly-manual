@@ -92,7 +92,7 @@ On a phone-sized screen, 480 pixels wide or less, Bearly also asks the AI to kee
 
 | Option | What it does |
 |---|---|
-| **Default** | Medium when the chat is on Bearly Pro as your plan's default model; otherwise the model's own default |
+| **Default** | Low when the chat is on Bearly Pro as your plan's default model; otherwise the model's own default |
 | **None**, **Low**, **Medium**, **High**, **Extra High** | Asks the model for that level of reasoning |
 
 While the model reasons, the line under the answer reads "Thinking", and the reasoning itself is in the answer's **Steps**; see [Work with answers](https://bearly.ai/docs/manual/chat/answers.md#thinking-steps).

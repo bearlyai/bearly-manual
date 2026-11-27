@@ -1,6 +1,6 @@
 ---
 title: "Plans, credits, and limits"
-description: "Bearly's plans and prices, which features each plan unlocks, how AI credits and the usage meter work, what you see at a limit, Credit Boost, and how to change, cancel, or restore a plan bought on the web, in the iOS app, or as an organization seat."
+description: "Bearly's plans and prices, which features each plan unlocks, how AI credits and the usage meter work, what you see at a limit, Credit Boost, and how to change, cancel, pause, or restore a plan bought on the web, in the iOS app, or as an organization seat."
 canonical: "https://bearly.ai/docs/manual/plans-and-credits/"
 markdown: "https://bearly.ai/docs/manual/plans-and-credits.md"
 ---
@@ -9,9 +9,9 @@ markdown: "https://bearly.ai/docs/manual/plans-and-credits.md"
 
 HTML: [https://bearly.ai/docs/manual/plans-and-credits/](https://bearly.ai/docs/manual/plans-and-credits/)
 
-> Bearly's plans and prices, which features each plan unlocks, how AI credits and the usage meter work, what you see at a limit, Credit Boost, and how to change, cancel, or restore a plan bought on the web, in the iOS app, or as an organization seat.
+> Bearly's plans and prices, which features each plan unlocks, how AI credits and the usage meter work, what you see at a limit, Credit Boost, and how to change, cancel, pause, or restore a plan bought on the web, in the iOS app, or as an organization seat.
 
-Every Bearly plan comes with an allowance of AI credits. This page covers what each plan includes, how usage is counted, what happens when you reach a limit, and where to change or cancel a plan.
+Every Bearly plan comes with an allowance of AI credits. This page covers what each plan includes, how usage is counted, what happens when you reach a limit, and where to change, cancel, or pause a plan.
 
 ## Plans at a glance
 
@@ -134,22 +134,24 @@ Open it from the account menu with **Billing**, or from **Settings** → **Billi
 
 ### Current Plan
 
-The card shows your plan badge and, when a cancellation is scheduled, **Cancels on** with the date. It offers these buttons, and what each one does depends on where you bought the plan (see the table below):
+The card shows your plan badge and, when a cancellation is scheduled, **Cancels on** with the date. While a pause is scheduled it shows **Pauses on** with the start and end dates, and during the pause **Paused until** with the date your plan comes back (see [Pause for a month](#pause-for-a-month)). It offers these buttons, and what each one does depends on where you bought the plan (see the table below):
 
 - **Manage billing** — payment method, account details, and past invoices.
 - **Restore** — re-checks your subscription, for example after buying on another device.
-- **Cancel** — stops renewal. Shown on a paid plan with no cancellation scheduled.
+- **Cancel** — stops renewal. Shown on a paid plan with no cancellation scheduled, and during a pause.
 - **Reactivate** — undoes a scheduled cancellation. An organization seat shows **Reinstate** instead.
+- **Don't pause** — takes off a pause that hasn't started yet, with no charge.
+- **Resume now** — ends a pause early and charges for the plan today.
 
 ### The plan picker
 
-Choose **Monthly** or **Yearly**, then compare the cards for **Pro**, **Analyst**, and **Research**. A **Free** card appears when you're on a paid plan. Your plan is marked **CURRENT** and its button reads **Current Plan**. Other buttons read **Upgrade to _Plan_** (from Free), **Switch to _Plan_**, or **Purchase _Plan_** in the iOS app. Choosing **Free** on a plan you bought on the web cancels it.
+Choose **Monthly** or **Yearly**, then compare the cards for **Pro**, **Analyst**, and **Research**. A **Free** card appears when you're on a paid plan. Your plan is marked **CURRENT** and its button reads **Current Plan**. Other buttons read **Upgrade to _Plan_** (from Free), **Switch to _Plan_**, or **Purchase _Plan_** in the iOS app. Choosing **Free** on a plan you bought on the web cancels it. While a pause is scheduled or running, the plan picker is hidden.
 
 ### Actions by where you bought the plan
 
 | Bought through | Change plan | Cancel | Manage billing | Restore |
 | --- | --- | --- | --- | --- |
-| The web | Opens a secure billing page | **Cancel** opens the billing page's cancel flow. The plan stays until the end of the period. | Open the billing page | Refreshes your plan. If none is found: "No subscription found for this account". Sign in with the account that has the subscription. |
+| The web | Opens a secure billing page | **Cancel** opens the billing page's cancel flow, or **Before you go** if you see it. The plan stays until the end of the period. | Open the billing page | Refreshes your plan. If none is found: "No subscription found for this account". Sign in with the account that has the subscription. |
 | The iOS App Store | Purchase in the iOS app. Bearly shows "Setting up your pro account..." while it confirms. | In the iOS app, opens Apple's subscription management | In the iOS app, open Apple's subscription management | Checks Apple for your purchase |
 | An organization seat | Only an organization admin can change a seat, in the organization's **Billing** tab. An admin who holds a seat can also use these buttons in their own **Billing** pane. | For an admin: ends the seat at the end of its billing period, and **Reinstate** keeps it | For an admin: the organization's payment and invoice page | For an admin: reinstates an ending seat |
 | Billing managed by a team admin | Not available | Not available | Not available | Not available |
@@ -173,11 +175,35 @@ If your card is declined when a plan bought on the web renews, the plan pauses a
 
 
 1. Open **Settings** → **Billing** — the **Current Plan** card shows your options.
-2. Select **Cancel** — on the web this opens the billing page's cancel flow; in the iOS app it opens Apple's subscription management.
+2. Select **Cancel** — on the web this opens the billing page's cancel flow; in the iOS app it opens Apple's subscription management. If you see **Before you go** instead, finish there (below).
 3. Return to **Billing** — the card shows **Cancels on** and the end date. You keep the plan until then.
 4. To keep the plan after all, select **Reactivate** before that date.
 
 
+
+### If you see Before you go
+
+Selecting **Cancel** can open **Before you go** first. It asks **What's the main reason?** with six answers, and has a box for anything else you'd like to say. Both are optional. Then choose:
+
+- **Keep my plan** — closes it. Nothing changes.
+- **Cancel plan** — schedules the cancellation right there. It confirms "Cancelled. Your plan stays on until _date_." and **Billing** shows **Cancels on**.
+- **Pause for a month** — on plans that can pause (below), instead of cancelling.
+- **Continue** — replaces **Cancel plan** when you bought the plan in the App Store. It opens Apple's subscription settings, where you cancel.
+
+### Pause for a month
+
+**Pause for a month instead** appears in **Before you go** on a monthly Pro, Analyst, or Research plan bought on the web. It isn't offered on yearly plans, trials, App Store subscriptions, or organization seats, or when the plan is already set to cancel, a renewal payment is overdue, a plan change is scheduled, or you paused in the last 183 days, even if you then selected **Don't pause**.
+
+1. You keep your plan until the end of the month you've paid for.
+2. Then your account is on Free for one month, with no charge. Your chats and files stay as they are.
+3. On the date shown, your plan and its usual charge come back by themselves, and your plan renews monthly from there. Bearly emails you 3 days before, with the plan and the amount.
+
+After you pause, Bearly confirms "Paused. Your plan stays on until _date_, then you're on Free until _date_. We won't charge you again until _date_." On the **Current Plan** card:
+
+- **Before the pause starts**, **Pauses on** shows both dates. **Don't pause** takes the pause off with no charge, and your billing date stays the same.
+- **During the pause**, the badge reads **Free** and **Paused until** shows the date your plan comes back. **Resume now** asks "Resume _Plan_ now?" with the price: your plan comes back today, and today becomes your new billing date. **Resume and pay _price_** charges your card at once; **Stay paused** keeps the pause. If the card is declined, the plan stays paused.
+- **Plan changes wait** until the pause ends or you resume. **Manage billing** still updates your card and lists invoices.
+- **Cancel before the pause starts** and the pause comes off: the plan ends at the end of the month you paid for. **Cancel during the pause** and you stay on Free with no further charge: "Cancelled. You're on Free now, and we won't charge you again."
 
 If you subscribed in the iOS app, cancel from the iOS app. On other devices, Bearly says "You must be in the iOS app to manage your subscription." If a purchase doesn't show up, sign in with the Bearly account that bought it and select **Restore**.
 

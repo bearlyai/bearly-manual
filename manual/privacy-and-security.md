@@ -237,8 +237,9 @@ To stop a request, open **Change email** again and select **Cancel request**. On
 
 1. Open **Settings** → **Profile** and, beside **Delete account**, select **Delete** — the dialog lists what's deleted and what's kept.
 2. Review the subscription note. A web subscription is canceled when the deletion runs, so cancel first if it could renew in the next 24 hours. An App Store subscription isn't canceled, and unused time and credits aren't refunded. **Manage subscription** helps you cancel.
-3. Select **Email verification code**, enter the six-digit **Verification code** and your full **Account email**, then select **Schedule account deletion**.
-4. Save the **Deletion receipt** and scheduled time — Bearly also emails the schedule to your account address.
+3. Select **Email verification code** — while the code is on its way, **Before you go** asks why you're deleting your account. Answering is optional: pick a reason or write a note and select **Continue**, or select **Skip**. Bearly stores only your answer, without your email or account, and it has no effect on the deletion. Anything you write in the note is kept as written.
+4. Enter the six-digit **Verification code** and your full **Account email**, then select **Schedule account deletion**.
+5. Save the **Deletion receipt** and scheduled time — Bearly also emails the schedule to your account address.
 
 
 

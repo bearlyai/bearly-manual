@@ -179,6 +179,8 @@ Every term below is written the way the app shows it. Each definition links to t
 
 **Page**: A single-file interactive app, such as a calculator, dashboard, game, or planner, that Bearly writes as a file and runs live in the chat. You can publish a Page to a stable bearly.sh link. See [Pages and Canvas](https://bearly.ai/docs/manual/capabilities/pages-and-canvas.md#what-a-page-is).
 
+**Pause for a month**: An option **Before you go** can offer when you cancel a monthly Pro, Analyst, or Research plan bought on the web: you keep the plan through the month you paid for, then you're on Free for a month with no charge, and the plan and its charge come back by themselves. **Resume now** ends it early. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md#pause-for-a-month).
+
 **People Search**: Identifies one named person after you confirm the right candidate, then builds a cited brief. It also finds people from a description and looks up work emails. Analyst and higher. See [Research](https://bearly.ai/docs/manual/capabilities/research.md#people-search).
 
 **Per-reply limits**: How much one reply sends or makes before it asks: 3 messages, 4 images or speech clips, 1 video, 1 model run, and 5 paid lookups. See [Permissions](https://bearly.ai/docs/manual/capabilities/permissions.md#per-reply-limits).

@@ -53,7 +53,7 @@ Your default model depends on your plan and usage:
 | Your account | Default model |
 |---|---|
 | Free plan | **Bearly Fast** |
-| Any paid plan | **Bearly Pro**, with Medium reasoning |
+| Any paid plan | **Bearly Pro**, with Low reasoning |
 | Paid plan at 95% or more of its usage | **Bearly Fast**, while usage stays at or above 95% |
 
 The default applies when you haven't chosen a model yourself. A model you picked for a chat stays picked. An open chat on the default follows the switch to Bearly Fast as soon as you cross 95%. The percentage you've used shows on the account menu button at the bottom of the sidebar; see [Plans and credits](https://bearly.ai/docs/manual/plans-and-credits.md).

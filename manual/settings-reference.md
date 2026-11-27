@@ -68,7 +68,7 @@ See [Delete your account](https://bearly.ai/docs/manual/privacy-and-security.md)
 
 ### Billing
 
-Your **Current Plan** card (**Manage billing**, **Restore**, **Cancel**, or **Reactivate**), **Credit Boost** on eligible plans, and the plan picker with **Monthly** and **Yearly** (**17% off**). Seat holders also see their organization seat. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
+Your **Current Plan** card (**Manage billing**, **Restore**, **Cancel**, or **Reactivate**, and **Don't pause** or **Resume now** while a monthly plan is paused), **Credit Boost** on eligible plans, and the plan picker with **Monthly** and **Yearly** (**17% off**), hidden during a pause. Seat holders also see their organization seat. See [Plans, credits, and limits](https://bearly.ai/docs/manual/plans-and-credits.md).
 
 ### Usage
 
