@@ -1,6 +1,6 @@
 ---
 title: "Run Bearly for an organization"
-description: "How to create and run a Bearly organization, including managed and unmanaged organizations, every console tab and setting (Overview, Agent access, Microsoft Entra and provisioning, Access banner, Members, Groups, Projects, Policies, Billing seats, Usage, Activity), the complete policy control catalog, and what admins can and can't see."
+description: "How to create and run a Bearly organization, including managed and unmanaged organizations, every console tab and setting (Overview, Agent access, Microsoft Entra and provisioning, Access banner and who accepted it, Members, Groups, Projects, Policies, Billing seats, Usage, Activity with filters and CSV export), the complete policy control catalog, and what admins can and can't see."
 canonical: "https://bearly.ai/docs/manual/organizations/"
 markdown: "https://bearly.ai/docs/manual/organizations.md"
 ---
@@ -9,7 +9,7 @@ markdown: "https://bearly.ai/docs/manual/organizations.md"
 
 HTML: [https://bearly.ai/docs/manual/organizations/](https://bearly.ai/docs/manual/organizations/)
 
-> How to create and run a Bearly organization, including managed and unmanaged organizations, every console tab and setting (Overview, Agent access, Microsoft Entra and provisioning, Access banner, Members, Groups, Projects, Policies, Billing seats, Usage, Activity), the complete policy control catalog, and what admins can and can't see.
+> How to create and run a Bearly organization, including managed and unmanaged organizations, every console tab and setting (Overview, Agent access, Microsoft Entra and provisioning, Access banner and who accepted it, Members, Groups, Projects, Policies, Billing seats, Usage, Activity with filters and CSV export), the complete policy control catalog, and what admins can and can't see.
 
 An organization holds your members, groups, and policies in one place. Admins add people, share projects with the whole organization or a group, buy seats, and, on a managed organization, decide which models and features members can use. Admins can't open members' chats; see [What organization admins can see](https://bearly.ai/docs/manual/privacy-and-security.md#what-organization-admins-can-see).
 
@@ -95,7 +95,21 @@ The access banner shows members a message they must accept before they can use B
 
 
 
-**Limits:** acceptance is remembered per device and per version of the banner, so each device asks separately, and saving a change asks everyone again.
+**Limits:** acceptance is remembered per device and per version of the banner, so each device asks separately. Every save starts a new version and asks everyone again, even when you only change the frequency or turn the banner off and back on.
+
+### See who accepted the banner
+
+While the banner is on, **Who accepted version _N_** appears below it: "Counts this version only. Editing the banner starts a new version."
+
+- A count such as "41 of 52 members" shows how many active members accepted the current version.
+- **Accepted** lists each person with when they first accepted and where: **Web**, **Desktop**, or **iPhone**. Hover over the time for the full date. Android phones count as **Web**.
+- **Not yet accepted** lists the active members who haven't.
+- Each list shows ten people; **Show all** shows the rest.
+- **Export CSV** downloads both lists with **Name**, **Email**, **Status**, **Accepted at (UTC)**, and **Device**.
+
+A new version's list starts empty. Each person's first acceptance of a version also appears in [Activity](#activity) as "Accepted the access banner (version _N_)". If the list doesn't load, it reads "Couldn't load acceptances." with **Retry**.
+
+**Limits:** the list counts acceptances from when it was added to Bearly. A member who accepted before then is listed the next time the banner asks them. An acceptance made while the device couldn't reach Bearly may not be listed, though the member still gets in.
 
 **Who accepted:** while a saved banner is on, its settings show **Who accepted version _N_** ("Counts this version only. Editing the banner starts a new version."): the members who accepted, with the time and device, and a **Not yet accepted** list. **Export CSV** downloads both lists. A person's first acceptance of each version also appears in **Activity**.
 
@@ -380,7 +394,31 @@ Seats go only to active members. A person uses the higher of their personal plan
 
 ## Activity
 
-**Activity** ("Changes people made to this organization, newest first.") lists organization changes, with **Load more** for older entries. Narrow the list with **Date** (**All time**, **Last 7 days**, **Last 30 days**, **Last 90 days**, or **Custom…**), **Person**, **Category** (**All activity**, **Members**, **Groups**, **Policies and access**, **Settings**, **Projects**, **Access banner**, **Exports**), and **Search activity**. When nothing matches, the tab reads "No activity matches these filters." with **Clear filters**. **Export CSV** downloads the newest 10,000 entries that match the current filters; past that it says "Exported the newest 10,000 entries. Narrow the dates to export older ones." Each export is itself recorded in the log. Categories cover the organization, settings, agent access, policies, members (added, edited, removed, suspended, resumed), billing, identity, groups, projects (access removed or deleted), access banner acceptances, and Activity exports. Entries show what changed, such as a spending limit or feature controls, with before and after values. History starts from when Activity was added, so older changes aren't listed. An empty log reads "No organization changes recorded yet."
+**You need:** the admin role.
+
+**Activity** ("Changes people made to this organization, newest first.") is the organization's audit log. It lists changes to the organization, settings, agent access, policies, members (added, edited, removed, suspended, resumed), billing, identity, groups, and projects (access removed or deleted), with **Load more** for older entries. Entries show what changed, such as a spending limit or feature controls, with before and after values. On a computer, hover over a time for the full date. History starts from when Activity was added, so older changes aren't listed. An empty log reads "No organization changes recorded yet."
+
+Activity also lists two things that aren't settings changes:
+
+- A member's first acceptance of each [access banner](#see-who-accepted-the-banner) version: "Accepted the access banner (version 3)".
+- Each export: "Exported the audit log (214 entries)". When the export was filtered, expand the entry to see its filters.
+
+### Filter Activity
+
+The filters above the list narrow it, and **Load more** keeps to them:
+
+- **Date**: **All time** (the default), **Last 7 days**, **Last 30 days**, **Last 90 days**, or **Custom…**, which adds **From** and **To** dates. Days follow your own time zone, and a custom range includes both end dates.
+- **Person**: **Anyone**, or one member.
+- **Category**: **All activity**, **Members**, **Groups**, **Policies and access**, **Settings**, **Projects**, **Access banner**, or **Exports**.
+- **Search activity**: matches the entry's text, what it acted on, and the email of the person who made it.
+
+When nothing matches, Activity reads "No activity matches these filters." with **Clear filters**.
+
+### Export Activity
+
+Select **Export CSV** to download the entries that match the current filters, newest first. The file has **Time (UTC)**, **Person**, **Action**, **Target**, **Summary**, and **Details** columns, and it's named for the organization and the day.
+
+**Limits:** an export holds at most the newest 10,000 matching entries. When there are more, Activity says "Exported the newest 10,000 entries. Narrow the dates to export older ones." A cell that a spreadsheet would read as a formula starts with an apostrophe (`'`), so it opens as text. The export adds its own entry to Activity, which isn't in that file. If it fails, Activity says "Couldn't export. Try again."
 
 ## Related
 

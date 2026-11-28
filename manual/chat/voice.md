@@ -81,12 +81,14 @@ A voice call is a live conversation: you talk, Bearly answers out loud, and you 
 
 
 1. Select **Start voice call** — the sound-wave icon just left of Send. Allow microphone access if asked.
-2. Talk — the message box becomes a call bar that shows "Connecting", "Listening", "Thinking", or "Speaking", a timer, and the model's name.
+2. Talk — you can start right away. The message box becomes a call bar that shows "Listening", "Thinking", or "Speaking", a timer, and the model's name. While the call connects, it shows "Listening" with "Connecting…" under it, and Bearly answers what you said once the call connects.
 3. Interrupt whenever you like — start talking and Bearly stops to listen.
-4. Use **Mute microphone** and **Unmute microphone** as needed, and pick a different microphone from the call bar; Bearly remembers your choice on that device.
+4. Use **Mute microphone** and **Unmute microphone** as needed, including while the call connects; nothing you say while muted is sent. Pick a different microphone from the call bar; Bearly remembers your choice on that device.
 5. Select **End call** when you're done.
 
 
+
+If the connection fails before the call starts, Bearly sends what you said as a normal message instead. The call bar shows "Voice couldn't connect. Sending what you said as a message…" and then "Voice couldn't connect, so what you said was sent as a message." If the message can't be sent, your words come back to the message box, or to the queue if you've already typed something there, so nothing you said is lost. This needs your organization to allow **Dictation** and **Cloud dictation**; without them, words said before a call that never connects aren't sent.
 
 **What you get:** a call card in the chat with the status, length, and model, and **Show transcript** with "You:" and "Bearly:" lines. Later typed messages in the chat can see that transcript. The card has no audio playback.
 

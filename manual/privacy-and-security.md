@@ -266,7 +266,8 @@ Organization admins manage members, groups, policies, and billing. Being an admi
 | The title, owners, groups, and creation date of each project shared with the organization or its groups | Yes, on **Projects**, without the project's content |
 | Each member's name, email, role, policy, and spending limit | Yes, on **Members** |
 | Each managed-domain member's spend and number of calls, by model and month | Yes, on **Usage**, on a managed organization. |
-| Changes to members, groups, policies, settings, billing, and project access | Yes, on **Activity**. It doesn't record what anyone does in chats. |
+| Changes to members, groups, policies, settings, billing, and project access | Yes, on **Activity**, which they can filter and export as a CSV. It doesn't record what anyone does in chats. |
+| Whether you accepted the organization's access banner, when, and on which kind of device (web, desktop, or iPhone) | Yes, under **Access banner** on **Overview**, and in **Activity**. |
 
 - **Access comes from sharing, not from the admin role.** An admin sees a project only when it's shared with the organization or with a group they belong to. Admins can add themselves to a group, which gives them that group's shared projects like any other group member, and the change appears in **Activity**.
 - **Admins can change access without reading anything.** They can remove the organization's access to a shared project, and delete a project once none of its owners is still a member; its chats go back to the people who started them. Policies decide which models and features you can use, and **Lock existing chats** makes members' chats open only on the device that holds their key. See [Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md).

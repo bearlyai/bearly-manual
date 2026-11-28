@@ -52,7 +52,7 @@ Index: [https://bearly.ai/docs/manual.md](https://bearly.ai/docs/manual.md)
 ### Workspace & Control
 
 - [Projects: shared context, files, and settings](https://bearly.ai/docs/manual/projects.md): How Bearly projects work, including creating one, the project page and its Chats, Files, Sharing, and Settings tabs, roles and sharing, every project setting, project files and desktop folder sync, how project chats inherit settings and memory, password protection, archiving, and tested setups.
-- [Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md): How to create and run a Bearly organization, including managed and unmanaged organizations, every console tab and setting (Overview, Agent access, Microsoft Entra and provisioning, Access banner, Members, Groups, Projects, Policies, Billing seats, Usage, Activity), the complete policy control catalog, and what admins can and can't see.
+- [Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md): How to create and run a Bearly organization, including managed and unmanaged organizations, every console tab and setting (Overview, Agent access, Microsoft Entra and provisioning, Access banner and who accepted it, Members, Groups, Projects, Policies, Billing seats, Usage, Activity with filters and CSV export), the complete policy control catalog, and what admins can and can't see.
 - [Privacy and security controls](https://bearly.ai/docs/manual/privacy-and-security.md): Every privacy and security control in Bearly and what it changes, including Zero Data Retention only, end-to-end encryption with recovery phrase, device approval, and passkeys, personalization, memories and web search, project passwords, tool permissions, signed-in devices, logging out, account deletion, text messages, what organization admins can and can't see, and admin-only controls.
 - [Settings reference](https://bearly.ai/docs/manual/settings-reference.md): Every pane and control in Bearly's Settings window, in the order the app shows them, with options, defaults, and what each control does, plus how to open Settings, read its save status, and find the panes that only appear on some platforms or plans.
 
@@ -206,7 +206,7 @@ Compared with ChatGPT, Claude, Gemini, Microsoft Copilot, Microsoft 365 Copilot,
 
 ## For organizations
 
-Every model under one contract. Admins get feature-by-feature controls, model allowlists, spend limits for teams, groups, and members, lockable chat defaults, an access banner, and usage reports. Sign-in can run through Microsoft Entra single sign-on with SCIM provisioning. An audit log records admin, policy, membership, and billing changes. Admins can limit teams to zero-retention chat models with a model allowlist. Bearly is SOC 2 compliant. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
+Every model under one contract. Admins get feature-by-feature controls, model allowlists, spend limits for teams, groups, and members, lockable chat defaults, an access banner, and usage reports. Sign-in can run through Microsoft Entra single sign-on with SCIM provisioning. An audit log records admin, policy, membership, and billing changes, and admins can filter it and export it as a CSV. Admins can limit teams to zero-retention chat models with a model allowlist. Bearly is SOC 2 compliant. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
 ## For developers and agents
 
@@ -2197,12 +2197,14 @@ A voice call is a live conversation: you talk, Bearly answers out loud, and you 
 
 
 1. Select **Start voice call** — the sound-wave icon just left of Send. Allow microphone access if asked.
-2. Talk — the message box becomes a call bar that shows "Connecting", "Listening", "Thinking", or "Speaking", a timer, and the model's name.
+2. Talk — you can start right away. The message box becomes a call bar that shows "Listening", "Thinking", or "Speaking", a timer, and the model's name. While the call connects, it shows "Listening" with "Connecting…" under it, and Bearly answers what you said once the call connects.
 3. Interrupt whenever you like — start talking and Bearly stops to listen.
-4. Use **Mute microphone** and **Unmute microphone** as needed, and pick a different microphone from the call bar; Bearly remembers your choice on that device.
+4. Use **Mute microphone** and **Unmute microphone** as needed, including while the call connects; nothing you say while muted is sent. Pick a different microphone from the call bar; Bearly remembers your choice on that device.
 5. Select **End call** when you're done.
 
 
+
+If the connection fails before the call starts, Bearly sends what you said as a normal message instead. The call bar shows "Voice couldn't connect. Sending what you said as a message…" and then "Voice couldn't connect, so what you said was sent as a message." If the message can't be sent, your words come back to the message box, or to the queue if you've already typed something there, so nothing you said is lost. This needs your organization to allow **Dictation** and **Cloud dictation**; without them, words said before a call that never connects aren't sent.
 
 **What you get:** a call card in the chat with the status, length, and model, and **Show transcript** with "You:" and "Bearly:" lines. Later typed messages in the chat can see that transcript. The card has no audio playback.
 
@@ -9287,7 +9289,7 @@ Recall stays within one client's chats, and nothing about you rides along.
 
 ---
 title: "Run Bearly for an organization"
-description: "How to create and run a Bearly organization, including managed and unmanaged organizations, every console tab and setting (Overview, Agent access, Microsoft Entra and provisioning, Access banner, Members, Groups, Projects, Policies, Billing seats, Usage, Activity), the complete policy control catalog, and what admins can and can't see."
+description: "How to create and run a Bearly organization, including managed and unmanaged organizations, every console tab and setting (Overview, Agent access, Microsoft Entra and provisioning, Access banner and who accepted it, Members, Groups, Projects, Policies, Billing seats, Usage, Activity with filters and CSV export), the complete policy control catalog, and what admins can and can't see."
 canonical: "https://bearly.ai/docs/manual/organizations/"
 markdown: "https://bearly.ai/docs/manual/organizations.md"
 ---
@@ -9296,7 +9298,7 @@ markdown: "https://bearly.ai/docs/manual/organizations.md"
 
 HTML: [https://bearly.ai/docs/manual/organizations/](https://bearly.ai/docs/manual/organizations/)
 
-> How to create and run a Bearly organization, including managed and unmanaged organizations, every console tab and setting (Overview, Agent access, Microsoft Entra and provisioning, Access banner, Members, Groups, Projects, Policies, Billing seats, Usage, Activity), the complete policy control catalog, and what admins can and can't see.
+> How to create and run a Bearly organization, including managed and unmanaged organizations, every console tab and setting (Overview, Agent access, Microsoft Entra and provisioning, Access banner and who accepted it, Members, Groups, Projects, Policies, Billing seats, Usage, Activity with filters and CSV export), the complete policy control catalog, and what admins can and can't see.
 
 An organization holds your members, groups, and policies in one place. Admins add people, share projects with the whole organization or a group, buy seats, and, on a managed organization, decide which models and features members can use. Admins can't open members' chats; see [What organization admins can see](https://bearly.ai/docs/manual/privacy-and-security.md#what-organization-admins-can-see).
 
@@ -9382,7 +9384,21 @@ The access banner shows members a message they must accept before they can use B
 
 
 
-**Limits:** acceptance is remembered per device and per version of the banner, so each device asks separately, and saving a change asks everyone again.
+**Limits:** acceptance is remembered per device and per version of the banner, so each device asks separately. Every save starts a new version and asks everyone again, even when you only change the frequency or turn the banner off and back on.
+
+### See who accepted the banner
+
+While the banner is on, **Who accepted version _N_** appears below it: "Counts this version only. Editing the banner starts a new version."
+
+- A count such as "41 of 52 members" shows how many active members accepted the current version.
+- **Accepted** lists each person with when they first accepted and where: **Web**, **Desktop**, or **iPhone**. Hover over the time for the full date. Android phones count as **Web**.
+- **Not yet accepted** lists the active members who haven't.
+- Each list shows ten people; **Show all** shows the rest.
+- **Export CSV** downloads both lists with **Name**, **Email**, **Status**, **Accepted at (UTC)**, and **Device**.
+
+A new version's list starts empty. Each person's first acceptance of a version also appears in [Activity](#activity) as "Accepted the access banner (version _N_)". If the list doesn't load, it reads "Couldn't load acceptances." with **Retry**.
+
+**Limits:** the list counts acceptances from when it was added to Bearly. A member who accepted before then is listed the next time the banner asks them. An acceptance made while the device couldn't reach Bearly may not be listed, though the member still gets in.
 
 **Who accepted:** while a saved banner is on, its settings show **Who accepted version _N_** ("Counts this version only. Editing the banner starts a new version."): the members who accepted, with the time and device, and a **Not yet accepted** list. **Export CSV** downloads both lists. A person's first acceptance of each version also appears in **Activity**.
 
@@ -9667,7 +9683,31 @@ Seats go only to active members. A person uses the higher of their personal plan
 
 ## Activity
 
-**Activity** ("Changes people made to this organization, newest first.") lists organization changes, with **Load more** for older entries. Narrow the list with **Date** (**All time**, **Last 7 days**, **Last 30 days**, **Last 90 days**, or **Custom…**), **Person**, **Category** (**All activity**, **Members**, **Groups**, **Policies and access**, **Settings**, **Projects**, **Access banner**, **Exports**), and **Search activity**. When nothing matches, the tab reads "No activity matches these filters." with **Clear filters**. **Export CSV** downloads the newest 10,000 entries that match the current filters; past that it says "Exported the newest 10,000 entries. Narrow the dates to export older ones." Each export is itself recorded in the log. Categories cover the organization, settings, agent access, policies, members (added, edited, removed, suspended, resumed), billing, identity, groups, projects (access removed or deleted), access banner acceptances, and Activity exports. Entries show what changed, such as a spending limit or feature controls, with before and after values. History starts from when Activity was added, so older changes aren't listed. An empty log reads "No organization changes recorded yet."
+**You need:** the admin role.
+
+**Activity** ("Changes people made to this organization, newest first.") is the organization's audit log. It lists changes to the organization, settings, agent access, policies, members (added, edited, removed, suspended, resumed), billing, identity, groups, and projects (access removed or deleted), with **Load more** for older entries. Entries show what changed, such as a spending limit or feature controls, with before and after values. On a computer, hover over a time for the full date. History starts from when Activity was added, so older changes aren't listed. An empty log reads "No organization changes recorded yet."
+
+Activity also lists two things that aren't settings changes:
+
+- A member's first acceptance of each [access banner](#see-who-accepted-the-banner) version: "Accepted the access banner (version 3)".
+- Each export: "Exported the audit log (214 entries)". When the export was filtered, expand the entry to see its filters.
+
+### Filter Activity
+
+The filters above the list narrow it, and **Load more** keeps to them:
+
+- **Date**: **All time** (the default), **Last 7 days**, **Last 30 days**, **Last 90 days**, or **Custom…**, which adds **From** and **To** dates. Days follow your own time zone, and a custom range includes both end dates.
+- **Person**: **Anyone**, or one member.
+- **Category**: **All activity**, **Members**, **Groups**, **Policies and access**, **Settings**, **Projects**, **Access banner**, or **Exports**.
+- **Search activity**: matches the entry's text, what it acted on, and the email of the person who made it.
+
+When nothing matches, Activity reads "No activity matches these filters." with **Clear filters**.
+
+### Export Activity
+
+Select **Export CSV** to download the entries that match the current filters, newest first. The file has **Time (UTC)**, **Person**, **Action**, **Target**, **Summary**, and **Details** columns, and it's named for the organization and the day.
+
+**Limits:** an export holds at most the newest 10,000 matching entries. When there are more, Activity says "Exported the newest 10,000 entries. Narrow the dates to export older ones." A cell that a spreadsheet would read as a formula starts with an apostrophe (`'`), so it opens as text. The export adds its own entry to Activity, which isn't in that file. If it fails, Activity says "Couldn't export. Try again."
 
 ## Related
 
@@ -9947,7 +9987,8 @@ Organization admins manage members, groups, policies, and billing. Being an admi
 | The title, owners, groups, and creation date of each project shared with the organization or its groups | Yes, on **Projects**, without the project's content |
 | Each member's name, email, role, policy, and spending limit | Yes, on **Members** |
 | Each managed-domain member's spend and number of calls, by model and month | Yes, on **Usage**, on a managed organization. |
-| Changes to members, groups, policies, settings, billing, and project access | Yes, on **Activity**. It doesn't record what anyone does in chats. |
+| Changes to members, groups, policies, settings, billing, and project access | Yes, on **Activity**, which they can filter and export as a CSV. It doesn't record what anyone does in chats. |
+| Whether you accepted the organization's access banner, when, and on which kind of device (web, desktop, or iPhone) | Yes, under **Access banner** on **Overview**, and in **Activity**. |
 
 - **Access comes from sharing, not from the admin role.** An admin sees a project only when it's shared with the organization or with a group they belong to. Admins can add themselves to a group, which gives them that group's shared projects like any other group member, and the change appears in **Activity**.
 - **Admins can change access without reading anything.** They can remove the organization's access to a shared project, and delete a project once none of its owners is still a member; its chats go back to the people who started them. Policies decide which models and features you can use, and **Lock existing chats** makes members' chats open only on the device that holds their key. See [Run Bearly for an organization](https://bearly.ai/docs/manual/organizations.md).

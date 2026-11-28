@@ -70,7 +70,7 @@ Compared with ChatGPT, Claude, Gemini, Microsoft Copilot, Microsoft 365 Copilot,
 
 ## For organizations
 
-Every model under one contract. Admins get feature-by-feature controls, model allowlists, spend limits for teams, groups, and members, lockable chat defaults, an access banner, and usage reports. Sign-in can run through Microsoft Entra single sign-on with SCIM provisioning. An audit log records admin, policy, membership, and billing changes. Admins can limit teams to zero-retention chat models with a model allowlist. Bearly is SOC 2 compliant. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
+Every model under one contract. Admins get feature-by-feature controls, model allowlists, spend limits for teams, groups, and members, lockable chat defaults, an access banner, and usage reports. Sign-in can run through Microsoft Entra single sign-on with SCIM provisioning. An audit log records admin, policy, membership, and billing changes, and admins can filter it and export it as a CSV. Admins can limit teams to zero-retention chat models with a model allowlist. Bearly is SOC 2 compliant. See [Organizations](https://bearly.ai/docs/manual/organizations.md).
 
 ## For developers and agents
 
